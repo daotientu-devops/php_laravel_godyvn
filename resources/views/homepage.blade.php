@@ -86,7 +86,7 @@
                     <label for="inputSearch" id="search-header" class="c-pointer bar-50 bc-primary ba d-flex ai-center jc-space-between fc-sixth fw-normal h-44 w-300 pl-20 pr-8 mb-0">
                         <span>Bạn muốn đi đâu?</span>
                         <div class="bar-circle bg-primary d-flex ai-center jc-center p-8">
-                            <img src="/public/v6/js/ionicons/5.5.2/svg/search-outline.svg" class="ml-0 w-16 filter-white">
+                            <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/search-outline.svg" class="ml-0 w-16 filter-white">
                         </div>
                     </label>
                 </li>
@@ -94,65 +94,65 @@
             <ul class="nav navbar-nav navbar-right mrn-6 d-flex ai-center">
                 <li class="py-0 px-0 h:bg-grayf2 bar-50 h-42 px-12 t-all t-duration-slow mr-0">
                     <a class="h-fit text-center p-0 fc-sixth bg-transparent d-flex fw-500 ai-center jc-center px-6 mt-0 w-auto c-pointer" href="https://gody.vn/diem-den">
-                        <img src="/public/v6/js/ionicons/5.5.2/svg/earth.svg" class="w-20 mtn-3 mr-8"/>
+                        <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/earth.svg" class="w-20 mtn-3 mr-8"/>
                         <p class="m-0 p-0 fs-16 fc-nineth">Điểm đến</p>
                     </a>
                 </li>
                 <li class="py-0 px-0 h:bg-grayf2 bar-50 h-42 px-12 t-all t-duration-slow mr-0">
                     <a class="h-fit text-center p-0 fc-sixth bg-transparent d-flex fw-500 ai-center jc-center px-6 mt-0 w-auto c-pointer" href="https://gody.vn/ban-do-du-lich/viet-nam">
-                        <img class="w-20 mtn-4 filter-black va-middle mr-8" src="/public/v6/images/logo-filled-100x100.png">
+                        <img class="w-20 mtn-4 filter-black va-middle mr-8" src="https://gody.vn/public/v6/images/logo-filled-100x100.png">
                         <p class="m-0 p-0 fs-16 fc-nineth">My Travel Map</p>
                     </a>
                 </li>
                 <li class="dropdown nav-add-box py-0 pr-1 pl-5 h:bg-grayf2 bar-50 px-12 t-all t-duration-slow">
                     <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="nav-button-add fw-500 bg-transparent py-0 px-6 h-fit d-flex ai-center jc-center c-pointer">
-                        <img src="/public/v6/js/ionicons/5.5.2/svg/pencil.svg" class="w-18 mb-1 mr-8" width="23"/>
+                        <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/pencil.svg" class="w-18 mb-1 mr-8" width="23"/>
                         <p class="m-0 p-0 fs-16 fc-nineth">Viết ngay</p>
                     </a>
                     <ul class="dropdown-menu bar-0 mtn-1 " aria-labelledby="nav-button-add">
                         <li class="mt-10">
                             <a href="https://gody.vn/blog/viet-bai/note" class="fc-sixth" id=" " style="color: #ff8c00 !important;">
-                                <img src="/public/v6/js/ionicons/5.5.2/svg/create-outline.svg" class="filter-primary w-24 mr-8">Chia sẻ trải nghiệm & review
+                                <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/create-outline.svg" class="filter-primary w-24 mr-8">Chia sẻ trải nghiệm & review
                             </a>
                         </li>
                         <li class="mt-10">
                             <a href="https://gody.vn/photo-blog/dang-bai/note" class="fc-sixth" id=" ">
-                                <img src="/public/v6/js/ionicons/5.5.2/svg/image-outline.svg" class="filter-sixth w-24 mr-8">Chia sẻ hình ảnh
+                                <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/image-outline.svg" class="filter-sixth w-24 mr-8">Chia sẻ hình ảnh
                             </a>
                         </li>
                         <li class="mt-10">
                             <a href=/facebook/login?modal=modal-fetch-fb class="fc-sixth" id=" ">
-                                <img src="/public/v6/js/ionicons/5.5.2/svg/images-outline.svg" class="filter-sixth w-24 mr-8">Chia sẻ hình từ Facebook
+                                <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/images-outline.svg" class="filter-sixth w-24 mr-8">Chia sẻ hình từ Facebook
                             </a>
                         </li>
                         <li class="mt-10 mb-10">
                             <a href="https://gody.vn/hoi-dap" class="fc-sixth" id=" ">
-                                <img src="/public/v6/js/ionicons/5.5.2/svg/people-outline.svg" class="filter-sixth w-24 mr-8">Hỏi đáp du lịch
+                                <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/people-outline.svg" class="filter-sixth w-24 mr-8">Hỏi đáp du lịch
                             </a>
                         </li>
                         <li class="mt-10 mb-10">
                             <a href="https://gody.vn/lich-trinh-du-lich" class="fc-sixth" id=" ">
-                                <img src="/public/v6/js/ionicons/5.5.2/svg/footsteps-outline.svg" class="filter-sixth w-24 mr-8">Lập & chia sẻ hành trình
+                                <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/footsteps-outline.svg" class="filter-sixth w-24 mr-8">Lập & chia sẻ hành trình
                             </a>
                         </li>
                         <li class="mt-10 mb-10">
                             <a href="/cong-tac-vien/viet-bai/note" class="fc-sixth">
-                                <img src="/public/v6/js/ionicons/5.5.2/svg/trail-sign-outline.svg" class="filter-sixth w-24 mr-8">Chia sẻ, giới thiệu địa điểm mới
+                                <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/trail-sign-outline.svg" class="filter-sixth w-24 mr-8">Chia sẻ, giới thiệu địa điểm mới
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="py-0 px-0 ml-0 h:bg-grayf2 bar-50 h-42 px-12 t-all t-duration-slow">
                     <a class="h-fit text-center p-0 fc-sixth bg-transparent notification-bell d-flex fw-500 ai-center jc-center px-6 mt-0 w-auto c-pointer" href="#modal-login" data-toggle="modal" role="button" aria-haspopup="true" aria-expanded="false" title="Thông báo">
-                        <img src="/public/v6/js/ionicons/5.5.2/svg/notifications.svg" class="w-18 mr-8 mb-1" width="23"/>
+                        <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/notifications.svg" class="w-18 mr-8 mb-1" width="23"/>
                         <p class="m-0 p-0 fs-16 fc-nineth">Thông báo</p>
                         <span class="notification-bell-count text-center ps-absolute fs-10 bg-primary fc-white bar-circle t4 l18 w-16 h-16 lh-lg hide">1</span>
                     </a>
                 </li>
                 <li class="dropdown d-flex ai-center jc-center mr-20 ml-0 h-42 px-12 ">
                     <button type="button" class="outline-none bn clearfix fc-sixth bg-eleventh bar-50 px-25 py-6 mr-0 d-flex fw-500 ai-center jc-center" href="#" data-toggle="dropdown" id="dang-nhap-header">
-                        <img src="/public/v6/js/ionicons/5.5.2/svg/menu-outline.svg" width="18" class="w-18 mr-8 mb-1"/>
-                        <img src="/public/v6/js/ionicons/5.5.2/svg/person-circle-outline.svg" width="28" class="w-28 mb-1"/>
+                        <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/menu-outline.svg" width="18" class="w-18 mr-8 mb-1"/>
+                        <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/person-circle-outline.svg" width="28" class="w-28 mb-1"/>
                     </button>
                     <ul class="dropdown-menu account-dropdown bar-8 w-250 card6 bn mt-7">
                         <li class="ps-absolute w-10 h-10 baw1 bas-solid bc-tenth r12 tn6 rotate-1/8 bg-white brs-unset bbs-unset zn-1"></li>
@@ -1739,7 +1739,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
         <div class="col-md-3 pl-30">
             <a target="_blank" title="10 bước đơn giản để bài viết thu hút trên gody.vn" class="d-flex mb-25">
                 <img
-                        data-src="/public/v6/images/right-banner-4.png"
+                        data-src="https://gody.vn/public/v6/images/right-banner-4.png"
                         data-srcset="/public/v6/images/right-banner-4.png, /public/v6/images/right-banner-4.png"
                         alt="10 bước đơn giản để bài viết thu hút trên gody.vn"
                         class="lazy-load w-fit h-fit"
@@ -2975,14 +2975,14 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
 <div id="modal-destination" class="modal fade modal-simple" role="dialog">
     <div class="modal-dialog modal-lg" style="max-width: 750px; margin-top:20%; text-align: center;">
         <!-- Modal content-->
-        <img src="/public/images/1x1.png" data-src="/public/v3/images/loading.gif" data-srcset="/public/v3/images/loading.gif, /public/v3/images/loading.gif" alt="Loading..." class="bg-white">
+        <img src="https://gody.vn/public/images/1x1.png" data-src="https://gody.vn/public/v3/images/loading.gif" data-srcset="/public/v3/images/loading.gif, /public/v3/images/loading.gif" alt="Loading..." class="bg-white">
     </div>
     <!-- /Evaluate popup -->
 </div><!-- /.modal-destination -->
 <div class="modal fade modal-custom-global" id="modal-user-request" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content modal-request-body">
-            <div class="modal_user_request_loading hide" style="display:block;width:100%;max-width:450px;position:fixed;top:0;text-align:center;right:0;bottom:0;left:0;overflow:hidden;-webkit-overflow-scrolling:touch;outline:0;padding-top:100px;background:rgba(255,255,255,.7); z-index: 1;"><img src="/public/images/1x1.png" data-src="/public/v3/images/loading.gif" data-srcset="/public/v3/images/loading.gif" alt="Loading..."></div>
+            <div class="modal_user_request_loading hide" style="display:block;width:100%;max-width:450px;position:fixed;top:0;text-align:center;right:0;bottom:0;left:0;overflow:hidden;-webkit-overflow-scrolling:touch;outline:0;padding-top:100px;background:rgba(255,255,255,.7); z-index: 1;"><img src="https://gody.vn/public/images/1x1.png" data-src="https://gody.vn/public/v3/images/loading.gif" data-srcset="/public/v3/images/loading.gif" alt="Loading..."></div>
             <form action="https://gody.vn/a/goc-yeu-cau/store" method="post" id="modal-user-request-form" novalidate>
                 <input type="hidden" name="_token" value="RwVeLdeMZBiM3GobuQZvQ6wIJmq2n1fyZHEgjYl5">
                 <div class="modal-header">
@@ -3046,7 +3046,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
         <div class="row pt-0">
             <div class="col-md-4">
                 <a href="/" class="d-block pt-20">
-                    <img src="/public/images/logo-new.jpg" alt="Gody Logo" class="h-40 w-130 d-block lazyload">
+                    <img src="https://gody.vn/public/images/logo-new.jpg" alt="Gody Logo" class="h-40 w-130 d-block lazyload">
                 </a>
                 <div class="mt-12">
                     <p class="fc-sixth mb-5">Mạng xã hội du lịch Việt Nam</p>
@@ -3141,7 +3141,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
             <div class="modal-body">
                 <div class="d-flex ai-center">
                     <div class="ps-relative fs-14 px-12 my-12 fl-1">
-                        <img src="/public/v6/js/ionicons/5.5.2/svg/search-outline.svg"
+                        <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/search-outline.svg"
                              class="
                 w-24
                 filter-sixth
@@ -3197,7 +3197,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                 v-if="!!searchInput"
                                 @click.prevent.stop="clearInput"
                         >
-                            <img class="w-20 filter-sixth" src="/public/v6/js/ionicons/5.5.2/svg/close-outline.svg"/>
+                            <img class="w-20 filter-sixth" src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/close-outline.svg"/>
                         </button>
                     </div>
                 </div>
@@ -3217,7 +3217,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     mr-15
                   "
                                 >
-                                    <img src="/public/v6/js/ionicons/5.5.2/svg/location-outline.svg" class="filter-sixth w-20"/>
+                                    <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/location-outline.svg" class="filter-sixth w-20"/>
                                 </div>
                                 <div class="fl-1">
                                     <p class="fw-500 fs-16 m-0 tt-capitalize fc-nineth mb-2">
@@ -3249,7 +3249,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     mr-15
                   "
                                 >
-                                    <img src="/public/v6/js/ionicons/5.5.2/svg/bed-outline.svg" class="filter-sixth w-20"/>
+                                    <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/bed-outline.svg" class="filter-sixth w-20"/>
                                 </div>
                                 <div class="fl-1">
                                     <p class="fs-16 m-0 fc-nineth mb-2">
@@ -3286,7 +3286,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     mr-15
                   "
                                 >
-                                    <img src="/public/v6/js/ionicons/5.5.2/svg/ticket-outline.svg" class="filter-sixth w-20"/>
+                                    <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/ticket-outline.svg" class="filter-sixth w-20"/>
                                 </div>
                                 <div class="fl-1">
                                     <p class="fs-16 m-0 fc-nineth mb-2">
@@ -3323,7 +3323,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     mr-15
                   "
                                 >
-                                    <img src="/public/v6/js/ionicons/5.5.2/svg/reader-outline.svg" class="filter-sixth w-20"/>
+                                    <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/reader-outline.svg" class="filter-sixth w-20"/>
                                 </div>
                                 <div class="fl-1">
                                     <p class="fs-16 m-0 fc-nineth mb-2">
@@ -3357,7 +3357,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     mr-15
                   "
                                 >
-                                    <img src="/public/v6/js/ionicons/5.5.2/svg/images-outline.svg" class="filter-sixth w-20"/>
+                                    <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/images-outline.svg" class="filter-sixth w-20"/>
                                 </div>
                                 <div class="fl-1">
                                     <p class="fs-16 m-0 fc-nineth mb-2">
@@ -3390,7 +3390,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     mr-15
                   "
                                 >
-                                    <img src="/public/v6/js/ionicons/5.5.2/svg/people-outline.svg" class="filter-sixth w-20"/>
+                                    <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/people-outline.svg" class="filter-sixth w-20"/>
                                 </div>
                                 <div class="fl-1">
                                     <p class="fs-16 m-0 fc-nineth mb-2">
@@ -3426,7 +3426,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     mr-15
                   "
                                 >
-                                    <img src="/public/v6/js/ionicons/5.5.2/svg/map-outline.svg" class="filter-sixth w-20"/>
+                                    <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/map-outline.svg" class="filter-sixth w-20"/>
                                 </div>
                                 <div class="fl-1">
                                     <p class="fs-16 m-0 fc-nineth mb-2">
@@ -3459,7 +3459,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     mr-15
                   "
                                 >
-                                    <img src="/public/v6/js/ionicons/5.5.2/svg/search-outline.svg" class="filter-sixth w-20"/>
+                                    <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/search-outline.svg" class="filter-sixth w-20"/>
                                 </div>
                                 <div class="fl-1">
                                     <p class="fs-16 m-0 fc-sixth mb-2">
@@ -3494,7 +3494,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                   "
                                 >
                                     <img
-                                            src="/public/v6/js/ionicons/5.5.2/svg/search-outline.svg"
+                                            src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/search-outline.svg"
                                             class="filter-sixth w-20"
                                     />
                                 </div>
@@ -3534,7 +3534,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                           mr-15
                         "
                                             >
-                                                <img src="/public/v6/js/ionicons/5.5.2/svg/location-outline.svg" class="filter-sixth w-20"/>
+                                                <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/location-outline.svg" class="filter-sixth w-20"/>
                                             </div>
                                             <div class="fl-1">
                                                 <p class="fw-500 fs-16 m-0 tt-capitalize fc-nineth mb-2">
@@ -3553,7 +3553,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                             <a :href="recentDetailUrl(r)" class="d-block ps-absolute t0 r0 b0 l0"></a>
                                         </div>
                                         <div class="d-flex ai-center jc-center p-10 c-pointer bar-circle h:card6 mr-2" @click="clearRecentlyViewed(r)">
-                                            <img src="/public/v6/js/ionicons/5.5.2/svg/close-outline.svg" class="w-22 filter-sixth">
+                                            <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/close-outline.svg" class="w-22 filter-sixth">
                                         </div>
                                     </div>
                                 </template>
@@ -3608,27 +3608,27 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     <p class="fc-primary fs-14 fw-500 mt-5 mb-0">Vận hành bởi GODY</p>
                     <div class="d-flex fw-wrap">
                         <a href="#modal-flight-search" data-target="#modal-flight-search" data-toggle="modal" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pt-12 pb-5 w-27%" rel="noreferrer,nofollow" title="Vé máy bay">
-                            <img src="/public/v6/js/ionicons/5.5.2/svg/airplane.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Vé máy bay">
+                            <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/airplane.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Vé máy bay">
                             <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Vé máy bay</p>
                         </a>
                         <a href="#modal-experience-search" data-target="#modal-experience-search" data-toggle="modal" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pt-12 pb-5 w-27%" rel="noreferrer,nofollow" title="Vé tham quan">
-                            <img src="/public/v6/js/ionicons/5.5.2/svg/ticket.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Vé tham quan">
+                            <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/ticket.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Vé tham quan">
                             <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Vé tham quan</p>
                         </a>
                         <a target="_blank" href="/san-pham/voucher-nghi-duong-cam-trai-camping" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pt-12 pb-5 w-22%" rel="noreferrer,nofollow" title="Voucher">
-                            <img src="/public/v6/js/ionicons/5.5.2/svg/gift.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Voucher">
+                            <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/gift.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Voucher">
                             <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Voucher</p>
                         </a>
                         <a target="_blank" href="/san-pham/sim-cuc-phat-wifi" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pt-12 pb-5 w-22%" title="Sim 4G/5G">
-                            <img loading="lazy" src="/public/v6/images/sim32x32.png" class="w-20 filter-sixth mb-5" alt="Sim 4G/5G">
+                            <img loading="lazy" src="https://gody.vn/public/v6/images/sim32x32.png" class="w-20 filter-sixth mb-5" alt="Sim 4G/5G">
                             <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Sim 4G/5G</p>
                         </a>
                         <a target="_blank" href="/san-pham/ho-chieu-visa" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pt-12 pb-5 w-27%" rel="noreferrer,nofollow" title="Visa/Passport">
-                            <img src="/public/v6/js/ionicons/5.5.2/svg/id-card.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Visa/Passport">
+                            <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/id-card.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Visa/Passport">
                             <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Visa/Passport</p>
                         </a>
                         <a target="_blank" href="/san-pham/bao-hiem-du-lich" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pt-12 pb-5 w-27%" title="Bảo hiểm">
-                            <img src="/public/v6/js/ionicons/5.5.2/svg/fitness.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Bảo hiểm">
+                            <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/fitness.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Bảo hiểm">
                             <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Bảo hiểm</p>
                         </a>
                         <a href="https://gody.vn/partner" target="_blank" class="
@@ -3643,7 +3643,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                 fc-sixth
                 pt-12
                 pb-5
-               w-40%" title="Blogger và Doanh nghiệp"><img src="/public/v6/js/ionicons/5.5.2/svg/people.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Blogger và Doanh nghiệp">
+               w-40%" title="Blogger và Doanh nghiệp"><img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/people.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Blogger và Doanh nghiệp">
                             <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Blogger &amp; Doanh nghiệp</p></a>
                         <a href="https://kinhnghiemdulich.gody.vn" target="_blank" class="
                d-flex
@@ -3657,7 +3657,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                fc-sixth
                pt-12
                pb-5
-              " rel="noreferrer,nofollow" title="Kinh nghiệm du lịch và tổng hợp"><img src="/public/v6/js/ionicons/5.5.2/svg/ear.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Kinh nghiệm du lịch và tổng hợp">
+              " rel="noreferrer,nofollow" title="Kinh nghiệm du lịch và tổng hợp"><img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/ear.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Kinh nghiệm du lịch và tổng hợp">
                             <p class="mb-0 fs-12 fc-sixth mt-0 ta-center">Kinh nghiệm du lịch<br>Tổng hợp</p></a>
                     </div>
                 </div>
@@ -3669,7 +3669,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <div class="fl-1 d-flex pl-5 jc-center">
                             <a href="https://apps.apple.com/vn/app/gody/id1570393254" class="text-center d-block w-110 h-35 lh-30" target="_blank" rel="noreferrer,nofollow" title="App Android">
                                 <img loading="lazy"
-                                     src="/public/v6/images/more/appstore.png"
+                                     src="https://gody.vn/public/v6/images/more/appstore.png"
                                      class="w-fit h-fit object-cover"
                                      alt="App Android"
                                 />
@@ -3680,7 +3680,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                     class="text-center d-block w-116 h-35 lh-30 ml-12" rel="noreferrer,nofollow" title="App IOS"
                             >
                                 <img loading="lazy"
-                                     src="/public/v6/images/more/google-play-badge.png"
+                                     src="https://gody.vn/public/v6/images/more/google-play-badge.png"
                                      class="w-fit h-fit object-cover" alt="App IOS"
                                 />
                             </a>
@@ -3695,7 +3695,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                         <div class="fl-1 d-flex fw-wrap pl-5">
                             <a target="_blank" rel="noreferrer,nofollow" href="http://www.hotelscombined.com/?a_aid=223595" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pt-12 pb-5 w-27%" title="HotelsCombined">
-                                <img loading="lazy" src="/public/v6/images/more/hotelscombined.png" class="w-45 h-20 mb-2" alt="HotelsCombined">
+                                <img loading="lazy" src="https://gody.vn/public/v6/images/more/hotelscombined.png" class="w-45 h-20 mb-2" alt="HotelsCombined">
                                 <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate-line lineclamp1 wmx-fit">HotelsCom...</p>
                             </a>
                             <a target="_blank" rel="noreferrer,nofollow" href="https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1617141" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pt-12 pb-5 w-22%" title="Agoda">
@@ -3707,15 +3707,15 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                 <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate-line lineclamp1">Booking</p>
                             </a>
                             <a target="_blank" rel="noreferrer,nofollow" href="https://clk.omgt3.com/?PID=37016&amp;AID=1996267" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pt-12 pb-5 w-22%" title="Vntrip">
-                                <img loading="lazy" src="/public/v6/images/more/vntrip-02.png" class="w-45 h-20 mb-2" alt="Vntrip">
+                                <img loading="lazy" src="https://gody.vn/public/v6/images/more/vntrip-02.png" class="w-45 h-20 mb-2" alt="Vntrip">
                                 <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate-line lineclamp1">Vntrip</p>
                             </a>
                             <a target="_blank" rel="noreferrer,nofollow" href="https://clk.omgt3.com/?PID=35596&amp;AID=1996267" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pt-12 pb-5 w-27%" title="Hotels.com">
-                                <img loading="lazy" src="/public/v6/images/more/hotel-03.jpeg" class="w-45 h-20 mb-2" alt="Hotels.com">
+                                <img loading="lazy" src="https://gody.vn/public/v6/images/more/hotel-03.jpeg" class="w-45 h-20 mb-2" alt="Hotels.com">
                                 <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate-line lineclamp1">Hotels.com</p>
                             </a>
                             <a target="_blank" rel="noreferrer,nofollow" href="https://clk.omgt3.com/?PID=12746&amp;AID=1996267" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pt-12 pb-5 w-22%" title="Trip.com">
-                                <img loading="lazy" src="/public/v6/images/more/trip-com-04.png" class="w-45 h-20 mb-2" alt="Trip.com">
+                                <img loading="lazy" src="https://gody.vn/public/v6/images/more/trip-com-04.png" class="w-45 h-20 mb-2" alt="Trip.com">
                                 <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate-line lineclamp1">Trip.com</p>
                             </a>
                             <a href="https://gody.vn/homestay-hostel" target="_blank" rel="noreferrer,nofollow" class="
@@ -3730,7 +3730,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                   fc-sixth
                   pt-12
                   pb-5
-                 w-27% mtn-4" title="Homestay"><img loading="lazy" src="/public/v6/images/logo-filled-100x100.png" class="w-24 mb-2 filter-primary" alt="Homestay">
+                 w-27% mtn-4" title="Homestay"><img loading="lazy" src="https://gody.vn/public/v6/images/logo-filled-100x100.png" class="w-24 mb-2 filter-primary" alt="Homestay">
                                 <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate">
                                     Homestay
                                 </p></a>
@@ -3746,7 +3746,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                 <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate">Klook</p>
                             </a>
                             <a target="_blank" href="https://clk.omgt3.com/?PID=33463&amp;AID=1996267" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pt-12 pb-5 w-22%" rel="noreferrer,nofollow" title="Kkday">
-                                <img loading="lazy" src="/public/v6/images/more/kkday-icon.png" class="w-15 h-20 mb-2" alt="Kkday">
+                                <img loading="lazy" src="https://gody.vn/public/v6/images/more/kkday-icon.png" class="w-15 h-20 mb-2" alt="Kkday">
                                 <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate">Kkday</p>
                             </a>
                             <a target="_blank" href="https://www.viator.com/?pid=P00020623&amp;uid=U00021069&amp;mcid=58086" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pt-12 pb-5 w-27%" rel="noreferrer,nofollow" title="Viator">
@@ -3776,7 +3776,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                         <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate">Baolau</p>
                                     </a>
                                     <a target="_blank" href="https://clk.omgt3.com/?PID=39790&amp;AID=1996267" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pb-5 grid--cell4 mb-12" rel="noreferrer,nofollow" title="Dichung">
-                                        <img loading="lazy" src="/public/v6/images/more/dichung-vn.png" class="w-45 h-20 object-contain mb-2" alt="Dichung">
+                                        <img loading="lazy" src="https://gody.vn/public/v6/images/more/dichung-vn.png" class="w-45 h-20 object-contain mb-2" alt="Dichung">
                                         <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate">Dichung</p>
                                     </a>
                                 </div>
@@ -3789,7 +3789,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                         <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate">12go</p>
                                     </a>
                                     <a target="_blank" href="https://clk.omgt3.com/?PID=12746&amp;AID=1996267" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pb-5 grid--cell4 mb-12" rel="noreferrer,nofollow" title="Trip.com">
-                                        <img loading="lazy" src="/public/v6/images/more/trip-com-04.png" class="w-45 h-20 object-contain mb-2" alt="Trip.com">
+                                        <img loading="lazy" src="https://gody.vn/public/v6/images/more/trip-com-04.png" class="w-45 h-20 object-contain mb-2" alt="Trip.com">
                                         <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate">Trip.com</p>
                                     </a>
                                     <a target="_blank" href="https://www.easybook.com/vi-vn" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pb-5 grid--cell4 mb-12" rel="noreferrer,nofollow" title="Easybook">
@@ -3802,7 +3802,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                 <p class="mb-0 fs-13 fc-sixth mt-0 truncate-line lineclamp2 w-27% pt-10">Mỹ, Châu Âu, ...</p>
                                 <div class="d-flex fw-wrap fl-1">
                                     <a target="_blank" href="https://www.rome2rio.com" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pb-5 grid--cell4 mb-12" rel="noreferrer,nofollow" title="Rome2rio">
-                                        <img loading="lazy" src="/public/v6/images/more/download.png" class="w-45 h-20 object-contain mb-2" alt="Rome2rio">
+                                        <img loading="lazy" src="https://gody.vn/public/v6/images/more/download.png" class="w-45 h-20 object-contain mb-2" alt="Rome2rio">
                                         <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate">Rome2rio</p>
                                     </a>
                                     <a target="_blank" href="https://www.carrentals.com" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pb-5 grid--cell4 mb-12" rel="noreferrer,nofollow" title="Car rental">
@@ -3810,15 +3810,15 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                         <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate">Car rental</p>
                                     </a>
                                     <a target="_blank" href="https://www.expedia.com" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pb-5 grid--cell4 mb-12" rel="noreferrer,nofollow" title="Expedia">
-                                        <img loading="lazy" src="/public/v6/images/more/expedia.png" class="w-45 h-20 object-contain mb-2 object-fill" alt="Expedia">
+                                        <img loading="lazy" src="https://gody.vn/public/v6/images/more/expedia.png" class="w-45 h-20 object-contain mb-2 object-fill" alt="Expedia">
                                         <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate">Expedia</p>
                                     </a>
                                     <a target="_blank" href="https://www.priceline.com/?vrid=e9b272308ce650923c2891ab27b5623e" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pb-5 grid--cell4 mb-0" rel="noreferrer,nofollow" title="Priceline">
-                                        <img loading="lazy" src="/public/v6/images/more/price-line.png" class="w-45 h-20 object-contain mb-2 object-cover" alt="Priceline">
+                                        <img loading="lazy" src="https://gody.vn/public/v6/images/more/price-line.png" class="w-45 h-20 object-contain mb-2 object-cover" alt="Priceline">
                                         <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate">Priceline</p>
                                     </a>
                                     <a target="_blank" href="https://www.skyscanner.com.vn" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pb-5 grid--cell4 mb-0" rel="noreferrer,nofollow" title="Skyscanner">
-                                        <img loading="lazy" src="/public/v6/images/more/skyscanner.png" class="w-45 h-20 object-contain mb-2" alt="Skyscanner">
+                                        <img loading="lazy" src="https://gody.vn/public/v6/images/more/skyscanner.png" class="w-45 h-20 object-contain mb-2" alt="Skyscanner">
                                         <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate">Skyscanner</p>
                                     </a>
                                     <a target="_blank" href="https://www.flixbus.co.uk/?wt_mc=.uk.flixbus.aff.generic.326632-TT.12-TT.ad&wt_cc1=-aff_12%3A%3A326632%3A%3Agody%3A%3A%3A%3A1639059723&utm_source=ttruk.generic&utm_medium=aff&utm_campaign=326632-TT.12-TT.-aff_12%3A%3A326632%3A%3Agody%3A%3A%3A%3A1639059723&utm_term=&utm_content=uk.flixbus" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pb-5 grid--cell4 mb-0"
@@ -4147,7 +4147,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
         });
     });
 </script>
-<script src="/public/v7/js/post-detail.js?v=1235"></script>
+<script src="https://gody.vn/public/v7/js/post-detail.js?v=1235"></script>
 <script src="https://gody.vn/public/home/js/jquery.validate.min.js"></script>
 <!-- fb -->
 <script>(function (d, s, id) {
@@ -4947,8 +4947,8 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
     }
     initDestinationSearchVue();
 </script>
-<script src="/public/js/vue-modules/vue2-datepicker/index.min.js"></script>
-<script src="/public/js/vue-modules/vue2-datepicker/locale/vi.js"></script>
-<script defer src="/public/v6/js/search.js?v=1235"></script>
+<script src="https://gody.vn/public/js/vue-modules/vue2-datepicker/index.min.js"></script>
+<script src="https://gody.vn/public/js/vue-modules/vue2-datepicker/locale/vi.js"></script>
+<script defer src="https://gody.vn/public/v6/js/search.js?v=1235"></script>
 </body>
 </html>
