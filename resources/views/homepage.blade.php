@@ -34,10 +34,12 @@
     <link rel="stylesheet" href="https://gody.vn/public/v6/css/fancybox-3.1/jquery.fancybox.min.css">
     <link rel="stylesheet" href="https://media2.gody.vn/public/v3/plugins/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:400,500,600&amp;subset=vietnamese" rel="stylesheet">
-    <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/Minified.css?v=1235">
+
+    <link rel="stylesheet" href="{{asset('css/temp/Minified.css?v=1235')}}">
+
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/main.css?v=1235">
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/custom.css?v=1235">
-    <link rel="stylesheet" href="https://gody.vn/public/v5/css/atomic.css?v=1235">
+    <link rel="stylesheet" href="{{asset('css/atomic.css')}}">
     <link rel="stylesheet" href="/public/js/vue-modules/vue2-datepicker/css/index.css"/>
     <link rel="stylesheet" href="https://media2.gody.vn/public/v3/plugins/slick/slick.css">
     <!-- bxSlider CSS file -->
@@ -3044,7 +3046,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
         <div class="row pt-0">
             <div class="col-md-4">
                 <a href="/" class="d-block pt-20">
-                    <img src="/public/images/logo-new.png" alt="Gody Logo" class="h-40 w-130 d-block lazyload">
+                    <img src="/public/images/logo-new.jpg" alt="Gody Logo" class="h-40 w-130 d-block lazyload">
                 </a>
                 <div class="mt-12">
                     <p class="fc-sixth mb-5">Mạng xã hội du lịch Việt Nam</p>

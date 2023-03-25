@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('homepage');
 });
+Route::get('/blog/viet-bai/note', function () {
+    return view('blog.note');
+});
