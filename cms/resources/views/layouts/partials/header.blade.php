@@ -1,5 +1,10 @@
 <div class="navbar nav_title" style="border: 0;">
-    <a href="{{ url('/') }}" class="site_title"><img src="{{ asset(env('FOLDER_PUBLIC').'/assets/images/img_1.png')}}"/><span>CMS&#183;Dashboard</span></a>
+    <a href="{{ url('/') }}" class="site_title" style="padding-left:0"><img src="{{ asset(env('FOLDER_PUBLIC').'/assets/images/img_1.png')}}"
+        style="width: 55%;
+    margin: 0 auto;
+    display: block;
+}"
+        /><span>CMS&#183;Dashboard</span></a>
 </div>
 <div class="clearfix"></div>
 <!-- menu profile quick info -->

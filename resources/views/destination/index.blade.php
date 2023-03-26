@@ -2241,7 +2241,7 @@
         <div class="row pt-0">
             <div class="col-md-4">
                 <a href="/" class="d-block pt-20">
-                    <img src="/public/images/logo-new.png" alt="Gody Logo" class="h-40 w-130 d-block lazyload">
+                    <img src="/images/logo-new.png" alt="Gody Logo" class="h-40 w-130 d-block lazyload">
                 </a>
                 <div class="mt-12">
                     <p class="fc-sixth mb-5">Mạng xã hội du lịch Việt Nam</p>
