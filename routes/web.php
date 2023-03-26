@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('homepage');
+    return view('homepage.index');
 });
 Route::get('/blog/viet-bai/note', function () {
     return view('blog.note');
@@ -34,4 +34,19 @@ Route::get('/diem-den', function () {
 });
 Route::get('ban-do-du-lich/viet-nam', function () {
     return view('map.index');
+});
+
+Route::group(['middleware' => 'web'], function () {
+    Route::get('/gioi-thieu', function () {
+        return view('homepage.about');
+    });
+    Route::get('/lien-he', function () {
+        return view('homepage.contact');
+    });
+    Route::get('/bao-mat-thong-tin', function () {
+        return view('homepage.security');
+    });
+    Route::get('/quy-dinh-su-dung', function () {
+        return view('homepage.rule');
+    });
 });

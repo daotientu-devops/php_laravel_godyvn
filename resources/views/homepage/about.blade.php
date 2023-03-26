@@ -7,31 +7,29 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Du lịch qua ống kính – Chia sẻ trải nghiệm du lịch bằng hình ảnh | GODY.VN</title>
+    <title>Giới thiệu về Gody</title>
     <meta name="google-signin-client_id" content="781388682859-1b5bt66h15s182g4r0u3eacro916vice.apps.googleusercontent.com">
     <meta name="google-site-verification" content="jdgOqwLpyTjqC8ImcawnRHQOGkJtx2OcVD9KPSJ6irc" />
 
     <meta name="robots" content="index, follow" />
 
     <meta property="og:locale" content="vi_VN" />
-    <meta name="description" content="Nơi chia sẻ kinh nghiệm du lịch, phượt, thông tin địa điểm tham quan, du lịch hấp dẫn trong và ngoài nước. Tham gia chia sẻ trải nghiệm với cộng đồng yêu thích du lịch">
+    <meta name="description" content="Giới thiệu về Gody - trang thông tin cộng đồng du lịch chia sẻ kinh nghiệm du lịch và giới thiệu điểm đến hấp dẫn ở Việt Nam và Thế Giới.">
     <meta property="fb:app_id" content="198019300682232" />
-    <meta property="og:image" content="https://gody.vn/public/images/fb/photo-blog.jpg" />
-    <meta name="robots" content="noindex">
-    <meta name="googlebot" content="noindex">
+    <meta property="og:image" content="https://gody.vn/public/images/fb/gody-thumbnail.jpg" />
     <meta property="og:image:width" content="600" />
     <meta property="og:image:height" content="315" />
     <meta name="csrf-token" content="RwVeLdeMZBiM3GobuQZvQ6wIJmq2n1fyZHEgjYl5">
-    <meta property="og:url"                content="https://gody.vn/photo-blog/dang-bai/note" />
+    <meta property="og:url"                content="" />
     <meta property="og:type"               content="website" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://gody.vn/public/images/fb/photo-blog.jpg">
-    <meta property="og:title"  content="Du lịch qua ống kính – Chia sẻ trải nghiệm du lịch bằng hình ảnh | GODY.VN" />
-    <meta name="twitter:title" content="Du lịch qua ống kính – Chia sẻ trải nghiệm du lịch bằng hình ảnh | GODY.VN">
-    <meta property="og:image:alt" content="Du lịch qua ống kính – Chia sẻ trải nghiệm du lịch bằng hình ảnh | GODY.VN">
+    <meta name="twitter:image" content="https://gody.vn/public/images/fb/gody-thumbnail.jpg">
+    <meta property="og:title"  content="Giới thiệu về Gody" />
+    <meta name="twitter:title" content="Giới thiệu về Gody">
+    <meta property="og:image:alt" content="Giới thiệu về Gody">
 
-    <meta property="og:description"        content="Nơi chia sẻ kinh nghiệm du lịch, phượt, thông tin địa điểm tham quan, du lịch hấp dẫn trong và ngoài nước. Tham gia chia sẻ trải nghiệm với cộng đồng yêu thích du lịch" />
-    <meta property="og:image"              content="https://gody.vn/public/images/fb/photo-blog.jpg" />
+    <meta property="og:description"        content="Giới thiệu về Gody - trang thông tin cộng đồng du lịch chia sẻ kinh nghiệm du lịch và giới thiệu điểm đến hấp dẫn ở Việt Nam và Thế Giới." />
+    <meta property="og:image"              content="https://gody.vn/public/images/fb/gody-thumbnail.jpg" />
     <meta property="og:ttl" content="2419200" />
 
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -65,51 +63,494 @@
     <link rel="stylesheet" href="https://media2.gody.vn/public/v3/perfect-scrollbar/css/perfect-scrollbar.css" />
     <link rel="manifest" href="https://gody.vn/public/v5/js/manifest.json">
 
-    <link rel="stylesheet" href="https://gody.vn/public/v3/cropper/cropper.min.css">
-    <link rel="stylesheet" href="https://gody.vn/public/v3/css/matching_create.css?v=641fab31369b8">
     <style>
-        .swal-button {
-            background: #D02028;
-            border-color: #D02028;
-            border-radius: 20px;
-            padding: 7px 18px;
-            -webkit-transition: all 0.2s;
-            -moz-transition: all 0.2s;
-            -ms-transition: all 0.2s;
-            -o-transition: all 0.2s;
-            transition: all 0.2s;
+        @font-face {
+            font-family: 'SVN-Gilroy';
+            font-style: Regular;
+            font-weight: 400;
+            src: url('https://media2.gody.vn/public/v7/SVN-Gilroy-Black/SVN-Gilroy Regular.otf') format("opentype");
+        }
+        @font-face {
+            font-family: 'SVN-Gilroy';
+            font-style: Bold;
+            font-weight: 700;
+            src: url('https://media2.gody.vn/public/v7/SVN-Gilroy-Black/SVN-Gilroy-Bold.otf') format("opentype");
+        }
+        @font-face {
+            font-family: 'SVN-Gilroy';
+            font-style: Medium;
+            font-weight: 500;
+            src: url('https://media2.gody.vn/public/v7/SVN-Gilroy-Black/SVN-Gilroy Medium.otf') format("opentype");
+        }
+        @font-face {
+            font-family: 'SVN-Gilroy';
+            font-style: SemiBold;
+            font-weight: 600;
+            src: url('https://media2.gody.vn/public/v7/SVN-Gilroy-Black/SVN-Gilroy SemiBold.otf') format("opentype");
+        }
+        body, .navbar-primary {
+            font-family: 'SVN-Gilroy' !important;
+        }
+        .box-shadow-1 {
+            box-shadow: inset 0px -1px 0px rgb(0 0 0 / 10%);
+        }
+        .block-content {
+
+        }
+        .block-content div {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            color: #333333;
+        }
+        .block-content img{
+            width: 100% !important;
+        }
+        /**/
+        .banners-reward__item {
+
+        }
+        .banners-reward__item:nth-child(-n+3){
+
+        }
+        .banners-reward__item:nth-child(even){
+
+        }
+        .gody-pagination {
+
+        }
+        .gody-pagination ul{
+
+        }
+        .gody-pagination ul li{
+
+        }
+        .gody-pagination ul li.active{
+
+        }
+        .gody-pagination ul li.active span{
+            background-color: #ff8c00;
+            border: 1px solid #ff8c00;
+            line-height: 24px;
+        }
+        .gody-pagination .pagination>.active>a {
+            background-color: #ff8c00;
+            border: 1px solid #ff8c00;
+            line-height: 24px;
         }
 
-        .travel-post-gallery .travel-post-gallery-item:nth-child(4n+4) {
-            margin-right: 5px !important;
+        .gody-pagination .pagination>li:first-child>a, .pagination>li:first-child>span {
+            border-radius: 100%;
+        }
+        .gody-pagination .pagination>li:last-child>a, .pagination>li:last-child>span {
+            border-radius: 100%;
         }
 
-        .box-input {
-            background-position-y: 40px;
-            min-height: 225px;
-            height: auto;
+        .gody-pagination ul li a{
+            border-radius: 100%;
+            margin-right: 10px;
+            width: 38px;
+            height: 38px;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #E0E0E0;
+        }
+        .gody-pagination ul li a{
+            color: #828282;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500px;
+        }
+        .gody-pagination ul li span{
+            border-radius: 100%;
+            margin-right: 10px;
+            width: 38px;
+            height: 38px;
+            text-align: center;
+            background: #fff;
+            border: 1px solid #E0E0E0;
+        }
+        .gody-pagination ul li span{
+            color: #828282;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500px;
+        }
+        .gb-item-border {
+            padding-bottom: 24px !important;
+            box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1);
+        }
+        .gb-item-border:nth-last-child(-n+3) {
+
+        }
+        .gd-item {
+
+        }
+        .gd-item {
+            border-right: 1px solid #E0E0E0;
+        }
+        .gd-item:nth-child(3n+3) {
+            border-right: 1px solid #F4F4F4 !important;
+        }
+        /**/
+        .list-menu .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .z-8 {
+            z-index: 8;
+        }
+        .list-menu .dropbtn {
+            color: white;
+            padding: 13px;
+            border: 0;
+            cursor: pointer;
+            display: inline-block;
         }
 
-        .box-input .box__label {
-            top: 156px;
+        .capitalize-first:first-letter {
+            text-transform: uppercase !important;
+        }
+        .fw-700 {
+            font-weight: 700 !important;
+        }
+        .lh-120\% {
+            line-height: 120% !important;
+        }
+        .lh-140\% {
+            line-height: 140% !important;
+        }
+        .box-shadow-primary {
+            box-shadow: inset 0px -2px 0px #FF8C01;
+        }
+        .box-shadow-02 {
+            box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.1);
+        }
+        .barr-black {
+            border: 2px solid #333333;
         }
 
-        .travel-post-gallery {
-            max-height: 510px;
-            margin-bottom: 30px;
-            margin-top: 30px;
+        .item-post {
+            border-bottom: 0.5px solid #BDBDBD;
+        }
+        .item-post:last-child {
+            border: 0.5px solid white;
+        }
+        .align-self {
+            align-self: flex-end!important;
+        }
+        .align-items {
+            align-items: center!important;
+        }
+        .fc-828282 {
+            color: #828282;
+        }
+        .align-self-center {
+            align-self: center!important;
         }
 
-        .travel-post-gallery .travel-post-gallery-body {
-            white-space: unset;
-            min-height: 150px;
-            height: auto;
+        input.focus-visible:focus-visible {
+            border: 1px solid #ff8c00 !important;
+            outline: 1px solid #ff8c00;
+            border-radius: 5px;
         }
+
+        input.focus-visible:focus {
+            border: 1px solid #ff8c00 !important;
+        }
+        textarea.focus-visible:focus {
+            border: 1px solid #ff8c00 !important;
+        }
+
+        @media  screen and (max-width: 768px) {
+            .gody-pagination li.page-item:first-child {
+                display: none !important;
+            }
+            .gody-pagination li.page-item:last-child {
+                display: none !important;
+            }
+        }
+
+        .slick-item {
+
+        }
+        .slick-item .g-item{
+            width: 250px;
+            margin-right: 15px;
+        }
+        .slick-prev {
+            left: -50px;
+        }
+        .slick-next {
+            right: -50px;
+        }
+        .slick-prev, .slick-next {
+            font-size: 0;
+            line-height: 0;
+            position: absolute;
+            top: 50%;
+            display: block;
+            width: 34px;
+            height: 34px;
+            padding: 0;
+            -webkit-transform: translate(0, -50%);
+            -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+            cursor: pointer;
+            color: transparent;
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+        .slick-item .slick-prev:before {
+            display: inline-block;
+            content: "\f104";
+            border-radius: 50%;
+            width: 34px;
+            height: 34px;
+            color: white;
+            font: normal normal normal 14px/1 FontAwesome;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: 23px;
+            font-weight: bold;
+            text-align: center;
+            transition: opacity .1s linear;
+            margin-top: -6px;
+            line-height: 34px;
+            box-shadow: 0 2px 4px 0 rgb(0 0 0 / 30%);
+            letter-spacing: 3px;
+            cursor: pointer;
+            background: #ff8c00;
+        }
+        .slick-item .slick-next:before {
+            display: inline-block;
+            content: "\f105";
+            border-radius: 50%;
+            width: 34px;
+            height: 34px;
+            color: white;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            font-size: 23px;
+            font-weight: bold;
+            text-align: center;
+            transition: opacity .1s linear;
+            margin-top: -6px;
+            line-height: 34px;
+            box-shadow: 0 2px 4px 0 rgb(0 0 0 / 30%);
+            cursor: pointer;
+            background: #ff8c00;
+        }
+        .item-border-top-first:first-child {
+            border-top: 1px solid #e5e5e5;
+        }
+
+        /** scrollbar-vertical */
+        .scrollbar-vertical-white::-webkit-scrollbar {
+
+        }
+        .scrollbar-vertical-white::-webkit-scrollbar {
+            width: 3px;
+            height: 4px;
+        }
+        .scrollbar-vertical-white::-webkit-scrollbar-track {
+            background: white;
+            box-shadow: inset 0 0 2px rgb(0 0 0 / 10%);
+        }
+        .scrollbar-vertical-white::-webkit-scrollbar-thumb {
+            background: white;
+            border: 0.5px solid white;
+        }
+        .horizontal-scrolling::-webkit-scrollbar{
+            display: none;
+        }
+        /** scrollbar-vertical */
+        .outline-0 {
+            outline: 0;
+        }
+        .outline-none {
+            outline: none !important;
+        }
+        .toggler-go-to-place:hover .Userstyle__UserDropDown {
+            display: block !important;
+        }
+        a:hover {
+            text-decoration: none !important;
+        }
+        input.outline-none:focus {
+            outline: none !important;
+        }
+        input.invalid-focus-bottom:invalid:focus {
+            border-bottom: 1px solid red !important;
+        }
+        input.invalid-focus:invalid:focus {
+            border: 1px solid red !important;
+        }
+        textarea.invalid-focus:invalid:focus {
+            border: 1px solid red !important;
+        }
+        /** img */
+        ul#list-images {
+            padding: 0;
+            margin: 0;
+        }
+        ul#list-images li {
+            width: 80px;
+            height: 80px;
+            display: inline-block;
+            text-align: center;
+            margin: 10px;
+            cursor: pointer;
+            position: relative;
+            vertical-align: top;
+        }
+        #list-images li a {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            border-radius: 4px;
+            transition: border-color .2s ease-in-out;
+            border: 1px dashed #1791f2;
+        }
+        #list-images .cl {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: #fafafa;
+        }
+        #list-images li span.title {
+            margin-top: 10px;
+            display: block;
+            color: #666;
+            font-size: 14px;
+        }
+        #list-images li a img {
+            object-fit: cover;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            opacity: .8;
+        }
+        /** img */
+        /** radio checked */
+        .radio-primary {
+            margin: 0.5rem;
+        }
+        .radio-primary input[type=radio] {
+            position: absolute;
+            opacity: 0;
+        }
+        .radio-primary input[type=radio] + .radio-label:before {
+            content: "";
+            background: #f4f4f4;
+            border-radius: 100%;
+            border: 1px solid #b4b4b4;
+            display: inline-block;
+            width: 1.4em;
+            height: 1.4em;
+            position: relative;
+            top: -0.2em;
+            margin-right: 1em;
+            vertical-align: top;
+            cursor: pointer;
+            text-align: center;
+            transition: all 250ms ease;
+        }
+        .radio-primary input[type=radio]:checked + .radio-label:before {
+            background-color: #ff8c00;
+            box-shadow: inset 0 0 0 4px #f4f4f4;
+        }
+        .radio-primary input[type=radio]:focus + .radio-label:before {
+            outline: none;
+            border-color: #3197ee;
+        }
+        .radio-primary input[type=radio]:disabled + .radio-label:before {
+            box-shadow: inset 0 0 0 4px #f4f4f4;
+            border-color: #b4b4b4;
+            background: #b4b4b4;
+        }
+        .radio-primary input[type=radio] + .radio-label:empty:before {
+            margin-right: 0;
+        }
+        .checkbox+.checkbox, .radio-primary+.radio {
+            margin-top: 0px !important;
+        }
+        /** radio */
+
+        .qu-hover--bg--darken:hover {
+            background-color: rgba(0,0,0,0.03)!important;
+        }
+        .fw-700 p {
+            font-weight: 700 !important;
+        }
+        .truncate {
+            display: inline-block;
+            width: 250px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .truncate + a {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: -1px;
+        }
+        .readMore .addText {
+            display: none;
+        }
+        .sidebar{
+            will-change: min-height;
+        }
+
+
+        .sidebar__inner{
+            transform: translate(0, 0); /* For browsers don't support translate3d. */
+            transform: translate3d(0, 0, 0);
+            will-change: position, transform;
+        }
+
+        @media  screen and (max-width: 768px) {
+            .xs\:fs-16_5 {
+                font-size: 16.5px !important;
+            }
+        }
+        .fs-16_5 {
+            font-size: 16.5px !important;
+        }
+        .bg-color-red {
+            border-color: red !important;
+        }
+
+        .box-shadow-primary {
+            box-shadow: inset 0px -1px 0px #ff8c00;
+        }
+
+        .box-shadow-default {
+            box-shadow: inset 0px -1px 0px rgb(0 0 0 / 10%);
+        }
+
     </style>
+    <link rel="stylesheet" href="/public/v7/css/post-detail.css?v=1235">
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
 
     <!--- socket io -->
+    <script src="https://gody.vn/public/v3/js/socket.io-1.4.5.js"></script>
+    <script type="text/javascript">
+        var socket_comment  = io.connect('https://realtime.timvere.vn');
+    </script>
 
     <!-- Facebook Pixel Code -->
     <script>
@@ -179,7 +620,7 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/85808145" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->    <script data-ad-client="ca-pub-2910673600848421" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></head>
-<body class="dest-details" ng-app="MyApp" itemscope="" itemtype="http://schema.org/WebPage">
+<body class="dest-details bg-white" ng-app="MyApp" itemscope="" itemtype="http://schema.org/WebPage">
 <!-- code track facebook -->
 <script>
     window.fbAsyncInit = function() {
@@ -205,149 +646,567 @@
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <!-- home -->
-@include('layouts.partials.nav')
-
-<div class="travel-blog-create-page">
-    <form action="" method="post" accept-charset="utf-8" enctype="multipart/form-data" class="" id="travelPostForm" name="travelPostForm" novalidate="">
-        <input type="hidden" name="_token" value="RwVeLdeMZBiM3GobuQZvQ6wIJmq2n1fyZHEgjYl5">
-        <input type="hidden" value="" name="travelPostID" id="travelPostID">
-        <input type="hidden" value="" name="travelPostUsername" id="travelPostUsername">
-        <input type="hidden" value="" name="travelPostLink" id="travelPostLink">
-        <input type="hidden" value="0" name="travelPostStatus" id="travelPostStatus">
-
-        <input type="hidden" value="aquafina9416@gmail.com" name="checkEmail" id="checkEmail">
-        <input type="hidden" value="" name="checkPhone" id="checkPhone">
-
-        <div class="container-fluid pr-0 pl-0 min-width-1170 travel-post-header">
-            <div class="set-index ">
-
-                <div class="set-bg">
-                </div>
-
-                <div class="set-page">
-                    <!--<a role="button" class="set-add" hreft="#"></a>-->
-                    <div class="dropdown">
-                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="set-add"></button>
-                        <ul class="dropdown-menu hide" aria-labelledby="dLabel">
-                            <li>
-                                <a href="" class="set-add"><i class="fa fa-picture-o mr-10" aria-hidden="true"></i> Thêm hình đại diện</a>
-                            </li>
-                            <li class="hide">
-                                <a href="" class="set-add-video"><i class="fa fa-video-camera mr-10" aria-hidden="true"></i> Thêm video </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <h3 class="mt-2">Hình đại diện</h3>
-                    <p>( Hình ảnh tối ưu: 1350 <strong>x</strong> 480px. )</p>
-                    <div class="clear"></div>
-                    <div class="moxie-shim moxie-shim-html5" style="position: absolute; top: 10vw; left: 275px; width: 67px; height: 67px; overflow: hidden; z-index: -1;">
-                        <input type="file" style="font-size: 999px; opacity: 0; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" accept="image/jpeg,.JPEG,image/png,image/gif" name="setPageInput">
-                    </div>
-                </div>
-
-                <div class="set-title">
-                    <input type="text" value="" placeholder="Tiêu đề albums" name="travelPostTitle" id="travelPostTitle">
-                </div>
-
-                <div class="dropdown set-btn primary-dropdown-more">
-                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-cog" aria-hidden="true"></i> Thay đổi hình đại diện</button>
-                    <ul class="dropdown-menu mt-0 border-radius-0" aria-labelledby="dLabel">
-                        <li>
-                            <a role="button" class="set-add" hreft="#"><i class="fa fa-picture-o" aria-hidden="true"></i> Thay hình ảnh</a>
-                        </li>
-                        <!-- <li>
-                            <a role="button" class="set-add-re-edit" hreft="#"><i class="fa fa-picture-o" aria-hidden="true"></i> Sửa hình ảnh/video</a>
-                        </li> -->
-                        <li>
-                            <a role="button" hreft="#" class="set-add-remove"><i class="fa fa-picture-o" aria-hidden="true"></i> Xóa</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="clip-layer">
-                    <div class="clip-mask cursor-pointer"></div>
-                    <span class="clip-close clip-cancel" aria-hidden="true">×</span>
-                    <div class="clip-panel">
-                        <img id="clip-windown" src="" alt="" style="max-width: 100%; vertical-align: middle; ">
-                    </div>
-                </div>
-            </div>
+<nav class="navbar navbar-primary card5 bg-white ">
+    <div class="container-fluid wmn-1260 pr-5 ps-relative">
+        <div class="navbar-header h-42 mr-5">
+            <a href="/" class="logo"></a>
         </div>
-        <div class="container mb-20 min-width-1170 travel-blog-body" style="min-height: 85vh;">
-            <div class="row">
-                <div class="col-md-9 mt-40">
-                    <div class="form-group pos-r">
-                        <!-- <span class="input-count-top-right"><span class="__count">0</span>/<span>500</span></span> -->
-                        <textarea id="travelPostDescription" name="travelPostDescription" type="text" class="form-control travelPostDescription hmn-120 hmx-500" placeholder="Nội dung chi tiết giới thiệu về album..." rows="4" onkeyup="auto_grow(this)"></textarea>
-                    </div>
 
-                    <div class="form-group" id="_gallery">
-                        <label for="travelPostGalleryIn" class="label-control  cursor-pointer txt-sub-color-blue" style="color: #337ab7;"><i class="fa fa-plus-circle" aria-hidden="true"></i> Albums ảnh (Tối đa 100 ảnh)</label>
-                        <input type="file" name="travelPostGalleryIn" class="hidden" id="travelPostGalleryIn" multiple="" accept="image/jpeg,image/png,image/gif,.JPEG">
-                        <input type="hidden" name="travelPostGalleryRemove" id="travelPostGalleryRemove">
-                        <div class="box-input cursor-pointer">
-                            <label class="box__label" for="travelPostGalleryIn"><strong>Chọn hình,</strong><span class="box__dragndrop"> kéo thả</span>.</label>
-                            <div class="travel-post-gallery gallery-119">
-                                <div class="travel-post-gallery-body">
+        <div class="collapse navbar-collapse px-0 d-flex d-after-none d-before-none jc-space-between ai-center" id="bs-example-navbar-collapse-1" style="display: flex!important;">
+            <ul class="nav navbar-nav p-0 m-0">
+                <li class="ps-relative main-menu-search-wrapper ml-0 h-fit d-flex ai-center">
+                    <label for="inputSearch" id="search-header" class="c-pointer bar-50 bc-primary ba d-flex ai-center jc-space-between fc-sixth fw-normal h-44 w-300 pl-20 pr-8 mb-0">
+                        <span>Bạn muốn đi đâu?</span>
+                        <div class="bar-circle bg-primary d-flex ai-center jc-center p-8">
+                            <img src="/public/v6/js/ionicons/5.5.2/svg/search-outline.svg" class="ml-0 w-16 filter-white">
+                        </div>
+                    </label>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right mrn-6 d-flex ai-center">
+                <li class="py-0 px-0 h:bg-grayf2 bar-50 h-42 px-12 t-all t-duration-slow mr-0">
+                    <a class="h-fit text-center p-0 fc-sixth bg-transparent d-flex fw-500 ai-center jc-center px-6 mt-0 w-auto c-pointer" href="https://gody.vn/diem-den">
+                        <img src="/public/v6/js/ionicons/5.5.2/svg/earth.svg" class="w-20 mtn-3 mr-8" />
+                        <p class="m-0 p-0 fs-16 fc-nineth">Điểm đến</p>
+                    </a>
+                </li>
+                <li class="py-0 px-0 h:bg-grayf2 bar-50 h-42 px-12 t-all t-duration-slow mr-0">
+                    <a class="h-fit text-center p-0 fc-sixth bg-transparent d-flex fw-500 ai-center jc-center px-6 mt-0 w-auto c-pointer" href="https://gody.vn/ban-do-du-lich/viet-nam">
+                        <img class="w-20 mtn-4 filter-black va-middle mr-8" src="/public/v6/images/logo-filled-100x100.png">
+                        <p class="m-0 p-0 fs-16 fc-nineth">My Travel Map</p>
+                    </a>
+                </li>
+
+                <li class="dropdown nav-add-box py-0 pr-1 pl-5 h:bg-grayf2 bar-50 px-12 t-all t-duration-slow">
+                    <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="nav-button-add fw-500 bg-transparent py-0 px-6 h-fit d-flex ai-center jc-center c-pointer">
+                        <img src="/public/v6/js/ionicons/5.5.2/svg/pencil.svg" class="w-18 mb-1 mr-8" width="23"/>
+                        <p class="m-0 p-0 fs-16 fc-nineth">Viết ngay</p>
+                    </a>
+
+                    <ul class="dropdown-menu bar-0 mtn-1 " aria-labelledby="nav-button-add">
+                        <!-- <li class="ps-absolute w-10 h-10 baw1 bas-solid bc-tenth r12 tn6 rotate-1/8 bg-white brs-unset bbs-unset zn-1"></li> -->
+                        <li class="mt-10">
+                            <a href="https://gody.vn/blog/viet-bai/note" class="fc-sixth" id=" " style="color: #ff8c00 !important;">
+                                <img src="/public/v6/js/ionicons/5.5.2/svg/create-outline.svg" class="filter-primary w-24 mr-8">Chia sẻ trải nghiệm & review
+                            </a>
+                        </li>
+
+                        <li class="mt-10">
+                            <a href="https://gody.vn/photo-blog/dang-bai/note" class="fc-sixth" id=" ">
+                                <img src="/public/v6/js/ionicons/5.5.2/svg/image-outline.svg" class="filter-sixth w-24 mr-8">Chia sẻ hình ảnh
+                            </a>
+                        </li>
+
+                        <li class="mt-10">
+                            <a href=/photo-blog/dang-bai/facebook class="fc-sixth" id=" ">
+                                <img src="/public/v6/js/ionicons/5.5.2/svg/images-outline.svg" class="filter-sixth w-24 mr-8">Chia sẻ hình từ Facebook
+                            </a>
+                        </li>
+
+                        <li class="mt-10 mb-10">
+                            <a href="https://gody.vn/hoi-dap" class="fc-sixth" id=" ">
+                                <img src="/public/v6/js/ionicons/5.5.2/svg/people-outline.svg" class="filter-sixth w-24 mr-8">Hỏi đáp du lịch
+                            </a>
+                        </li>
+
+                        <li class="mt-10 mb-10">
+                            <a href="https://gody.vn/lich-trinh-du-lich" class="fc-sixth" id=" ">
+                                <img src="/public/v6/js/ionicons/5.5.2/svg/footsteps-outline.svg" class="filter-sixth w-24 mr-8">Lập & chia sẻ hành trình
+                            </a>
+                        </li>
+
+                        <li class="mt-10 mb-10">
+                            <a href="/cong-tac-vien/viet-bai/note" class="fc-sixth">
+                                <img src="/public/v6/js/ionicons/5.5.2/svg/trail-sign-outline.svg" class="filter-sixth w-24 mr-8">Chia sẻ, giới thiệu địa điểm mới
+                            </a>
+                        </li>
+
+                    </ul>
+                    <style>
+                        .nav-add-box{height: 42px;padding: 5px;}
+                        .nav-add-box ul.dropdown-menu{margin-top:-1px;border-radius:0;}
+                        .nav-add-box ul.dropdown-menu:before{content:'';display:block;width:10px;height:10px;position:absolute;border:1px solid #ccc;right:12px;top:-5px;transform:rotate(45deg);background:#fff;border-right-color:transparent;border-bottom-color:transparent;z-index:-1}
+                        .nav-add-box ul li{margin-top:10px;}
+                    </style>
+                </li>
+
+                <li class="dropdown notification-box py-0 px-0 ml-0 h:bg-grayf2 bar-50 h-42 px-12 t-all t-duration-slow">
+                    <a class="h-fit text-center p-0 fc-sixth bg-transparent notification-bell d-flex fw-500 ai-center jc-center px-6 mt-0 w-auto c-pointer" id="notification-bell" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Thông báo">
+                        <img src="/public/v6/js/ionicons/5.5.2/svg/notifications.svg" class="w-18 mr-8 mb-1" width="23"/>
+                        <p class="m-0 p-0 fs-16 fc-nineth">Thông báo</p>
+                        <span class="notification-bell-count text-center ps-absolute fs-10 bg-primary fc-white bar-circle t4 l18 w-16 h-16 lh-lg hide">1</span>
+                    </a>
+                    <ul class="dropdown-menu bar-8 card5 bn" aria-labelledby="notification-bell">
+                        <div class="notification-wrapper">
+                            <div class="notification-menu d-flex ai-center jc-space-between p-0">
+                                <button class="btn btn-default fl-1 bn active" data-id="3">Tất cả <span class="notification-bell-count hide">3</span></button>
+                                <button class="btn btn-default fl-1 bn" data-id="1">Ưa thích </button>
+                                <button class="btn btn-default fl-1 bn" data-id="2">Gần đây <span class="notification-bell-count hide">3</span></button>
+                            </div><!-- /.notificationMenu -->
+
+                            <div class="notification-content" id="notificationContent">
+                                <div class="noti-c-post hide" data-id="1">
+                                    <div class="notification-item">
+                                        <p class="color_sub margin_top_10 text-center" style="font-size: 12px">Chưa có thông báo!</p>
+                                    </div>
+                                </div>
+                                <div class="noti-c-deal hide" data-id="2" id="noti-c-deal">
+                                    <div class="notification-item">
+                                        <p class="color_sub margin_top_10 text-center" style="font-size: 12px">Chưa có thông báo!</p>
+                                    </div>
+                                </div>
+                                <div class="notification-content-active" data-id="3" id="notification-content-active">
+                                    <div class="loadingstream" style="display:block;">
+                                        <div class="animated-background height-50 overflow-hidden">
+                                            <div class="background-masker header-top"></div>
+                                            <div class="background-masker header-left"></div>
+                                            <div class="background-masker header-right"></div>
+                                            <div class="background-masker header-bottom"></div>
+                                            <div class="background-masker subheader-left"></div>
+                                            <div class="background-masker subheader-right"></div>
+                                            <div class="background-masker subheader-bottom"></div>
+                                            <div class="background-masker content-top"></div>
+                                            <div class="background-masker content-first-end"></div>
+                                            <div class="background-masker content-second-line"></div>
+                                            <div class="background-masker content-second-end"></div>
+                                            <div class="background-masker content-third-line"></div>
+                                            <div class="background-masker content-third-end"></div>
+                                        </div>
+                                        <div class="animated-background height-50 overflow-hidden">
+                                            <div class="background-masker header-top"></div>
+                                            <div class="background-masker header-left"></div>
+                                            <div class="background-masker header-right"></div>
+                                            <div class="background-masker header-bottom"></div>
+                                            <div class="background-masker subheader-left"></div>
+                                            <div class="background-masker subheader-right"></div>
+                                            <div class="background-masker subheader-bottom"></div>
+                                            <div class="background-masker content-top"></div>
+                                            <div class="background-masker content-first-end"></div>
+                                            <div class="background-masker content-second-line"></div>
+                                            <div class="background-masker content-second-end"></div>
+                                            <div class="background-masker content-third-line"></div>
+                                            <div class="background-masker content-third-end"></div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </ul>
+                </li>
 
-
-                    <div class="form-group text-right clearfix">
-                        <div class="checkbox pull-left hide"> <label> <input type="checkbox">Hình ảnh do bạn thực hiện</label> </div>
-
-                        <a class="btn btn-default travel-post-btn-draft">Lưu nháp</a>
-                        <button class="btn btn-primary travel-post-btn-submit box-shadow-hover" id="pc-dang-hinh-thanh-cong-nut-viet-ngay">Đăng bài</button>
-                    </div>
-
-                </div>
-                <div class="col-md-3 sidebar mt-30">
-                    <div class="sticky mt-10">
-                        <div class="card1 content-card mt-12 travel-post-box">
-                            <h2 class="hndle ui-sortable-handle"><span>Tags </span><span class="fw-normal">(địa điểm thực hiện)</span></h2>
-                            <div class="dropdown inside">
-                                <input type="text" placeholder="Nhập & Tìm kiếm" class="form-control cursor-pointer color_sub_blue pl-0 input-default-format travel-post-tag-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" aria-invalid="false" name="travelPostTagSearch" focus="">
-                                <ul class="dropdown-menu travel-post-tag-dropdown-list" id="hashtags-list">
-                                    Nhập từ khóa...
-                                </ul>
+                <li class="dropdown d-flex ai-center jc-center mr-20 ml-0 h-42 px-12 h:bg-grayf2 bar-50">
+                    <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="clearfix py-0 px-6 bg-transparent fc-nineth d-flex ai-center jc-center h-fit ml-6">
+                        <div class="d-flex ai-center mr-8">
+                            <div class="userImg mt-0 w-23 h-23 bn">
+                                <div class="bg-no-repeat bg-cover bg-center bar-circle _3mf5 ps-relative w-fit h-fit" style="background-image: url('https://lh3.googleusercontent.com/a/AGNmyxY2QTxSHXOC8M6mNvwYfugk6xvuyTsobWF1C73-=s96-c')"></div>
                             </div>
-                            <div class="travel-post-tag-list">
-                            </div>
-                            <input type="hidden" name="travelPostTags" id="travelPostTags" value="">
-                            <input type="hidden" name="travelPostTagsRemove" id="travelPostTagsRemove">
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
 
-    <div class="set-video-wrap">
-        <div class="cursor-pointer set-video-bg"></div>
-        <div class="set-video-panel">
-            <div class="inner pr-20 pl-20 pt-20 pb-20">
-                <div class="form-group mb-0 clearfix">
-                    <div class="pull-left inpwrap">
-                        <input type="text" class="form-control border-radius-25" placeholder="Sử dụng link youtube.com" autofocus="autofocus">
-                    </div>
-                    <div class="pull-right">
-                        <button class="btn btn-default border-radius-25">Thêm ngay</button>
-                    </div>
-                </div>
-            </div>
+                        <div class="d-flex ai-center jc-center">
+                            <p class="m-0 p-0 fs-16 fw-500 truncate-line lineclamp1 wmx-100 fc-nineth ta-center">T&uacute; Đ&agrave;o</p>
+                            <img src="/public/v6/js/ionicons/5.5.2/svg/caret-down.svg" width="16" class="filter-sixth mb-0"/>
+                        </div>
+                    </a>
+
+                    <ul class="dropdown-menu account-dropdown bar-8 w-250 card6 bn mt-7">
+                        <li class="ps-absolute w-10 h-10 baw1 bas-solid bc-tenth r12 tn6 rotate-1/8 bg-white brs-unset bbs-unset zn-1"></li>
+
+                        <li>
+                            <a href="https://gody.vn/blog/aquafina94164928" class="fc-fourteenth py-10 px-15">Trang cá nhân</a>
+                        </li>
+
+                        <li>
+                            <a href="https://gody.vn/blog/form/dang-ky" class="fc-fourteenth py-10 px-15">Kiếm tiền cùng Gody</a>
+                        </li>
+                        <li>
+                            <a href="https://gody.vn/blog/aquafina94164928/settings" id="thiet-lap-trang-blog-trong-profile" class="fc-fourteenth py-10 px-15">Tạo Blog du lịch</a>
+                        </li>
+                        <li>
+                            <a href="https://gody.vn/ban-do-du-lich/viet-nam" id="cap-nhat-mytravelmap-trong-profile" class="fc-fourteenth py-10 px-15">My Travel Map</a>
+                        </li>
+                        <li>
+                            <a href="https://gody.vn/lich-trinh-du-lich" class="fc-fourteenth py-10 px-15">Tạo lịch trình</a>
+                        </li>
+                        <li>
+                            <a href="https://gody.vn/vi-du-lich" class="fc-fourteenth py-10 px-15">Ví du lịch</a>
+                        </li>
+                        <li>
+                            <a href="https://gody.vn/blog/aquafina94164928/settings" class="fc-fourteenth py-10 px-15">Tài khoản</a>
+                        </li>
+
+                        <li class="bt bc-eleventh mt-6 mb-6"></li>
+                        <li>
+                            <a href="https://gody.vn/dang-xuat" class="fc-fourteenth py-10 px-15">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="dropdown user-redirect-mytravelmap" style="height: 56px;">
+                    <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" style="padding:0;">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <button class="close" style=" top:8px;right:12px;position:absolute;"><span aria-hidden="true">×</span></button>
+                        <p style="margin-bottom: 6px;">Chào <b>T&uacute; Đ&agrave;o</b>!</p>
+                        <p style="margin:0; line-height: 23px;">Hãy tạo <a href="https://gody.vn/ban-do-du-lich/viet-nam" style="color:#ff8c00 !important;" >My Travel Map </a>ngay để lưu trữ, chia sẻ hành trình du lịch, khám phá của bạn và chia sẻ với mọi người</p>
+                    </ul>
+                    <style>
+                        .user-redirect-mytravelmap .dropdown-menu:before{content:'';display:block;width:10px;height:10px;position:absolute;border:1px solid #ccc;right:12px;top:-5px;transform:rotate(45deg);background:#fff;border-right-color:transparent;border-bottom-color:transparent;z-index:-1}
+                        .user-redirect-mytravelmap .dropdown-menu{margin-right:3px;margin-top:-1px !important;border-top-left-radius:4px !important;border-top-right-radius:4px!important; min-width:300px; padding:15px;}
+                    </style>
+                </li>
+
+                <li class="dropdown create-map-success-alert" style="height: 56px;">
+                    <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" style="padding:0;">
+                    </a>
+                    <ul class="dropdown-menu" style="z-index: 1;">
+                        <button class="close" style="top:8px;right:12px;position:absolute;"><span aria-hidden="true">×</span></button>
+                        <script>
+                            document.querySelector(".create-map-success-alert .close").addEventListener("click", function(){
+                                document.querySelector(".create-map-success-alert .dropdown-menu").style.display = 'none';
+                            });
+                        </script>
+                        <p style="margin-bottom:6px;text-align:center;"><b>Chúc mừng!</b>!</p>
+                        <p style=" text-align:center;color:#ff8c00;font-size:30px;margin:0;"><i class="fa fa-bell-o" aria-hidden="true"></i></p>
+                        <p style="margin:0;line-height:23px; text-align: center;">Bạn đã có 20,000VND trong tài khoản. <a href="https://gody.vn/qua-tang" class="fc-nineth fw-bold">Bạn muốn sử dụng ngay ?</a></p>
+                    </ul>
+                    <style>
+                        .create-map-success-alert .dropdown-menu:before{content:'';display:block;width:10px;height:10px;position:absolute;border:1px solid #ccc;right:12px;top:-5px;transform:rotate(45deg);background:#fff;border-right-color:transparent;border-bottom-color:transparent;z-index:-1}
+                        .create-map-success-alert .dropdown-menu{margin-right:3px;margin-top:-1px !important;border-top-left-radius:4px !important;border-top-right-radius:4px!important; min-width:300px; padding:15px;}
+                    </style>
+                </li>
+            </ul>
         </div>
-    </div><!-- /.set-video-wrap -->
-</div>
-<div class="post-link-ewrap">
-    <span class="arrow"></span>
-    <div>
-        <a href="#" class="btn btn-default border-radius-0 border-none edit-link" title="Edit link"><i class="fa fa-pencil" aria-hidden="true"></i></a>
-        <a href="#" class="btn btn-default border-radius-0 border-none unlink" title="Unlink"><i class="fa fa-chain-broken" aria-hidden="true"></i></a>
+    </div>
+</nav>
+
+
+
+
+<div class="w-fit d-block ps-relative" style="height: 274px;">
+    <img
+            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/banner/g4jtlwrsmowpydbwv0tg.webp"
+            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/banner/g4jtlwrsmowpydbwv0tg.webp"
+            class="object-cover object-center h-fit w-fit lazy-load"
+    >
+    <img
+            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
+            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
+            class="lazy-load h:o50 w-fit h-fit" style="position: absolute;left: 0;overflow: hidden;"
+    >
+    <div class="w-fit d-flex ai-center ps-absolute t0" style="height: 274px;">
+        <h2 class="fc-white fw-700 fs-48 p-0 m-0 w-fit ta-center">VỀ CHÚNG TÔI</h2>
     </div>
 </div>
+
+
+<section class="w-fit d-block">
+    <div class="container ps-relative">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="w-fit d-block">
+                    <h3 class="fc-fourteenth fs-36 fw-700 mb-10 p-0 m-0">Về Gody</h3>
+                    <p class="fc-fourteenth fs-16 fw-400 w-fit d-block">
+                        Gody.vn là trang thông tin cộng đồng du lịch chia sẻ kinh nghiệm du lịch và giới thiệu điểm đến hấp dẫn ở Việt Nam và Thế Giới. <br/>
+                        Gody.vn được thành lập vào năm 2016 bởi những con người đam mê du lịch và công nghệ. Có thể nói Gody là sản phẩm được tạo ra từ những người yêu du lịch cho những người yêu du lịch.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="w-fit d-flex">
+                    <img
+                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-gody-2.jpg"
+                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-gody-2.jpg"
+                            style="height: 248px;"
+                            class="lazy-load w-fit object-cover object-center bar-8 d-h:o50"
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img
+                        data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/Rectangle-620.png"
+                        data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/Rectangle-620.png"
+                        class="lazy-load w-fit bar-8 h-fit object-cover object-center"
+                        style="height: 284px"
+                >
+            </div>
+            <div class="col-md-6">
+                <h3 class="fc-fourteenth fs-36 fw-700 mb-10 p-0 m-0">My Travel Map <br/> Bản đồ du lịch cá nhân</h3>
+                <p class="fc-fourteenth fs-16 fw-400">Check-in bản đồ du lịch Việt Nam và Thế giới để lưu lại dấu chân của mình, chia sẻ cùng bạn bè.</p>
+                <ul class="fc-fourteenth fs-16 fw-400">
+                    <li>Bạn đã khám phá được bao nhiêu % Việt Nam? Đã đến được bao nhiêu tỉnh thành?</li>
+                    <li>Bạn đã khám phá được bao nhiêu % thế giới? Đã đến được bao nhiêu nước?</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="fc-fourteenth fs-36 fw-700 mb-10 p-0 m-0 w-fit d-block">Lịch trình du lịch</h3>
+                <p class="fc-fourteenth fs-16 fw-400 w-fit d-block">Tạo lịch trình du lịch theo mẫu một cách dễ dàng, nhanh chóng cho chuyến đi của bạn. Dùng để chia sẻ với bạn bè, để apply xin visa,...</p>
+                <ul class="fc-fourteenth fs-16 fw-400 w-fit d-block">
+                    <li>Tạo lịch trình</li>
+                    <li>Tuỳ chỉnh</li>
+                    <li>Hoàn tất</li>
+                    <li>Let's go</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img
+                        data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/Rectangle-621.png"
+                        data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/Rectangle-621.png"
+                        class="lazy-load w-fit bar-8 h-fit object-cover object-center"
+                        style="height: 284px"
+                >
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img
+                        data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/Rectangle-622.png"
+                        data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/Rectangle-622.png"
+                        class="lazy-load w-fit bar-8 h-fit object-cover object-center"
+                        style="height: 284px"
+                >
+            </div>
+            <div class="col-md-6">
+                <h3 class="fc-fourteenth fs-36 fw-700 mb-10 p-0 m-0 d-block w-fit">Blog <br/> du lịch <br/>cá nhân</h3>
+                <p class="fc-fourteenth fs-16 fw-400 w-fit d-block">Tạo và viết blog của riêng mình. Nơi bạn có thể chia sẻ trải nghiệm về chuyến đi, chia sẻ những hình ảnh được ghi lại trên những chặng hành trình. Đơn giản và dễ dàng nhưng lại giúp cho rất nhiều người sắp đi du lịch.</p>
+                <ul class="fc-fourteenth fs-16 fw-400 w-fit d-block">
+                    <li>
+                        <a
+                                class="fc-fourteenth fs-16 fw-400 w-fit d-block h:fc-primary"
+                                href="https://gody.vn/blog/viet-bai/note"
+                                data-toggle="modal"
+                        >Chia sẻ bài viết</a>
+
+                    </li>
+                    <li>
+                        <a
+                                class="fc-fourteenth fs-16 fw-400 w-fit d-block h:fc-primary"
+                                href="https://gody.vn/photo-blog/dang-bai/note"
+                                data-toggle="modal"
+                        >Chia sẻ hình ảnh
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row" style="border: 1px solid #828282;"></div>
+    </div>
+</section>
+<div class="w-fit d-block">
+    <h2 class="fc-fourteenth fs-36 fw-700 ta-center p-0 m-0">Những con số biết nói</h2>
+</div>
+<section>
+    <div class="container">
+        <div class="w-fit d-flex ai-top fw-wrap jc-space-between">
+            <div
+                    class="ps-relative d-flex fd-column p-20 bar-8 ta-center mb-15"
+                    style="
+                    width: calc( 100% / 3 - 15px);
+                    background: #FAF1EC;
+                "
+            >
+                <span class="w-fit d-flex ai-center" style="justify-content: center!important;">
+                    <img
+                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/Vector-2.png"
+                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/Vector-2.png"
+                            class="lazy-load"
+                    />
+                </span>
+                <span class="fc-primary fw-600 fs-56 d-block">300.000+</span>
+                <span class="fc-black fs-24 fw-600 d-block">Thành viên</span>
+            </div>
+            <div
+                    class="ps-relative d-flex fd-column p-20 bar-8 ta-center mb-15"
+                    style="
+                    width: calc( 100% / 3 - 15px);
+                    background: #DFFDEC;
+                "
+            >
+                <span class="w-fit d-flex ai-center" style="justify-content: center!important;">
+                    <img
+                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/Vector-3.png"
+                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/Vector-3.png"
+                            class="lazy-load"
+                    />
+                </span>
+                <span class="fw-600 fs-56" style="color:#219653;">20.000+</span>
+                <span class="fc-black fs-24 fw-600">Bài viết</span>
+            </div>
+            <div
+                    class="ps-relative d-flex fd-column p-20 bar-8 ta-center mb-15"
+                    style="
+                    width: calc( 100% / 3 - 15px);
+                    background: #FAF1EC;
+                "
+            >
+                <span class="w-fit d-flex ai-center" style="justify-content: center!important;">
+                    <img
+                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/Vector-4.png"
+                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/Vector-4.png"
+                            class="lazy-load"
+                    />
+                </span>
+                <span class="fc-primary fw-600 fs-56">45.000+</span>
+                <span class="fc-black fs-24 fw-600">Comment tương tác</span>
+            </div>
+            <div
+                    class="ps-relative d-flex fd-column p-20 bar-8 ta-center mb-15"
+                    style="
+                    width: calc( 100% / 3 - 15px);
+                    background: #DFF2FD;
+                "
+            >
+                <span class="w-fit d-flex ai-center" style="justify-content: center!important;">
+                    <img
+                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/Group.png"
+                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/Group.png"
+                            class="lazy-load"
+                    />
+                </span>
+                <span class="fw-600 fs-56" style="color:#2F80ED;">199+</span>
+                <span class="fc-black fs-24 fw-600">Quốc gia được liệt kê</span>
+            </div>
+            <div
+                    class="ps-relative d-flex fd-column p-20 bar-8 ta-center mb-15"
+                    style="
+                    width: calc( 100% / 3 - 15px);
+                    background: #FAF1EC;
+                "
+            >
+                <span class="w-fit d-flex ai-center" style="justify-content: center!important;">
+                    <img
+                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/Vector-5.png"
+                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/Vector-5.png"
+                            class="lazy-load"
+                    />
+                </span>
+                <span class="fc-primary fw-600 fs-56">2.000+</span>
+                <span class="fc-black fs-24 fw-600">Thành phố</span>
+            </div>
+            <div
+                    class="ps-relative d-flex fd-column p-20 bar-8 ta-center mb-15"
+                    style="
+                    width: calc( 100% / 3 - 15px);
+                    background: #DFF2FD;
+                "
+            >
+                <span class="w-fit d-flex ai-center" style="justify-content: center!important;">
+                    <img
+                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/Vector-6.png"
+                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/Vector-6.png"
+                            class="lazy-load"
+                    />
+                </span>
+                <span class="fw-600 fs-56" style="color:#2F80ED;">30.000+</span>
+                <span class="fc-black fs-24 fw-600">Điểm tham quan</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <h3 class="w-fit d-block ta-center ai-center fs-36 fc-fourteenth fw-700 p-0 m-0">Báo chí nói gì về chúng tôi</h3>
+        </div>
+
+        <div class="row pt-40 pb-40">
+            <div class="d-flex w-fit ai-center" style="justify-content: center!important;">
+                <a class="w-130 h-30 d-flex mx-10">
+                    <img
+                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-vnexpress.jpg"
+                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-vnexpress.jpg"
+                            class="lazy-load "
+                    />
+                </a>
+                <a class="w-130 h-30 d-flex mx-10">
+                    <img
+                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-vietnamnet.jpg"
+                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-vietnamnet.jpg"
+                            class="lazy-load "
+                    />
+                </a>
+                <a class="w-130 h-30 d-flex mx-10">
+                    <img
+                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-vietcetera.jpg"
+                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-vietcetera.jpg"
+                            class="lazy-load "
+                    />
+                </a>
+                <a class="w-130 h-30 d-flex mx-10">
+                    <img
+                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-tech-in-asia.jpg"
+                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-tech-in-asia.jpg"
+                            class="lazy-load "
+                    />
+                </a>
+                <a class="w-130 h-30 d-flex mx-10">
+                    <img
+                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-e-27.jpg"
+                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-e-27.jpg"
+                            class="lazy-load "
+                    />
+                </a>
+
+            </div>
+            <div class="d-flex w-fit ai-center" style="justify-content: center!important;">
+
+                <a class="w-130 h-30 d-flex mx-10">
+                    <img
+                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-bao-thanh-nien.jpg"
+                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-bao-thanh-nien.jpg"
+                            class="lazy-load "
+                    />
+                </a>
+                <a class="w-130 h-30 d-flex mx-10">
+                    <img
+                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-bao-dan-tri.jpg"
+                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-bao-dan-tri.jpg"
+                            class="lazy-load "
+                    />
+                </a>
+                <a class="w-130 h-30 d-flex mx-10">
+                    <img
+                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-bao tuoi tre.jpg"
+                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-bao tuoi tre.jpg"
+                            class="lazy-load"
+                    />
+                </a>
+                <a class="w-130 h-30 d-flex mx-10">
+                    <img
+                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-24h.jpg"
+                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/about/logo/logo-24h.jpg"
+                            class="lazy-load"
+                    />
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 
 <div id="modal-destination" class="modal fade modal-simple" role="dialog">
     <div class="modal-dialog modal-lg" style="max-width: 750px; margin-top:20%; text-align: center;">
@@ -425,7 +1284,102 @@
         </div>
     </div>
 </div>
-@include('layouts.partials.footer')
+<footer class="bg-eighth bt btw4 bc-primary mt-0">
+    <div class="container wmn-1170">
+        <div class="row pt-0">
+            <div class="col-md-4">
+                <a href="/" class="d-block pt-20">
+                    <img src="/public/images/logo-new.png" alt="Gody Logo" class="h-40 w-130 d-block lazyload">
+                </a>
+                <div class="mt-12">
+                    <p class="fc-sixth mb-5">Mạng xã hội du lịch Việt Nam</p>
+                    <p class="fc-sixth mb-0">Giấy phép: 573/GP-BTTTT cấp ngày 20/11/2017</p>
+                </div>
+                <div class="mt-20 d-flex">
+                    <a href="https://www.facebook.com/GodyTravel/" target="_blank" rel="noreferrer nofollow" class="w-50 h-50 d-flex ai-center jc-center bg-white bar-circle card6 text-center fc-fourth fs-24 lh-50 h:card3 t-duration-slow t-all t-delay-0" id="icon-mang-xa-hoi-facebook-gody-footer-trang-chu">
+                        <span class="fc-transparent ps-absolute">FB</span>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCtQWjnshk_9PPyl9M-Ip7aQ" target="_blank" rel="noreferrer nofollow" class="w-50 h-50 d-flex ai-center jc-center bg-white bar-circle ml-10 card6 text-center fc-thirteenth fs-24 lh-50 h:card3 t-duration-slow t-all t-delay-0" id="icon-mang-xa-hoi-youtube-gody-footer-trang-chu">
+                        <span class="fc-transparent ps-absolute">YT</span>
+                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/gody_travel/" target="_blank" rel="noreferrer nofollow" class="w-50 h-50 d-flex ai-center jc-center bg-white bar-circle ml-10 card6 text-center fs-24 lh-50 h:card3 t-duration-slow t-all t-delay-0" id="icon-mang-xa-hoi-instagram-gody-footer-trang-chu">
+                        <span class="fc-transparent ps-absolute">IG</span>
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2 pt-20">
+                <p class="fs-18 fc-sixth mb-0">
+                    Về Gody
+                </p>
+                <span class="d-inline-block w-30 bb bc-primary baw2"></span>
+                <div class="mt-12">
+                    <a href="https://gody.vn/gioi-thieu" class="show fc-sixth h:fc-primary">Giới thiệu</a>
+                    <a href="https://gody.vn/lien-he" class="show fc-sixth h:fc-primary mt-5">Liên hệ</a>
+                    <a href="/bao-mat-thong-tin" class="show fc-sixth h:fc-primary mt-5">Chính sách bảo mật</a>
+                    <a href="/quy-dinh-su-dung" class="show fc-sixth h:fc-primary mt-5">Chính sách quyền riêng tư</a>
+                    <a href="#" class="show fc-sixth h:fc-primary mt-5">Chính sách sử dụng</a>
+                </div>
+            </div>
+            <div class="col-md-2 pt-20">
+                <p class="fs-18 fc-sixth mb-0">
+                    Du lịch
+                </p>
+                <span class="d-inline-block w-30 bb bc-primary baw2"></span>
+                <div class="mt-12">
+                    <a href="https://gody.vn/du-lich" class="show fc-sixth h:fc-primary">Tin tức</a>
+                    <a href="#" class="show fc-sixth h:fc-primary mt-5">Khuyến mãi</a>
+                    <a href="https://gody.vn/diem-den" class="show fc-sixth h:fc-primary mt-5">Điểm đến</a>
+                    <a href="#" class="show fc-sixth h:fc-primary mt-5" rel="nofollow">Ẩm thực</a>
+                    <a href="#" class="show fc-sixth h:fc-primary mt-5" rel="nofollow">Travel mag</a>
+                </div>
+            </div>
+            <div class="col-md-2 pt-20">
+                <p class="fs-18 fc-sixth mb-0">
+                    Tiện ích
+                </p>
+                <span class="d-inline-block w-30 bb bc-primary baw2"></span>
+                <div class="mt-12">
+                    <a href="https://gody.vn/lich-trinh-du-lich" class="show fc-sixth h:fc-primary">Lên lịch trình du lịch</a>
+                    <a href="https://gody.vn/ban-do-du-lich/viet-nam" class="show fc-sixth h:fc-primary mt-5">Tạo bảo đồ du lịch - My Travel Map</a>
+                    <a href="https://gody.vn/hoi-dap" class="show fc-sixth h:fc-primary mt-5">Hỏi đáp du lịch</a>
+                    <a href="https://gody.vn/blog/viet-bai/note" class="show fc-sixth h:fc-primary mt-5">Viết blog du lịch</a>
+                    <a href="https://gody.vn/diem-den" class="show fc-sixth h:fc-primary mt-5">Điểm đến</a>
+                </div>
+            </div>
+            <div class="col-md-2 pt-20">
+                <p class="fs-18 fc-sixth mb-0 h-26">Hợp tác</p>
+                <!-- <span class="d-inline-block w-30 bb baw1 bc-transparent"></span> -->
+                <span class="d-inline-block w-30 bb bc-primary baw2"></span>
+                <div class="mt-12">
+                    <a href="#" class="show fc-sixth h:fc-primary tien-ich-du-lich">Dành cho Blogger</a>
+                    <a href="#" class="show fc-sixth h:fc-primary mt-5 tien-ich-du-lich">Dành cho doanh nghiệp</a>
+                    <a href="#" class="show fc-sixth h:fc-primary mt-5 tien-ich-du-lich">Dành cho đại lý du lịch</a>
+                    <a href="#" class="show fc-sixth h:fc-primary mt-5 tien-ich-du-lich">Hợp tác marketing</a>
+                </div>
+            </div>
+        </div>
+        <div class="row pb-30 mt-0">
+            <div class="col-md-4">
+                <p class="fs-18 fc-sixth mb-0">
+                    Tải ứng dụng "GODY"
+                </p>
+                <span class="w-30 bb bc-primary baw2 d-inline-block"></span>
+                <div class="mt-25">
+                    <a href="https://apps.apple.com/vn/app/gody/id1570393254" target="_blank" rel="noreferrer nofollow" class="text-center d-inline-block wmn-120 h-40 lh-40 fc-transparent overflow-hidden" style="background-image: url('/public/v5/images/sprites1.png'); background-position: 0px 40px;width: 120px;">Tải ứng dụng "GODY"</a>
+                    <a href="https://play.google.com/store/apps/details?id=vn.gody.dulich" target="_blank" rel="noreferrer nofollow" class="text-center d-inline-block wmn-136 h-40 lh-40 ml-12 fc-transparent overflow-hidden" style="background-image: url('/public/v5/images/sprites1.png'); background-position: 136px 40px;width: 136px;">Tải ứng dụng "GODY"</a>
+                </div>            </div>
+
+        </div>
+    </div>
+
+    <div class="bg-eleventh text-center fc-nineth h-36 lh-36">
+        Copyright &copy; 2017 - 2023
+    </div>
+</footer>
+
 <div class="modal fade" id="modal-search-v2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" ref="modalSearchV2" style="background: rgba(255,255,255,0.85);">
     <div class="modal-dialog modal-lg bar-8" role="document">
         <div class="modal-content bar-8">
@@ -892,8 +1846,8 @@
                     </template>
 
                     <!-- <default-destination :wrap-class="'bg-white'"
-            v-else-if="(isActive && !loaded && dataEmpty) || (isActive && !searchInput)"
-          ></default-destination> -->
+                      v-else-if="(isActive && !loaded && dataEmpty) || (isActive && !searchInput)"
+                    ></default-destination> -->
 
                 </div>
             </div>
@@ -921,15 +1875,15 @@
                             <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Vé tham quan</p>
                         </a>
                         <!--
-            <a target="_blank" href="https://vemaybay.gody.vn" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pt-12 pb-5 w-27%" rel="noreferrer,nofollow" title="Vé máy bay">
-              <img src="/public/v6/js/ionicons/5.5.2/svg/airplane.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Vé máy bay">
-              <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Vé máy bay</p>
-            </a>
-            <a target="_blank" href="https://vethamquan.vn" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pt-12 pb-5 w-27%" rel="noreferrer,nofollow" title="Vé tham quan">
-              <img src="/public/v6/js/ionicons/5.5.2/svg/ticket.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Vé tham quan">
-              <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Vé tham quan</p>
-            </a>
-            -->
+                        <a target="_blank" href="https://vemaybay.gody.vn" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pt-12 pb-5 w-27%" rel="noreferrer,nofollow" title="Vé máy bay">
+                          <img src="/public/v6/js/ionicons/5.5.2/svg/airplane.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Vé máy bay">
+                          <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Vé máy bay</p>
+                        </a>
+                        <a target="_blank" href="https://vethamquan.vn" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pt-12 pb-5 w-27%" rel="noreferrer,nofollow" title="Vé tham quan">
+                          <img src="/public/v6/js/ionicons/5.5.2/svg/ticket.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Vé tham quan">
+                          <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Vé tham quan</p>
+                        </a>
+                        -->
                         <a target="_blank" href="/san-pham/voucher-nghi-duong-cam-trai-camping" class="d-flex fd-column ai-center td-none outline-none v:outline-none fv:outline-none f:outline-none fc-sixth pt-12 pb-5 w-22%" rel="noreferrer,nofollow" title="Voucher">
                             <img src="/public/v6/js/ionicons/5.5.2/svg/gift.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Voucher">
                             <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Voucher</p>
@@ -1154,31 +2108,6 @@
 
 <!-- include('v5.layouts.includes.modal_notification') -->
 
-<div class="modal fade" id="updateInfoModal" tabindex="-1" role="dialog" aria-labelledby="updateInfoModalLabel">
-    <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content">
-            <div class="modal-body">
-                <form action="" id="updateInfoForm">
-                    <div class="form-group title">
-                        Vui lòng cập nhật thông tin
-                    </div>
-                    <div class="form-group">
-                        <label for="updateInfoEmail">Email</label>
-                        <input type="text" class="form-control" name="updateInfoEmail" id="updateInfoEmail">
-                    </div>
-                    <div class="form-group">
-                        <label for="updateInfoPhone">Số điện thoại</label>
-                        <input type="text" class="form-control" name="updateInfoPhone" id="updateInfoPhone">
-                    </div>
-                    <div class="form-group text-right mb-0">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Để sau</button>
-                        <button type="submit" class="btn btn-primary">Cập nhật</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div
         class="modal-feedback js-feedback-modal ps-fixed t0 r0 b0 l0 outline-none overflow-hidden w-fit h-fit d-flex ai-center jc-center t-all t-duration-slow"
@@ -1405,9 +2334,9 @@
 <script type="text/javascript" src="https://gody.vn/public/v6/js/fancybox-3.1/jquery.fancybox.min.js"></script>
 
 <!--
-    <script type="text/javascript" src="/public/v3/js/jquery.mousewheel.js"></script>
-    <script type="text/javascript" src="/public/v3/plugins/fancybox-3.0/jquery.fancybox.min.js"></script>
-    -->
+<script type="text/javascript" src="/public/v3/js/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="/public/v3/plugins/fancybox-3.0/jquery.fancybox.min.js"></script>
+-->
 
 <script type="text/javascript" src="https://gody.vn/public/v3/js/script.js?v=1235"></script>
 <script type="text/javascript" src="https://media2.gody.vn/public/v3/js/custom.js?v=1235" defer></script>
@@ -1426,1606 +2355,248 @@
 
 <script src="https://gody.vn/public/v3/js/sweetalert.min.js"></script>
 <script src="https://gody.vn/public/home/js/lodash.min.js"></script>
-<script src="https://gody.vn/public/v3/js/sweetalert.min.js"></script>
-<script src="https://gody.vn/public/v3/cropper/cropper.min.js"></script>
-
-<script src="https://gody.vn/public/v3/js/lazyload.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"></script>
 <script>
-    $(function() {
-        $("img.lazyload").lazyload({
-            effect : "fadeIn"
-        });
-        $('.top-banner-ads').parent().remove();
-        $('body>footer>.main-footer').remove();
-
-
-        $('#travelPostForm').validate({
-            ignore: ".ignore",
-            debug: true,
-            rules: {
-                travelPostTitle: {
-                    required: true,
-                    minlength: 10,
-                    maxlength: 80
-                },
-                travelPostDescription: {
-                    minlength: 155
-                },
-            },
-            messages: {
-                travelPostTitle: {
-                    required: 'Tiêu đề bài viết phải có ít nhất 10 ký tự',
-                    minlength: 'Tiêu đề bài viết phải có ít nhất 10 ký tự',
-                    maxlength: 'Độ dài tối đa 80 ký tự'
-                },
-                travelPostDescription: {
-                    minlength: 'Độ dài tối thiểu 155 ký tự'
-                },
-            },
-            submitHandler: function(form) {
-
-                // var checkEmail          = $('#checkEmail').val().trim();
-                // var checkPhone          = $('#checkPhone').val().trim();
-                // if(checkEmail.length > 0 && checkPhone.length > 0) {
-                //     createSave();
-                // } else {
-                //     $('#updateInfoModal').modal('show');
-                //     return false;
-                // }
-                var _token              = $('input[name="_token"]').val().trim();
-                var id                  = $('#travelPostID').val().trim();
-                var username            = $('#travelPostUsername').val().trim();
-                var title               = $('#travelPostTitle').val().trim();
-                var description         = $('#travelPostDescription').val().trim();
-                var headerCover         = ($('.travel-blog-create-page .set-bg:has(img)').length > 0) ? $('.travel-blog-create-page .set-bg img').attr('src') : (($('.travel-blog-create-page .set-bg:has(iframe)').length > 0) ? $('.travel-blog-create-page .set-bg iframe').attr('src') : '');
-                var hashtags            = [];
-                var images              = [];
-                var links               = $('#travelPostLink').val();
-                var imagesRemove       = $('#travelPostGalleryRemove').val();
-                var hashtagsRemove     = $('#travelPostTagsRemove').val().trim();
-                var status              = $('#travelPostStatus').val().trim();
-
-                $(".travel-blog-create-page .travel-post-gallery .travel-post-gallery-item").each(function(){
-                    if($(this).attr('data-key') == undefined && $(this).attr('data-name') != undefined) {
-                        var dataName = $(this).attr('data-name').trim();
-                        var width    = parseInt($(this).attr('data-width').trim());
-                        var height   = parseInt($(this).attr('data-height').trim());
-                        images.push({name: dataName, width: width, height: height, status: 1});
+    document.addEventListener("DOMContentLoaded", function() {
+        var lazyImages = [].slice.call(document.querySelectorAll("img.lazy-load"));
+        if ("IntersectionObserver" in window) {
+            let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        let lazyImage = entry.target;
+                        lazyImage.src = lazyImage.dataset.src;
+                        lazyImage.srcset = lazyImage.dataset.srcset;
+                        lazyImage.classList.remove("lazy");
+                        lazyImageObserver.unobserve(lazyImage);
                     }
                 });
-
-                if(images.length === 0 && id == '') {
-                    swal({
-                        text: "Vui lòng tải lên albums ảnh",
-                        icon: "warning"
-                    });
-                    return false;
-                }
-
-                $(".travel-blog-create-page .travel-post-tag-list span.tag-new").each(function(){
-                    var title = $(this).text().replace('#', '');
-                    var hashtag = $(this).attr('data-o').trim().replace(/\'/g, "\"");
-                    hashtag = JSON.parse(hashtag);
-                    hashtag.title = title;
-                    hashtags.push(hashtag);
-                });
-
-                if(hashtags.length === 0 && id == '') {
-                    swal({
-                        text: "Vui lòng tag địa điểm",
-                        icon: "warning"
-                    }).then((value) => {
-                        $('#travelPostForm .travel-post-tag-search').focus();
-                    });
-
-                    return false;
-                } else {
-                    if($('.travel-post-tag-list').find('.tag').length === 0) {
-                        swal({
-                            text: "Vui lòng tag địa điểm",
-                            icon: "warning"
-                        }).then((value) => {
-                            $('#travelPostForm .travel-post-tag-search').focus();
-                        });
-
-                        return false;
-                    }
-                }
-
-                images.reverse();
-
-                $('body').prepend('<div class="ajax-loading"><div class="donut"></div></div>');
-
-                var data = { _token, id, username, title, description, headerCover, hashtags, images, imagesRemove, hashtagsRemove, status };
-
-                $.ajax({
-                    url: "https://gody.vn/photo-blog/a/dang-bai/store",
-                    type: "POST",
-                    data: data,
-                    success: function(response) {
-                        // console.log(response);
-                        if(typeof(response) == 'object' && response.hasOwnProperty('blog_id') && response.hasOwnProperty('blog_slug')) {
-                            window.open("https://gody.vn/photo-blog"+'/'+ response.blog_author +'/post/'+response.blog_slug+'-'+response.blog_id, "_self");
-                        } else {
-                            $('.ajax-loading').remove();
-                            swal({
-                                text: "Đã có lỗi xảy ra, vui lòng thử lại sau.",
-                                icon: "warning"
-                            });
-                        }
-                    }, error: function(response) {
-                        $('.ajax-loading').remove();
-                    }
-
-                });
-            }
-        });
-
-        //custom validation rule
-        $.validator.addMethod("customemail",
-            function(value, element) {
-                return /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/.test(value);
-            },
-            "Email không hợp lệ!"
-        );
-
-        $('#updateInfoForm').validate({
-            ignore: ".ignore",
-            debug: true,
-            rules: {
-                updateInfoEmail: {
-                    required: true,
-                    email: true,
-                    customemail: true
-                },
-                updateInfoPhone: {
-                    required: true,
-                    minlength: 6,
-                    maxlength: 30,
-                    digits: true
-                }
-            },
-            messages: {
-                updateInfoEmail: {
-                    required: 'Vui lòng cập nhật địa chỉ email!',
-                    email: 'Email không hợp lệ!'
-                },
-                updateInfoPhone: {
-                    required: 'Vui lòng cập nhật số điện thoại!',
-                    minlength: 'Số điện thoại không hợp lệ!',
-                    maxlength: 'Số điện thoại không hợp lệ!',
-                    digits: 'Số điện thoại không hợp lệ!'
-                }
-            },
-            submitHandler: function(form) {
-                var _token = $('meta[name="csrf-token"]').attr('content');
-                var _email = $('#updateInfoEmail').val();
-                var _phone = $('#updateInfoPhone').val();
-
-                $('body').prepend('<div class="ajax-loading"><div class="donut"></div></div>');
-                $('#updateInfoModal').modal('hide');
-
-                $.ajax({
-                    url: "https://gody.vn/matching/a/update-user-info",
-                    type: "POST",
-                    data: {_token: _token, email: _email, phone: _phone},
-                    success: function(response) {
-                        $(".ajax-loading").remove();
-
-                        swal({
-                            title: "Thành công!",
-                            text: "Cập nhật thông tin thành công. Đăng bài ngay",
-                            icon: "success",
-                        }).then((value) => {
-                            $('#checkPhone').val(_phone);
-                            $('#checkEmail').val(_email);
-                            createSave();
-                        });
-                    }, error: function(response) {
-                        $(".ajax-loading").remove();
-                        $('#updateInfoModal').modal('show');
-                        if(request.status == 422) {
-                            var _errors = JSON.parse(request.responseText);
-                            $.each(_errors, function(index, value) {
-                                switch(index) {
-                                    case 'email':
-                                        $('#updateInfoEmail').addClass('error').attr('aria-required', 'true').attr('aria-invalid', 'true');
-                                        $('#updateInfoEmail').after('<label id="updateInfoEmail-error" class="error" for="updateInfoEmail">'+value[0]+'</label>');
-                                        break;
-                                    case 'phone':
-                                        $('#updateInfoPhone').addClass('error').attr('aria-required', 'true').attr('aria-invalid', 'true');
-                                        $('#updateInfoPhone').after('<label id="updateInfoPhone-error" class="error" for="updateInfoPhone">'+value[0]+'</label>');
-                                        break;
-                                }
-                            });
-                        }
-                    }
-                });
-            }
-        });
-    });
-
-    $(document).ready(function() {
-
-        //$('.fr-view').attr('name', 'travelPostContent');
-        var _lastRange = {};
-
-        $(document.body).on('keyup', '#travelPostDescription', function(e) {
-            var _count = $(this).val().trim();
-            // $('#travelPostDescription').closest('.form-group').find('.__count').html(_count.length);
-        });
-
-        $(document.body).on('click focus', '.travel-post-tag-search', function() {
-            var q = trimSpace($(this).val().trim());
-            var $this = $(this);
-            setTimeout(function() {
-                if(q.length === 0) {
-                    $this.closest('.dropup.inside').removeClass('open');
-                }
-            }, 10);
-        });
-
-        // Click set header cover post
-        $(document.body).on('click', '.travel-blog-create-page .travel-post-header .set-add', function(e) {
-            e.preventDefault();
-            $('.travel-blog-create-page .travel-post-header .set-page').find('input[type="file"]').click();
-        });
-
-        // Click set header cover post
-        $(document.body).on('click', '.travel-blog-create-page .travel-post-header .set-add-video', function(e) {
-            e.preventDefault();
-            $('.travel-blog-create-page .set-video-wrap').addClass('show');
-            setTimeout("$('.travel-blog-create-page .set-video-wrap .inpwrap input').focus();", 100);
-        });
-
-        // Click set header cover post
-        $(document.body).on('click', '.travel-blog-create-page .set-video-wrap .set-video-bg', function(e) {
-            e.preventDefault();
-            $('.travel-blog-create-page .set-video-wrap').removeClass('show');
-        });
-
-        // Click set header cover post
-        $(document.body).on('click', '.travel-blog-create-page .set-video-wrap .inner button', function(e) {
-            e.preventDefault();
-            var content = $('.travel-blog-create-page .set-video-wrap .inpwrap input').val().trim().replace(/<[^>]+>/ig,"");
-            var myId = getIdYoutube(content);
-            var html = '<iframe src="//www.youtube.com/embed/' + myId + '" frameborder="0" allowfullscreen></iframe>';
-            if(content.length > 0) {
-                $('.travel-blog-create-page .travel-post-header .set-index .set-bg').html(html);
-                $(this).closest('.set-video-wrap').removeClass('show');
-                $('.travel-blog-create-page .set-video-wrap .inner .inpwrap input').val('');
-                $('.travel-blog-create-page .travel-post-header .set-index').addClass('set-index-uploaded').addClass('set-index-uploaded-video');
-            }
-        });
-
-        // Click add picture button on sidebar
-        $(document.body).on('click', '.travel-blog-create-page .sidebar .add-btn-picture', function(e) {
-            e.preventDefault();
-            $('.travel-blog-create-page .sidebar input#InsertPicture').trigger('click');
-        });
-
-        // Add Paragraph, Video To Text Editor
-        $(document.body).on('click', '.travel-blog-create-page .sidebar .add-btn-paragraph, .travel-blog-create-page .sidebar .add-btn-video, .travel-blog-create-page .sidebar .add-btn-link', function(e) {
-            e.preventDefault();
-            $(this).parent().addClass('add-panel-show');
-            if($(this).hasClass('add-btn-paragraph')) {
-                setTimeout("$('.travel-blog-create-page .sidebar .add-paragraph input').focus();", 100);
-            } else if($(this).hasClass('add-btn-video')) {
-                setTimeout("$('.travel-blog-create-page .sidebar .add-video input').focus();", 100);
-            } else if($(this).hasClass('add-btn-link')) {
-                setTimeout("$('.travel-blog-create-page .sidebar .add-link input#addURLInput').focus();", 100);
-                var _text = getSelectionText();
-                if(_text.length > 0) {
-                    $('.travel-blog-create-page .sidebar .add-link input#addTextInput').val(_text);
-                }
-                _lastRange = saveSelection();
-            }
-        });
-
-        // Click background add panel
-        $(document.body).on('click', '.add-panel-bg', function(e) {
-            e.preventDefault();
-            $(this).parent().removeClass('add-panel-show');
-        });
-
-        // Click add paragraph button on sidebar
-        $(document.body).on('click', '.travel-blog-create-page .sidebar .add-paragraph button', function(e) {
-            e.preventDefault();
-            var content = $('.travel-blog-create-page .sidebar .add-paragraph input').val().trim().replace(/<[^>]+>/ig,"");
-            var _data_seq = guidGenerator();
-            var html = '<div contenteditable="false" name="'+_data_seq+'-p"><h2 class="article-title" contenteditable="true" data-seq="'+_data_seq+'" name="'+_data_seq+'-c">'+content+'</h2></div>';
-
-            if(content.length > 0) {
-                if(!$.isEmptyObject(_lastRange)) {
-                    restoreSelection(_lastRange);
-                }
-
-                pasteHtmlAtCaret(html, 'travelPostContent');
-                $('html,body').animate({scrollTop: ($('.article-title[data-seq="'+_data_seq+'"]').offset().top -  57 )}, "slow");
-                $('.add-panel').parent().removeClass('add-panel-show');
-                $('.travel-blog-create-page .sidebar .add-paragraph input').val('');
-
-                $('.travel-blog-create-page .sidebar .travel-post-catalog .catalog-content').html('');
-                $('.article-title').each(function(index) {
-                    var _catalog_item = '<li class="catalog-item"><span class="catalog-num">'+(index+1)+'/</span><a role="button" tabindex="'+index+'" data-seq="'+$(this).attr('data-seq')+'" data-index="'+index+'" title="" class="catalog-line">'+$(this).text()+'</a></li>';
-                    $('.travel-blog-create-page .sidebar .travel-post-catalog .catalog-content').append(_catalog_item);
-                });
-            }
-        });
-
-        // Click catalog list
-        $(document.body).on('click', '.travel-blog-create-page .sidebar .travel-post-catalog .catalog-content .catalog-line', function(e) {
-            e.preventDefault();
-            var _data_seq = $(this).attr('data-seq');
-            $('html,body').animate({scrollTop: ($('.article-title[data-seq="'+_data_seq+'"]').offset().top - 57 )}, "slow");
-        });
-
-        // Click add video button on sidebar
-        $(document.body).on('click', '.travel-blog-create-page .sidebar .add-video button', function(e) {
-            e.preventDefault();
-            var content = $('.travel-blog-create-page .sidebar .add-video input').val().trim().replace(/<[^>]+>/ig,"");
-            var myId = getIdYoutube(content);
-            var html = '<div class="travel-post-video" contenteditable="false"><div class="travel-post-video-remove"><a href="#" title="Xóa video"><i class="fa fa-trash"></i></a></div><figure class="aligncenter"><iframe src="//www.youtube.com/embed/' + myId + '" frameborder="0" allowfullscreen></iframe><figcaption contenteditable="true" placeholder="Chú thích video (không bắt buộc)" class="image-description"></figcaption></figure></div>';
-            if(content.length > 0) {
-                if(!$.isEmptyObject(_lastRange)) {
-                    restoreSelection(_lastRange);
-                }
-                pasteHtmlAtCaret(html, 'travelPostContent');
-                $(this).closest('.add-panel-show').removeClass('add-panel-show');
-                $('.travel-blog-create-page .sidebar .add-video input').val('');
-            }
-        });
-
-        var _anchorLink = '';
-        // Click add video button on sidebar
-        $(document.body).on('click', '.travel-blog-create-page .sidebar .add-link button', function(e) {
-            e.preventDefault();
-
-            var _url = $('.travel-blog-create-page .sidebar .add-link #addURLInput').val().trim().replace(/<[^>]+>/ig,"");
-            var _text = $('.travel-blog-create-page .sidebar .add-link #addTextInput').val().trim().replace(/<[^>]+>/ig,"");
-
-            var html = '<a href="'+_url+'" rel="nofollow" class="post-link" target="_blank">'+((_text.length > 0) ? _text : _url)+'</a>';
-            if(_url.length > 0) {
-                if(_anchorLink == '') {
-                    if(!$.isEmptyObject(_lastRange)) {
-                        restoreSelection(_lastRange);
-                    } else {
-                        document.getElementById('travelPostContent').focus();
-                    }
-                    document.execCommand("insertHTML", false, html);
-                } else {
-                    $(_anchorLink).replaceWith(html);
-                }
-                $(this).closest('.add-panel-show').removeClass('add-panel-show');
-                $('.travel-blog-create-page .sidebar .add-link input').val('');
-                var links = getLinksInSelection();
-                $('#travelPostLink').val('');
-                for (var i = 0; i < links.length; ++i) {
-                    links[i].style.backgroundColor = "";
-                }
-                $('#travelPostLink').val(getAllLinksInContentEdit('#travelPostContent'));
-            }
-            _anchorLink = '';
-        });
-
-
-        $(document.body).on('click', '.travel-blog-create-page .post-link', function(e) {
-            e.preventDefault();
-            var _top = $(this).offset().top;
-            var _height = $(this).height();
-            var _width = $(this).width();
-            $('.post-link-ewrap').css({left: (_width/2), top: (_top + _height)});
-            setTimeout("$('.post-link-ewrap').addClass('active');", 100);
-            _anchorLink = $(this);
-        });
-
-        $(document).mouseup(function(e)
-        {
-            var container = $(".travel-blog-create-page .post-link");
-            if (!container.is(e.target) && container.has(e.target).length === 0)
-            {
-                $('.post-link-ewrap').removeClass('active');
-            }
-        });
-
-        $(document.body).on('click', '.post-link-ewrap .edit-link', function(e) {
-            e.preventDefault();
-            var _text = $(_anchorLink).text();
-            var _url = $(_anchorLink).attr('href');
-            $('.travel-blog-create-page .sidebar .add-link input#addURLInput').val(_url);
-            $('.travel-blog-create-page .sidebar .add-link input#addTextInput').val(_text);
-            $('.travel-blog-create-page .sidebar .add-link').parent().addClass('add-panel-show');
-        });
-
-        $(document.body).on('click', '.post-link-ewrap .unlink', function(e) {
-            e.preventDefault();
-            var _text = $(_anchorLink).text();
-            $(_anchorLink).replaceWith(_text);
-        });
-
-        set_width_sidebar();
-        $(window).resize(set_width_sidebar);
-
-        $(window).scroll(sticky_relocate);
-        sticky_relocate();
-
-
-        // Save last range editor
-        $(document.body).on('keydown keyup mousedown mouseup', '.travel-blog-create-page #travelPostContent', function(e){
-            _lastRange = saveSelection();
-        });
-
-        // Upload picture and insert to text editor
-        var img_index = 0;
-        $(document.body).on('change', '.travel-blog-create-page .sidebar input#InsertPicture', function () {
-            for (var i = 0; i < this.files.length; i++) {
-
-                var img_src = URL.createObjectURL(this.files[i]);
-
-                var html = '<div class="img-thumb-post img-thumb-post-'+img_index+'" contenteditable="false" data-name=""><div class="img-thumb-post-remove"><a href="#" title="Xóa hình ảnh"><i class="fa fa-trash"></i></a></div><figure class="aligncenter"><img src="'+img_src+'" class="lazyload cursor-pointer"><figcaption contenteditable="true" placeholder="Chú thích ảnh (không bắt buộc)" class="image-description"></figcaption></figure><div id="cancel_'+img_index+'" class="img-thumb-post-cancel cursor-pointer"></div><div id="img-thumb-post-process-'+img_index+'" class="img-thumb-post-process"><p class="img-thumb-post-status" id="status_' + img_index + '">Uploading 1%</p><div class="progress"><div class="progress-bar progress-bar-'+img_index+'" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:1%;"></div></div></div></div>'
-
-                pasteHtmlAtCaret(html, 'travelPostContent');
-                uploadImg(this.files[i], img_index);
-                img_index++;
-            }
-
-            //$('#travelPostContent').append('<div><br></div>');
-            $(this).val('');
-        });
-
-        // Albums Picture Post
-        // $(document.body).on('change', '.travel-blog-create-page input#travelPostGalleryIn', function () {
-        //     for (var i = 0; i < this.files.length; i++) {
-
-        //         var img_src = URL.createObjectURL(this.files[i]);
-
-        //         var html = '<div class="travel-post-gallery-item" id="travel-post-gallery-item-'+img_index+'"><div class="travel-post-gallery-item-bg" style="background-image:url('+img_src+');"><a data-fancybox="gallery-119" href="'+img_src+'"></a></div><div class="travel-post-gallery-item-process" id="travel-post-gallery-item-process-'+img_index+'"><div id="img-thumb-post-process-'+img_index+'" class="img-thumb-post-process"><div class="donut"></div><p id="status_' + img_index + '" class="mb-0">1%</p></div></div><div class="travel-post-gallery-item-action img-thumb-post-remove cursor-pointer" id="travel-post-gallery-item-action-'+img_index+'"><a href="#" title="Xóa hình ảnh"><i class="fa fa-trash"></i></a></div></div>';
-        //         $('.travel-blog-create-page .travel-post-gallery').prepend(html);
-        //         uploadImgGallery(this.files[i], img_index);
-        //         img_index++;
-        //     }
-        //     GODY.General.isntallFancyGallery();
-        //     $('#travelPostContent').append('<div><br></div>');
-        //     $(this).val('');
-        // });
-
-        // Set Header Cover Picture
-        var cropper_image = document.getElementById('clip-windown');
-        var cropper_ob = null;
-        var cropped = 0;
-        var files_cover = null;
-        $(document.body).on('change', '.travel-blog-create-page .travel-post-header .set-page input[type="file"]', function(e) {
-            const _URL = window.URL || window.webkitURL;
-            let file, img = null;
-
-            if (this.files.length > 0 && (file = this.files[0])) {
-                img = new Image();
-                img.src = _URL.createObjectURL(file);
-
-                $('.travel-blog-create-page .travel-post-header .set-index').addClass('set-index-uploaded');
-                $('.travel-blog-create-page .travel-post-header .clip-layer').removeClass('clip-layer-show-modal');
-                $('.travel-blog-create-page .travel-post-header .set-index .set-bg').html('<div class="donut" style="position:absolute;top:50%;left:50%;margin-top:-15px;margin-left:-15px;"></div>');
-
-                img.onload = function(e) {
-                    var ajax = new XMLHttpRequest();
-                    //Progress Listener
-                    ajax.upload.addEventListener("progress", function (e) {}, false);
-
-                    //Load Listener
-                    ajax.addEventListener("load", function (e) {
-                        var ob = JSON.parse(e.target.response);
-                        const image = document.createElement('img');
-                        image.src = ob.link;
-                        $('.travel-blog-create-page .travel-post-header .set-index .set-bg').html(image);
-                    }, false);
-
-                    //Error Listener
-                    ajax.addEventListener("error", function (e) {}, false);
-
-                    //Abort Listener
-                    ajax.addEventListener("abort", function (e) {}, false);
-
-                    ajax.open("POST", "https://gody.vn/v4/thanh-vien/aquafina94164928/viet-bai/img/upload/cover");
-
-                    var uploaderForm = new FormData();
-
-                    uploaderForm.append("image", file);
-                    uploaderForm.append("_token", "RwVeLdeMZBiM3GobuQZvQ6wIJmq2n1fyZHEgjYl5");
-
-                    ajax.send(uploaderForm);
-                };
-
-                img.onerror = function() {
-                    swal({
-                        title: "Định dạng không hợp lệ!",
-                        text: "Hình ảnh phải có định dạng: jpg, jpeg, gif, png",
-                        icon: "warning",
-                    });
-                };
-            }
-            $(this).val('');
-        });
-
-        $('#clip-windown').load(function(e) {
-            if(cropper_ob != null) {
-                cropper_ob.destroy();
-            }
-
-            cropper_ob = new Cropper(cropper_image, {
-                viewMode: 1,
-                aspectRatio: 3 / 1,
-                zoomOnWheel: false,
-                minCropBoxWidth: 199,
-                ready: function () {
-                    $('.cropper-crop-box').append('<div class="clip-btn"><button class="btn btn-default ml-5 clip-cancel">Cancel</button><button class="btn btn-default ml-5 clip-ok">Save</button></div>');
-                }
-            });
-        });
-
-        // Re-edit header cover picture
-        $(document.body).on('click', '.travel-blog-create-page .travel-post-header .set-index .set-add-re-edit', function(e) {
-            e.preventDefault();
-            var _parent = $(this).closest('.set-index');
-            if($(_parent).hasClass('set-index-uploaded') && $(_parent).hasClass('set-index-uploaded-video')) {
-                $('.travel-blog-create-page .set-video-wrap').addClass('show');
-                setTimeout("$('.travel-blog-create-page .set-video-wrap .inpwrap input').focus();", 100);
-            } else {
-                $('.travel-blog-create-page .travel-post-header .clip-layer').addClass('clip-layer-show-modal');
-                if(cropper_ob == null) {
-                    cropper_ob = new Cropper(cropper_image, {
-                        viewMode: 1,
-                        aspectRatio: 3 / 1,
-                        zoomOnWheel: false,
-                        minCropBoxWidth: 199,
-                        ready: function () {
-                            $('.cropper-crop-box').append('<div class="clip-btn"><button class="btn btn-default ml-5 clip-cancel">Cancel</button><button class="btn btn-default ml-5 clip-ok">Save</button></div>');
-                        }
-                    });
-                }
-            }
-        });
-
-        // Re-edit header cover picture
-        $(document.body).on('click', '.travel-blog-create-page .travel-post-header .set-index .set-add-remove', function(e) {
-            e.preventDefault();
-            $('.travel-blog-create-page .travel-post-header .set-index').removeClass('set-index-uploaded').removeClass('set-index-uploaded-video');
-            $('.travel-blog-create-page .travel-post-header .set-index .set-bg').html('');
-        });
-
-        // Cancel set header cover post
-        $(document.body).on('click', '.travel-blog-create-page .travel-post-header .set-index .clip-cancel', function(e) {
-            e.preventDefault();
-            $('.travel-blog-create-page .travel-post-header .clip-layer').removeClass('clip-layer-show-modal');
-            return false;
-        });
-
-        // Save drop picture header cover post
-        $(document.body).on('click', '.travel-blog-create-page .travel-post-header .set-index .clip-ok', function(e) {
-            e.preventDefault();
-            $('.travel-blog-create-page .travel-post-header .set-index').addClass('set-index-uploaded');
-            $('.travel-blog-create-page .travel-post-header .clip-layer').removeClass('clip-layer-show-modal');
-            $('.travel-blog-create-page .travel-post-header .set-index .set-bg').html('<div class="donut" style="position:absolute;top:50%;left:50%;margin-top:-15px;margin-left:-15px;"></div>');
-            var cropper_data = cropper_ob.getData();
-            var formData = new FormData();
-            formData.append('image', cropper_image.src);
-            formData.append('_token', "RwVeLdeMZBiM3GobuQZvQ6wIJmq2n1fyZHEgjYl5");
-            formData.append('x', cropper_data.x);
-            formData.append('y', cropper_data.y);
-            formData.append('width', cropper_data.width);
-            formData.append('height', cropper_data.height);
-            $.ajax({
-                url: "https://gody.vn/v4/thanh-vien/aquafina94164928/viet-bai/img/crop/cover",
-                type: "POST",
-                data: formData,
-                processData: false,
-                contentType: false,
-                success: function(response) {
-                    var _data_seq = guidGenerator();
-                    var img = document.createElement('img');
-                    img.src = response.link + '?v='+_data_seq.replace('-', '');
-                    $('.travel-blog-create-page .travel-post-header .set-index .set-bg').html(img);
-                },
-                error: function(response) {
-
-                }
-            }).done(function() {
-
             });
 
-        });
-
-        // Remore picture uploaded in editor
-        $(document.body).on('click', '.img-thumb-post-remove', function (e) {
-            e.preventDefault();
-            var _idPost = $('#travelPostID').val();
-
-            var _parent = $(this).parent();
-            var _imgName = _parent.attr('data-name');
-            var _imgId = (_parent.attr('data-key') != undefined) ? ('|'+_parent.attr('data-key')): '';
-            var _token = $('[name="_token"]').val();
-            $('#travelPostGalleryRemove').val($('#travelPostGalleryRemove').val() + _imgId);
-            _parent.fadeOut();
-            setTimeout(function(){_parent.remove();}, 500);
-
-            if(_idPost.length == 0) {
-                $.ajax({
-                    url: "https://gody.vn/v4/thanh-vien/aquafina94164928/viet-bai/img/remove/a",
-                    type: "POST",
-                    data: {image_name:_imgName, _token: _token},
-                    success: function(response) {
-
-                    }, error: function(response) {
-
-                    }
-                });
-            }
-            return false;
-        });
-
-        // Remove video inserted in editor
-        $(document.body).on('click', '.travel-post-video-remove', function (e) {
-            e.preventDefault();
-            var _parent = $(this).parent();
-            _parent.slideUp('slow', function() {
-                _parent.remove();
+            lazyImages.forEach(function(lazyImage) {
+                lazyImageObserver.observe(lazyImage);
             });
-        });
-
-        // Insert new line when enter keypress in editor
-        $(document.body).on('keydown', '.travel-blog-create-page #travelPostContent .img-thumb-post figcaption',function(e) {
-            var code = e.which;
-            if(code == 13) {
-                var _parent = $(this).closest('.img-thumb-post');
-                if($(_parent).parent().hasClass('travel-post-content')) {
-                    insertNewLine("travelPostContent",  $(this).closest('.img-thumb-post'));
-                } else {
-                    insertNewLine("travelPostContent",  $(this).closest('.img-thumb-post').parent());
-                }
-                return false;
-            }
-        });
-
-        // Insert new line when enter keypress in editor
-        $(document.body).on('keydown', '.travel-blog-create-page #travelPostContent .travel-post-video figcaption',function(e) {
-            var code = e.which;
-            if(code == 13) {
-                var _parent = $(this).closest('.travel-post-video');
-                if($(_parent).parent().hasClass('travel-post-content')) {
-                    insertNewLine("travelPostContent",  $(this).closest('.travel-post-video'));
-                } else {
-                    insertNewLine("travelPostContent",  $(this).closest('.travel-post-video').parent());
-                }
-
-                //insertNewLine("travelPostContent",  $(this).closest('.travel-post-video'));
-                return false;
-            }
-        });
-
-        // Insert new line when enter keypress in editor
-        $(document.body).on('keypress', '.travel-blog-create-page #travelPostContent .article-title',function(e) {
-            var code = e.which;
-            if(code == 13) {
-                var _parent = $(this).parent().parent();
-                if($(_parent).hasClass('travel-post-content')) {
-                    insertNewLine("travelPostContent", $(this).parent());
-                } else {
-                    insertNewLine("travelPostContent", $(_parent));
-                }
-                return false;
-            }
-        });
-
-        $(document.body).on('paste', '.travel-blog-create-page #travelPostContent',function(e) {
-            e.preventDefault();
-            var text = (e.originalEvent || e).clipboardData.getData('text/plain');
-
-            window.document.execCommand('insertText', false, text);
-            var _content = $(this).text().trim();
-            $('.travel-blog-create-page #travelPostContentCheck').val(_content);
-            $('#travelPostContent').contents().filter(function() {
-                return this.nodeType === 3 && $.trim(this.textContent).length
-            }).wrap('<div>');
-        });
-
-        $(document.body).on('click', '.travel-post-btn-insert-image', function(e){
-            e.preventDefault();
-            $('#fr-image-upload-layer-1 input[type="file"]').trigger('click');
-        });
-
-        $(document.body).on('keyup', '.travel-blog-create-page #travelPostContent', function(e) {
-            var _content = $(this).text().trim();
-            $('.travel-blog-create-page #travelPostContentCheck').val(_content);
-        });
-
-        $(document.body).on('click', '#travelPostForm .travel-post-tag-dropdown-list li', function(e) {
-            e.preventDefault();
-            var title   = $(this).find('span').text();
-            var _id     = $(this).attr('data-id');
-            var _title  = title.replace('#', '');
-            var dataObj = $(this).attr('data-o');
-
-            var _tags = $('#travelPostTags').val().trim();
-            var reverse = _id.split('|').reverse().join('');
-
-            if(_tags.indexOf(reverse) > -1 && _tags.indexOf(_title) > -1) {
-                $('#travelPostTagsRemove').val($('#travelPostTagsRemove').val().replace(_id, ''));
-            }
-
-            var html = '<span class="tag label label-info tag-new" data-id="'+_id+'" data-o="'+dataObj+'">'+title+'<span data-role="remove"></span></span>';
-            $('#travelPostForm .travel-post-tag-list').prepend(html);
-            $('#travelPostTag').val($('#travelPostTag').val()+_id);
-            $('#travelPostForm .travel-post-tag-search').val('');
-            $('#travelPostForm .travel-post-tag-dropdown-list li').removeClass('hide');
-            $(this).addClass('selected');
-        });
-
-        $(document.body).on('click', '#travelPostForm .travel-post-tag-list .tag', function(e) {
-            e.preventDefault();
-            $(this).remove();
-            var _id = $(this).attr('data-id');
-            var _title = $(this).text().trim().replace('#', '');
-            var reverse = _id.split('|').reverse().join('');
-            var _tags = $('#travelPostTags').val().trim();
-
-            if(_tags.indexOf(reverse) > -1 && _tags.indexOf(_title) > -1) {
-                $('#travelPostTagsRemove').val($('#travelPostTagsRemove').val()+'|'+reverse);
-            }
-            // var _value = $('#travelPostTag').val();
-            // $('#travelPostTag').val(_value.replace(_id, ''));
-            $('#travelPostForm .travel-post-tag-dropdown-list li[data-id="'+_id+'"]').removeClass('selected');
-        });
-
-        var currentRequestSearch = null;
-        $(document.body).on('keyup', '#travelPostForm .travel-post-tag-search', delaySearch(function(e) {
-            var q = trimSpace($(this).val().trim());
-            q = q.replace(/#/g, '');
-
-            if(q.length > 0) {
-                q = decodeEntities(q);
-                q = removeAccents(q).toLowerCase();
-
-                $('.travel-post-tag-dropdown-list').html('<div class="donut"></div>');
-
-                currentRequestSearch = $.ajax({
-                    url: 'https://elasticsearch.gody.vn/public/tag/full_text_search/'+q,
-                    type: "GET",
-                    dataType: 'json',
-                    cache: false,
-                    data: {},
-                    beforeSend: function() {
-                        if(currentRequestSearch != null) {
-                            currentRequestSearch.abort();
-                        }
-                    },
-                    success: function(response) {
-                        var results = ( response.hasOwnProperty('results') ) ? response.results : [];
-                        hits    = ( results.hasOwnProperty('hits') ) ? results.hits : [];
-                        hits    = ( hits.hasOwnProperty('hits') ) ? hits.hits : [];
-                        var html    = '';
-
-                        if( hits.length > 0 ) {
-
-                            $.each(hits, function(index, value) {
-
-                                $strType = '';
-
-                                if( value._source.hasOwnProperty('subcategoriesid') ) {
-
-                                    var type = 0;
-                                    switch( value._source.subcategoriesid ) {
-                                        case '57cd2f70ab21fe7c45ea4dbd': //Địa điểm du lich
-                                            type = 5;
-                                            break;
-                                        case '57cd3102ab21fe3546ea4dc0': //Đối tượng phù hợp
-                                            type = 6;
-                                            break;
-                                        case '57cd31bcab21fe3346ea4dc1': //Thời gian tham quan
-                                            type = 7;
-                                            break;
-                                        case '57cd315dab21febc45ea4dc1': //Thời gian nên đến
-                                            type = 8;
-                                            break;
-                                    }
-
-                                    if(value._source.id != '57cd2f70ab21fe7c45ea4dbd' && value._source.id != '57cd3102ab21fe3546ea4dc0' && value._source.id != '57cd31bcab21fe3346ea4dc1' && value._source.id != '57cd315dab21febc45ea4dc1' && value._source.id != '58ba34240b78a485768b4567' && value._source.id != '58524d9b0b78a4d6433c9869' && value._source.id != '5a796e050b78a49c503c9869' && value._source.id != '58e47b730b78a442558b4567' && value._source.id != '58e47b950b78a48d558b4567') {
-                                        html += '<li class="cursor-pointer" data-id="|'+value._source.id+'" data-slug="'+value._source.slug+'" data-o="{\'id\':\''+value._source.id+'\',\'slug\':\''+value._source.slug+'\', \'type\':'+value._source.type+', \'tag_type\':'+value._source.type+'}"><a class="pl-0" href="#" title="'+value._source.title+'"><span data-id="|'+value._source.id+'" data-slug="'+value._source.slug+'" data-type="'+type+'" class="color_sub_blue">#' + value._source.title+ '</span> </a></li>';
-
-                                    }
-                                } else {
-                                    html += '<li class="cursor-pointer" data-id="|'+value._source.id+'" data-slug="'+value._source.slug+'" data-o="{\'id\':\''+value._source.id+'\',\'slug\':\''+value._source.slug+'\', \'type\':'+value._source.type+', \'tag_type\':'+value._source.type+'}"><a class="pl-0" href="#" title="'+value._source.title+'"><span data-id="|'+value._source.id+'" data-slug="'+value._source.slug+'" data-type="'+value._source.type+'" class="color_sub_blue">#' + value._source.title+ '</span></a></li>';
-                                }
-
-                                $('.travel-post-tag-dropdown-list').html(html);
-                            });
-                        } else {
-                            $('.travel-post-tag-dropdown-list').html('Không tìm thấy tag!');
-                        }
-                    }
-                });
-            } else {
-                $('#travelPostForm .travel-post-tag-dropdown-list li').removeClass('hide');
-            }
-            $(this).parent().addClass('open');
-
-        }, 300));
-
-        $(document.body).on('click', '#travelPostForm .travel-post-category-list li', function(e) {
-            selectCateMenu($(this), '#travelPostForm .travel-post-category .travel-post-category-search', '#travelPostCategory');
-        });
-
-        $(document.body).on('keyup', '#travelPostForm .travel-post-category .travel-post-category-search', function(e) {
-            typingSearch($(this), '#travelPostForm .travel-post-category-list li', '#travelPostCategory');
-            return false;
-        });
-
-        $(document.body).on('click, focus', '#travelPostForm .travel-post-category .travel-post-category-search', function(e) {
-            $('#travelPostForm .travel-post-category-list li').removeClass('hide');
-        });
-
-        $(document.body).on('click', '#travelPostForm .travel-post-menu-list li', function(e) {
-            selectCateMenu($(this), '#travelPostForm .travel-post-menu .travel-post-menu-search', '#travelPostMenu');
-        });
-
-        $(document.body).on('keyup', '#travelPostForm .travel-post-menu .travel-post-menu-search', function(e) {
-            typingSearch($(this), '#travelPostForm .travel-post-menu-list li', '#travelPostMenu');
-            return false;
-        });
-
-        $(document.body).on('click, focus', '#travelPostForm .travel-post-menu .travel-post-menu-search', function(e) {
-            $('#travelPostForm .travel-post-menu-list li').removeClass('hide');
-        });
-
-        // Get list hashtags full
-        /*
-    $.ajax({
-        url: "https://gody.vn/v4/travel-blog/a/full-hashtags",
-        type: 'get',
-        success: function(response) {
-            var hashtags = response;
-            $('.travel-post-tag-dropdown-list').html('');
-            $.each(hashtags, function(index, item) {
-                var html = '<li class="cursor-pointer" data-id="|'+item.id+'" data-slug="'+item.slug+'" data-o="{\'id\':'+item.id+',\'slug\':\''+item.slug+'\'}"><a class="pl-0" href="/homestay-hostel/hashtag/'+item.slug+'"><span data-id="|'+item.id+'" data-slug="'+item.slug+'" class="color_sub_blue">#' + item.title+ '</span></a></li>';
-               $('.travel-post-tag-dropdown-list').append(html);
-            });
-
-        }, error: function(response) {
-
-        }
-    });
-    */
-
-
-        //Ps.initialize(document.getElementsByClassName('travel-post-tag-dropdown-list')[0]);
-        Ps.initialize(document.getElementById('hashtags-list'));
-
-        Ps.initialize(document.getElementsByClassName('travel-post-gallery')[0], {
-            // suppressScrollY: true,
-            useBothWheelAxes: true
-        });
-
-
-        $(document.body).on('click', '.travel-blog-create-page .travel-post-btn-draft', function(e) {
-            e.preventDefault();
-
-            if($('#travelPostTitle').val().trim().length > 100) {
-                swal({
-                    title: "Không thành công!",
-                    text: "Tiêu đề bài viết tối đa là 100 ký tự",
-                    icon: "warning",
-                    button: {
-                        text: 'Đóng',
-                        className: ["border-radius-25", "background-red"],
-                    }
-                });
-                return false;
-            }
-
-            var _token              = $('input[name="_token"]').val().trim();
-            var d                   = new Date();
-            var id                  = $('#travelPostID').val().trim();
-            var username            = $('#travelPostUsername').val().trim();
-            var title               = ($('#travelPostTitle').val().trim().length > 0) ? $('#travelPostTitle').val().trim() : ("Lưu nháp - " + d.toLocaleString("vi-VN"));
-            var description         = $('#travelPostDescription').val().trim();
-            var headerCover         = ($('.travel-blog-create-page .set-bg:has(img)').length > 0) ? $('.travel-blog-create-page .set-bg img').attr('src') : (($('.travel-blog-create-page .set-bg:has(iframe)').length > 0) ? $('.travel-blog-create-page .set-bg iframe').attr('src') : '');
-            var hashtags            = [];
-            var images              = [];
-            var imagesRemove        = $('#travelPostGalleryRemove').val();
-            var hashtagsRemove      = $('#travelPostTagsRemove').val().trim();
-            var status              = $('#travelPostStatus').val().trim();
-
-            $('body').prepend('<div class="ajax-loading"><div class="donut"></div></div>');
-
-            $(".travel-blog-create-page .travel-post-tag-list span.tag-new").each(function(){
-                var title = $(this).text().replace('#', '');
-                var hashtag = $(this).attr('data-o').trim().replace(/\'/g, "\"");
-                hashtag = JSON.parse(hashtag);
-                hashtag.title = title;
-                hashtags.push(hashtag);
-            });
-
-            $(".travel-blog-create-page .travel-post-gallery .travel-post-gallery-item").each(function(){
-                if($(this).attr('data-key') == undefined && $(this).attr('data-name') != undefined) {
-                    var dataName = $(this).attr('data-name').trim();
-                    var width    = parseInt($(this).attr('data-width').trim());
-                    var height   = parseInt($(this).attr('data-height').trim());
-                    images.push({name: dataName, width: width, height: height, status: 1});
-                }
-            });
-
-            images.reverse();
-
-            var data = { _token, id, username, title, description, headerCover, hashtags, images, imagesRemove, hashtagsRemove, status };
-
-            $.ajax({
-                url: "https://gody.vn/photo-blog/a/dang-bai/store-draft",
-                type: 'POST',
-                data: data,
-                success: function(response) {
-                    $(".ajax-loading").remove();
-                    // return false;
-
-                    if(typeof(response) == 'object' && response.hasOwnProperty('blog_id') && response.hasOwnProperty('blog_slug')) {
-                        swal({
-                            title: "Lưu bài thành công!",
-                            text: "",
-                            icon: "success",
-                        }).then((value) => {
-
-                            window.open("https://gody.vn/photo-blog"+'/dang-bai/note?id='+response.blog_id, "_self");
-                        });
-                    } else {
-                        swal({
-                            text: "Đã có lỗi xảy ra, vui lòng thử lại sau.",
-                            icon: "warning"
-                        });
-                    }
-
-                }, error: function(response) {
-                    $(".ajax-loading").remove();
-                }
-            });
-
-        });
-
-    });
-
-    if(typeof createSave != 'function') {
-        function createSave() {
-            var _id                 = $('#travelPostID').val().trim();
-            var _username           = $('#travelPostUsername').val().trim();
-            var _token              = $('input[name="_token"]').val().trim();
-            var title               = $('#travelPostTitle').val().trim();
-            var content             = $('#travelPostContent').html();
-            var header_cover        = ($('.travel-blog-create-page .set-bg:has(img)').length > 0) ? $('.travel-blog-create-page .set-bg img').attr('src') : (($('.travel-blog-create-page .set-bg:has(iframe)').length > 0) ? $('.travel-blog-create-page .set-bg iframe').attr('src') : '');
-
-            var hashtags            = [];
-            var images              = [];
-            var links               = $('#travelPostLink').val();
-
-            var images_remove       = $('#travelPostGalleryRemove').val();
-            var hashtags_remove     = $('#travelPostTagsRemove').val().trim();
-
-            var status              = $('#travelPostStatus').val().trim();
-            var expire              = $('#_expire').val().trim();
-            var quota               = $('#_quota').val().trim();
-
-            expire                  += (expire.indexOf('23:59:59') > -1) ? '' : ' 23:59:59';
-
-            $(".travel-post-tag-dropdown-list li").each(function(){
-                if($(this).hasClass('selected')) {
-                    var title = $(this).text().replace('#', '');
-                    var hashtag = $(this).attr('data-o').trim().replace(/\'/g, "\"");
-                    hashtag = JSON.parse(hashtag);
-                    hashtag.title = title;
-                    hashtags.push(hashtag);
-                }
-            });
-
-            $(".travel-post-gallery .travel-post-gallery-item").each(function(){
-                if($(this).attr('data-key') == undefined) {
-                    if($(this).attr('data-name')) {
-                        var data_name = $(this).attr('data-name').trim();
-                        images.push({name: data_name, status: 1});
-                    }
-                }
-            });
-
-            $("#travelPostContent img").each(function(){
-                if($(this).attr('data-key') == undefined) {
-                    var data_name = $(this).attr('src').trim();
-                    images.push({name: data_name, status: 2});
-                }
-            });
-
-            images.reverse();
-
-            $('body').prepend('<div class="ajax-loading"><div class="donut"></div></div>');
-
-            $.ajax({
-                url: "https://gody.vn/matching/a/store",
-                type: 'POST',
-                data: {_token: _token, _id: _id, title: title, content: content, header_cover: header_cover, hashtags: hashtags, images: images, links : links, images_remove: images_remove, hashtags_remove: hashtags_remove, status: status, username: _username, expire: expire, quota: quota},
-                success: function(response) {
-
-                    swal({
-                        title: "Đăng bài thành công!",
-                        text: "",
-                        icon: "success",
-                    }).then((value) => {
-                        window.open("https://gody.vn/matching/manage", "_self");
-                    });
-                }, error: function(request, status, error) {
-                    $(".ajax-loading").remove();
-                    if(request.status == 422) {
-                        var _errors = JSON.parse(request.responseText);
-                        $.each(_errors, function(index, value) {
-                            switch(index) {
-                                case 'title':
-                                    $('#travelPostTitle').addClass('error').attr('aria-required', 'true').attr('aria-invalid', 'true');
-                                    $('#travelPostTitle').after('<label id="travelPostTitle-error" class="error" for="travelPostTitle">'+value[0]+'</label>');
-                                    break;
-                                case 'content':
-                                    $('#travelPostContentCheck').addClass('error').attr('aria-required', 'true').attr('aria-invalid', 'true');
-                                    $('#travelPostContentCheck').after('<label id="travelPostContentCheck-error" class="error" for="travelPostContentCheck">'+value[0]+'</label>');
-                                    break;
-                                case 'header_cover':
-                                    swal({
-                                        title: "Vui lòng chọn hình cover bài viết!",
-                                        text: "Hình ảnh phải có định dạng: jpg, jpeg, gif, png",
-                                        icon: "warning",
-                                    });
-                                    $('html,body').animate({scrollTop: 50}, "slow");
-                                    break;
-                            }
-                        });
-                    }
-                }
-            });
-        }
-    }
-
-    if(typeof selectCateMenu != 'function') {
-        function selectCateMenu(el, input_display, input_value) {
-            var title = el.find('span').text();
-            var _id = el.attr('data-id');
-            var _o = el.attr('data-o');
-            $(input_display).val(title);
-            $(input_value).val(_o);
-        }
-    }
-
-    if(typeof typingSearch != 'function') {
-        function typingSearch(el, list_class, input_value) {
-            $(input_value).val('');
-            var input = trimSpace(el.val());
-            if(input.length > 0) {
-                input = bodauTiengViet(decodeEntities(input)).toLowerCase();
-                $(list_class).each(function(index) {
-                    var title_t = $(this).attr('data-slug').trim().replace('-', ' ');
-                    if(title_t.indexOf(input) >= 0 || input.indexOf(title_t) >= 0 || title_t.replace(/\s/g, '').indexOf(input) >= 0 || input.replace(/\s/g, '').indexOf(title_t) >= 0) {
-                        $(this).removeClass('hide');
-                    } else {
-                        $(this).addClass('hide');
-                    }
-                });
-                el.parent().addClass('open');
-            } else {
-                $(list_class).removeClass('hide');
-            }
-        }
-    }
-
-    if(typeof pasteHtmlAtCaret != 'function') {
-        function pasteHtmlAtCaret(html, id) {
-            document.getElementById(id).focus();
-            var sel, range;
-            if (window.getSelection) {
-                sel = window.getSelection();
-                if (sel.getRangeAt && sel.rangeCount) {
-                    range = sel.getRangeAt(0);
-                    range.deleteContents();
-                    var el = document.createElement("div");
-                    el.innerHTML = html;
-                    var frag = document.createDocumentFragment(), node, lastNode;
-                    while ( (node = el.firstChild) ) {
-                        lastNode = frag.appendChild(node);
-                    }
-                    range.insertNode(frag);
-
-                    if (lastNode) {
-                        range = range.cloneRange();
-                        range.setStartAfter(lastNode);
-                        range.collapse(true);
-                        sel.removeAllRanges();
-                        sel.addRange(range);
-                    }
-                }
-            } else if (document.selection && document.selection.type != "Control") {
-                document.selection.createRange().pasteHTML(html);
-            }
-        }
-    }
-
-    if(typeof uploadImg != 'function') {
-        function uploadImg(file, i) {
-            var fileId = i;
-            var ajax = new XMLHttpRequest();
-
-            //Progress Listener
-            ajax.upload.addEventListener("progress", function (e) {
-                var percent = (e.loaded / e.total) * 100;
-                $("#status_" + fileId).text('Uploading ' +Math.round(percent) + "%");
-                $('.progress-bar-'+fileId).css({width: Math.round(percent) +'%'});
-                if(Math.round(percent) == 100) {
-                    $("#status_" + fileId).text('Loading...');
-                    $('.progress-bar-'+fileId).parent().replaceWith('<div class="donut"></div>');
-                }
-            }, false);
-
-            //Load Listener
-            ajax.addEventListener("load", function (e) {
-                var ob = JSON.parse(e.target.response);
-                var _idProcess = $('#img-thumb-post-process-'+fileId);
-                _idProcess.remove();
-
-                var img_wrapper = $('.img-thumb-post-'+fileId);
-
-                if(!$(img_wrapper).parent().hasClass('travel-post-content')) {
-                    $(img_wrapper).parent().find('br').remove();
-                }
-
-                img_wrapper.attr('data-name', ob.name);
-                img_wrapper.find('img').attr('src', ob.link);
-                img_wrapper.find('img').attr('data-src', ob.link);
-                img_wrapper.removeClass('img-thumb-post-'+fileId);
-                img_wrapper.find('figcaption').focus();
-                //Hide cancel button
-                var _cancel = $('#cancel_' + fileId);
-                _cancel.remove();
-            }, false);
-
-            //Error Listener
-            ajax.addEventListener("error", function (e) {
-                $("#status_" + fileId).text("Upload Failed");
-            }, false);
-            //Abort Listener
-            ajax.addEventListener("abort", function (e) {
-                $("#status_" + fileId).text("Upload Aborted");
-            }, false);
-
-
-            ajax.open("POST", "https://gody.vn/v4/thanh-vien/aquafina94164928/viet-bai/img/upload/a");
-
-            var uploaderForm = new FormData();
-
-            uploaderForm.append("image", file);
-            uploaderForm.append("_token", "RwVeLdeMZBiM3GobuQZvQ6wIJmq2n1fyZHEgjYl5");
-            ajax.send(uploaderForm);
-
-            //Cancel button
-            var _cancel = $('#cancel_' + fileId);
-            _cancel.show();
-
-            _cancel.on('click', function () {
-                // ajax.abort();
-                // setTimeout(function() {
-                //     _cancel.parent().toggle(500);
-                // }, 500);
-            });
-        }
-    }
-
-    if(typeof uploadCoverImg != 'function') {
-        function uploadCoverImg(file) {
-
-            var ajax = new XMLHttpRequest();
-            //Progress Listener
-            ajax.upload.addEventListener("progress", function (e) {
-                var percent = (e.loaded / e.total) * 100;
-                $(".tmp-clip-status").text('Uploading ' +Math.round(percent) + "%");
-                if(Math.round(percent) == 100) {
-                    $(".tmp-clip-status").text('Loading...');
-                }
-            }, false);
-
-            //Load Listener
-            ajax.addEventListener("load", function (e) {
-                var ob = JSON.parse(e.target.response);
-                $('.tmp-clip-panel-process').remove();
-                cropper_image.src = ob.link;
-
-            }, false);
-
-            //Error Listener
-            ajax.addEventListener("error", function (e) {
-                $('.tmp-clip-status').text("Upload Failed");
-            }, false);
-
-            //Abort Listener
-            ajax.addEventListener("abort", function (e) {
-                $('.tmp-clip-status').text("Upload Aborted");
-            }, false);
-
-            ajax.open("POST", "https://gody.vn/v4/thanh-vien/aquafina94164928/viet-bai/img/upload/cover");
-
-            var uploaderForm = new FormData();
-
-            uploaderForm.append("image", file);
-            uploaderForm.append("_token", "RwVeLdeMZBiM3GobuQZvQ6wIJmq2n1fyZHEgjYl5");
-
-            ajax.send(uploaderForm);
-        }
-    }
-
-    if(typeof saveSelection != 'function') {
-        // function saveSelection() {
-        //     if (window.getSelection) {
-        //         sel = window.getSelection();
-        //         if (sel.getRangeAt && sel.rangeCount) {
-        //             return sel.getRangeAt(0);
-        //         }
-        //     } else if (document.selection && document.selection.createRange) {
-        //         return document.selection.createRange();
-        //     }
-        //     return null;
-        // }
-
-        function saveSelection() {
-            if (window.getSelection) {
-                sel = window.getSelection();
-                if (sel.getRangeAt && sel.rangeCount) {
-                    var ranges = [];
-                    for (var i = 0, len = sel.rangeCount; i < len; ++i) {
-                        ranges.push(sel.getRangeAt(i));
-                    }
-                    return ranges;
-                }
-            } else if (document.selection && document.selection.createRange) {
-                return document.selection.createRange();
-            }
-            return null;
-        }
-    }
-
-    if(typeof restoreSelection != 'function') {
-        // function restoreSelection(range) {
-        //     if (range) {
-        //         if (window.getSelection) {
-        //             sel = window.getSelection();
-        //             sel.removeAllRanges();
-        //             sel.addRange(range);
-        //         } else if (document.selection && range.select) {
-        //             range.select();
-        //         }
-        //     }
-        // }
-        function restoreSelection(savedSel) {
-            if (savedSel) {
-                if (window.getSelection) {
-                    sel = window.getSelection();
-                    sel.removeAllRanges();
-                    for (var i = 0, len = savedSel.length; i < len; ++i) {
-                        sel.addRange(savedSel[i]);
-                    }
-                } else if (document.selection && savedSel.select) {
-                    savedSel.select();
-                }
-            }
-        }
-    }
-
-    if(typeof insertNewLine != 'function') {
-        function insertNewLine(id, anchor) {
-            anchor.after('<div class="tb-ni"><br></div>');
-            var el = document.getElementById(id);
-            var range = document.createRange();
-            var sel = window.getSelection();
-            range.setStart($('.tb-ni')[0], 1);
-            range.collapse(true);
-            sel.removeAllRanges();
-            sel.addRange(range);
-            el.focus();
-            $('.tb-ni').removeClass('tb-ni');
-        }
-    }
-
-    function base64ToBlob(base64, mime)
-    {
-        mime = mime || '';
-        var sliceSize = 1024;
-        var byteChars = window.atob(base64);
-        var byteArrays = [];
-
-        for (var offset = 0, len = byteChars.length; offset < len; offset += sliceSize) {
-            var slice = byteChars.slice(offset, offset + sliceSize);
-
-            var byteNumbers = new Array(slice.length);
-            for (var i = 0; i < slice.length; i++) {
-                byteNumbers[i] = slice.charCodeAt(i);
-            }
-
-            var byteArray = new Uint8Array(byteNumbers);
-
-            byteArrays.push(byteArray);
-        }
-
-        return new Blob(byteArrays, {type: mime});
-    }
-
-    function getIdYoutube(url) {
-        var regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
-        var match = url.match(regExp);
-
-        if (match && match[2].length == 11) {
-            return match[2];
         } else {
-            return 'error';
+            // Possibly fall back to event handlers here
         }
-    }
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        if (!!!$('.slick-item').length) return;
 
-    function guidGenerator() {
-        var S4 = function() {
-            return (((1+Math.random())*0x10000)|0).toString(16).substring(1);
-        };
-        return (S4()+S4()+"-"+S4()+"-"+S4()+"-"+S4()+"-"+S4()+S4()+S4());
-    }
+        $('.slick-item').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            speed: 300,
+            variableWidth: true
+        })
+    });
 
-    function getSelectionText() {
-        var text = "";
-        var activeEl = document.activeElement;
-        var activeElTagName = activeEl ? activeEl.tagName.toLowerCase() : null;
-        if ((activeElTagName == "textarea") || (activeElTagName == "input" &&
-            /^(?:text|search|password|tel|url)$/i.test(activeEl.type)) &&
-            (typeof activeEl.selectionStart == "number")
-        ) {
-            text = activeEl.value.slice(activeEl.selectionStart, activeEl.selectionEnd);
-        } else if (window.getSelection) {
-            text = window.getSelection().toString();
-        }
-        return text;
-    }
+    $(document).on('click', 'div#top-destination div', function(e){
+        const get_data_type = $(this).attr('data-type');
+        $('.item-range').addClass('hide');
+        $('.item-range').removeClass('d-block');
+        $(`#${get_data_type}`).addClass('d-block');
+        //active menu
+        //$('.item-destination-menu').removeClass('bc-white');
+        $('.item-destination-menu').removeClass('fc-primary');
+        $('.item-destination-menu').removeClass('bc-primary');
+        $(this).addClass('fc-primary');
+        $(this).addClass('bc-primary');
+    });
 
-    function getLinksInSelection() {
-        var selectedLinks = [];
-        var range, containerEl, links, linkRange;
-        if (window.getSelection) {
-            sel = window.getSelection();
-            if (sel.getRangeAt && sel.rangeCount) {
-                linkRange = document.createRange();
-                for (var r = 0; r < sel.rangeCount; ++r) {
-                    range = sel.getRangeAt(r);
-                    containerEl = range.commonAncestorContainer;
-                    if (containerEl.nodeType != 1) {
-                        containerEl = containerEl.parentNode;
-                    }
-                    if (containerEl.nodeName.toLowerCase() == "a") {
-                        selectedLinks.push(containerEl);
-                    } else {
-                        links = containerEl.getElementsByTagName("a");
-                        for (var i = 0; i < links.length; ++i) {
-                            linkRange.selectNodeContents(links[i]);
-                            if (linkRange.compareBoundaryPoints(range.END_TO_START, range) < 1 && linkRange.compareBoundaryPoints(range.START_TO_END, range) > -1) {
-                                selectedLinks.push(links[i]);
-                            }
-                        }
-                    }
-                }
-                linkRange.detach();
-            }
-        } else if (document.selection && document.selection.type != "Control") {
-            range = document.selection.createRange();
-            containerEl = range.parentElement();
-            if (containerEl.nodeName.toLowerCase() == "a") {
-                selectedLinks.push(containerEl);
-            } else {
-                links = containerEl.getElementsByTagName("a");
-                linkRange = document.body.createTextRange();
-                for (var i = 0; i < links.length; ++i) {
-                    linkRange.moveToElementText(links[i]);
-                    if (linkRange.compareEndPoints("StartToEnd", range) > -1 && linkRange.compareEndPoints("EndToStart", range) < 1) {
-                        selectedLinks.push(links[i]);
-                    }
-                }
-            }
-        }
-        return selectedLinks;
-    }
+    $(document).on('click', 'div#menu-destination div', function(e){
+        const get_data_type = $(this).attr('data-type');
+        $('.item-range-data').addClass('hide');
+        $('.item-range-data').removeClass('d-block');
+        $(`#${get_data_type}`).addClass('d-block');
+        //active menu
+        //$('.item-destination-menu-data').removeClass('bc-white');
+        $('.item-destination-menu-data').removeClass('fc-primary');
+        $('.item-destination-menu-data').removeClass('bc-primary');
+        $(this).addClass('fc-primary');
+        $(this).addClass('bc-primary');
+    });
 
-    function getAllLinksInContentEdit(id = '')
-    {
-        var _string = '';
-        $(id + ' a').each(function(index) {
-            _string += '|' + $(this).attr('href');
+    $(document).on('click', 'div#mobile-top-destination div', function(e){
+        const get_data_type = $(this).attr('data-type');
+        //data
+        $('.item-range-mobile').addClass('hide');
+        $('.item-range-mobile').removeClass('d-block');
+        $(`#${get_data_type}`).addClass('d-block');
+        //menu
+        $('.item-destination-menu-mobile').removeClass('fc-primary');
+        $('.item-destination-menu-mobile').removeClass('bc-primary');
+        $(this).addClass('fc-primary');
+        $(this).addClass('bc-primary');
+    });
+
+    $(document).on('click', 'div#mobile-menu-destination div', function(e){
+        const get_data_type = $(this).attr('data-type');
+        //data
+        $('.item-range-data-mobile').addClass('hide');
+        $('.item-range-data-mobile').removeClass('d-block');
+        $(`#${get_data_type}`).addClass('d-block');
+        //menu
+        $('.item-destination-menu-data-mobile').removeClass('fc-primary');
+        $('.item-destination-menu-data-mobile').removeClass('bc-primary');
+        $(this).addClass('fc-primary');
+        $(this).addClass('bc-primary');
+    });
+
+    $(document).on('click', 'div.top-destination-ver02 div', function(e){
+        const data_type = $(this).attr('data-type');
+        var afirca = $('div#data-afirca').position(),
+            australia = $('div#data-australia').position(),
+            americas = $('div#data-americas').position(),
+            euro = $('div#data-euro').position(),
+            asian = $('div#data-asian').position(),
+            viet_nam = $('div#data-viet-nam').position();
+
+        const element = $(`div#${data_type}`).position();
+
+        $(`div.top-destination-ver02 div`).removeClass('fc-primary');
+        $(`div.top-destination-ver02 div`).addClass('fc-fourteenth');
+        $(this).addClass('fc-primary');
+        $(this).removeClass('fc-fourteenth');
+
+        window.scroll({
+            top: element.top - 200,
+            behavior: 'smooth',
         });
-        return _string;
-    }
+    });
 
-    if( typeof delaySearch !== 'function' ) {
-        function delaySearch(callback, ms) {
-            var timer = 0;
-            return function() {
-                var context = this, args = arguments;
-                clearTimeout(timer);
-                timer = setTimeout(function () {
-                    callback.apply(context, args);
-                }, ms || 0);
-            };
-        }
-    }
+    $(document).on('click', 'div.click-tab-01', function(e){
+        const get_key = $(this).attr('data-key');
+        $('div.click-tab-01').removeClass('fc-primary');
+        $('div.click-tab-01').removeClass('bc-primary');
 
-    if( typeof removeAccents !== 'function' ) {
-        function removeAccents(str) {
-            return str.normalize('NFD')
-                .replace(/[\u0300-\u036f]/g, '')
-                .replace(/đ/g, 'd').replace(/Đ/g, 'D');
-        }
-    }
+        $(this).addClass('fc-primary');
+        $(this).addClass('bc-primary');
+        $('div.content-tab-01').removeClass('hide');
+        $('div.content-tab-01').removeClass('d-block');
+        $('div.content-tab-01').addClass('hide');
+        $(`div#${get_key}`).removeClass('hide');
+    });
 
-
-    if(sticky_relocate != 'function') {
-        function sticky_relocate() {
-            var window_top = $(window).scrollTop();
-            var footer_top = $("footer").offset().top;
-            var div_top = $('.travel-blog-body').offset().top;
-            var div_height = $(".sidebar>.sticky").height();
-
-            var padding = 20;
-
-            if (window_top + div_height > footer_top - padding) {
-                $('.sidebar>.sticky').css({top: (window_top + div_height - footer_top + padding) * -1});
-            } else if (window_top > div_top) {
-                $('.sidebar>.sticky').addClass('position-fixed');
-
-                $('.sidebar>.sticky').css({top: (42)});
-
-            } else {
-                $('.sidebar>.sticky').removeClass('position-fixed');
-
-                $('.sidebar>.sticky').css({top: (42)});
-            }
-        }
-    }
-
-    function set_width_sidebar()
+    function selectServicePassport(e)
     {
-        var sidebar_width = $('.sidebar').width();
-        $('.sidebar .sticky').width(sidebar_width);
+        $('#country_titleText .item-option').removeClass('hide');
     }
 
-
-    var dragdrop = {
-        init : function( elem ){
-            elem.setAttribute('ondrop', 'dragdrop.drop(event)');
-            elem.setAttribute('ondragover', 'dragdrop.drag(event)' );
-        },
-        drop : function(e){
-            e.preventDefault();
-            var file = e.dataTransfer.files;
-            console.log('b');
-            runUpload( file );
-        },
-        drag : function(e){
-            e.preventDefault();
-        }
-    };
-
-    var img_index = 0;
-
-    function runUpload( file ) {
-        for (var i = 0; i < file.length; i++) {
-            var img_src = URL.createObjectURL(file[i]);
-
-            var html = '<div class="travel-post-gallery-item" id="travel-post-gallery-item-'+img_index+'"><div class="travel-post-gallery-item-bg" style="background-image:url('+img_src+');"><a data-fancybox="gallery-119" href="'+img_src+'"></a></div><div class="travel-post-gallery-item-process" id="travel-post-gallery-item-process-'+img_index+'"><div id="img-thumb-post-process-'+img_index+'" class="img-thumb-post-process"><div class="donut"></div><p id="status_' + img_index + '" class="mb-0">1%</p></div></div><div class="travel-post-gallery-item-action img-thumb-post-remove cursor-pointer" id="travel-post-gallery-item-action-'+img_index+'"><a href="#" title="Xóa hình ảnh"><i class="fa fa-trash"></i></a></div></div>';
-            $('.travel-post-gallery .travel-post-gallery-body').prepend(html);
-            uploadImgGallery(file[i], img_index);
-            img_index++;
-        }
+    function closeServicePassport()
+    {
+        $('#country_titleText .item-option').addClass('hide');
     }
 
-    window.onload = function(){
-        if( window.FileReader ){
-            dragdrop.init( document.getElementById('_gallery') );
-            $(document.body).on('change', '#travelPostGalleryIn', function(e) {
-                runUpload(this.files);
-                $(this).val('');
+    //service passport
+    function serviceFocus(e)
+    {
+        const _parent = $(e).parent().find('p').removeClass('ps-absolute');
 
-                console.log($('.travel-post-gallery-body .travel-post-gallery-item').length);
-                console.log('a');
-            });
+    }
 
-            $(document.body).on('click', '#_gallery .box-input', function(e) {
-                e.preventDefault();
-                $('#travelPostGalleryIn').click();
-            });
+    function replaceByDefault(e) {
+        e.src = "https://gody.vn/public/v7/images/v7-avatar-default.jpg";
+    }
+    function showFullContent(e)
+    {
+        const _hasClass = $('div.content-guide').hasClass('hide');
+        if( _hasClass )
+        {
+            $(e).html('Thu Gọn Nội Dung');
+            $('div.content-guide').removeClass('hide');
         }else{
-            var p   = document.createElement( 'p' ),
-                msg = document.createTextNode( 'Sorry, your browser does not support FileReader.' );
-            p.className = 'error';
-            p.appendChild( msg );
-        }
-    };
-
-    if(typeof uploadImgGallery != 'function') {
-        function uploadImgGallery(file, i) {
-            var fileId = i;
-            var ajax = new XMLHttpRequest();
-
-            //Progress Listener
-            ajax.upload.addEventListener("progress", function (e) {
-                var percent = (e.loaded / e.total) * 100;
-                $("#status_" + fileId).text(Math.round(percent) + "%");
-                if(Math.round(percent) == 100) {
-                    $("#status_" + fileId).text('Loading...');
-                }
-            }, false);
-
-            //Load Listener
-            ajax.addEventListener("load", function (e) {
-                var ob = JSON.parse(e.target.response);
-
-                var img_wrapper = $('#travel-post-gallery-item-'+fileId);
-                var _idProcess = $('#travel-post-gallery-item-process-'+fileId);
-                if(ob.hasOwnProperty('image')) {
-                    img_wrapper.find('.travel-post-gallery-item-bg').css({'background-image': 'url()' });
-                    img_wrapper.find('.travel-post-gallery-item-bg a').attr('href', '');
-                    _idProcess.find('.img-thumb-post-process').html('<p>Hình ảnh nhỏ hơn 800x530px</p>');
-                } else {
-
-                    _idProcess.remove();
-                    img_wrapper.attr('data-name', ob.name);
-                    img_wrapper.attr('data-width', ob.width);
-                    img_wrapper.attr('data-height', ob.height);
-                    img_wrapper.attr('data-path', ob.path);
-                    img_wrapper.find('.travel-post-gallery-item-bg').css({'background-image': 'url('+ob.link+')' });
-                    img_wrapper.find('.travel-post-gallery-item-bg a').attr('href', ob.link);
-                    img_wrapper.find('.travel-post-gallery-item-action').attr('data-name', ob.name);
-                }
-
-                //Hide cancel button
-                var _cancel = $('#cancel_' + fileId);
-                _cancel.remove();
-            }, false);
-
-            //Error Listener
-            ajax.addEventListener("error", function (e) {
-                $("#status_" + fileId).text("Upload Failed");
-            }, false);
-            //Abort Listener
-            ajax.addEventListener("abort", function (e) {
-                $("#status_" + fileId).text("Upload Aborted");
-            }, false);
-
-
-            ajax.open("POST", "https://gody.vn/v4/thanh-vien/aquafina94164928/viet-bai/img/upload/a?p=photo-blog");
-
-            var uploaderForm = new FormData();
-
-            uploaderForm.append("image", file);
-            uploaderForm.append("_token", "RwVeLdeMZBiM3GobuQZvQ6wIJmq2n1fyZHEgjYl5");
-            ajax.send(uploaderForm);
-
-            //Cancel button
-            var _cancel = $('#cancel_' + fileId);
-            _cancel.show();
-
-            _cancel.on('click', function () {
-                // ajax.abort();
-                // setTimeout(function() {
-                //     _cancel.parent().toggle(500);
-                // }, 500);
-            });
+            $(e).html('Xem Thêm Nội Dung');
+            $('div.content-guide').addClass('hide');
         }
     }
-
-    if (typeof auto_grow != 'function') {
-        function auto_grow(element) {
-            element.style.height = "5px";
-            element.style.height = (element.scrollHeight)+"px";
-        }
+    function goToElement(e, element = null)
+    {
+        $(`${element}`).focus();
     }
 </script>
 
-<!-- include('v5.post-photo.includes.script', ['current_page' => 'create', 'trv_post' => $trv_post, 'home_url' => 'matching']) -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#departure-date').change(function() {
+            startDate = $(this).datepicker('getDate');
+            $("#return-date").datepicker("option", "minDate", startDate);
+        });
+        $('#return-date').change(function() {
+            endDate = $(this).datepicker('getDate');
+            $("#departure-date").datepicker("option", "maxDate", endDate);
+        });
+    });
+
+    $(function(){
+        $('#departure-date').datepicker({
+            closeText: "Đóng",
+            prevText: "Trước",
+            nextText: "Sau",
+            currentText: "Hôm nay",
+            monthNames: ["Tháng một", "Tháng hai", "Tháng ba", "Tháng tư", "Tháng năm", "Tháng sáu", "Tháng bảy", "Tháng tám", "Tháng chín", "Tháng mười", "Tháng mười một", "Tháng mười hai"],
+            monthNamesShort: ["Một", "Hai", "Ba", "Bốn", "Năm", "Sáu", "Bảy", "Tám", "Chín", "Mười", "Mười một", "Mười hai"],
+            dayNames: ["Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy"],
+            dayNamesShort: ["CN", "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy"],
+            dayNamesMin: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
+            weekHeader: "Tuần",
+            dateFormat: "dd-mm-yy", //"yy-mm-dd", //"dd/mm/yy",
+            //minDate: new Date(),
+            minDate: '+7d',
+            //firstDay: 1,
+            isRTL: false,
+            showMonthAfterYear: false,
+            yearSuffix: ""
+        }).on('change', function(){
+            const _val = $('#departure-date').val();
+            $('input[name="departure-date"]').val(_val);
+            localStorage.setItem(`plan_departure_date`, _val);
+        });
+    });
+    $(function(){
+        $('#return-date').datepicker({
+            closeText: "Đóng",
+            prevText: "Trước",
+            nextText: "Sau",
+            currentText: "Hôm nay",
+            monthNames: ["Tháng một", "Tháng hai", "Tháng ba", "Tháng tư", "Tháng năm", "Tháng sáu", "Tháng bảy", "Tháng tám", "Tháng chín", "Tháng mười", "Tháng mười một", "Tháng mười hai"],
+            monthNamesShort: ["Một", "Hai", "Ba", "Bốn", "Năm", "Sáu", "Bảy", "Tám", "Chín", "Mười", "Mười một", "Mười hai"],
+            dayNames: ["Chủ nhật", "Thứ hai", "Thứ ba", "Thứ tư", "Thứ năm", "Thứ sáu", "Thứ bảy"],
+            dayNamesShort: ["CN", "Hai", "Ba", "Tư", "Năm", "Sáu", "Bảy"],
+            dayNamesMin: ["CN", "T2", "T3", "T4", "T5", "T6", "T7"],
+            weekHeader: "Tuần",
+            dateFormat: "dd-mm-yy",// "yy-mm-dd",
+            firstDay: 1,
+            isRTL: false,
+            showMonthAfterYear: false,
+            yearSuffix: ""
+        }).on('change', function(){
+            const _val = $('#return-date').val();
+            $('input[name="return-date"]').val(_val);
+            localStorage.setItem(`plan_return_date`, _val);
+        });
+    })
+    $(function(){
+        $('.datepicker-plan-time').timepicker({
+            timeFormat: 'h:mm p',
+            interval: 10,
+            dynamic: false,
+            dropdown: true,
+            scrollbar: true
+        });
+    });
+
+</script>
+
+<script src="/public/v7/js/post-detail.js?v=1235"></script>
+
 
 <script src="https://gody.vn/public/home/js/jquery.validate.min.js"></script>
 
@@ -3114,30 +2685,30 @@
 
         function popupCheck() {
             /* popup check
-        setTimeout(function() {
-            $.ajax({
-                url: "https://gody.vn/pop-up/check",
-                type: "GET",
-                data: {},
-                success: function(response) {
-                    var location_href = window.location.href;
+            setTimeout(function() {
+                $.ajax({
+                    url: "https://gody.vn/pop-up/check",
+                    type: "GET",
+                    data: {},
+                    success: function(response) {
+                        var location_href = window.location.href;
 
-                    if(location_href.indexOf('gody.vn/map/get_all_country') == -1 && location_href.indexOf('gody.vn/ban-do-du-lich/viet-nam') == -1 && location_href.indexOf('gody.vn/du-lich-nuoc-ngoai') == -1 && response.status == false) {
-                        // $('#modal-banner-ads .pop-up').addClass('hide');
-                        // if(response.number != undefined) {
-                        //     $('#modal-banner-ads .pop-up-'+response.number).removeClass('hide');
-                        // } else {
-                        //     $('#modal-banner-ads .pop-up-1').removeClass('hide');
-                        // }
-                        //$('#modal-banner-ads').modal('show');
+                        if(location_href.indexOf('gody.vn/map/get_all_country') == -1 && location_href.indexOf('gody.vn/ban-do-du-lich/viet-nam') == -1 && location_href.indexOf('gody.vn/du-lich-nuoc-ngoai') == -1 && response.status == false) {
+                            // $('#modal-banner-ads .pop-up').addClass('hide');
+                            // if(response.number != undefined) {
+                            //     $('#modal-banner-ads .pop-up-'+response.number).removeClass('hide');
+                            // } else {
+                            //     $('#modal-banner-ads .pop-up-1').removeClass('hide');
+                            // }
+                            //$('#modal-banner-ads').modal('show');
+                        }
+                    },
+                    error: function(response) {
+                        // $('#modal-banner-ads').modal('show');
                     }
-                },
-                error: function(response) {
-                    // $('#modal-banner-ads').modal('show');
-                }
-            });
-        }, 5000);
-        */
+                });
+            }, 5000);
+            */
         }
 
         $(document.body).on('click', '#modal-banner-ads', function(e) {
@@ -3456,6 +3027,16 @@
 
         // update user tagged places
 
+        // $.ajax({
+        //     url: "https://gody.vn/a/facebook/get-user-tagged-places",
+        //     type: "GET",
+        //     data: {},
+        //     success: function(response) {
+        //         console.log(response);
+        //     }, error: function(response) {
+        //         console.log(response);
+        //     }
+        // })
 
     }); /* End Document ready */
 
@@ -3766,11 +3347,11 @@
                         return false;
                     }
                     /*$parent.before(`<div class="bar-2 ps-fixed bg-white z-index-9999 t12 r12 bs-card ws3 bg-black-025 donated-box py-12 px-0 xs:px-12">
-                    <ul class="mb-0">
-                        <li>Bạn đã tặng thành công <strong>`+point+`</strong> Go-coin.</li>
-                        <li class="mt-6">Số Go-coin còn lại <strong>`+(cPoint - point)+`</strong></li>
-                    </ul>
-                </div>`);*/
+                        <ul class="mb-0">
+                            <li>Bạn đã tặng thành công <strong>`+point+`</strong> Go-coin.</li>
+                            <li class="mt-6">Số Go-coin còn lại <strong>`+(cPoint - point)+`</strong></li>
+                        </ul>
+                    </div>`);*/
 
                     $('.donate-coin .donate-dismiss').click();
 

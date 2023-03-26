@@ -143,7 +143,7 @@
             <div class="w-fit d-block">
                 <div class="w-fit d-flex jc-space-between" style="--column:6; --gutter: 100px;">
                     <div class="ps-relative d-flex fd-column h-250 xs:h-184"
-                            style="width: calc( (100% - var(--gutter)) / var(--column) );">
+                         style="width: calc( (100% - var(--gutter)) / var(--column) );">
                         <div class="ps-relative" style="height: 220px;">
                             <a href="https://gody.vn/chau-a/viet-nam/kien-giang">
                                 <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
@@ -165,7 +165,7 @@
                         </div>
                     </div>
                     <div class="ps-relative d-flex fd-column h-250 xs:h-184"
-                            style="width: calc( (100% - var(--gutter)) / var(--column) );">
+                         style="width: calc( (100% - var(--gutter)) / var(--column) );">
                         <div class="ps-relative" style="height: 220px;">
                             <a href="https://gody.vn/chau-a/viet-nam/lao-cai">
                                 <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
@@ -187,7 +187,7 @@
                         </div>
                     </div>
                     <div class="ps-relative d-flex fd-column h-250 xs:h-184"
-                            style="width: calc( (100% - var(--gutter)) / var(--column) );">
+                         style="width: calc( (100% - var(--gutter)) / var(--column) );">
                         <div class="ps-relative" style="height: 220px;">
                             <a href="https://gody.vn/chau-a/viet-nam/da-nang">
                                 <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
@@ -209,7 +209,7 @@
                         </div>
                     </div>
                     <div class="ps-relative d-flex fd-column h-250 xs:h-184"
-                            style="width: calc( (100% - var(--gutter)) / var(--column) );">
+                         style="width: calc( (100% - var(--gutter)) / var(--column) );">
                         <div class="ps-relative" style="height: 220px;">
                             <a href="https://gody.vn/chau-a/viet-nam/lam-dong">
                                 <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
@@ -231,7 +231,7 @@
                         </div>
                     </div>
                     <div class="ps-relative d-flex fd-column h-250 xs:h-184"
-                            style="width: calc( (100% - var(--gutter)) / var(--column) );">
+                         style="width: calc( (100% - var(--gutter)) / var(--column) );">
                         <div class="ps-relative" style="height: 220px;">
                             <a href="https://gody.vn/chau-a/Japan">
                                 <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
@@ -253,7 +253,7 @@
                         </div>
                     </div>
                     <div  class="ps-relative d-flex fd-column h-250 xs:h-184"
-                            style="width: calc( (100% - var(--gutter)) / var(--column) );">
+                          style="width: calc( (100% - var(--gutter)) / var(--column) );">
                         <div class="ps-relative" style="height: 220px;">
                             <a href="https://gody.vn/chau-a/taiwan">
                                 <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
@@ -425,7 +425,7 @@
         <div class="row">
             <div class="w-fit d-block">
                 <div  class="d-block w-fit"
-                        data-style="box-shadow: #ff8c00 1px 1px, #ff8c00 2px 2px, #ff8c00 3px 3px, #ff8c00 4px 4px, #ff8c00 5px 5px, #ff8c00 6px 6px, #ff8c00 7px 7px, #ff8c00 8px 8px, #ff8c00 9px 9px, #ff8c00 10px 10px, #ff8c00 11px 11px, #ff8c00 12px 12px, #ff8c00 13px 13px, #ff8c00 14px 14px">
+                      data-style="box-shadow: #ff8c00 1px 1px, #ff8c00 2px 2px, #ff8c00 3px 3px, #ff8c00 4px 4px, #ff8c00 5px 5px, #ff8c00 6px 6px, #ff8c00 7px 7px, #ff8c00 8px 8px, #ff8c00 9px 9px, #ff8c00 10px 10px, #ff8c00 11px 11px, #ff8c00 12px 12px, #ff8c00 13px 13px, #ff8c00 14px 14px">
                     <div class="w-fit d-block barr-black-2 ps-relative">
                         <div class="w-fit d-block mb-0 pt-20 pb-20 pl-20 pr-20" style="background: #f7b15c !important;">
                             <div class="w-fit d-block">
@@ -1105,7 +1105,7 @@ Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c
                         </div>
                     </div>
                     <div class="w-fit d-block item-border-top-first"
-                            style="
+                         style="
                             border-bottom: 1px solid #e5e5e5;
                             border-left: 1px solid #e5e5e5;
                             border-right: 1px solid #e5e5e5;">
@@ -1162,7 +1162,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                     </div>
                     <div class="w-fit d-block item-border-top-first"
-                            style="
+                         style="
                             border-bottom: 1px solid #e5e5e5;
                             border-left: 1px solid #e5e5e5;
                             border-right: 1px solid #e5e5e5;">
@@ -1211,7 +1211,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                     </div>
                     <div class="w-fit d-block item-border-top-first"
-                            style="
+                         style="
                             border-bottom: 1px solid #e5e5e5;
                             border-left: 1px solid #e5e5e5;
                             border-right: 1px solid #e5e5e5;">
@@ -1261,7 +1261,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                     </div>
                     <div class="w-fit d-block item-border-top-first"
-                            style="
+                         style="
                             border-bottom: 1px solid #e5e5e5;
                             border-left: 1px solid #e5e5e5;
                             border-right: 1px solid #e5e5e5;">
@@ -1310,7 +1310,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                     </div>
                     <div class="w-fit d-block item-border-top-first"
-                            style="
+                         style="
                             border-bottom: 1px solid #e5e5e5;
                             border-left: 1px solid #e5e5e5;
                             border-right: 1px solid #e5e5e5;">
@@ -1359,7 +1359,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                     </div>
                     <div class="w-fit d-block item-border-top-first"
-                            style="
+                         style="
                             border-bottom: 1px solid #e5e5e5;
                             border-left: 1px solid #e5e5e5;
                             border-right: 1px solid #e5e5e5;"
@@ -1409,7 +1409,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                     </div>
                     <div class="w-fit d-block item-border-top-first"
-                            style="
+                         style="
                             border-bottom: 1px solid #e5e5e5;
                             border-left: 1px solid #e5e5e5;
                             border-right: 1px solid #e5e5e5;">
@@ -1458,7 +1458,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                     </div>
                     <div class="w-fit d-block item-border-top-first"
-                            style="
+                         style="
                             border-bottom: 1px solid #e5e5e5;
                             border-left: 1px solid #e5e5e5;
                             border-right: 1px solid #e5e5e5;">
@@ -1507,7 +1507,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                     </div>
                     <div class="w-fit d-block item-border-top-first"
-                            style="
+                         style="
                             border-bottom: 1px solid #e5e5e5;
                             border-left: 1px solid #e5e5e5;
                             border-right: 1px solid #e5e5e5;">
@@ -1556,7 +1556,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                     </div>
                     <div class="w-fit d-block item-border-top-first"
-                            style="
+                         style="
                             border-bottom: 1px solid #e5e5e5;
                             border-left: 1px solid #e5e5e5;
                             border-right: 1px solid #e5e5e5;">
@@ -2258,7 +2258,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                 <h2 class="fc-fourteenth fs-36 lh-44 fw-700">Xu hướng</h2>
             </div>
             <div class="w-fit d-flex jc-space-between"
-                    style="justify-content: space-between!important;--column:2; --gutter: 100px;">
+                 style="justify-content: space-between!important;--column:2; --gutter: 100px;">
                 <div class="d-block ps-relative fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );">
                     <div class="w-fit d-block"><span class="w-fit d-block fc-black fw-700 fs-26 lh-24">Top 5 điểm đến được y&ecirc;u th&iacute;ch</span>
                     </div>
@@ -2339,7 +2339,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                             <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
                                 <p>
                                     <a href="https://gody.vn/blog/hatra2486"
-                                            class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10">
+                                       class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10">
                                         Ha Tra
                                     </a>
                                     <a href="https://gody.vn/hoi-dap/nen-mua-ve-the-nao-de-di-trong-nuoc-phap-012-5028" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
@@ -2368,7 +2368,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                             <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
                                 <p>
                                     <a href="https://gody.vn/blog/giaminh4723"
-                                            class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10">
+                                       class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10">
                                         Gia Minh
                                     </a>
                                     <a href="https://gody.vn/hoi-dap/khach-san-o-tay-ban-nha-012-5027" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
