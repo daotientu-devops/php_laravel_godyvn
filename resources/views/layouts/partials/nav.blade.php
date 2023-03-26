@@ -68,7 +68,7 @@
                         </li>
 
                         <li class="mt-10 mb-10">
-                            <a href="/cong-tac-vien/viet-bai/note" class="fc-sixth">
+                            <a href="{{url('cong-tac-vien/viet-bai/note')}}" class="fc-sixth">
                                 <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/trail-sign-outline.svg" class="filter-sixth w-24 mr-8">Chia sẻ, giới thiệu địa điểm mới
                             </a>
                         </li>

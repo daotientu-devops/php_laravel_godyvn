@@ -26,3 +26,6 @@ Route::get('/hoi-dap', function () {
 Route::get('/lich-trinh-du-lich', function () {
     return view('schedule.index');
 });
+Route::get('/cong-tac-vien/viet-bai/note', function () {
+    return view('blog.collaborator');
+});
