@@ -62,7 +62,7 @@
                         </li>
 
                         <li class="mt-10 mb-10">
-                            <a href="https://gody.vn/lich-trinh-du-lich" class="fc-sixth" id=" ">
+                            <a href="{{url('lich-trinh-du-lich')}}" class="fc-sixth" id=" ">
                                 <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/footsteps-outline.svg" class="filter-sixth w-24 mr-8">Lập & chia sẻ hành trình
                             </a>
                         </li>

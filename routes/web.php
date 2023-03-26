@@ -23,3 +23,6 @@ Route::get('/photo-blog/dang-bai/note', function () {
 Route::get('/hoi-dap', function () {
     return view('question.index');
 });
+Route::get('/lich-trinh-du-lich', function () {
+    return view('schedule.index');
+});
