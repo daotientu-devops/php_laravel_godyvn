@@ -20,3 +20,6 @@ Route::get('/blog/viet-bai/note', function () {
 Route::get('/photo-blog/dang-bai/note', function () {
     return view('blog.photo');
 });
+Route::get('/hoi-dap', function () {
+    return view('question.index');
+});

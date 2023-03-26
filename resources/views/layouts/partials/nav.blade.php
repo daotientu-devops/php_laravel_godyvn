@@ -56,7 +56,7 @@
                         </li>
 
                         <li class="mt-10 mb-10">
-                            <a href="https://gody.vn/hoi-dap" class="fc-sixth" id=" ">
+                            <a href="{{url('hoi-dap')}}" class="fc-sixth" id=" ">
                                 <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/people-outline.svg" class="filter-sixth w-24 mr-8">Hỏi đáp du lịch
                             </a>
                         </li>
