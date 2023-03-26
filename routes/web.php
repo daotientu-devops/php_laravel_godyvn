@@ -29,3 +29,9 @@ Route::get('/lich-trinh-du-lich', function () {
 Route::get('/cong-tac-vien/viet-bai/note', function () {
     return view('blog.collaborator');
 });
+Route::get('/diem-den', function () {
+    return view('destination.index');
+});
+Route::get('ban-do-du-lich/viet-nam', function () {
+    return view('map.index');
+});
