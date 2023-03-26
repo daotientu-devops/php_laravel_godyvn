@@ -17,3 +17,6 @@ Route::get('/', function () {
 Route::get('/blog/viet-bai/note', function () {
     return view('blog.note');
 });
+Route::get('/photo-blog/dang-bai/note', function () {
+    return view('blog.photo');
+});

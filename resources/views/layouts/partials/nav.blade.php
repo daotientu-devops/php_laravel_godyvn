@@ -44,7 +44,7 @@
                         </li>
 
                         <li class="mt-10">
-                            <a href="https://gody.vn/photo-blog/dang-bai/note" class="fc-sixth" id=" ">
+                            <a href="{{url('photo-blog/dang-bai/note')}}" class="fc-sixth" id=" ">
                                 <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/image-outline.svg" class="filter-sixth w-24 mr-8">Chia sẻ hình ảnh
                             </a>
                         </li>
