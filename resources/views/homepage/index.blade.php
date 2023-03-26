@@ -145,7 +145,7 @@
                     <div class="ps-relative d-flex fd-column h-250 xs:h-184"
                          style="width: calc( (100% - var(--gutter)) / var(--column) );">
                         <div class="ps-relative" style="height: 220px;">
-                            <a href="https://gody.vn/chau-a/viet-nam/kien-giang">
+                            <a href="http://125.212.224.111/chau-a/viet-nam/kien-giang">
                                 <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                     <img
                                             data-srcset="https://media2.gody.vn/public/images/place/golden-sand-bar/61afa90039e68-1638902016.jpeg"
@@ -159,7 +159,7 @@
                                     />
                                 </div>
                             </a>
-                            <a href="https://gody.vn/chau-a/viet-nam/kien-giang" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                            <a href="http://125.212.224.111/chau-a/viet-nam/kien-giang" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                                 Ph&uacute; Quốc
                             </a>
                         </div>
@@ -167,7 +167,7 @@
                     <div class="ps-relative d-flex fd-column h-250 xs:h-184"
                          style="width: calc( (100% - var(--gutter)) / var(--column) );">
                         <div class="ps-relative" style="height: 220px;">
-                            <a href="https://gody.vn/chau-a/viet-nam/lao-cai">
+                            <a href="http://125.212.224.111/chau-a/viet-nam/lao-cai">
                                 <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                     <img
                                             data-srcset="https://media.gody.vn/images/lao-cai/nha-tho-sapa/10-2016/20161020033948-nha-tho-sapa-gody(9).jpg"
@@ -181,7 +181,7 @@
                                     />
                                 </div>
                             </a>
-                            <a href="https://gody.vn/chau-a/viet-nam/lao-cai" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                            <a href="http://125.212.224.111/chau-a/viet-nam/lao-cai" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                                 Sapa
                             </a>
                         </div>
@@ -189,7 +189,7 @@
                     <div class="ps-relative d-flex fd-column h-250 xs:h-184"
                          style="width: calc( (100% - var(--gutter)) / var(--column) );">
                         <div class="ps-relative" style="height: 220px;">
-                            <a href="https://gody.vn/chau-a/viet-nam/da-nang">
+                            <a href="http://125.212.224.111/chau-a/viet-nam/da-nang">
                                 <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                     <img
                                             data-srcset="https://media.gody.vn/images/da-nang/ba-na-hills/10-2016/20161017073018-ba-ba-hills-da-nang-gody%20(2).jpg"
@@ -203,7 +203,7 @@
                                     />
                                 </div>
                             </a>
-                            <a href="https://gody.vn/chau-a/viet-nam/da-nang" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                            <a href="http://125.212.224.111/chau-a/viet-nam/da-nang" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                                 Đ&agrave; Nẵng
                             </a>
                         </div>
@@ -211,7 +211,7 @@
                     <div class="ps-relative d-flex fd-column h-250 xs:h-184"
                          style="width: calc( (100% - var(--gutter)) / var(--column) );">
                         <div class="ps-relative" style="height: 220px;">
-                            <a href="https://gody.vn/chau-a/viet-nam/lam-dong">
+                            <a href="http://125.212.224.111/chau-a/viet-nam/lam-dong">
                                 <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                     <img
                                             data-srcset="https://media.gody.vn/images/lam-dong/thung-lung-tinh-yeu/1-2017/20170109030049-thung-lung-tinh-yeu-gody%20(1).jpg"
@@ -225,7 +225,7 @@
                                     />
                                 </div>
                             </a>
-                            <a href="https://gody.vn/chau-a/viet-nam/lam-dong" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                            <a href="http://125.212.224.111/chau-a/viet-nam/lam-dong" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                                 Đ&agrave; Lạt
                             </a>
                         </div>
@@ -233,7 +233,7 @@
                     <div class="ps-relative d-flex fd-column h-250 xs:h-184"
                          style="width: calc( (100% - var(--gutter)) / var(--column) );">
                         <div class="ps-relative" style="height: 220px;">
-                            <a href="https://gody.vn/chau-a/Japan">
+                            <a href="http://125.212.224.111/chau-a/Japan">
                                 <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                     <img
                                             data-srcset="https://media2.gody.vn/public/images/province/Niigata/613a2632955c6-1631200818.jpeg"
@@ -247,7 +247,7 @@
                                     />
                                 </div>
                             </a>
-                            <a href="https://gody.vn/chau-a/Japan" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                            <a href="http://125.212.224.111/chau-a/Japan" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                                 Nhật Bản
                             </a>
                         </div>
@@ -255,7 +255,7 @@
                     <div  class="ps-relative d-flex fd-column h-250 xs:h-184"
                           style="width: calc( (100% - var(--gutter)) / var(--column) );">
                         <div class="ps-relative" style="height: 220px;">
-                            <a href="https://gody.vn/chau-a/taiwan">
+                            <a href="http://125.212.224.111/chau-a/taiwan">
                                 <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                     <img
                                             data-srcset="https://media.gody.vn/images/hinh-tong-hop/hinh-anh-tong-hop-2/11-2018/15047553-20181119094427-hinh-tong-hop-hinh-anh-tong-hop-2.jpg"
@@ -269,7 +269,7 @@
                                     />
                                 </div>
                             </a>
-                            <a href="https://gody.vn/chau-a/taiwan" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                            <a href="http://125.212.224.111/chau-a/taiwan" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                                 Đ&agrave;i Loan
                             </a>
                         </div>
@@ -300,7 +300,7 @@
                                     <ion-icon name="search" style="font-size: 26px; color: #333333; position: absolute; bottom: 10px;"></ion-icon>
                                 </span>
                             </div>
-                            <a href="https://gody.vn/dich-vu-lam-ho-chieu" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">L&agrave;m hộ chiếu nhanh</a>
+                            <a href="http://125.212.224.111/dich-vu-lam-ho-chieu" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">L&agrave;m hộ chiếu nhanh</a>
                         </div>
                     </div>
                     <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
@@ -316,7 +316,7 @@
                                     <ion-icon name="search" style="font-size: 26px; color: #333333; position: absolute; bottom: 10px;"></ion-icon>
                                 </span>
                             </div>
-                            <a href="https://gody.vn/chau-a/viet-nam/lam-dong" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">Đ&agrave; Lạt</a>
+                            <a href="http://125.212.224.111/chau-a/viet-nam/lam-dong" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">Đ&agrave; Lạt</a>
                         </div>
                     </div>
                     <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
@@ -332,7 +332,7 @@
                                     <ion-icon name="search" style="font-size: 26px; color: #333333; position: absolute; bottom: 10px;"></ion-icon>
                                 </span>
                             </div>
-                            <a href="https://gody.vn/bai-viet/la-ngau-diem-cam-trai-giua-nui-rung-binh-thuan-10764" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">La Ng&acirc;u</a>
+                            <a href="http://125.212.224.111/bai-viet/la-ngau-diem-cam-trai-giua-nui-rung-binh-thuan-10764" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">La Ng&acirc;u</a>
                         </div>
                     </div>
                     <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
@@ -348,7 +348,7 @@
                                     <ion-icon name="search" style="font-size: 26px; color: #333333; position: absolute; bottom: 10px;"></ion-icon>
                                 </span>
                             </div>
-                            <a href="https://gody.vn/ve-may-bay" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">V&eacute; m&aacute;y bay </a>
+                            <a href="http://125.212.224.111/ve-may-bay" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">V&eacute; m&aacute;y bay </a>
                         </div>
                     </div>
                     <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
@@ -364,7 +364,7 @@
                                     <ion-icon name="search" style="font-size: 26px; color: #333333; position: absolute; bottom: 10px;"></ion-icon>
                                 </span>
                             </div>
-                            <a href="https://gody.vn/san-pham/bao-hiem" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">Bảo hiểm du lịch</a>
+                            <a href="http://125.212.224.111/san-pham/bao-hiem" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">Bảo hiểm du lịch</a>
                         </div>
                     </div>
                     <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
@@ -380,7 +380,7 @@
                                     <ion-icon name="search" style="font-size: 26px; color: #333333; position: absolute; bottom: 10px;"></ion-icon>
                                 </span>
                             </div>
-                            <a href="https://gody.vn/visa" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">Visa Đ&agrave;i Loan mới nhất</a>
+                            <a href="http://125.212.224.111/visa" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">Visa Đ&agrave;i Loan mới nhất</a>
                         </div>
                     </div>
                     <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
@@ -396,7 +396,7 @@
                                     <ion-icon name="search" style="font-size: 26px; color: #333333; position: absolute; bottom: 10px;"></ion-icon>
                                 </span>
                             </div>
-                            <a href="https://gody.vn/chau-a/Japan" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">Du lịch Nhật Bản</a>
+                            <a href="http://125.212.224.111/chau-a/Japan" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">Du lịch Nhật Bản</a>
                         </div>
                     </div>
                     <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
@@ -412,7 +412,7 @@
                                     <ion-icon name="search" style="font-size: 26px; color: #333333; position: absolute; bottom: 10px;"></ion-icon>
                                 </span>
                             </div>
-                            <a href="https://gody.vn/chau-a/viet-nam/lao-cai" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">Sapa</a>
+                            <a href="http://125.212.224.111/chau-a/viet-nam/lao-cai" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">Sapa</a>
                         </div>
                     </div>
                 </div>
@@ -433,7 +433,7 @@
                             </div>
                             <div class="d-flex ai-top fw-wrap jc-space-between" style="--column:4; --gutter: 47px;">
                                 <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
-                                    <a href="https://gody.vn/du-lich/bali-se-cam-khach-du-lich-thue-xe-may-10911">
+                                    <a href="http://125.212.224.111/du-lich/bali-se-cam-khach-du-lich-thue-xe-may-10911">
                                         <img
                                                 data-src="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/c5ce094c8069069fb2f6d431585a1643a5a4fa97.jpg"
                                                 data-srcset="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/c5ce094c8069069fb2f6d431585a1643a5a4fa97.jpg"
@@ -442,12 +442,12 @@
                                         />
                                     </a>
                                     <div class="w-fit d-block pt-15 pb-0">
-                                        <a href="https://gody.vn/du-lich/bali-se-cam-khach-du-lich-thue-xe-may-10911" class="fc-fourteenth fs-19 fw-600 lh-24 h:fc-sixth">
+                                        <a href="http://125.212.224.111/du-lich/bali-se-cam-khach-du-lich-thue-xe-may-10911" class="fc-fourteenth fs-19 fw-600 lh-24 h:fc-sixth">
                                             Bali sẽ cấm kh&aacute;ch du lịch thu&ecirc; xe m&aacute;y </a>
                                     </div>
                                 </div>
                                 <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
-                                    <a href="https://gody.vn/du-lich/trung-quoc-mo-lai-viec-cap-visa-du-lich-cho-du-khach-nuoc-ngoai-co-viet-nam-10904">
+                                    <a href="http://125.212.224.111/du-lich/trung-quoc-mo-lai-viec-cap-visa-du-lich-cho-du-khach-nuoc-ngoai-co-viet-nam-10904">
                                         <img
                                                 data-src="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/7be0469e91530756117521350bd1b58bd9943ffc.jpeg"
                                                 data-srcset="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/7be0469e91530756117521350bd1b58bd9943ffc.jpeg"
@@ -456,12 +456,12 @@
                                         />
                                     </a>
                                     <div class="w-fit d-block pt-15 pb-0">
-                                        <a href="https://gody.vn/du-lich/trung-quoc-mo-lai-viec-cap-visa-du-lich-cho-du-khach-nuoc-ngoai-co-viet-nam-10904" class="fc-fourteenth fs-19 fw-600 lh-24 h:fc-sixth">
+                                        <a href="http://125.212.224.111/du-lich/trung-quoc-mo-lai-viec-cap-visa-du-lich-cho-du-khach-nuoc-ngoai-co-viet-nam-10904" class="fc-fourteenth fs-19 fw-600 lh-24 h:fc-sixth">
                                             Trung Quốc mở lại việc cấp visa du lịch cho du kh&aacute;ch nước ngo&agrave;i (c&oacute; Việt Nam) </a>
                                     </div>
                                 </div>
                                 <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
-                                    <a href="https://gody.vn/du-lich/nha-tho-duc-ba-paris-mo-cua-tro-lai-sau-tran-hoa-hoan-kinh-hoang-2019-10898">
+                                    <a href="http://125.212.224.111/du-lich/nha-tho-duc-ba-paris-mo-cua-tro-lai-sau-tran-hoa-hoan-kinh-hoang-2019-10898">
                                         <img
                                                 data-src="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/fa9c4d2bd1140698e9b23fbf5251d18c1672bbb2.png"
                                                 data-srcset="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/fa9c4d2bd1140698e9b23fbf5251d18c1672bbb2.png"
@@ -470,12 +470,12 @@
                                         />
                                     </a>
                                     <div class="w-fit d-block pt-15 pb-0">
-                                        <a href="https://gody.vn/du-lich/nha-tho-duc-ba-paris-mo-cua-tro-lai-sau-tran-hoa-hoan-kinh-hoang-2019-10898" class="fc-fourteenth fs-19 fw-600 lh-24 h:fc-sixth">
+                                        <a href="http://125.212.224.111/du-lich/nha-tho-duc-ba-paris-mo-cua-tro-lai-sau-tran-hoa-hoan-kinh-hoang-2019-10898" class="fc-fourteenth fs-19 fw-600 lh-24 h:fc-sixth">
                                             Nh&agrave; thờ Đức B&agrave; Paris mở cửa trở lại sau trận hỏa hoạn kinh ho&agrave;ng 2019 </a>
                                     </div>
                                 </div>
                                 <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
-                                    <a href="https://gody.vn/du-lich/kinh-nghiem-tham-quan-jewel-san-bay-changi-singapore-10897">
+                                    <a href="http://125.212.224.111/du-lich/kinh-nghiem-tham-quan-jewel-san-bay-changi-singapore-10897">
                                         <img
                                                 data-src="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/66b1ca6c378d74fb3eb47c8ede65ff62d9683fcd.jpg"
                                                 data-srcset="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/66b1ca6c378d74fb3eb47c8ede65ff62d9683fcd.jpg"
@@ -484,7 +484,7 @@
                                         />
                                     </a>
                                     <div class="w-fit d-block pt-15 pb-0">
-                                        <a href="https://gody.vn/du-lich/kinh-nghiem-tham-quan-jewel-san-bay-changi-singapore-10897" class="fc-fourteenth fs-19 fw-600 lh-24 h:fc-sixth">
+                                        <a href="http://125.212.224.111/du-lich/kinh-nghiem-tham-quan-jewel-san-bay-changi-singapore-10897" class="fc-fourteenth fs-19 fw-600 lh-24 h:fc-sixth">
                                             Kinh nghiệm tham quan Jewel, s&acirc;n bay Changi, Singapore </a>
                                     </div>
                                 </div>
@@ -514,7 +514,7 @@
                 <div class="slick-item w-fit d-flex jc-space-between" style="justify-content: space-between!important;">
                     <div class="g-item ps-relative d-flex fd-column">
                         <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
-                            <a href="https://gody.vn/bai-viet/cho-phien-can-cau-si-ma-cai-lao-cai-3762">
+                            <a href="http://125.212.224.111/bai-viet/cho-phien-can-cau-si-ma-cai-lao-cai-3762">
                                 <img
                                         data-src="https://media2.gody.vn/public/mytravelmap/images/2019/6/10/minhhieuuu10123339/79b70b698e1efa841e9c1a3dd6e9bb3b73d32a47.jpg"
                                         data-srcset="https://media2.gody.vn/public/mytravelmap/images/2019/6/10/minhhieuuu10123339/79b70b698e1efa841e9c1a3dd6e9bb3b73d32a47.jpg"
@@ -524,12 +524,12 @@
                             </a>
                             <div class="my-10 ps-relative c-pointer">
                                 <div class="_i-content-t">
-                                    <a href="https://gody.vn/bai-viet/cho-phien-can-cau-si-ma-cai-lao-cai-3762" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">Chợ phi&ecirc;n c&aacute;n cấu , si ma cai, l&agrave;o cai</a>
+                                    <a href="http://125.212.224.111/bai-viet/cho-phien-can-cau-si-ma-cai-lao-cai-3762" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">Chợ phi&ecirc;n c&aacute;n cấu , si ma cai, l&agrave;o cai</a>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="d-flex ai-center jc-space-between py-10">
                                     <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                        <a href="https://gody.vn/blog/minhhieuuu10123339" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                        <a href="http://125.212.224.111/blog/minhhieuuu10123339" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
                                             <img
                                                     data-src="https://gody.vn/public/v3/images/user/avatar/minhhieuuu10123339/69279596-20190610114808.jpg"
                                                     data-srcset="https://gody.vn/public/v3/images/user/avatar/minhhieuuu10123339/69279596-20190610114808.jpg"
@@ -537,7 +537,7 @@
                                             >
                                         </a>
                                         <div class="fl-1">
-                                            <a href="https://gody.vn/blog/minhhieuuu10123339" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Mai Thị T&acirc;m</a>
+                                            <a href="http://125.212.224.111/blog/minhhieuuu10123339" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Mai Thị T&acirc;m</a>
                                         </div>
                                     </div>
                                 </div>
@@ -546,7 +546,7 @@
                     </div>
                     <div class="g-item ps-relative d-flex fd-column">
                         <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
-                            <a href="https://gody.vn/bai-viet/kinh-nghiem-du-lich-tay-ninh-9201">
+                            <a href="http://125.212.224.111/bai-viet/kinh-nghiem-du-lich-tay-ninh-9201">
                                 <img
                                         data-src="https://media2.gody.vn/public/mytravelmap/images/2019/10/17/lee23412/8cb1f4795533b3c5ca1b79586b58a3ade439c31f.jpeg"
                                         data-srcset="https://media2.gody.vn/public/mytravelmap/images/2019/10/17/lee23412/8cb1f4795533b3c5ca1b79586b58a3ade439c31f.jpeg"
@@ -556,12 +556,12 @@
                             </a>
                             <div class="my-10 ps-relative c-pointer">
                                 <div class="_i-content-t">
-                                    <a href="https://gody.vn/bai-viet/kinh-nghiem-du-lich-tay-ninh-9201" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">Kinh nghiệm du lịch t&acirc;y ninh: Ăn uống, Đi lại, tham quan</a>
+                                    <a href="http://125.212.224.111/bai-viet/kinh-nghiem-du-lich-tay-ninh-9201" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">Kinh nghiệm du lịch t&acirc;y ninh: Ăn uống, Đi lại, tham quan</a>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="d-flex ai-center jc-space-between py-10">
                                     <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                        <a href="https://gody.vn/blog/lee23412" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                        <a href="http://125.212.224.111/blog/lee23412" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
                                             <img
                                                     data-src="https://gody.vn/public/v3/images/user/avatar/lee23412/51225757-20191017093617.jpg"
                                                     data-srcset="https://gody.vn/public/v3/images/user/avatar/lee23412/51225757-20191017093617.jpg"
@@ -569,7 +569,7 @@
                                             >
                                         </a>
                                         <div class="fl-1">
-                                            <a href="https://gody.vn/blog/lee23412" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Cẩm T&uacute;</a>
+                                            <a href="http://125.212.224.111/blog/lee23412" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Cẩm T&uacute;</a>
                                         </div>
                                     </div>
                                 </div>
@@ -578,7 +578,7 @@
                     </div>
                     <div class="g-item ps-relative d-flex fd-column">
                         <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
-                            <a href="https://gody.vn/bai-viet/chia-se-kinh-nghiem-xin-visa-du-lich-my-tu-tuc-chi-tiet-nhat-5432">
+                            <a href="http://125.212.224.111/bai-viet/chia-se-kinh-nghiem-xin-visa-du-lich-my-tu-tuc-chi-tiet-nhat-5432">
                                 <img
                                         data-src="https://media2.gody.vn/public/mytravelmap/images/2019/9/19/nguyentuongnam953682/8b080b5a7af3289a032020a2865acb11c830fe5f.jpg"
                                         data-srcset="https://media2.gody.vn/public/mytravelmap/images/2019/9/19/nguyentuongnam953682/8b080b5a7af3289a032020a2865acb11c830fe5f.jpg"
@@ -588,12 +588,12 @@
                             </a>
                             <div class="my-10 ps-relative c-pointer">
                                 <div class="_i-content-t">
-                                    <a href="https://gody.vn/bai-viet/chia-se-kinh-nghiem-xin-visa-du-lich-my-tu-tuc-chi-tiet-nhat-5432" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">Chia sẻ kinh nghiệm xin visa du lịch mỹ tự t&uacute;c chi tiết nhất!</a>
+                                    <a href="http://125.212.224.111/bai-viet/chia-se-kinh-nghiem-xin-visa-du-lich-my-tu-tuc-chi-tiet-nhat-5432" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">Chia sẻ kinh nghiệm xin visa du lịch mỹ tự t&uacute;c chi tiết nhất!</a>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="d-flex ai-center jc-space-between py-10">
                                     <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                        <a href="https://gody.vn/blog/nguyentuongnam953682" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                        <a href="http://125.212.224.111/blog/nguyentuongnam953682" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
                                             <img
                                                     data-src="https://lh3.googleusercontent.com/a-/AAuE7mBlOlGT3NPdmiGxHP1HFRXTZ2KXU3WTHjZE52fy=s50"
                                                     data-srcset="https://lh3.googleusercontent.com/a-/AAuE7mBlOlGT3NPdmiGxHP1HFRXTZ2KXU3WTHjZE52fy=s50"
@@ -601,7 +601,7 @@
                                             >
                                         </a>
                                         <div class="fl-1">
-                                            <a href="https://gody.vn/blog/nguyentuongnam953682" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Nam Nguyen</a>
+                                            <a href="http://125.212.224.111/blog/nguyentuongnam953682" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Nam Nguyen</a>
                                         </div>
                                     </div>
                                 </div>
@@ -610,7 +610,7 @@
                     </div>
                     <div class="g-item ps-relative d-flex fd-column">
                         <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
-                            <a href="https://gody.vn/bai-viet/la-con-gai-du-lich-mot-minh-cung-khong-he-co-don-nhung-cung-can-chu-y-nhung-dieu-nay-3299">
+                            <a href="http://125.212.224.111/bai-viet/la-con-gai-du-lich-mot-minh-cung-khong-he-co-don-nhung-cung-can-chu-y-nhung-dieu-nay-3299">
                                 <img
                                         data-src="https://media2.gody.vn/public/mytravelmap/images/2018/12/18/bintruong22228605/643a96b834bb57e70228fe0eb9f942678270271f.jpeg"
                                         data-srcset="https://media2.gody.vn/public/mytravelmap/images/2018/12/18/bintruong22228605/643a96b834bb57e70228fe0eb9f942678270271f.jpeg"
@@ -620,12 +620,12 @@
                             </a>
                             <div class="my-10 ps-relative c-pointer">
                                 <div class="_i-content-t">
-                                    <a href="https://gody.vn/bai-viet/la-con-gai-du-lich-mot-minh-cung-khong-he-co-don-nhung-cung-can-chu-y-nhung-dieu-nay-3299" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">C&aacute;i chết b&iacute; ẩn của c&aacute;c du kh&aacute;ch nữ tr&ecirc;n đất th&aacute;i v&agrave; những điều cần lưu &yacute; khi đi du lịch một m&igrave;nh</a>
+                                    <a href="http://125.212.224.111/bai-viet/la-con-gai-du-lich-mot-minh-cung-khong-he-co-don-nhung-cung-can-chu-y-nhung-dieu-nay-3299" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">C&aacute;i chết b&iacute; ẩn của c&aacute;c du kh&aacute;ch nữ tr&ecirc;n đất th&aacute;i v&agrave; những điều cần lưu &yacute; khi đi du lịch một m&igrave;nh</a>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="d-flex ai-center jc-space-between py-10">
                                     <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                        <a href="https://gody.vn/blog/bintruong22228605" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                        <a href="http://125.212.224.111/blog/bintruong22228605" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
                                             <img
                                                     data-src="https://gody.vn/public/v3/images/user/avatar/bintruong22228605/60916373-20181220141036.jpeg"
                                                     data-srcset="https://gody.vn/public/v3/images/user/avatar/bintruong22228605/60916373-20181220141036.jpeg"
@@ -633,7 +633,7 @@
                                             >
                                         </a>
                                         <div class="fl-1">
-                                            <a href="https://gody.vn/blog/bintruong22228605" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">mapsong02</a>
+                                            <a href="http://125.212.224.111/blog/bintruong22228605" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">mapsong02</a>
                                         </div>
                                     </div>
                                 </div>
@@ -642,7 +642,7 @@
                     </div>
                     <div class="g-item ps-relative d-flex fd-column">
                         <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
-                            <a href="https://gody.vn/bai-viet/11-quoc-gia-dep-me-hon-voi-chi-phi-du-lich-re-den-kinh-ngac-1490">
+                            <a href="http://125.212.224.111/bai-viet/11-quoc-gia-dep-me-hon-voi-chi-phi-du-lich-re-den-kinh-ngac-1490">
                                 <img
                                         data-src="https://media2.gody.vn/public/mytravelmap/images/2018/6/1/quynhnhu/146c80d370de7425b843eab43daa770f31eb7888.jpg"
                                         data-srcset="https://media2.gody.vn/public/mytravelmap/images/2018/6/1/quynhnhu/146c80d370de7425b843eab43daa770f31eb7888.jpg"
@@ -652,12 +652,12 @@
                             </a>
                             <div class="my-10 ps-relative c-pointer">
                                 <div class="_i-content-t">
-                                    <a href="https://gody.vn/bai-viet/11-quoc-gia-dep-me-hon-voi-chi-phi-du-lich-re-den-kinh-ngac-1490" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">11 quốc gia đẹp m&ecirc; hồn với chi ph&iacute; du lịch rẻ đến kinh ngạc</a>
+                                    <a href="http://125.212.224.111/bai-viet/11-quoc-gia-dep-me-hon-voi-chi-phi-du-lich-re-den-kinh-ngac-1490" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">11 quốc gia đẹp m&ecirc; hồn với chi ph&iacute; du lịch rẻ đến kinh ngạc</a>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="d-flex ai-center jc-space-between py-10">
                                     <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                        <a href="https://gody.vn/blog/quynhnhu" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                        <a href="http://125.212.224.111/blog/quynhnhu" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
                                             <img
                                                     data-src="https://gody.vn/public/user/avatar/quynhnhu/2e6f10180ac20bee53106d210c394cc9.jpg"
                                                     data-srcset="https://gody.vn/public/user/avatar/quynhnhu/2e6f10180ac20bee53106d210c394cc9.jpg"
@@ -665,7 +665,7 @@
                                             >
                                         </a>
                                         <div class="fl-1">
-                                            <a href="https://gody.vn/blog/quynhnhu" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Quỳnh Như</a>
+                                            <a href="http://125.212.224.111/blog/quynhnhu" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Quỳnh Như</a>
                                         </div>
                                     </div>
                                 </div>
@@ -674,7 +674,7 @@
                     </div>
                     <div class="g-item ps-relative d-flex fd-column">
                         <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
-                            <a href="https://gody.vn/bai-viet/nhung-diem-vui-choi-sieu-gan-sai-gon-2022">
+                            <a href="http://125.212.224.111/bai-viet/nhung-diem-vui-choi-sieu-gan-sai-gon-2022">
                                 <img
                                         data-src="https://media2.gody.vn/public/mytravelmap/images/2018/6/1/nguyentoan05/eace8f7b7ebd823c39f61ad198ef33c47a188264.jpg"
                                         data-srcset="https://media2.gody.vn/public/mytravelmap/images/2018/6/1/nguyentoan05/eace8f7b7ebd823c39f61ad198ef33c47a188264.jpg"
@@ -684,12 +684,12 @@
                             </a>
                             <div class="my-10 ps-relative c-pointer">
                                 <div class="_i-content-t">
-                                    <a href="https://gody.vn/bai-viet/nhung-diem-vui-choi-sieu-gan-sai-gon-2022" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">NhỮng ĐiỂm vui chƠi si&Ecirc;u gẦn s&Agrave;i g&Ograve;n cho dỊp tẾt dƯƠng lỊch</a>
+                                    <a href="http://125.212.224.111/bai-viet/nhung-diem-vui-choi-sieu-gan-sai-gon-2022" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">NhỮng ĐiỂm vui chƠi si&Ecirc;u gẦn s&Agrave;i g&Ograve;n cho dỊp tẾt dƯƠng lỊch</a>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="d-flex ai-center jc-space-between py-10">
                                     <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                        <a href="https://gody.vn/blog/nguyentoan05" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                        <a href="http://125.212.224.111/blog/nguyentoan05" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
                                             <img
                                                     data-src="https://gody.vn/public/v3/images/user/avatar/nguyentoan05/113676790-20180926171748.jpg"
                                                     data-srcset="https://gody.vn/public/v3/images/user/avatar/nguyentoan05/113676790-20180926171748.jpg"
@@ -697,7 +697,7 @@
                                             >
                                         </a>
                                         <div class="fl-1">
-                                            <a href="https://gody.vn/blog/nguyentoan05" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Huyền Trang</a>
+                                            <a href="http://125.212.224.111/blog/nguyentoan05" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Huyền Trang</a>
                                         </div>
                                     </div>
                                 </div>
@@ -706,7 +706,7 @@
                     </div>
                     <div class="g-item ps-relative d-flex fd-column">
                         <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
-                            <a href="https://gody.vn/bai-viet/xu-thanh-vung-dat-dac-biet-5049">
+                            <a href="http://125.212.224.111/bai-viet/xu-thanh-vung-dat-dac-biet-5049">
                                 <img
                                         data-src="https://media2.gody.vn/public/mytravelmap/images/2017/9/29/luongzuyenhung4564/0e49487af22c2dc617ee74f962a5d3790deb1f78.jpg"
                                         data-srcset="https://media2.gody.vn/public/mytravelmap/images/2017/9/29/luongzuyenhung4564/0e49487af22c2dc617ee74f962a5d3790deb1f78.jpg"
@@ -716,12 +716,12 @@
                             </a>
                             <div class="my-10 ps-relative c-pointer">
                                 <div class="_i-content-t">
-                                    <a href="https://gody.vn/bai-viet/xu-thanh-vung-dat-dac-biet-5049" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">Xứ thanh - v&ugrave;ng đất đặc biệt</a>
+                                    <a href="http://125.212.224.111/bai-viet/xu-thanh-vung-dat-dac-biet-5049" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">Xứ thanh - v&ugrave;ng đất đặc biệt</a>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="d-flex ai-center jc-space-between py-10">
                                     <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                        <a href="https://gody.vn/blog/luongzuyenhung4564" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                        <a href="http://125.212.224.111/blog/luongzuyenhung4564" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
                                             <img
                                                     data-src="https://gody.vn/public/v3/images/user/avatar/luongzuyenhung4564/54308902-20191221191716.jpg"
                                                     data-srcset="https://gody.vn/public/v3/images/user/avatar/luongzuyenhung4564/54308902-20191221191716.jpg"
@@ -729,7 +729,7 @@
                                             >
                                         </a>
                                         <div class="fl-1">
-                                            <a href="https://gody.vn/blog/luongzuyenhung4564" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Lương Hưng</a>
+                                            <a href="http://125.212.224.111/blog/luongzuyenhung4564" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Lương Hưng</a>
                                         </div>
                                     </div>
                                 </div>
@@ -738,7 +738,7 @@
                     </div>
                     <div class="g-item ps-relative d-flex fd-column">
                         <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
-                            <a href="https://gody.vn/bai-viet/cuoi-tuan-o-dao-phu-quy-hoang-so-5544">
+                            <a href="http://125.212.224.111/bai-viet/cuoi-tuan-o-dao-phu-quy-hoang-so-5544">
                                 <img
                                         data-src="https://media2.gody.vn/public/mytravelmap/images/2019/4/5/hongthuy1604.sale953483/894d47ac9abdc994f42a8e409f276bc386bd9eb4.jpg"
                                         data-srcset="https://media2.gody.vn/public/mytravelmap/images/2019/4/5/hongthuy1604.sale953483/894d47ac9abdc994f42a8e409f276bc386bd9eb4.jpg"
@@ -748,12 +748,12 @@
                             </a>
                             <div class="my-10 ps-relative c-pointer">
                                 <div class="_i-content-t">
-                                    <a href="https://gody.vn/bai-viet/cuoi-tuan-o-dao-phu-quy-hoang-so-5544" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">CuỐi tuẦn Ở ĐẢo ph&uacute; qu&yacute; hoang sƠ ^^</a>
+                                    <a href="http://125.212.224.111/bai-viet/cuoi-tuan-o-dao-phu-quy-hoang-so-5544" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">CuỐi tuẦn Ở ĐẢo ph&uacute; qu&yacute; hoang sƠ ^^</a>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="d-flex ai-center jc-space-between py-10">
                                     <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                        <a href="https://gody.vn/blog/hongthuy1604.sale953483" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                        <a href="http://125.212.224.111/blog/hongthuy1604.sale953483" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
                                             <img
                                                     data-src="https://gody.vn/public/v3/images/user/avatar/hongthuy1604.sale953483/142078261-20191230155918.jpg"
                                                     data-srcset="https://gody.vn/public/v3/images/user/avatar/hongthuy1604.sale953483/142078261-20191230155918.jpg"
@@ -761,7 +761,7 @@
                                             >
                                         </a>
                                         <div class="fl-1">
-                                            <a href="https://gody.vn/blog/hongthuy1604.sale953483" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Nguyễn Thị Hồng Th&uacute;y</a>
+                                            <a href="http://125.212.224.111/blog/hongthuy1604.sale953483" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Nguyễn Thị Hồng Th&uacute;y</a>
                                         </div>
                                     </div>
                                 </div>
@@ -785,7 +785,7 @@
                     <div class="w-fit d-block mb-30">
                         <div style="background: #F4F4F4;border-radius: 0px 0px 8px 8px;">
                             <div class="ps-relative p-0 overflow-hidden xs:p-0">
-                                <a href="https://gody.vn/bai-viet/tham-pho-co-hoi-an-10908">
+                                <a href="http://125.212.224.111/bai-viet/tham-pho-co-hoi-an-10908">
                                     <img
                                             data-src="blob:https://gody.vn/4c1c7d6f-c5d1-4fb2-a305-8ef00fd8ba85"
                                             data-srcset="blob:https://gody.vn/4c1c7d6f-c5d1-4fb2-a305-8ef00fd8ba85"
@@ -809,7 +809,7 @@ Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c
                                     <div class="clearfix"></div>
                                     <div class="d-flex ai-center jc-space-between py-10 xs:pb-3 c-auto">
                                         <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                            <a href="https://gody.vn/blog/2seasonsdalat9665" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth">
+                                            <a href="http://125.212.224.111/blog/2seasonsdalat9665" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth">
                                                 <img
                                                         data-src="https://lh3.googleusercontent.com/a/ALm5wu0KAIdarf66LUjAzWp3THcpJP49hX9FgcrUYymATzg=s96-c"
                                                         data-srcset="https://lh3.googleusercontent.com/a/ALm5wu0KAIdarf66LUjAzWp3THcpJP49hX9FgcrUYymATzg=s96-c"
@@ -818,7 +818,7 @@ Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c
                                                 >
                                             </a>
                                             <div class="fl-1">
-                                                <a href="https://gody.vn/blog/2seasonsdalat9665" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">V&otilde; Hồng Loan</a>
+                                                <a href="http://125.212.224.111/blog/2seasonsdalat9665" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">V&otilde; Hồng Loan</a>
                                             </div>
                                         </div>
                                     </div>
@@ -838,7 +838,7 @@ Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c
                         <div class="w-fit p-20 bar-8">
                             <div class="ps-relative c-pointer d-flex d-ai-center box-border">
                                 <div class="fl-shrink0 xs:w-120 xs:h-84" style="background: none; width: 216px; height: 186px;">
-                                    <a href="https://gody.vn/photo/sai-gon-vung-tau-can-tho-ha-nam-ly-son-dac-lac-5315" class="d-block w-fit h-fit ps-relative" target="">
+                                    <a href="http://125.212.224.111/photo/sai-gon-vung-tau-can-tho-ha-nam-ly-son-dac-lac-5315" class="d-block w-fit h-fit ps-relative" target="">
                                         <img
                                                 data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2017/10/6/hiencucvang19855168/thumbnail/453d1f636aca89cf134d54d71bde9908.jpg"
                                                 data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2017/10/6/hiencucvang19855168/thumbnail/453d1f636aca89cf134d54d71bde9908.jpg"
@@ -865,7 +865,7 @@ Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c
 
                                     <div class="d-flex ai-center jc-space-between py-10 c-auto">
                                         <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                            <a href="https://gody.vn/blog/hiencucvang19855168" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
+                                            <a href="http://125.212.224.111/blog/hiencucvang19855168" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
                                                 <img
                                                         data-src="https://graph.facebook.com/v2.8/1906247742724297/picture?type=normal"
                                                         data-srcset="https://graph.facebook.com/v2.8/1906247742724297/picture?type=normal"
@@ -875,7 +875,7 @@ Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c
                                                 >
                                             </a>
                                             <div class="fl-1">
-                                                <a href="https://gody.vn/blog/hiencucvang19855168" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Linh Le</a>
+                                                <a href="http://125.212.224.111/blog/hiencucvang19855168" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Linh Le</a>
                                             </div>
                                         </div>
                                     </div>
@@ -894,7 +894,7 @@ Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c
                         <div class="w-fit p-20 bar-8 gads-item">
                             <div class="ps-relative c-pointer d-flex d-ai-center box-border">
                                 <div class="fl-shrink0 xs:w-120 xs:h-84" style="background: none; width: 216px; height: 186px;">
-                                    <a href="https://gody.vn/ho-chieu?utm_source=sponsored&amp;utm_medium=sponsored.posts&amp;utm_campaign=sponsored&amp;utm_id=sponsored.posts&amp;utm_content=homepage" class="d-block w-fit h-fit ps-relative" target="_blank">
+                                    <a href="http://125.212.224.111/ho-chieu?utm_source=sponsored&amp;utm_medium=sponsored.posts&amp;utm_campaign=sponsored&amp;utm_id=sponsored.posts&amp;utm_content=homepage" class="d-block w-fit h-fit ps-relative" target="_blank">
                                         <img
                                                 data-src="https://media2.gody.vn/public/mytravelmap/images/2016/12/6/nguyen_tu_7a/74a5da505cd83cc223ec8485beb0d63a.jpg"
                                                 data-srcset="https://media2.gody.vn/public/mytravelmap/images/2016/12/6/nguyen_tu_7a/74a5da505cd83cc223ec8485beb0d63a.jpg"
@@ -947,7 +947,7 @@ Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c
                         <div class="w-fit p-20 bar-8">
                             <div class="ps-relative c-pointer d-flex d-ai-center box-border">
                                 <div class="fl-shrink0 xs:w-120 xs:h-84" style="background: none; width: 216px; height: 186px;">
-                                    <a href="https://gody.vn/bai-viet/camping-ben-bo-song-hong-duoi-chan-cau-vinh-tuy-10910" class="d-block w-fit h-fit ps-relative" target="">
+                                    <a href="http://125.212.224.111/bai-viet/camping-ben-bo-song-hong-duoi-chan-cau-vinh-tuy-10910" class="d-block w-fit h-fit ps-relative" target="">
                                         <img
                                                 data-src="https://media2.gody.vn/public/mytravelmap/images/2020/7/26/toantm3036/8c01d223f0f4462c1157de97e0dabdeb.jpg"
                                                 data-srcset="https://media2.gody.vn/public/mytravelmap/images/2020/7/26/toantm3036/8c01d223f0f4462c1157de97e0dabdeb.jpg"
@@ -970,7 +970,7 @@ Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c
                                     <div class="clearfix"></div>
                                     <div class="d-flex ai-center jc-space-between py-10 c-auto">
                                         <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                            <a href="https://gody.vn/blog/toantm3036" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
+                                            <a href="http://125.212.224.111/blog/toantm3036" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
                                                 <img
                                                         data-src="https://gody.vn/public/v3/images/user/avatar/toantm3036/96628158-20220829155712."
                                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/toantm3036/96628158-20220829155712."
@@ -980,7 +980,7 @@ Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c
                                                 >
                                             </a>
                                             <div class="fl-1">
-                                                <a href="https://gody.vn/blog/toantm3036" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Ngoc Chau</a>
+                                                <a href="http://125.212.224.111/blog/toantm3036" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Ngoc Chau</a>
                                             </div>
                                         </div>
                                     </div>
@@ -998,7 +998,7 @@ Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c
                         <div class="w-fit p-20 bar-8">
                             <div class="ps-relative c-pointer d-flex d-ai-center box-border">
                                 <div class="fl-shrink0 xs:w-120 xs:h-84" style="background: none; width: 216px; height: 186px;">
-                                    <a href="https://gody.vn/bai-viet/review-chuyen-di-den-chua-dai-tue-nam-dan-nghe-an-10909" class="d-block w-fit h-fit ps-relative" target="">
+                                    <a href="http://125.212.224.111/bai-viet/review-chuyen-di-den-chua-dai-tue-nam-dan-nghe-an-10909" class="d-block w-fit h-fit ps-relative" target="">
                                         <img
                                                 data-src="https://media2.gody.vn/public/mytravelmap/images/2023/3/17/28196869414974285761/original/e1e475deff84d26f64eaf3888e0274e806d6c3d5.jpg"
                                                 data-srcset="https://media2.gody.vn/public/mytravelmap/images/2023/3/17/28196869414974285761/original/e1e475deff84d26f64eaf3888e0274e806d6c3d5.jpg"
@@ -1021,7 +1021,7 @@ Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c
                                     <div class="clearfix"></div>
                                     <div class="d-flex ai-center jc-space-between py-10 c-auto">
                                         <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                            <a href="https://gody.vn/blog/28196869414974285761" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
+                                            <a href="http://125.212.224.111/blog/28196869414974285761" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
                                                 <img
                                                         data-src="https://media2.gody.vn//public/images/user-2/2023/03/17/28196869414974285761/thumbnail-70/6413f07f4c2ec-1679028351.jpeg"
                                                         data-srcset="https://media2.gody.vn//public/images/user-2/2023/03/17/28196869414974285761/thumbnail-70/6413f07f4c2ec-1679028351.jpeg"
@@ -1031,7 +1031,7 @@ Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c
                                                 >
                                             </a>
                                             <div class="fl-1">
-                                                <a href="https://gody.vn/blog/28196869414974285761" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Vi Sơn</a>
+                                                <a href="http://125.212.224.111/blog/28196869414974285761" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Vi Sơn</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1060,7 +1060,7 @@ Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c
                         <div class="w-fit p-20 bar-8">
                             <div class="ps-relative c-pointer d-flex d-ai-center box-border">
                                 <div class="fl-shrink0 xs:w-120 xs:h-84" style="background: none; width: 216px; height: 186px;">
-                                    <a href="https://gody.vn/photo/ho-dieu-hoa-ho-son-phu-yen-5314" class="d-block w-fit h-fit ps-relative" target="">
+                                    <a href="http://125.212.224.111/photo/ho-dieu-hoa-ho-son-phu-yen-5314" class="d-block w-fit h-fit ps-relative" target="">
                                         <img
                                                 data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/03/21/imissyou_2668257/thumbnail/d815f0f58e90eb155a817e71d414a745.jpg"
                                                 data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/03/21/imissyou_2668257/thumbnail/d815f0f58e90eb155a817e71d414a745.jpg"
@@ -1086,7 +1086,7 @@ Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c
                                     <div class="clearfix"></div>
                                     <div class="d-flex ai-center jc-space-between py-10 c-auto">
                                         <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                            <a href="https://gody.vn/blog/imissyou_2668257" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
+                                            <a href="http://125.212.224.111/blog/imissyou_2668257" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
                                                 <img
                                                         data-src="https://graph.facebook.com/v2.8/1110153672468755/picture?type=normal"
                                                         data-srcset="https://graph.facebook.com/v2.8/1110153672468755/picture?type=normal"
@@ -1096,7 +1096,7 @@ Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c
                                                 >
                                             </a>
                                             <div class="fl-1">
-                                                <a href="https://gody.vn/blog/imissyou_2668257" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">L&ecirc; Thị Kiều</a>
+                                                <a href="http://125.212.224.111/blog/imissyou_2668257" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">L&ecirc; Thị Kiều</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1112,7 +1112,7 @@ Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c
                         <div class="w-fit p-20 bar-8">
                             <div class="ps-relative c-pointer d-flex d-ai-center box-border">
                                 <div class="fl-shrink0 xs:w-120 xs:h-84" style="background: none; width: 216px; height: 186px;">
-                                    <a href="https://gody.vn/photo/pho-co-hoi-an-5313" class="d-block w-fit h-fit ps-relative" target="">
+                                    <a href="http://125.212.224.111/photo/pho-co-hoi-an-5313" class="d-block w-fit h-fit ps-relative" target="">
                                         <img
                                                 data-src="https://media2.gody.vn/public/mytravelmap/images/2023/3/17/ngocvudb8160/original/8960b1a675d6b236b4ba3e25ad06754497ea9487.jpg"
                                                 data-srcset="https://media2.gody.vn/public/mytravelmap/images/2023/3/17/ngocvudb8160/original/8960b1a675d6b236b4ba3e25ad06754497ea9487.jpg"
@@ -1143,7 +1143,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                     <div class="clearfix"></div>
                                     <div class="d-flex ai-center jc-space-between py-10 c-auto">
                                         <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                            <a href="https://gody.vn/blog/ngocvudb8160" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
+                                            <a href="http://125.212.224.111/blog/ngocvudb8160" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
                                                 <img
                                                         data-src="https://lh3.googleusercontent.com/a/AGNmyxY0-9l3Pb_XbIWzZx3xKVP05mnAaqCHnGC2cjrQUQ=s96-c"
                                                         data-srcset="https://lh3.googleusercontent.com/a/AGNmyxY0-9l3Pb_XbIWzZx3xKVP05mnAaqCHnGC2cjrQUQ=s96-c"
@@ -1153,7 +1153,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                                 >
                                             </a>
                                             <div class="fl-1">
-                                                <a href="https://gody.vn/blog/ngocvudb8160" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Đặng Ngọc Vũ</a>
+                                                <a href="http://125.212.224.111/blog/ngocvudb8160" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Đặng Ngọc Vũ</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1169,7 +1169,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <div class="w-fit p-20 bar-8">
                             <div class="ps-relative c-pointer d-flex d-ai-center box-border">
                                 <div class="fl-shrink0 xs:w-120 xs:h-84" style="background: none; width: 216px; height: 186px;">
-                                    <a href="https://gody.vn/bai-viet/trai-nghiem-phu-quoc-4n3d-10906" class="d-block w-fit h-fit ps-relative" target="">
+                                    <a href="http://125.212.224.111/bai-viet/trai-nghiem-phu-quoc-4n3d-10906" class="d-block w-fit h-fit ps-relative" target="">
                                         <img
                                                 data-src="https://media2.gody.vn/public/mytravelmap/images/2023/3/8/nulovest7169/original/cb8648ec64e6db469549838d78766db0eae19337.jpg"
                                                 data-srcset="https://media2.gody.vn/public/mytravelmap/images/2023/3/8/nulovest7169/original/cb8648ec64e6db469549838d78766db0eae19337.jpg"
@@ -1192,7 +1192,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                     <div class="clearfix"></div>
                                     <div class="d-flex ai-center jc-space-between py-10 c-auto">
                                         <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                            <a href="https://gody.vn/blog/nulovest7169" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
+                                            <a href="http://125.212.224.111/blog/nulovest7169" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
                                                 <img
                                                         data-src="https://graph.facebook.com/v15.0/3412183099029040/picture?type=normal"
                                                         data-srcset="https://graph.facebook.com/v15.0/3412183099029040/picture?type=normal"
@@ -1202,7 +1202,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                                 >
                                             </a>
                                             <div class="fl-1">
-                                                <a href="https://gody.vn/blog/nulovest7169" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Nu Hallo</a>
+                                                <a href="http://125.212.224.111/blog/nulovest7169" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Nu Hallo</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1218,7 +1218,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <div class="w-fit p-20 bar-8">
                             <div class="ps-relative c-pointer d-flex d-ai-center box-border">
                                 <div class="fl-shrink0 xs:w-120 xs:h-84" style="background: none; width: 216px; height: 186px;">
-                                    <a href="https://gody.vn/bai-viet/ladakh-diem-du-lich-10905" class="d-block w-fit h-fit ps-relative" target="">
+                                    <a href="http://125.212.224.111/bai-viet/ladakh-diem-du-lich-10905" class="d-block w-fit h-fit ps-relative" target="">
                                         <img
                                                 data-src="https://media2.gody.vn/public/mytravelmap/images/2019/8/8/ngovananhkthp8097/original/df58fca0bce36e12081e2026fa91e04308f9bd9c.jpg"
                                                 data-srcset="https://media2.gody.vn/public/mytravelmap/images/2019/8/8/ngovananhkthp8097/original/df58fca0bce36e12081e2026fa91e04308f9bd9c.jpg"
@@ -1242,7 +1242,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                     <div class="clearfix"></div>
                                     <div class="d-flex ai-center jc-space-between py-10 c-auto">
                                         <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                            <a href="https://gody.vn/blog/ngovananhkthp8097" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
+                                            <a href="http://125.212.224.111/blog/ngovananhkthp8097" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
                                                 <img
                                                         data-src="https://media2.gody.vn//public/images/user-2/2023/03/16/ngovananhkthp8097/thumbnail-70/6412c71d3dc15-1678952221.jpg"
                                                         data-srcset="https://media2.gody.vn//public/images/user-2/2023/03/16/ngovananhkthp8097/thumbnail-70/6412c71d3dc15-1678952221.jpg"
@@ -1252,7 +1252,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                                 >
                                             </a>
                                             <div class="fl-1">
-                                                <a href="https://gody.vn/blog/ngovananhkthp8097" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Ng&ocirc; V&acirc;n Anh</a>
+                                                <a href="http://125.212.224.111/blog/ngovananhkthp8097" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Ng&ocirc; V&acirc;n Anh</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1268,7 +1268,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <div class="w-fit p-20 bar-8">
                             <div class="ps-relative c-pointer d-flex d-ai-center box-border">
                                 <div class="fl-shrink0 xs:w-120 xs:h-84" style="background: none; width: 216px; height: 186px;">
-                                    <a href="https://gody.vn/bai-viet/san-may-mang-den-10900" class="d-block w-fit h-fit ps-relative" target="">
+                                    <a href="http://125.212.224.111/bai-viet/san-may-mang-den-10900" class="d-block w-fit h-fit ps-relative" target="">
                                         <img
                                                 data-src="https://media2.gody.vn/public/mytravelmap/images/2023/3/8/nulovest7169/original/e1f1d2555cfe25950e827545897849feb9a60020.jpg"
                                                 data-srcset="https://media2.gody.vn/public/mytravelmap/images/2023/3/8/nulovest7169/original/e1f1d2555cfe25950e827545897849feb9a60020.jpg"
@@ -1291,7 +1291,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                     <div class="clearfix"></div>
                                     <div class="d-flex ai-center jc-space-between py-10 c-auto">
                                         <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                            <a href="https://gody.vn/blog/nulovest7169" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
+                                            <a href="http://125.212.224.111/blog/nulovest7169" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
                                                 <img
                                                         data-src="https://graph.facebook.com/v15.0/3412183099029040/picture?type=normal"
                                                         data-srcset="https://graph.facebook.com/v15.0/3412183099029040/picture?type=normal"
@@ -1301,7 +1301,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                                 >
                                             </a>
                                             <div class="fl-1">
-                                                <a href="https://gody.vn/blog/nulovest7169" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Nu Hallo</a>
+                                                <a href="http://125.212.224.111/blog/nulovest7169" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Nu Hallo</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1317,7 +1317,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <div class="w-fit p-20 bar-8">
                             <div class="ps-relative c-pointer d-flex d-ai-center box-border">
                                 <div class="fl-shrink0 xs:w-120 xs:h-84" style="background: none; width: 216px; height: 186px;">
-                                    <a href="https://gody.vn/bai-viet/ca-phe-oanh-quan-ca-phe-toan-cay-xanh-o-trung-tam-binh-thanh-10901" class="d-block w-fit h-fit ps-relative" target="">
+                                    <a href="http://125.212.224.111/bai-viet/ca-phe-oanh-quan-ca-phe-toan-cay-xanh-o-trung-tam-binh-thanh-10901" class="d-block w-fit h-fit ps-relative" target="">
                                         <img
                                                 data-src="https://media2.gody.vn/public/mytravelmap/images/2019/9/13/hinhang9104848/original/d819371139f7c0747eeb68a810283ce514caf5ea.jpg"
                                                 data-srcset="https://media2.gody.vn/public/mytravelmap/images/2019/9/13/hinhang9104848/original/d819371139f7c0747eeb68a810283ce514caf5ea.jpg"
@@ -1340,7 +1340,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                     <div class="clearfix"></div>
                                     <div class="d-flex ai-center jc-space-between py-10 c-auto">
                                         <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                            <a href="https://gody.vn/blog/hinhang9104848" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
+                                            <a href="http://125.212.224.111/blog/hinhang9104848" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
                                                 <img
                                                         data-src="https://media2.gody.vn//public/images/user-2/2023/02/16/hinhang9104848/thumbnail-70/63ee0c45991b0-1676545093.jpg"
                                                         data-srcset="https://media2.gody.vn//public/images/user-2/2023/02/16/hinhang9104848/thumbnail-70/63ee0c45991b0-1676545093.jpg"
@@ -1350,7 +1350,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                                 >
                                             </a>
                                             <div class="fl-1">
-                                                <a href="https://gody.vn/blog/hinhang9104848" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Nguyễn Thị Thu&yacute; Hằng</a>
+                                                <a href="http://125.212.224.111/blog/hinhang9104848" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Nguyễn Thị Thu&yacute; Hằng</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1367,7 +1367,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <div class="w-fit p-20 bar-8">
                             <div class="ps-relative c-pointer d-flex d-ai-center box-border">
                                 <div class="fl-shrink0 xs:w-120 xs:h-84" style="background: none; width: 216px; height: 186px;">
-                                    <a href="https://gody.vn/bai-viet/cuc-bac-lung-cu-ha-giang-10902" class="d-block w-fit h-fit ps-relative" target="">
+                                    <a href="http://125.212.224.111/bai-viet/cuc-bac-lung-cu-ha-giang-10902" class="d-block w-fit h-fit ps-relative" target="">
                                         <img
                                                 data-src="https://media2.gody.vn/public/mytravelmap/images/2020/7/26/toantm3036/a91a0920fc2b0c13918f55b87148a989.jpg"
                                                 data-srcset="https://media2.gody.vn/public/mytravelmap/images/2020/7/26/toantm3036/a91a0920fc2b0c13918f55b87148a989.jpg"
@@ -1390,7 +1390,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                     <div class="clearfix"></div>
                                     <div class="d-flex ai-center jc-space-between py-10 c-auto">
                                         <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                            <a href="https://gody.vn/blog/toantm3036" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
+                                            <a href="http://125.212.224.111/blog/toantm3036" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
                                                 <img
                                                         data-src="https://gody.vn/public/v3/images/user/avatar/toantm3036/96628158-20220829155712."
                                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/toantm3036/96628158-20220829155712."
@@ -1400,7 +1400,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                                 >
                                             </a>
                                             <div class="fl-1">
-                                                <a href="https://gody.vn/blog/toantm3036" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Ngoc Chau</a>
+                                                <a href="http://125.212.224.111/blog/toantm3036" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Ngoc Chau</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1416,7 +1416,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <div class="w-fit p-20 bar-8">
                             <div class="ps-relative c-pointer d-flex d-ai-center box-border">
                                 <div class="fl-shrink0 xs:w-120 xs:h-84" style="background: none; width: 216px; height: 186px;">
-                                    <a href="https://gody.vn/bai-viet/review-da-lat-5n4d-10894" class="d-block w-fit h-fit ps-relative" target="">
+                                    <a href="http://125.212.224.111/bai-viet/review-da-lat-5n4d-10894" class="d-block w-fit h-fit ps-relative" target="">
                                         <img
                                                 data-src="https://media2.gody.vn/public/mytravelmap/images/2023/3/8/nulovest7169/original/4a07e98ea5f6912d5e6be07e7aabd0192be29f78.jpg"
                                                 data-srcset="https://media2.gody.vn/public/mytravelmap/images/2023/3/8/nulovest7169/original/4a07e98ea5f6912d5e6be07e7aabd0192be29f78.jpg"
@@ -1439,7 +1439,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                     <div class="clearfix"></div>
                                     <div class="d-flex ai-center jc-space-between py-10 c-auto">
                                         <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                            <a href="https://gody.vn/blog/nulovest7169" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
+                                            <a href="http://125.212.224.111/blog/nulovest7169" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
                                                 <img
                                                         data-src="https://graph.facebook.com/v15.0/3412183099029040/picture?type=normal"
                                                         data-srcset="https://graph.facebook.com/v15.0/3412183099029040/picture?type=normal"
@@ -1449,7 +1449,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                                 >
                                             </a>
                                             <div class="fl-1">
-                                                <a href="https://gody.vn/blog/nulovest7169" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Nu Hallo</a>
+                                                <a href="http://125.212.224.111/blog/nulovest7169" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Nu Hallo</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1465,7 +1465,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <div class="w-fit p-20 bar-8">
                             <div class="ps-relative c-pointer d-flex d-ai-center box-border">
                                 <div class="fl-shrink0 xs:w-120 xs:h-84" style="background: none; width: 216px; height: 186px;">
-                                    <a href="https://gody.vn/bai-viet/nhung-loi-ich-cua-cac-chuyen-di-camping-10895" class="d-block w-fit h-fit ps-relative" target="">
+                                    <a href="http://125.212.224.111/bai-viet/nhung-loi-ich-cua-cac-chuyen-di-camping-10895" class="d-block w-fit h-fit ps-relative" target="">
                                         <img
                                                 data-src="https://media2.gody.vn/public/mytravelmap/images/2021/7/23/buithihuong0210959326/original/13f3601254eeb53908ec7ae9946d5f364b74aa4e.jpg"
                                                 data-srcset="https://media2.gody.vn/public/mytravelmap/images/2021/7/23/buithihuong0210959326/original/13f3601254eeb53908ec7ae9946d5f364b74aa4e.jpg"
@@ -1488,7 +1488,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                     <div class="clearfix"></div>
                                     <div class="d-flex ai-center jc-space-between py-10 c-auto">
                                         <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                            <a href="https://gody.vn/blog/buithihuong0210959326" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
+                                            <a href="http://125.212.224.111/blog/buithihuong0210959326" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
                                                 <img
                                                         data-src="https://gody.vn/public/v3/images/user/avatar/buithihuong0210959326/86484155-20210725102113.jpg"
                                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/buithihuong0210959326/86484155-20210725102113.jpg"
@@ -1498,7 +1498,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                                 >
                                             </a>
                                             <div class="fl-1">
-                                                <a href="https://gody.vn/blog/buithihuong0210959326" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">B&ugrave;i Thị Hương</a>
+                                                <a href="http://125.212.224.111/blog/buithihuong0210959326" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">B&ugrave;i Thị Hương</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1514,7 +1514,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <div class="w-fit p-20 bar-8">
                             <div class="ps-relative c-pointer d-flex d-ai-center box-border">
                                 <div class="fl-shrink0 xs:w-120 xs:h-84" style="background: none; width: 216px; height: 186px;">
-                                    <a href="https://gody.vn/bai-viet/pho-co-dong-van-ha-giang-10892" class="d-block w-fit h-fit ps-relative" target="">
+                                    <a href="http://125.212.224.111/bai-viet/pho-co-dong-van-ha-giang-10892" class="d-block w-fit h-fit ps-relative" target="">
                                         <img
                                                 data-src="https://media2.gody.vn/public/mytravelmap/images/2020/7/26/toantm3036/fce15b5727ab46265992a9937d2b696c.jpg"
                                                 data-srcset="https://media2.gody.vn/public/mytravelmap/images/2020/7/26/toantm3036/fce15b5727ab46265992a9937d2b696c.jpg"
@@ -1537,7 +1537,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                     <div class="clearfix"></div>
                                     <div class="d-flex ai-center jc-space-between py-10 c-auto">
                                         <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                            <a href="https://gody.vn/blog/toantm3036" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
+                                            <a href="http://125.212.224.111/blog/toantm3036" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
                                                 <img
                                                         data-src="https://gody.vn/public/v3/images/user/avatar/toantm3036/96628158-20220829155712."
                                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/toantm3036/96628158-20220829155712."
@@ -1547,7 +1547,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                                 >
                                             </a>
                                             <div class="fl-1">
-                                                <a href="https://gody.vn/blog/toantm3036" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Ngoc Chau</a>
+                                                <a href="http://125.212.224.111/blog/toantm3036" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Ngoc Chau</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1563,7 +1563,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <div class="w-fit p-20 bar-8">
                             <div class="ps-relative c-pointer d-flex d-ai-center box-border">
                                 <div class="fl-shrink0 xs:w-120 xs:h-84" style="background: none; width: 216px; height: 186px;">
-                                    <a href="https://gody.vn/bai-viet/dinh-thu-vua-meo-dinh-thu-ho-vuong-ha-giang-10888" class="d-block w-fit h-fit ps-relative" target="">
+                                    <a href="http://125.212.224.111/bai-viet/dinh-thu-vua-meo-dinh-thu-ho-vuong-ha-giang-10888" class="d-block w-fit h-fit ps-relative" target="">
                                         <img
                                                 data-src="https://media2.gody.vn/public/mytravelmap/images/2020/7/26/toantm3036/9cf2a6cdf0f1ad73b7300981447f3d36.jpg"
                                                 data-srcset="https://media2.gody.vn/public/mytravelmap/images/2020/7/26/toantm3036/9cf2a6cdf0f1ad73b7300981447f3d36.jpg"
@@ -1586,7 +1586,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                     <div class="clearfix"></div>
                                     <div class="d-flex ai-center jc-space-between py-10 c-auto">
                                         <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                            <a href="https://gody.vn/blog/toantm3036" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
+                                            <a href="http://125.212.224.111/blog/toantm3036" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
                                                 <img
                                                         data-src="https://gody.vn/public/v3/images/user/avatar/toantm3036/96628158-20220829155712."
                                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/toantm3036/96628158-20220829155712."
@@ -1596,7 +1596,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                                 >
                                             </a>
                                             <div class="fl-1">
-                                                <a href="https://gody.vn/blog/toantm3036" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Ngoc Chau</a>
+                                                <a href="http://125.212.224.111/blog/toantm3036" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">Ngoc Chau</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1630,7 +1630,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                 <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
                     <div class="d-flex ai-start ps-relative mt-22">
                         <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="https://gody.vn/blog/n2203am" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
+                            <a href="http://125.212.224.111/blog/n2203am" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/n2203am/64358504-20180726095335.jpg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/n2203am/64358504-20180726095335.jpg"
@@ -1641,18 +1641,18 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                         <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
                             <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a href="https://gody.vn/blog/n2203am" class="fc-nineth fw-500">Ho&agrave;ng Nam</a>
+                                <a href="http://125.212.224.111/blog/n2203am" class="fc-nineth fw-500">Ho&agrave;ng Nam</a>
                                 <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a href="https://gody.vn/bai-viet/camping-ben-bo-song-hong-duoi-chan-cau-vinh-tuy-10910?action=review" class="fc-nineth fw-500"> Camping b&ecirc;n bờ s&ocirc;ng Hồng dưới ch&acirc;n cầu Vĩnh Tuy</a>
+                                <a href="http://125.212.224.111/bai-viet/camping-ben-bo-song-hong-duoi-chan-cau-vinh-tuy-10910?action=review" class="fc-nineth fw-500"> Camping b&ecirc;n bờ s&ocirc;ng Hồng dưới ch&acirc;n cầu Vĩnh Tuy</a>
                             </p>
-                            <a href="https://gody.vn/bai-viet/camping-ben-bo-song-hong-duoi-chan-cau-vinh-tuy-10910?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">khu n&agrave;y đẹp m&agrave; hơi nhiều r&aacute;c bạn nhỉ</a>
+                            <a href="http://125.212.224.111/bai-viet/camping-ben-bo-song-hong-duoi-chan-cau-vinh-tuy-10910?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">khu n&agrave;y đẹp m&agrave; hơi nhiều r&aacute;c bạn nhỉ</a>
                         </div>
                     </div>
                 </div>
                 <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
                     <div class="d-flex ai-start ps-relative mt-22">
                         <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="https://gody.vn/blog/thaithaotran17073366" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
+                            <a href="http://125.212.224.111/blog/thaithaotran17073366" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/thaithaotran17073366/130576152-20200603181837.jpg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/thaithaotran17073366/130576152-20200603181837.jpg"
@@ -1663,18 +1663,18 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                         <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
                             <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a href="https://gody.vn/blog/thaithaotran17073366" class="fc-nineth fw-500">Tran Thi Thai Thao</a>
+                                <a href="http://125.212.224.111/blog/thaithaotran17073366" class="fc-nineth fw-500">Tran Thi Thai Thao</a>
                                 <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a href="https://gody.vn/bai-viet/quy-che-chi-tra-nhuan-but-bai-chia-se-tai-godyvn-6611?action=review" class="fc-nineth fw-500"> Quy chế chi trả nhuận b&uacute;t b&agrave;i chia sẻ tại GODY.VN</a>
+                                <a href="http://125.212.224.111/bai-viet/quy-che-chi-tra-nhuan-but-bai-chia-se-tai-godyvn-6611?action=review" class="fc-nineth fw-500"> Quy chế chi trả nhuận b&uacute;t b&agrave;i chia sẻ tại GODY.VN</a>
                             </p>
-                            <a href="https://gody.vn/bai-viet/quy-che-chi-tra-nhuan-but-bai-chia-se-tai-godyvn-6611?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">L&agrave;m thế n&agrave;o để đổi t&ecirc;n t&agrave;i khoản của m&igrave;nh tr&ecirc;n gody ạ? Em cảm ơn ad nhiều.</a>
+                            <a href="http://125.212.224.111/bai-viet/quy-che-chi-tra-nhuan-but-bai-chia-se-tai-godyvn-6611?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">L&agrave;m thế n&agrave;o để đổi t&ecirc;n t&agrave;i khoản của m&igrave;nh tr&ecirc;n gody ạ? Em cảm ơn ad nhiều.</a>
                         </div>
                     </div>
                 </div>
                 <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
                     <div class="d-flex ai-start ps-relative mt-22">
                         <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="https://gody.vn/blog/lethuy3225" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
+                            <a href="http://125.212.224.111/blog/lethuy3225" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/lethuy3225/14550383-20191017093759.jpeg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/lethuy3225/14550383-20191017093759.jpeg"
@@ -1685,18 +1685,18 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                         <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
                             <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a href="https://gody.vn/blog/lethuy3225" class="fc-nineth fw-500">Le Thuy</a>
+                                <a href="http://125.212.224.111/blog/lethuy3225" class="fc-nineth fw-500">Le Thuy</a>
                                 <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a href="https://gody.vn/bai-viet/camping-ben-bo-song-hong-duoi-chan-cau-vinh-tuy-10910?action=review" class="fc-nineth fw-500"> Camping b&ecirc;n bờ s&ocirc;ng Hồng dưới ch&acirc;n cầu Vĩnh Tuy</a>
+                                <a href="http://125.212.224.111/bai-viet/camping-ben-bo-song-hong-duoi-chan-cau-vinh-tuy-10910?action=review" class="fc-nineth fw-500"> Camping b&ecirc;n bờ s&ocirc;ng Hồng dưới ch&acirc;n cầu Vĩnh Tuy</a>
                             </p>
-                            <a href="https://gody.vn/bai-viet/camping-ben-bo-song-hong-duoi-chan-cau-vinh-tuy-10910?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">th&ecirc;m 1 địa điểm cắm trại th&uacute; vị, c&aacute;m ơn bạn chia sẻ</a>
+                            <a href="http://125.212.224.111/bai-viet/camping-ben-bo-song-hong-duoi-chan-cau-vinh-tuy-10910?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">th&ecirc;m 1 địa điểm cắm trại th&uacute; vị, c&aacute;m ơn bạn chia sẻ</a>
                         </div>
                     </div>
                 </div>
                 <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
                     <div class="d-flex ai-start ps-relative mt-22">
                         <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="https://gody.vn/blog/giaminh4723" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
+                            <a href="http://125.212.224.111/blog/giaminh4723" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/giaminh4723/65106225-20191017093425.jpeg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/giaminh4723/65106225-20191017093425.jpeg"
@@ -1707,18 +1707,18 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                         <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
                             <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a href="https://gody.vn/blog/giaminh4723" class="fc-nineth fw-500">Gia Minh</a>
+                                <a href="http://125.212.224.111/blog/giaminh4723" class="fc-nineth fw-500">Gia Minh</a>
                                 <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a href="https://gody.vn/bai-viet/review-chuyen-di-den-chua-dai-tue-nam-dan-nghe-an-10909?action=review" class="fc-nineth fw-500"> Review Chuyến Đi Đến Ch&ugrave;a Đaị Tuệ Nam Đ&agrave;n - Nghệ An.</a>
+                                <a href="http://125.212.224.111/bai-viet/review-chuyen-di-den-chua-dai-tue-nam-dan-nghe-an-10909?action=review" class="fc-nineth fw-500"> Review Chuyến Đi Đến Ch&ugrave;a Đaị Tuệ Nam Đ&agrave;n - Nghệ An.</a>
                             </p>
-                            <a href="https://gody.vn/bai-viet/review-chuyen-di-den-chua-dai-tue-nam-dan-nghe-an-10909?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">ng&ocirc;i ch&ugrave;a qu&aacute; đẹp, c&aacute;m ơn chia sẻ của bạn.</a>
+                            <a href="http://125.212.224.111/bai-viet/review-chuyen-di-den-chua-dai-tue-nam-dan-nghe-an-10909?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">ng&ocirc;i ch&ugrave;a qu&aacute; đẹp, c&aacute;m ơn chia sẻ của bạn.</a>
                         </div>
                     </div>
                 </div>
                 <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
                     <div class="d-flex ai-start ps-relative mt-22">
                         <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="https://gody.vn/blog/hatra2486" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
+                            <a href="http://125.212.224.111/blog/hatra2486" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/hatra2486/96332653-20191017094110.jpeg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/hatra2486/96332653-20191017094110.jpeg"
@@ -1729,18 +1729,18 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                         <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
                             <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a href="https://gody.vn/blog/hatra2486" class="fc-nineth fw-500">Ha Tra</a>
+                                <a href="http://125.212.224.111/blog/hatra2486" class="fc-nineth fw-500">Ha Tra</a>
                                 <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a href="https://gody.vn/bai-viet/tham-pho-co-hoi-an-10908?action=review" class="fc-nineth fw-500"> THĂM PHỐ CỔ HỘI AN</a>
+                                <a href="http://125.212.224.111/bai-viet/tham-pho-co-hoi-an-10908?action=review" class="fc-nineth fw-500"> THĂM PHỐ CỔ HỘI AN</a>
                             </p>
-                            <a href="https://gody.vn/bai-viet/tham-pho-co-hoi-an-10908?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">bộ ảnh rất ch&acirc;n thật v&agrave; đẹp</a>
+                            <a href="http://125.212.224.111/bai-viet/tham-pho-co-hoi-an-10908?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">bộ ảnh rất ch&acirc;n thật v&agrave; đẹp</a>
                         </div>
                     </div>
                 </div>
                 <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
                     <div class="d-flex ai-start ps-relative mt-22">
                         <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="https://gody.vn/blog/28196869414974285761" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
+                            <a href="http://125.212.224.111/blog/28196869414974285761" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
                                 <img
                                         data-src="https://media2.gody.vn//public/images/user-2/2023/03/17/28196869414974285761/thumbnail-70/6413f07f4c2ec-1679028351.jpeg"
                                         data-srcset="https://media2.gody.vn//public/images/user-2/2023/03/17/28196869414974285761/thumbnail-70/6413f07f4c2ec-1679028351.jpeg"
@@ -1751,18 +1751,18 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                         <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
                             <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a href="https://gody.vn/blog/28196869414974285761" class="fc-nineth fw-500">Vi Sơn</a>
+                                <a href="http://125.212.224.111/blog/28196869414974285761" class="fc-nineth fw-500">Vi Sơn</a>
                                 <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a href="https://gody.vn/bai-viet/nhung-mon-an-phai-thu-khi-du-lich-puerto-rico-8815?action=review" class="fc-nineth fw-500"> Những m&oacute;n ăn phải thử khi du lịch Puerto Rico</a>
+                                <a href="http://125.212.224.111/bai-viet/nhung-mon-an-phai-thu-khi-du-lich-puerto-rico-8815?action=review" class="fc-nineth fw-500"> Những m&oacute;n ăn phải thử khi du lịch Puerto Rico</a>
                             </p>
-                            <a href="https://gody.vn/bai-viet/nhung-mon-an-phai-thu-khi-du-lich-puerto-rico-8815?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">ngon qu&aacute;</a>
+                            <a href="http://125.212.224.111/bai-viet/nhung-mon-an-phai-thu-khi-du-lich-puerto-rico-8815?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">ngon qu&aacute;</a>
                         </div>
                     </div>
                 </div>
                 <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
                     <div class="d-flex ai-start ps-relative mt-22">
                         <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="https://gody.vn/blog/nguyentoan05" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
+                            <a href="http://125.212.224.111/blog/nguyentoan05" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/nguyentoan05/113676790-20180926171748.jpg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/nguyentoan05/113676790-20180926171748.jpg"
@@ -1773,18 +1773,18 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                         <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
                             <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a href="https://gody.vn/blog/nguyentoan05" class="fc-nineth fw-500">Huyền Trang</a>
+                                <a href="http://125.212.224.111/blog/nguyentoan05" class="fc-nineth fw-500">Huyền Trang</a>
                                 <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a href="https://gody.vn/photo/sai-gon-vung-tau-can-tho-ha-nam-ly-son-dac-lac-5315?action=review" class="fc-nineth fw-500"> S&agrave;i G&ograve;n, Vũng T&agrave;u, Cần Thơ, H&agrave; Nam, L&yacute; Sơn, Đắc Lắc...</a>
+                                <a href="http://125.212.224.111/photo/sai-gon-vung-tau-can-tho-ha-nam-ly-son-dac-lac-5315?action=review" class="fc-nineth fw-500"> S&agrave;i G&ograve;n, Vũng T&agrave;u, Cần Thơ, H&agrave; Nam, L&yacute; Sơn, Đắc Lắc...</a>
                             </p>
-                            <a href="https://gody.vn/photo/sai-gon-vung-tau-can-tho-ha-nam-ly-son-dac-lac-5315?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">bạn viết th&agrave;nh 1 b&agrave;i review sẽ thu h&uacute;t được nhiều người xem hơn &aacute; bạn. Nhưng m&agrave; bộ ảnh của bạn cũng rất đẹp n&egrave;.</a>
+                            <a href="http://125.212.224.111/photo/sai-gon-vung-tau-can-tho-ha-nam-ly-son-dac-lac-5315?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">bạn viết th&agrave;nh 1 b&agrave;i review sẽ thu h&uacute;t được nhiều người xem hơn &aacute; bạn. Nhưng m&agrave; bộ ảnh của bạn cũng rất đẹp n&egrave;.</a>
                         </div>
                     </div>
                 </div>
                 <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
                     <div class="d-flex ai-start ps-relative mt-22">
                         <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="https://gody.vn/blog/thienthunguyen" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
+                            <a href="http://125.212.224.111/blog/thienthunguyen" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/thienthunguyen/2830893-20180725152643.jpg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/thienthunguyen/2830893-20180725152643.jpg"
@@ -1795,18 +1795,18 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                         <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
                             <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a href="https://gody.vn/blog/thienthunguyen" class="fc-nineth fw-500">Thi&ecirc;n Thư</a>
+                                <a href="http://125.212.224.111/blog/thienthunguyen" class="fc-nineth fw-500">Thi&ecirc;n Thư</a>
                                 <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a href="https://gody.vn/photo/ho-dieu-hoa-ho-son-phu-yen-5314?action=review" class="fc-nineth fw-500"> Hồ Điều Ho&agrave; Hồ Sơn- Ph&uacute; Y&ecirc;n</a>
+                                <a href="http://125.212.224.111/photo/ho-dieu-hoa-ho-son-phu-yen-5314?action=review" class="fc-nineth fw-500"> Hồ Điều Ho&agrave; Hồ Sơn- Ph&uacute; Y&ecirc;n</a>
                             </p>
-                            <a href="https://gody.vn/photo/ho-dieu-hoa-ho-son-phu-yen-5314?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">&uacute;i, đ&acirc;y l&agrave; địa điểm mới hả bạn, m&igrave;nh chưa thấy nghe t&ecirc;n n&agrave;y bao giờ &aacute;, đẹp gh&ecirc; ta ơi</a>
+                            <a href="http://125.212.224.111/photo/ho-dieu-hoa-ho-son-phu-yen-5314?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">&uacute;i, đ&acirc;y l&agrave; địa điểm mới hả bạn, m&igrave;nh chưa thấy nghe t&ecirc;n n&agrave;y bao giờ &aacute;, đẹp gh&ecirc; ta ơi</a>
                         </div>
                     </div>
                 </div>
                 <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
                     <div class="d-flex ai-start ps-relative mt-22">
                         <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="https://gody.vn/blog/bambi.chau22117889" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
+                            <a href="http://125.212.224.111/blog/bambi.chau22117889" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/bambi.chau22117889/135502264-20181220143217.jpeg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/bambi.chau22117889/135502264-20181220143217.jpeg"
@@ -1817,18 +1817,18 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                         <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
                             <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a href="https://gody.vn/blog/bambi.chau22117889" class="fc-nineth fw-500">ĐanTrương</a>
+                                <a href="http://125.212.224.111/blog/bambi.chau22117889" class="fc-nineth fw-500">ĐanTrương</a>
                                 <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a href="https://gody.vn/photo/ho-dieu-hoa-ho-son-phu-yen-5314?action=review" class="fc-nineth fw-500"> Hồ Điều Ho&agrave; Hồ Sơn- Ph&uacute; Y&ecirc;n</a>
+                                <a href="http://125.212.224.111/photo/ho-dieu-hoa-ho-son-phu-yen-5314?action=review" class="fc-nineth fw-500"> Hồ Điều Ho&agrave; Hồ Sơn- Ph&uacute; Y&ecirc;n</a>
                             </p>
-                            <a href="https://gody.vn/photo/ho-dieu-hoa-ho-son-phu-yen-5314?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">chỗ n&agrave;y mới m&agrave; đẹp qu&aacute; nhỉ</a>
+                            <a href="http://125.212.224.111/photo/ho-dieu-hoa-ho-son-phu-yen-5314?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">chỗ n&agrave;y mới m&agrave; đẹp qu&aacute; nhỉ</a>
                         </div>
                     </div>
                 </div>
                 <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
                     <div class="d-flex ai-start ps-relative mt-22">
                         <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="https://gody.vn/blog/thanhtha8527" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
+                            <a href="http://125.212.224.111/blog/thanhtha8527" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/thanhtha8527/137500240-20191017093700.jpeg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/thanhtha8527/137500240-20191017093700.jpeg"
@@ -1839,18 +1839,18 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                         <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
                             <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a href="https://gody.vn/blog/thanhtha8527" class="fc-nineth fw-500">Thanh Tha</a>
+                                <a href="http://125.212.224.111/blog/thanhtha8527" class="fc-nineth fw-500">Thanh Tha</a>
                                 <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a href="https://gody.vn/photo/sai-gon-vung-tau-can-tho-ha-nam-ly-son-dac-lac-5315?action=review" class="fc-nineth fw-500"> S&agrave;i G&ograve;n, Vũng T&agrave;u, Cần Thơ, H&agrave; Nam, L&yacute; Sơn, Đắc Lắc...</a>
+                                <a href="http://125.212.224.111/photo/sai-gon-vung-tau-can-tho-ha-nam-ly-son-dac-lac-5315?action=review" class="fc-nineth fw-500"> S&agrave;i G&ograve;n, Vũng T&agrave;u, Cần Thơ, H&agrave; Nam, L&yacute; Sơn, Đắc Lắc...</a>
                             </p>
-                            <a href="https://gody.vn/photo/sai-gon-vung-tau-can-tho-ha-nam-ly-son-dac-lac-5315?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">bạn review chi tiết từng điểm đến nữa th&igrave; tuyệt vời</a>
+                            <a href="http://125.212.224.111/photo/sai-gon-vung-tau-can-tho-ha-nam-ly-son-dac-lac-5315?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">bạn review chi tiết từng điểm đến nữa th&igrave; tuyệt vời</a>
                         </div>
                     </div>
                 </div>
                 <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
                     <div class="d-flex ai-start ps-relative mt-22">
                         <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="https://gody.vn/blog/haisonnguyen5960" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
+                            <a href="http://125.212.224.111/blog/haisonnguyen5960" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
                                 <img
                                         data-src="https://media2.gody.vn//public/images/user-2/2022/12/22/haisonnguyen5960/thumbnail-70/63a3f758b11dc-1671690072.jpeg"
                                         data-srcset="https://media2.gody.vn//public/images/user-2/2022/12/22/haisonnguyen5960/thumbnail-70/63a3f758b11dc-1671690072.jpeg"
@@ -1878,7 +1878,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                 <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
                     <div class="d-flex ai-start ps-relative mt-22">
                         <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="https://gody.vn/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
+                            <a href="http://125.212.224.111/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
@@ -1906,7 +1906,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                 <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
                     <div class="d-flex ai-start ps-relative mt-22">
                         <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="https://gody.vn/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
+                            <a href="http://125.212.224.111/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
@@ -1934,7 +1934,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                 <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
                     <div class="d-flex ai-start ps-relative mt-22">
                         <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="https://gody.vn/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
+                            <a href="http://125.212.224.111/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
@@ -1962,7 +1962,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                 <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
                     <div class="d-flex ai-start ps-relative mt-22">
                         <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="https://gody.vn/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
+                            <a href="http://125.212.224.111/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
@@ -1990,7 +1990,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                 <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
                     <div class="d-flex ai-start ps-relative mt-22">
                         <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="https://gody.vn/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
+                            <a href="http://125.212.224.111/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
@@ -2061,7 +2061,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
             </div>
             <div class="w-fit d-flex jc-space-between">
                 <div class="d-block ta-center ps-relative" style="width: 110px;">
-                    <a href="https://gody.vn/blog/giangvansp27435" class="d-block ps-relative" style="width: 110px; height: 110px;">
+                    <a href="http://125.212.224.111/blog/giangvansp27435" class="d-block ps-relative" style="width: 110px; height: 110px;">
                         <img
                                 data-src="https://gody.vn/public/v3/images/user/avatar/giangvansp27435/48269043-2021_05_23_16_38_01.jpg"
                                 data-srcset="https://gody.vn/public/v3/images/user/avatar/giangvansp27435/48269043-2021_05_23_16_38_01.jpg"
@@ -2077,11 +2077,11 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <span class="fc-primary fs-40 fw-700">#1</span>
                     </div>
                     <div class="d-block w-fit ta-center mt-15 mb-15">
-                        <a href="https://gody.vn/blog/giangvansp27435" class="fc-fourteenth fs-19 fw-400 ta-center">Th&agrave;nh Đạo</a>
+                        <a href="http://125.212.224.111/blog/giangvansp27435" class="fc-fourteenth fs-19 fw-400 ta-center">Th&agrave;nh Đạo</a>
                     </div>
                 </div>
                 <div class="d-block ta-center ps-relative" style="width: 110px;">
-                    <a href="https://gody.vn/blog/phanhana20176995" class="d-block ps-relative" style="width: 110px; height: 110px;">
+                    <a href="http://125.212.224.111/blog/phanhana20176995" class="d-block ps-relative" style="width: 110px; height: 110px;">
                         <img
                                 data-src="https://lh5.googleusercontent.com/-n15Bv7FzyJA/AAAAAAAAAAI/AAAAAAAAACE/CPw-swVzaSg/photo.jpg?sz=50"
                                 data-srcset="https://lh5.googleusercontent.com/-n15Bv7FzyJA/AAAAAAAAAAI/AAAAAAAAACE/CPw-swVzaSg/photo.jpg?sz=50"
@@ -2097,11 +2097,11 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <span class="fc-primary fs-40 fw-700">#2</span>
                     </div>
                     <div class="d-block w-fit ta-center mt-15 mb-15">
-                        <a href="https://gody.vn/blog/phanhana20176995" class="fc-fourteenth fs-19 fw-400 ta-center">Thu hiền</a>
+                        <a href="http://125.212.224.111/blog/phanhana20176995" class="fc-fourteenth fs-19 fw-400 ta-center">Thu hiền</a>
                     </div>
                 </div>
                 <div class="d-block ta-center ps-relative" style="width: 110px;">
-                    <a href="https://gody.vn/blog/minhthai.v96631" class="d-block ps-relative" style="width: 110px; height: 110px;">
+                    <a href="http://125.212.224.111/blog/minhthai.v96631" class="d-block ps-relative" style="width: 110px; height: 110px;">
                         <img
                                 data-src="https://gody.vn/public/v3/images/user/avatar/minhthai.v96631/17637537-20190522092811.jpg"
                                 data-srcset="https://gody.vn/public/v3/images/user/avatar/minhthai.v96631/17637537-20190522092811.jpg"
@@ -2117,11 +2117,11 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <span class="fc-primary fs-40 fw-700">#3</span>
                     </div>
                     <div class="d-block w-fit ta-center mt-15 mb-15">
-                        <a href="https://gody.vn/blog/minhthai.v96631" class="fc-fourteenth fs-19 fw-400 ta-center">Đo&agrave;n Minh Th&aacute;i</a>
+                        <a href="http://125.212.224.111/blog/minhthai.v96631" class="fc-fourteenth fs-19 fw-400 ta-center">Đo&agrave;n Minh Th&aacute;i</a>
                     </div>
                 </div>
                 <div class="d-block ta-center ps-relative" style="width: 110px;">
-                    <a href="https://gody.vn/blog/maikakool7858" class="d-block ps-relative" style="width: 110px; height: 110px;">
+                    <a href="http://125.212.224.111/blog/maikakool7858" class="d-block ps-relative" style="width: 110px; height: 110px;">
                         <img
                                 data-src="https://gody.vn/public/v3/images/user/avatar/maikakool7858/24652764-20210510104711.jpg"
                                 data-srcset="https://gody.vn/public/v3/images/user/avatar/maikakool7858/24652764-20210510104711.jpg"
@@ -2137,11 +2137,11 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <span class="fc-primary fs-40 fw-700">#4</span>
                     </div>
                     <div class="d-block w-fit ta-center mt-15 mb-15">
-                        <a href="https://gody.vn/blog/maikakool7858" class="fc-fourteenth fs-19 fw-400 ta-center">Tr&acirc;̀n V&acirc;n Khánh</a>
+                        <a href="http://125.212.224.111/blog/maikakool7858" class="fc-fourteenth fs-19 fw-400 ta-center">Tr&acirc;̀n V&acirc;n Khánh</a>
                     </div>
                 </div>
                 <div class="d-block ta-center ps-relative" style="width: 110px;">
-                    <a href="https://gody.vn/blog/maitam29013782" class="d-block ps-relative" style="width: 110px; height: 110px;">
+                    <a href="http://125.212.224.111/blog/maitam29013782" class="d-block ps-relative" style="width: 110px; height: 110px;">
                         <img
                                 data-src="https://gody.vn/public/v3/images/user/avatar/maitam29013782/111491063-2021_04_02_10_11_19.JPG"
                                 data-srcset="https://gody.vn/public/v3/images/user/avatar/maitam29013782/111491063-2021_04_02_10_11_19.JPG"
@@ -2157,11 +2157,11 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <span class="fc-primary fs-40 fw-700">#5</span>
                     </div>
                     <div class="d-block w-fit ta-center mt-15 mb-15">
-                        <a href="https://gody.vn/blog/maitam29013782" class="fc-fourteenth fs-19 fw-400 ta-center">Mai Thị T&acirc;m</a>
+                        <a href="http://125.212.224.111/blog/maitam29013782" class="fc-fourteenth fs-19 fw-400 ta-center">Mai Thị T&acirc;m</a>
                     </div>
                 </div>
                 <div class="d-block ta-center ps-relative" style="width: 110px;">
-                    <a href="https://gody.vn/blog/homero_homero20015120" class="d-block ps-relative" style="width: 110px; height: 110px;">
+                    <a href="http://125.212.224.111/blog/homero_homero20015120" class="d-block ps-relative" style="width: 110px; height: 110px;">
                         <img
                                 data-src="https://graph.facebook.com/v2.8/1392642617501161/picture?type=normal"
                                 data-srcset="https://graph.facebook.com/v2.8/1392642617501161/picture?type=normal"
@@ -2177,11 +2177,11 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <span class="fc-primary fs-40 fw-700">#6</span>
                     </div>
                     <div class="d-block w-fit ta-center mt-15 mb-15">
-                        <a href="https://gody.vn/blog/homero_homero20015120" class="fc-fourteenth fs-19 fw-400 ta-center">Nguyễn Trung Ki&ecirc;n</a>
+                        <a href="http://125.212.224.111/blog/homero_homero20015120" class="fc-fourteenth fs-19 fw-400 ta-center">Nguyễn Trung Ki&ecirc;n</a>
                     </div>
                 </div>
                 <div class="d-block ta-center ps-relative" style="width: 110px;">
-                    <a href="https://gody.vn/blog/congchua_mauhong803174" class="d-block ps-relative" style="width: 110px; height: 110px;">
+                    <a href="http://125.212.224.111/blog/congchua_mauhong803174" class="d-block ps-relative" style="width: 110px; height: 110px;">
                         <img
                                 data-src="https://graph.facebook.com/v2.8/1119476461488536/picture?type=normal"
                                 data-srcset="https://graph.facebook.com/v2.8/1119476461488536/picture?type=normal"
@@ -2197,11 +2197,11 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <span class="fc-primary fs-40 fw-700">#7</span>
                     </div>
                     <div class="d-block w-fit ta-center mt-15 mb-15">
-                        <a href="https://gody.vn/blog/congchua_mauhong803174" class="fc-fourteenth fs-19 fw-400 ta-center">Ng&ocirc; Huệ Chi</a>
+                        <a href="http://125.212.224.111/blog/congchua_mauhong803174" class="fc-fourteenth fs-19 fw-400 ta-center">Ng&ocirc; Huệ Chi</a>
                     </div>
                 </div>
                 <div class="d-block ta-center ps-relative" style="width: 110px;">
-                    <a href="https://gody.vn/blog/12532935681505101494" class="d-block ps-relative" style="width: 110px; height: 110px;">
+                    <a href="http://125.212.224.111/blog/12532935681505101494" class="d-block ps-relative" style="width: 110px; height: 110px;">
                         <img
                                 data-src="https://gody.vn/public/v3/images/user/avatar/12532935681505101494/39057733-20191210153012.jpg"
                                 data-srcset="https://gody.vn/public/v3/images/user/avatar/12532935681505101494/39057733-20191210153012.jpg"
@@ -2217,11 +2217,11 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <span class="fc-primary fs-40 fw-700">#8</span>
                     </div>
                     <div class="d-block w-fit ta-center mt-15 mb-15">
-                        <a href="https://gody.vn/blog/12532935681505101494" class="fc-fourteenth fs-19 fw-400 ta-center">Đinh Ngọc Thượng</a>
+                        <a href="http://125.212.224.111/blog/12532935681505101494" class="fc-fourteenth fs-19 fw-400 ta-center">Đinh Ngọc Thượng</a>
                     </div>
                 </div>
                 <div class="d-block ta-center ps-relative" style="width: 110px;">
-                    <a href="https://gody.vn/blog/taipham0101953078" class="d-block ps-relative" style="width: 110px; height: 110px;">
+                    <a href="http://125.212.224.111/blog/taipham0101953078" class="d-block ps-relative" style="width: 110px; height: 110px;">
                         <img
                                 data-src="https://gody.vn/public/v3/images/user/avatar/taipham0101953078/10313121-20200818231620.jpg"
                                 data-srcset="https://gody.vn/public/v3/images/user/avatar/taipham0101953078/10313121-20200818231620.jpg"
@@ -2237,7 +2237,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <span class="fc-primary fs-40 fw-700">#9</span>
                     </div>
                     <div class="d-block w-fit ta-center mt-15 mb-15">
-                        <a href="https://gody.vn/blog/taipham0101953078" class="fc-fourteenth fs-19 fw-400 ta-center">Phạm Đức T&agrave;i</a>
+                        <a href="http://125.212.224.111/blog/taipham0101953078" class="fc-fourteenth fs-19 fw-400 ta-center">Phạm Đức T&agrave;i</a>
                     </div>
                 </div>
             </div>
@@ -2265,23 +2265,23 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     <div class="w-fit d-block">
                         <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
                             <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#1</span>
-                            <a href="https://gody.vn/chau-a/singapore" class="fc-fourteenth fs-18 fw-500 h:o50">Singapore</a>
+                            <a href="http://125.212.224.111/chau-a/singapore" class="fc-fourteenth fs-18 fw-500 h:o50">Singapore</a>
                         </div>
                         <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
                             <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#2</span>
-                            <a href="https://gody.vn/chau-a/thailand" class="fc-fourteenth fs-18 fw-500 h:o50">Th&aacute;i Lan</a>
+                            <a href="http://125.212.224.111/chau-a/thailand" class="fc-fourteenth fs-18 fw-500 h:o50">Th&aacute;i Lan</a>
                         </div>
                         <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
                             <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#3</span>
-                            <a href="https://gody.vn/chau-a/south-korea" class="fc-fourteenth fs-18 fw-500 h:o50">H&agrave;n Quốc</a>
+                            <a href="http://125.212.224.111/chau-a/south-korea" class="fc-fourteenth fs-18 fw-500 h:o50">H&agrave;n Quốc</a>
                         </div>
                         <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
                             <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#4</span>
-                            <a href="https://gody.vn/chau-a/Japan" class="fc-fourteenth fs-18 fw-500 h:o50">Nhật Bản</a>
+                            <a href="http://125.212.224.111/chau-a/Japan" class="fc-fourteenth fs-18 fw-500 h:o50">Nhật Bản</a>
                         </div>
                         <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
                             <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#5</span>
-                            <a href="https://gody.vn/chau-my/united-states-of-america-my" class="fc-fourteenth fs-18 fw-500 h:o50">Mỹ</a>
+                            <a href="http://125.212.224.111/chau-my/united-states-of-america-my" class="fc-fourteenth fs-18 fw-500 h:o50">Mỹ</a>
                         </div>
                     </div>
                 </div>
@@ -2324,10 +2324,10 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
             </div>
             <div class="w-fit d-block">
                 <div class="w-fit d-block mb-15">
-                    <a href="https://gody.vn/hoi-dap/nen-mua-ve-the-nao-de-di-trong-nuoc-phap-012-5028" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">N&ecirc;n mua v&eacute; thế n&agrave;o để đi trong nước Ph&aacute;p</a>
+                    <a href="http://125.212.224.111/hoi-dap/nen-mua-ve-the-nao-de-di-trong-nuoc-phap-012-5028" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">N&ecirc;n mua v&eacute; thế n&agrave;o để đi trong nước Ph&aacute;p</a>
                     <div class="w-fit d-flex">
                         <div class="w-32 h-32">
-                            <a href="https://gody.vn/blog/hatra2486" class="w-fit h-fit">
+                            <a href="http://125.212.224.111/blog/hatra2486" class="w-fit h-fit">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/hatra2486/96332653-20191017094110.jpeg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/hatra2486/96332653-20191017094110.jpeg"
@@ -2338,11 +2338,11 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <div class="w-fit d-block ml-15">
                             <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
                                 <p>
-                                    <a href="https://gody.vn/blog/hatra2486"
+                                    <a href="http://125.212.224.111/blog/hatra2486"
                                        class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10">
                                         Ha Tra
                                     </a>
-                                    <a href="https://gody.vn/hoi-dap/nen-mua-ve-the-nao-de-di-trong-nuoc-phap-012-5028" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
+                                    <a href="http://125.212.224.111/hoi-dap/nen-mua-ve-the-nao-de-di-trong-nuoc-phap-012-5028" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
                                         Chào mọi người! Có ai trong nhóm mình có kinh nghiệm đi Pháp 3 ngày 2 đêm vào dịp tháng 7 rồi cho em xin chút review với được không ạ?
                                         Nên mua vé thế nào để đi trong nước Pháp?
                                         Đến vùng nào thì hợp lí?
@@ -2353,10 +2353,10 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     </div>
                 </div>
                 <div class="w-fit d-block mb-15">
-                    <a href="https://gody.vn/hoi-dap/khach-san-o-tay-ban-nha-012-5027" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Kh&aacute;ch sạn ở T&acirc;y Ban Nha</a>
+                    <a href="http://125.212.224.111/hoi-dap/khach-san-o-tay-ban-nha-012-5027" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Kh&aacute;ch sạn ở T&acirc;y Ban Nha</a>
                     <div class="w-fit d-flex">
                         <div class="w-32 h-32">
-                            <a href="https://gody.vn/blog/giaminh4723" class="w-fit h-fit">
+                            <a href="http://125.212.224.111/blog/giaminh4723" class="w-fit h-fit">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/giaminh4723/65106225-20191017093425.jpeg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/giaminh4723/65106225-20191017093425.jpeg"
@@ -2367,11 +2367,11 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         <div class="w-fit d-block ml-15">
                             <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
                                 <p>
-                                    <a href="https://gody.vn/blog/giaminh4723"
+                                    <a href="http://125.212.224.111/blog/giaminh4723"
                                        class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10">
                                         Gia Minh
                                     </a>
-                                    <a href="https://gody.vn/hoi-dap/khach-san-o-tay-ban-nha-012-5027" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
+                                    <a href="http://125.212.224.111/hoi-dap/khach-san-o-tay-ban-nha-012-5027" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
                                         Xin chào mọi người, em có dự định cuối t7 sang Tây Ban Nha chơi, lần đầu đi nên em chưa biết sẽ đi đâu, đặt khách sạn nào ok, giá sinh viên chút ạ. Mong mọi người góp ý nhiệt tình để em tham khảo. Em cảm ơn </a>
                                 </p>
                             </div>
@@ -2379,10 +2379,10 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     </div>
                 </div>
                 <div class="w-fit d-block mb-15">
-                    <a href="https://gody.vn/hoi-dap/dia-diem-nen-di-o-vienna-012-5026" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Địa điểm n&ecirc;n đi ở Vienna</a>
+                    <a href="http://125.212.224.111/hoi-dap/dia-diem-nen-di-o-vienna-012-5026" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Địa điểm n&ecirc;n đi ở Vienna</a>
                     <div class="w-fit d-flex">
                         <div class="w-32 h-32">
-                            <a href="https://gody.vn/blog/lethuy3225" class="w-fit h-fit">
+                            <a href="http://125.212.224.111/blog/lethuy3225" class="w-fit h-fit">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/lethuy3225/14550383-20191017093759.jpeg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/lethuy3225/14550383-20191017093759.jpeg"
@@ -2399,7 +2399,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                     >
                                         Le Thuy
                                     </a>
-                                    <a href="https://gody.vn/hoi-dap/dia-diem-nen-di-o-vienna-012-5026" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
+                                    <a href="http://125.212.224.111/hoi-dap/dia-diem-nen-di-o-vienna-012-5026" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
                                         Group mình ơi! Mọi người cho em xin gợi ý 1 số nhà hàng và địa điểm nên đi ở Vienna với ạ.! Thanks mọi người nhiều ạ! </a>
                                 </p>
                             </div>
@@ -2407,10 +2407,10 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     </div>
                 </div>
                 <div class="w-fit d-block mb-15">
-                    <a href="https://gody.vn/hoi-dap/khach-san-khu-china-town-gan-tram-mrt-012-5025" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Kh&aacute;ch sạn khu China Town gần trạm MRT</a>
+                    <a href="http://125.212.224.111/hoi-dap/khach-san-khu-china-town-gan-tram-mrt-012-5025" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Kh&aacute;ch sạn khu China Town gần trạm MRT</a>
                     <div class="w-fit d-flex">
                         <div class="w-32 h-32">
-                            <a href="https://gody.vn/blog/thanhtha8527" class="w-fit h-fit">
+                            <a href="http://125.212.224.111/blog/thanhtha8527" class="w-fit h-fit">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/thanhtha8527/137500240-20191017093700.jpeg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/thanhtha8527/137500240-20191017093700.jpeg"
@@ -2427,7 +2427,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                     >
                                         Thanh Tha
                                     </a>
-                                    <a href="https://gody.vn/hoi-dap/khach-san-khu-china-town-gan-tram-mrt-012-5025" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
+                                    <a href="http://125.212.224.111/hoi-dap/khach-san-khu-china-town-gan-tram-mrt-012-5025" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
                                         Mọi người cho xin tên 1 vài khách sạn khu china town gần trạm MRT với ạ. Có thông tin liên hệ và giá tham khảo luôn càng tốt nha mọi người. Em cám ơn ạ </a>
                                 </p>
                             </div>
@@ -2435,10 +2435,10 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     </div>
                 </div>
                 <div class="w-fit d-block mb-15">
-                    <a href="https://gody.vn/hoi-dap/thu-tuc-hoan-thue-o-han-quoc-012-5024" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Thủ tục ho&agrave;n thuế ở H&agrave;n Quốc</a>
+                    <a href="http://125.212.224.111/hoi-dap/thu-tuc-hoan-thue-o-han-quoc-012-5024" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Thủ tục ho&agrave;n thuế ở H&agrave;n Quốc</a>
                     <div class="w-fit d-flex">
                         <div class="w-32 h-32">
-                            <a href="https://gody.vn/blog/bambi.chau22117889" class="w-fit h-fit">
+                            <a href="http://125.212.224.111/blog/bambi.chau22117889" class="w-fit h-fit">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/bambi.chau22117889/135502264-20181220143217.jpeg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/bambi.chau22117889/135502264-20181220143217.jpeg"
@@ -2455,7 +2455,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                     >
                                         ĐanTrương
                                     </a>
-                                    <a href="https://gody.vn/hoi-dap/thu-tuc-hoan-thue-o-han-quoc-012-5024" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
+                                    <a href="http://125.212.224.111/hoi-dap/thu-tuc-hoan-thue-o-han-quoc-012-5024" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
                                         Nhờ mng có kinh nghiệm chia sẻ giúp mình với:
                                         1. Thủ tục hoàn thuế ntn ạ? Hoàn thuế tại cửa hàng luôn thì tiện ạ.
                                         Mình chỉ mua mấy đồ mỹ phẩm linh tinh thôi, ko phải hàng cao cấp gì đâu, nhưng có khả năng mua nhiều nên tiết kiệm đc bao nhiêu thì tiết kiệm ạ.
@@ -2467,10 +2467,10 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     </div>
                 </div>
                 <div class="w-fit d-block mb-15">
-                    <a href="https://gody.vn/hoi-dap/xin-visa-morocco-012-5023" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Xin visa Morocco</a>
+                    <a href="http://125.212.224.111/hoi-dap/xin-visa-morocco-012-5023" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Xin visa Morocco</a>
                     <div class="w-fit d-flex">
                         <div class="w-32 h-32">
-                            <a href="https://gody.vn/blog/thienthunguyen" class="w-fit h-fit">
+                            <a href="http://125.212.224.111/blog/thienthunguyen" class="w-fit h-fit">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/thienthunguyen/2830893-20180725152643.jpg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/thienthunguyen/2830893-20180725152643.jpg"
@@ -2487,7 +2487,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                     >
                                         Thi&ecirc;n Thư
                                     </a>
-                                    <a href="https://gody.vn/hoi-dap/xin-visa-morocco-012-5023" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
+                                    <a href="http://125.212.224.111/hoi-dap/xin-visa-morocco-012-5023" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
                                         Chào mọi người, trước kia thì cũng có dự tính + từ lúc xem xong phim Vagabond thì mê quá, mn cho mình hỏi ai đã đi Morocco rồi cho mình xin review với cả cách xin visa . Mình tính trung tuần tháng 7 đi tầm 10 ngày thì nộp hồ sơ xin visa lúc này ổn chứ. thanks al </a>
                                 </p>
                             </div>
@@ -2506,7 +2506,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
             </div>
             <div class="w-fit d-flex jc-space-between ai-center" style="--column:4; --gutter: 38px;">
                 <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
-                    <a href="https://gody.vn/photo/sai-gon-vung-tau-can-tho-ha-nam-ly-son-dac-lac-5315?photo_album=album" class="w-fit h-fit">
+                    <a href="http://125.212.224.111/photo/sai-gon-vung-tau-can-tho-ha-nam-ly-son-dac-lac-5315?photo_album=album" class="w-fit h-fit">
                         <img
                                 data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2017/10/6/hiencucvang19855168/453d1f636aca89cf134d54d71bde9908.jpg"
                                 data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2017/10/6/hiencucvang19855168/453d1f636aca89cf134d54d71bde9908.jpg"
@@ -2529,7 +2529,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                             class="lazy-load w-fit h-fit object-cover object-center bar-circle"
                                     >
                                 </span>
-                                <a href="https://gody.vn/blog/hiencucvang19855168" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
+                                <a href="http://125.212.224.111/blog/hiencucvang19855168" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
                                     Linh Le
                                 </a>
                             </div>
@@ -2537,7 +2537,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     </div><!-- ps-absolute -->
                 </div>
                 <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
-                    <a href="https://gody.vn/photo/ho-dieu-hoa-ho-son-phu-yen-5314?photo_album=album" class="w-fit h-fit">
+                    <a href="http://125.212.224.111/photo/ho-dieu-hoa-ho-son-phu-yen-5314?photo_album=album" class="w-fit h-fit">
                         <img
                                 data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/03/21/imissyou_2668257/d815f0f58e90eb155a817e71d414a745.jpg"
                                 data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/03/21/imissyou_2668257/d815f0f58e90eb155a817e71d414a745.jpg"
@@ -2560,7 +2560,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                             class="lazy-load w-fit h-fit object-cover object-center bar-circle"
                                     >
                                 </span>
-                                <a href="https://gody.vn/blog/imissyou_2668257" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
+                                <a href="http://125.212.224.111/blog/imissyou_2668257" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
                                     L&ecirc; Thị Kiều
                                 </a>
                             </div>
@@ -2569,7 +2569,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                 </div>
                 <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
                     <div class="w-fit mb-10 ps-relative" style="height: 150px">
-                        <a href="https://gody.vn/photo/pho-co-hoi-an-5313?photo_album=album" class="w-fit h-fit">
+                        <a href="http://125.212.224.111/photo/pho-co-hoi-an-5313?photo_album=album" class="w-fit h-fit">
                             <img
                                     data-src="https://media2.gody.vn/public/mytravelmap/images/2023/3/17/ngocvudb8160/original/8960b1a675d6b236b4ba3e25ad06754497ea9487.jpg"
                                     data-srcset="https://media2.gody.vn/public/mytravelmap/images/2023/3/17/ngocvudb8160/original/8960b1a675d6b236b4ba3e25ad06754497ea9487.jpg"
@@ -2592,7 +2592,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                                 class="lazy-load w-fit h-fit object-cover object-center bar-circle"
                                         >
                                     </span>
-                                    <a href="https://gody.vn/blog/ngocvudb8160" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
+                                    <a href="http://125.212.224.111/blog/ngocvudb8160" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
                                         Đặng Ngọc Vũ
                                     </a>
                                 </div>
@@ -2600,7 +2600,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div><!-- ps-absolute -->
                     </div>
                     <div class="w-fit ps-relative" style="height: 150px">
-                        <a href="https://gody.vn/photo/chuyen-di-adventure-thu-2-4-tai-nz-5308?photo_album=album" class="w-fit h-fit">
+                        <a href="http://125.212.224.111/photo/chuyen-di-adventure-thu-2-4-tai-nz-5308?photo_album=album" class="w-fit h-fit">
                             <img
                                     data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/3/6/anhngotrip2942/1e32b4b67d1f25698c0c16d2a64b6e46.jpg"
                                     data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/3/6/anhngotrip2942/1e32b4b67d1f25698c0c16d2a64b6e46.jpg"
@@ -2623,7 +2623,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                                 class="lazy-load w-fit h-fit object-cover object-center bar-circle"
                                         >
                                     </span>
-                                    <a href="https://gody.vn/blog/anhngotrip2942" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
+                                    <a href="http://125.212.224.111/blog/anhngotrip2942" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
                                         Ngo Tuan Anh
                                     </a>
                                 </div>
@@ -2632,7 +2632,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     </div>
                 </div>
                 <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
-                    <a href="https://gody.vn/photo/lan-dau-tien-lam-chuyen-ay-nghich-dai-o-nz-5306?photo_album=album" class="w-fit h-fit">
+                    <a href="http://125.212.224.111/photo/lan-dau-tien-lam-chuyen-ay-nghich-dai-o-nz-5306?photo_album=album" class="w-fit h-fit">
                         <img
                                 data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/3/6/anhngotrip2942/8996f22265b9f5f09e5a0bb2efe633ea.jpg"
                                 data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/3/6/anhngotrip2942/8996f22265b9f5f09e5a0bb2efe633ea.jpg"
@@ -2655,7 +2655,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                             class="lazy-load w-fit h-fit object-cover object-center bar-circle"
                                     >
                                 </span>
-                                <a href="https://gody.vn/blog/anhngotrip2942" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
+                                <a href="http://125.212.224.111/blog/anhngotrip2942" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
                                     Ngo Tuan Anh
                                 </a>
                             </div>
@@ -2918,100 +2918,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
         </div>
     </div>
 </div>
-<footer class="bg-eighth bt btw4 bc-primary mt-0">
-    <div class="container wmn-1170">
-        <div class="row pt-0">
-            <div class="col-md-4">
-                <a href="/" class="d-block pt-20">
-                    <img src="https://gody.vn/public/images/logo-new.jpg" alt="Gody Logo" class="h-40 w-130 d-block lazyload">
-                </a>
-                <div class="mt-12">
-                    <p class="fc-sixth mb-5">Mạng xã hội du lịch Việt Nam</p>
-                    <p class="fc-sixth mb-0">Giấy phép: 573/GP-BTTTT cấp ngày 20/11/2017</p>
-                </div>
-                <div class="mt-20 d-flex">
-                    <a href="https://www.facebook.com/GodyTravel/" target="_blank" rel="noreferrer nofollow" class="w-50 h-50 d-flex ai-center jc-center bg-white bar-circle card6 text-center fc-fourth fs-24 lh-50 h:card3 t-duration-slow t-all t-delay-0" id="icon-mang-xa-hoi-facebook-gody-footer-trang-chu">
-                        <span class="fc-transparent ps-absolute">FB</span>
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCtQWjnshk_9PPyl9M-Ip7aQ" target="_blank" rel="noreferrer nofollow" class="w-50 h-50 d-flex ai-center jc-center bg-white bar-circle ml-10 card6 text-center fc-thirteenth fs-24 lh-50 h:card3 t-duration-slow t-all t-delay-0" id="icon-mang-xa-hoi-youtube-gody-footer-trang-chu">
-                        <span class="fc-transparent ps-absolute">YT</span>
-                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.instagram.com/gody_travel/" target="_blank" rel="noreferrer nofollow" class="w-50 h-50 d-flex ai-center jc-center bg-white bar-circle ml-10 card6 text-center fs-24 lh-50 h:card3 t-duration-slow t-all t-delay-0" id="icon-mang-xa-hoi-instagram-gody-footer-trang-chu">
-                        <span class="fc-transparent ps-absolute">IG</span>
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-2 pt-20">
-                <p class="fs-18 fc-sixth mb-0">
-                    Về Gody
-                </p>
-                <span class="d-inline-block w-30 bb bc-primary baw2"></span>
-                <div class="mt-12">
-                    <a href="https://gody.vn/gioi-thieu" class="show fc-sixth h:fc-primary">Giới thiệu</a>
-                    <a href="https://gody.vn/lien-he" class="show fc-sixth h:fc-primary mt-5">Liên hệ</a>
-                    <a href="/bao-mat-thong-tin" class="show fc-sixth h:fc-primary mt-5">Chính sách bảo mật</a>
-                    <a href="/quy-dinh-su-dung" class="show fc-sixth h:fc-primary mt-5">Chính sách quyền riêng tư</a>
-                    <a href="#" class="show fc-sixth h:fc-primary mt-5">Chính sách sử dụng</a>
-                </div>
-            </div>
-            <div class="col-md-2 pt-20">
-                <p class="fs-18 fc-sixth mb-0">
-                    Du lịch
-                </p>
-                <span class="d-inline-block w-30 bb bc-primary baw2"></span>
-                <div class="mt-12">
-                    <a href="https://gody.vn/du-lich" class="show fc-sixth h:fc-primary">Tin tức</a>
-                    <a href="#" class="show fc-sixth h:fc-primary mt-5">Khuyến mãi</a>
-                    <a href="https://gody.vn/diem-den" class="show fc-sixth h:fc-primary mt-5">Điểm đến</a>
-                    <a href="#" class="show fc-sixth h:fc-primary mt-5" rel="nofollow">Ẩm thực</a>
-                    <a href="#" class="show fc-sixth h:fc-primary mt-5" rel="nofollow">Travel mag</a>
-                </div>
-            </div>
-            <div class="col-md-2 pt-20">
-                <p class="fs-18 fc-sixth mb-0">
-                    Tiện ích
-                </p>
-                <span class="d-inline-block w-30 bb bc-primary baw2"></span>
-                <div class="mt-12">
-                    <a href="https://gody.vn/lich-trinh-du-lich" class="show fc-sixth h:fc-primary">Lên lịch trình du lịch</a>
-                    <a href="https://gody.vn/ban-do-du-lich/viet-nam" class="show fc-sixth h:fc-primary mt-5">Tạo bảo đồ du lịch - My Travel Map</a>
-                    <a href="https://gody.vn/hoi-dap" class="show fc-sixth h:fc-primary mt-5">Hỏi đáp du lịch</a>
-                    <a href="https://gody.vn/blog/viet-bai/note" class="show fc-sixth h:fc-primary mt-5">Viết blog du lịch</a>
-                    <a href="https://gody.vn/diem-den" class="show fc-sixth h:fc-primary mt-5">Điểm đến</a>
-                </div>
-            </div>
-            <div class="col-md-2 pt-20">
-                <p class="fs-18 fc-sixth mb-0 h-26">Hợp tác</p>
-                <!-- <span class="d-inline-block w-30 bb baw1 bc-transparent"></span> -->
-                <span class="d-inline-block w-30 bb bc-primary baw2"></span>
-                <div class="mt-12">
-                    <a href="#" class="show fc-sixth h:fc-primary tien-ich-du-lich">Dành cho Blogger</a>
-                    <a href="#" class="show fc-sixth h:fc-primary mt-5 tien-ich-du-lich">Dành cho doanh nghiệp</a>
-                    <a href="#" class="show fc-sixth h:fc-primary mt-5 tien-ich-du-lich">Dành cho đại lý du lịch</a>
-                    <a href="#" class="show fc-sixth h:fc-primary mt-5 tien-ich-du-lich">Hợp tác marketing</a>
-                </div>
-            </div>
-        </div>
-        <div class="row pb-30 mt-0">
-            <div class="col-md-4">
-                <p class="fs-18 fc-sixth mb-0">
-                    Tải ứng dụng "GODY"
-                </p>
-                <span class="w-30 bb bc-primary baw2 d-inline-block"></span>
-                <div class="mt-25">
-                    <a href="https://apps.apple.com/vn/app/gody/id1570393254" target="_blank" rel="noreferrer nofollow" class="text-center d-inline-block wmn-120 h-40 lh-40 fc-transparent overflow-hidden" style="background-image: url('/public/v5/images/sprites1.png'); background-position: 0px 40px;width: 120px;">Tải ứng dụng "GODY"</a>
-                    <a href="https://play.google.com/store/apps/details?id=vn.gody.dulich" target="_blank" rel="noreferrer nofollow" class="text-center d-inline-block wmn-136 h-40 lh-40 ml-12 fc-transparent overflow-hidden" style="background-image: url('/public/v5/images/sprites1.png'); background-position: 136px 40px;width: 136px;">Tải ứng dụng "GODY"</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bg-eleventh text-center fc-nineth h-36 lh-36">
-        Copyright &copy; 2017 - 2023
-    </div>
-</footer>
+@include('layouts.partials.footer')
 <div class="modal fade" id="modal-search-v2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" ref="modalSearchV2" style="background: rgba(255,255,255,0.85);">
     <div class="modal-dialog modal-lg bar-8" role="document">
         <div class="modal-content bar-8">
@@ -3508,7 +3415,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                             <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/fitness.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Bảo hiểm">
                             <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Bảo hiểm</p>
                         </a>
-                        <a href="https://gody.vn/partner" target="_blank" class="
+                        <a href="http://125.212.224.111/partner" target="_blank" class="
                 d-flex
                 fd-column
                 ai-center
@@ -3595,7 +3502,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                 <img loading="lazy" src="https://gody.vn/public/v6/images/more/trip-com-04.png" class="w-45 h-20 mb-2" alt="Trip.com">
                                 <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate-line lineclamp1">Trip.com</p>
                             </a>
-                            <a href="https://gody.vn/homestay-hostel" target="_blank" rel="noreferrer,nofollow" class="
+                            <a href="http://125.212.224.111/homestay-hostel" target="_blank" rel="noreferrer,nofollow" class="
                   d-flex
                   fd-column
                   ai-center
@@ -4363,10 +4270,10 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                 $('.author-coin').html(authorCoin);
                             }
                             if (total > 0) {
-                                $this.find('.label').html('<a href="#modal-coin-sender" data-toggle="modal" class="fc-fourth" title="Danh sách tặng Go-coin">Bài viết này đã nhận được ' + total + ' Go-coin.</a> <a href="https://gody.vn/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
+                                $this.find('.label').html('<a href="#modal-coin-sender" data-toggle="modal" class="fc-fourth" title="Danh sách tặng Go-coin">Bài viết này đã nhận được ' + total + ' Go-coin.</a> <a href="http://125.212.224.111/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
                                 $('.coin-number-summary').parent().attr('href', '#modal-coin-sender');
                             } else {
-                                $this.find('.label').html('Hãy là người đầu tiên tặng Go-coin cho bài viết này. <a href="https://gody.vn/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
+                                $this.find('.label').html('Hãy là người đầu tiên tặng Go-coin cho bài viết này. <a href="http://125.212.224.111/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
                                 $('.coin-number-summary').parent().attr('href', 'javascript:void(0)');
                             }
                         }, error: function (response) {

@@ -534,10 +534,10 @@
                             }
 
                             if(total > 0) {
-                                $this.find('.label').html('<a href="#modal-coin-sender" data-toggle="modal" class="fc-fourth" title="Danh sách tặng Go-coin">Bài viết này đã nhận được '+total+' Go-coin.</a> <a href="https://gody.vn/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
+                                $this.find('.label').html('<a href="#modal-coin-sender" data-toggle="modal" class="fc-fourth" title="Danh sách tặng Go-coin">Bài viết này đã nhận được '+total+' Go-coin.</a> <a href="http://125.212.224.111/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
                                 $('.coin-number-summary').parent().attr('href', '#modal-coin-sender');
                             } else {
-                                $this.find('.label').html('Hãy là người đầu tiên tặng Go-coin cho bài viết này. <a href="https://gody.vn/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
+                                $this.find('.label').html('Hãy là người đầu tiên tặng Go-coin cho bài viết này. <a href="http://125.212.224.111/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
                                 $('.coin-number-summary').parent().attr('href', 'javascript:void(0)');
                             }
                         }, error: function(response) {

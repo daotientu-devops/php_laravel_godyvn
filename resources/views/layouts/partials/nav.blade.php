@@ -102,25 +102,25 @@
                             <a href="#modal-login" data-toggle="modal" class="fc-fourteenth py-10 px-15 fw-500">Đăng ký / Đăng nhập</a>
                         </li>
                         <li class="d-none">
-                            <a href="https://gody.vn/dang-ky" class="fc-fourteenth py-10 px-15">Đăng ký</a>
+                            <a href="http://125.212.224.111/dang-ky" class="fc-fourteenth py-10 px-15">Đăng ký</a>
                         </li>
                         <li class="bt bc-eleventh mt-6 mb-6"></li>
 
 
                         <li>
-                            <a href="https://gody.vn/blog/form/dang-ky" class="fc-fourteenth py-10 px-15">Kiếm tiền cùng Gody</a>
+                            <a href="http://125.212.224.111/blog/form/dang-ky" class="fc-fourteenth py-10 px-15">Kiếm tiền cùng Gody</a>
                         </li>
                         <li>
                             <a href="#modal-login" data-toggle="modal" id="thiet-lap-trang-blog-trong-profile" class="fc-fourteenth py-10 px-15">Tạo Blog du lịch</a>
                         </li>
                         <li>
-                            <a href="https://gody.vn/ban-do-du-lich/viet-nam" id="cap-nhat-mytravelmap-trong-profile" class="fc-fourteenth py-10 px-15">My Travel Map</a>
+                            <a href="http://125.212.224.111/ban-do-du-lich/viet-nam" id="cap-nhat-mytravelmap-trong-profile" class="fc-fourteenth py-10 px-15">My Travel Map</a>
                         </li>
                         <li>
-                            <a href="https://gody.vn/lich-trinh-du-lich" class="fc-fourteenth py-10 px-15">Tạo lịch trình</a>
+                            <a href="http://125.212.224.111/lich-trinh-du-lich" class="fc-fourteenth py-10 px-15">Tạo lịch trình</a>
                         </li>
                         <li>
-                            <a href="https://gody.vn/vi-du-lich" class="fc-fourteenth py-10 px-15">Ví du lịch</a>
+                            <a href="http://125.212.224.111/vi-du-lich" class="fc-fourteenth py-10 px-15">Ví du lịch</a>
                         </li>
 
                     </ul>
@@ -139,7 +139,7 @@
                         </script>
                         <p style="margin-bottom:6px;text-align:center;"><b>Chúc mừng!</b>!</p>
                         <p style=" text-align:center;color:#ff8c00;font-size:30px;margin:0;"><i class="fa fa-bell-o" aria-hidden="true"></i></p>
-                        <p style="margin:0;line-height:23px; text-align: center;">Bạn đã có 20,000VND trong tài khoản. <a href="https://gody.vn/qua-tang" class="fc-nineth fw-bold">Bạn muốn sử dụng ngay ?</a></p>
+                        <p style="margin:0;line-height:23px; text-align: center;">Bạn đã có 20,000VND trong tài khoản. <a href="http://125.212.224.111/qua-tang" class="fc-nineth fw-bold">Bạn muốn sử dụng ngay ?</a></p>
                     </ul>
                     <style>
                         .create-map-success-alert .dropdown-menu:before{content:'';display:block;width:10px;height:10px;position:absolute;border:1px solid #ccc;right:12px;top:-5px;transform:rotate(45deg);background:#fff;border-right-color:transparent;border-bottom-color:transparent;z-index:-1}

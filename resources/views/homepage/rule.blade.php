@@ -51,7 +51,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:400,500,600&amp;subset=vietnamese" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/Minified.css?v=1235">
+    <link rel="stylesheet" href="{{asset('css/temp/Minified.css?v=1235')}}">
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/main.css?v=1235">
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/custom.css?v=1235">
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/atomic.css?v=1235">
@@ -166,242 +166,7 @@
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <!-- home -->
-<nav class="navbar navbar-primary card5 bg-white ">
-    <div class="container-fluid wmn-1260 pr-5 ps-relative">
-        <div class="navbar-header h-42 mr-5">
-            <a href="/" class="logo"></a>
-        </div>
-
-        <div class="collapse navbar-collapse px-0 d-flex d-after-none d-before-none jc-space-between ai-center" id="bs-example-navbar-collapse-1" style="display: flex!important;">
-            <ul class="nav navbar-nav p-0 m-0">
-                <li class="ps-relative main-menu-search-wrapper ml-0 h-fit d-flex ai-center">
-                    <label for="inputSearch" id="search-header" class="c-pointer bar-50 bc-primary ba d-flex ai-center jc-space-between fc-sixth fw-normal h-44 w-300 pl-20 pr-8 mb-0">
-                        <span>Bạn muốn đi đâu?</span>
-                        <div class="bar-circle bg-primary d-flex ai-center jc-center p-8">
-                            <img src="/public/v6/js/ionicons/5.5.2/svg/search-outline.svg" class="ml-0 w-16 filter-white">
-                        </div>
-                    </label>
-                </li>
-            </ul>
-
-            <ul class="nav navbar-nav navbar-right mrn-6 d-flex ai-center">
-                <li class="py-0 px-0 h:bg-grayf2 bar-50 h-42 px-12 t-all t-duration-slow mr-0">
-                    <a class="h-fit text-center p-0 fc-sixth bg-transparent d-flex fw-500 ai-center jc-center px-6 mt-0 w-auto c-pointer" href="https://gody.vn/diem-den">
-                        <img src="/public/v6/js/ionicons/5.5.2/svg/earth.svg" class="w-20 mtn-3 mr-8" />
-                        <p class="m-0 p-0 fs-16 fc-nineth">Điểm đến</p>
-                    </a>
-                </li>
-                <li class="py-0 px-0 h:bg-grayf2 bar-50 h-42 px-12 t-all t-duration-slow mr-0">
-                    <a class="h-fit text-center p-0 fc-sixth bg-transparent d-flex fw-500 ai-center jc-center px-6 mt-0 w-auto c-pointer" href="https://gody.vn/ban-do-du-lich/viet-nam">
-                        <img class="w-20 mtn-4 filter-black va-middle mr-8" src="/public/v6/images/logo-filled-100x100.png">
-                        <p class="m-0 p-0 fs-16 fc-nineth">My Travel Map</p>
-                    </a>
-                </li>
-
-                <li class="dropdown nav-add-box py-0 pr-1 pl-5 h:bg-grayf2 bar-50 px-12 t-all t-duration-slow">
-                    <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="nav-button-add fw-500 bg-transparent py-0 px-6 h-fit d-flex ai-center jc-center c-pointer">
-                        <img src="/public/v6/js/ionicons/5.5.2/svg/pencil.svg" class="w-18 mb-1 mr-8" width="23"/>
-                        <p class="m-0 p-0 fs-16 fc-nineth">Viết ngay</p>
-                    </a>
-
-                    <ul class="dropdown-menu bar-0 mtn-1 " aria-labelledby="nav-button-add">
-                        <!-- <li class="ps-absolute w-10 h-10 baw1 bas-solid bc-tenth r12 tn6 rotate-1/8 bg-white brs-unset bbs-unset zn-1"></li> -->
-                        <li class="mt-10">
-                            <a href="https://gody.vn/blog/viet-bai/note" class="fc-sixth" id=" " style="color: #ff8c00 !important;">
-                                <img src="/public/v6/js/ionicons/5.5.2/svg/create-outline.svg" class="filter-primary w-24 mr-8">Chia sẻ trải nghiệm & review
-                            </a>
-                        </li>
-
-                        <li class="mt-10">
-                            <a href="https://gody.vn/photo-blog/dang-bai/note" class="fc-sixth" id=" ">
-                                <img src="/public/v6/js/ionicons/5.5.2/svg/image-outline.svg" class="filter-sixth w-24 mr-8">Chia sẻ hình ảnh
-                            </a>
-                        </li>
-
-                        <li class="mt-10">
-                            <a href=/photo-blog/dang-bai/facebook class="fc-sixth" id=" ">
-                                <img src="/public/v6/js/ionicons/5.5.2/svg/images-outline.svg" class="filter-sixth w-24 mr-8">Chia sẻ hình từ Facebook
-                            </a>
-                        </li>
-
-                        <li class="mt-10 mb-10">
-                            <a href="https://gody.vn/hoi-dap" class="fc-sixth" id=" ">
-                                <img src="/public/v6/js/ionicons/5.5.2/svg/people-outline.svg" class="filter-sixth w-24 mr-8">Hỏi đáp du lịch
-                            </a>
-                        </li>
-
-                        <li class="mt-10 mb-10">
-                            <a href="https://gody.vn/lich-trinh-du-lich" class="fc-sixth" id=" ">
-                                <img src="/public/v6/js/ionicons/5.5.2/svg/footsteps-outline.svg" class="filter-sixth w-24 mr-8">Lập & chia sẻ hành trình
-                            </a>
-                        </li>
-
-                        <li class="mt-10 mb-10">
-                            <a href="/cong-tac-vien/viet-bai/note" class="fc-sixth">
-                                <img src="/public/v6/js/ionicons/5.5.2/svg/trail-sign-outline.svg" class="filter-sixth w-24 mr-8">Chia sẻ, giới thiệu địa điểm mới
-                            </a>
-                        </li>
-
-                    </ul>
-                    <style>
-                        .nav-add-box{height: 42px;padding: 5px;}
-                        .nav-add-box ul.dropdown-menu{margin-top:-1px;border-radius:0;}
-                        .nav-add-box ul.dropdown-menu:before{content:'';display:block;width:10px;height:10px;position:absolute;border:1px solid #ccc;right:12px;top:-5px;transform:rotate(45deg);background:#fff;border-right-color:transparent;border-bottom-color:transparent;z-index:-1}
-                        .nav-add-box ul li{margin-top:10px;}
-                    </style>
-                </li>
-
-                <li class="dropdown notification-box py-0 px-0 ml-0 h:bg-grayf2 bar-50 h-42 px-12 t-all t-duration-slow">
-                    <a class="h-fit text-center p-0 fc-sixth bg-transparent notification-bell d-flex fw-500 ai-center jc-center px-6 mt-0 w-auto c-pointer" id="notification-bell" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Thông báo">
-                        <img src="/public/v6/js/ionicons/5.5.2/svg/notifications.svg" class="w-18 mr-8 mb-1" width="23"/>
-                        <p class="m-0 p-0 fs-16 fc-nineth">Thông báo</p>
-                        <span class="notification-bell-count text-center ps-absolute fs-10 bg-primary fc-white bar-circle t4 l18 w-16 h-16 lh-lg hide">1</span>
-                    </a>
-                    <ul class="dropdown-menu bar-8 card5 bn" aria-labelledby="notification-bell">
-                        <div class="notification-wrapper">
-                            <div class="notification-menu d-flex ai-center jc-space-between p-0">
-                                <button class="btn btn-default fl-1 bn active" data-id="3">Tất cả <span class="notification-bell-count hide">3</span></button>
-                                <button class="btn btn-default fl-1 bn" data-id="1">Ưa thích </button>
-                                <button class="btn btn-default fl-1 bn" data-id="2">Gần đây <span class="notification-bell-count hide">3</span></button>
-                            </div><!-- /.notificationMenu -->
-
-                            <div class="notification-content" id="notificationContent">
-                                <div class="noti-c-post hide" data-id="1">
-                                    <div class="notification-item">
-                                        <p class="color_sub margin_top_10 text-center" style="font-size: 12px">Chưa có thông báo!</p>
-                                    </div>
-                                </div>
-                                <div class="noti-c-deal hide" data-id="2" id="noti-c-deal">
-                                    <div class="notification-item">
-                                        <p class="color_sub margin_top_10 text-center" style="font-size: 12px">Chưa có thông báo!</p>
-                                    </div>
-                                </div>
-                                <div class="notification-content-active" data-id="3" id="notification-content-active">
-                                    <div class="loadingstream" style="display:block;">
-                                        <div class="animated-background height-50 overflow-hidden">
-                                            <div class="background-masker header-top"></div>
-                                            <div class="background-masker header-left"></div>
-                                            <div class="background-masker header-right"></div>
-                                            <div class="background-masker header-bottom"></div>
-                                            <div class="background-masker subheader-left"></div>
-                                            <div class="background-masker subheader-right"></div>
-                                            <div class="background-masker subheader-bottom"></div>
-                                            <div class="background-masker content-top"></div>
-                                            <div class="background-masker content-first-end"></div>
-                                            <div class="background-masker content-second-line"></div>
-                                            <div class="background-masker content-second-end"></div>
-                                            <div class="background-masker content-third-line"></div>
-                                            <div class="background-masker content-third-end"></div>
-                                        </div>
-                                        <div class="animated-background height-50 overflow-hidden">
-                                            <div class="background-masker header-top"></div>
-                                            <div class="background-masker header-left"></div>
-                                            <div class="background-masker header-right"></div>
-                                            <div class="background-masker header-bottom"></div>
-                                            <div class="background-masker subheader-left"></div>
-                                            <div class="background-masker subheader-right"></div>
-                                            <div class="background-masker subheader-bottom"></div>
-                                            <div class="background-masker content-top"></div>
-                                            <div class="background-masker content-first-end"></div>
-                                            <div class="background-masker content-second-line"></div>
-                                            <div class="background-masker content-second-end"></div>
-                                            <div class="background-masker content-third-line"></div>
-                                            <div class="background-masker content-third-end"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </ul>
-                </li>
-
-                <li class="dropdown d-flex ai-center jc-center mr-20 ml-0 h-42 px-12 h:bg-grayf2 bar-50">
-                    <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="clearfix py-0 px-6 bg-transparent fc-nineth d-flex ai-center jc-center h-fit ml-6">
-                        <div class="d-flex ai-center mr-8">
-                            <div class="userImg mt-0 w-23 h-23 bn">
-                                <div class="bg-no-repeat bg-cover bg-center bar-circle _3mf5 ps-relative w-fit h-fit" style="background-image: url('https://lh3.googleusercontent.com/a/AGNmyxY2QTxSHXOC8M6mNvwYfugk6xvuyTsobWF1C73-=s96-c')"></div>
-                            </div>
-                        </div>
-
-                        <div class="d-flex ai-center jc-center">
-                            <p class="m-0 p-0 fs-16 fw-500 truncate-line lineclamp1 wmx-100 fc-nineth ta-center">T&uacute; Đ&agrave;o</p>
-                            <img src="/public/v6/js/ionicons/5.5.2/svg/caret-down.svg" width="16" class="filter-sixth mb-0"/>
-                        </div>
-                    </a>
-
-                    <ul class="dropdown-menu account-dropdown bar-8 w-250 card6 bn mt-7">
-                        <li class="ps-absolute w-10 h-10 baw1 bas-solid bc-tenth r12 tn6 rotate-1/8 bg-white brs-unset bbs-unset zn-1"></li>
-
-                        <li>
-                            <a href="https://gody.vn/blog/aquafina94164928" class="fc-fourteenth py-10 px-15">Trang cá nhân</a>
-                        </li>
-
-                        <li>
-                            <a href="https://gody.vn/blog/form/dang-ky" class="fc-fourteenth py-10 px-15">Kiếm tiền cùng Gody</a>
-                        </li>
-                        <li>
-                            <a href="https://gody.vn/blog/aquafina94164928/settings" id="thiet-lap-trang-blog-trong-profile" class="fc-fourteenth py-10 px-15">Tạo Blog du lịch</a>
-                        </li>
-                        <li>
-                            <a href="https://gody.vn/ban-do-du-lich/viet-nam" id="cap-nhat-mytravelmap-trong-profile" class="fc-fourteenth py-10 px-15">My Travel Map</a>
-                        </li>
-                        <li>
-                            <a href="https://gody.vn/lich-trinh-du-lich" class="fc-fourteenth py-10 px-15">Tạo lịch trình</a>
-                        </li>
-                        <li>
-                            <a href="https://gody.vn/vi-du-lich" class="fc-fourteenth py-10 px-15">Ví du lịch</a>
-                        </li>
-                        <li>
-                            <a href="https://gody.vn/blog/aquafina94164928/settings" class="fc-fourteenth py-10 px-15">Tài khoản</a>
-                        </li>
-
-                        <li class="bt bc-eleventh mt-6 mb-6"></li>
-                        <li>
-                            <a href="https://gody.vn/dang-xuat" class="fc-fourteenth py-10 px-15">Đăng xuất</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="dropdown user-redirect-mytravelmap" style="height: 56px;">
-                    <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" style="padding:0;">
-                    </a>
-                    <ul class="dropdown-menu">
-                        <button class="close" style=" top:8px;right:12px;position:absolute;"><span aria-hidden="true">×</span></button>
-                        <p style="margin-bottom: 6px;">Chào <b>T&uacute; Đ&agrave;o</b>!</p>
-                        <p style="margin:0; line-height: 23px;">Hãy tạo <a href="https://gody.vn/ban-do-du-lich/viet-nam" style="color:#ff8c00 !important;" >My Travel Map </a>ngay để lưu trữ, chia sẻ hành trình du lịch, khám phá của bạn và chia sẻ với mọi người</p>
-                    </ul>
-                    <style>
-                        .user-redirect-mytravelmap .dropdown-menu:before{content:'';display:block;width:10px;height:10px;position:absolute;border:1px solid #ccc;right:12px;top:-5px;transform:rotate(45deg);background:#fff;border-right-color:transparent;border-bottom-color:transparent;z-index:-1}
-                        .user-redirect-mytravelmap .dropdown-menu{margin-right:3px;margin-top:-1px !important;border-top-left-radius:4px !important;border-top-right-radius:4px!important; min-width:300px; padding:15px;}
-                    </style>
-                </li>
-
-                <li class="dropdown create-map-success-alert" style="height: 56px;">
-                    <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" style="padding:0;">
-                    </a>
-                    <ul class="dropdown-menu" style="z-index: 1;">
-                        <button class="close" style="top:8px;right:12px;position:absolute;"><span aria-hidden="true">×</span></button>
-                        <script>
-                            document.querySelector(".create-map-success-alert .close").addEventListener("click", function(){
-                                document.querySelector(".create-map-success-alert .dropdown-menu").style.display = 'none';
-                            });
-                        </script>
-                        <p style="margin-bottom:6px;text-align:center;"><b>Chúc mừng!</b>!</p>
-                        <p style=" text-align:center;color:#ff8c00;font-size:30px;margin:0;"><i class="fa fa-bell-o" aria-hidden="true"></i></p>
-                        <p style="margin:0;line-height:23px; text-align: center;">Bạn đã có 20,000VND trong tài khoản. <a href="https://gody.vn/qua-tang" class="fc-nineth fw-bold">Bạn muốn sử dụng ngay ?</a></p>
-                    </ul>
-                    <style>
-                        .create-map-success-alert .dropdown-menu:before{content:'';display:block;width:10px;height:10px;position:absolute;border:1px solid #ccc;right:12px;top:-5px;transform:rotate(45deg);background:#fff;border-right-color:transparent;border-bottom-color:transparent;z-index:-1}
-                        .create-map-success-alert .dropdown-menu{margin-right:3px;margin-top:-1px !important;border-top-left-radius:4px !important;border-top-right-radius:4px!important; min-width:300px; padding:15px;}
-                    </style>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-
-
+@include('layouts.partials.nav')
 
 <div class="container mt-30 mb-35">
     <div class="row">
@@ -825,102 +590,7 @@
         </div>
     </div>
 </div>
-<footer class="bg-eighth bt btw4 bc-primary mt-0">
-    <div class="container wmn-1170">
-        <div class="row pt-0">
-            <div class="col-md-4">
-                <a href="/" class="d-block pt-20">
-                    <img src="/public/images/logo-new.png" alt="Gody Logo" class="h-40 w-130 d-block lazyload">
-                </a>
-                <div class="mt-12">
-                    <p class="fc-sixth mb-5">Mạng xã hội du lịch Việt Nam</p>
-                    <p class="fc-sixth mb-0">Giấy phép: 573/GP-BTTTT cấp ngày 20/11/2017</p>
-                </div>
-                <div class="mt-20 d-flex">
-                    <a href="https://www.facebook.com/GodyTravel/" target="_blank" rel="noreferrer nofollow" class="w-50 h-50 d-flex ai-center jc-center bg-white bar-circle card6 text-center fc-fourth fs-24 lh-50 h:card3 t-duration-slow t-all t-delay-0" id="icon-mang-xa-hoi-facebook-gody-footer-trang-chu">
-                        <span class="fc-transparent ps-absolute">FB</span>
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCtQWjnshk_9PPyl9M-Ip7aQ" target="_blank" rel="noreferrer nofollow" class="w-50 h-50 d-flex ai-center jc-center bg-white bar-circle ml-10 card6 text-center fc-thirteenth fs-24 lh-50 h:card3 t-duration-slow t-all t-delay-0" id="icon-mang-xa-hoi-youtube-gody-footer-trang-chu">
-                        <span class="fc-transparent ps-absolute">YT</span>
-                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.instagram.com/gody_travel/" target="_blank" rel="noreferrer nofollow" class="w-50 h-50 d-flex ai-center jc-center bg-white bar-circle ml-10 card6 text-center fs-24 lh-50 h:card3 t-duration-slow t-all t-delay-0" id="icon-mang-xa-hoi-instagram-gody-footer-trang-chu">
-                        <span class="fc-transparent ps-absolute">IG</span>
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-2 pt-20">
-                <p class="fs-18 fc-sixth mb-0">
-                    Về Gody
-                </p>
-                <span class="d-inline-block w-30 bb bc-primary baw2"></span>
-                <div class="mt-12">
-                    <a href="https://gody.vn/gioi-thieu" class="show fc-sixth h:fc-primary">Giới thiệu</a>
-                    <a href="https://gody.vn/lien-he" class="show fc-sixth h:fc-primary mt-5">Liên hệ</a>
-                    <a href="/bao-mat-thong-tin" class="show fc-sixth h:fc-primary mt-5">Chính sách bảo mật</a>
-                    <a href="/quy-dinh-su-dung" class="show fc-sixth h:fc-primary mt-5">Chính sách quyền riêng tư</a>
-                    <a href="#" class="show fc-sixth h:fc-primary mt-5">Chính sách sử dụng</a>
-                </div>
-            </div>
-            <div class="col-md-2 pt-20">
-                <p class="fs-18 fc-sixth mb-0">
-                    Du lịch
-                </p>
-                <span class="d-inline-block w-30 bb bc-primary baw2"></span>
-                <div class="mt-12">
-                    <a href="https://gody.vn/du-lich" class="show fc-sixth h:fc-primary">Tin tức</a>
-                    <a href="#" class="show fc-sixth h:fc-primary mt-5">Khuyến mãi</a>
-                    <a href="https://gody.vn/diem-den" class="show fc-sixth h:fc-primary mt-5">Điểm đến</a>
-                    <a href="#" class="show fc-sixth h:fc-primary mt-5" rel="nofollow">Ẩm thực</a>
-                    <a href="#" class="show fc-sixth h:fc-primary mt-5" rel="nofollow">Travel mag</a>
-                </div>
-            </div>
-            <div class="col-md-2 pt-20">
-                <p class="fs-18 fc-sixth mb-0">
-                    Tiện ích
-                </p>
-                <span class="d-inline-block w-30 bb bc-primary baw2"></span>
-                <div class="mt-12">
-                    <a href="https://gody.vn/lich-trinh-du-lich" class="show fc-sixth h:fc-primary">Lên lịch trình du lịch</a>
-                    <a href="https://gody.vn/ban-do-du-lich/viet-nam" class="show fc-sixth h:fc-primary mt-5">Tạo bảo đồ du lịch - My Travel Map</a>
-                    <a href="https://gody.vn/hoi-dap" class="show fc-sixth h:fc-primary mt-5">Hỏi đáp du lịch</a>
-                    <a href="https://gody.vn/blog/viet-bai/note" class="show fc-sixth h:fc-primary mt-5">Viết blog du lịch</a>
-                    <a href="https://gody.vn/diem-den" class="show fc-sixth h:fc-primary mt-5">Điểm đến</a>
-                </div>
-            </div>
-            <div class="col-md-2 pt-20">
-                <p class="fs-18 fc-sixth mb-0 h-26">Hợp tác</p>
-                <!-- <span class="d-inline-block w-30 bb baw1 bc-transparent"></span> -->
-                <span class="d-inline-block w-30 bb bc-primary baw2"></span>
-                <div class="mt-12">
-                    <a href="#" class="show fc-sixth h:fc-primary tien-ich-du-lich">Dành cho Blogger</a>
-                    <a href="#" class="show fc-sixth h:fc-primary mt-5 tien-ich-du-lich">Dành cho doanh nghiệp</a>
-                    <a href="#" class="show fc-sixth h:fc-primary mt-5 tien-ich-du-lich">Dành cho đại lý du lịch</a>
-                    <a href="#" class="show fc-sixth h:fc-primary mt-5 tien-ich-du-lich">Hợp tác marketing</a>
-                </div>
-            </div>
-        </div>
-        <div class="row pb-30 mt-0">
-            <div class="col-md-4">
-                <p class="fs-18 fc-sixth mb-0">
-                    Tải ứng dụng "GODY"
-                </p>
-                <span class="w-30 bb bc-primary baw2 d-inline-block"></span>
-                <div class="mt-25">
-                    <a href="https://apps.apple.com/vn/app/gody/id1570393254" target="_blank" rel="noreferrer nofollow" class="text-center d-inline-block wmn-120 h-40 lh-40 fc-transparent overflow-hidden" style="background-image: url('/public/v5/images/sprites1.png'); background-position: 0px 40px;width: 120px;">Tải ứng dụng "GODY"</a>
-                    <a href="https://play.google.com/store/apps/details?id=vn.gody.dulich" target="_blank" rel="noreferrer nofollow" class="text-center d-inline-block wmn-136 h-40 lh-40 ml-12 fc-transparent overflow-hidden" style="background-image: url('/public/v5/images/sprites1.png'); background-position: 136px 40px;width: 136px;">Tải ứng dụng "GODY"</a>
-                </div>            </div>
-
-        </div>
-    </div>
-
-    <div class="bg-eleventh text-center fc-nineth h-36 lh-36">
-        Copyright &copy; 2017 - 2023
-    </div>
-</footer>
-
+@include('layouts.partials.footer')
 <div class="modal fade" id="modal-search-v2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" ref="modalSearchV2" style="background: rgba(255,255,255,0.85);">
     <div class="modal-dialog modal-lg bar-8" role="document">
         <div class="modal-content bar-8">
@@ -1441,7 +1111,7 @@
                             <img src="/public/v6/js/ionicons/5.5.2/svg/fitness.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Bảo hiểm">
                             <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Bảo hiểm</p>
                         </a>
-                        <a href="https://gody.vn/partner" target="_blank" class="
+                        <a href="http://125.212.224.111/partner" target="_blank" class="
                 d-flex
                 fd-column
                 ai-center
@@ -1526,7 +1196,7 @@
                                 <img loading="lazy" src="/public/v6/images/more/trip-com-04.png" class="w-45 h-20 mb-2" alt="Trip.com">
                                 <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate-line lineclamp1">Trip.com</p>
                             </a>
-                            <a href="https://gody.vn/homestay-hostel" target="_blank" rel="noreferrer,nofollow" class="
+                            <a href="http://125.212.224.111/homestay-hostel" target="_blank" rel="noreferrer,nofollow" class="
                   d-flex
                   fd-column
                   ai-center
@@ -2813,10 +2483,10 @@
                             }
 
                             if(total > 0) {
-                                $this.find('.label').html('<a href="#modal-coin-sender" data-toggle="modal" class="fc-fourth" title="Danh sách tặng Go-coin">Bài viết này đã nhận được '+total+' Go-coin.</a> <a href="https://gody.vn/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
+                                $this.find('.label').html('<a href="#modal-coin-sender" data-toggle="modal" class="fc-fourth" title="Danh sách tặng Go-coin">Bài viết này đã nhận được '+total+' Go-coin.</a> <a href="http://125.212.224.111/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
                                 $('.coin-number-summary').parent().attr('href', '#modal-coin-sender');
                             } else {
-                                $this.find('.label').html('Hãy là người đầu tiên tặng Go-coin cho bài viết này. <a href="https://gody.vn/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
+                                $this.find('.label').html('Hãy là người đầu tiên tặng Go-coin cho bài viết này. <a href="http://125.212.224.111/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
                                 $('.coin-number-summary').parent().attr('href', 'javascript:void(0)');
                             }
                         }, error: function(response) {
