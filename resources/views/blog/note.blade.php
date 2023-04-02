@@ -2,7 +2,7 @@
 @section('content')
     <div class="travel-blog-create-page _create1 create-current-page create-v3">
         <div data-toggle="modal" data-target="#modal-login" class="pos-f cursor-pointer w-fit h-fit t0 r0 b0 l0 z-8" style="display:none"></div>
-        <form action="{{ url('blog/viet-bai/note') }}" method="post" accept-charset="utf-8" enctype="multipart/form-data" class="" id="travelPostForm" name="travelPostForm" novalidate="">
+        <form action="{{ url('blog/viet-bai/note') }}" method="post" accept-charset="utf-8" enctype="multipart/form-data" id="travelPostForm" name="travelPostForm" novalidate="">
             <div class="container-fluid pr-0 pl-0 min-width-1170 travel-post-header">
                 <div class="set-index ">
 
