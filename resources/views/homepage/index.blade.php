@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/main.css?v=1235">
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/custom.css?v=1235">
     <link rel="stylesheet" href="{{asset('css/atomic.css')}}">
-    <link rel="stylesheet" href="/public/js/vue-modules/vue2-datepicker/css/index.css"/>
+    <link rel="stylesheet" href="https://gody.vn/public/js/vue-modules/vue2-datepicker/css/index.css"/>
     <link rel="stylesheet" href="https://media2.gody.vn/public/v3/plugins/slick/slick.css">
     <!-- bxSlider CSS file -->
     <link href="https://media2.gody.vn/public/v3/css/jquery.bxslider.min.css" rel="stylesheet"/>
@@ -4702,7 +4702,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     async getPopularData() {
                         try {
                             const config = {
-                                url: '/api/v6/top-trends',
+                                url: 'https://gody.vn/api/v6/top-trends',
                                 method: 'GET',
                                 headers: {}
                             };

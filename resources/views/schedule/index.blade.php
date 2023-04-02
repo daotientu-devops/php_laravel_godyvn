@@ -55,7 +55,7 @@
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/main.css?v=1235">
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/custom.css?v=1235">
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/atomic.css?v=1235">
-    <link rel="stylesheet" href="/public/js/vue-modules/vue2-datepicker/css/index.css" />
+    <link rel="stylesheet" href="https://gody.vn/public/js/vue-modules/vue2-datepicker/css/index.css" />
 
     <link rel="stylesheet" href="https://media2.gody.vn/public/v3/plugins/slick/slick.css">
     <!-- bxSlider CSS file -->
@@ -4020,7 +4020,7 @@
                     async getPopularData() {
                         try {
                             const config = {
-                                url: '/api/v6/top-trends',
+                                url: 'https://gody.vn/api/v6/top-trends',
                                 method: 'GET',
                                 headers: {}
                             };

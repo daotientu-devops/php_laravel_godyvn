@@ -50,3 +50,6 @@ Route::group(['middleware' => 'web'], function () {
         return view('homepage.rule');
     });
 });
+
+// Đường dẫn allow upload ảnh từ trong ckeditor
+Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');

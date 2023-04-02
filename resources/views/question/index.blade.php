@@ -5894,7 +5894,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                     async getPopularData() {
                         try {
                             const config = {
-                                url: '/api/v6/top-trends',
+                                url: 'https://gody.vn/api/v6/top-trends',
                                 method: 'GET',
                                 headers: {}
                             };

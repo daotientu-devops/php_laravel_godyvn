@@ -1,15 +1,9 @@
-<script type="text/javascript" src="https://gody.vn/public/v3/plugins/jquery-1.11.3.min.js"></script>
+{{--<script type="text/javascript" src="https://gody.vn/public/v3/plugins/jquery-1.11.3.min.js"></script>--}}
 <script type="text/javascript" src="https://gody.vn/public/v3/plugins/bootstrap/bootstrap.min.js"></script>
 
 <script src="https://gody.vn/public/v3/js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="https://gody.vn/public/v3/plugins/slick/slick.min.js"></script>
 <script type="text/javascript" src="https://gody.vn/public/v6/js/fancybox-3.1/jquery.fancybox.min.js"></script>
-
-<!--
-<script type="text/javascript" src="https://gody.vn/public/v3/js/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="https://gody.vn/public/v3/plugins/fancybox-3.0/jquery.fancybox.min.js"></script>
--->
-
 <script type="text/javascript" src="https://gody.vn/public/v3/js/script.js?v=1235"></script>
 <script type="text/javascript" src="https://media2.gody.vn/public/v3/js/custom.js?v=1235" defer></script>
 <script src="https://gody.vn/public/v3/perfect-scrollbar/js/perfect-scrollbar.js"></script>
@@ -1012,7 +1006,7 @@
                     async getPopularData() {
                         try {
                             const config = {
-                                url: '/api/v6/top-trends',
+                                url: 'https://gody.vn/api/v6/top-trends',
                                 method: 'GET',
                                 headers: {}
                             };
@@ -1047,22 +1041,34 @@
     }
 
     initDestinationSearchVue();
-
-    $(document).ready(function() {
-        // $(document.body).on('click', '#search-form__explore input, #main-menu-icon-search, #search-header, .pull-right.ps-relative.mt-12.h-32.top-search.w100vw-220.wmx-250, .modal-search-v2__anchor', function (e) {
-        //   e.preventDefault();
-        //   console.log('desVueApp >> ', desVueApp);
-
-        //   $('div#modal-search-v2').modal('show');
-        //   $('.search-primary-wrapper .search-primary-bg').css('display', 'none');
-        //   setTimeout(function() {
-        //     $('.loading-getlocation').addClass('hide');
-        //     $('#search-header-2').focus();
-        //   }, 500);
-        // });
-    });
 </script>
-
+@include('layouts.components.ckeditor_default')
 <script src="https://gody.vn/public/js/vue-modules/vue2-datepicker/index.min.js"></script>
 <script src="https://gody.vn/public/js/vue-modules/vue2-datepicker/locale/vi.js"></script>
 <script defer src="https://gody.vn/public/v6/js/search.js?v=1235"></script>
+
+<!-- ✅ Load the moment library ✅ -->
+<script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+></script>
+<script src="{{asset('js/jquery.datetimepicker.js')}}"></script>
+<script>
+    $.datetimepicker.setDateFormatter({
+        parseDate: function (date, format) {
+            var d = moment(date, format);
+            return d.isValid() ? d.toDate() : false;
+        },
+        formatDate: function (date, format) {
+            return moment(date).format(format);
+        },
+    });
+    $('#tripStartDate').datetimepicker({
+        changeYear: true,
+        changeMonth: true,
+        minDate: 0,
+        format: 'YYYY-MM-DD hh:mm A',
+    });
+</script>

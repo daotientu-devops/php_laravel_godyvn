@@ -45,7 +45,7 @@ Route::group(['middleware' => 'auth'], function () {
     // Trang dashboard
     Route::get('/', 'DashboardController@index');
     // Trang quản trị category
-    Route::group(['prefix' => 'category', 'as' => 'category'], function () {
+    Route::group(['prefix' => 'categories', 'as' => 'category'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'CategoryController@index']);
         Route::get('/{id?}', ['as' => 'index', 'uses' => 'CategoryController@index']);
         Route::post('/store', ['uses' => 'CategoryController@store']);
@@ -161,7 +161,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::post('/{page}/{position}', ['uses' => 'WidgetController@postPosition']); // Vì sao nên mua
     });
     // Quản lý đối tác
-    Route::group(['prefix' => 'partner'], function () {
+    Route::group(['prefix' => 'partners'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'PartnersController@index']);
         Route::post('/store', ['uses' => 'PartnersController@store']);
         Route::get('/show/{id?}', ['uses' => 'PartnersController@show']);
@@ -194,7 +194,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/delete/{id?}', ['uses' => 'SolutionController@destroy']);
     });
     // Quản lý banner
-    Route::group(['prefix' => 'banner'], function () {
+    Route::group(['prefix' => 'banners'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'BannerController@index']);
         Route::post('/store', ['uses' => 'BannerController@store']);
         Route::get('/edit/{id?}', ['uses' => 'BannerController@edit']);
@@ -202,7 +202,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/delete/{id?}', ['uses' => 'BannerController@destroy']);
     });
     // Quản lý người dùng đăng ký
-    Route::group(['prefix' => 'customer'], function () {
+    Route::group(['prefix' => 'customers'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'CustomerController@index']);
     });
 });
