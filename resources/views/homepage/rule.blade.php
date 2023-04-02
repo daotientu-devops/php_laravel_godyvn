@@ -597,7 +597,7 @@
             <div class="modal-body">
                 <div class="d-flex ai-center">
                     <div class="ps-relative fs-14 px-12 my-12 fl-1">
-                        <img src="/public/v6/js/ionicons/5.5.2/svg/search-outline.svg"
+                        <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/search-outline.svg"
                              class="
                 w-24
                 filter-sixth
@@ -919,7 +919,7 @@
                     mr-15
                   "
                                 >
-                                    <img src="/public/v6/js/ionicons/5.5.2/svg/search-outline.svg" class="filter-sixth w-20"/>
+                                    <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/search-outline.svg" class="filter-sixth w-20"/>
                                 </div>
                                 <div class="fl-1">
                                     <p class="fs-16 m-0 fc-sixth mb-2">
@@ -954,7 +954,7 @@
                   "
                                 >
                                     <img
-                                            src="/public/v6/js/ionicons/5.5.2/svg/search-outline.svg"
+                                            src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/search-outline.svg"
                                             class="filter-sixth w-20"
                                     />
                                 </div>

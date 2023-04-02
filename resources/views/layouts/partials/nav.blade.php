@@ -82,14 +82,6 @@
                     </style>
                 </li>
 
-                <li class="py-0 px-0 ml-0 h:bg-grayf2 bar-50 h-42 px-12 t-all t-duration-slow">
-                    <a class="h-fit text-center p-0 fc-sixth bg-transparent notification-bell d-flex fw-500 ai-center jc-center px-6 mt-0 w-auto c-pointer" href="#modal-login" data-toggle="modal" role="button" aria-haspopup="true" aria-expanded="false" title="Thông báo">
-                        <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/notifications.svg" class="w-18 mr-8 mb-1" width="23"/>
-                        <p class="m-0 p-0 fs-16 fc-nineth">Thông báo</p>
-                        <span class="notification-bell-count text-center ps-absolute fs-10 bg-primary fc-white bar-circle t4 l18 w-16 h-16 lh-lg hide">1</span>
-                    </a>
-                </li>
-
                 <li class="dropdown d-flex ai-center jc-center mr-20 ml-0 h-42 px-12 ">
                     <button type="button" class="outline-none bn clearfix fc-sixth bg-eleventh bar-50 px-25 py-6 mr-0 d-flex fw-500 ai-center jc-center" href="#" data-toggle="dropdown" id="dang-nhap-header">
                         <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/menu-outline.svg" width="18" class="w-18 mr-8 mb-1" />

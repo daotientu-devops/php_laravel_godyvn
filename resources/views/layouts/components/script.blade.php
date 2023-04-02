@@ -4,7 +4,7 @@
 <script src="https://gody.vn/public/v3/js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="https://gody.vn/public/v3/plugins/slick/slick.min.js"></script>
 <script type="text/javascript" src="https://gody.vn/public/v6/js/fancybox-3.1/jquery.fancybox.min.js"></script>
-<script type="text/javascript" src="https://gody.vn/public/v3/js/script.js?v=1235"></script>
+{{--<script type="text/javascript" src="https://gody.vn/public/v3/js/script.js?v=1235"></script>--}}
 <script type="text/javascript" src="https://media2.gody.vn/public/v3/js/custom.js?v=1235" defer></script>
 <script src="https://gody.vn/public/v3/perfect-scrollbar/js/perfect-scrollbar.js"></script>
 <!-- scroll menu service -->
@@ -180,7 +180,7 @@
         } else if(modalLogin.indexOf('#modal-notification-invite-ig') > -1) {
             $('#modal-notification-invite-ig').modal('show');
         } else {
-            popupCheck();
+            //popupCheck();
         }
 
         function popupCheck() {
