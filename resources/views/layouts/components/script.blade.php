@@ -596,7 +596,6 @@
         initVue();
     } else {
         loadScript('https://gody.vn/public/js/vue-modules/vue/vue.js');
-
         loadScript('https://gody.vn/public/js/vue-modules/axios/axios.min.js');
         loadScript('https://gody.vn/public/js/vue-modules/lodash/lodash.min.js');
         loadScript('https://gody.vn/public/js/vue-modules/http-vue-loader/httpVueLoader.js');

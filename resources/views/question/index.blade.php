@@ -674,11 +674,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9">
-                <div class="w-fit d-block pl-20 pt-20 pr-20 pb-20 bg-white bar-8" id="composer-app">
-                    <post-composer :current-user="{&quot;_id&quot;:&quot;641efcc0b4c82205498e5855&quot;,&quot;name&quot;:&quot;T\u00fa \u0110\u00e0o&quot;,&quot;username&quot;:&quot;aquafina94164928&quot;,&quot;contact_info&quot;:{&quot;email&quot;:&quot;aquafina9416@gmail.com&quot;,&quot;province&quot;:&quot;&quot;,&quot;district&quot;:&quot;&quot;,&quot;street&quot;:&quot;&quot;,&quot;phone_number&quot;:&quot;&quot;,&quot;yahoo&quot;:&quot;&quot;,&quot;facebook&quot;:&quot;&quot;,&quot;skype&quot;:&quot;&quot;},&quot;birthday&quot;:{&quot;birthday&quot;:&quot;&quot;,&quot;status&quot;:&quot;public&quot;},&quot;gender&quot;:{&quot;gender&quot;:&quot;&quot;,&quot;status&quot;:&quot;public&quot;},&quot;description&quot;:{&quot;description&quot;:&quot;&quot;,&quot;status&quot;:&quot;public&quot;},&quot;relationship&quot;:{&quot;relationship&quot;:&quot;&quot;,&quot;status&quot;:&quot;public&quot;},&quot;avatar&quot;:&quot;https:\/\/lh3.googleusercontent.com\/a\/AGNmyxY2QTxSHXOC8M6mNvwYfugk6xvuyTsobWF1C73-=s96-c&quot;,&quot;views&quot;:0,&quot;status&quot;:&quot;&quot;,&quot;image_cover&quot;:&quot;&quot;,&quot;level&quot;:1,&quot;provider&quot;:&quot;google&quot;,&quot;updated_at&quot;:&quot;2023-03-25 20:53:04&quot;,&quot;created_at&quot;:&quot;2023-03-25 20:53:04&quot;}"></post-composer>
-                </div>
-
-                <div class="w-fit d-block mt-20 bg-white" style="border: 0.5px solid #BDBDBD;border-radius: 8px 8px 0px 0px;">
+                <div class="w-fit d-block bg-white" style="border: 0.5px solid #BDBDBD;border-radius: 8px 8px 0px 0px;">
                     <div class="d-flex w-fit" style="height: 54px; line-height: 54px;">
                         <!--<a class="fs-16 fw-600 ta-center" style="width: 160px; color: #828282;">Câu hỏi nổi bật</a>-->
                         <a class="fc-primary fs-16 fw-600 ta-center" style="width: 160px;border-bottom: 1.5px solid #ff8c00;">Câu hỏi mới nhất</a>
@@ -5571,11 +5567,10 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
     if( typeof Vue != 'undefined' ) {
         initVue();
     } else {
-        loadScript('/public/js/vue-modules/vue/vue.js');
-
-        loadScript('/public/js/vue-modules/axios/axios.min.js');
-        loadScript('/public/js/vue-modules/lodash/lodash.min.js');
-        loadScript('/public/js/vue-modules/http-vue-loader/httpVueLoader.js');
+        loadScript('https://gody.vn/public/js/vue-modules/vue/vue.js');
+        loadScript('https://gody.vn/public/js/vue-modules/axios/axios.min.js');
+        loadScript('https://gody.vn/public/js/vue-modules/lodash/lodash.min.js');
+        loadScript('https://gody.vn/public/js/vue-modules/http-vue-loader/httpVueLoader.js');
 
         initVue();
     }
