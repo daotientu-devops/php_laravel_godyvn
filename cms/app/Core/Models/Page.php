@@ -19,7 +19,7 @@ class Page extends Model
         'thumbnail_url',
         'latitude',
         'longitude',
-        'page_type',
+        'type',
         'meta_title',
         'meta_keyword',
         'meta_description'

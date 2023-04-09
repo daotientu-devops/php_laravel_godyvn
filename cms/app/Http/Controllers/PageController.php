@@ -18,7 +18,7 @@ class PageController extends Controller
      */
     public function index()
     {
-        $pages = Page::where('page_type', '!=', 'landing')->get();
+        $pages = Page::where('type', '!=', 'landing')->get();
         return view('page.index', compact('pages'));
     }
 
@@ -79,7 +79,7 @@ class PageController extends Controller
                 'thumbnail_url' => ($file) ? $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name : '',
                 'latitude' => $request->get('latitude'),
                 'longitude' => $request->get('longitude'),
-                'page_type' => 'landing',
+                'type' => 'landing',
                 'meta_title' => $request->get('meta_title'),
                 'meta_keyword' => $request->get('meta_keyword'),
                 'meta_description' => $request->get('meta_description')
@@ -186,7 +186,7 @@ class PageController extends Controller
             //$page->thumbnail_url = ($file) ? $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name : ''; // Chức năng edit lại ảnh đại diện cần xem lại cơ chế thay đổi
             $page->latitude = $request->get('latitude');
             $page->longitude = $request->get('longitude');
-            $page->page_type = 'landing';
+            $page->type = 'landing';
             $page->meta_title = $request->get('meta_title');
             $page->meta_keyword = $request->get('meta_keyword');
             $page->meta_description = $request->get('meta_description');

@@ -45,7 +45,7 @@ Route::group(['middleware' => 'auth'], function () {
     // Trang dashboard
     Route::get('/', 'DashboardController@index');
     // Trang quản trị category
-    Route::group(['prefix' => 'categories', 'as' => 'category'], function () {
+    Route::group(['prefix' => 'categories', 'as' => 'categories'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'CategoryController@index']);
         Route::get('/{id?}', ['as' => 'index', 'uses' => 'CategoryController@index']);
         Route::post('/store', ['uses' => 'CategoryController@store']);
@@ -66,6 +66,26 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/search', ['uses' => 'TagsController@begin_search']);
         Route::post('/search', ['uses' => 'TagsController@ajax_search']);
         Route::post('/addtags', ['uses' => 'TagsController@add_tags']);
+    });
+    // Quản lý điểm đến
+    Route::group(['prefix' => 'locations', 'as' => 'locations'], function () {
+        Route::get('/', ['as' => 'index', 'uses' => 'LocationController@index']);
+        Route::get('/create', ['as' => 'create', 'uses' => 'LocationController@create']);
+        Route::post('/store', ['as' => 'store', 'uses' => 'LocationController@store']);
+        Route::get('/show/{id}', ['as' => 'show', 'uses' => 'LocationController@show']);
+        Route::get('/edit/{id}', ['as' => 'edit', 'uses' => 'LocationController@edit']);
+        Route::post('/update/{id}', ['as' => 'update', 'uses' => 'LocationController@update']);
+        Route::get('/delete/{id}', ['as' => 'delete', 'uses' => 'LocationController@destroy']);
+    });
+    // Trang quản trị các page tĩnh
+    Route::group(['prefix' => 'page', 'as' => 'page', 'middleware' => 'auth'], function () {
+        Route::get('/', ['as' => 'index', 'uses' => 'PageController@index']);
+        Route::get('/create', ['uses' => 'PageController@create']);
+        Route::post('/store', ['uses' => 'PageController@store']);
+        Route::get('/show/{id?}', ['uses' => 'PageController@show']);
+        Route::get('/edit/{id?}', ['uses' => 'PageController@edit']);
+        Route::post('/update/{id?}', ['uses' => 'PageController@update']);
+        Route::get('/delete/{id?}', ['uses' => 'PageController@destroy']);
     });
     // Các trang tin tức
     // Route cũ
@@ -100,7 +120,7 @@ Route::group(['middleware' => 'auth'], function () {
     // Đường dẫn allow upload ảnh từ trong ckeditor
     Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');
     // Trang quản trị role
-    Route::group(['prefix' => 'roles', 'as' => 'role', 'middleware' => 'auth'], function () {
+    Route::group(['prefix' => 'roles', 'as' => 'roles', 'middleware' => 'auth'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'RoleController@index']);
         Route::get('/create', ['uses' => 'RoleController@create']);
         Route::post('/store', ['uses' => 'RoleController@store']);
@@ -110,7 +130,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/delete/{id?}', ['uses' => 'RoleController@destroy']);
     });
     // Trang quản trị user
-    Route::group(['prefix' => 'users', 'as' => 'user', 'middleware' => 'auth'], function () {
+    Route::group(['prefix' => 'users', 'as' => 'users', 'middleware' => 'auth'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'UserController@index']);
         Route::get('/create', ['uses' => 'UserController@create']);
         Route::post('/store', ['uses' => 'UserController@store']);
@@ -131,7 +151,7 @@ Route::group(['middleware' => 'auth'], function () {
     });
     Route::post('/html/update', ['uses' => 'SettingController@updateHTML']);
     // QUẢN TRỊ BANNER
-    Route::group(['prefix' => 'banner'], function () {
+    Route::group(['prefix' => 'banners'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'BannersController@index']);
         Route::get('/top', ['as' => 'index', 'uses' => 'BannersController@index']);
         Route::post('/store', ['uses' => 'BannersController@store']);
@@ -170,28 +190,12 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/delete/{id?}', ['uses' => 'PartnersController@destroy']);
     });
     // Quản lý comment (Đối tác nói về chúng tôi)
-    Route::group(['prefix' => 'comment'], function () {
+    Route::group(['prefix' => 'comments'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'CommentController@index']);
         Route::post('/store', ['uses' => 'CommentController@store']);
         Route::get('/edit/{id?}', ['uses' => 'CommentController@edit']);
         Route::post('/update/{id?}', ['uses' => 'CommentController@update']);
         Route::get('/delete/{id?}', ['uses' => 'CommentController@destroy']);
-    });
-    // Quản lý tác giả mô hình
-    Route::group(['prefix' => 'founder'], function () {
-        Route::get('/', ['as' => 'index', 'uses' => 'AuthorController@index']);
-        Route::post('/store', ['uses' => 'AuthorController@store']);
-        Route::get('/edit/{id?}', ['uses' => 'AuthorController@edit']);
-        Route::post('/update/{id?}', ['uses' => 'AuthorController@update']);
-        Route::get('/delete/{id?}', ['uses' => 'AuthorController@destroy']);
-    });
-    // Quản lý giải pháp
-    Route::group(['prefix' => 'solution'], function () {
-        Route::get('/', ['as' => 'index', 'uses' => 'SolutionController@index']);
-        Route::post('/store', ['uses' => 'SolutionController@store']);
-        Route::get('/edit/{id?}', ['uses' => 'SolutionController@edit']);
-        Route::post('/update/{id?}', ['uses' => 'SolutionController@update']);
-        Route::get('/delete/{id?}', ['uses' => 'SolutionController@destroy']);
     });
     // Quản lý banner
     Route::group(['prefix' => 'banners'], function () {

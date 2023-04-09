@@ -26,13 +26,13 @@
                             <td>@if ($category->parent_id > 0) &nbsp;&nbsp;&nbsp;&nbsp;|-- @endif{{ $category->name }}</td>
                             <td>{{ $category->parent_id }}</td>
                             <td>
-                                <a href='{{ url("category/show/$category->id") }}' class="btn btn-xs">
+                                <a href='{{ url("categories/show/$category->id") }}' class="btn btn-xs">
                                     <i class="fa fa-eye"></i> Show
                                 </a>
-                                <a href='{{ url("category/edit/$category->id") }}' class="btn btn-xs">
+                                <a href='{{ url("categories/edit/$category->id") }}' class="btn btn-xs">
                                     <i class="fa fa-edit"></i> Edit
                                 </a>
-                                <a href='{{ url("category/delete/$category->id") }}' class="btn btn-xs" onclick="return confirm('Bạn có chắc muốn xóa danh mục bài viết {{ $category->name }} này chứ?')">
+                                <a href='{{ url("categories/delete/$category->id") }}' class="btn btn-xs" onclick="return confirm('Bạn có chắc muốn xóa danh mục bài viết {{ $category->name }} này chứ?')">
                                     <i class="fa fa-trash-o"></i> Delete
                                 </a>
                             </td>

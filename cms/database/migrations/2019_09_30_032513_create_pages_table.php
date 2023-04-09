@@ -28,7 +28,7 @@ class CreatePagesTable extends Migration
             $table->bigInteger('display_order')->nullable();
             $table->string('latitude', 15)->nullable();
             $table->string('longitude', 15)->nullable();
-            $table->string('page_type', 15);
+            $table->string('type', 15);
             $table->timestamps();
         });
     }

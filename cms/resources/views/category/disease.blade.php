@@ -16,7 +16,7 @@
                 </div>
                 <div class="x_content">
                     <br/>
-                    <form class="form-horizontal form-label-left input_mask" action="{{ url('category/adddiease/' . $category->id) }}" method="post">
+                    <form class="form-horizontal form-label-left input_mask" action="{{ url('categories/adddiease/' . $category->id) }}" method="post">
                         @csrf
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Tên danh mục <span

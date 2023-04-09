@@ -16,10 +16,12 @@ class CreateLocationsTable extends Migration
         Schema::create('locations', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('slug')->nullable();
             $table->unsignedTinyInteger('top_search')->default(0);
             $table->unsignedTinyInteger('hot_location')->default(0);
             $table->unsignedTinyInteger('popular_location')->default(0);
             $table->text('content');
+            $table->string('continent')->nullable();
             $table->string('country')->nullable();
             $table->string('city')->nullable();
             $table->string('meta_title')->nullable();

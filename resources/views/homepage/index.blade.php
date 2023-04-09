@@ -1785,21 +1785,10 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
             </div>
         </div>
         <div class="col-md-3 pl-30">
-            <a target="_blank" title="10 bước đơn giản để bài viết thu hút trên gody.vn" class="d-flex mb-25">
-                <img
-                        data-src="https://gody.vn/public/v6/images/right-banner-4.png"
-                        data-srcset="/public/v6/images/right-banner-4.png, /public/v6/images/right-banner-4.png"
-                        alt="10 bước đơn giản để bài viết thu hút trên gody.vn"
-                        class="lazy-load w-fit h-fit"
-                        srcset="/public/v6/images/right-banner-4.png, /public/v6/images/right-banner-4.png"
-                >
-            </a>
-
             <div class="d-block w-fit mb-25">
                 <span class="w-fit d-block fc-black fw-700 fs-26 lh-24">Hoạt động mới nhất</span>
             </div>
             <div class="w-fit d-block mb-25">
-
                 <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
                     <div class="d-flex ai-start ps-relative mt-22">
                         <div class="overflow-hidden bar-circle mr-12 fl-shrink0">

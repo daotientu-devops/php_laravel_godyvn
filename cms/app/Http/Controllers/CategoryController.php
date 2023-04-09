@@ -69,7 +69,7 @@ class CategoryController extends Controller
             ]);
             // Not ok thì redirect với thông báo category đã tồn tại
             if (Category::where('slug', '=', $slug)->exists()) {
-                return redirect('/category')->with('error', 'Danh mục ' . $name . ' đã tồn tại');
+                return redirect('/categories')->with('error', 'Danh mục ' . $name . ' đã tồn tại');
             } else {
                 // Ok thì save mới
                 $category->save();
@@ -82,10 +82,10 @@ class CategoryController extends Controller
                 DB::table('categories')->where('id', $category->id)->update([
                     'share_url' => $share_url
                 ]);
-                return redirect('/category')->with('message', 'Tạo mới danh mục ' . $name . ' thành công');
+                return redirect('/categories')->with('message', 'Tạo mới danh mục ' . $name . ' thành công');
             }
         } catch (\Exception $exception) {
-            return redirect('/category')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('/categories')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 
@@ -153,9 +153,9 @@ class CategoryController extends Controller
             $category->meta_keyword = $request->get('meta_keyword');
             $category->meta_description = $request->get('meta_description');
             $category->save();
-            return redirect('/category/edit/' . $id)->with('message', 'Sửa danh mục ' . $name . ' thành công');
+            return redirect('/categories/edit/' . $id)->with('message', 'Sửa danh mục ' . $name . ' thành công');
         } catch (\Exception $exception) {
-            return redirect('/category/edit/' . $id)->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('/categories/edit/' . $id)->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 
@@ -170,9 +170,9 @@ class CategoryController extends Controller
         try {
             $category = Category::find($id);
             $category->delete();
-            return redirect('/category')->with('message', 'Xóa danh mục ' . $category->name . ' thành công');
+            return redirect('/categories')->with('message', 'Xóa danh mục ' . $category->name . ' thành công');
         } catch (\Exception $exception) {
-            return redirect('/category')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('/categories')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 

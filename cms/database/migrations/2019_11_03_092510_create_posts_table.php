@@ -29,7 +29,7 @@ class CreatePostsTable extends Migration
             $table->string('top_background_url')->nullable();
             $table->tinyInteger('is_comment')->nullable()->default(1);
             $table->smallInteger('comment_count')->nullable()->default(0);
-            $table->string('post_type', 10);
+            $table->string('type', 10);
             $table->string('category_type', 20)->nullable();
             $table->string('price', 20)->nullable();
             $table->string('address', 255)->nullable();

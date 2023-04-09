@@ -5,12 +5,13 @@
         <ul class="nav side-menu">
             <li><a href="{{ url('/') }}"><i class="fa fa-home"></i>Dashboard </a></li>
             <li><a href="{{ url('/categories') }}"><i class="fa fa fa-list"></i>Danh mục</a></li>
+            <li><a href="{{ url('/locations') }}"><i class="fa fa-location-arrow"></i>Quản lý điểm đến</a></li>
             <li><a href="{{ url('/posts') }}"><i class="fa fa-file-text"></i>Danh sách bài viết</a></li>
+            <li><a href="{{ url('/page') }}" title="Các trang giới thiệu"><i class="fa fa-legal"></i> Các trang giới thiệu</a></li>
             <li><a href="{{ url('/users') }}"><i class="fa fa-user"></i>Quản lý user</a></li>
             {{--<li><a href="{{ url('/setting') }}"><i class="fa fa-gear"></i>Cấu hình website</a></li>--}}
             <li><a href="{{ url('/contact') }}"><i class="fa fa-globe"></i>Quản lý thông tin website</a></li>
             <li><a href="{{ url('/customers') }}"><i class="fa fa-users"></i>Quản lý người dùng đăng ký</a></li>
-            <li><a href="{{ url('/locations') }}"><i class="fa fa-location-arrow"></i>Quản lý điểm đến</a></li>
             <li><a href="{{ url('/partners') }}"><i class="fa fa-hand-peace-o"></i>Quản lý đối tác</a></li>
 
 
