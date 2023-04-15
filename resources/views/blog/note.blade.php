@@ -1,8 +1,16 @@
 @extends('layouts.default')
 @section('content')
+    @if (Session::has('message'))
+        <div class="alert alert-success alert-dismissible fade in mb-0" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <strong>{{ Session::get('message') }}</strong>
+        </div>
+    @endif
     <div class="travel-blog-create-page _create1 create-current-page create-v3">
         <div data-toggle="modal" data-target="#modal-login" class="pos-f cursor-pointer w-fit h-fit t0 r0 b0 l0 z-8" style="display:none"></div>
         <form action="{{ url('blog/viet-bai/note') }}" method="post" accept-charset="utf-8" enctype="multipart/form-data" id="travelPostForm" name="travelPostForm" novalidate="">
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            <input type="hidden" name="type" value="note">
             <div class="container-fluid pr-0 pl-0 min-width-1170 travel-post-header">
                 <div class="set-index ">
 
@@ -13,7 +21,7 @@
                         <h3 class="mt-2">Thêm hình/video cover bài viết</h3>
                         <p style="padding-left:130px;">( Hình ảnh tối ưu: 1350px <strong>x</strong> 480px. )</p>
                         <div class="dropdown">
-                            <input type="file" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <input type="file" name="thumbnail_url">
                         </div>
                         <div class="clear"></div>
                         <div class="moxie-shim moxie-shim-html5" style="position: absolute; top: 10vw; left: 275px; width: 67px; height: 67px; overflow: hidden; z-index: -1;">
@@ -22,7 +30,7 @@
                     </div>
 
                     <div class="set-title bar-10 card6 ww-break-word w-1140 h-62 bg-white ba bc-white ps-absolute b25 z-1 l50% translateXn50% lh-20">
-                        <input type="text" value="" placeholder="Tiêu đề bài viết" name="travelPostTitle" id="travelPostTitle" class="bar-10 w-1140 h-60 fs-18 bn py-0 px-15 fc-sixth float-left d-inline-block ta-start m-0 outline-none">
+                        <input type="text" value="" placeholder="Tiêu đề bài viết" name="title" id="travelPostTitle" class="bar-10 w-1140 h-60 fs-18 bn py-0 px-15 fc-sixth float-left d-inline-block ta-start m-0 outline-none">
                     </div>
 
                     <div class="dropdown set-btn primary-dropdown-more">
@@ -51,14 +59,13 @@
             </div>
             <div class="container mb-20 min-width-1170 travel-blog-body">
                 <div class="row">
-                    <input type="hidden" name="_token" value="RwVeLdeMZBiM3GobuQZvQ6wIJmq2n1fyZHEgjYl5">
                     <input type="hidden" value="" name="travelPostID" id="travelPostID">
                     <input type="hidden" value="" name="travelPostUsername" id="travelPostUsername">
                     <input type="hidden" value="" name="travelPostLink" id="travelPostLink">
                     <input type="hidden" value="0" name="travelPostStatus" id="travelPostStatus">
 
                     <div class="col-xs-12 mt-20 ps-relative">
-                        <textarea id="travelPostDescription" name="travelPostDescription" type="text" class="form-control travelPostDescription bar-10 bn card6 p-15 resize-none w-fit h-inherit bn fs-18 bar-2" placeholder="Giới thiệu ngắn ..." rows="4"></textarea>
+                        <textarea id="travelPostDescription" name="content" type="text" class="form-control travelPostDescription bar-10 bn card6 p-15 resize-none w-fit h-inherit bn fs-18 bar-2" placeholder="Giới thiệu ngắn ..." rows="4"></textarea>
                     </div>
 
                     <div class="col-xs-12 mt-40 ps-relative">
@@ -158,7 +165,7 @@
                         </div>
 
                         <div class="form-group text-center ps-fixed b0 w-fit l0 card1 mb-0 p-12 bg-white z-9">
-                            <button class="btn btn-primary travel-post-btn-submit bg-primary bc-primary h:bs-lg" id="pc-dang-blog-thanh-cong-nut-viet-ngay">Đăng bài</button>
+                            <button class="btn btn-primary travel-post-btn-submit bg-primary bc-primary h:bs-lg" id="pc-dang-blog-thanh-cong-nut-viet-ngay" type="submit">Đăng bài</button>
                         </div>
 
                         <div class="form-group hide" style=" ">

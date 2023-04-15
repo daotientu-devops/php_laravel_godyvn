@@ -3676,17 +3676,6 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
 <script type="text/javascript" src="https://gody.vn/public/v3/js/script.js?v=1235"></script>
 <script type="text/javascript" src="https://media2.gody.vn/public/v3/js/custom.js?v=1235" defer></script>
 <script src="https://gody.vn/public/v3/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-<!-- scroll menu service -->
-<script type="text/javascript">
-    $(document).ready(function() {
-        GODY.General.isntallFancyGallery();
-        $('#slick-quick-access').slick({
-            slidesToShow: 4,
-            prevArrow: '#slick-prev',
-            nextArrow: '#slick-next',
-        });
-    });
-</script>
 
 <script src="https://gody.vn/public/v3/js/sweetalert.min.js"></script>
 <script src="https://gody.vn/public/home/js/lodash.min.js"></script>

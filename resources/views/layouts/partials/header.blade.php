@@ -21,7 +21,6 @@
     <link rel="canonical" href="https://gody.vn/blog/viet-bai/note" />
     <meta property="og:image:width" content="600" />
     <meta property="og:image:height" content="315" />
-    <meta name="csrf-token" content="RwVeLdeMZBiM3GobuQZvQ6wIJmq2n1fyZHEgjYl5">
     <meta property="og:url"                content="" />
     <meta property="og:type"               content="website" />
     <meta name="twitter:card" content="summary_large_image">
@@ -33,6 +32,7 @@
     <meta property="og:description"        content="Chuyên trang chia sẻ về những kinh nghiệm, hỏi đáp thắc mắc khi đi du lịch, du lịch phượt, tour du lịch, vé tham quan …" />
     <meta property="og:image"              content="https://gody.vn/public/images/fb/gody-thumbnail.jpg" />
     <meta property="og:ttl" content="2419200" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 

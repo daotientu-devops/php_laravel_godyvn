@@ -61,16 +61,7 @@
             </div>
         </div>
         <div class="row pb-30 mt-0">
-            <div class="col-md-4">
-                <p class="fs-18 fc-sixth mb-0">
-                    Tải ứng dụng "GODY"
-                </p>
-                <span class="w-30 bb bc-primary baw2 d-inline-block"></span>
-                <div class="mt-25">
-                    <a href="https://apps.apple.com/vn/app/gody/id1570393254" target="_blank" rel="noreferrer nofollow" class="text-center d-inline-block wmn-120 h-40 lh-40 fc-transparent overflow-hidden" style="background-image: url('https://gody.vn/public/v5/images/sprites1.png'); background-position: 0px 40px;width: 120px;">Tải ứng dụng "GODY"</a>
-                    <a href="https://play.google.com/store/apps/details?id=vn.gody.dulich" target="_blank" rel="noreferrer nofollow" class="text-center d-inline-block wmn-136 h-40 lh-40 ml-12 fc-transparent overflow-hidden" style="background-image: url('https://gody.vn/public/v5/images/sprites1.png'); background-position: 136px 40px;width: 136px;">Tải ứng dụng "GODY"</a>
-                </div>            </div>
-
+            <div class="col-md-4"></div>
         </div>
     </div>
 

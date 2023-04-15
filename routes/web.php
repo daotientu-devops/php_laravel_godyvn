@@ -11,31 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('homepage.index');
-});
-Route::get('/blog/viet-bai/note', function () {
-    return view('blog.note');
-});
-Route::get('/photo-blog/dang-bai/note', function () {
-    return view('blog.photo');
-});
-Route::get('/hoi-dap', function () {
-    return view('question.index');
-});
-Route::get('/lich-trinh-du-lich', function () {
-    return view('schedule.index');
-});
-Route::get('/cong-tac-vien/viet-bai/note', function () {
-    return view('blog.collaborator');
-});
-Route::get('/diem-den', function () {
-    return view('destination.index');
-});
-Route::get('ban-do-du-lich/viet-nam', function () {
-    return view('map.index');
-});
-
 Route::group(['middleware' => 'web'], function () {
     Route::get('/gioi-thieu', function () {
         return view('homepage.about');
@@ -49,7 +24,36 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/quy-dinh-su-dung', function () {
         return view('homepage.rule');
     });
+    Route::get('/', function () {
+        return view('homepage.index');
+    });
+    Route::get('/blog/viet-bai/note', function () {
+        return view('blog.note');
+    });
+    Route::post('/blog/viet-bai/note', ['uses' => 'PostsController@note']);
+    Route::get('/photo-blog/dang-bai/note', function () {
+        return view('blog.photo');
+    });
+    Route::get('/hoi-dap', function () {
+        return view('question.index');
+    });
+    Route::get('/lich-trinh-du-lich', function () {
+        return view('schedule.index');
+    });
+    Route::get('/cong-tac-vien/viet-bai/note', function () {
+        return view('blog.collaborator');
+    });
+    Route::get('/diem-den', function () {
+        return view('destination.index');
+    });
+    Route::get('ban-do-du-lich/viet-nam', function () {
+        return view('map.index');
+    });
+    // Đường dẫn allow upload ảnh từ trong ckeditor
+    Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');
 });
 
-// Đường dẫn allow upload ảnh từ trong ckeditor
-Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

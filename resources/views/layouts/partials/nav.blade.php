@@ -23,13 +23,6 @@
                         <p class="m-0 p-0 fs-16 fc-nineth">Điểm đến</p>
                     </a>
                 </li>
-                <li class="py-0 px-0 h:bg-grayf2 bar-50 h-42 px-12 t-all t-duration-slow mr-0">
-                    <a class="h-fit text-center p-0 fc-sixth bg-transparent d-flex fw-500 ai-center jc-center px-6 mt-0 w-auto c-pointer" href="{{url('ban-do-du-lich/viet-nam')}}">
-                        <img class="w-20 mtn-4 filter-black va-middle mr-8" src="https://gody.vn/public/v6/images/logo-filled-100x100.png">
-                        <p class="m-0 p-0 fs-16 fc-nineth">My Travel Map</p>
-                    </a>
-                </li>
-
                 <li class="dropdown nav-add-box py-0 pr-1 pl-5 h:bg-grayf2 bar-50 px-12 t-all t-duration-slow">
                     <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" class="nav-button-add fw-500 bg-transparent py-0 px-6 h-fit d-flex ai-center jc-center c-pointer">
                         <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/pencil.svg" class="w-18 mb-1 mr-8" width="23"/>
