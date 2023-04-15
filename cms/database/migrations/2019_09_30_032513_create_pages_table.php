@@ -29,6 +29,9 @@ class CreatePagesTable extends Migration
             $table->string('latitude', 15)->nullable();
             $table->string('longitude', 15)->nullable();
             $table->string('type', 15);
+            $table->string('meta_title')->nullable();
+            $table->string('meta_keyword')->nullable();
+            $table->string('meta_description')->nullable();
             $table->timestamps();
         });
     }

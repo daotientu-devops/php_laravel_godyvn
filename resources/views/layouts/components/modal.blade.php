@@ -605,7 +605,7 @@
                             <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/fitness.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Bảo hiểm">
                             <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Bảo hiểm</p>
                         </a>
-                        <a href="http://125.212.224.111/partner" target="_blank" class="
+                        <a href="{{url('/')}}/partner" target="_blank" class="
                 d-flex
                 fd-column
                 ai-center
@@ -690,7 +690,7 @@
                                 <img loading="lazy" src="https://gody.vn/public/v6/images/more/trip-com-04.png" class="w-45 h-20 mb-2" alt="Trip.com">
                                 <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate-line lineclamp1">Trip.com</p>
                             </a>
-                            <a href="http://125.212.224.111/homestay-hostel" target="_blank" rel="noreferrer,nofollow" class="
+                            <a href="{{url('/')}}/homestay-hostel" target="_blank" rel="noreferrer,nofollow" class="
                   d-flex
                   fd-column
                   ai-center

@@ -688,7 +688,7 @@
                 <div class="w-fit d-block p-20 mb-20 item-community bg-white  bar-lrb  qu-hover--bg--darken" style="border-radius: 0px 0px 8px 8px; ">
                     <div class="w-fit d-block">
                         <div class="w-fit d-flex ai-center mb-10">
-                            <a href="http://125.212.224.111/blog/hatra2486">
+                            <a href="{{url('/')}}/blog/hatra2486">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/hatra2486/96332653-20191017094110.jpeg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/hatra2486/96332653-20191017094110.jpeg"
@@ -697,7 +697,7 @@
                                 />
                             </a>
                             <div class="w-fit ai-center">
-                                <a href="http://125.212.224.111/blog/hatra2486" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Ha Tra</a>
+                                <a href="{{url('/')}}/blog/hatra2486" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Ha Tra</a>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">0</span>
                                 <span class="fc-fourteenth fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">quốc gia</span>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">|</span>
@@ -828,7 +828,7 @@ Nên mua vé thế nào để đi trong nước Pháp?
                 <div class="w-fit d-block p-20 mb-20 item-community bg-white  bar-8 bar-BDBDBD  qu-hover--bg--darken" style="">
                     <div class="w-fit d-block">
                         <div class="w-fit d-flex ai-center mb-10">
-                            <a href="http://125.212.224.111/blog/giaminh4723">
+                            <a href="{{url('/')}}/blog/giaminh4723">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/giaminh4723/65106225-20191017093425.jpeg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/giaminh4723/65106225-20191017093425.jpeg"
@@ -837,7 +837,7 @@ Nên mua vé thế nào để đi trong nước Pháp?
                                 />
                             </a>
                             <div class="w-fit ai-center">
-                                <a href="http://125.212.224.111/blog/giaminh4723" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Gia Minh</a>
+                                <a href="{{url('/')}}/blog/giaminh4723" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Gia Minh</a>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">0</span>
                                 <span class="fc-fourteenth fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">quốc gia</span>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">|</span>
@@ -969,7 +969,7 @@ Nên mua vé thế nào để đi trong nước Pháp?
                 <div class="w-fit d-block p-20 mb-20 item-community bg-white  bar-8 bar-BDBDBD  qu-hover--bg--darken" style="">
                     <div class="w-fit d-block">
                         <div class="w-fit d-flex ai-center mb-10">
-                            <a href="http://125.212.224.111/blog/lethuy3225">
+                            <a href="{{url('/')}}/blog/lethuy3225">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/lethuy3225/14550383-20191017093759.jpeg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/lethuy3225/14550383-20191017093759.jpeg"
@@ -978,7 +978,7 @@ Nên mua vé thế nào để đi trong nước Pháp?
                                 />
                             </a>
                             <div class="w-fit ai-center">
-                                <a href="http://125.212.224.111/blog/lethuy3225" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Le Thuy</a>
+                                <a href="{{url('/')}}/blog/lethuy3225" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Le Thuy</a>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">0</span>
                                 <span class="fc-fourteenth fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">quốc gia</span>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">|</span>
@@ -1107,7 +1107,7 @@ Nên mua vé thế nào để đi trong nước Pháp?
                 <div class="w-fit d-block p-20 mb-20 item-community bg-white  bar-8 bar-BDBDBD  qu-hover--bg--darken" style="">
                     <div class="w-fit d-block">
                         <div class="w-fit d-flex ai-center mb-10">
-                            <a href="http://125.212.224.111/blog/thanhtha8527">
+                            <a href="{{url('/')}}/blog/thanhtha8527">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/thanhtha8527/137500240-20191017093700.jpeg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/thanhtha8527/137500240-20191017093700.jpeg"
@@ -1116,7 +1116,7 @@ Nên mua vé thế nào để đi trong nước Pháp?
                                 />
                             </a>
                             <div class="w-fit ai-center">
-                                <a href="http://125.212.224.111/blog/thanhtha8527" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Thanh Tha</a>
+                                <a href="{{url('/')}}/blog/thanhtha8527" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Thanh Tha</a>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">0</span>
                                 <span class="fc-fourteenth fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">quốc gia</span>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">|</span>
@@ -1256,7 +1256,7 @@ Nên mua vé thế nào để đi trong nước Pháp?
                             <div>
                                 <ion-icon name="chevron-forward-sharp" style="font-size: 24px;"></ion-icon>
                             </div>
-                            <a href="http://125.212.224.111/ho-chieu?utm_source=sponsored&amp;utm_medium=sponsored.posts&amp;utm_campaign=sponsored&amp;utm_id=sponsored.posts&amp;utm_content=qa_homepage" target="_blank" class="ps-absolute t0 r0 b0 l0 d-block" style="text-indent: -999px;">Dịch vụ l&agrave;m mới &amp; l&agrave;m lại hộ chiếu</a>
+                            <a href="{{url('/')}}/ho-chieu?utm_source=sponsored&amp;utm_medium=sponsored.posts&amp;utm_campaign=sponsored&amp;utm_id=sponsored.posts&amp;utm_content=qa_homepage" target="_blank" class="ps-absolute t0 r0 b0 l0 d-block" style="text-indent: -999px;">Dịch vụ l&agrave;m mới &amp; l&agrave;m lại hộ chiếu</a>
                         </div>
                         <div class="d-flex ai-center ps-relative pt-20 pb-20 pl-30 pr-30 h:bg-grayf2 bb bc-tenth">
                             <div>
@@ -1269,7 +1269,7 @@ Nên mua vé thế nào để đi trong nước Pháp?
                             <div>
                                 <ion-icon name="chevron-forward-sharp" style="font-size: 24px;"></ion-icon>
                             </div>
-                            <a href="http://125.212.224.111/bao-hiem-du-lich?utm_source=sponsored&amp;utm_medium=sponsored.posts&amp;utm_campaign=sponsored&amp;utm_id=sponsored.posts&amp;utm_content=qa_homepage" target="_blank" class="ps-absolute t0 r0 b0 l0 d-block" style="text-indent: -999px;">Bảo hiểm du lịch trong nước &amp; nước ngo&agrave;i</a>
+                            <a href="{{url('/')}}/bao-hiem-du-lich?utm_source=sponsored&amp;utm_medium=sponsored.posts&amp;utm_campaign=sponsored&amp;utm_id=sponsored.posts&amp;utm_content=qa_homepage" target="_blank" class="ps-absolute t0 r0 b0 l0 d-block" style="text-indent: -999px;">Bảo hiểm du lịch trong nước &amp; nước ngo&agrave;i</a>
                         </div>
                         <div class="d-flex ai-center ps-relative pt-20 pb-20 pl-30 pr-30 h:bg-grayf2 ">
                             <div>
@@ -1282,7 +1282,7 @@ Nên mua vé thế nào để đi trong nước Pháp?
                             <div>
                                 <ion-icon name="chevron-forward-sharp" style="font-size: 24px;"></ion-icon>
                             </div>
-                            <a href="http://125.212.224.111/visa?utm_source=sponsored&amp;utm_medium=sponsored.posts&amp;utm_campaign=sponsored&amp;utm_id=sponsored.posts&amp;utm_content=qa_homepage" target="_blank" class="ps-absolute t0 r0 b0 l0 d-block" style="text-indent: -999px;">Dịch vụ visa</a>
+                            <a href="{{url('/')}}/visa?utm_source=sponsored&amp;utm_medium=sponsored.posts&amp;utm_campaign=sponsored&amp;utm_id=sponsored.posts&amp;utm_content=qa_homepage" target="_blank" class="ps-absolute t0 r0 b0 l0 d-block" style="text-indent: -999px;">Dịch vụ visa</a>
                         </div>
                     </div>                        </div>
 
@@ -1290,7 +1290,7 @@ Nên mua vé thế nào để đi trong nước Pháp?
                 <div class="w-fit d-block p-20 mb-20 item-community bg-white  bar-8 bar-BDBDBD  qu-hover--bg--darken" style="">
                     <div class="w-fit d-block">
                         <div class="w-fit d-flex ai-center mb-10">
-                            <a href="http://125.212.224.111/blog/bambi.chau22117889">
+                            <a href="{{url('/')}}/blog/bambi.chau22117889">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/bambi.chau22117889/135502264-20181220143217.jpeg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/bambi.chau22117889/135502264-20181220143217.jpeg"
@@ -1299,7 +1299,7 @@ Nên mua vé thế nào để đi trong nước Pháp?
                                 />
                             </a>
                             <div class="w-fit ai-center">
-                                <a href="http://125.212.224.111/blog/bambi.chau22117889" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">ĐanTrương</a>
+                                <a href="{{url('/')}}/blog/bambi.chau22117889" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">ĐanTrương</a>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">0</span>
                                 <span class="fc-fourteenth fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">quốc gia</span>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">|</span>
@@ -1430,7 +1430,7 @@ Mình chỉ mua mấy đồ mỹ phẩm linh tinh thôi, ko phải hàng cao c�
                 <div class="w-fit d-block p-20 mb-20 item-community bg-white  bar-8 bar-BDBDBD  qu-hover--bg--darken" style="">
                     <div class="w-fit d-block">
                         <div class="w-fit d-flex ai-center mb-10">
-                            <a href="http://125.212.224.111/blog/thienthunguyen">
+                            <a href="{{url('/')}}/blog/thienthunguyen">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/thienthunguyen/2830893-20180725152643.jpg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/thienthunguyen/2830893-20180725152643.jpg"
@@ -1439,7 +1439,7 @@ Mình chỉ mua mấy đồ mỹ phẩm linh tinh thôi, ko phải hàng cao c�
                                 />
                             </a>
                             <div class="w-fit ai-center">
-                                <a href="http://125.212.224.111/blog/thienthunguyen" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Thi&ecirc;n Thư</a>
+                                <a href="{{url('/')}}/blog/thienthunguyen" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Thi&ecirc;n Thư</a>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">0</span>
                                 <span class="fc-fourteenth fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">quốc gia</span>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">|</span>
@@ -1582,7 +1582,7 @@ Mình chỉ mua mấy đồ mỹ phẩm linh tinh thôi, ko phải hàng cao c�
                 <div class="w-fit d-block p-20 mb-20 item-community bg-white  bar-8 bar-BDBDBD  qu-hover--bg--darken" style="">
                     <div class="w-fit d-block">
                         <div class="w-fit d-flex ai-center mb-10">
-                            <a href="http://125.212.224.111/blog/n2203am">
+                            <a href="{{url('/')}}/blog/n2203am">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/n2203am/64358504-20180726095335.jpg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/n2203am/64358504-20180726095335.jpg"
@@ -1591,7 +1591,7 @@ Mình chỉ mua mấy đồ mỹ phẩm linh tinh thôi, ko phải hàng cao c�
                                 />
                             </a>
                             <div class="w-fit ai-center">
-                                <a href="http://125.212.224.111/blog/n2203am" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Ho&agrave;ng Nam</a>
+                                <a href="{{url('/')}}/blog/n2203am" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Ho&agrave;ng Nam</a>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">0</span>
                                 <span class="fc-fourteenth fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">quốc gia</span>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">|</span>
@@ -1720,7 +1720,7 @@ Mình chỉ mua mấy đồ mỹ phẩm linh tinh thôi, ko phải hàng cao c�
                 <div class="w-fit d-block p-20 mb-20 item-community bg-white  bar-8 bar-BDBDBD  qu-hover--bg--darken" style="">
                     <div class="w-fit d-block">
                         <div class="w-fit d-flex ai-center mb-10">
-                            <a href="http://125.212.224.111/blog/nguyentoan05">
+                            <a href="{{url('/')}}/blog/nguyentoan05">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/nguyentoan05/113676790-20180926171748.jpg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/nguyentoan05/113676790-20180926171748.jpg"
@@ -1729,7 +1729,7 @@ Mình chỉ mua mấy đồ mỹ phẩm linh tinh thôi, ko phải hàng cao c�
                                 />
                             </a>
                             <div class="w-fit ai-center">
-                                <a href="http://125.212.224.111/blog/nguyentoan05" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Huyền Trang</a>
+                                <a href="{{url('/')}}/blog/nguyentoan05" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Huyền Trang</a>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">0</span>
                                 <span class="fc-fourteenth fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">quốc gia</span>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">|</span>
@@ -1876,7 +1876,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                 <div class="w-fit d-block p-20 mb-20 item-community bg-white  bar-8 bar-BDBDBD  qu-hover--bg--darken" style="">
                     <div class="w-fit d-block">
                         <div class="w-fit d-flex ai-center mb-10">
-                            <a href="http://125.212.224.111/blog/sample7287">
+                            <a href="{{url('/')}}/blog/sample7287">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
@@ -1885,7 +1885,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                 />
                             </a>
                             <div class="w-fit ai-center">
-                                <a href="http://125.212.224.111/blog/sample7287" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">ihewpgwr</a>
+                                <a href="{{url('/')}}/blog/sample7287" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">ihewpgwr</a>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">0</span>
                                 <span class="fc-fourteenth fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">quốc gia</span>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">|</span>
@@ -2005,7 +2005,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                 <div class="w-fit d-block p-20 mb-20 item-community bg-white  bar-8 bar-BDBDBD  qu-hover--bg--darken" style="">
                     <div class="w-fit d-block">
                         <div class="w-fit d-flex ai-center mb-10">
-                            <a href="http://125.212.224.111/blog/4c7u0qk3shsa5ld11pmqiu666ge2">
+                            <a href="{{url('/')}}/blog/4c7u0qk3shsa5ld11pmqiu666ge2">
                                 <img
                                         data-src="https://lh3.googleusercontent.com/a/AGNmyxYCaJW0CWGf-Xa0WQHXbgTezE201DY4I70QRxpIlA=s96-c"
                                         data-srcset="https://lh3.googleusercontent.com/a/AGNmyxYCaJW0CWGf-Xa0WQHXbgTezE201DY4I70QRxpIlA=s96-c"
@@ -2014,7 +2014,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                 />
                             </a>
                             <div class="w-fit ai-center">
-                                <a href="http://125.212.224.111/blog/4c7u0qk3shsa5ld11pmqiu666ge2" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">C&ocirc;ng Nguyễn đăng</a>
+                                <a href="{{url('/')}}/blog/4c7u0qk3shsa5ld11pmqiu666ge2" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">C&ocirc;ng Nguyễn đăng</a>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">0</span>
                                 <span class="fc-fourteenth fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">quốc gia</span>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">|</span>
@@ -2148,7 +2148,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                 <div class="w-fit d-block p-20 mb-20 item-community bg-white  bar-8 bar-BDBDBD  qu-hover--bg--darken" style="">
                     <div class="w-fit d-block">
                         <div class="w-fit d-flex ai-center mb-10">
-                            <a href="http://125.212.224.111/blog/4c7u0qk3shsa5ld11pmqiu666ge2">
+                            <a href="{{url('/')}}/blog/4c7u0qk3shsa5ld11pmqiu666ge2">
                                 <img
                                         data-src="https://lh3.googleusercontent.com/a/AGNmyxYCaJW0CWGf-Xa0WQHXbgTezE201DY4I70QRxpIlA=s96-c"
                                         data-srcset="https://lh3.googleusercontent.com/a/AGNmyxYCaJW0CWGf-Xa0WQHXbgTezE201DY4I70QRxpIlA=s96-c"
@@ -2157,7 +2157,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                 />
                             </a>
                             <div class="w-fit ai-center">
-                                <a href="http://125.212.224.111/blog/4c7u0qk3shsa5ld11pmqiu666ge2" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">C&ocirc;ng Nguyễn đăng</a>
+                                <a href="{{url('/')}}/blog/4c7u0qk3shsa5ld11pmqiu666ge2" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">C&ocirc;ng Nguyễn đăng</a>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">0</span>
                                 <span class="fc-fourteenth fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">quốc gia</span>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">|</span>
@@ -2277,7 +2277,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                 <div class="w-fit d-block p-20 mb-20 item-community bg-white  bar-8 bar-BDBDBD  qu-hover--bg--darken" style="">
                     <div class="w-fit d-block">
                         <div class="w-fit d-flex ai-center mb-10">
-                            <a href="http://125.212.224.111/blog/hanguyen98490">
+                            <a href="{{url('/')}}/blog/hanguyen98490">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/hanguyen98490/56745303-20190620152401.jpg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/hanguyen98490/56745303-20190620152401.jpg"
@@ -2286,7 +2286,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                 />
                             </a>
                             <div class="w-fit ai-center">
-                                <a href="http://125.212.224.111/blog/hanguyen98490" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Ryan L&ecirc;</a>
+                                <a href="{{url('/')}}/blog/hanguyen98490" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Ryan L&ecirc;</a>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">0</span>
                                 <span class="fc-fourteenth fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">quốc gia</span>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">|</span>
@@ -2415,7 +2415,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                 <div class="w-fit d-block p-20 mb-20 item-community bg-white  bar-8 bar-BDBDBD  qu-hover--bg--darken" style="">
                     <div class="w-fit d-block">
                         <div class="w-fit d-flex ai-center mb-10">
-                            <a href="http://125.212.224.111/blog/hanguyen89544">
+                            <a href="{{url('/')}}/blog/hanguyen89544">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/hanguyen89544/147869164-20191105115322.jpg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/hanguyen89544/147869164-20191105115322.jpg"
@@ -2424,7 +2424,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                 />
                             </a>
                             <div class="w-fit ai-center">
-                                <a href="http://125.212.224.111/blog/hanguyen89544" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Rosie Nguyễn</a>
+                                <a href="{{url('/')}}/blog/hanguyen89544" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Rosie Nguyễn</a>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">0</span>
                                 <span class="fc-fourteenth fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">quốc gia</span>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">|</span>
@@ -2553,7 +2553,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                 <div class="w-fit d-block p-20 mb-20 item-community bg-white  bar-8 bar-BDBDBD  qu-hover--bg--darken" style="">
                     <div class="w-fit d-block">
                         <div class="w-fit d-flex ai-center mb-10">
-                            <a href="http://125.212.224.111/blog/hanguyen73923">
+                            <a href="{{url('/')}}/blog/hanguyen73923">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/hanguyen73923/128163765-20190620151331.jpg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/hanguyen73923/128163765-20190620151331.jpg"
@@ -2562,7 +2562,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                 />
                             </a>
                             <div class="w-fit ai-center">
-                                <a href="http://125.212.224.111/blog/hanguyen73923" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Mino Trần</a>
+                                <a href="{{url('/')}}/blog/hanguyen73923" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Mino Trần</a>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">0</span>
                                 <span class="fc-fourteenth fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">quốc gia</span>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">|</span>
@@ -2691,7 +2691,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                 <div class="w-fit d-block p-20 mb-20 item-community bg-white  bar-8 bar-BDBDBD  qu-hover--bg--darken" style="">
                     <div class="w-fit d-block">
                         <div class="w-fit d-flex ai-center mb-10">
-                            <a href="http://125.212.224.111/blog/hanguyen67408">
+                            <a href="{{url('/')}}/blog/hanguyen67408">
                                 <img
                                         data-src="https://gody.vn/public/v3/images/user/avatar/hanguyen67408/59605123-20190620151512.jpg"
                                         data-srcset="https://gody.vn/public/v3/images/user/avatar/hanguyen67408/59605123-20190620151512.jpg"
@@ -2700,7 +2700,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                 />
                             </a>
                             <div class="w-fit ai-center">
-                                <a href="http://125.212.224.111/blog/hanguyen67408" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Chi Su</a>
+                                <a href="{{url('/')}}/blog/hanguyen67408" class="fc-fourteenth fs-14 fw-600" style="margin-left: 10px; margin-right: 22px;">Chi Su</a>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">0</span>
                                 <span class="fc-fourteenth fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">quốc gia</span>
                                 <span class="fc-primary fs-14 fw-400 mr-5 xs:fs-12 xs:mr-2">|</span>
@@ -2830,25 +2830,25 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                     <div class="w-fit d-block ta-right gody-pagination">
                         <ul class="pagination">
                             <li class=" disabled">
-                                <a href="http://125.212.224.111/hoi-dap?page=1">«</a>
+                                <a href="{{url('/')}}/hoi-dap?page=1">«</a>
                             </li>
                             <li class=" active">
-                                <a href="http://125.212.224.111/hoi-dap?page=1">1</a>
+                                <a href="{{url('/')}}/hoi-dap?page=1">1</a>
                             </li>
                             <li class="">
-                                <a href="http://125.212.224.111/hoi-dap?page=2">2</a>
+                                <a href="{{url('/')}}/hoi-dap?page=2">2</a>
                             </li>
                             <li class="">
-                                <a href="http://125.212.224.111/hoi-dap?page=3">3</a>
+                                <a href="{{url('/')}}/hoi-dap?page=3">3</a>
                             </li>
                             <li class="">
-                                <a href="http://125.212.224.111/hoi-dap?page=4">4</a>
+                                <a href="{{url('/')}}/hoi-dap?page=4">4</a>
                             </li>
                             <li class="">
-                                <a href="http://125.212.224.111/hoi-dap?page=5">5</a>
+                                <a href="{{url('/')}}/hoi-dap?page=5">5</a>
                             </li>
                             <li class="">
-                                <a href="http://125.212.224.111/hoi-dap?page=252">»</a>
+                                <a href="{{url('/')}}/hoi-dap?page=252">»</a>
                             </li>
                         </ul>
 
@@ -3003,7 +3003,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                         style="width: 48px;height: 48px;"
                                 />
                                 <div class="ml-10">
-                                    <a href="http://125.212.224.111/blog/04nmnwrekzxgrilxhxgadclsqti3" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Thi Thu Ha Nguyen</a>
+                                    <a href="{{url('/')}}/blog/04nmnwrekzxgrilxhxgadclsqti3" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Thi Thu Ha Nguyen</a>
                                     <span class="w-fit d-block fc-fourteenth fs-14 fw-500 lh-13"><span class="fc-primary mr-10">5</span>câu trả lời</span>
                                 </div>
                             </div>
@@ -3017,7 +3017,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                         style="width: 48px;height: 48px;"
                                 />
                                 <div class="ml-10">
-                                    <a href="http://125.212.224.111/blog/hanguyen67408" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Chi Su</a>
+                                    <a href="{{url('/')}}/blog/hanguyen67408" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Chi Su</a>
                                     <span class="w-fit d-block fc-fourteenth fs-14 fw-500 lh-13"><span class="fc-primary mr-10">4</span>câu trả lời</span>
                                 </div>
                             </div>
@@ -3031,7 +3031,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                         style="width: 48px;height: 48px;"
                                 />
                                 <div class="ml-10">
-                                    <a href="http://125.212.224.111/blog/hanguyen89544" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Rosie Nguyễn</a>
+                                    <a href="{{url('/')}}/blog/hanguyen89544" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Rosie Nguyễn</a>
                                     <span class="w-fit d-block fc-fourteenth fs-14 fw-500 lh-13"><span class="fc-primary mr-10">3</span>câu trả lời</span>
                                 </div>
                             </div>
@@ -3045,7 +3045,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                         style="width: 48px;height: 48px;"
                                 />
                                 <div class="ml-10">
-                                    <a href="http://125.212.224.111/blog/hoangson4311" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Ho&agrave;ng Sơn</a>
+                                    <a href="{{url('/')}}/blog/hoangson4311" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Ho&agrave;ng Sơn</a>
                                     <span class="w-fit d-block fc-fourteenth fs-14 fw-500 lh-13"><span class="fc-primary mr-10">3</span>câu trả lời</span>
                                 </div>
                             </div>
@@ -3059,7 +3059,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                         style="width: 48px;height: 48px;"
                                 />
                                 <div class="ml-10">
-                                    <a href="http://125.212.224.111/blog/aaaa2649" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Gia Huy</a>
+                                    <a href="{{url('/')}}/blog/aaaa2649" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Gia Huy</a>
                                     <span class="w-fit d-block fc-fourteenth fs-14 fw-500 lh-13"><span class="fc-primary mr-10">2</span>câu trả lời</span>
                                 </div>
                             </div>
@@ -3073,7 +3073,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                         style="width: 48px;height: 48px;"
                                 />
                                 <div class="ml-10">
-                                    <a href="http://125.212.224.111/blog/hanguyen54441" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Kh&aacute;nh Ng&ocirc;</a>
+                                    <a href="{{url('/')}}/blog/hanguyen54441" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Kh&aacute;nh Ng&ocirc;</a>
                                     <span class="w-fit d-block fc-fourteenth fs-14 fw-500 lh-13"><span class="fc-primary mr-10">2</span>câu trả lời</span>
                                 </div>
                             </div>
@@ -3087,7 +3087,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                         style="width: 48px;height: 48px;"
                                 />
                                 <div class="ml-10">
-                                    <a href="http://125.212.224.111/blog/hanguyen98490" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Ryan L&ecirc;</a>
+                                    <a href="{{url('/')}}/blog/hanguyen98490" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Ryan L&ecirc;</a>
                                     <span class="w-fit d-block fc-fourteenth fs-14 fw-500 lh-13"><span class="fc-primary mr-10">2</span>câu trả lời</span>
                                 </div>
                             </div>
@@ -3101,7 +3101,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                         style="width: 48px;height: 48px;"
                                 />
                                 <div class="ml-10">
-                                    <a href="http://125.212.224.111/blog/n2203am" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Ho&agrave;ng Nam</a>
+                                    <a href="{{url('/')}}/blog/n2203am" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Ho&agrave;ng Nam</a>
                                     <span class="w-fit d-block fc-fourteenth fs-14 fw-500 lh-13"><span class="fc-primary mr-10">2</span>câu trả lời</span>
                                 </div>
                             </div>
@@ -3115,7 +3115,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                         style="width: 48px;height: 48px;"
                                 />
                                 <div class="ml-10">
-                                    <a href="http://125.212.224.111/blog/thienthunguyen" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Thi&ecirc;n Thư</a>
+                                    <a href="{{url('/')}}/blog/thienthunguyen" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Thi&ecirc;n Thư</a>
                                     <span class="w-fit d-block fc-fourteenth fs-14 fw-500 lh-13"><span class="fc-primary mr-10">2</span>câu trả lời</span>
                                 </div>
                             </div>
@@ -3129,7 +3129,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                         style="width: 48px;height: 48px;"
                                 />
                                 <div class="ml-10">
-                                    <a href="http://125.212.224.111/blog/anhchau8260" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Anh Chauu</a>
+                                    <a href="{{url('/')}}/blog/anhchau8260" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Anh Chauu</a>
                                     <span class="w-fit d-block fc-fourteenth fs-14 fw-500 lh-13"><span class="fc-primary mr-10">2</span>câu trả lời</span>
                                 </div>
                             </div>
@@ -3143,7 +3143,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                         style="width: 48px;height: 48px;"
                                 />
                                 <div class="ml-10">
-                                    <a href="http://125.212.224.111/blog/trantai5403" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Tran Tai</a>
+                                    <a href="{{url('/')}}/blog/trantai5403" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Tran Tai</a>
                                     <span class="w-fit d-block fc-fourteenth fs-14 fw-500 lh-13"><span class="fc-primary mr-10">2</span>câu trả lời</span>
                                 </div>
                             </div>
@@ -3157,7 +3157,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                         style="width: 48px;height: 48px;"
                                 />
                                 <div class="ml-10">
-                                    <a href="http://125.212.224.111/blog/hanguyen73923" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Mino Trần</a>
+                                    <a href="{{url('/')}}/blog/hanguyen73923" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Mino Trần</a>
                                     <span class="w-fit d-block fc-fourteenth fs-14 fw-500 lh-13"><span class="fc-primary mr-10">2</span>câu trả lời</span>
                                 </div>
                             </div>
@@ -3171,7 +3171,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                         style="width: 48px;height: 48px;"
                                 />
                                 <div class="ml-10">
-                                    <a href="http://125.212.224.111/blog/sontung9796" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Son N Tung</a>
+                                    <a href="{{url('/')}}/blog/sontung9796" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Son N Tung</a>
                                     <span class="w-fit d-block fc-fourteenth fs-14 fw-500 lh-13"><span class="fc-primary mr-10">2</span>câu trả lời</span>
                                 </div>
                             </div>
@@ -3185,7 +3185,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                         style="width: 48px;height: 48px;"
                                 />
                                 <div class="ml-10">
-                                    <a href="http://125.212.224.111/blog/trang45370" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Taylor Nguyen</a>
+                                    <a href="{{url('/')}}/blog/trang45370" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">Taylor Nguyen</a>
                                     <span class="w-fit d-block fc-fourteenth fs-14 fw-500 lh-13"><span class="fc-primary mr-10">2</span>câu trả lời</span>
                                 </div>
                             </div>
@@ -3199,7 +3199,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                         style="width: 48px;height: 48px;"
                                 />
                                 <div class="ml-10">
-                                    <a href="http://125.212.224.111/blog/bambi.chau22117889" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">ĐanTrương</a>
+                                    <a href="{{url('/')}}/blog/bambi.chau22117889" class="w-fit d-block fc-fourteenth fs-14 fw-600 lh-25">ĐanTrương</a>
                                     <span class="w-fit d-block fc-fourteenth fs-14 fw-500 lh-13"><span class="fc-primary mr-10">2</span>câu trả lời</span>
                                 </div>
                             </div>
@@ -3878,7 +3878,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                             <img src="https://gody.vn/public/js/ionicons/5.5.2/svg/fitness.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Bảo hiểm">
                             <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Bảo hiểm</p>
                         </a>
-                        <a href="http://125.212.224.111/partner" target="_blank" class="
+                        <a href="{{url('/')}}/partner" target="_blank" class="
                 d-flex
                 fd-column
                 ai-center
@@ -3963,7 +3963,7 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                                 <img loading="lazy" src="https://gody.vn/public/v6/images/more/trip-com-04.png" class="w-45 h-20 mb-2" alt="Trip.com">
                                 <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate-line lineclamp1">Trip.com</p>
                             </a>
-                            <a href="http://125.212.224.111/homestay-hostel" target="_blank" rel="noreferrer,nofollow" class="
+                            <a href="{{url('/')}}/homestay-hostel" target="_blank" rel="noreferrer,nofollow" class="
                   d-flex
                   fd-column
                   ai-center
@@ -5510,10 +5510,10 @@ Bạn nào có dịch vụ thuê xe cho mình xin giá và thông tin nhé      
                             }
 
                             if(total > 0) {
-                                $this.find('.label').html('<a href="#modal-coin-sender" data-toggle="modal" class="fc-fourth" title="Danh sách tặng Go-coin">Bài viết này đã nhận được '+total+' Go-coin.</a> <a href="http://125.212.224.111/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
+                                $this.find('.label').html('<a href="#modal-coin-sender" data-toggle="modal" class="fc-fourth" title="Danh sách tặng Go-coin">Bài viết này đã nhận được '+total+' Go-coin.</a> <a href="{{url('/')}}/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
                                 $('.coin-number-summary').parent().attr('href', '#modal-coin-sender');
                             } else {
-                                $this.find('.label').html('Hãy là người đầu tiên tặng Go-coin cho bài viết này. <a href="http://125.212.224.111/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
+                                $this.find('.label').html('Hãy là người đầu tiên tặng Go-coin cho bài viết này. <a href="{{url('/')}}/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
                                 $('.coin-number-summary').parent().attr('href', 'javascript:void(0)');
                             }
                         }, error: function(response) {

@@ -63,14 +63,14 @@ switch ($action) {
                                     <option value="0" selected>Không</option>
                                     @if ($action != 'show')
                                         @foreach($categories as $key=>$value)
-                                            @if ($category->id != 0)
+                                            @if (!empty($category->id))
                                                 <option value="{{ $value->id }}" selected>{{ $value->name }}</option>
                                             @else
                                                 <option value="{{ $value->id }}">{{ $value->name }}</option>
                                             @endif
                                         @endforeach
                                     @else
-                                        @if ($category->id != 0)
+                                        @if (!empty($category->id))
                                             <option value="{{ $category->id }}" selected>{{ $category->name }}</option>
                                         @endif
                                     @endif

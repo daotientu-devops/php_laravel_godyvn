@@ -31,7 +31,7 @@ class PartnersController extends Controller
             $partners = $this->search($request);
             return view('partner.index', compact('action','partners'));
         } catch (\Exception $exception) {
-            return redirect('/partner')->with('error', 'Lỗi lấy dữ liệu đối tác: ' . $exception->getMessage());
+            return redirect('/partners')->with('error', 'Lỗi lấy dữ liệu đối tác: ' . $exception->getMessage());
         }
     }
 
@@ -59,14 +59,14 @@ class PartnersController extends Controller
 
             // check exists of name
             if (Partner::where('name', '=', $name)->exists()) {
-                return redirect('/partner')->with('error', "Tên: '" . $name . "' đã tồn tại");
+                return redirect('/partners')->with('error', "Tên: '" . $name . "' đã tồn tại");
             } else {
                 // Ok then save
                 $partner->save();
-                return redirect('/partner')->with('message', "Tạo mới đối tác '" . $name . "' thành công");
+                return redirect('/partners')->with('message', "Tạo mới đối tác '" . $name . "' thành công");
             }
         } catch (\Exception $exception) {
-            return redirect('/partner')->with('error', 'Lỗi tạo mới đối tác: ' . $exception->getMessage());
+            return redirect('/partners')->with('error', 'Lỗi tạo mới đối tác: ' . $exception->getMessage());
         }
     }
 
@@ -87,7 +87,7 @@ class PartnersController extends Controller
             $partners = $this->search($request);
             return view('partner.form', compact('action','partner', 'partners'));
         } catch (\Exception $exception) {
-            return redirect('/partner')->with('error', 'Lỗi edit đối tác: ' . $exception->getMessage());
+            return redirect('/partners')->with('error', 'Lỗi edit đối tác: ' . $exception->getMessage());
         }
     }
 
@@ -161,10 +161,10 @@ class PartnersController extends Controller
             if(isset($partners['p']) && $partners['p'] != '') {
                 return view('partner.search', compact('partners', 'str_deleted'));
             }else{
-                return redirect('/partner')->with('message', 'Đối tác đã được xóa: '.$str_deleted);
+                return redirect('/partners')->with('message', 'Đối tác đã được xóa: '.$str_deleted);
             }
         } catch (\Exception $exception) {
-            return redirect('/partner')->with('error', 'Có lỗi xóa dữ liệu: ' . $exception->getMessage());
+            return redirect('/partners')->with('error', 'Có lỗi xóa dữ liệu: ' . $exception->getMessage());
         }
     }
 
@@ -203,7 +203,7 @@ class PartnersController extends Controller
             }
             return ['p' => $p, 'data' => $partners, 'url_ext' => $url_ext, 'path_imgs_url' => $path_imgs_url];
         } catch (\Exception $exception) {
-            return redirect('/partner')->with('error', 'Có lỗi tìm kiếm: ' . $exception->getMessage());
+            return redirect('/partners')->with('error', 'Có lỗi tìm kiếm: ' . $exception->getMessage());
         }
     }
 

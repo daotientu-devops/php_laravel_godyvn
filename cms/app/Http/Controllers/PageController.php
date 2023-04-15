@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Core\Business\UploadFileBusiness;
 use App\Core\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Core\Models\Page;
@@ -57,14 +58,9 @@ class PageController extends Controller
                 $original_name = $file->getClientOriginalName();
             }
 
-            $path = Config::get('constants.PATH_UPLOAD'); //upload path
             $yearDir = date('Y');
             $monthDir = date('m');
             $dayDir = date('d');
-
-            $connection = ssh2_connect(Config::get('constants.SSH2.HOSTNAME'), Config::get('constants.SSH2.PORT'));
-            ssh2_auth_password($connection, Config::get('constants.SSH2.USERNAME'), Config::get('constants.SSH2.PASSWORD'));
-            $destinationPath = $path . '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/';
 
             $page = new Page([
                 'title' => $title,
@@ -79,7 +75,7 @@ class PageController extends Controller
                 'thumbnail_url' => ($file) ? $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name : '',
                 'latitude' => $request->get('latitude'),
                 'longitude' => $request->get('longitude'),
-                'type' => 'landing',
+                'type' => 'page',
                 'meta_title' => $request->get('meta_title'),
                 'meta_keyword' => $request->get('meta_keyword'),
                 'meta_description' => $request->get('meta_description')
@@ -91,15 +87,7 @@ class PageController extends Controller
             } else {
                 // Ok thì upload file và save mới
                 if ($file) {
-                    $handle = curl_init();
-                    $url = Config::get('constants.SSH2.URL') . Config::get('constants.FOLDER_UPLOAD') . $yearDir . '/' . $monthDir . '/' . $dayDir . '/';
-                    // Set the url
-                    curl_setopt($handle, CURLOPT_URL, $url);
-                    // Set the result output to be a string.
-                    curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
-                    curl_exec($handle);
-                    curl_close($handle);
-                    ssh2_scp_send($connection, $file, $destinationPath . $original_name, 0644);
+                    UploadFileBusiness::uploadFileToFolder($file);
                 }
                 $page->save();
                 return redirect('/page')->with('message', 'Tạo mới trang tĩnh thành công');

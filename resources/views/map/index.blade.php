@@ -257,10 +257,10 @@
                                     </a>
                                     <ul class="dropdown-menu" class="overflow-hidden">
                                         <li>
-                                            <a href="http://125.212.224.111/map-vietnam/render-map" class="fc-sixth fw-normal px-12" target="_blank"><i class="fa fa-download mr-6" aria-hidden="true"></i> My Travel Map Việt Nam</a>
+                                            <a href="{{url('/')}}/map-vietnam/render-map" class="fc-sixth fw-normal px-12" target="_blank"><i class="fa fa-download mr-6" aria-hidden="true"></i> My Travel Map Việt Nam</a>
                                         </li>
                                         <li class="pr-0 w-fit">
-                                            <a href="http://125.212.224.111/map-quoc-te/render-map" class="fc-sixth fw-normal w-fit px-12" target="_blank"><i class="fa fa-download mr-6" aria-hidden="true"></i> My Travel Map Quốc tế</a>
+                                            <a href="{{url('/')}}/map-quoc-te/render-map" class="fc-sixth fw-normal w-fit px-12" target="_blank"><i class="fa fa-download mr-6" aria-hidden="true"></i> My Travel Map Quốc tế</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -436,14 +436,14 @@
                     </div>
                     <div class="ps-relative c-pointer d-flex ai-center" style="">
                         <div class="fl-1 ml-12 ps-relative c-pointer va-top">
-                            <a href="http://125.212.224.111/lich-trinh-du-lich" class="truncate-line lineclamp3 fs-16 fw-600 xs:truncate-line xs:lineclamp1 xs:mb-0 xs:fs-14
+                            <a href="{{url('/')}}/lich-trinh-du-lich" class="truncate-line lineclamp3 fs-16 fw-600 xs:truncate-line xs:lineclamp1 xs:mb-0 xs:fs-14
 
 							" style="color: #828282;line-height: 120%; padding: 17.5px 24px;">Hành trình</a>
                         </div>
                     </div>
                     <div class="ps-relative c-pointer d-flex ai-center" style="">
                         <div class="fl-1 ml-12 ps-relative c-pointer va-top">
-                            <a href="http://125.212.224.111/blog/aquafina94164928?type=hoi-dap" class="truncate-line lineclamp3 fs-16 fw-600 xs:truncate-line xs:lineclamp1 xs:mb-0 xs:fs-14
+                            <a href="{{url('/')}}/blog/aquafina94164928?type=hoi-dap" class="truncate-line lineclamp3 fs-16 fw-600 xs:truncate-line xs:lineclamp1 xs:mb-0 xs:fs-14
 
 							" style="color: #828282;line-height: 120%; padding: 17.5px 24px;">Hỏi đáp</a>
                         </div>
@@ -480,10 +480,10 @@
                             <h3 class="mt-0 mb-15 p-0 fs-18 fw-500 pt-20">Địa điểm được checkin nhiều nhất</h3>
                             <div class="d-flex jc-space-between fw-wrap">
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ha-noi/ho-hoan-kiem" class="d-block td-none btr-6 h-106" title="Hồ Hoàn Kiếm">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ha-noi/ho-hoan-kiem" class="d-block td-none btr-6 h-106" title="Hồ Hoàn Kiếm">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/ha-noi/ho-hoan-kiem/12-2016/20161201033204-ho-hoan-kiem-gody(10).jpg" alt="Hồ Hoàn Kiếm" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ha-noi/ho-hoan-kiem" class="d-flex p-10 fl-1 fd-column" title="Hồ Hoàn Kiếm">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ha-noi/ho-hoan-kiem" class="d-flex p-10 fl-1 fd-column" title="Hồ Hoàn Kiếm">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">Hồ Ho&agrave;n Kiếm</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 4.1;" aria-label=""></div>
@@ -495,10 +495,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ha-noi/lang-chu-tich-ho-chi-minh" class="d-block td-none btr-6 h-106" title="Lăng Chủ Tịch Hồ Chí Minh">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ha-noi/lang-chu-tich-ho-chi-minh" class="d-block td-none btr-6 h-106" title="Lăng Chủ Tịch Hồ Chí Minh">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/ha-noi/lang-chu-tich-ho-chi-minh/12-2016/20161201033407-lang-chu-tich-ho-chi-minh-gody(14).jpg" alt="Lăng Chủ Tịch Hồ Chí Minh" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ha-noi/lang-chu-tich-ho-chi-minh" class="d-flex p-10 fl-1 fd-column" title="Lăng Chủ Tịch Hồ Chí Minh">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ha-noi/lang-chu-tich-ho-chi-minh" class="d-flex p-10 fl-1 fd-column" title="Lăng Chủ Tịch Hồ Chí Minh">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">Lăng Chủ Tịch Hồ Ch&iacute; Minh</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 3.9;" aria-label=""></div>
@@ -510,10 +510,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ho-chi-minh/pho-di-bo-nguyen-hue" class="d-block td-none btr-6 h-106" title="Phố đi bộ Nguyễn Huệ">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ho-chi-minh/pho-di-bo-nguyen-hue" class="d-block td-none btr-6 h-106" title="Phố đi bộ Nguyễn Huệ">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/ho-chi-minh/pho-di-bo-nguyen-hue/4-2017/102151298-20170425075439-ho-chi-minh-pho-di-bo-nguyen-hue.jpg" alt="Phố đi bộ Nguyễn Huệ" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ho-chi-minh/pho-di-bo-nguyen-hue" class="d-flex p-10 fl-1 fd-column" title="Phố đi bộ Nguyễn Huệ">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ho-chi-minh/pho-di-bo-nguyen-hue" class="d-flex p-10 fl-1 fd-column" title="Phố đi bộ Nguyễn Huệ">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">Phố đi bộ Nguyễn Huệ</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 3.8;" aria-label=""></div>
@@ -525,10 +525,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ha-noi/pho-co-ha-noi" class="d-block td-none btr-6 h-106" title="Phố cổ Hà Nội">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ha-noi/pho-co-ha-noi" class="d-block td-none btr-6 h-106" title="Phố cổ Hà Nội">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/ha-noi/pho-co-ha-noi/10-2016/20161026074825-pho-co-ha-noi-gody(26).jpg" alt="Phố cổ Hà Nội" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ha-noi/pho-co-ha-noi" class="d-flex p-10 fl-1 fd-column" title="Phố cổ Hà Nội">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ha-noi/pho-co-ha-noi" class="d-flex p-10 fl-1 fd-column" title="Phố cổ Hà Nội">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">Phố cổ H&agrave; Nội</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 4;" aria-label=""></div>
@@ -540,10 +540,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ho-chi-minh/cho-ben-thanh" class="d-block td-none btr-6 h-106" title="Chợ Bến Thành">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ho-chi-minh/cho-ben-thanh" class="d-block td-none btr-6 h-106" title="Chợ Bến Thành">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/ho-chi-minh/cho-ben-thanh/4-2017/69781264-20170425075810-ho-chi-minh-cho-ben-thanh.jpg" alt="Chợ Bến Thành" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ho-chi-minh/cho-ben-thanh" class="d-flex p-10 fl-1 fd-column" title="Chợ Bến Thành">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ho-chi-minh/cho-ben-thanh" class="d-flex p-10 fl-1 fd-column" title="Chợ Bến Thành">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">Chợ Bến Th&agrave;nh</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 4;" aria-label=""></div>
@@ -555,10 +555,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ho-chi-minh/nha-tho-chinh-toa-duc-ba-sai-gon" class="d-block td-none btr-6 h-106" title="Nhà thờ chính tòa Đức Bà Sài Gòn">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ho-chi-minh/nha-tho-chinh-toa-duc-ba-sai-gon" class="d-block td-none btr-6 h-106" title="Nhà thờ chính tòa Đức Bà Sài Gòn">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/ho-chi-minh/nha-tho-chinh-toa-duc-ba-sai-gon/4-2017/55494638-20170425081605-ho-chi-minh-nha-tho-chinh-toa-duc-ba-sai-gon.jpg" alt="Nhà thờ chính tòa Đức Bà Sài Gòn" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ho-chi-minh/nha-tho-chinh-toa-duc-ba-sai-gon" class="d-flex p-10 fl-1 fd-column" title="Nhà thờ chính tòa Đức Bà Sài Gòn">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ho-chi-minh/nha-tho-chinh-toa-duc-ba-sai-gon" class="d-flex p-10 fl-1 fd-column" title="Nhà thờ chính tòa Đức Bà Sài Gòn">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">Nh&agrave; thờ ch&iacute;nh t&ograve;a Đức B&agrave; S&agrave;i G&ograve;n</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 4.1;" aria-label=""></div>
@@ -570,10 +570,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/lam-dong/ho-xuan-huong" class="d-block td-none btr-6 h-106" title="Hồ Xuân Hương - Đà lạt">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/lam-dong/ho-xuan-huong" class="d-block td-none btr-6 h-106" title="Hồ Xuân Hương - Đà lạt">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/lam-dong/ho-xuan-huong/1-2017/20170109040526-ho-xuan-huong-gody (12).jpg" alt="Hồ Xuân Hương - Đà lạt" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/lam-dong/ho-xuan-huong" class="d-flex p-10 fl-1 fd-column" title="Hồ Xuân Hương - Đà lạt">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/lam-dong/ho-xuan-huong" class="d-flex p-10 fl-1 fd-column" title="Hồ Xuân Hương - Đà lạt">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">Hồ Xu&acirc;n Hương - Đ&agrave; lạt</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 4.2;" aria-label=""></div>
@@ -585,10 +585,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ha-noi/van-mieu-quoc-tu-giam" class="d-block td-none btr-6 h-106" title="Văn Miếu Quốc Tử Giám">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ha-noi/van-mieu-quoc-tu-giam" class="d-block td-none btr-6 h-106" title="Văn Miếu Quốc Tử Giám">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/ha-noi/van-mieu-quoc-tu-giam/12-2016/20161201045833-van-mieu-quoc-tu-giam-gody(19).jpg" alt="Văn Miếu Quốc Tử Giám" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ha-noi/van-mieu-quoc-tu-giam" class="d-flex p-10 fl-1 fd-column" title="Văn Miếu Quốc Tử Giám">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ha-noi/van-mieu-quoc-tu-giam" class="d-flex p-10 fl-1 fd-column" title="Văn Miếu Quốc Tử Giám">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">Văn Miếu Quốc Tử Gi&aacute;m</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 4;" aria-label=""></div>
@@ -600,10 +600,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/quang-nam/hoi-an" class="d-block td-none btr-6 h-106" title="Hội An">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/quang-nam/hoi-an" class="d-block td-none btr-6 h-106" title="Hội An">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/quang-nam/hoi-an/10-2016/20161019040853-hoi-an-gody (13).jpg" alt="Hội An" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/quang-nam/hoi-an" class="d-flex p-10 fl-1 fd-column" title="Hội An">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/quang-nam/hoi-an" class="d-flex p-10 fl-1 fd-column" title="Hội An">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">Hội An</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 0;" aria-label=""></div>
@@ -615,10 +615,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ha-noi/chua-mot-cot" class="d-block td-none btr-6 h-106" title="Chùa Một Cột">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ha-noi/chua-mot-cot" class="d-block td-none btr-6 h-106" title="Chùa Một Cột">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/ha-noi/chua-mot-cot/12-2016/20161201033327-chua-mot-cot-gody(3).jpg" alt="Chùa Một Cột" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ha-noi/chua-mot-cot" class="d-flex p-10 fl-1 fd-column" title="Chùa Một Cột">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ha-noi/chua-mot-cot" class="d-flex p-10 fl-1 fd-column" title="Chùa Một Cột">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">Ch&ugrave;a Một Cột</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 3.8;" aria-label=""></div>
@@ -630,10 +630,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/da-nang/song-han-va-4-cau-ki-luc" class="d-block td-none btr-6 h-106" title="Sông Hàn và 4 cây cầu kỉ lục">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/da-nang/song-han-va-4-cau-ki-luc" class="d-block td-none btr-6 h-106" title="Sông Hàn và 4 cây cầu kỉ lục">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/da-nang/song-han-va-4-cau-ki-luc/10-2016/20161017075448-song-han-gody (10).jpg" alt="Sông Hàn và 4 cây cầu kỉ lục" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/da-nang/song-han-va-4-cau-ki-luc" class="d-flex p-10 fl-1 fd-column" title="Sông Hàn và 4 cây cầu kỉ lục">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/da-nang/song-han-va-4-cau-ki-luc" class="d-flex p-10 fl-1 fd-column" title="Sông Hàn và 4 cây cầu kỉ lục">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">S&ocirc;ng H&agrave;n v&agrave; 4 c&acirc;y cầu kỉ lục</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 4.2;" aria-label=""></div>
@@ -645,10 +645,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ho-chi-minh/dinh-doc-lap" class="d-block td-none btr-6 h-106" title="Dinh Độc Lập">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ho-chi-minh/dinh-doc-lap" class="d-block td-none btr-6 h-106" title="Dinh Độc Lập">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/ho-chi-minh/dinh-doc-lap/4-2017/136820634-20170425075720-ho-chi-minh-dinh-doc-lap.jpg" alt="Dinh Độc Lập" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ho-chi-minh/dinh-doc-lap" class="d-flex p-10 fl-1 fd-column" title="Dinh Độc Lập">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ho-chi-minh/dinh-doc-lap" class="d-flex p-10 fl-1 fd-column" title="Dinh Độc Lập">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">Dinh Độc Lập</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 4.1;" aria-label=""></div>
@@ -660,10 +660,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ho-chi-minh/pho-tay" class="d-block td-none btr-6 h-106" title="Phố Tây Bùi Viện">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ho-chi-minh/pho-tay" class="d-block td-none btr-6 h-106" title="Phố Tây Bùi Viện">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/ho-chi-minh/pho-tay/10-2016/20161024085927-pho-tay-gody (9).jpg" alt="Phố Tây Bùi Viện" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ho-chi-minh/pho-tay" class="d-flex p-10 fl-1 fd-column" title="Phố Tây Bùi Viện">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ho-chi-minh/pho-tay" class="d-flex p-10 fl-1 fd-column" title="Phố Tây Bùi Viện">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">Phố T&acirc;y B&ugrave;i Viện</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 4.1;" aria-label=""></div>
@@ -675,10 +675,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ha-noi/cau-long-bien-long-bien-bridge" class="d-block td-none btr-6 h-106" title="Cầu Long Biên">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ha-noi/cau-long-bien-long-bien-bridge" class="d-block td-none btr-6 h-106" title="Cầu Long Biên">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/ha-noi/cau-long-bien-long-bien-bridge//7271407de2c0f13517d6a304dd8228e88ce27ed0.jpg" alt="Cầu Long Biên" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ha-noi/cau-long-bien-long-bien-bridge" class="d-flex p-10 fl-1 fd-column" title="Cầu Long Biên">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ha-noi/cau-long-bien-long-bien-bridge" class="d-flex p-10 fl-1 fd-column" title="Cầu Long Biên">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">Cầu Long Bi&ecirc;n</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 4.1;" aria-label=""></div>
@@ -690,10 +690,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/lam-dong/vuon-hoa-thanh-pho-da-lat" class="d-block td-none btr-6 h-106" title="Vườn hoa thành phố Đà Lạt">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/lam-dong/vuon-hoa-thanh-pho-da-lat" class="d-block td-none btr-6 h-106" title="Vườn hoa thành phố Đà Lạt">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/lam-dong/vuon-hoa-thanh-pho-da-lat/10-2016/20161017084043-vuon-hoa-tp-gody (7).jpg" alt="Vườn hoa thành phố Đà Lạt" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/lam-dong/vuon-hoa-thanh-pho-da-lat" class="d-flex p-10 fl-1 fd-column" title="Vườn hoa thành phố Đà Lạt">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/lam-dong/vuon-hoa-thanh-pho-da-lat" class="d-flex p-10 fl-1 fd-column" title="Vườn hoa thành phố Đà Lạt">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">Vườn hoa th&agrave;nh phố Đ&agrave; Lạt</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 3.9;" aria-label=""></div>
@@ -705,10 +705,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/da-nang/bai-bien-my-khe" class="d-block td-none btr-6 h-106" title="Bãi biển Mỹ Khê">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/da-nang/bai-bien-my-khe" class="d-block td-none btr-6 h-106" title="Bãi biển Mỹ Khê">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/da-nang/bai-bien-my-khe/10-2016/20161017082746-bai-bien-my-khe-gody (4).jpg" alt="Bãi biển Mỹ Khê" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/da-nang/bai-bien-my-khe" class="d-flex p-10 fl-1 fd-column" title="Bãi biển Mỹ Khê">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/da-nang/bai-bien-my-khe" class="d-flex p-10 fl-1 fd-column" title="Bãi biển Mỹ Khê">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">B&atilde;i biển Mỹ Kh&ecirc;</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 4.1;" aria-label=""></div>
@@ -720,10 +720,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/da-nang/chua-linh-ung" class="d-block td-none btr-6 h-106" title="Chùa Linh Ứng">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/da-nang/chua-linh-ung" class="d-block td-none btr-6 h-106" title="Chùa Linh Ứng">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/hinh-tong-hop/huong-dan-sieu-chi-tiet-kham-pha-chua-linh-ung-gody/1-2018/140166183-20180115090351-hinh-tong-hop-huong-dan-sieu-chi-tiet-kham-pha-chua-linh-ung-gody.JPG" alt="Chùa Linh Ứng" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/da-nang/chua-linh-ung" class="d-flex p-10 fl-1 fd-column" title="Chùa Linh Ứng">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/da-nang/chua-linh-ung" class="d-flex p-10 fl-1 fd-column" title="Chùa Linh Ứng">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">Ch&ugrave;a Linh Ứng</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 4.2;" aria-label=""></div>
@@ -735,10 +735,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ho-chi-minh/trung-tam-thuong-mai-diamond-plaza" class="d-block td-none btr-6 h-106" title="Trung tâm thương mại Diamond Plaza">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ho-chi-minh/trung-tam-thuong-mai-diamond-plaza" class="d-block td-none btr-6 h-106" title="Trung tâm thương mại Diamond Plaza">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/ho-chi-minh/trung-tam-thuong-mai-diamond-plaza/4-2017/5024549-20170425075543-ho-chi-minh-trung-tam-thuong-mai-diamond-plaza.jpg" alt="Trung tâm thương mại Diamond Plaza" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ho-chi-minh/trung-tam-thuong-mai-diamond-plaza" class="d-flex p-10 fl-1 fd-column" title="Trung tâm thương mại Diamond Plaza">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ho-chi-minh/trung-tam-thuong-mai-diamond-plaza" class="d-flex p-10 fl-1 fd-column" title="Trung tâm thương mại Diamond Plaza">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">Trung t&acirc;m thương mại Diamond Plaza</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 3.9;" aria-label=""></div>
@@ -750,10 +750,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ha-noi/nha-hat-lon-ha-noi" class="d-block td-none btr-6 h-106" title="Nhà hát lớn Hà Nội">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ha-noi/nha-hat-lon-ha-noi" class="d-block td-none btr-6 h-106" title="Nhà hát lớn Hà Nội">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/ha-noi/nha-hat-lon-ha-noi/10-2016/20161027030944-nha-hat-lon-ha-noi-gody(15).jpg" alt="Nhà hát lớn Hà Nội" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ha-noi/nha-hat-lon-ha-noi" class="d-flex p-10 fl-1 fd-column" title="Nhà hát lớn Hà Nội">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ha-noi/nha-hat-lon-ha-noi" class="d-flex p-10 fl-1 fd-column" title="Nhà hát lớn Hà Nội">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">Nh&agrave; h&aacute;t lớn H&agrave; Nội</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 3.7;" aria-label=""></div>
@@ -765,10 +765,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ha-noi/royal-city" class="d-block td-none btr-6 h-106" title="Royal City">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ha-noi/royal-city" class="d-block td-none btr-6 h-106" title="Royal City">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/ha-noi/royal-city/12-2016/20161201033518-royal-city-gody(3).jpg" alt="Royal City" />
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ha-noi/royal-city" class="d-flex p-10 fl-1 fd-column" title="Royal City">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ha-noi/royal-city" class="d-flex p-10 fl-1 fd-column" title="Royal City">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth">Royal City</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mb-3 d-flex ai-center mt-auto">
                         <div class="Stars" style="--rating: 4.1;" aria-label=""></div>
@@ -785,10 +785,10 @@
                             <h3 class="mt-0 mb-15 p-0 fs-18 fw-500 pt-20">Tỉnh thành được checkin nhiều nhất</h3>
                             <div class="d-flex jc-space-between fw-wrap">
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ha-noi" class="d-block td-none btr-6 h-106" title="Hà Nội">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ha-noi" class="d-block td-none btr-6 h-106" title="Hà Nội">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/ha-noi/ho-hoan-kiem/12-2016/20161201033202-ho-hoan-kiem-gody(3).jpg" alt="Hà Nội"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ha-noi" class="d-flex p-10 fl-1 fd-column" title="Hà Nội">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ha-noi" class="d-flex p-10 fl-1 fd-column" title="Hà Nội">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">H&agrave; Nội</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">155,065</span>  Gody-er đã đến
@@ -796,10 +796,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ho-chi-minh" class="d-block td-none btr-6 h-106" title="Hồ Chí Minh">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ho-chi-minh" class="d-block td-none btr-6 h-106" title="Hồ Chí Minh">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/ho-chi-minh/nha-tho-chinh-toa-duc-ba-sai-gon/4-2017/55494638-20170425081605-ho-chi-minh-nha-tho-chinh-toa-duc-ba-sai-gon.jpg" alt="Hồ Chí Minh"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ho-chi-minh" class="d-flex p-10 fl-1 fd-column" title="Hồ Chí Minh">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ho-chi-minh" class="d-flex p-10 fl-1 fd-column" title="Hồ Chí Minh">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">Hồ Ch&iacute; Minh</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">154,091</span>  Gody-er đã đến
@@ -807,10 +807,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/da-nang" class="d-block td-none btr-6 h-106" title="Đà Nẵng">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/da-nang" class="d-block td-none btr-6 h-106" title="Đà Nẵng">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/da-nang/song-han-va-4-cau-ki-luc/10-2016/thumbs550//20161017075439-song-han-gody (9).jpg" alt="Đà Nẵng"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/da-nang" class="d-flex p-10 fl-1 fd-column" title="Đà Nẵng">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/da-nang" class="d-flex p-10 fl-1 fd-column" title="Đà Nẵng">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">Đ&agrave; Nẵng</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">135,120</span>  Gody-er đã đến
@@ -818,10 +818,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ba-ria-vung-tau" class="d-block td-none btr-6 h-106" title="Côn Đảo - Vũng Tàu">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ba-ria-vung-tau" class="d-block td-none btr-6 h-106" title="Côn Đảo - Vũng Tàu">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/ba-ria-vung-tau/bai-truoc/11-2016/20161115155509-bai-truoc-vung-tau (4).jpg" alt="Côn Đảo - Vũng Tàu"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ba-ria-vung-tau" class="d-flex p-10 fl-1 fd-column" title="Côn Đảo - Vũng Tàu">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ba-ria-vung-tau" class="d-flex p-10 fl-1 fd-column" title="Côn Đảo - Vũng Tàu">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">C&ocirc;n Đảo - Vũng T&agrave;u</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">117,709</span>  Gody-er đã đến
@@ -829,10 +829,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/lam-dong" class="d-block td-none btr-6 h-106" title="Đà Lạt - Lâm Đồng">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/lam-dong" class="d-block td-none btr-6 h-106" title="Đà Lạt - Lâm Đồng">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/lam-dong/vuon-hoa-thanh-pho-da-lat/11-2016/20161103065328-cung-duong-da-lat-3.jpg" alt="Đà Lạt - Lâm Đồng"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/lam-dong" class="d-flex p-10 fl-1 fd-column" title="Đà Lạt - Lâm Đồng">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/lam-dong" class="d-flex p-10 fl-1 fd-column" title="Đà Lạt - Lâm Đồng">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">Đ&agrave; Lạt - L&acirc;m Đồng</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">114,256</span>  Gody-er đã đến
@@ -840,10 +840,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/khanh-hoa" class="d-block td-none btr-6 h-106" title="Nha Trang - Khánh Hòa">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/khanh-hoa" class="d-block td-none btr-6 h-106" title="Nha Trang - Khánh Hòa">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/khanh-hoa/bai-bien-doc-let/10-2016/20161024045332-bai-bien-doc-let-gody (7).jpg" alt="Nha Trang - Khánh Hòa"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/khanh-hoa" class="d-flex p-10 fl-1 fd-column" title="Nha Trang - Khánh Hòa">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/khanh-hoa" class="d-flex p-10 fl-1 fd-column" title="Nha Trang - Khánh Hòa">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">Nha Trang - Kh&aacute;nh H&ograve;a</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">112,571</span>  Gody-er đã đến
@@ -851,10 +851,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/thua-thien-hue" class="d-block td-none btr-6 h-106" title="Thừa Thiên Huế">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/thua-thien-hue" class="d-block td-none btr-6 h-106" title="Thừa Thiên Huế">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/thua-thien-hue/cung-dinh-hue/10-2016/20161018050342-cung-dinh-hue-gody (3).jpg" alt="Thừa Thiên Huế"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/thua-thien-hue" class="d-flex p-10 fl-1 fd-column" title="Thừa Thiên Huế">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/thua-thien-hue" class="d-flex p-10 fl-1 fd-column" title="Thừa Thiên Huế">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">Thừa Thi&ecirc;n Huế</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">111,398</span>  Gody-er đã đến
@@ -862,10 +862,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ninh-binh" class="d-block td-none btr-6 h-106" title="Ninh Bình">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ninh-binh" class="d-block td-none btr-6 h-106" title="Ninh Bình">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/ninh-binh/tam-coc-bich-dong/12-2016/20161213092159-tam-coc-bich-dong-gody (2).jpg" alt="Ninh Bình"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/ninh-binh" class="d-flex p-10 fl-1 fd-column" title="Ninh Bình">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/ninh-binh" class="d-flex p-10 fl-1 fd-column" title="Ninh Bình">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">Ninh B&igrave;nh</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">107,613</span>  Gody-er đã đến
@@ -873,10 +873,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/binh-duong" class="d-block td-none btr-6 h-106" title="Bình Dương">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/binh-duong" class="d-block td-none btr-6 h-106" title="Bình Dương">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/hinh-tong-hop/kinh-nghiem-du-lich-binh-lap-gody/12-2018/8054258-20181203094018-hinh-tong-hop-kinh-nghiem-du-lich-binh-lap-gody.jpeg" alt="Bình Dương"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/binh-duong" class="d-flex p-10 fl-1 fd-column" title="Bình Dương">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/binh-duong" class="d-flex p-10 fl-1 fd-column" title="Bình Dương">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">B&igrave;nh Dương</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">101,793</span>  Gody-er đã đến
@@ -884,10 +884,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/dong-nai" class="d-block td-none btr-6 h-106" title="Đồng Nai">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/dong-nai" class="d-block td-none btr-6 h-106" title="Đồng Nai">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/dong-nai/cong-vien-suoi-mo/10-2016/20161020092630-kdl-suoi-mo-gody (2).jpg" alt="Đồng Nai"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/viet-nam/dong-nai" class="d-flex p-10 fl-1 fd-column" title="Đồng Nai">
+                                    <a href="{{url('/')}}/chau-a/viet-nam/dong-nai" class="d-flex p-10 fl-1 fd-column" title="Đồng Nai">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">Đồng Nai</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">101,389</span>  Gody-er đã đến
@@ -901,10 +901,10 @@
                             <h3 class="mt-0 mb-15 p-0 fs-18 fw-500 pt-20">Đất nước được checkin nhiều nhất</h3>
                             <div class="d-flex jc-space-between fw-wrap">
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/thailand" class="d-block td-none btr-6 h-106" title="Thailand">
+                                    <a href="{{url('/')}}/chau-a/thailand" class="d-block td-none btr-6 h-106" title="Thailand">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/bangkok/cung-dien-hoang-gia-thai-lan/10-2016/20161027044100-cung-dien-hoang-gia-thai-lan-gody%20(5).jpg" alt="Thailand"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/thailand" class="d-flex p-10 fl-1 fd-column" title="Thailand">
+                                    <a href="{{url('/')}}/chau-a/thailand" class="d-flex p-10 fl-1 fd-column" title="Thailand">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">Thailand</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">11,217</span>  Gody-er đã đến
@@ -912,10 +912,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/singapore" class="d-block td-none btr-6 h-106" title="singapore">
+                                    <a href="{{url('/')}}/chau-a/singapore" class="d-block td-none btr-6 h-106" title="singapore">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/singapore/vinh-maria/11-2016/20161114025458-marina-bay-gody%20(8).jpg" alt="singapore"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/singapore" class="d-flex p-10 fl-1 fd-column" title="singapore">
+                                    <a href="{{url('/')}}/chau-a/singapore" class="d-flex p-10 fl-1 fd-column" title="singapore">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">singapore</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">8,146</span>  Gody-er đã đến
@@ -923,10 +923,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/malaysia" class="d-block td-none btr-6 h-106" title="malaysia">
+                                    <a href="{{url('/')}}/chau-a/malaysia" class="d-block td-none btr-6 h-106" title="malaysia">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/hinh-tong-hop/hinh-anh-tong-hop-2/11-2018/110976489-20181119064250-hinh-tong-hop-hinh-anh-tong-hop-2.jpg" alt="malaysia"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/malaysia" class="d-flex p-10 fl-1 fd-column" title="malaysia">
+                                    <a href="{{url('/')}}/chau-a/malaysia" class="d-flex p-10 fl-1 fd-column" title="malaysia">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">malaysia</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">6,720</span>  Gody-er đã đến
@@ -934,10 +934,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/trung-quoc" class="d-block td-none btr-6 h-106" title="China">
+                                    <a href="{{url('/')}}/chau-a/trung-quoc" class="d-block td-none btr-6 h-106" title="China">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2019/5/6/thanhduy21023335/4a97894416b31c9e7b191f2b101a73b8.jpg" alt="China"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/trung-quoc" class="d-flex p-10 fl-1 fd-column" title="China">
+                                    <a href="{{url('/')}}/chau-a/trung-quoc" class="d-flex p-10 fl-1 fd-column" title="China">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">China</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">6,225</span>  Gody-er đã đến
@@ -945,10 +945,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/campuchia" class="d-block td-none btr-6 h-106" title="Cambodia">
+                                    <a href="{{url('/')}}/chau-a/campuchia" class="d-block td-none btr-6 h-106" title="Cambodia">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/phnom-penh/cung-dien-hoang-gia/12-2016/20161208032138-cung-dien-cambodia-gody%20(1).jpg" alt="Cambodia"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/campuchia" class="d-flex p-10 fl-1 fd-column" title="Cambodia">
+                                    <a href="{{url('/')}}/chau-a/campuchia" class="d-flex p-10 fl-1 fd-column" title="Cambodia">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">Cambodia</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">6,182</span>  Gody-er đã đến
@@ -956,10 +956,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/south-korea" class="d-block td-none btr-6 h-106" title="South Korea">
+                                    <a href="{{url('/')}}/chau-a/south-korea" class="d-block td-none btr-6 h-106" title="South Korea">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/jeju/vuon-suy-tuspirited-garden/ccb78d941ac092197b5e6381a434009591a92237.jpg" alt="South Korea"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/south-korea" class="d-flex p-10 fl-1 fd-column" title="South Korea">
+                                    <a href="{{url('/')}}/chau-a/south-korea" class="d-flex p-10 fl-1 fd-column" title="South Korea">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">South Korea</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">4,222</span>  Gody-er đã đến
@@ -967,10 +967,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/Japan" class="d-block td-none btr-6 h-106" title="Japan">
+                                    <a href="{{url('/')}}/chau-a/Japan" class="d-block td-none btr-6 h-106" title="Japan">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/tokyo/thap-tokyo/12-2016/20161207091807-thap-tokyo-gody-(6).jpg" alt="Japan"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/Japan" class="d-flex p-10 fl-1 fd-column" title="Japan">
+                                    <a href="{{url('/')}}/chau-a/Japan" class="d-flex p-10 fl-1 fd-column" title="Japan">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">Japan</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">3,630</span>  Gody-er đã đến
@@ -978,10 +978,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-a/taiwan" class="d-block td-none btr-6 h-106" title="Taiwan">
+                                    <a href="{{url('/')}}/chau-a/taiwan" class="d-block td-none btr-6 h-106" title="Taiwan">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/taipei/toa-nha-dai-bac-101/11-2016/20161110043720-taipei-101-gody%20(8).jpg" alt="Taiwan"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-a/taiwan" class="d-flex p-10 fl-1 fd-column" title="Taiwan">
+                                    <a href="{{url('/')}}/chau-a/taiwan" class="d-flex p-10 fl-1 fd-column" title="Taiwan">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">Taiwan</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">3,626</span>  Gody-er đã đến
@@ -989,10 +989,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-au/lao" class="d-block td-none btr-6 h-106" title="Lào">
+                                    <a href="{{url('/')}}/chau-au/lao" class="d-block td-none btr-6 h-106" title="Lào">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/hinh-tong-hop/su-kien-nghe-thuat-sap-dat-du-da-nang/12-2018/89932980-20181224070411-hinh-tong-hop-su-kien-nghe-thuat-sap-dat-du-da-nang.jpg" alt="Lào"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-au/lao" class="d-flex p-10 fl-1 fd-column" title="Lào">
+                                    <a href="{{url('/')}}/chau-au/lao" class="d-flex p-10 fl-1 fd-column" title="Lào">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">L&agrave;o</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">2,910</span>  Gody-er đã đến
@@ -1000,10 +1000,10 @@
                                     </a>
                                 </div>
                                 <div class="w-25%-12 xs:w-50%-6 card7 mb-20 xs:mb-12 bar-10 overflow-hidden d-flex fd-column">
-                                    <a href="http://125.212.224.111/chau-au/france-phap" class="d-block td-none btr-6 h-106" title="France">
+                                    <a href="{{url('/')}}/chau-au/france-phap" class="d-block td-none btr-6 h-106" title="France">
                                         <img loading="lazy" class="w-fit h-fit object-cover object-center" src="https://media.gody.vn/images/hinh-tong-hop/hinh-anh-tong-hop-2/12-2018/83585441-20181205103940-hinh-tong-hop-hinh-anh-tong-hop-2.jpeg" alt="France"/>
                                     </a>
-                                    <a href="http://125.212.224.111/chau-au/france-phap" class="d-flex p-10 fl-1 fd-column" title="France">
+                                    <a href="{{url('/')}}/chau-au/france-phap" class="d-flex p-10 fl-1 fd-column" title="France">
                                         <span class="mt-0 p-0 fs-14 fw-500 truncate-line lineclamp2 tt-capitalize fc-nineth mb-3">France</span>
                                         <span class="w-fit d-block pt-0 pb-0 fs-12 m-0 fc-nineth mt-auto">
                         <span class="fc-primary">2,658</span>  Gody-er đã đến
@@ -2252,7 +2252,7 @@
                             <img src="/public/v6/js/ionicons/5.5.2/svg/fitness.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Bảo hiểm">
                             <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Bảo hiểm</p>
                         </a>
-                        <a href="http://125.212.224.111/partner" target="_blank" class="
+                        <a href="{{url('/')}}/partner" target="_blank" class="
                 d-flex
                 fd-column
                 ai-center
@@ -2337,7 +2337,7 @@
                                 <img loading="lazy" src="/public/v6/images/more/trip-com-04.png" class="w-45 h-20 mb-2" alt="Trip.com">
                                 <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate-line lineclamp1">Trip.com</p>
                             </a>
-                            <a href="http://125.212.224.111/homestay-hostel" target="_blank" rel="noreferrer,nofollow" class="
+                            <a href="{{url('/')}}/homestay-hostel" target="_blank" rel="noreferrer,nofollow" class="
                   d-flex
                   fd-column
                   ai-center
@@ -4399,10 +4399,10 @@
                             }
 
                             if(total > 0) {
-                                $this.find('.label').html('<a href="#modal-coin-sender" data-toggle="modal" class="fc-fourth" title="Danh sách tặng Go-coin">Bài viết này đã nhận được '+total+' Go-coin.</a> <a href="http://125.212.224.111/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
+                                $this.find('.label').html('<a href="#modal-coin-sender" data-toggle="modal" class="fc-fourth" title="Danh sách tặng Go-coin">Bài viết này đã nhận được '+total+' Go-coin.</a> <a href="{{url('/')}}/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
                                 $('.coin-number-summary').parent().attr('href', '#modal-coin-sender');
                             } else {
-                                $this.find('.label').html('Hãy là người đầu tiên tặng Go-coin cho bài viết này. <a href="http://125.212.224.111/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
+                                $this.find('.label').html('Hãy là người đầu tiên tặng Go-coin cho bài viết này. <a href="{{url('/')}}/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
                                 $('.coin-number-summary').parent().attr('href', 'javascript:void(0)');
                             }
                         }, error: function(response) {

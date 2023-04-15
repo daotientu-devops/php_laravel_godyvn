@@ -42,8 +42,8 @@
                 </p>
                 <span class="d-inline-block w-30 bb bc-primary baw2"></span>
                 <div class="mt-12">
-                    <a href="http://125.212.224.111/du-lich" class="show fc-sixth h:fc-primary">Tin tức</a>
-                    <a href="http://125.212.224.111/diem-den" class="show fc-sixth h:fc-primary mt-5">Điểm đến</a>
+                    <a href="{{url('/')}}/du-lich" class="show fc-sixth h:fc-primary">Tin tức</a>
+                    <a href="{{url('/')}}/diem-den" class="show fc-sixth h:fc-primary mt-5">Điểm đến</a>
                 </div>
             </div>
             <div class="col-md-2 pt-20">
@@ -52,11 +52,11 @@
                 </p>
                 <span class="d-inline-block w-30 bb bc-primary baw2"></span>
                 <div class="mt-12">
-                    <a href="http://125.212.224.111/lich-trinh-du-lich" class="show fc-sixth h:fc-primary">Lên lịch trình du lịch</a>
-                    <a href="http://125.212.224.111/ban-do-du-lich/viet-nam" class="show fc-sixth h:fc-primary mt-5">Tạo bảo đồ du lịch - My Travel Map</a>
-                    <a href="http://125.212.224.111/hoi-dap" class="show fc-sixth h:fc-primary mt-5">Hỏi đáp du lịch</a>
-                    <a href="http://125.212.224.111/blog/viet-bai/note" class="show fc-sixth h:fc-primary mt-5">Viết blog du lịch</a>
-                    <a href="http://125.212.224.111/diem-den" class="show fc-sixth h:fc-primary mt-5">Điểm đến</a>
+                    <a href="{{url('/')}}/lich-trinh-du-lich" class="show fc-sixth h:fc-primary">Lên lịch trình du lịch</a>
+                    <a href="{{url('/')}}/ban-do-du-lich/viet-nam" class="show fc-sixth h:fc-primary mt-5">Tạo bảo đồ du lịch - My Travel Map</a>
+                    <a href="{{url('/')}}/hoi-dap" class="show fc-sixth h:fc-primary mt-5">Hỏi đáp du lịch</a>
+                    <a href="{{url('/')}}/blog/viet-bai/note" class="show fc-sixth h:fc-primary mt-5">Viết blog du lịch</a>
+                    <a href="{{url('/')}}/diem-den" class="show fc-sixth h:fc-primary mt-5">Điểm đến</a>
                 </div>
             </div>
         </div>

@@ -1362,25 +1362,25 @@
                 <div class="w-fit d-block ta-right gody-pagination">
                     <ul class="pagination">
                         <li class=" disabled">
-                            <a href="http://125.212.224.111/lich-trinh-du-lich?page=1">«</a>
+                            <a href="{{url('/')}}/lich-trinh-du-lich?page=1">«</a>
                         </li>
                         <li class=" active">
-                            <a href="http://125.212.224.111/lich-trinh-du-lich?page=1">1</a>
+                            <a href="{{url('/')}}/lich-trinh-du-lich?page=1">1</a>
                         </li>
                         <li class="">
-                            <a href="http://125.212.224.111/lich-trinh-du-lich?page=2">2</a>
+                            <a href="{{url('/')}}/lich-trinh-du-lich?page=2">2</a>
                         </li>
                         <li class="">
-                            <a href="http://125.212.224.111/lich-trinh-du-lich?page=3">3</a>
+                            <a href="{{url('/')}}/lich-trinh-du-lich?page=3">3</a>
                         </li>
                         <li class="">
-                            <a href="http://125.212.224.111/lich-trinh-du-lich?page=4">4</a>
+                            <a href="{{url('/')}}/lich-trinh-du-lich?page=4">4</a>
                         </li>
                         <li class="">
-                            <a href="http://125.212.224.111/lich-trinh-du-lich?page=5">5</a>
+                            <a href="{{url('/')}}/lich-trinh-du-lich?page=5">5</a>
                         </li>
                         <li class="">
-                            <a href="http://125.212.224.111/lich-trinh-du-lich?page=75">»</a>
+                            <a href="{{url('/')}}/lich-trinh-du-lich?page=75">»</a>
                         </li>
                     </ul>
 
@@ -2061,7 +2061,7 @@
                             <img src="/public/v6/js/ionicons/5.5.2/svg/fitness.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Bảo hiểm">
                             <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Bảo hiểm</p>
                         </a>
-                        <a href="http://125.212.224.111/partner" target="_blank" class="
+                        <a href="{{url('/')}}/partner" target="_blank" class="
                 d-flex
                 fd-column
                 ai-center
@@ -2146,7 +2146,7 @@
                                 <img loading="lazy" src="/public/v6/images/more/trip-com-04.png" class="w-45 h-20 mb-2" alt="Trip.com">
                                 <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate-line lineclamp1">Trip.com</p>
                             </a>
-                            <a href="http://125.212.224.111/homestay-hostel" target="_blank" rel="noreferrer,nofollow" class="
+                            <a href="{{url('/')}}/homestay-hostel" target="_blank" rel="noreferrer,nofollow" class="
                   d-flex
                   fd-column
                   ai-center
@@ -3640,10 +3640,10 @@
                             }
 
                             if(total > 0) {
-                                $this.find('.label').html('<a href="#modal-coin-sender" data-toggle="modal" class="fc-fourth" title="Danh sách tặng Go-coin">Bài viết này đã nhận được '+total+' Go-coin.</a> <a href="http://125.212.224.111/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
+                                $this.find('.label').html('<a href="#modal-coin-sender" data-toggle="modal" class="fc-fourth" title="Danh sách tặng Go-coin">Bài viết này đã nhận được '+total+' Go-coin.</a> <a href="{{url('/')}}/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
                                 $('.coin-number-summary').parent().attr('href', '#modal-coin-sender');
                             } else {
-                                $this.find('.label').html('Hãy là người đầu tiên tặng Go-coin cho bài viết này. <a href="http://125.212.224.111/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
+                                $this.find('.label').html('Hãy là người đầu tiên tặng Go-coin cho bài viết này. <a href="{{url('/')}}/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
                                 $('.coin-number-summary').parent().attr('href', 'javascript:void(0)');
                             }
                         }, error: function(response) {

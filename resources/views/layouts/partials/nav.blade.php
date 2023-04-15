@@ -42,21 +42,9 @@
                             </a>
                         </li>
 
-                        <li class="mt-10">
-                            <a href=/facebook/login?modal=modal-fetch-fb class="fc-sixth" id=" ">
-                                <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/images-outline.svg" class="filter-sixth w-24 mr-8">Chia sẻ hình từ Facebook
-                            </a>
-                        </li>
-
                         <li class="mt-10 mb-10">
                             <a href="{{url('hoi-dap')}}" class="fc-sixth" id=" ">
                                 <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/people-outline.svg" class="filter-sixth w-24 mr-8">Hỏi đáp du lịch
-                            </a>
-                        </li>
-
-                        <li class="mt-10 mb-10">
-                            <a href="{{url('lich-trinh-du-lich')}}" class="fc-sixth" id=" ">
-                                <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/footsteps-outline.svg" class="filter-sixth w-24 mr-8">Lập & chia sẻ hành trình
                             </a>
                         </li>
 
@@ -75,43 +63,6 @@
                     </style>
                 </li>
 
-                <li class="dropdown d-flex ai-center jc-center mr-20 ml-0 h-42 px-12 ">
-                    <button type="button" class="outline-none bn clearfix fc-sixth bg-eleventh bar-50 px-25 py-6 mr-0 d-flex fw-500 ai-center jc-center" href="#" data-toggle="dropdown" id="dang-nhap-header">
-                        <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/menu-outline.svg" width="18" class="w-18 mr-8 mb-1" />
-                        <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/person-circle-outline.svg" width="28" class="w-28 mb-1" />
-                    </button>
-
-                    <ul class="dropdown-menu account-dropdown bar-8 w-250 card6 bn mt-7">
-                        <li class="ps-absolute w-10 h-10 baw1 bas-solid bc-tenth r12 tn6 rotate-1/8 bg-white brs-unset bbs-unset zn-1"></li>
-                        <li>
-                            <a href="#modal-login" data-toggle="modal" class="fc-fourteenth py-10 px-15 fw-500">Đăng ký / Đăng nhập</a>
-                        </li>
-                        <li class="d-none">
-                            <a href="http://125.212.224.111/dang-ky" class="fc-fourteenth py-10 px-15">Đăng ký</a>
-                        </li>
-                        <li class="bt bc-eleventh mt-6 mb-6"></li>
-
-
-                        <li>
-                            <a href="http://125.212.224.111/blog/form/dang-ky" class="fc-fourteenth py-10 px-15">Kiếm tiền cùng Gody</a>
-                        </li>
-                        <li>
-                            <a href="#modal-login" data-toggle="modal" id="thiet-lap-trang-blog-trong-profile" class="fc-fourteenth py-10 px-15">Tạo Blog du lịch</a>
-                        </li>
-                        <li>
-                            <a href="http://125.212.224.111/ban-do-du-lich/viet-nam" id="cap-nhat-mytravelmap-trong-profile" class="fc-fourteenth py-10 px-15">My Travel Map</a>
-                        </li>
-                        <li>
-                            <a href="http://125.212.224.111/lich-trinh-du-lich" class="fc-fourteenth py-10 px-15">Tạo lịch trình</a>
-                        </li>
-                        <li>
-                            <a href="http://125.212.224.111/vi-du-lich" class="fc-fourteenth py-10 px-15">Ví du lịch</a>
-                        </li>
-
-                    </ul>
-                </li>
-
-
                 <li class="dropdown create-map-success-alert" style="height: 56px;">
                     <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" style="padding:0;">
                     </a>
@@ -124,7 +75,7 @@
                         </script>
                         <p style="margin-bottom:6px;text-align:center;"><b>Chúc mừng!</b>!</p>
                         <p style=" text-align:center;color:#ff8c00;font-size:30px;margin:0;"><i class="fa fa-bell-o" aria-hidden="true"></i></p>
-                        <p style="margin:0;line-height:23px; text-align: center;">Bạn đã có 20,000VND trong tài khoản. <a href="http://125.212.224.111/qua-tang" class="fc-nineth fw-bold">Bạn muốn sử dụng ngay ?</a></p>
+                        <p style="margin:0;line-height:23px; text-align: center;">Bạn đã có 20,000VND trong tài khoản. <a href="{{url('/')}}/qua-tang" class="fc-nineth fw-bold">Bạn muốn sử dụng ngay ?</a></p>
                     </ul>
                     <style>
                         .create-map-success-alert .dropdown-menu:before{content:'';display:block;width:10px;height:10px;position:absolute;border:1px solid #ccc;right:12px;top:-5px;transform:rotate(45deg);background:#fff;border-right-color:transparent;border-bottom-color:transparent;z-index:-1}

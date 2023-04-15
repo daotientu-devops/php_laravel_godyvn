@@ -11,7 +11,7 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <a href="{{ url('page/create') }}" title="Tạo mới bài viết" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Tạo mới bài viết tĩnh</a>
+                    <a href="{{ url('page/create') }}" title="Tạo mới bài viết" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Tạo mới trang tĩnh</a>
                     <ul class="nav navbar-right panel_toolbox">
                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                         </li>

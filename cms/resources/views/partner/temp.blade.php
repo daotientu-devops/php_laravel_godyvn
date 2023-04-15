@@ -1,4 +1,4 @@
-<form class="form-horizontal form-label-left input_mask" action="{{ url("partner" . (isset($action)?'/'.$action:'') . (isset($partner->id)?'/'.$partner->id:'') . (isset($partners['url_ext']) && $partners['url_ext'] != ''?$partners['url_ext']:'')) }}" method="post" enctype="multipart/form-data">
+<form class="form-horizontal form-label-left input_mask" action="{{ url("partners" . (isset($action)?'/'.$action:'') . (isset($partner->id)?'/'.$partner->id:'') . (isset($partners['url_ext']) && $partners['url_ext'] != ''?$partners['url_ext']:'')) }}" method="post" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
         <label class="control-label col-md-3 col-sm-3 col-xs-12">Tên <span class="required">*</span></label>
