@@ -60,13 +60,11 @@ switch ($action) {
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Danh mục</label>
                             <div class="col-md-3 col-sm-3 col-xs-12">
                                 <select class="form-control" name="category_id" {{ $attribute }}>
-                                    <option value="0" selected>Không</option>
+                                    <option value="0">Không</option>
                                     @if ($action != 'show')
                                         @foreach($categories as $key=>$value)
                                             @if (!empty($category->id))
-                                                <option value="{{ $value->id }}" selected>{{ $value->name }}</option>
-                                            @else
-                                                <option value="{{ $value->id }}">{{ $value->name }}</option>
+                                                <option value="{{ $value->id }}"{{$value->id==$category->id?' selected':''}}>{{ $value->name }}</option>
                                             @endif
                                         @endforeach
                                     @else

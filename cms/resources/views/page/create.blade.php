@@ -55,7 +55,7 @@
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Danh mục</label>
                             <div class="col-md-3 col-sm-3 col-xs-12">
                                 <select class="form-control" name="category_id">
-                                    <option value="0" selected>Không</option>
+                                    <option value="0">Không</option>
                                     @foreach($categories as $category)
                                         <option value="{{ $category->id }}">{{ $category->name }}</option>
                                     @endforeach

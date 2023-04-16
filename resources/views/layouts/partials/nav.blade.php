@@ -1,7 +1,8 @@
 <nav class="navbar navbar-primary card5 bg-white ">
     <div class="container-fluid wmn-1260 pr-5 ps-relative">
         <div class="navbar-header h-42 mr-5">
-            <a href="{{url('/')}}" class="logo"></a>
+            <a href="{{url('/')}}" class="logo" style="display: block;
+    height: 100% !important;"></a>
         </div>
 
         <div class="collapse navbar-collapse px-0 d-flex d-after-none d-before-none jc-space-between ai-center" id="bs-example-navbar-collapse-1" style="display: flex!important;">

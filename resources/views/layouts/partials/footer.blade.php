@@ -42,7 +42,6 @@
                 </p>
                 <span class="d-inline-block w-30 bb bc-primary baw2"></span>
                 <div class="mt-12">
-                    <a href="{{url('/')}}/du-lich" class="show fc-sixth h:fc-primary">Tin tức</a>
                     <a href="{{url('/')}}/diem-den" class="show fc-sixth h:fc-primary mt-5">Điểm đến</a>
                 </div>
             </div>
@@ -52,8 +51,6 @@
                 </p>
                 <span class="d-inline-block w-30 bb bc-primary baw2"></span>
                 <div class="mt-12">
-                    <a href="{{url('/')}}/lich-trinh-du-lich" class="show fc-sixth h:fc-primary">Lên lịch trình du lịch</a>
-                    <a href="{{url('/')}}/ban-do-du-lich/viet-nam" class="show fc-sixth h:fc-primary mt-5">Tạo bảo đồ du lịch - My Travel Map</a>
                     <a href="{{url('/')}}/hoi-dap" class="show fc-sixth h:fc-primary mt-5">Hỏi đáp du lịch</a>
                     <a href="{{url('/')}}/blog/viet-bai/note" class="show fc-sixth h:fc-primary mt-5">Viết blog du lịch</a>
                     <a href="{{url('/')}}/diem-den" class="show fc-sixth h:fc-primary mt-5">Điểm đến</a>

@@ -152,14 +152,9 @@ class PageController extends Controller
                 $original_name = $file->getClientOriginalName();
             }
 
-            $path = Config::get('constants.PATH_UPLOAD'); //upload path
             $yearDir = date('Y');
             $monthDir = date('m');
             $dayDir = date('d');
-
-            $connection = ssh2_connect(Config::get('constants.SSH2.HOSTNAME'), Config::get('constants.SSH2.PORT'));
-            ssh2_auth_password($connection, Config::get('constants.SSH2.USERNAME'), Config::get('constants.SSH2.PASSWORD'));
-            $destinationPath = $path . '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/';
 
             $page = Page::find($id);
             $page->title = $title;
@@ -171,24 +166,16 @@ class PageController extends Controller
             $page->slug = $slug;
             $page->status = $request->get('status');
             $page->category_id = $request->get('category_id');
-            //$page->thumbnail_url = ($file) ? $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name : ''; // Chức năng edit lại ảnh đại diện cần xem lại cơ chế thay đổi
+            $page->thumbnail_url = ($file) ? $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $original_name : ''; // Chức năng edit lại ảnh đại diện cần xem lại cơ chế thay đổi
             $page->latitude = $request->get('latitude');
             $page->longitude = $request->get('longitude');
-            $page->type = 'landing';
+            $page->type = 'page';
             $page->meta_title = $request->get('meta_title');
             $page->meta_keyword = $request->get('meta_keyword');
             $page->meta_description = $request->get('meta_description');
-
+            // Ok thì upload file và save mới
             if ($file) {
-                $handle = curl_init();
-                $url = Config::get('constants.SSH2.URL') . Config::get('constants.FOLDER_UPLOAD') . $yearDir . '/' . $monthDir . '/' . $dayDir . '/';
-                // Set the url
-                curl_setopt($handle, CURLOPT_URL, $url);
-                // Set the result output to be a string.
-                curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
-                curl_exec($handle);
-                curl_close($handle);
-                ssh2_scp_send($connection, $file, $destinationPath . $original_name, 0644);
+                UploadFileBusiness::uploadFileToFolder($file);
             }
             $page->save();
             return redirect('/page')->with('message', 'Sửa trang tĩnh thành công');
