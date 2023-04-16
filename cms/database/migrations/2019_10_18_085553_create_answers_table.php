@@ -22,6 +22,13 @@ class CreateAnswersTable extends Migration
             $table->string('status', 20);
             $table->string('published_at', 20)->nullable();
             $table->bigInteger('question_id');
+            $table->string('created_by', 50)->nullable();
+            $table->string('updated_by', 50)->nullable();
+            $table->unsignedTinyInteger('is_deleted')->nullable()->default(0);
+            $table->string('deleted_by', 50)->nullable();
+            $table->timestamp('deleted_at')->nullable();
+            $table->unsignedTinyInteger('is_published')->nullable()->default(0);
+            $table->string('published_by', 50)->nullable();
             $table->timestamps();
         });
     }

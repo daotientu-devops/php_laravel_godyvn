@@ -31,6 +31,14 @@ class CreateQuestionsTable extends Migration
             $table->tinyInteger('sex')->nullable()->default(-1);
             $table->unsignedTinyInteger('is_highlight')->nullable()->default(0);
             $table->unsignedTinyInteger('has_answer')->nullable()->default(0);
+            $table->string('thumbnail_url')->nullable();
+            $table->string('created_by', 50)->nullable();
+            $table->string('updated_by', 50)->nullable();
+            $table->unsignedTinyInteger('is_deleted')->nullable()->default(0);
+            $table->string('deleted_by', 50)->nullable();
+            $table->timestamp('deleted_at')->nullable();
+            $table->unsignedTinyInteger('is_published')->nullable()->default(0);
+            $table->string('published_by', 50)->nullable();
             $table->timestamps();
         });
     }
