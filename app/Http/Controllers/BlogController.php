@@ -18,13 +18,13 @@ use Illuminate\Support\Facades\Log;
 use App\Core\Enums\ElasticsearchEnum;
 use App\Helpers\Activity;
 
-class PostsController extends Controller
+class BlogController extends Controller
 {
 
     public $limit;
 
     /**
-     * PostsController constructor.
+     * BlogController constructor.
      */
     public function __construct()
     {
@@ -32,19 +32,13 @@ class PostsController extends Controller
     }
 
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * @param $slug
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function index(Request $request)
+    public function detail($slug)
     {
-        $countPublishPosts = Posts::where([
-            'status' => 'publish'
-        ]);
-        $posts = Posts::orderBy('id', 'DESC')->paginate($this->limit);
-        $categories = Category::all();
-        $countPublishPosts = $countPublishPosts->count();
-        return view('posts.index', compact('posts', 'categories', 'countPublishPosts'))->with('i', ($request->get('page', 1) - 1) * $this->limit);
+        $blog = DB::table('posts')->select('title', 'excerpt', 'content', 'author_name', 'published_at')->where('slug', $slug)->first();
+        return view('blog.detail', compact('blog'));
     }
 
     /**

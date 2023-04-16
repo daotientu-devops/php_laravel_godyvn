@@ -90,32 +90,37 @@ Route::group(['middleware' => 'auth'], function () {
     // Các trang tin tức
     // Route cũ
     Route::group(['prefix' => 'posts', 'as' => 'posts', 'middleware' => 'auth'], function () {
-        Route::get('/', ['as' => 'index', 'uses' => 'PostsController@index']);
-        Route::get('/create/{type}', ['as' => 'create', 'uses' => 'PostsController@create']);
-        Route::post('/store/{type}', ['as' => 'store', 'uses' => 'PostsController@store']);
-        Route::get('/show/{id}', ['as' => 'show', 'uses' => 'PostsController@show']);
-        Route::get('/edit/{id}', ['as' => 'edit', 'uses' => 'PostsController@edit']);
-        Route::post('/update/{id}', ['as' => 'update', 'uses' => 'PostsController@update']);
-        Route::get('/delete/{id}', ['as' => 'delete', 'uses' => 'PostsController@destroy']);
-        Route::get('/preview/{id}', ['as' => 'preview', 'uses' => 'PostsController@preview']);
-        Route::get('/search', ['as' => 'search', 'uses' => 'PostsController@search']);
+        Route::get('/', ['as' => 'index', 'uses' => 'BlogController@index']);
+        Route::get('/create/{type}', ['as' => 'create', 'uses' => 'BlogController@create']);
+        Route::post('/store/{type}', ['as' => 'store', 'uses' => 'BlogController@store']);
+        Route::get('/show/{id}', ['as' => 'show', 'uses' => 'BlogController@show']);
+        Route::get('/edit/{id}', ['as' => 'edit', 'uses' => 'BlogController@edit']);
+        Route::post('/update/{id}', ['as' => 'update', 'uses' => 'BlogController@update']);
+        Route::get('/delete/{id}', ['as' => 'delete', 'uses' => 'BlogController@destroy']);
+        Route::get('/preview/{id}', ['as' => 'preview', 'uses' => 'BlogController@preview']);
+        Route::get('/search', ['as' => 'search', 'uses' => 'BlogController@search']);
     });
-    // Route mới
-    Route::group(['prefix' => 'category/{categoryId?}/posts', 'as' => 'posts', 'middleware' => 'auth'], function () {
-        Route::get('/', ['as' => 'index', 'uses' => 'PostsController@index']);
-        Route::get('/create/{type}', ['as' => 'create', 'uses' => 'PostsController@create']);
-        Route::post('/store/{type}', ['as' => 'store', 'uses' => 'PostsController@store']);
-        Route::get('/show/{id}', ['as' => 'show', 'uses' => 'PostsController@show']);
-        Route::get('/edit/{id}', ['as' => 'edit', 'uses' => 'PostsController@edit']);
-        Route::post('/update/{id}', ['as' => 'update', 'uses' => 'PostsController@update']);
-        Route::get('/delete/{id}', ['as' => 'delete', 'uses' => 'PostsController@destroy']);
-        Route::get('/preview/{id}', ['as' => 'preview', 'uses' => 'PostsController@preview']);
-        Route::get('/search', ['as' => 'search', 'uses' => 'PostsController@search']);
-        // Quản trị tin nổi bật
-        Route::get('/highlight/{id?}', ['uses' => 'PostsController@highlight']);
-        Route::post('/addHighlight', ['uses' => 'PostsController@addHighlight']);
-        Route::post('/removeHighlight', ['uses' => 'PostsController@removeHighlight']);
-        Route::post('/orderHighlight', ['uses' => 'PostsController@orderHighlight']);
+    // Trang quản trị những câu hỏi thường gặp
+    Route::group(['prefix' => 'frequently-questions', 'as' => 'q&a'], function () {
+        Route::get('/', ['as' => 'index', 'uses' => 'QuestionController@index']);
+        Route::get('/create', ['uses' => 'QuestionController@create']);
+        Route::post('/store', ['uses' => 'QuestionController@store']);
+        Route::get('/show/{id?}', ['uses' => 'QuestionController@show']);
+        Route::get('/show/{question_id?}/answer/{action?}/{answer_id?}', ['uses' => 'QuestionController@show']);
+        Route::get('/edit/{id?}', ['uses' => 'QuestionController@edit']);
+        Route::get('/edit/{question_id?}/answer/{action?}/{answer_id?}', ['uses' => 'QuestionController@edit']);
+        Route::post('/update/{id?}', ['uses' => 'QuestionController@update']);
+        Route::get('/delete/{id?}', ['uses' => 'QuestionController@destroy']);
+    });
+    Route::group(['prefix' => 'frequently-answers', 'as' => 'q&a'], function () {
+        Route::get('/', ['as' => 'index', 'uses' => 'AnswerController@index']);
+        Route::get('/create', ['uses' => 'AnswerController@create']);
+        Route::post('/store', ['uses' => 'AnswerController@store']);
+        Route::get('/show/{id?}', ['uses' => 'AnswerController@show']);
+        Route::get('/edit/{id?}', ['uses' => 'AnswerController@edit']);
+        Route::post('/update/{id?}', ['uses' => 'AnswerController@update']);
+        Route::get('/delete/{id?}', ['uses' => 'AnswerController@destroy']);
+        Route::get('/index/all', ['uses' => 'AnswerController@indexAllAnswersToElasticsearch']);
     });
     // Đường dẫn allow upload ảnh từ trong ckeditor
     Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');

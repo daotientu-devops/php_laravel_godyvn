@@ -104,32 +104,32 @@
 
                 <div class="ta-center mt-12">
                     <a
-                            href="https://gody.vn/chau-a/viet-nam/kien-giang"
+                            href="{{url('/')}}/chau-a/viet-nam/kien-giang"
                             title="Ph&uacute; Quốc"
                             class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
                     >Ph&uacute; Quốc</a>
                     <a
-                            href="https://gody.vn/chau-a/viet-nam/lao-cai"
+                            href="{{url('/')}}/chau-a/viet-nam/lao-cai"
                             title="Sapa"
                             class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
                     >Sapa</a>
                     <a
-                            href="https://gody.vn/chau-a/viet-nam/da-nang"
+                            href="{{url('/')}}/chau-a/viet-nam/da-nang"
                             title="Đ&agrave; Nẵng"
                             class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
                     >Đ&agrave; Nẵng</a>
                     <a
-                            href="https://gody.vn/chau-a/viet-nam/lam-dong"
+                            href="{{url('/')}}/chau-a/viet-nam/lam-dong"
                             title="Đ&agrave; Lạt"
                             class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
                     >Đ&agrave; Lạt</a>
                     <a
-                            href="https://gody.vn/chau-a/Japan"
+                            href="{{url('/')}}/chau-a/Japan"
                             title="Nhật Bản"
                             class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
                     >Nhật Bản</a>
                     <a
-                            href="https://gody.vn/chau-a/taiwan"
+                            href="{{url('/')}}/chau-a/taiwan"
                             title="Đ&agrave;i Loan"
                             class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
                     >Đ&agrave;i Loan</a>
@@ -435,7 +435,7 @@
                             </div>
                             <div class="w-fit d-flex" style="justify-content: flex-end!important;">
                                 <a
-                                        href="https://gody.vn/du-lich"
+                                        href="{{url('/')}}/du-lich"
                                         class="fs-20 fw-600 fc-fourteenth td-underline"
                                 >Xem thêm</a>
                             </div>
@@ -812,7 +812,7 @@
                                 <div class=" xs:mt-5 ps-relative c-pointer px-20 mt-15 " data-x="my-20">
                                     <div class="_i-content-t">
                                         <a
-                                                href="https://gody.vn/bai-viet/review-nha-trang-vinh-bien-dep-nhat-the-gioi-voi-thanh-pho-em-a-nam-ngay-ben-bo-bien-10923"
+                                                href="{{url('/')}}/bai-viet/review-nha-trang-vinh-bien-dep-nhat-the-gioi-voi-thanh-pho-em-a-nam-ngay-ben-bo-bien-10923"
                                                 data-class="mb-5 truncate-line lineclamp2 fs-28 fc-black fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 lh-24 xs:fs-24 xs:my-10"
                                                 class=" tt-capitalize fs-28 fc-fourteenth fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 xs:fs-24 xs:my-0 my-10 d-block w-fit h:fc-sixth"
                                                 style="line-height: 120%;padding-top: 10px !important;margin-top: 0px !important;"
@@ -864,7 +864,7 @@
                                 <div class="fl-1 ml-20 xs:ml-10 ps-relative c-pointer">
                                     <div class="_i-content-t">
                                         <a
-                                                href="https://gody.vn/bai-viet/nha-co-huynh-thuy-le-sa-dec-10842"
+                                                href="{{url('/')}}/bai-viet/nha-co-huynh-thuy-le-sa-dec-10842"
                                                 class=" mb-5 truncate-line lineclamp2 fs-22 fc-fourteenth fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 xs:fs-16_5 d-xs:fs-15 xs:my-5 h:fc-sixth"
                                                 target=""
                                         >
@@ -918,7 +918,7 @@
                                 <div class="fl-1 ml-20 xs:ml-10 ps-relative c-pointer">
                                     <div class="_i-content-t">
                                         <a
-                                                href="https://gody.vn/ho-chieu?utm_source=sponsored&amp;utm_medium=sponsored.posts&amp;utm_campaign=sponsored&amp;utm_id=sponsored.posts&amp;utm_content=homepage"
+                                                href="{{url('/')}}/ho-chieu?utm_source=sponsored&amp;utm_medium=sponsored.posts&amp;utm_campaign=sponsored&amp;utm_id=sponsored.posts&amp;utm_content=homepage"
                                                 class=" mb-5 truncate-line lineclamp2 fs-22 fc-fourteenth fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 xs:fs-16_5 d-xs:fs-15 xs:my-5 h:fc-sixth"
                                                 target="_blank"
                                         >
@@ -972,7 +972,7 @@
                                 <div class="fl-1 ml-20 xs:ml-10 ps-relative c-pointer">
                                     <div class="_i-content-t">
                                         <a
-                                                href="https://gody.vn/photo/tour-viet-nam-cambodia-thai-lan-5316"
+                                                href="{{url('/')}}/photo/tour-viet-nam-cambodia-thai-lan-5316"
                                                 class=" mb-5 truncate-line lineclamp2 fs-22 fc-fourteenth fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 xs:fs-16_5 d-xs:fs-15 xs:my-5 h:fc-sixth"
                                                 target=""
                                         >
@@ -1031,7 +1031,7 @@ Từ Việt Nam đến với Campuchia l&agrave; đất nước với nhiều da
                                 <div class="fl-1 ml-20 xs:ml-10 ps-relative c-pointer">
                                     <div class="_i-content-t">
                                         <a
-                                                href="https://gody.vn/bai-viet/camping-ho-nui-coc-thai-nguyen-10919"
+                                                href="{{url('/')}}/bai-viet/camping-ho-nui-coc-thai-nguyen-10919"
                                                 class=" mb-5 truncate-line lineclamp2 fs-22 fc-fourteenth fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 xs:fs-16_5 d-xs:fs-15 xs:my-5 h:fc-sixth"
                                                 target=""
                                         >
@@ -1098,7 +1098,7 @@ Từ Việt Nam đến với Campuchia l&agrave; đất nước với nhiều da
                                 <div class="fl-1 ml-20 xs:ml-10 ps-relative c-pointer">
                                     <div class="_i-content-t">
                                         <a
-                                                href="https://gody.vn/bai-viet/tham-pho-co-hoi-an-10908"
+                                                href="{{url('/')}}/bai-viet/tham-pho-co-hoi-an-10908"
                                                 class=" mb-5 truncate-line lineclamp2 fs-22 fc-fourteenth fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 xs:fs-16_5 d-xs:fs-15 xs:my-5 h:fc-sixth"
                                                 target=""
                                         >
@@ -1380,7 +1380,7 @@ Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c
                                 <div class="fl-1 ml-20 xs:ml-10 ps-relative c-pointer">
                                     <div class="_i-content-t">
                                         <a
-                                                href="https://gody.vn/photo/pho-co-hoi-an-5313"
+                                                href="{{url('/')}}/photo/pho-co-hoi-an-5313"
                                                 class=" mb-5 truncate-line lineclamp2 fs-22 fc-fourteenth fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 xs:fs-16_5 d-xs:fs-15 xs:my-5 h:fc-sixth"
                                                 target=""
                                         >
@@ -1443,7 +1443,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                 <div class="fl-1 ml-20 xs:ml-10 ps-relative c-pointer">
                                     <div class="_i-content-t">
                                         <a
-                                                href="https://gody.vn/bai-viet/trai-nghiem-phu-quoc-4n3d-10906"
+                                                href="{{url('/')}}/bai-viet/trai-nghiem-phu-quoc-4n3d-10906"
                                                 class=" mb-5 truncate-line lineclamp2 fs-22 fc-fourteenth fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 xs:fs-16_5 d-xs:fs-15 xs:my-5 h:fc-sixth"
                                                 target=""
                                         >
@@ -1498,7 +1498,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                 <div class="fl-1 ml-20 xs:ml-10 ps-relative c-pointer">
                                     <div class="_i-content-t">
                                         <a
-                                                href="https://gody.vn/bai-viet/ladakh-diem-du-lich-10905"
+                                                href="{{url('/')}}/bai-viet/ladakh-diem-du-lich-10905"
                                                 class=" mb-5 truncate-line lineclamp2 fs-22 fc-fourteenth fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 xs:fs-16_5 d-xs:fs-15 xs:my-5 h:fc-sixth"
                                                 target=""
                                         >
@@ -1553,7 +1553,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                 <div class="fl-1 ml-20 xs:ml-10 ps-relative c-pointer">
                                     <div class="_i-content-t">
                                         <a
-                                                href="https://gody.vn/bai-viet/san-may-mang-den-10900"
+                                                href="{{url('/')}}/bai-viet/san-may-mang-den-10900"
                                                 class=" mb-5 truncate-line lineclamp2 fs-22 fc-fourteenth fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 xs:fs-16_5 d-xs:fs-15 xs:my-5 h:fc-sixth"
                                                 target=""
                                         >
@@ -1608,7 +1608,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                 <div class="fl-1 ml-20 xs:ml-10 ps-relative c-pointer">
                                     <div class="_i-content-t">
                                         <a
-                                                href="https://gody.vn/bai-viet/ca-phe-oanh-quan-ca-phe-toan-cay-xanh-o-trung-tam-binh-thanh-10901"
+                                                href="{{url('/')}}/bai-viet/ca-phe-oanh-quan-ca-phe-toan-cay-xanh-o-trung-tam-binh-thanh-10901"
                                                 class=" mb-5 truncate-line lineclamp2 fs-22 fc-fourteenth fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 xs:fs-16_5 d-xs:fs-15 xs:my-5 h:fc-sixth"
                                                 target=""
                                         >
@@ -1663,7 +1663,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                                 <div class="fl-1 ml-20 xs:ml-10 ps-relative c-pointer">
                                     <div class="_i-content-t">
                                         <a
-                                                href="https://gody.vn/bai-viet/cuc-bac-lung-cu-ha-giang-10902"
+                                                href="{{url('/')}}/bai-viet/cuc-bac-lung-cu-ha-giang-10902"
                                                 class=" mb-5 truncate-line lineclamp2 fs-22 fc-fourteenth fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 xs:fs-16_5 d-xs:fs-15 xs:my-5 h:fc-sixth"
                                                 target=""
                                         >
@@ -1696,374 +1696,374 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
 
                     <!-- -->
                 </div>
-                <div class="w-fit d-flex mt-30 mb-30" style="justify-content: flex-end!important;">
-                    <a
-                            href="https://gody.vn/blog"
-                            class="fs-20 fw-600 fc-fourteenth td-underline h:fc-primary h:bb h:bc-primary"
-                    >Xem tất cả</a>
-                </div>
+                {{--<div class="w-fit d-flex mt-30 mb-30" style="justify-content: flex-end!important;">--}}
+                    {{--<a--}}
+                            {{--href="{{url('/')}}/blog"--}}
+                            {{--class="fs-20 fw-600 fc-fourteenth td-underline h:fc-primary h:bb h:bc-primary"--}}
+                    {{-->Xem tất cả</a>--}}
+                {{--</div>--}}
             </div>
         </div>
         <div class="col-md-3 pl-30">
-            <div class="d-block w-fit mb-25">
-                <span class="w-fit d-block fc-black fw-700 fs-26 lh-24">Hoạt động mới nhất</span>
-            </div>
-            <div class="w-fit d-block mb-25">
-                <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
-                    <div class="d-flex ai-start ps-relative mt-22">
-                        <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="{{url('/')}}/blog/sontung9796" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
-                                <img
-                                        data-src="https://gody.vn/public/v3/images/user/avatar/sontung9796/24961357-20190611161027.jpeg"
-                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/sontung9796/24961357-20190611161027.jpeg"
-                                        class="lazy-load w-fit h-fit object-cover object-center"
-                                        alt="Son N Tung"
-                                >
-                            </a>
-                        </div>
-                        <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
-                            <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a href="{{url('/')}}/blog/sontung9796" class="fc-nineth fw-500">Son N Tung</a>
-                                <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a href="{{url('/')}}/bai-viet/tham-pho-co-hoi-an-10908?action=review" class="fc-nineth fw-500"> THĂM PHỐ CỔ HỘI AN</a>
-                            </p>
-                            <a href="{{url('/')}}/bai-viet/tham-pho-co-hoi-an-10908?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">Hội An giờ c&oacute; điểm đến n&agrave;o mới kh&ocirc;ng ah, loay hoay c&oacute; v&agrave;i địa điểm đi cũng nhiều rồi ;)</a>
-                        </div>
-                    </div>    </div>
-                <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
-                    <div class="d-flex ai-start ps-relative mt-22">
-                        <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="{{url('/')}}/blog/thanhnguyen8829" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
-                                <img
-                                        data-src="https://gody.vn/public/v3/images/user/avatar/thanhnguyen8829/111053704-20190611161234.jpeg"
-                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/thanhnguyen8829/111053704-20190611161234.jpeg"
-                                        class="lazy-load w-fit h-fit object-cover object-center"
-                                        alt="Thanh Nguyen"
-                                >
-                            </a>
-                        </div>
-                        <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
-                            <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a href="{{url('/')}}/blog/thanhnguyen8829" class="fc-nineth fw-500">Thanh Nguyen</a>
-                                <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a href="{{url('/')}}/bai-viet/ladakh-diem-du-lich-10905?action=review" class="fc-nineth fw-500"> LADAKH is calling !!!</a>
-                            </p>
-                            <a href="{{url('/')}}/bai-viet/ladakh-diem-du-lich-10905?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">hồ sơ xin visa c&oacute; nhiều giấy tờ kh&ocirc;ng ah, chứng minh t&agrave;i ch&iacute;nh bao nhi&ecirc;u l&agrave; đủ vậy bạn</a>
-                        </div>
-                    </div>    </div>
-                <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
-                    <div class="d-flex ai-start ps-relative mt-22">
-                        <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="{{url('/')}}/blog/phuonganh6069" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
-                                <img
-                                        data-src="https://gody.vn/public/v3/images/user/avatar/phuonganh6069/52724304-20190611162425.jpeg"
-                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/phuonganh6069/52724304-20190611162425.jpeg"
-                                        class="lazy-load w-fit h-fit object-cover object-center"
-                                        alt="Phuong Anh"
-                                >
-                            </a>
-                        </div>
-                        <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
-                            <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a href="{{url('/')}}/blog/phuonganh6069" class="fc-nineth fw-500">Phuong Anh</a>
-                                <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a href="{{url('/')}}/bai-viet/trai-nghiem-phu-quoc-4n3d-10906?action=review" class="fc-nineth fw-500"> Trải nghi&ecirc;̣m Phú Qu&ocirc;́c 4N3Đ</a>
-                            </p>
-                            <a href="{{url('/')}}/bai-viet/trai-nghiem-phu-quoc-4n3d-10906?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">lễ 30/4 n&agrave;y t&iacute;nh đi ph&uacute; Quốc m&agrave; sợ đ&ocirc;ng qu&aacute; huhu</a>
-                        </div>
-                    </div>    </div>
-                <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
-                    <div class="d-flex ai-start ps-relative mt-22">
-                        <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="{{url('/')}}/blog/trantai5403" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
-                                <img
-                                        data-src="https://gody.vn/public/v3/images/user/avatar/trantai5403/16087472-20190611160647.jpeg"
-                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/trantai5403/16087472-20190611160647.jpeg"
-                                        class="lazy-load w-fit h-fit object-cover object-center"
-                                        alt="Tran Tai"
-                                >
-                            </a>
-                        </div>
-                        <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
-                            <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a href="{{url('/')}}/blog/trantai5403" class="fc-nineth fw-500">Tran Tai</a>
-                                <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a href="{{url('/')}}/photo/ho-dieu-hoa-ho-son-phu-yen-5314?action=review" class="fc-nineth fw-500"> Hồ Điều Ho&agrave; Hồ Sơn- Ph&uacute; Y&ecirc;n</a>
-                            </p>
-                            <a href="{{url('/')}}/photo/ho-dieu-hoa-ho-son-phu-yen-5314?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">đẹp qu&aacute; bạn ơi, c&aacute;m ơn bạn đ&atilde; chia sẻ</a>
-                        </div>
-                    </div>    </div>
-                <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
-                    <div class="d-flex ai-start ps-relative mt-22">
-                        <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="{{url('/')}}/blog/nguyenthingochoai13126281" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
-                                <img
-                                        data-src="https://gody.vn/public/v3/images/user/avatar/nguyenthingochoai13126281/82272501-20180810133430.jpg"
-                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/nguyenthingochoai13126281/82272501-20180810133430.jpg"
-                                        class="lazy-load w-fit h-fit object-cover object-center"
-                                        alt="Ho&agrave;i Nguyễn"
-                                >
-                            </a>
-                        </div>
-                        <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
-                            <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a
-                                        href="https://gody.vn/blog/nguyenthingochoai13126281"
-                                        class="fc-nineth fw-500"
-                                >Ho&agrave;i Nguyễn</a>
-                                <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a
-                                        href="https://gody.vn/redirect-places/5806f0580b78a4b2223c9869"
-                                        class="fc-nineth fw-500"
-                                > Động Phong Nha</a>
-                            </p>
-                            <span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>
-                        </div>
-                    </div>    </div>
-                <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
-                    <div class="d-flex ai-start ps-relative mt-22">
-                        <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="{{url('/')}}/blog/nguyenthingochoai13126281" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
-                                <img
-                                        data-src="https://gody.vn/public/v3/images/user/avatar/nguyenthingochoai13126281/82272501-20180810133430.jpg"
-                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/nguyenthingochoai13126281/82272501-20180810133430.jpg"
-                                        class="lazy-load w-fit h-fit object-cover object-center"
-                                        alt="Ho&agrave;i Nguyễn"
-                                >
-                            </a>
-                        </div>
-                        <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
-                            <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a
-                                        href="https://gody.vn/blog/nguyenthingochoai13126281"
-                                        class="fc-nineth fw-500"
-                                >Ho&agrave;i Nguyễn</a>
-                                <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a
-                                        href="https://gody.vn/redirect-places/5c092934ffb295e51a3c9869"
-                                        class="fc-nineth fw-500"
-                                > Hồ T&agrave; Đ&ugrave;ng</a>
-                            </p>
-                            <span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>
-                        </div>
-                    </div>    </div>
-                <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
-                    <div class="d-flex ai-start ps-relative mt-22">
-                        <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="{{url('/')}}/blog/1116431352159453440" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
-                                <img
-                                        data-src="https://graph.facebook.com/v15.0/111643135215945/picture?type=normal"
-                                        data-srcset="https://graph.facebook.com/v15.0/111643135215945/picture?type=normal"
-                                        class="lazy-load w-fit h-fit object-cover object-center"
-                                        alt="Mart Vin"
-                                >
-                            </a>
-                        </div>
-                        <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
-                            <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a
-                                        href="https://gody.vn/blog/1116431352159453440"
-                                        class="fc-nineth fw-500"
-                                >Mart Vin</a>
-                                <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a
-                                        href="https://gody.vn/redirect-places/5db57136ffb295570f41cb58"
-                                        class="fc-nineth fw-500"
-                                > Nh&agrave; H&agrave;ng Ng&oacute;i N&acirc;u</a>
-                            </p>
-                            <span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>
-                        </div>
-                    </div>    </div>
-                <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
-                    <div class="d-flex ai-start ps-relative mt-22">
-                        <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="{{url('/')}}/blog/haisonnguyen5960" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
-                                <img
-                                        data-src="https://media2.gody.vn//public/images/user-2/2022/12/22/haisonnguyen5960/thumbnail-70/63a3f758b11dc-1671690072.jpeg"
-                                        data-srcset="https://media2.gody.vn//public/images/user-2/2022/12/22/haisonnguyen5960/thumbnail-70/63a3f758b11dc-1671690072.jpeg"
-                                        class="lazy-load w-fit h-fit object-cover object-center"
-                                        alt="Tran Anh Tuyen"
-                                >
-                            </a>
-                        </div>
-                        <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
-                            <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a
-                                        href="https://gody.vn/blog/haisonnguyen5960"
-                                        class="fc-nineth fw-500"
-                                >Tran Anh Tuyen</a>
-                                <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a
-                                        href="https://gody.vn/redirect-places/5c667601ffb295d84d3c9869"
-                                        class="fc-nineth fw-500"
-                                > Tượng Toripolisi</a>
-                            </p>
-                            <span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>
-                        </div>
-                    </div>    </div>
-                <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
-                    <div class="d-flex ai-start ps-relative mt-22">
-                        <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="{{url('/')}}/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
-                                <img
-                                        data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
-                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
-                                        class="lazy-load w-fit h-fit object-cover object-center"
-                                        alt="ihewpgwr"
-                                >
-                            </a>
-                        </div>
-                        <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
-                            <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a
-                                        href="https://gody.vn/blog/sample7287"
-                                        class="fc-nineth fw-500"
-                                >ihewpgwr</a>
-                                <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a
-                                        href="https://gody.vn/redirect-places/5c667601ffb295d84d3c9869"
-                                        class="fc-nineth fw-500"
-                                > Tượng Toripolisi</a>
-                            </p>
-                            <span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>
-                        </div>
-                    </div>    </div>
-                <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
-                    <div class="d-flex ai-start ps-relative mt-22">
-                        <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="{{url('/')}}/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
-                                <img
-                                        data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
-                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
-                                        class="lazy-load w-fit h-fit object-cover object-center"
-                                        alt="ihewpgwr"
-                                >
-                            </a>
-                        </div>
-                        <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
-                            <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a
-                                        href="https://gody.vn/blog/sample7287"
-                                        class="fc-nineth fw-500"
-                                >ihewpgwr</a>
-                                <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a
-                                        href="https://gody.vn/redirect-places/5c667601ffb295d84d3c9869"
-                                        class="fc-nineth fw-500"
-                                > Tượng Toripolisi</a>
-                            </p>
-                            <span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>
-                        </div>
-                    </div>    </div>
-                <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
-                    <div class="d-flex ai-start ps-relative mt-22">
-                        <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="{{url('/')}}/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
-                                <img
-                                        data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
-                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
-                                        class="lazy-load w-fit h-fit object-cover object-center"
-                                        alt="ihewpgwr"
-                                >
-                            </a>
-                        </div>
-                        <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
-                            <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a
-                                        href="https://gody.vn/blog/sample7287"
-                                        class="fc-nineth fw-500"
-                                >ihewpgwr</a>
-                                <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a
-                                        href="https://gody.vn/redirect-places/5c667601ffb295d84d3c9869"
-                                        class="fc-nineth fw-500"
-                                > Tượng Toripolisi</a>
-                            </p>
-                            <span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>
-                        </div>
-                    </div>    </div>
-                <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
-                    <div class="d-flex ai-start ps-relative mt-22">
-                        <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="{{url('/')}}/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
-                                <img
-                                        data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
-                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
-                                        class="lazy-load w-fit h-fit object-cover object-center"
-                                        alt="ihewpgwr"
-                                >
-                            </a>
-                        </div>
-                        <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
-                            <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a
-                                        href="https://gody.vn/blog/sample7287"
-                                        class="fc-nineth fw-500"
-                                >ihewpgwr</a>
-                                <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a
-                                        href="https://gody.vn/redirect-places/5c667601ffb295d84d3c9869"
-                                        class="fc-nineth fw-500"
-                                > Tượng Toripolisi</a>
-                            </p>
-                            <span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>
-                        </div>
-                    </div>    </div>
-                <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
-                    <div class="d-flex ai-start ps-relative mt-22">
-                        <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="{{url('/')}}/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
-                                <img
-                                        data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
-                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
-                                        class="lazy-load w-fit h-fit object-cover object-center"
-                                        alt="ihewpgwr"
-                                >
-                            </a>
-                        </div>
-                        <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
-                            <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a
-                                        href="https://gody.vn/blog/sample7287"
-                                        class="fc-nineth fw-500"
-                                >ihewpgwr</a>
-                                <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a
-                                        href="https://gody.vn/redirect-places/5c667601ffb295d84d3c9869"
-                                        class="fc-nineth fw-500"
-                                > Tượng Toripolisi</a>
-                            </p>
-                            <span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>
-                        </div>
-                    </div>    </div>
-                <div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">
-                    <div class="d-flex ai-start ps-relative mt-22">
-                        <div class="overflow-hidden bar-circle mr-12 fl-shrink0">
-                            <a href="{{url('/')}}/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">
-                                <img
-                                        data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
-                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"
-                                        class="lazy-load w-fit h-fit object-cover object-center"
-                                        alt="ihewpgwr"
-                                >
-                            </a>
-                        </div>
-                        <div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">
-                            <p class="m-0 truncate-line lineclamp2 fs-14 mb-5">
-                                <a
-                                        href="https://gody.vn/blog/sample7287"
-                                        class="fc-nineth fw-500"
-                                >ihewpgwr</a>
-                                <span class="fc-sixth"> b&igrave;nh luận trong </span>
-                                <a
-                                        href="https://gody.vn/redirect-places/5c667601ffb295d84d3c9869"
-                                        class="fc-nineth fw-500"
-                                > Tượng Toripolisi</a>
-                            </p>
-                            <span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>
-                        </div>
-                    </div>    </div>
-            </div>
+            {{--<div class="d-block w-fit mb-25">--}}
+                {{--<span class="w-fit d-block fc-black fw-700 fs-26 lh-24">Hoạt động mới nhất</span>--}}
+            {{--</div>--}}
+            {{--<div class="w-fit d-block mb-25">--}}
+                {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
+                    {{--<div class="d-flex ai-start ps-relative mt-22">--}}
+                        {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
+                            {{--<a href="{{url('/')}}/blog/sontung9796" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
+                                {{--<img--}}
+                                        {{--data-src="https://gody.vn/public/v3/images/user/avatar/sontung9796/24961357-20190611161027.jpeg"--}}
+                                        {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/sontung9796/24961357-20190611161027.jpeg"--}}
+                                        {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
+                                        {{--alt="Son N Tung"--}}
+                                {{-->--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
+                            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
+                                {{--<a href="{{url('/')}}/blog/sontung9796" class="fc-nineth fw-500">Son N Tung</a>--}}
+                                {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
+                                {{--<a href="{{url('/')}}/bai-viet/tham-pho-co-hoi-an-10908?action=review" class="fc-nineth fw-500"> THĂM PHỐ CỔ HỘI AN</a>--}}
+                            {{--</p>--}}
+                            {{--<a href="{{url('/')}}/bai-viet/tham-pho-co-hoi-an-10908?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">Hội An giờ c&oacute; điểm đến n&agrave;o mới kh&ocirc;ng ah, loay hoay c&oacute; v&agrave;i địa điểm đi cũng nhiều rồi ;)</a>--}}
+                        {{--</div>--}}
+                    {{--</div>    </div>--}}
+                {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
+                    {{--<div class="d-flex ai-start ps-relative mt-22">--}}
+                        {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
+                            {{--<a href="{{url('/')}}/blog/thanhnguyen8829" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
+                                {{--<img--}}
+                                        {{--data-src="https://gody.vn/public/v3/images/user/avatar/thanhnguyen8829/111053704-20190611161234.jpeg"--}}
+                                        {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/thanhnguyen8829/111053704-20190611161234.jpeg"--}}
+                                        {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
+                                        {{--alt="Thanh Nguyen"--}}
+                                {{-->--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
+                            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
+                                {{--<a href="{{url('/')}}/blog/thanhnguyen8829" class="fc-nineth fw-500">Thanh Nguyen</a>--}}
+                                {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
+                                {{--<a href="{{url('/')}}/bai-viet/ladakh-diem-du-lich-10905?action=review" class="fc-nineth fw-500"> LADAKH is calling !!!</a>--}}
+                            {{--</p>--}}
+                            {{--<a href="{{url('/')}}/bai-viet/ladakh-diem-du-lich-10905?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">hồ sơ xin visa c&oacute; nhiều giấy tờ kh&ocirc;ng ah, chứng minh t&agrave;i ch&iacute;nh bao nhi&ecirc;u l&agrave; đủ vậy bạn</a>--}}
+                        {{--</div>--}}
+                    {{--</div>    </div>--}}
+                {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
+                    {{--<div class="d-flex ai-start ps-relative mt-22">--}}
+                        {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
+                            {{--<a href="{{url('/')}}/blog/phuonganh6069" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
+                                {{--<img--}}
+                                        {{--data-src="https://gody.vn/public/v3/images/user/avatar/phuonganh6069/52724304-20190611162425.jpeg"--}}
+                                        {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/phuonganh6069/52724304-20190611162425.jpeg"--}}
+                                        {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
+                                        {{--alt="Phuong Anh"--}}
+                                {{-->--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
+                            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
+                                {{--<a href="{{url('/')}}/blog/phuonganh6069" class="fc-nineth fw-500">Phuong Anh</a>--}}
+                                {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
+                                {{--<a href="{{url('/')}}/bai-viet/trai-nghiem-phu-quoc-4n3d-10906?action=review" class="fc-nineth fw-500"> Trải nghi&ecirc;̣m Phú Qu&ocirc;́c 4N3Đ</a>--}}
+                            {{--</p>--}}
+                            {{--<a href="{{url('/')}}/bai-viet/trai-nghiem-phu-quoc-4n3d-10906?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">lễ 30/4 n&agrave;y t&iacute;nh đi ph&uacute; Quốc m&agrave; sợ đ&ocirc;ng qu&aacute; huhu</a>--}}
+                        {{--</div>--}}
+                    {{--</div>    </div>--}}
+                {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
+                    {{--<div class="d-flex ai-start ps-relative mt-22">--}}
+                        {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
+                            {{--<a href="{{url('/')}}/blog/trantai5403" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
+                                {{--<img--}}
+                                        {{--data-src="https://gody.vn/public/v3/images/user/avatar/trantai5403/16087472-20190611160647.jpeg"--}}
+                                        {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/trantai5403/16087472-20190611160647.jpeg"--}}
+                                        {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
+                                        {{--alt="Tran Tai"--}}
+                                {{-->--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
+                            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
+                                {{--<a href="{{url('/')}}/blog/trantai5403" class="fc-nineth fw-500">Tran Tai</a>--}}
+                                {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
+                                {{--<a href="{{url('/')}}/photo/ho-dieu-hoa-ho-son-phu-yen-5314?action=review" class="fc-nineth fw-500"> Hồ Điều Ho&agrave; Hồ Sơn- Ph&uacute; Y&ecirc;n</a>--}}
+                            {{--</p>--}}
+                            {{--<a href="{{url('/')}}/photo/ho-dieu-hoa-ho-son-phu-yen-5314?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">đẹp qu&aacute; bạn ơi, c&aacute;m ơn bạn đ&atilde; chia sẻ</a>--}}
+                        {{--</div>--}}
+                    {{--</div>    </div>--}}
+                {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
+                    {{--<div class="d-flex ai-start ps-relative mt-22">--}}
+                        {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
+                            {{--<a href="{{url('/')}}/blog/nguyenthingochoai13126281" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
+                                {{--<img--}}
+                                        {{--data-src="https://gody.vn/public/v3/images/user/avatar/nguyenthingochoai13126281/82272501-20180810133430.jpg"--}}
+                                        {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/nguyenthingochoai13126281/82272501-20180810133430.jpg"--}}
+                                        {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
+                                        {{--alt="Ho&agrave;i Nguyễn"--}}
+                                {{-->--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
+                            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/blog/nguyenthingochoai13126281"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{-->Ho&agrave;i Nguyễn</a>--}}
+                                {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/redirect-places/5806f0580b78a4b2223c9869"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{--> Động Phong Nha</a>--}}
+                            {{--</p>--}}
+                            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
+                        {{--</div>--}}
+                    {{--</div>    </div>--}}
+                {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
+                    {{--<div class="d-flex ai-start ps-relative mt-22">--}}
+                        {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
+                            {{--<a href="{{url('/')}}/blog/nguyenthingochoai13126281" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
+                                {{--<img--}}
+                                        {{--data-src="https://gody.vn/public/v3/images/user/avatar/nguyenthingochoai13126281/82272501-20180810133430.jpg"--}}
+                                        {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/nguyenthingochoai13126281/82272501-20180810133430.jpg"--}}
+                                        {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
+                                        {{--alt="Ho&agrave;i Nguyễn"--}}
+                                {{-->--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
+                            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/blog/nguyenthingochoai13126281"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{-->Ho&agrave;i Nguyễn</a>--}}
+                                {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/redirect-places/5c092934ffb295e51a3c9869"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{--> Hồ T&agrave; Đ&ugrave;ng</a>--}}
+                            {{--</p>--}}
+                            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
+                        {{--</div>--}}
+                    {{--</div>    </div>--}}
+                {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
+                    {{--<div class="d-flex ai-start ps-relative mt-22">--}}
+                        {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
+                            {{--<a href="{{url('/')}}/blog/1116431352159453440" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
+                                {{--<img--}}
+                                        {{--data-src="https://graph.facebook.com/v15.0/111643135215945/picture?type=normal"--}}
+                                        {{--data-srcset="https://graph.facebook.com/v15.0/111643135215945/picture?type=normal"--}}
+                                        {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
+                                        {{--alt="Mart Vin"--}}
+                                {{-->--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
+                            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/blog/1116431352159453440"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{-->Mart Vin</a>--}}
+                                {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/redirect-places/5db57136ffb295570f41cb58"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{--> Nh&agrave; H&agrave;ng Ng&oacute;i N&acirc;u</a>--}}
+                            {{--</p>--}}
+                            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
+                        {{--</div>--}}
+                    {{--</div>    </div>--}}
+                {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
+                    {{--<div class="d-flex ai-start ps-relative mt-22">--}}
+                        {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
+                            {{--<a href="{{url('/')}}/blog/haisonnguyen5960" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
+                                {{--<img--}}
+                                        {{--data-src="https://media2.gody.vn//public/images/user-2/2022/12/22/haisonnguyen5960/thumbnail-70/63a3f758b11dc-1671690072.jpeg"--}}
+                                        {{--data-srcset="https://media2.gody.vn//public/images/user-2/2022/12/22/haisonnguyen5960/thumbnail-70/63a3f758b11dc-1671690072.jpeg"--}}
+                                        {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
+                                        {{--alt="Tran Anh Tuyen"--}}
+                                {{-->--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
+                            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/blog/haisonnguyen5960"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{-->Tran Anh Tuyen</a>--}}
+                                {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/redirect-places/5c667601ffb295d84d3c9869"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{--> Tượng Toripolisi</a>--}}
+                            {{--</p>--}}
+                            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
+                        {{--</div>--}}
+                    {{--</div>    </div>--}}
+                {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
+                    {{--<div class="d-flex ai-start ps-relative mt-22">--}}
+                        {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
+                            {{--<a href="{{url('/')}}/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
+                                {{--<img--}}
+                                        {{--data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
+                                        {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
+                                        {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
+                                        {{--alt="ihewpgwr"--}}
+                                {{-->--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
+                            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/blog/sample7287"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{-->ihewpgwr</a>--}}
+                                {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/redirect-places/5c667601ffb295d84d3c9869"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{--> Tượng Toripolisi</a>--}}
+                            {{--</p>--}}
+                            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
+                        {{--</div>--}}
+                    {{--</div>    </div>--}}
+                {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
+                    {{--<div class="d-flex ai-start ps-relative mt-22">--}}
+                        {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
+                            {{--<a href="{{url('/')}}/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
+                                {{--<img--}}
+                                        {{--data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
+                                        {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
+                                        {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
+                                        {{--alt="ihewpgwr"--}}
+                                {{-->--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
+                            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/blog/sample7287"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{-->ihewpgwr</a>--}}
+                                {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/redirect-places/5c667601ffb295d84d3c9869"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{--> Tượng Toripolisi</a>--}}
+                            {{--</p>--}}
+                            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
+                        {{--</div>--}}
+                    {{--</div>    </div>--}}
+                {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
+                    {{--<div class="d-flex ai-start ps-relative mt-22">--}}
+                        {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
+                            {{--<a href="{{url('/')}}/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
+                                {{--<img--}}
+                                        {{--data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
+                                        {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
+                                        {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
+                                        {{--alt="ihewpgwr"--}}
+                                {{-->--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
+                            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/blog/sample7287"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{-->ihewpgwr</a>--}}
+                                {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/redirect-places/5c667601ffb295d84d3c9869"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{--> Tượng Toripolisi</a>--}}
+                            {{--</p>--}}
+                            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
+                        {{--</div>--}}
+                    {{--</div>    </div>--}}
+                {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
+                    {{--<div class="d-flex ai-start ps-relative mt-22">--}}
+                        {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
+                            {{--<a href="{{url('/')}}/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
+                                {{--<img--}}
+                                        {{--data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
+                                        {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
+                                        {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
+                                        {{--alt="ihewpgwr"--}}
+                                {{-->--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
+                            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/blog/sample7287"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{-->ihewpgwr</a>--}}
+                                {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/redirect-places/5c667601ffb295d84d3c9869"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{--> Tượng Toripolisi</a>--}}
+                            {{--</p>--}}
+                            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
+                        {{--</div>--}}
+                    {{--</div>    </div>--}}
+                {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
+                    {{--<div class="d-flex ai-start ps-relative mt-22">--}}
+                        {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
+                            {{--<a href="{{url('/')}}/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
+                                {{--<img--}}
+                                        {{--data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
+                                        {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
+                                        {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
+                                        {{--alt="ihewpgwr"--}}
+                                {{-->--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
+                            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/blog/sample7287"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{-->ihewpgwr</a>--}}
+                                {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/redirect-places/5c667601ffb295d84d3c9869"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{--> Tượng Toripolisi</a>--}}
+                            {{--</p>--}}
+                            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
+                        {{--</div>--}}
+                    {{--</div>    </div>--}}
+                {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
+                    {{--<div class="d-flex ai-start ps-relative mt-22">--}}
+                        {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
+                            {{--<a href="{{url('/')}}/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
+                                {{--<img--}}
+                                        {{--data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
+                                        {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
+                                        {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
+                                        {{--alt="ihewpgwr"--}}
+                                {{-->--}}
+                            {{--</a>--}}
+                        {{--</div>--}}
+                        {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
+                            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/blog/sample7287"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{-->ihewpgwr</a>--}}
+                                {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/redirect-places/5c667601ffb295d84d3c9869"--}}
+                                        {{--class="fc-nineth fw-500"--}}
+                                {{--> Tượng Toripolisi</a>--}}
+                            {{--</p>--}}
+                            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
+                        {{--</div>--}}
+                    {{--</div>    </div>--}}
+            {{--</div>--}}
             <div class="w-fit d-block mb-25">
                 <a>
                     <img
@@ -2072,221 +2072,6 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                             class="lazy-load"
                     />
                 </a>
-            </div>
-            <div class="w-fit d-block mb-25 ps-relative">
-                <img
-                        data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/image 37.png"
-                        data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/image 37.png"
-                        class="lazy-load"
-                />
-                <div class="w-fit d-flex ps-absolute t10" style="justify-content: center!important;">
-                    <div class="d-flex w-200 ps-relative" style="justify-content: center!important;">
-                        <input
-                                type="text"
-                                style="width: 200px;height: 38px;background: #FF8C01;border-radius: 150px;color: white;border: 1px solid white;"
-                                placeholder="Bạn muốn đi đâu?"
-                                class="fs-500 fs-14 lh-25 pl-15"
-                        >
-                        <div class="ps-absolute" style="bottom: 3px; right: 8px; ">
-                            <ion-icon name="search" style="font-size: 20px;color: white;" aria-label="search" role="img" class="md hydrated"></ion-icon>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="w-fit">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2910673600848421" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2910673600848421" data-ad-slot="4123260101" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="pb-20 p-0 m-0">
-    <div class="container">
-        <div class="row">
-            <div class="w-fit d-block  pt-20 pb-20 ">
-                <h2 class="fc-fourteenth fs-36 lh-44 fw-700">Hot Blogger</h2>
-            </div>
-            <div class="w-fit d-flex jc-space-between">
-                <div class="d-block ta-center ps-relative" style="width: 110px;">
-                    <a href="{{url('/')}}/blog/giangvansp27435" class="d-block ps-relative" style="width: 110px; height: 110px;">
-                        <img
-                                data-src="https://gody.vn/public/v3/images/user/avatar/giangvansp27435/48269043-2021_05_23_16_38_01.jpg"
-                                data-srcset="https://gody.vn/public/v3/images/user/avatar/giangvansp27435/48269043-2021_05_23_16_38_01.jpg"
-                                class="lazy-load object-cover object-center bar-circle bc-primary ba w-fit h-fit"
-                        />
-                        <img
-                                class="lazy-load w-fit h-fit ps-absolute t0 bar-circle l0 h:o50"
-                                data-src="https://h3jd9zjnmsobj.vcdn.cloud//public/v7/Linear-Gradient-04.png"
-                                data-srcset="https://h3jd9zjnmsobj.vcdn.cloud//public/v7/Linear-Gradient-04.png"
-                        >
-                    </a>
-                    <div style="position: absolute; left: 0px; top: 70px;">
-                        <span class="fc-primary fs-40 fw-700">#1</span>
-                    </div>
-                    <div class="d-block w-fit ta-center mt-15 mb-15">
-                        <a href="{{url('/')}}/blog/giangvansp27435" class="fc-fourteenth fs-19 fw-400 ta-center">Th&agrave;nh Đạo</a>
-                    </div>
-                </div>
-                <div class="d-block ta-center ps-relative" style="width: 110px;">
-                    <a href="{{url('/')}}/blog/phanhana20176995" class="d-block ps-relative" style="width: 110px; height: 110px;">
-                        <img
-                                data-src="https://lh5.googleusercontent.com/-n15Bv7FzyJA/AAAAAAAAAAI/AAAAAAAAACE/CPw-swVzaSg/photo.jpg?sz=50"
-                                data-srcset="https://lh5.googleusercontent.com/-n15Bv7FzyJA/AAAAAAAAAAI/AAAAAAAAACE/CPw-swVzaSg/photo.jpg?sz=50"
-                                class="lazy-load object-cover object-center bar-circle bc-primary ba w-fit h-fit"
-                        />
-                        <img
-                                class="lazy-load w-fit h-fit ps-absolute t0 bar-circle l0 h:o50"
-                                data-src="https://h3jd9zjnmsobj.vcdn.cloud//public/v7/Linear-Gradient-04.png"
-                                data-srcset="https://h3jd9zjnmsobj.vcdn.cloud//public/v7/Linear-Gradient-04.png"
-                        >
-                    </a>
-                    <div style="position: absolute; left: 0px; top: 70px;">
-                        <span class="fc-primary fs-40 fw-700">#2</span>
-                    </div>
-                    <div class="d-block w-fit ta-center mt-15 mb-15">
-                        <a href="{{url('/')}}/blog/phanhana20176995" class="fc-fourteenth fs-19 fw-400 ta-center">Thu hiền</a>
-                    </div>
-                </div>
-                <div class="d-block ta-center ps-relative" style="width: 110px;">
-                    <a href="{{url('/')}}/blog/minhthai.v96631" class="d-block ps-relative" style="width: 110px; height: 110px;">
-                        <img
-                                data-src="https://gody.vn/public/v3/images/user/avatar/minhthai.v96631/17637537-20190522092811.jpg"
-                                data-srcset="https://gody.vn/public/v3/images/user/avatar/minhthai.v96631/17637537-20190522092811.jpg"
-                                class="lazy-load object-cover object-center bar-circle bc-primary ba w-fit h-fit"
-                        />
-                        <img
-                                class="lazy-load w-fit h-fit ps-absolute t0 bar-circle l0 h:o50"
-                                data-src="https://h3jd9zjnmsobj.vcdn.cloud//public/v7/Linear-Gradient-04.png"
-                                data-srcset="https://h3jd9zjnmsobj.vcdn.cloud//public/v7/Linear-Gradient-04.png"
-                        >
-                    </a>
-                    <div style="position: absolute; left: 0px; top: 70px;">
-                        <span class="fc-primary fs-40 fw-700">#3</span>
-                    </div>
-                    <div class="d-block w-fit ta-center mt-15 mb-15">
-                        <a href="{{url('/')}}/blog/minhthai.v96631" class="fc-fourteenth fs-19 fw-400 ta-center">Đo&agrave;n Minh Th&aacute;i</a>
-                    </div>
-                </div>
-                <div class="d-block ta-center ps-relative" style="width: 110px;">
-                    <a href="{{url('/')}}/blog/maikakool7858" class="d-block ps-relative" style="width: 110px; height: 110px;">
-                        <img
-                                data-src="https://gody.vn/public/v3/images/user/avatar/maikakool7858/24652764-20210510104711.jpg"
-                                data-srcset="https://gody.vn/public/v3/images/user/avatar/maikakool7858/24652764-20210510104711.jpg"
-                                class="lazy-load object-cover object-center bar-circle bc-primary ba w-fit h-fit"
-                        />
-                        <img
-                                class="lazy-load w-fit h-fit ps-absolute t0 bar-circle l0 h:o50"
-                                data-src="https://h3jd9zjnmsobj.vcdn.cloud//public/v7/Linear-Gradient-04.png"
-                                data-srcset="https://h3jd9zjnmsobj.vcdn.cloud//public/v7/Linear-Gradient-04.png"
-                        >
-                    </a>
-                    <div style="position: absolute; left: 0px; top: 70px;">
-                        <span class="fc-primary fs-40 fw-700">#4</span>
-                    </div>
-                    <div class="d-block w-fit ta-center mt-15 mb-15">
-                        <a href="{{url('/')}}/blog/maikakool7858" class="fc-fourteenth fs-19 fw-400 ta-center">Tr&acirc;̀n V&acirc;n Khánh</a>
-                    </div>
-                </div>
-                <div class="d-block ta-center ps-relative" style="width: 110px;">
-                    <a href="{{url('/')}}/blog/maitam29013782" class="d-block ps-relative" style="width: 110px; height: 110px;">
-                        <img
-                                data-src="https://gody.vn/public/v3/images/user/avatar/maitam29013782/111491063-2021_04_02_10_11_19.JPG"
-                                data-srcset="https://gody.vn/public/v3/images/user/avatar/maitam29013782/111491063-2021_04_02_10_11_19.JPG"
-                                class="lazy-load object-cover object-center bar-circle bc-primary ba w-fit h-fit"
-                        />
-                        <img
-                                class="lazy-load w-fit h-fit ps-absolute t0 bar-circle l0 h:o50"
-                                data-src="https://h3jd9zjnmsobj.vcdn.cloud//public/v7/Linear-Gradient-04.png"
-                                data-srcset="https://h3jd9zjnmsobj.vcdn.cloud//public/v7/Linear-Gradient-04.png"
-                        >
-                    </a>
-                    <div style="position: absolute; left: 0px; top: 70px;">
-                        <span class="fc-primary fs-40 fw-700">#5</span>
-                    </div>
-                    <div class="d-block w-fit ta-center mt-15 mb-15">
-                        <a href="{{url('/')}}/blog/maitam29013782" class="fc-fourteenth fs-19 fw-400 ta-center">Mai Thị T&acirc;m</a>
-                    </div>
-                </div>
-                <div class="d-block ta-center ps-relative" style="width: 110px;">
-                    <a href="{{url('/')}}/blog/homero_homero20015120" class="d-block ps-relative" style="width: 110px; height: 110px;">
-                        <img
-                                data-src="https://graph.facebook.com/v2.8/1392642617501161/picture?type=normal"
-                                data-srcset="https://graph.facebook.com/v2.8/1392642617501161/picture?type=normal"
-                                class="lazy-load object-cover object-center bar-circle bc-primary ba w-fit h-fit"
-                        />
-                        <img
-                                class="lazy-load w-fit h-fit ps-absolute t0 bar-circle l0 h:o50"
-                                data-src="https://h3jd9zjnmsobj.vcdn.cloud//public/v7/Linear-Gradient-04.png"
-                                data-srcset="https://h3jd9zjnmsobj.vcdn.cloud//public/v7/Linear-Gradient-04.png"
-                        >
-                    </a>
-                    <div style="position: absolute; left: 0px; top: 70px;">
-                        <span class="fc-primary fs-40 fw-700">#6</span>
-                    </div>
-                    <div class="d-block w-fit ta-center mt-15 mb-15">
-                        <a href="{{url('/')}}/blog/homero_homero20015120" class="fc-fourteenth fs-19 fw-400 ta-center">Nguyễn Trung Ki&ecirc;n</a>
-                    </div>
-                </div>
-                <div class="d-block ta-center ps-relative" style="width: 110px;">
-                    <a href="{{url('/')}}/blog/congchua_mauhong803174" class="d-block ps-relative" style="width: 110px; height: 110px;">
-                        <img
-                                data-src="https://graph.facebook.com/v2.8/1119476461488536/picture?type=normal"
-                                data-srcset="https://graph.facebook.com/v2.8/1119476461488536/picture?type=normal"
-                                class="lazy-load object-cover object-center bar-circle bc-primary ba w-fit h-fit"
-                        />
-                        <img
-                                class="lazy-load w-fit h-fit ps-absolute t0 bar-circle l0 h:o50"
-                                data-src="https://h3jd9zjnmsobj.vcdn.cloud//public/v7/Linear-Gradient-04.png"
-                                data-srcset="https://h3jd9zjnmsobj.vcdn.cloud//public/v7/Linear-Gradient-04.png"
-                        >
-                    </a>
-                    <div style="position: absolute; left: 0px; top: 70px;">
-                        <span class="fc-primary fs-40 fw-700">#7</span>
-                    </div>
-                    <div class="d-block w-fit ta-center mt-15 mb-15">
-                        <a href="{{url('/')}}/blog/congchua_mauhong803174" class="fc-fourteenth fs-19 fw-400 ta-center">Ng&ocirc; Huệ Chi</a>
-                    </div>
-                </div>
-                <div class="d-block ta-center ps-relative" style="width: 110px;">
-                    <a href="{{url('/')}}/blog/12532935681505101494" class="d-block ps-relative" style="width: 110px; height: 110px;">
-                        <img
-                                data-src="https://gody.vn/public/v3/images/user/avatar/12532935681505101494/39057733-20191210153012.jpg"
-                                data-srcset="https://gody.vn/public/v3/images/user/avatar/12532935681505101494/39057733-20191210153012.jpg"
-                                class="lazy-load object-cover object-center bar-circle bc-primary ba w-fit h-fit"
-                        />
-                        <img
-                                class="lazy-load w-fit h-fit ps-absolute t0 bar-circle l0 h:o50"
-                                data-src="https://h3jd9zjnmsobj.vcdn.cloud//public/v7/Linear-Gradient-04.png"
-                                data-srcset="https://h3jd9zjnmsobj.vcdn.cloud//public/v7/Linear-Gradient-04.png"
-                        >
-                    </a>
-                    <div style="position: absolute; left: 0px; top: 70px;">
-                        <span class="fc-primary fs-40 fw-700">#8</span>
-                    </div>
-                    <div class="d-block w-fit ta-center mt-15 mb-15">
-                        <a href="{{url('/')}}/blog/12532935681505101494" class="fc-fourteenth fs-19 fw-400 ta-center">Đinh Ngọc Thượng</a>
-                    </div>
-                </div>
-                <div class="d-block ta-center ps-relative" style="width: 110px;">
-                    <a href="{{url('/')}}/blog/taipham0101953078" class="d-block ps-relative" style="width: 110px; height: 110px;">
-                        <img
-                                data-src="https://gody.vn/public/v3/images/user/avatar/taipham0101953078/10313121-20200818231620.jpg"
-                                data-srcset="https://gody.vn/public/v3/images/user/avatar/taipham0101953078/10313121-20200818231620.jpg"
-                                class="lazy-load object-cover object-center bar-circle bc-primary ba w-fit h-fit"
-                        />
-                        <img
-                                class="lazy-load w-fit h-fit ps-absolute t0 bar-circle l0 h:o50"
-                                data-src="https://h3jd9zjnmsobj.vcdn.cloud//public/v7/Linear-Gradient-04.png"
-                                data-srcset="https://h3jd9zjnmsobj.vcdn.cloud//public/v7/Linear-Gradient-04.png"
-                        >
-                    </a>
-                    <div style="position: absolute; left: 0px; top: 70px;">
-                        <span class="fc-primary fs-40 fw-700">#9</span>
-                    </div>
-                    <div class="d-block w-fit ta-center mt-15 mb-15">
-                        <a href="{{url('/')}}/blog/taipham0101953078" class="fc-fourteenth fs-19 fw-400 ta-center">Phạm Đức T&agrave;i</a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -2391,7 +2176,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                             <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
                                 <p>
                                     <a
-                                            href="https://gody.vn/blog/phuonganh6069"
+                                            href="{{url('/')}}/blog/phuonganh6069"
                                             class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10"
                                     >
                                         Phuong Anh
@@ -2421,7 +2206,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                             <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
                                 <p>
                                     <a
-                                            href="https://gody.vn/blog/thanhnguyen8829"
+                                            href="{{url('/')}}/blog/thanhnguyen8829"
                                             class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10"
                                     >
                                         Thanh Nguyen
@@ -2450,7 +2235,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                             <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
                                 <p>
                                     <a
-                                            href="https://gody.vn/blog/sontung9796"
+                                            href="{{url('/')}}/blog/sontung9796"
                                             class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10"
                                     >
                                         Son N Tung
@@ -2481,7 +2266,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                             <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
                                 <p>
                                     <a
-                                            href="https://gody.vn/blog/trantai5403"
+                                            href="{{url('/')}}/blog/trantai5403"
                                             class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10"
                                     >
                                         Tran Tai
@@ -2509,7 +2294,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                             <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
                                 <p>
                                     <a
-                                            href="https://gody.vn/blog/zgjl5vnfvznqi5t107xzsuq4hmu2"
+                                            href="{{url('/')}}/blog/zgjl5vnfvznqi5t107xzsuq4hmu2"
                                             class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10"
                                     >
                                         V&acirc;n L&ecirc;
@@ -2537,7 +2322,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                             <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
                                 <p>
                                     <a
-                                            href="https://gody.vn/blog/lethuy3225"
+                                            href="{{url('/')}}/blog/lethuy3225"
                                             class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10"
                                     >
                                         Le Thuy
@@ -3003,7 +2788,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
         <div class="row pt-0">
             <div class="col-md-4">
                 <a href="/" class="d-block pt-20">
-                    <img src="https://gody.vn/public/images/logo-new.png" alt="Gody Logo" class="h-40 w-130 d-block lazyload">
+                    <img src="{{url('/')}}/images/logo-new.jpg" alt="Gody Logo" class="h-40 w-130 d-block lazyload">
                 </a>
                 <div class="mt-12">
                     <p class="fc-sixth mb-5">Mạng xã hội du lịch Việt Nam</p>

@@ -30,7 +30,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/blog/viet-bai/note', function () {
         return view('blog.note');
     });
-    Route::post('/blog/viet-bai/note', ['uses' => 'PostsController@note']);
+    Route::post('/blog/viet-bai/note', ['uses' => 'BlogController@note']);
     Route::get('/photo-blog/dang-bai/note', function () {
         return view('blog.photo');
     });
@@ -49,6 +49,9 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('ban-do-du-lich/viet-nam', function () {
         return view('map.index');
     });
+    Route::get('/du-lich/{slug}', ['uses' => 'BlogController@detail']);
+    Route::get('/bai-viet/{slug}', ['uses' => 'BlogController@detail']);
+    Route::get('/photo/{slug}', ['uses' => 'BlogController@detail']);
     // Đường dẫn allow upload ảnh từ trong ckeditor
     Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');
 });
