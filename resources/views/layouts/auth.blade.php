@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>N2CMS</title>
     <!-- Bootstrap -->
-    <link href="{{ asset(env('FOLDER_PUBLIC').'/cms/public/vendors/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset(env('FOLDER_PUBLIC').'vendors/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
     <!-- Custom Theme Style -->
-    <link href="{{ asset(env('FOLDER_PUBLIC').'/cms/public/assets/css/custom.min.css') }}" rel="stylesheet">
+    <link href="{{ asset(env('FOLDER_PUBLIC').'assets/css/custom.min.css') }}" rel="stylesheet">
 </head>
 <body class="login">
 @yield('content')

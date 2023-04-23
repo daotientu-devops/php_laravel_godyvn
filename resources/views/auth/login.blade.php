@@ -8,23 +8,19 @@
         <div class="animate form login_form">
             <section class="login_content">
                 <form method="POST" action="{{ route('login') }}">
-                    @csrf
+                    {{ csrf_field() }}
                     <h1>Đăng nhập CMS</h1>
                     <div>
                         <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-                        @error('email')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ isset($message) ? $message : '' }}</strong>
                         </span>
-                        @enderror
                     </div>
                     <div>
                         <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-                        @error('password')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ isset($message) ? $message : '' }}</strong>
                         </span>
-                        @enderror
                     </div>
                     <div>
                         <button type="submit" class="btn btn-default submit">

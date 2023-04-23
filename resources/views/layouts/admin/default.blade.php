@@ -55,7 +55,7 @@
                     <a data-toggle="tooltip" data-placement="top" title="Xem frontend" href="{{ config()->get('constants.FRONTEND_URL') }}" target="_blank">
                         <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
                     </a>
-                    <a data-toggle="tooltip" data-placement="top" title="Logout" href="{{ url('/logout') }}">
+                    <a data-toggle="tooltip" data-placement="top" title="Logout" href="{{ url('/cms/logout') }}">
                         <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
                     </a>
                 </div>

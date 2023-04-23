@@ -11,11 +11,12 @@
 |
 */
 
-//Auth::routes();
+Auth::routes();
+
 // Authentication Routes...
 Route::get('cms/login', ['as' => 'login', 'uses' => 'Auth\LoginController@getLogin']);
-Route::post('login', ['uses' => 'Auth\LoginController@postLogin']);
-Route::get('logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
+Route::post('cms/login', ['uses' => 'Auth\LoginController@postLogin']);
+Route::get('cms/logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
 // Password Reset Routes...
 Route::post('password/email', [
     'as' => 'password.email',
@@ -41,30 +42,30 @@ Route::get('register', [
 Route::post('register', [
     'uses' => 'Auth\RegisterController@register'
 ]);
-Route::group(['prefix' => 'cms'], function () {//'middleware' => 'auth',
+Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
     // Trang dashboard
-    Route::get('/', 'DashboardController@index');
+    Route::get('/dashboard', 'Admin\DashboardController@index');
     // Trang quản trị category
     Route::group(['prefix' => 'categories'], function () {
         Route::get('/', ['uses' => 'Admin\CategoryController@index']);
-        Route::get('/{id?}', ['as' => 'index', 'uses' => 'CategoryController@index']);
+        Route::get('/{id?}', ['as' => 'index', 'uses' => 'Admin\CategoryController@index']);
         Route::post('/store', ['uses' => 'Admin\CategoryController@store']);
-        Route::get('/show/{id?}', ['as' => 'show', 'uses' => 'CategoryController@show']);
-        Route::get('/edit/{id?}', ['as' => 'edit', 'uses' => 'CategoryController@edit']);
-        Route::post('/update/{id?}', ['as' => 'update', 'uses' => 'CategoryController@update']);
+        Route::get('/show/{id?}', ['as' => 'show', 'uses' => 'Admin\CategoryController@show']);
+        Route::get('/edit/{id?}', ['as' => 'edit', 'uses' => 'Admin\CategoryController@edit']);
+        Route::post('/update/{id?}', ['as' => 'update', 'uses' => 'Admin\CategoryController@update']);
         Route::get('/delete/{id?}', ['uses' => 'Admin\CategoryController@destroy']);
     });
     // QUẢN TRỊ TAGS
     Route::group(['prefix' => 'tags',], function () {
-        Route::get('/', ['as' => 'index', 'uses' => 'TagsController@index']);
-        Route::post('/store', ['uses' => 'TagsController@store']);
-        Route::get('/show/{id?}', ['uses' => 'TagsController@show']);
-        Route::get('/edit/{id?}', ['uses' => 'TagsController@edit']);
-        Route::post('/edit/{id?}', ['uses' => 'TagsController@update']);
-        Route::get('/delete/{id?}', ['uses' => 'TagsController@destroy']);
-        Route::get('/search', ['uses' => 'TagsController@begin_search']);
-        Route::post('/search', ['uses' => 'TagsController@ajax_search']);
-        Route::post('/addtags', ['uses' => 'TagsController@add_tags']);
+        Route::get('/', ['as' => 'index', 'uses' => 'Admin\TagsController@index']);
+        Route::post('/store', ['uses' => 'Admin\TagsController@store']);
+        Route::get('/show/{id?}', ['uses' => 'Admin\TagsController@show']);
+        Route::get('/edit/{id?}', ['uses' => 'Admin\TagsController@edit']);
+        Route::post('/edit/{id?}', ['uses' => 'Admin\TagsController@update']);
+        Route::get('/delete/{id?}', ['uses' => 'Admin\TagsController@destroy']);
+        Route::get('/search', ['uses' => 'Admin\TagsController@begin_search']);
+        Route::post('/search', ['uses' => 'Admin\TagsController@ajax_search']);
+        Route::post('/addtags', ['uses' => 'Admin\TagsController@add_tags']);
     });
     // Quản lý điểm đến
     Route::group(['prefix' => 'locations', 'as' => 'locations'], function () {
@@ -260,7 +261,4 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');
 });
 
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'Admin\DashboardController@index');

@@ -12,8 +12,8 @@
                         <span class=" fa fa-angle-down"></span>
                     </a>
                     <ul class="dropdown-menu dropdown-usermenu pull-right">
-                        <li><a href="{{ url('account/profile') }}">Tài khoản của tôi</a></li>
-                        <li><a href="{{ url('logout') }}"><i class="fa fa-sign-out pull-right"></i> Đăng xuất</a></li>
+                        <li><a href="{{ url('cms/account/profile') }}">Tài khoản của tôi</a></li>
+                        <li><a href="{{ url('cms/logout') }}"><i class="fa fa-sign-out pull-right"></i> Đăng xuất</a></li>
                     </ul>
                 </li>
             </ul>
