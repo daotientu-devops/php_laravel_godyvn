@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Core\Controllers\Controller;
 use App\Core\Models\Setting;
@@ -14,9 +14,10 @@ class SettingController extends Controller
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function index() {
+    public function index()
+    {
         $setting = Setting::where('key', '=', 'website.config')->first();
-        return view('setting.index', compact('setting'));
+        return view('admin.setting.index', compact('setting'));
     }
 
     /**
@@ -70,7 +71,7 @@ class SettingController extends Controller
         else
             $contact = array('telephone_contact' => '', 'email_contact' => '', 'address_contact' => '', 'timer_support' => '', 'copyright_left' => '', 'copyright_right' => '');
         $allow_update_html_landingpage = Setting::select('value')->where('key', 'allow_update_html_landingpage')->orderBy('id', 'ASC')->first();
-        return view('setting.contact', compact('contact', 'allow_update_html_landingpage'));
+        return view('admin.setting.contact', compact('contact', 'allow_update_html_landingpage'));
     }
 
     /**
@@ -100,8 +101,8 @@ class SettingController extends Controller
                 'email_contact' => $request->get('email_contact'),
                 'address_contact' => $request->get('address_contact'),
                 'timer_support' => $request->get('timer_support'),
-                'logo_header_company' => ($logo_header_company) ? '/assets/images/logo/' . $logo_header_company->getClientOriginalName() : (isset($contact->logo_header_company) ? $contact->logo_header_company : null),
-                'logo_company' => ($logo_company) ? '/assets/images/logo/' . $logo_company->getClientOriginalName() : (isset($contact->logo_company) ? $contact->logo_company : null),
+                'logo_header_company' => ($logo_header_company) ? '/public/assets/images/logo/' . $logo_header_company->getClientOriginalName() : (isset($contact->logo_header_company) ? $contact->logo_header_company : null),
+                'logo_company' => ($logo_company) ? '/public/assets/images/logo/' . $logo_company->getClientOriginalName() : (isset($contact->logo_company) ? $contact->logo_company : null),
                 'copyright_left' => $request->get('copyright_left'),
                 'copyright_right' => $request->get('copyright_right'),
                 'facebook' => $request->get('facebook'),
@@ -111,11 +112,11 @@ class SettingController extends Controller
             );
             if ($logo_header_company) {
                 // Upload file to local server
-                $logo_header_company->move('assets/images/logo', $logo_header_company->getClientOriginalName());
+                $logo_header_company->move('public/assets/images/logo', $logo_header_company->getClientOriginalName());
             }
             if ($logo_company) {
                 // Upload file to local server
-                $logo_company->move('assets/images/logo', $logo_company->getClientOriginalName());
+                $logo_company->move('public/assets/images/logo', $logo_company->getClientOriginalName());
             }
             // TH setting có tồn tại ==> Update setting
             if ($setting->exists()) {
@@ -124,7 +125,7 @@ class SettingController extends Controller
                     'value' => json_encode($value),
                     'user_id' => $request->get('user_id')
                 ]);
-                return redirect('/contact')->with('message', 'Sửa thông tin liên hệ thành công');
+                return redirect('cms/contact')->with('message', 'Sửa thông tin liên hệ thành công');
             } else { // TH setting không tồn tại ==> Tạo mới setting
                 $setting = new Setting([
                     'key' => $key,
@@ -132,10 +133,10 @@ class SettingController extends Controller
                     'user_id' => $request->get('user_id')
                 ]);
                 $setting->save();
-                return redirect('/contact')->with('message', 'Tạo mới thông tin liên hệ thành công');
+                return redirect('cms/contact')->with('message', 'Tạo mới thông tin liên hệ thành công');
             }
         } catch (\Exception $exception) {
-            return redirect('/contact')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('cms/contact')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 }

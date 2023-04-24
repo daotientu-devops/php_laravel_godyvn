@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
     <div class="page-title">
         <div class="title_left">
@@ -29,8 +29,8 @@
                 </div>
                 <div class="x_content">
                     <br/>
-                    <form class="form-horizontal form-label-left input_mask" action="{{ url('page/store') }}" method="post" enctype="multipart/form-data">
-                        @csrf
+                    <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/pages/store') }}" method="post" enctype="multipart/form-data">
+                        {{ csrf_field() }}
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Tiêu đề <span
                                         class="required">*</span></label>

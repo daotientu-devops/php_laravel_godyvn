@@ -1,4 +1,3 @@
-
 <div class="col-md-6 col-sm-6 col-xs-6">
     <div class="x_panel">
         <div class="x_content">
@@ -23,10 +22,10 @@
                         </td>
                         @if (auth()->user()->role == 'admin')
                             <td>
-                                <a href='{{ url("users/edit/$user->id") }}' class="btn btn-xs">
+                                <a href='{{ url("cms/users/edit/$user->id") }}' class="btn btn-xs">
                                     <i class="fa fa-edit"></i> Edit
                                 </a>
-                                <a href='{{ url("users/delete/$user->id") }}' class="btn btn-xs" onclick="return confirm('Bạn có chắc muốn xóa user {{ $user->name }} này chứ?')">
+                                <a href='{{ url("cms/users/delete/$user->id") }}' class="btn btn-xs" onclick="return confirm('Bạn có chắc muốn xóa user {{ $user->name }} này chứ?')">
                                     <i class="fa fa-trash-o"></i> Delete
                                 </a>
                             </td>

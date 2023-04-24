@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
 <div class="row">
     @include('components.alert')
@@ -17,13 +17,13 @@
             <div class="x_content">
                 <div class="row">
                     <div class="col-md-4 col-sm-4 col-xs-4 form-group">
-                        <a href="{{ url('/posts/create/text') }}" class="btn btn-app">
+                        <a href="{{ url('cms/posts/create/text') }}" class="btn btn-app">
                             <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
                             <span class="glyphicon-class">Bài viết</span> (text + ảnh + video)
                         </a>
                     </div>
                     <div class="col-md-4 col-sm-4 col-xs-12 form-group">
-                        <a href="{{ url('/posts/create/video') }}" class="btn btn-app">
+                        <a href="{{ url('cms/posts/create/video') }}" class="btn btn-app">
                             <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>
                             <span class="glyphicon-class">Bài video</span> (video)
                         </a>
@@ -43,7 +43,7 @@
                 <div class="clearfix"></div>
             </div>
             <div class="x_content">
-                <form class="form-horizontal form-label-left" action="{{ url('/posts/search') }}" method="GET">
+                <form class="form-horizontal form-label-left" action="{{ url('cms/posts/search') }}" method="GET">
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="title">Tiêu đề <span class="required">*</span>
                         </label>
@@ -161,13 +161,13 @@
                                     </td>
                                     <td>{{ $post->updated_at }}</td>
                                     <td>
-                                        <a href='{{ config()->get('constants.FRONTEND_URL') . $post->share_url }}' class="btn btn-info btn-xs" target="_blank">
-                                            <i class="fa fa-eye"></i> Preview
-                                        </a>
-                                        <a href='{{ url("/posts/edit/$post->id") }}' class="btn btn-warning btn-xs">
+                                        {{--<a href='{{ config()->get('constants.FRONTEND_URL') . $post->share_url }}' class="btn btn-info btn-xs" target="_blank">--}}
+                                            {{--<i class="fa fa-eye"></i> Preview--}}
+                                        {{--</a>--}}
+                                        <a href='{{ url("cms/posts/edit/$post->id") }}' class="btn btn-warning btn-xs">
                                             <i class="fa fa-edit"></i> Edit
                                         </a>
-                                        <a href='{{ url("/posts/delete/$post->id") }}' class="btn btn-danger btn-xs" onclick="return confirm('Bạn có chắc muốn xóa bài viết {{ $post->title }} này chứ?')">
+                                        <a href='{{ url("cms/posts/delete/$post->id") }}' class="btn btn-danger btn-xs" onclick="return confirm('Bạn có chắc muốn xóa bài viết {{ $post->title }} này chứ?')">
                                             <i class="fa fa-trash-o"></i> Delete
                                         </a>
                                     </td>

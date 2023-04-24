@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Core\Business\UploadFileBusiness;
 use App\Core\Models\Banner;
@@ -28,7 +28,7 @@ class BannerController extends Controller
     {
         $action = 'create';
         $banners = DB::table('banners')->select('id', 'name', 'file')->paginate($this->limit);
-        return view('banner.index', compact('action', 'banners'));
+        return view('admin.banner.index', compact('action', 'banners'));
     }
 
     /**
@@ -63,7 +63,7 @@ class BannerController extends Controller
 
             // check exists of name
             if (Banner::where('title', '=', $title)->exists()) {
-                return redirect('banner')->with('error', "Banner '" . $title . "' đã tồn tại");
+                return redirect('cms/banners')->with('error', "Banner '" . $title . "' đã tồn tại");
             } else {
                 // Ok then save
                 if ($file) {
@@ -71,7 +71,7 @@ class BannerController extends Controller
                 }
                 TableMysql::resetAutoIncrement('banners'); // id bảng banners không liên quan tới bảng khác
                 $banner->save();
-                return redirect('banner/edit/' . $banner->id)->with('message', "Tạo mới banner '" . $title . "' thành công");
+                return redirect('cms/banners/edit/' . $banner->id)->with('message', "Tạo mới banner '" . $title . "' thành công");
             }
         } catch (\Exception $exception) {
             return back()->with('error', 'Lỗi tạo mới banner: ' . $exception->getMessage());
@@ -89,7 +89,7 @@ class BannerController extends Controller
         $action = 'edit';
         $banner = DB::table('banners')->select('id', 'title', 'name', 'file', 'position', 'user_id')->where('id', $id)->first();
         $banners = DB::table('banners')->select('id', 'title', 'name')->paginate($this->limit);
-        return view('banner.form', compact('action', 'banner', 'banners'));
+        return view('admin.banner.form', compact('action', 'banner', 'banners'));
     }
 
     /**
@@ -142,7 +142,7 @@ class BannerController extends Controller
         try {
             $banner = Banner::find($id);
             $banner->delete();
-            return redirect('banner')->with('message', 'Xóa banner ' . $banner->title . ' thành công');
+            return redirect('cms/banners')->with('message', 'Xóa banner ' . $banner->title . ' thành công');
         } catch (Exception $exception) {
             Log::error($exception->getMessage());
             return back()->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());

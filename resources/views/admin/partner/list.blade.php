@@ -12,7 +12,7 @@
             </div>
             <div class="x_content">
                 <div id="partner_message">
-                    @include('partner.item')
+                    @include('admin.partner.item')
                 </div>
             </div>
         </div>

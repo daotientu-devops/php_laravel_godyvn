@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Core\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -29,7 +29,7 @@ class UserController extends Controller
         $limit = config()->get('constants.LIMIT_DATA_PAGINATE');
         $users = User::paginate($limit);
         $roles = Role::all();
-        return view('users.index', compact('users', 'roles'))
+        return view('admin.users.index', compact('users', 'roles'))
             ->with('i', ($request->get('page', 1) - 1) * $limit);
     }
 
@@ -71,7 +71,7 @@ class UserController extends Controller
         $users = User::all();
         $roles = Role::all();
         $userRole = $user->roles->pluck('id');
-        return view('users.form', compact('action', 'user', 'users', 'roles', 'userRole'));
+        return view('admin.users.form', compact('action', 'user', 'users', 'roles', 'userRole'));
     }
 
     /**
@@ -87,7 +87,7 @@ class UserController extends Controller
         $users = User::all();
 //        $roles = Role::all();
 //        $userRole = $user->roles->pluck('id');
-        return view('users.form', compact('action', 'user', 'users'));
+        return view('admin.users.form', compact('action', 'user', 'users'));
     }
 
     /**
@@ -132,9 +132,9 @@ class UserController extends Controller
         try {
             $user = User::find($id);
             $user->delete();
-            return redirect('/users')->with('message', 'Xóa user ' . $user->name . ' thành công');
+            return redirect('cms/users')->with('message', 'Xóa user ' . $user->name . ' thành công');
         } catch (\Exception $exception) {
-            return redirect('/users')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('cms/users')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 }

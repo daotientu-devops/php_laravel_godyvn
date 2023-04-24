@@ -1,8 +1,8 @@
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
 <div class="page-title">
     <div class="title_left">
-        <h3><a href="{{ url('posts/highlight') }}" title="Tất cả viết nổi bật">Tất cả bài viết nổi bật</a>&nbsp;<small>&rArr;&nbsp;Kéo thả bài viết có sẵn vào danh sách bài viết nổi bật</small></h3>
+        <h3><a href="{{ url('cms/posts/highlight') }}" title="Tất cả viết nổi bật">Tất cả bài viết nổi bật</a>&nbsp;<small>&rArr;&nbsp;Kéo thả bài viết có sẵn vào danh sách bài viết nổi bật</small></h3>
         <select class="form-control" name="category_id">
             <option value="">-- Chọn danh mục bài viết nổi bật --</option>
             @foreach ($categories as $category)
@@ -28,7 +28,7 @@
             </div>
             <div class="x_content">
                 <form class="form-horizontal form-label-left" id="highlight_form">
-                    @csrf
+                    {{ csrf_field() }}
                     <table class="table">
                         <tbody id="list1" class="lists">
                         <tr>
@@ -111,7 +111,7 @@
             </div>
         </div>
     </div>
-    @include('posts.list')
+    @include('admin.posts.list')
 </div>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script>

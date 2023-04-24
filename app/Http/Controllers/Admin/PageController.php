@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Core\Business\UploadFileBusiness;
 use App\Core\Controllers\Controller;
@@ -20,7 +20,7 @@ class PageController extends Controller
     public function index()
     {
         $pages = Page::where('type', '!=', 'landing')->get();
-        return view('page.index', compact('pages'));
+        return view('admin.page.index', compact('pages'));
     }
 
     /**
@@ -31,7 +31,7 @@ class PageController extends Controller
     public function create()
     {
         $categories = Category::all();
-        return view('page.create', compact('categories'));
+        return view('admin.page.create', compact('categories'));
     }
 
     /**
@@ -49,7 +49,7 @@ class PageController extends Controller
                 'status' => 'required'
             ]);
             $title = $request->get('title');
-            $slug = sanitize($title);
+            $slug = $this->sanitize($title);
             $content = $request->get('content');
             $plain_text = strip_tags($content);
             $file = $request->thumbnail_url;
@@ -83,17 +83,17 @@ class PageController extends Controller
             // Tạo slug và check trùng slug (name)
             // Not ok thì redirect với thông báo trang tĩnh đã tồn tại
             if (Page::where('slug', '=', $slug)->exists()) {
-                return redirect('/page')->with('message', 'Trang tĩnh đã tồn tại');
+                return redirect('cms/pages')->with('message', 'Trang tĩnh đã tồn tại');
             } else {
                 // Ok thì upload file và save mới
                 if ($file) {
                     UploadFileBusiness::uploadFileToFolder($file);
                 }
                 $page->save();
-                return redirect('/page')->with('message', 'Tạo mới trang tĩnh thành công');
+                return redirect('cms/pages')->with('message', 'Tạo mới trang tĩnh thành công');
             }
         } catch (\Exception $exception) {
-            return redirect('/page')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('cms/pages')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 
@@ -109,7 +109,7 @@ class PageController extends Controller
         $page = Page::find($id);
         $category = Category::find($page->category_id);
         $categories = Category::all();
-        return view('page.form', compact('action', 'page', 'category', 'categories'));
+        return view('admin.page.form', compact('action', 'page', 'category', 'categories'));
     }
 
     /**
@@ -124,7 +124,7 @@ class PageController extends Controller
         $page = Page::find($id);
         $category = Category::find($page->category_id);
         $categories = Category::all();
-        return view('page.form', compact('action', 'page', 'category', 'categories'));
+        return view('admin.page.form', compact('action', 'page', 'category', 'categories'));
     }
 
     /**
@@ -137,13 +137,13 @@ class PageController extends Controller
     public function update(Request $request, $id)
     {
         try {
-            $request->validate([
+            $this->validate($request, [
                 'title' => 'required',
                 'content' => 'required',
                 'status' => 'required'
             ]);
             $title = $request->get('title');
-            $slug = sanitize($title);
+            $slug = $this->sanitize($title);
             $content = $request->get('content');
             $plain_text = strip_tags($content);
             $file = $request->thumbnail_url;
@@ -178,9 +178,9 @@ class PageController extends Controller
                 UploadFileBusiness::uploadFileToFolder($file);
             }
             $page->save();
-            return redirect('/page')->with('message', 'Sửa trang tĩnh thành công');
+            return redirect('cms/pages')->with('message', 'Sửa trang tĩnh thành công');
         } catch (\Exception $exception) {
-            return redirect('/page')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('cms/pages')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 
@@ -195,9 +195,9 @@ class PageController extends Controller
         try {
             $page = Page::find($id);
             $page->delete();
-            return redirect('/page')->with('message', 'Xóa bài viết ' . $page->title . ' thành công');
+            return redirect('cms/pages')->with('message', 'Xóa bài viết ' . $page->title . ' thành công');
         } catch (\Exception $exception) {
-            return redirect('/page')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('cms/pages')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 }

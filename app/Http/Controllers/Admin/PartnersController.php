@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 use App\Core\Business\UploadFileBusiness;
 use App\Core\Controllers\Controller;
 use App\Core\Models\Partner;
-use App\Core\Utilities\HtmlFormatUtility;
 use Illuminate\Http\Request;
-use Config;
+use Illuminate\Support\Facades\DB;
 
 class PartnersController extends Controller
 {
@@ -29,9 +28,9 @@ class PartnersController extends Controller
         try {
             $action = 'store';
             $partners = $this->search($request);
-            return view('partner.index', compact('action','partners'));
+            return view('admin.partner.index', compact('action','partners'));
         } catch (\Exception $exception) {
-            return redirect('/partners')->with('error', 'Lỗi lấy dữ liệu đối tác: ' . $exception->getMessage());
+            return redirect('cms/partners')->with('error', 'Lỗi lấy dữ liệu đối tác: ' . $exception->getMessage());
         }
     }
 
@@ -59,14 +58,14 @@ class PartnersController extends Controller
 
             // check exists of name
             if (Partner::where('name', '=', $name)->exists()) {
-                return redirect('/partners')->with('error', "Tên: '" . $name . "' đã tồn tại");
+                return redirect('cms/partners')->with('error', "Tên: '" . $name . "' đã tồn tại");
             } else {
                 // Ok then save
                 $partner->save();
-                return redirect('/partners')->with('message', "Tạo mới đối tác '" . $name . "' thành công");
+                return redirect('cms/partners')->with('message', "Tạo mới đối tác '" . $name . "' thành công");
             }
         } catch (\Exception $exception) {
-            return redirect('/partners')->with('error', 'Lỗi tạo mới đối tác: ' . $exception->getMessage());
+            return redirect('cms/partners')->with('error', 'Lỗi tạo mới đối tác: ' . $exception->getMessage());
         }
     }
 
@@ -79,15 +78,13 @@ class PartnersController extends Controller
     {
         try {
             $action = 'edit';
-
             $partner = Partner::find($id);
             $partner->thumb_url = $partner->thumb_url != ''?$this->get_url_static_image() . $partner->thumb_url:'';
             $partner->logo = $partner->logo != ''?$this->get_url_static_image() . $partner->logo:'';
-
             $partners = $this->search($request);
-            return view('partner.form', compact('action','partner', 'partners'));
+            return view('admin.partner.form', compact('action','partner', 'partners'));
         } catch (\Exception $exception) {
-            return redirect('/partners')->with('error', 'Lỗi edit đối tác: ' . $exception->getMessage());
+            return redirect('cms/partners')->with('error', 'Lỗi edit đối tác: ' . $exception->getMessage());
         }
     }
 
@@ -100,31 +97,24 @@ class PartnersController extends Controller
     {
         try {
             $action = 'edit';
-
             $partner = Partner::find($id);
-
             // get the relative path of partner image
             $partner_file = $request->file('logo');
             $partner_url_save = isset($partner_file)?$this->upload($partner_file):'';
-
             // get other data from the form
             $name = $request->get('name');
             $partner->name = $name;
             $partner->logo = ($partner_url_save == ''?$partner->logo:$partner_url_save);
             $partner->url = $request->get('url');
             $partner->type = $request->get('type');
-
             // update the data
             $partner->save();
-
             // reload to view
             $partner->logo = $partner->logo != ''?$this->get_url_static_image() . $partner->logo:'';
-
             $partners = $this->search($request);
-
-            return view('partner.form', compact('action', 'partner', 'partners'));
+            return view('admin.partner.form', compact('action', 'partner', 'partners'));
         } catch (\Exception $exception) {
-            return redirect('/partner/edit/' . $id)->with('error', 'Lỗi cập nhật dữ liệu: ' . $exception->getMessage());
+            return redirect('cms/partner/edit/' . $id)->with('error', 'Lỗi cập nhật dữ liệu: ' . $exception->getMessage());
         }
     }
 
@@ -159,12 +149,12 @@ class PartnersController extends Controller
             }
             $partners = $this->search($request);
             if(isset($partners['p']) && $partners['p'] != '') {
-                return view('partner.search', compact('partners', 'str_deleted'));
+                return view('admin.partner.search', compact('partners', 'str_deleted'));
             }else{
-                return redirect('/partners')->with('message', 'Đối tác đã được xóa: '.$str_deleted);
+                return redirect('cms/partners')->with('message', 'Đối tác đã được xóa: '.$str_deleted);
             }
         } catch (\Exception $exception) {
-            return redirect('/partners')->with('error', 'Có lỗi xóa dữ liệu: ' . $exception->getMessage());
+            return redirect('cms/partners')->with('error', 'Có lỗi xóa dữ liệu: ' . $exception->getMessage());
         }
     }
 
@@ -179,21 +169,18 @@ class PartnersController extends Controller
             if($p == ''){
                 $p = trim($request->get('s_name'));
             }
-
             // search
             if($p != ''){
-                $partners = \DB::table('partners')
+                $partners = DB::table('partners')
                     ->where('name', 'LIKE', '%' . $p . '%')
                     ->orderBy('created_at', 'desc')
                     ->paginate($this->limit);
             }else{
-                $partners = \DB::table('partners')
+                $partners = DB::table('partners')
                     ->orderBy('created_at', 'desc')
                     ->paginate($this->limit);
             }
-
             $path_imgs_url = $this->get_url_static_image();
-
             // get current url ext
             $url_ext = app('request')->getQueryString();
             if ($url_ext != ''){
@@ -203,7 +190,7 @@ class PartnersController extends Controller
             }
             return ['p' => $p, 'data' => $partners, 'url_ext' => $url_ext, 'path_imgs_url' => $path_imgs_url];
         } catch (\Exception $exception) {
-            return redirect('/partners')->with('error', 'Có lỗi tìm kiếm: ' . $exception->getMessage());
+            return redirect('cms/partners')->with('error', 'Có lỗi tìm kiếm: ' . $exception->getMessage());
         }
     }
 
@@ -220,8 +207,8 @@ class PartnersController extends Controller
     /**
      * @return string
      */
-    private function get_url_static_image() {
-        //return Config::get('constants.SSH2.URL') . '/upload/';
+    private function get_url_static_image()
+    {
         return config()->get('constants.STATIC_IMAGES');
     }
 }

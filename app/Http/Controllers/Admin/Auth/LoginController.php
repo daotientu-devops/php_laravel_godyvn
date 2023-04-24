@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Core\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use App\Helpers\Activity;
 use Auth;
 
 class LoginController extends Controller
@@ -53,7 +54,7 @@ class LoginController extends Controller
         );
         // run the validation rules on the inputs from the form
         try {
-            $request->validate($rules);
+            $this->validate($request, $rules);
             // create user data for the authentication
             $userdata = array(
                 'email' => $request->get('email'),
@@ -62,10 +63,10 @@ class LoginController extends Controller
             // attempt to do the login
             if (Auth::attempt($userdata)) {
                 // validation successful
-                \Activity::addLog('Đăng nhập', 'Tài khoản ' . $userdata['email'] . ' đăng nhập CMS vào lúc ' . date('H:i A') . ' ngày ' . date('d/m/Y'));
-                return redirect('/')->with('success', 'Đăng nhập CMS thành công');
+                Activity::addLog('Đăng nhập', 'Tài khoản ' . $userdata['email'] . ' đăng nhập CMS vào lúc ' . date('H:i A') . ' ngày ' . date('d/m/Y'));
+                return redirect('cms/dashboard')->with('success', 'Đăng nhập CMS thành công');
             } else {
-                return redirect('login')->with('error', 'Tài khoản đăng nhập chưa chính xác');
+                return redirect('cms/login')->with('error', 'Tài khoản đăng nhập chưa chính xác');
             }
         } catch (\Exception $exception) {
             return redirect('login')
@@ -77,6 +78,6 @@ class LoginController extends Controller
 
     public function logout(Request $request) {
         Auth::logout();
-        return redirect('/login');
+        return redirect('cms/login');
     }
 }

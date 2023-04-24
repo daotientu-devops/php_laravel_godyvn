@@ -1,9 +1,9 @@
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
 @if($action!='create')
     <div class="page-title">
         <div class="title_left">
-            <h3><a href="{{ url('/banner') }}" title="Tạo banner">&larr; Tạo banner</a></h3>
+            <h3><a href="{{ url('cms/banners') }}" title="Tạo banner">&larr; Tạo banner</a></h3>
         </div>
     </div>
 @endif
@@ -24,8 +24,8 @@
             </div>
             <div class="x_content">
                 <br/>
-                <form class="form-horizontal form-label-left input_mask" action="{{ url('banner/update/'.$banner->id) }}" method="post" enctype="multipart/form-data">
-                @csrf
+                <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/banners/update/'.$banner->id) }}" method="post" enctype="multipart/form-data">
+                {{ csrf_field() }}
                     <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
                     <input type="hidden" name="type" value="dynamic">
                     <div class="form-group">
@@ -75,6 +75,6 @@
             </div>
         </div>
     </div>
-    @include('banner.list')
+    @include('admin.banner.list')
 </div>
 @endsection

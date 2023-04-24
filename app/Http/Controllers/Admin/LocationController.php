@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Core\Business\CategoryBusiness;
 use App\Core\Business\PostsBusiness;
@@ -41,7 +41,7 @@ class LocationController extends Controller
     public function index(Request $request)
     {
         $locations = Location::orderBy('id', 'DESC')->paginate($this->limit);
-        return view('location.index', compact('locations'))->with('i', ($request->get('page', 1) - 1) * $this->limit);
+        return view('admin.location.index', compact('locations'))->with('i', ($request->get('page', 1) - 1) * $this->limit);
     }
 
     /**
@@ -51,7 +51,7 @@ class LocationController extends Controller
      */
     public function create()
     {
-        return view('location.create');
+        return view('admin.location.create');
     }
 
     /**
@@ -87,7 +87,7 @@ class LocationController extends Controller
                 ]);
                 $location->save();
                 Activity::addLog('Tạo mới điểm đến', 'Tài khoản ' . auth()->user()->email . ' tạo mới điểm đến ' . $name . ' vào lúc ' . date('H:i A') . ' ngày ' . date('d/m/Y'));
-                return redirect('/locations/edit/' . $location->id)->with('message', 'Tạo mới điểm đến ' . $name . ' thành công');
+                return redirect('cms/locations/edit/' . $location->id)->with('message', 'Tạo mới điểm đến ' . $name . ' thành công');
             }
         } catch (\Exception $exception) {
             return redirect()->back()->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
@@ -104,7 +104,7 @@ class LocationController extends Controller
     {
         $action = 'edit';
         $location = Location::find($id);
-        return view('location.form', compact('action', 'location'));
+        return view('admin.location.form', compact('action', 'location'));
     }
 
     /**
@@ -138,7 +138,7 @@ class LocationController extends Controller
                 $location->save();
 
                 Activity::addLog('Sửa điểm đến', 'Tài khoản ' . auth()->user()->email . ' sửa điểm đến ' . $name . ' vào lúc ' . date('H:i A') . ' ngày ' . date('d/m/Y'));
-                return redirect('/locations/edit/' . $location->id)->with('message', 'Sửa điểm đến ' . $name . ' thành công');
+                return redirect('cms/locations/edit/' . $location->id)->with('message', 'Sửa điểm đến ' . $name . ' thành công');
             } else {
                 return redirect()->back()->with('error', 'Điểm đến ' . $location->name . ' không tồn tại');
             }
@@ -158,9 +158,9 @@ class LocationController extends Controller
         try {
             $location = Location::find($id);
             $location->delete();
-            return redirect('/locations')->with('message', 'Xóa điểm đến ' . $location->name . ' thành công');
+            return redirect('cms/locations')->with('message', 'Xóa điểm đến ' . $location->name . ' thành công');
         } catch (\Exception $exception) {
-            return redirect('/locations')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('cms/locations')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 }

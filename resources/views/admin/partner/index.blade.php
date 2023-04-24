@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
     <div id="posts_partner_index">
         <div class="row">
@@ -17,11 +17,11 @@
                     </div>
                     <div class="x_content">
                         <br/>
-                        @include('partner.temp')
+                        @include('admin.partner.temp')
                     </div>
                 </div>
             </div>
-        @include('partner.list')
+        @include('admin.partner.list')
 </div>
 </div>
 @endsection

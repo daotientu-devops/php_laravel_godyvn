@@ -1,5 +1,5 @@
-<form class="form-horizontal form-label-left input_mask" action="{{ url("partners" . (isset($action)?'/'.$action:'') . (isset($partner->id)?'/'.$partner->id:'') . (isset($partners['url_ext']) && $partners['url_ext'] != ''?$partners['url_ext']:'')) }}" method="post" enctype="multipart/form-data">
-    @csrf
+<form class="form-horizontal form-label-left input_mask" action="{{ url("cms/partners" . (isset($action)?'/'.$action:'') . (isset($partner->id)?'/'.$partner->id:'') . (isset($partners['url_ext']) && $partners['url_ext'] != ''?$partners['url_ext']:'')) }}" method="post" enctype="multipart/form-data">
+    {{ csrf_field() }}
     <div class="form-group">
         <label class="control-label col-md-3 col-sm-3 col-xs-12">Tên <span class="required">*</span></label>
         <div class="col-md-9 col-sm-9 col-xs-12">

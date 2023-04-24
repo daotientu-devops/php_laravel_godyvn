@@ -1,8 +1,8 @@
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
     <div class="page-title">
         <div class="title_left">
-            <h3><a href="{{ url('/locations') }}" title="Quay về danh sách điểm đến">&larr; Quay về danh sách điểm đến</a></h3>
+            <h3><a href="{{ url('cms/locations') }}" title="Quay về danh sách điểm đến">&larr; Quay về danh sách điểm đến</a></h3>
         </div>
     </div>
     <div class="clearfix"></div>
@@ -21,8 +21,8 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                    <form class="form-horizontal form-label-left input_mask" action="{{ url('/locations/store') }}" method="post" id="postForm" enctype="multipart/form-data">
-                        @csrf
+                    <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/locations/store') }}" method="post" id="postForm" enctype="multipart/form-data">
+                        {{ csrf_field() }}
                         <div class="form-group">
                             <label class="control-label col-md-2 col-sm-2 col-xs-12">Tên điểm đến <span
                                     class="required">*</span></label>

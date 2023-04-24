@@ -8,11 +8,11 @@ switch ($action) {
         break;
 }
 ?>
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
 <div class="page-title">
     <div class="title_left">
-        <h3><a href="{{ url('/posts') }}" title="Quay về danh sách các bài viết">&larr; Quay về danh sách các bài viết danh mục</a></h3>
+        <h3><a href="{{ url('cms/posts') }}" title="Quay về danh sách các bài viết">&larr; Quay về danh sách các bài viết danh mục</a></h3>
     </div>
 </div>
 <div class="clearfix"></div>
@@ -31,8 +31,8 @@ switch ($action) {
                 <div class="clearfix"></div>
             </div>
             <div class="x_content">
-                <form class="form-horizontal form-label-left input_mask" action="{{ url('/posts/update/'. $post->id) }}" method="post" id="postForm" enctype="multipart/form-data">
-                    @csrf
+                <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/posts/update/'. $post->id) }}" method="post" id="postForm" enctype="multipart/form-data">
+                    {{ csrf_field() }}
                     <div class="form-group">
                         <label class="control-label col-md-2 col-sm-2 col-xs-12">Tiêu đề <span
                                     class="required">*</span></label>

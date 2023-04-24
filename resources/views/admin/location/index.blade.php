@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
     <div class="row">
         @include('components.alert')
@@ -16,7 +16,7 @@
                 <div class="x_content">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 col-xs-4 form-group">
-                            <a href="{{ url('/locations/create') }}" class="btn btn-app">
+                            <a href="{{ url('cms/locations/create') }}" class="btn btn-app">
                                 <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
                                 <span class="glyphicon-class">Thêm mới điểm đến</span> (text + ảnh + video)
                             </a>
@@ -91,10 +91,10 @@
                                         <td>{{ $location->country }}</td>
                                         <td>{{ $location->updated_at }}</td>
                                         <td>
-                                            <a href='{{ url("/locations/edit/$location->id") }}' class="btn btn-warning btn-xs">
+                                            <a href='{{ url("cms/locations/edit/$location->id") }}' class="btn btn-warning btn-xs">
                                                 <i class="fa fa-edit"></i> Edit
                                             </a>
-                                            <a href='{{ url("/locations/delete/$location->id") }}' class="btn btn-danger btn-xs" onclick="return confirm('Bạn có chắc muốn xóa bài viết {{ $location->title }} này chứ?')">
+                                            <a href='{{ url("cms/locations/delete/$location->id") }}' class="btn btn-danger btn-xs" onclick="return confirm('Bạn có chắc muốn xóa bài viết {{ $location->title }} này chứ?')">
                                                 <i class="fa fa-trash-o"></i> Delete
                                             </a>
                                         </td>

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Core\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
@@ -23,6 +23,6 @@ class CustomerController extends Controller
     public function index()
     {
         $customers = DB::table('customers')->paginate($this->limit);
-        return view('customer.index', compact('customers'));
+        return view('admin.customer.index', compact('customers'));
     }
 }

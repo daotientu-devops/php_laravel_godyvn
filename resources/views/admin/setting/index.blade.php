@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
     <div class="row">
         @include('components.alert')
@@ -15,8 +15,8 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                    <form class="form-horizontal form-label-left input_mask" action="{{ url('setting/allowGetDynamicContent') }}" method="post" enctype="multipart/form-data">
-                        @csrf
+                    <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/setting/allowGetDynamicContent') }}" method="post" enctype="multipart/form-data">
+                        {{ csrf_field() }}
                         <input type="hidden" name="key" value="{{'website.config'}}">
                         <input type="hidden" name="user_id" value="{{(auth()->user()) ? auth()->user()->id : 0}}">
                         <div class="form-group">

@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
     <div class="page-title">
         <div class="title_left">
@@ -23,8 +23,8 @@
                 </div>
                 <div class="x_content">
                     <br/>
-                    <form class="form-horizontal form-label-left input_mask" action="{{ url('users/store') }}" method="post">
-                        @csrf
+                    <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/users/store') }}" method="post">
+                        {{ csrf_field() }}
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Họ và tên <span
                                         class="required">*</span></label>
@@ -75,6 +75,6 @@
             </div>
         </div>
         @endif
-        @include('users.list')
+        @include('admin.users.list')
     </div>
 @endsection

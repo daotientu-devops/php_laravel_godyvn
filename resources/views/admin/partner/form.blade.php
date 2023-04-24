@@ -1,9 +1,9 @@
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
     <div id="posts_partner_form">
         <div class="page-title">
             <div class="title_left">
-                <a href="{{ url('/partners') }}" title="Tạo mới đối tác" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Tạo mới đối tác</a>
+                <a href="{{ url('cms/partner') }}" title="Tạo mới đối tác" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Tạo mới đối tác</a>
             </div>
         </div>
         <div class="clearfix"></div>
@@ -23,11 +23,11 @@
                     </div>
                     <div class="x_content">
                         <br/>
-                        @include('partner.temp')
+                        @include('admin.partner.temp')
                     </div>
                 </div>
             </div>
-            @include('partner.list')
+            @include('admin.partner.list')
         </div>
     </div>
 @endsection

@@ -26,7 +26,7 @@ $i = 0;
                     <input type='checkbox' name='cbkpartner{{$i}}' id='cbkpartner{{$i}}' value='{{$val->id}}'>
                 </td>
                 <td>
-                    <a href='{{ url("partner/edit/" . $val->id . $partners['url_ext'] ) }}' id="a_partner_name{{$i}}" class="btn btn-xs">
+                    <a href='{{ url("cms/partner/edit/" . $val->id . $partners['url_ext'] ) }}' id="a_partner_name{{$i}}" class="btn btn-xs">
                         {{ $val->name }}<span style="color: #0ab21b; margin-left: 10px">{{((isset($val->is_default) && $val->is_default == 1)?'(mặc định)':'')}}</span>
                     </a>
                 </td>
@@ -36,7 +36,7 @@ $i = 0;
                     @endif
                 </td>
                 <td>
-                    <a href='{{ url("partner/edit/" . $val->id . $partners['url_ext']) }}' class="btn btn-xs">
+                    <a href='{{ url("cms/partner/edit/" . $val->id . $partners['url_ext']) }}' class="btn btn-xs">
                         <i class="fa fa-edit"></i> Edit
                     </a>
 

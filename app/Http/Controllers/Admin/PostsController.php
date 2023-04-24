@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Core\Business\CategoryBusiness;
 use App\Core\Business\PostsBusiness;
@@ -46,7 +46,7 @@ class PostsController extends Controller
         $posts = Posts::orderBy('id', 'DESC')->paginate($this->limit);
         $categories = Category::all();
         $countPublishPosts = $countPublishPosts->count();
-        return view('posts.index', compact('posts', 'categories', 'countPublishPosts'))->with('i', ($request->get('page', 1) - 1) * $this->limit);
+        return view('admin.posts.index', compact('posts', 'categories', 'countPublishPosts'))->with('i', ($request->get('page', 1) - 1) * $this->limit);
     }
 
     /**
@@ -57,7 +57,7 @@ class PostsController extends Controller
     public function create($type)
     {
         $categories = Category::select('id', 'name', 'parent_id')->where('is_actived', 1)->get();
-        return view('posts.create', compact('type', 'categories'));
+        return view('admin.posts.create', compact('type', 'categories'));
     }
 
     /**
@@ -190,7 +190,7 @@ class PostsController extends Controller
                 }
 
                 Activity::addLog('Tạo mới bài viết', 'Tài khoản ' . auth()->user()->email . ' tạo mới bài viết ' . $title . ' vào lúc ' . date('H:i A') . ' ngày ' . date('d/m/Y'));
-                return redirect('/posts/edit/' . $post->id)->with('message', 'Tạo mới bài viết ' . $title . ' thành công');
+                return redirect('cms/posts/edit/' . $post->id)->with('message', 'Tạo mới bài viết ' . $title . ' thành công');
             }
         } catch (\Exception $exception) {
             return redirect()->back()->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
@@ -217,7 +217,7 @@ class PostsController extends Controller
             ->where('post_has_tags.post_id', '=', $id)
             ->pluck('tags.name')
             ->all();
-        return view('posts.form', compact('action', 'post', 'categories', 'categoryPost', 'tagPost'));
+        return view('admin.posts.form', compact('action', 'post', 'categories', 'categoryPost', 'tagPost'));
     }
 
     /**
@@ -370,7 +370,7 @@ class PostsController extends Controller
                 if ($request->get('mode') == 'unpublish')
                     return json_encode(array('postId' => $post->id, 'message' => 'Hạ bài viết thành công'));
                 else
-                    return redirect('/posts/edit/' . $post->id)->with('message', 'Sửa bài viết ' . $title . ' thành công');
+                    return redirect('cms/posts/edit/' . $post->id)->with('message', 'Sửa bài viết ' . $title . ' thành công');
             } else {
                 return redirect()->back()->with('error', 'Bài viết ' . $post->title . ' không tồn tại');
             }
@@ -390,9 +390,9 @@ class PostsController extends Controller
         try {
             $post = Posts::find($id);
             $post->delete();
-            return redirect('/posts')->with('message', 'Xóa bài viết ' . $post->title . ' thành công');
+            return redirect('cms/posts')->with('message', 'Xóa bài viết ' . $post->title . ' thành công');
         } catch (\Exception $exception) {
-            return redirect('/posts')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('cms/posts')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 
@@ -415,7 +415,7 @@ class PostsController extends Controller
             ->pluck('tags.name')
             ->all();
         $metaTitle = $post->title;
-        return view('posts.preview', compact('category', 'disease', 'post', 'relatedPost', 'tagPost', 'metaTitle'));
+        return view('admin.posts.preview', compact('category', 'disease', 'post', 'relatedPost', 'tagPost', 'metaTitle'));
     }
 
     /**
@@ -445,7 +445,7 @@ class PostsController extends Controller
                 ])->orderBy('order')->get();
         }
         $categories = Category::whereIn('category_type', ['suc-khoe', 'hoi-dap', 'tin-tuc', 'uu-dai'])->get();
-        return view('posts.highlight', compact('category_id', 'posts', 'highlightPosts', 'categories'));
+        return view('admin.posts.highlight', compact('category_id', 'posts', 'highlightPosts', 'categories'));
     }
 
     /**
@@ -611,6 +611,6 @@ class PostsController extends Controller
             ['title', 'LIKE', '%' . trim($request->get('title')) . '%'],
             ['author_name', 'LIKE', '%' . trim($request->get('author')) . '%']
         ])->paginate($this->limit);
-        return view('posts.index', compact('categoryId', 'categories', 'dataSearch', 'posts'))->with('i', ($request->get('page', 1) - 1) * $this->limit);
+        return view('admin.posts.index', compact('categoryId', 'categories', 'dataSearch', 'posts'))->with('i', ($request->get('page', 1) - 1) * $this->limit);
     }
 }
