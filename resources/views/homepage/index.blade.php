@@ -35,20 +35,20 @@
     <link rel="stylesheet" href="https://media2.gody.vn/public/v3/plugins/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:400,500,600&amp;subset=vietnamese" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset('css/temp/Minified.css?v=1235')}}">
+    <link rel="stylesheet" href="{{asset('public/css/temp/Minified.css?v=1235')}}">
 
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/main.css?v=1235">
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/custom.css?v=1235">
-    <link rel="stylesheet" href="{{asset('css/atomic.css')}}">
+    <link rel="stylesheet" href="{{asset('public/css/atomic.css')}}">
     <link rel="stylesheet" href="https://gody.vn/public/js/vue-modules/vue2-datepicker/css/index.css"/>
     <link rel="stylesheet" href="https://media2.gody.vn/public/v3/plugins/slick/slick.css">
     <!-- bxSlider CSS file -->
     <link href="https://media2.gody.vn/public/v3/css/jquery.bxslider.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://media2.gody.vn/public/v3/perfect-scrollbar/css/perfect-scrollbar.css"/>
-    <link rel="stylesheet" href="{{asset('css/customize.css')}}"/>
+    <link rel="stylesheet" href="{{asset('public/css/customize.css')}}"/>
     <link rel="manifest" href="https://gody.vn/public/v5/js/manifest.json">
 
-    <link rel="stylesheet" href="/public/v7/css/post-detail.css?v=1235">
+    <link rel="stylesheet" href="https://gody.vn/public/v7/css/post-detail.css?v=1237">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <!--- socket io -->
     <script src="https://gody.vn/public/v3/js/socket.io-1.4.5.js"></script>
@@ -485,38 +485,6 @@
                                         </a>
                                         <div class="fl-1">
                                             <a href="{{url('/')}}/blog/thuy_do_3f" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Thuy Do</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="g-item ps-relative d-flex fd-column">
-                        <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
-                            <a href="{{url('/')}}/bai-viet/co-gi-trong-bua-an-cua-bts-o-msdonalds-the-bts-meal-8629">
-                                <img
-                                        data-src="//www.youtube.com/embed/WkUKugsKDPY"
-                                        data-srcset="//www.youtube.com/embed/WkUKugsKDPY"
-                                        style="min-height: 150px;"
-                                        class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
-                                >
-                            </a>
-                            <div class="my-10 ps-relative c-pointer">
-                                <div class="_i-content-t">
-                                    <a href="{{url('/')}}/bai-viet/co-gi-trong-bua-an-cua-bts-o-msdonalds-the-bts-meal-8629" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">C&oacute; g&igrave; trong bỮa Ăn cỦa bts Ở msdonald&#039;s  (the bts meal)</a>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="d-flex ai-center jc-space-between py-10">
-                                    <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                        <a href="{{url('/')}}/blog/15668931501845448625" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
-                                            <img
-                                                    data-src="https://gody.vn/public/v3/images/user/avatar/15668931501845448625/45173085-20210428140354.JPG"
-                                                    data-srcset="https://gody.vn/public/v3/images/user/avatar/15668931501845448625/45173085-20210428140354.JPG"
-                                                    class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
-                                            >
-                                        </a>
-                                        <div class="fl-1">
-                                            <a href="{{url('/')}}/blog/15668931501845448625" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">BIỆN KH&Aacute;NH HUYỀN</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1060,75 +1028,6 @@ Từ Việt Nam đến với Campuchia l&agrave; đất nước với nhiều da
                                 </div>
                             </div>                        </div>
                     </div>
-
-
-                    <div
-                            class="w-fit d-block item-border-top-first"
-                            style="
-                            border-bottom: 1px solid #e5e5e5;
-                            border-left: 1px solid #e5e5e5;
-                            border-right: 1px solid #e5e5e5;
-                        "
-                    >
-                        <div class="w-fit p-20 bar-8">
-                            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2910673600848421" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2910673600848421" data-ad-slot="7384810669" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-                        </div>
-                    </div>
-                    <div
-                            class="w-fit d-block item-border-top-first"
-                            style="
-                            border-bottom: 1px solid #e5e5e5;
-                            border-left: 1px solid #e5e5e5;
-                            border-right: 1px solid #e5e5e5;
-
-                        "
-                    >
-                        <div class="w-fit p-20 bar-8">
-                            <div class="ps-relative c-pointer d-flex d-ai-center box-border">
-                                <div class="fl-shrink0 xs:w-120 xs:h-84" style="background: none; width: 216px; height: 186px;">
-                                    <a href="{{url('/')}}/bai-viet/tham-pho-co-hoi-an-10908" class="d-block w-fit h-fit ps-relative" target="">
-                                        <img
-                                                data-src="blob:https://gody.vn/4c1c7d6f-c5d1-4fb2-a305-8ef00fd8ba85"
-                                                data-srcset="blob:https://gody.vn/4c1c7d6f-c5d1-4fb2-a305-8ef00fd8ba85"
-                                                alt="THĂM PHỐ CỔ HỘI AN"
-                                                class="lazy-load w-fit h-fit object-cover object-center bar-8 d-h:o50 xs:w-120 xs:h-84"
-                                        >
-                                    </a>
-                                </div>
-                                <div class="fl-1 ml-20 xs:ml-10 ps-relative c-pointer">
-                                    <div class="_i-content-t">
-                                        <a
-                                                href="{{url('/')}}/bai-viet/tham-pho-co-hoi-an-10908"
-                                                class=" mb-5 truncate-line lineclamp2 fs-22 fc-fourteenth fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 xs:fs-16_5 d-xs:fs-15 xs:my-5 h:fc-sixth"
-                                                target=""
-                                        >
-                                            THĂM PHỐ CỔ HỘI AN
-                                        </a>
-                                    </div>
-                                    <span class="c-auto _i-des fc-fourteenth fs-15 fw-400 truncate-line lineclamp2 mb-0 xs:lineclamp3 xs:lh-md td-none xs:d-none ta-justify" style="line-height: 140%;">Đến Hội An để trải nghiệm một kh&ocirc;ng gian cổ k&iacute;nh với kiến tr&uacute;c xưa c&ograve;n nguy&ecirc;n vẹn, một n&eacute;t văn h&oacute;a v&ugrave;ng miền th&uacute; vị , thưởng thức c&aacute;c m&oacute;n đặc sản miền trung giản dị ... cảm thấy y&ecirc;u mến qu&ecirc; hương VN v&ocirc; v&agrave;n.
-Hội An, điểm đến kh&ocirc;ng thể bỏ qua khi đến Quảng Nam nha c&aacute;c bạn th&acirc;n mến ?</span>
-                                    <div class="clearfix"></div>
-
-                                    <div class="d-flex ai-center jc-space-between py-10 c-auto">
-                                        <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                            <a href="{{url('/')}}/blog/2seasonsdalat9665" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
-                                                <img
-                                                        data-src="https://lh3.googleusercontent.com/a/ALm5wu0KAIdarf66LUjAzWp3THcpJP49hX9FgcrUYymATzg=s96-c"
-                                                        data-srcset="https://lh3.googleusercontent.com/a/ALm5wu0KAIdarf66LUjAzWp3THcpJP49hX9FgcrUYymATzg=s96-c"
-                                                        class="lazy-load w-fit h-fit object-cover object-center bar-circle"
-                                                        style="filter: none;"
-                                                        alt="V&otilde; Hồng Loan"
-                                                >
-                                            </a>
-                                            <div class="fl-1">
-                                                <a href="{{url('/')}}/blog/2seasonsdalat9665" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">V&otilde; Hồng Loan</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                        </div>
-                    </div>
-
 
                     <div
                             class="w-fit d-block item-border-top-first"
@@ -2788,7 +2687,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
         <div class="row pt-0">
             <div class="col-md-4">
                 <a href="/" class="d-block pt-20">
-                    <img src="{{url('/')}}/images/logo-new.jpg" alt="Gody Logo" class="h-40 w-130 d-block lazyload">
+                    <img src="{{env('FOLDER_PUBLIC')}}/assets/images/logo/logo-new.jpg" alt="Gody Logo" class="h-40 w-130 d-block lazyload">
                 </a>
                 <div class="mt-12">
                     <p class="fc-sixth mb-5">Mạng xã hội du lịch Việt Nam</p>
@@ -4265,7 +4164,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     async getPopularData() {
                         try {
                             const config = {
-                                url: '/api/v6/top-trends',
+                                url: 'https://gody.vn/api/v6/top-trends',
                                 method: 'GET',
                                 headers: {}
                             };

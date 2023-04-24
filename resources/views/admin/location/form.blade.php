@@ -79,7 +79,9 @@
                                 <textarea class="form-control" name="meta_description" rows="3" required="required">{{ $location->meta_description }}</textarea>
                             </div>
                         </div>
-                        <div class="ln_solid"></div>
+                        <div class="ln_solid">
+                            <input type="hidden" name="user_id" value="{{(auth()->user()) ? auth()->user()->id : 0}}">
+                        </div>
                         <div class="form-group">
                             <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
                                 <button class="btn btn-primary" type="submit">Lưu bài</button>

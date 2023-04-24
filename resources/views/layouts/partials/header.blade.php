@@ -53,7 +53,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:400,500,600&amp;subset=vietnamese" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{asset('css/temp/Minified.css?v=1235')}}">
+    <link rel="stylesheet" href="{{asset('public/css/temp/Minified.css?v=1235')}}">
 
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/main.css?v=1235">
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/custom.css?v=1235">
