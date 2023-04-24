@@ -133,7 +133,7 @@ class PostsController extends Controller
                 if ($category->parent_id == 0) {
                     switch ($request->get('category_id')) {
                         default:
-                            $slugParent = 'hoat-dong';
+                            $slugParent = 'bai-viet';
                             break;
                     }
                 } else {
@@ -287,7 +287,7 @@ class PostsController extends Controller
                 if ($category->parent_id == 0) {
                     switch ($request->get('category_id')) {
                         default:
-                            $slugParent = 'hoat-dong';
+                            $slugParent = 'bai-viet';
                             break;
                     }
                 } else {

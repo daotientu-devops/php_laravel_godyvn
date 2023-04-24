@@ -37,7 +37,10 @@ class BlogController extends Controller
      */
     public function detail($slug)
     {
-        $blog = DB::table('posts')->select('title', 'excerpt', 'content', 'author_name', 'published_at')->where('slug', $slug)->first();
+        $blog = DB::table('posts')->select('title', 'excerpt', 'content', 'author_name', 'published_at')->where('slug', str_replace('.html', '', $slug))->first();
+        if (empty($blog)) {
+            return redirect('/');
+        }
         return view('blog.detail', compact('blog'));
     }
 

@@ -26,9 +26,10 @@ class HomepageController extends Controller
      */
     public function index()
     {
-        $first_post = Posts::query()->take(1)->orderBy('id', 'DESC')->first();
+        $first_post = Posts::query()->where('status', Posts::STATUS_PUBLISH)->take(1)->orderBy('id', 'DESC')->first();
+        $list_posts = Posts::query()->where('status', Posts::STATUS_PUBLISH)->take(13)->skip(1)->orderBy('id', 'DESC')->get();
         $hot_locations = Location::query()->where('hot_location', 1)->take(6)->orderBy('id', 'DESC')->get();
         $partners = Partner::query()->orderBy('id', 'DESC')->get();
-        return view('homepage.index', compact('first_post', 'hot_locations', 'partners'));
+        return view('homepage.index', compact('first_post', 'list_posts', 'hot_locations', 'partners'));
     }
 }
