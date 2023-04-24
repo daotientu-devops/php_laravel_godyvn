@@ -12,7 +12,7 @@
             {{--<li><a href="{{ url('cms/setting') }}"><i class="fa fa-gear"></i>Cấu hình website</a></li>--}}
             <li><a href="{{ url('cms/contact') }}"><i class="fa fa-globe"></i>Quản lý thông tin website</a></li>
             <li><a href="{{ url('cms/customers') }}"><i class="fa fa-users"></i>Quản lý người dùng đăng ký</a></li>
-            <li><a href="{{ url('cms/partners') }}"><i class="fa fa-hand-peace-o"></i>Quản lý đối tác</a></li>
+            <li><a href="{{ url('cms/partner') }}"><i class="fa fa-hand-peace-o"></i>Quản lý đối tác</a></li>
 
 
             {{--<li><a href="{{ url('cms/solution') }}"><i class="fa fa-cube"></i>Quản lý giải pháp</a></li>--}}
