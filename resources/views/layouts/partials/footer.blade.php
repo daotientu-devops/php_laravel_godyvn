@@ -3,7 +3,7 @@
         <div class="row pt-0">
             <div class="col-md-4">
                 <a href="/" class="d-block pt-20">
-                    <img src="{{asset('/images/logo-new.jpg')}}" alt="Gody Logo" class="w-130 d-block lazyload">
+                    <img src="{{asset('cms/public/assets/images/logo/logo-new.jpg')}}" alt="Gody Logo" class="w-130 d-block lazyload">
                 </a>
                 <div class="mt-12">
                     <p class="fc-sixth mb-5">Mạng xã hội du lịch Việt Nam</p>

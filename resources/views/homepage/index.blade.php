@@ -313,7 +313,7 @@
                                     <ion-icon name="search" style="font-size: 26px; color: #333333; position: absolute; bottom: 10px;"></ion-icon>
                                 </span>
                             </div>
-                            <a href="{{url('/')}}/dich-vu-lam-ho-chieu" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">L&agrave;m hộ chiếu nhanh</a>
+                            <a href="{{url('/gioi-thieu/lam-ho-chieu-nhanh')}}" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">L&agrave;m hộ chiếu nhanh</a>
                         </div>
                     </div>
                     <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
@@ -329,7 +329,7 @@
                                     <ion-icon name="search" style="font-size: 26px; color: #333333; position: absolute; bottom: 10px;"></ion-icon>
                                 </span>
                             </div>
-                            <a href="{{url('/')}}/ve-may-bay" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">V&eacute; m&aacute;y bay </a>
+                            <a href="{{url('/gioi-thieu/ve-may-bay')}}" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">V&eacute; m&aacute;y bay </a>
                         </div>
                     </div>
                     <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
@@ -345,7 +345,7 @@
                                     <ion-icon name="search" style="font-size: 26px; color: #333333; position: absolute; bottom: 10px;"></ion-icon>
                                 </span>
                             </div>
-                            <a href="{{url('/')}}/visa" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">Visa Đ&agrave;i Loan mới nhất</a>
+                            <a href="{{url('/gioi-thieu/visa-dai-loan-moi-nhat')}}" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">Visa Đ&agrave;i Loan mới nhất</a>
                         </div>
                     </div>
                 </div>

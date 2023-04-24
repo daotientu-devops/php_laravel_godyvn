@@ -13,7 +13,7 @@
 
 Auth::routes();
 
-// Authentication Routes...
+// Backend
 Route::get('cms/login', ['as' => 'login', 'uses' => 'Auth\LoginController@getLogin']);
 Route::post('cms/login', ['uses' => 'Auth\LoginController@postLogin']);
 Route::get('cms/logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
@@ -216,7 +216,9 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
     });
 });
 
+// Frontend
 Route::group(['middleware' => 'web'], function () {
+    Route::get('gioi-thieu/{slug}', ['uses' => 'PageController@detail']);
     Route::get('/gioi-thieu', function () {
         return view('homepage.about');
     });
