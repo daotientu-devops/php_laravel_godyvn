@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Core\Models\Location;
 use Illuminate\Http\Request;
 
-class HomeController extends Controller
+class HomepageController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -23,6 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $hot_locations = Location::query()->where('hot_location', 1)->take(6)->orderBy('id', 'DESC')->get();
+        return view('homepage.index', compact('hot_locations'));
     }
 }

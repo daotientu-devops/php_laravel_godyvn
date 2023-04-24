@@ -231,9 +231,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/quy-dinh-su-dung', function () {
         return view('homepage.rule');
     });
-    Route::get('/', function () {
-        return view('homepage.index');
-    });
+    Route::get('/',  ['uses' => 'HomepageController@index']);
     Route::get('/blog/viet-bai/note', function () {
         return view('blog.note');
     });
@@ -253,6 +251,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/diem-den', function () {
         return view('destination.index');
     });
+    Route::get('/diem-den/{continent}/{country}/{city}', ['uses' => 'LocationController@detail']);
     Route::get('ban-do-du-lich/viet-nam', function () {
         return view('map.index');
     });
@@ -262,5 +261,3 @@ Route::group(['middleware' => 'web'], function () {
     // Đường dẫn allow upload ảnh từ trong ckeditor
     Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');
 });
-
-Route::get('/home', 'Admin\DashboardController@index');

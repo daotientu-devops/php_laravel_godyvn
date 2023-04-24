@@ -147,145 +147,21 @@
             </div>
             <div class="w-fit d-block">
                 <div class="w-fit d-flex jc-space-between" style="--column:6; --gutter: 100px;">
-                    <div
-                            class="ps-relative d-flex fd-column h-250 xs:h-184"
-                            style="width: calc( (100% - var(--gutter)) / var(--column) );"
-                    >
-                        <div class="ps-relative" style="height: 220px;">
-                            <a href="{{url('/')}}/chau-a/viet-nam/kien-giang">
-                                <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
-                                    <img
-                                            data-srcset="https://media2.gody.vn/public/images/place/golden-sand-bar/61afa90039e68-1638902016.jpeg"
-                                            data-src="https://media2.gody.vn/public/images/place/golden-sand-bar/61afa90039e68-1638902016.jpeg"
-                                            class="lazy-load w-fit h-fit bar-8 xs:h-120 xs:w-120 object-cover object-center h:o50"
-                                    />
-                                    <img
-                                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/services/Rectangle 53.png"
-                                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/services/Rectangle 53.png"
-                                            class="lazy-load ps-absolute b0 l0 w-fit h-fit bar-8 h:o50"
-                                    />
-                                </div>
-                            </a>
-                            <a href="{{url('/')}}/chau-a/viet-nam/kien-giang" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
-                                Ph&uacute; Quốc
-                            </a>
-                        </div>                        </div>
-                    <div
-                            class="ps-relative d-flex fd-column h-250 xs:h-184"
-                            style="width: calc( (100% - var(--gutter)) / var(--column) );"
-                    >
-                        <div class="ps-relative" style="height: 220px;">
-                            <a href="{{url('/')}}/chau-a/viet-nam/lao-cai">
-                                <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
-                                    <img
-                                            data-srcset="https://media.gody.vn/images/lao-cai/nha-tho-sapa/10-2016/20161020033948-nha-tho-sapa-gody(9).jpg"
-                                            data-src="https://media.gody.vn/images/lao-cai/nha-tho-sapa/10-2016/20161020033948-nha-tho-sapa-gody(9).jpg"
-                                            class="lazy-load w-fit h-fit bar-8 xs:h-120 xs:w-120 object-cover object-center h:o50"
-                                    />
-                                    <img
-                                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/services/Rectangle 53.png"
-                                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/services/Rectangle 53.png"
-                                            class="lazy-load ps-absolute b0 l0 w-fit h-fit bar-8 h:o50"
-                                    />
-                                </div>
-                            </a>
-                            <a href="{{url('/')}}/chau-a/viet-nam/lao-cai" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
-                                Sapa
-                            </a>
-                        </div>                        </div>
-                    <div
-                            class="ps-relative d-flex fd-column h-250 xs:h-184"
-                            style="width: calc( (100% - var(--gutter)) / var(--column) );"
-                    >
-                        <div class="ps-relative" style="height: 220px;">
-                            <a href="{{url('/')}}/chau-a/viet-nam/da-nang">
-                                <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
-                                    <img
-                                            data-srcset="https://media.gody.vn/images/da-nang/ba-na-hills/10-2016/20161017073018-ba-ba-hills-da-nang-gody%20(2).jpg"
-                                            data-src="https://media.gody.vn/images/da-nang/ba-na-hills/10-2016/20161017073018-ba-ba-hills-da-nang-gody%20(2).jpg"
-                                            class="lazy-load w-fit h-fit bar-8 xs:h-120 xs:w-120 object-cover object-center h:o50"
-                                    />
-                                    <img
-                                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/services/Rectangle 53.png"
-                                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/services/Rectangle 53.png"
-                                            class="lazy-load ps-absolute b0 l0 w-fit h-fit bar-8 h:o50"
-                                    />
-                                </div>
-                            </a>
-                            <a href="{{url('/')}}/chau-a/viet-nam/da-nang" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
-                                Đ&agrave; Nẵng
-                            </a>
-                        </div>                        </div>
-                    <div
-                            class="ps-relative d-flex fd-column h-250 xs:h-184"
-                            style="width: calc( (100% - var(--gutter)) / var(--column) );"
-                    >
-                        <div class="ps-relative" style="height: 220px;">
-                            <a href="{{url('/')}}/chau-a/viet-nam/lam-dong">
-                                <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
-                                    <img
-                                            data-srcset="https://media.gody.vn/images/lam-dong/thung-lung-tinh-yeu/1-2017/20170109030049-thung-lung-tinh-yeu-gody%20(1).jpg"
-                                            data-src="https://media.gody.vn/images/lam-dong/thung-lung-tinh-yeu/1-2017/20170109030049-thung-lung-tinh-yeu-gody%20(1).jpg"
-                                            class="lazy-load w-fit h-fit bar-8 xs:h-120 xs:w-120 object-cover object-center h:o50"
-                                    />
-                                    <img
-                                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/services/Rectangle 53.png"
-                                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/services/Rectangle 53.png"
-                                            class="lazy-load ps-absolute b0 l0 w-fit h-fit bar-8 h:o50"
-                                    />
-                                </div>
-                            </a>
-                            <a href="{{url('/')}}/chau-a/viet-nam/lam-dong" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
-                                Đ&agrave; Lạt
-                            </a>
-                        </div>                        </div>
-                    <div
-                            class="ps-relative d-flex fd-column h-250 xs:h-184"
-                            style="width: calc( (100% - var(--gutter)) / var(--column) );"
-                    >
-                        <div class="ps-relative" style="height: 220px;">
-                            <a href="{{url('/')}}/chau-a/Japan">
-                                <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
-                                    <img
-                                            data-srcset="https://media2.gody.vn/public/images/province/Niigata/613a2632955c6-1631200818.jpeg"
-                                            data-src="https://media2.gody.vn/public/images/province/Niigata/613a2632955c6-1631200818.jpeg"
-                                            class="lazy-load w-fit h-fit bar-8 xs:h-120 xs:w-120 object-cover object-center h:o50"
-                                    />
-                                    <img
-                                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/services/Rectangle 53.png"
-                                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/services/Rectangle 53.png"
-                                            class="lazy-load ps-absolute b0 l0 w-fit h-fit bar-8 h:o50"
-                                    />
-                                </div>
-                            </a>
-                            <a href="{{url('/')}}/chau-a/Japan" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
-                                Nhật Bản
-                            </a>
-                        </div>                        </div>
-                    <div
-                            class="ps-relative d-flex fd-column h-250 xs:h-184"
-                            style="width: calc( (100% - var(--gutter)) / var(--column) );"
-                    >
-                        <div class="ps-relative" style="height: 220px;">
-                            <a href="{{url('/')}}/chau-a/taiwan">
-                                <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
-                                    <img
-                                            data-srcset="https://media.gody.vn/images/hinh-tong-hop/hinh-anh-tong-hop-2/11-2018/15047553-20181119094427-hinh-tong-hop-hinh-anh-tong-hop-2.jpg"
-                                            data-src="https://media.gody.vn/images/hinh-tong-hop/hinh-anh-tong-hop-2/11-2018/15047553-20181119094427-hinh-tong-hop-hinh-anh-tong-hop-2.jpg"
-                                            class="lazy-load w-fit h-fit bar-8 xs:h-120 xs:w-120 object-cover object-center h:o50"
-                                    />
-                                    <img
-                                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/services/Rectangle 53.png"
-                                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/services/Rectangle 53.png"
-                                            class="lazy-load ps-absolute b0 l0 w-fit h-fit bar-8 h:o50"
-                                    />
-                                </div>
-                            </a>
-                            <a href="{{url('/')}}/chau-a/taiwan" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
-                                Đ&agrave;i Loan
-                            </a>
-                        </div>                        </div>
-
+                    @foreach($hot_locations as $location)
+                        <div class="ps-relative d-flex fd-column h-250 xs:h-184" style="width: calc( (100% - var(--gutter)) / var(--column) );">
+                            <div class="ps-relative" style="height: 220px;">
+                                <a href="{{url('/diem-den' . $location->share_url)}}">
+                                    <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
+                                        <img src="{{ url(env('FOLDER_UPLOAD') . $location->thumbnail_url) }}"
+                                                class="w-fit h-fit bar-8 xs:h-120 xs:w-120 object-cover object-center h:o50"/>
+                                    </div>
+                                </a>
+                                <a href="{{url('/diem-den' . $location->share_url)}}" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                                    {{ $location->name }}
+                                </a>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>

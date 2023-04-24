@@ -10,7 +10,7 @@ class UploadFileBusiness
         $yearDir = date('Y');
         $monthDir = date('m');
         $dayDir = date('d');
-        $destinationPath = public_path() . '/uploads/' . $yearDir . '/' . $monthDir . '/' . $dayDir;
+        $destinationPath = 'cms/public/uploads/' . $yearDir . '/' . $monthDir . '/' . $dayDir;
         if (!File::exists($destinationPath)) {
             File::makeDirectory($destinationPath, 0777, true);
         }

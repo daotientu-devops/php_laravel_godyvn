@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
 use App\Core\Business\CategoryBusiness;
 use App\Core\Business\PostsBusiness;
@@ -38,10 +38,10 @@ class LocationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function detail($continent, $country, $city)
     {
-        $locations = Location::orderBy('id', 'DESC')->paginate($this->limit);
-        return view('admin.location.index', compact('locations'))->with('i', ($request->get('page', 1) - 1) * $this->limit);
+        $location = Location::where('share_url', '/' . $continent . '/' . $country . '/' . $city)->orderBy('id', 'DESC')->first();
+        return view('location.detail', compact('location'));
     }
 
     /**
@@ -75,15 +75,11 @@ class LocationController extends Controller
                 // TH tạo mới mẫu
                 $location = new Location([
                     'name' => $name,
-                    'share_url' => '/'. $this->sanitize($request->get('continent')) . '/' . $this->sanitize($request->get('country')) . '/' . $this->sanitize($request->get('city')),
                     'slug' => $this->sanitize($name),
                     'continent' => $request->get('continent'),
                     'country' => $request->get('country'),
                     'city' => $request->get('city'),
                     'content' => $request->get('content'),
-                    'top_search' => $request->get('top_search') !== null ? $request->get('top_search') : 0,
-                    'hot_location' => $request->get('hot_location') !== null ? $request->get('hot_location') : 0,
-                    'popular_location' => $request->get('popular_location') !== null ? $request->get('popular_location') : 0,
                     'user_id' => auth()->user()->id,
                     'meta_title' => $request->get('meta_title'),
                     'meta_keyword' => $request->get('meta_keyword'),
@@ -120,19 +116,8 @@ class LocationController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $name = $request->get('name');
         try {
-            $name = $request->get('name');
-            /* Start thumbnail url */
-            $thumbnail_url = $request->thumbnail_url;
-            $thumbnail_name = '';
-            if ($thumbnail_url) {
-                $thumbnail_name = $thumbnail_url->getClientOriginalName();
-            }
-            /* End thumbnail url */
-            $yearDir = date('Y');
-            $monthDir = date('m');
-            $dayDir = date('d');
-
             $this->validate($request, [
                 'name' => 'required',
                 'content' => 'required'
@@ -141,24 +126,15 @@ class LocationController extends Controller
             // Not ok thì redirect với thông báo post không tồn tại
             if (Location::where('id', '=', $id)->exists()) {
                 $location->name = $name;
-                $location->share_url = '/'. $this->sanitize($request->get('continent')) . '/' . $this->sanitize($request->get('country')) . '/' . $this->sanitize($request->get('city'));
                 $location->slug = $this->sanitize($name);
                 $location->continent = $request->get('continent');
                 $location->country = $request->get('country');
                 $location->city = $request->get('city');
                 $location->content = $request->get('content');
-                $location->top_search = $request->get('top_search') !== null ? $request->get('top_search') : 0;
-                $location->hot_location = $request->get('hot_location') !== null ? $request->get('hot_location') : 0;
-                $location->popular_location = $request->get('popular_location') !== null ? $request->get('popular_location') : 0;
                 $location->user_id = $request->get('user_id');
                 $location->meta_title = $request->get('meta_title');
                 $location->meta_keyword = $request->get('meta_keyword');
                 $location->meta_description = $request->get('meta_description');
-                if ($thumbnail_url) {
-                    //Upload File to external serve
-                    UploadFileBusiness::uploadFileToFolder($thumbnail_url);
-                    $location->thumbnail_url = ($thumbnail_url) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $thumbnail_name : null;
-                }
                 $location->save();
 
                 Activity::addLog('Sửa điểm đến', 'Tài khoản ' . auth()->user()->email . ' sửa điểm đến ' . $name . ' vào lúc ' . date('H:i A') . ' ngày ' . date('d/m/Y'));

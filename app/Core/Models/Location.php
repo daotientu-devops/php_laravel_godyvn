@@ -5,10 +5,12 @@ class Location extends Model
 {
     protected $fillable = [
         'name',
+        'share_url',
         'top_search',
         'hot_location',
         'popular_location',
         'content',
+        'thumbnail_url',
         'country',
         'city',
         'meta_title',
