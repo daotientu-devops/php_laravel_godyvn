@@ -309,12 +309,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="w-fit d-flex" style="justify-content: flex-end!important;">
-                                <a
-                                        href="{{url('/')}}/du-lich"
-                                        class="fs-20 fw-600 fc-fourteenth td-underline"
-                                >Xem thêm</a>
-                            </div>
+                            {{--<div class="w-fit d-flex" style="justify-content: flex-end!important;">--}}
+                                {{--<a--}}
+                                        {{--href="{{url('/')}}/du-lich"--}}
+                                        {{--class="fs-20 fw-600 fc-fourteenth td-underline"--}}
+                                {{-->Xem thêm</a>--}}
+                            {{--</div>--}}
                         </div>
                     </div>
                 </div>
@@ -645,45 +645,45 @@
                     <div class="w-fit d-block mb-30">
                         <div style="background: #F4F4F4;border-radius: 0px 0px 8px 8px;">
                             <div class="ps-relative p-0 overflow-hidden xs:p-0">
-                                <a href="{{url('/')}}/bai-viet/review-nha-trang-vinh-bien-dep-nhat-the-gioi-voi-thanh-pho-em-a-nam-ngay-ben-bo-bien-10923" >
-                                    <img
-                                            data-src="https://media2.gody.vn/public/images/app/daohoakieumy18019598/blog/2023/03/28/642236e6432d5-1679963878.png"
-                                            data-srcset="https://media2.gody.vn/public/images/app/daohoakieumy18019598/blog/2023/03/28/642236e6432d5-1679963878.png"
+                                <a href="{{url('bai-viet/' . $first_post->share_url)}}">
+                                    <img src="{{ url(env('FOLDER_UPLOAD') . $first_post->thumbnail_url) }}"
                                             style="height: 400px;"
-                                            class="lazy-load w-fit object-cover object-center bar-8 d-h:o50 xs:h-184"
+                                            class="w-fit object-cover object-center bar-8 d-h:o50 xs:h-184"
                                     >
                                 </a>
                                 <div class=" xs:mt-5 ps-relative c-pointer px-20 mt-15 " data-x="my-20">
                                     <div class="_i-content-t">
                                         <a
-                                                href="{{url('/')}}/bai-viet/review-nha-trang-vinh-bien-dep-nhat-the-gioi-voi-thanh-pho-em-a-nam-ngay-ben-bo-bien-10923"
+                                                href="{{url('bai-viet/' . $first_post->share_url)}}"
                                                 data-class="mb-5 truncate-line lineclamp2 fs-28 fc-black fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 lh-24 xs:fs-24 xs:my-10"
                                                 class=" tt-capitalize fs-28 fc-fourteenth fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 xs:fs-24 xs:my-0 my-10 d-block w-fit h:fc-sixth"
                                                 style="line-height: 120%;padding-top: 10px !important;margin-top: 0px !important;"
                                         >
-                                            Review nha trang - vịnh biển đẹp nhất thế giới với th&agrave;nh phố &ecirc;m ả nằm ngay b&ecirc;n bờ biển. ???&zwj;♀️
+                                            {{ $first_post->title }}️
                                         </a>
                                     </div>
-                                    <span class="c-auto _i-des fc-fourteenth fs-15 truncate-line lineclamp4 mb-0 xs:lineclamp5 xs:lh-md td-none fw-400 lh-24 xs:fs-14 xs:my-0 ta-justify">Những ng&agrave;y cuối th&aacute;ng ba năm 2023 c&ugrave;ng Phượt Nha Trang 2 ng&agrave;y ? 1 đ&ecirc;m ? c&ugrave;ng m&igrave;nh nha.</span>
+                                    <span class="c-auto _i-des fc-fourteenth fs-15 truncate-line lineclamp4 mb-0 xs:lineclamp5 xs:lh-md td-none fw-400 lh-24 xs:fs-14 xs:my-0 ta-justify">{{ $first_post->excerpt }}</span>
                                     <div class="clearfix"></div>
                                     <div class="d-flex ai-center jc-space-between py-10 xs:pb-3 c-auto">
                                         <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                            <a href="{{url('/')}}/blog/daohoakieumy18019598" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth">
+                                            <a href="{{url('/')}}" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth">
                                                 <img
-                                                        data-src="https://gody.vn/public/v3/images/user/avatar/daohoakieumy18019598/15899608-20220724081001."
-                                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/daohoakieumy18019598/15899608-20220724081001."
+                                                        data-src="https://graph.facebook.com/v2.8/1110153672468755/picture?type=normal"
+                                                        data-srcset="https://graph.facebook.com/v2.8/1110153672468755/picture?type=normal"
                                                         class="lazy-load w-fit h-fit object-cover object-center bar-circle"
                                                         style="filter: none;"
                                                 >
                                             </a>
                                             <div class="fl-1">
-                                                <a href="{{url('/')}}/blog/daohoakieumy18019598" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">My Đ&agrave;o</a>
+                                                <a href="{{url('/')}}" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">{{ $first_post->author_name }}️</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>                </div>
                     </div>
+
+
                     <div
                             class="w-fit d-block item-border-top-first"
                             style="
@@ -1892,7 +1892,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         </div>
                         <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
                             <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#5</span>
-                            <a href="{{url('/')}}/chau-my/united-states-of-america-my" class="fc-fourteenth fs-18 fw-500 h:o50">Mỹ</a>
+                            <a href="{{url('diem-den')}}/chau-my/united-states-of-america-my" class="fc-fourteenth fs-18 fw-500 h:o50">Mỹ</a>
                         </div>
                     </div>
                 </div>

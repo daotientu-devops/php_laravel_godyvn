@@ -69,7 +69,7 @@ class PostsController extends Controller
     public function store(Request $request, $type)
     {
         $title = $request->get('title');
-        $slug = sanitize($title);
+        $slug = $this->sanitize($title);
         $content = $request->get('content');
         $plain_text = strip_tags($content);
 
@@ -115,6 +115,9 @@ class PostsController extends Controller
                     'subdistrict' => $request->get('subdistrict'),
                     'category_id' => $request->get('category_id'),
                     'thumbnail_url' => ($thumbnail_url) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $thumbnail_name : null,
+                    'is_editor_pick' => $request->get('is_editor_pick') !== null ? $request->get('is_editor_pick') : 0,
+                    'is_most_viewed' => $request->get('is_most_viewed') !== null ? $request->get('is_most_viewed') : 0,
+                    'is_sponsored' => $request->get('is_sponsored') !== null ? $request->get('is_sponsored') : 0,
                     'meta_title' => $request->get('meta_title'),
                     'meta_keyword' => $request->get('meta_keyword'),
                     'meta_description' => $request->get('meta_description')
@@ -156,7 +159,7 @@ class PostsController extends Controller
                 $list_tags = explode(',', $list_tags);
                 foreach ($list_tags as $tag) {
                     if ($tag !== '') {
-                        $slug_tag = sanitize($tag);
+                        $slug_tag = $this->sanitize($tag);
                         if (!Tags::where('slug', $slug_tag)->exists()) {
                             $nt = new Tags([
                                 'name' => $tag,
@@ -230,7 +233,7 @@ class PostsController extends Controller
     public function update(Request $request, $id)
     {
         $title = $request->get('title');
-        $slug = sanitize($title);
+        $slug = $this->sanitize($title);
         $content = $request->get('content');
         $plain_text = strip_tags($content);
 
@@ -272,6 +275,9 @@ class PostsController extends Controller
                 $post->district = $request->get('district');
                 $post->subdistrict = $request->get('subdistrict');
                 $post->category_id = $request->get('category_id');
+                $post->is_editor_pick = $request->get('is_editor_pick') !== null ? $request->get('is_editor_pick') : 0;
+                $post->is_most_viewed = $request->get('is_most_viewed') !== null ? $request->get('is_most_viewed') : 0;
+                $post->is_sponsored = $request->get('is_sponsored') !== null ? $request->get('is_sponsored') : 0;
                 $post->meta_title = $request->get('meta_title');
                 $post->meta_keyword = $request->get('meta_keyword');
                 $post->meta_description = $request->get('meta_description');
@@ -332,7 +338,7 @@ class PostsController extends Controller
                 $list_tags = explode(',', $list_tags);
                 foreach ($list_tags as $tag) {
                     if ($tag !== '') {
-                        $slug_tag = sanitize($tag);
+                        $slug_tag = $this->sanitize($tag);
                         if (!Tags::where('slug', $slug_tag)->exists()) {
                             $nt = new Tags([
                                 'name' => $tag,

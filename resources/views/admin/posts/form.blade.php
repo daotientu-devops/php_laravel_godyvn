@@ -112,6 +112,30 @@ switch ($action) {
                         </div>
                     </div>
                     <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Editor's Picks</label>
+                        <div class="col-md-5 col-sm-5 col-xs-12">
+                            <div class="radio">
+                                <input type="checkbox" value="1" name="is_editor_pick" class="flat"{{ $post->is_editor_pick == 1 ?  ' checked' : '' }}>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Bài viết xem nhiều</label>
+                        <div class="col-md-5 col-sm-5 col-xs-12">
+                            <div class="radio">
+                                <input type="checkbox" value="1" name="is_most_viewed" class="flat"{{ $post->is_most_viewed == 1 ?  ' checked' : '' }}>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-md-2 col-sm-2 col-xs-12">Tin tài trợ</label>
+                        <div class="col-md-5 col-sm-5 col-xs-12">
+                            <div class="radio">
+                                <input type="checkbox" value="1" name="is_sponsored" class="flat"{{ $post->is_sponsored == 1 ?  ' checked' : '' }}>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <label class="control-label col-md-2 col-sm-2 col-xs-12">Tiêu đề (SEO) <span
                                     class="required">*</span></label>
                         <div class="col-md-10 col-sm-10 col-xs-12">

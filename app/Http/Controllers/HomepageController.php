@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Core\Models\Location;
+use App\Core\Models\Posts;
 use Illuminate\Http\Request;
 
 class HomepageController extends Controller
@@ -24,7 +25,8 @@ class HomepageController extends Controller
      */
     public function index()
     {
+        $first_post = Posts::query()->take(1)->orderBy('id', 'DESC')->first();
         $hot_locations = Location::query()->where('hot_location', 1)->take(6)->orderBy('id', 'DESC')->get();
-        return view('homepage.index', compact('hot_locations'));
+        return view('homepage.index', compact('first_post', 'hot_locations'));
     }
 }
