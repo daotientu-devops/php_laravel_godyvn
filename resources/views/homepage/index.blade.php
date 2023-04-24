@@ -104,32 +104,32 @@
 
                 <div class="ta-center mt-12">
                     <a
-                            href="{{url('/')}}/chau-a/viet-nam/kien-giang"
+                            href="{{url('diem-den')}}/chau-a/viet-nam/kien-giang"
                             title="Ph&uacute; Quốc"
                             class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
                     >Ph&uacute; Quốc</a>
                     <a
-                            href="{{url('/')}}/chau-a/viet-nam/lao-cai"
+                            href="{{url('diem-den')}}/chau-a/viet-nam/lao-cai"
                             title="Sapa"
                             class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
                     >Sapa</a>
                     <a
-                            href="{{url('/')}}/chau-a/viet-nam/da-nang"
+                            href="{{url('diem-den')}}/chau-a/viet-nam/da-nang"
                             title="Đ&agrave; Nẵng"
                             class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
                     >Đ&agrave; Nẵng</a>
                     <a
-                            href="{{url('/')}}/chau-a/viet-nam/lam-dong"
+                            href="{{url('diem-den')}}/chau-a/viet-nam/lam-dong"
                             title="Đ&agrave; Lạt"
                             class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
                     >Đ&agrave; Lạt</a>
                     <a
-                            href="{{url('/')}}/chau-a/Japan"
+                            href="{{url('diem-den')}}/chau-a/Japan"
                             title="Nhật Bản"
                             class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
                     >Nhật Bản</a>
                     <a
-                            href="{{url('/')}}/chau-a/taiwan"
+                            href="{{url('diem-den')}}/chau-a/taiwan"
                             title="Đ&agrave;i Loan"
                             class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
                     >Đ&agrave;i Loan</a>
@@ -1876,19 +1876,19 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                     <div class="w-fit d-block">
                         <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
                             <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#1</span>
-                            <a href="{{url('/')}}/chau-a/singapore" class="fc-fourteenth fs-18 fw-500 h:o50">Singapore</a>
+                            <a href="{{url('diem-den')}}/chau-a/singapore" class="fc-fourteenth fs-18 fw-500 h:o50">Singapore</a>
                         </div>
                         <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
                             <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#2</span>
-                            <a href="{{url('/')}}/chau-a/thailand" class="fc-fourteenth fs-18 fw-500 h:o50">Th&aacute;i Lan</a>
+                            <a href="{{url('diem-den')}}/chau-a/thailand" class="fc-fourteenth fs-18 fw-500 h:o50">Th&aacute;i Lan</a>
                         </div>
                         <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
                             <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#3</span>
-                            <a href="{{url('/')}}/chau-a/south-korea" class="fc-fourteenth fs-18 fw-500 h:o50">H&agrave;n Quốc</a>
+                            <a href="{{url('diem-den')}}/chau-a/south-korea" class="fc-fourteenth fs-18 fw-500 h:o50">H&agrave;n Quốc</a>
                         </div>
                         <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
                             <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#4</span>
-                            <a href="{{url('/')}}/chau-a/Japan" class="fc-fourteenth fs-18 fw-500 h:o50">Nhật Bản</a>
+                            <a href="{{url('diem-den')}}/chau-a/Japan" class="fc-fourteenth fs-18 fw-500 h:o50">Nhật Bản</a>
                         </div>
                         <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
                             <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#5</span>
@@ -2722,7 +2722,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         mr-15
                       "><img src="https://media2.gody.vn/public/images/place/golden-sand-bar/61afa90039e68-1638902016.jpeg" alt="Phú Quốc" loading="lazy" class="bar-circle w-fit h-fit object-center object-cover"></div> <div class="fl-1"><p class="fw-500 fs-16 m-0 tt-capitalize fc-nineth mb-2">
                                         Phú Quốc
-                                    </p></div> <a href="{{url('/')}}/chau-a/viet-nam/kien-giang" class="d-block ps-absolute t0 r0 b0 l0"></a></div></div><div class="d-flex ai-center ps-relative py-12 mr-40 ws-nowrap fl-1"><div class="ps-relative d-flex ai-center fl-1"><div class="
+                                    </p></div> <a href="{{url('diem-den')}}/chau-a/viet-nam/kien-giang" class="d-block ps-absolute t0 r0 b0 l0"></a></div></div><div class="d-flex ai-center ps-relative py-12 mr-40 ws-nowrap fl-1"><div class="ps-relative d-flex ai-center fl-1"><div class="
                         bar-circle
                         ba
                         bc-eleventh
@@ -2735,7 +2735,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         mr-15
                       "><img src="https://media.gody.vn/images/lao-cai/nha-tho-sapa/10-2016/20161020033948-nha-tho-sapa-gody(9).jpg" alt="Sapa" loading="lazy" class="bar-circle w-fit h-fit object-center object-cover"></div> <div class="fl-1"><p class="fw-500 fs-16 m-0 tt-capitalize fc-nineth mb-2">
                                         Sapa
-                                    </p></div> <a href="{{url('/')}}/chau-a/viet-nam/lao-cai" class="d-block ps-absolute t0 r0 b0 l0"></a></div></div><div class="d-flex ai-center ps-relative py-12 mr-40 ws-nowrap fl-1"><div class="ps-relative d-flex ai-center fl-1"><div class="
+                                    </p></div> <a href="{{url('diem-den')}}/chau-a/viet-nam/lao-cai" class="d-block ps-absolute t0 r0 b0 l0"></a></div></div><div class="d-flex ai-center ps-relative py-12 mr-40 ws-nowrap fl-1"><div class="ps-relative d-flex ai-center fl-1"><div class="
                         bar-circle
                         ba
                         bc-eleventh
@@ -2748,7 +2748,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         mr-15
                       "><img src="https://media.gody.vn/images/da-nang/ba-na-hills/10-2016/20161017073018-ba-ba-hills-da-nang-gody%20(2).jpg" alt="Đà Nẵng" loading="lazy" class="bar-circle w-fit h-fit object-center object-cover"></div> <div class="fl-1"><p class="fw-500 fs-16 m-0 tt-capitalize fc-nineth mb-2">
                                         Đà Nẵng
-                                    </p></div> <a href="{{url('/')}}/chau-a/viet-nam/da-nang" class="d-block ps-absolute t0 r0 b0 l0"></a></div></div><div class="d-flex ai-center ps-relative py-12 mr-40 ws-nowrap fl-1"><div class="ps-relative d-flex ai-center fl-1"><div class="
+                                    </p></div> <a href="{{url('diem-den')}}/chau-a/viet-nam/da-nang" class="d-block ps-absolute t0 r0 b0 l0"></a></div></div><div class="d-flex ai-center ps-relative py-12 mr-40 ws-nowrap fl-1"><div class="ps-relative d-flex ai-center fl-1"><div class="
                         bar-circle
                         ba
                         bc-eleventh
@@ -2761,7 +2761,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         mr-15
                       "><img src="https://media.gody.vn/images/lam-dong/thung-lung-tinh-yeu/1-2017/20170109030049-thung-lung-tinh-yeu-gody%20(1).jpg" alt="Đà Lạt" loading="lazy" class="bar-circle w-fit h-fit object-center object-cover"></div> <div class="fl-1"><p class="fw-500 fs-16 m-0 tt-capitalize fc-nineth mb-2">
                                         Đà Lạt
-                                    </p></div> <a href="{{url('/')}}/chau-a/viet-nam/lam-dong" class="d-block ps-absolute t0 r0 b0 l0"></a></div></div><div class="d-flex ai-center ps-relative py-12 mr-40 ws-nowrap fl-1"><div class="ps-relative d-flex ai-center fl-1"><div class="
+                                    </p></div> <a href="{{url('diem-den')}}/chau-a/viet-nam/lam-dong" class="d-block ps-absolute t0 r0 b0 l0"></a></div></div><div class="d-flex ai-center ps-relative py-12 mr-40 ws-nowrap fl-1"><div class="ps-relative d-flex ai-center fl-1"><div class="
                         bar-circle
                         ba
                         bc-eleventh
@@ -2774,7 +2774,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         mr-15
                       "><img src="https://media2.gody.vn/public/images/province/Niigata/613a2632955c6-1631200818.jpeg" alt="Nhật Bản" loading="lazy" class="bar-circle w-fit h-fit object-center object-cover"></div> <div class="fl-1"><p class="fw-500 fs-16 m-0 tt-capitalize fc-nineth mb-2">
                                         Nhật Bản
-                                    </p></div> <a href="{{url('/')}}/chau-a/Japan" class="d-block ps-absolute t0 r0 b0 l0"></a></div></div><div class="d-flex ai-center ps-relative py-12 mr-40 ws-nowrap fl-1"><div class="ps-relative d-flex ai-center fl-1"><div class="
+                                    </p></div> <a href="{{url('diem-den')}}/chau-a/Japan" class="d-block ps-absolute t0 r0 b0 l0"></a></div></div><div class="d-flex ai-center ps-relative py-12 mr-40 ws-nowrap fl-1"><div class="ps-relative d-flex ai-center fl-1"><div class="
                         bar-circle
                         ba
                         bc-eleventh
@@ -2787,7 +2787,7 @@ Mấy trăm năm rồi ng&oacute;i vẫn ấm m&agrave;u r&ecirc;u&rdquo;</span>
                         mr-15
                       "><img src="https://media.gody.vn/images/hinh-tong-hop/hinh-anh-tong-hop-2/11-2018/15047553-20181119094427-hinh-tong-hop-hinh-anh-tong-hop-2.jpg" alt="Đài Loan" loading="lazy" class="bar-circle w-fit h-fit object-center object-cover"></div> <div class="fl-1"><p class="fw-500 fs-16 m-0 tt-capitalize fc-nineth mb-2">
                                         Đài Loan
-                                    </p></div> <a href="{{url('/')}}/chau-a/taiwan" class="d-block ps-absolute t0 r0 b0 l0"></a></div></div></div>
+                                    </p></div> <a href="{{url('diem-den')}}/chau-a/taiwan" class="d-block ps-absolute t0 r0 b0 l0"></a></div></div></div>
                 </div>
             </div>
         </div>

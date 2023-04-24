@@ -38,9 +38,12 @@ class LocationController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function detail($continent, $country, $city)
+    public function detail($continent, $country, $city = '')
     {
         $location = Location::where('share_url', '/' . $continent . '/' . $country . '/' . $city)->orderBy('id', 'DESC')->first();
+        if (empty($location)) {
+            return redirect('/');
+        }
         return view('location.detail', compact('location'));
     }
 

@@ -251,7 +251,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/diem-den', function () {
         return view('destination.index');
     });
-    Route::get('/diem-den/{continent}/{country}/{city}', ['uses' => 'LocationController@detail']);
+    Route::get('/diem-den/{continent}/{country}/{city?}', ['uses' => 'LocationController@detail']);
     Route::get('ban-do-du-lich/viet-nam', function () {
         return view('map.index');
     });

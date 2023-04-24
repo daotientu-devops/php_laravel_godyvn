@@ -747,87 +747,87 @@
                     <div class="col-md-4 p-0 m-0">
                         <ul class="pl-10">
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/an-giang" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/an-giang" class="fc-fourteenth fs-18 lh-21">
                                     An Giang                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/ben-tre" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/ben-tre" class="fc-fourteenth fs-18 lh-21">
                                     Bến Tre                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/bac-giang" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/bac-giang" class="fc-fourteenth fs-18 lh-21">
                                     Bắc Giang                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/binh-phuoc" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/binh-phuoc" class="fc-fourteenth fs-18 lh-21">
                                     Bình Phước                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/binh-duong" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/binh-duong" class="fc-fourteenth fs-18 lh-21">
                                     Bình Dương                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/dak-lak" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/dak-lak" class="fc-fourteenth fs-18 lh-21">
                                     Buôn Ma Thuột - Đắk Lắk                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/bac-ninh" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/bac-ninh" class="fc-fourteenth fs-18 lh-21">
                                     Bắc Ninh                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/bac-lieu" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/bac-lieu" class="fc-fourteenth fs-18 lh-21">
                                     Bạc Liêu                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/bac-kan" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/bac-kan" class="fc-fourteenth fs-18 lh-21">
                                     Bắc Kạn                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/ca-mau" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/ca-mau" class="fc-fourteenth fs-18 lh-21">
                                     Cà Mau                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/can-tho" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/can-tho" class="fc-fourteenth fs-18 lh-21">
                                     Cần Thơ                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/cao-bang" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/cao-bang" class="fc-fourteenth fs-18 lh-21">
                                     Cao Bằng                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/ba-ria-vung-tau" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/ba-ria-vung-tau" class="fc-fourteenth fs-18 lh-21">
                                     Côn Đảo - Vũng Tàu                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/dong-nai" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/dong-nai" class="fc-fourteenth fs-18 lh-21">
                                     Đồng Nai                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/dien-bien" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/dien-bien" class="fc-fourteenth fs-18 lh-21">
                                     Điện Biên                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/dak-nong" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/dak-nong" class="fc-fourteenth fs-18 lh-21">
                                     Đắk Nông                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/da-nang" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/da-nang" class="fc-fourteenth fs-18 lh-21">
                                     Đà Nẵng                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/lam-dong" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/lam-dong" class="fc-fourteenth fs-18 lh-21">
                                     Đà Lạt - Lâm Đồng                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/dong-thap" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/dong-thap" class="fc-fourteenth fs-18 lh-21">
                                     Đồng Tháp                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/hai-phong" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/hai-phong" class="fc-fourteenth fs-18 lh-21">
                                     Hải Phòng                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/hau-giang" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/hau-giang" class="fc-fourteenth fs-18 lh-21">
                                     Hậu Giang                            </a>
                             </li>
                         </ul>
@@ -835,91 +835,91 @@
                     <div class="col-md-4 p-0 m-0">
                         <ul class="pl-10">
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/hau-giang" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/hau-giang" class="fc-fourteenth fs-18 lh-21">
                                     Hậu Giang                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/ha-noi" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/ha-noi" class="fc-fourteenth fs-18 lh-21">
                                     Hà Nội                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/ha-nam" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/ha-nam" class="fc-fourteenth fs-18 lh-21">
                                     Hà Nam                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/quang-ninh" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/quang-ninh" class="fc-fourteenth fs-18 lh-21">
                                     Hạ Long - Quảng Ninh                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/hai-duong" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/hai-duong" class="fc-fourteenth fs-18 lh-21">
                                     Hải Dương                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/ha-giang" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/ha-giang" class="fc-fourteenth fs-18 lh-21">
                                     Hà Giang                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/ha-tinh" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/ha-tinh" class="fc-fourteenth fs-18 lh-21">
                                     Hà Tĩnh                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/hung-yen" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/hung-yen" class="fc-fourteenth fs-18 lh-21">
                                     Hưng Yên                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/quang-nam" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/quang-nam" class="fc-fourteenth fs-18 lh-21">
                                     Hội An - Quảng Nam                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/hoa-binh" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/hoa-binh" class="fc-fourteenth fs-18 lh-21">
                                     Hòa Bình                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/ho-chi-minh" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/ho-chi-minh" class="fc-fourteenth fs-18 lh-21">
                                     Hồ Chí Minh                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/kon-tum" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/kon-tum" class="fc-fourteenth fs-18 lh-21">
                                     Kon Tum                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/lai-chau" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/lai-chau" class="fc-fourteenth fs-18 lh-21">
                                     Lai Châu                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/long-an" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/long-an" class="fc-fourteenth fs-18 lh-21">
                                     Long An                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/lang-son" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/lang-son" class="fc-fourteenth fs-18 lh-21">
                                     Lạng Sơn                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/son-la" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/son-la" class="fc-fourteenth fs-18 lh-21">
                                     Mộc Châu - Sơn La                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/nghe-an" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/nghe-an" class="fc-fourteenth fs-18 lh-21">
                                     Nghệ An                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/nam-dinh" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/nam-dinh" class="fc-fourteenth fs-18 lh-21">
                                     Nam Định                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/khanh-hoa" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/khanh-hoa" class="fc-fourteenth fs-18 lh-21">
                                     Nha Trang - Khánh Hòa                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/ninh-binh" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/ninh-binh" class="fc-fourteenth fs-18 lh-21">
                                     Ninh Bình                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/phu-tho" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/phu-tho" class="fc-fourteenth fs-18 lh-21">
                                     Phú Thọ                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/phu-yen" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/phu-yen" class="fc-fourteenth fs-18 lh-21">
                                     Phú Yên                            </a>
                             </li>
                         </ul>
@@ -927,91 +927,91 @@
                     <div class="col-md-4 p-0 m-0">
                         <ul class="pl-10">
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/phu-yen" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/phu-yen" class="fc-fourteenth fs-18 lh-21">
                                     Phú Yên                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/gia-lai" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/gia-lai" class="fc-fourteenth fs-18 lh-21">
                                     Pleiku - Gia Lai                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/kien-giang" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/kien-giang" class="fc-fourteenth fs-18 lh-21">
                                     Phú Quốc - Kiên Giang                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/ninh-thuan" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/ninh-thuan" class="fc-fourteenth fs-18 lh-21">
                                     Phan Rang - Ninh Thuận                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/binh-thuan" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/binh-thuan" class="fc-fourteenth fs-18 lh-21">
                                     Phan Thiết - Bình Thuận                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/quang-ngai" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/quang-ngai" class="fc-fourteenth fs-18 lh-21">
                                     Quảng Ngãi                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/binh-dinh" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/binh-dinh" class="fc-fourteenth fs-18 lh-21">
                                     Quy Nhơn - Bình Định                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/quang-tri" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/quang-tri" class="fc-fourteenth fs-18 lh-21">
                                     Quảng Trị                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/quang-binh" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/quang-binh" class="fc-fourteenth fs-18 lh-21">
                                     Quảng Bình                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/soc-trang" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/soc-trang" class="fc-fourteenth fs-18 lh-21">
                                     Sóc Trăng                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/lao-cai" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/lao-cai" class="fc-fourteenth fs-18 lh-21">
                                     Sapa - Lào Cai                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/thai-binh" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/thai-binh" class="fc-fourteenth fs-18 lh-21">
                                     Thái Bình                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/thai-nguyen" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/thai-nguyen" class="fc-fourteenth fs-18 lh-21">
                                     Thái Nguyên                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/thanh-hoa" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/thanh-hoa" class="fc-fourteenth fs-18 lh-21">
                                     Thanh Hóa                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/tay-ninh" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/tay-ninh" class="fc-fourteenth fs-18 lh-21">
                                     Tây Ninh                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/tien-giang" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/tien-giang" class="fc-fourteenth fs-18 lh-21">
                                     Tiền Giang                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/tra-vinh" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/tra-vinh" class="fc-fourteenth fs-18 lh-21">
                                     Trà Vinh                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/tuyen-quang" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/tuyen-quang" class="fc-fourteenth fs-18 lh-21">
                                     Tuyên Quang                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/thua-thien-hue" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/thua-thien-hue" class="fc-fourteenth fs-18 lh-21">
                                     Thừa Thiên Huế                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/vinh-long" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/vinh-long" class="fc-fourteenth fs-18 lh-21">
                                     Vĩnh Long                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/vinh-phuc" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/vinh-phuc" class="fc-fourteenth fs-18 lh-21">
                                     Vĩnh Phúc                            </a>
                             </li>
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/yen-bai" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/yen-bai" class="fc-fourteenth fs-18 lh-21">
                                     Yên Bái                            </a>
                             </li>
                         </ul>
@@ -1019,7 +1019,7 @@
                     <div class="col-md-4 p-0 m-0">
                         <ul class="pl-10">
                             <li class="w-fit mb-20">
-                                <a href="{{url('/')}}/chau-a/viet-nam/yen-bai" class="fc-fourteenth fs-18 lh-21">
+                                <a href="{{url('diem-den')}}/chau-a/viet-nam/yen-bai" class="fc-fourteenth fs-18 lh-21">
                                     Yên Bái                            </a>
                             </li>
                         </ul>
@@ -1041,67 +1041,67 @@
                 <div class="col-md-4 p-0 m-0">
                     <ul class="pl-15">
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/afghanistan" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/afghanistan" class="fc-fourteenth fs-18 lh-21">
                                 Afghanistan                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/armenia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/armenia" class="fc-fourteenth fs-18 lh-21">
                                 Armenia (Cộng hoà Armenia)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/bangladesh" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/bangladesh" class="fc-fourteenth fs-18 lh-21">
                                 Bangladesh                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/bhutan" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/bhutan" class="fc-fourteenth fs-18 lh-21">
                                 Bhutan (Bhutan)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/brunei" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/brunei" class="fc-fourteenth fs-18 lh-21">
                                 Brunei                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/campuchia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/campuchia" class="fc-fourteenth fs-18 lh-21">
                                 Cambodia ( Campuchia )                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/hong-kong" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/hong-kong" class="fc-fourteenth fs-18 lh-21">
                                 HongKong ( Hồng Kông )                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/india-an-do" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/india-an-do" class="fc-fourteenth fs-18 lh-21">
                                 India (Ấn Độ)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/indonesia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/indonesia" class="fc-fourteenth fs-18 lh-21">
                                 indonesia                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/iran" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/iran" class="fc-fourteenth fs-18 lh-21">
                                 Iran                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/iraq" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/iraq" class="fc-fourteenth fs-18 lh-21">
                                 Iraq                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/israel" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/israel" class="fc-fourteenth fs-18 lh-21">
                                 Israel (Quốc gia Israel)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/Japan" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/Japan" class="fc-fourteenth fs-18 lh-21">
                                 Japan ( Nhật bản )                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/jordan" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/jordan" class="fc-fourteenth fs-18 lh-21">
                                 Jordan (Vương quốc Jordan thuộc Hashim)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/kazakhstan" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/kazakhstan" class="fc-fourteenth fs-18 lh-21">
                                 Kazakhstan (Cộng hoà Kazakhstan)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/kyrgyzstan" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/kyrgyzstan" class="fc-fourteenth fs-18 lh-21">
                                 Kyrgyzstan (Cộng hoà Kyrgyzstan)                        </a>
                         </li>
                     </ul>
@@ -1109,67 +1109,67 @@
                 <div class="col-md-4 p-0 m-0">
                     <ul class="pl-15">
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/kyrgyzstan" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/kyrgyzstan" class="fc-fourteenth fs-18 lh-21">
                                 Kyrgyzstan (Cộng hoà Kyrgyzstan)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/lao" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/lao" class="fc-fourteenth fs-18 lh-21">
                                 Lào                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/macau" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/macau" class="fc-fourteenth fs-18 lh-21">
                                 Macau (Ma cao)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/malaysia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/malaysia" class="fc-fourteenth fs-18 lh-21">
                                 Malaysia                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/maldives" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/maldives" class="fc-fourteenth fs-18 lh-21">
                                 Maldives                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/maldives" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/maldives" class="fc-fourteenth fs-18 lh-21">
                                 Maldives (Cộng hoà Maldives)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/mongolia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/mongolia" class="fc-fourteenth fs-18 lh-21">
                                 Mongolia (Mông Cổ)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/myanmar" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/myanmar" class="fc-fourteenth fs-18 lh-21">
                                 myanmar                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/nepal" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/nepal" class="fc-fourteenth fs-18 lh-21">
                                 Nepal                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/north-korea-trieu-tien" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/north-korea-trieu-tien" class="fc-fourteenth fs-18 lh-21">
                                 North Korea (Triều Tiên)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/oman" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/oman" class="fc-fourteenth fs-18 lh-21">
                                 Oman (Vương quốc Hồi giáo Oman)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/pakistan" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/pakistan" class="fc-fourteenth fs-18 lh-21">
                                 Pakistan                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/palestine" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/palestine" class="fc-fourteenth fs-18 lh-21">
                                 Palestine                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/philippines" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/philippines" class="fc-fourteenth fs-18 lh-21">
                                 Philippines                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/qatar" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/qatar" class="fc-fourteenth fs-18 lh-21">
                                 Qatar (Quốc gia Qatar)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/saudi-arabia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/saudi-arabia" class="fc-fourteenth fs-18 lh-21">
                                 Saudi Arabia                        </a>
                         </li>
                     </ul>
@@ -1177,63 +1177,63 @@
                 <div class="col-md-4 p-0 m-0">
                     <ul class="pl-15">
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/saudi-arabia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/saudi-arabia" class="fc-fourteenth fs-18 lh-21">
                                 Saudi Arabia                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/singapore" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/singapore" class="fc-fourteenth fs-18 lh-21">
                                 Singapore                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/south-korea" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/south-korea" class="fc-fourteenth fs-18 lh-21">
                                 South Korea ( Hàn quốc )                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/sri-lanka" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/sri-lanka" class="fc-fourteenth fs-18 lh-21">
                                 Sri Lanka                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/syria" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/syria" class="fc-fourteenth fs-18 lh-21">
                                 Syria                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/taiwan" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/taiwan" class="fc-fourteenth fs-18 lh-21">
                                 Taiwan ( Đài loan )                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/tajikistan" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/tajikistan" class="fc-fourteenth fs-18 lh-21">
                                 Tajikistan                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/tay-tang" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/tay-tang" class="fc-fourteenth fs-18 lh-21">
                                 Tibet (Tây Tạng)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/thailand" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/thailand" class="fc-fourteenth fs-18 lh-21">
                                 Thailand ( Thái lan )                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/trung-quoc" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/trung-quoc" class="fc-fourteenth fs-18 lh-21">
                                 China (Trung Quốc)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/turkey" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/turkey" class="fc-fourteenth fs-18 lh-21">
                                 Turkey (Thổ Nhĩ Kỳ)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/united-arab-emirates" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/united-arab-emirates" class="fc-fourteenth fs-18 lh-21">
                                 United Arab Emirates                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/uzbekistan" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/uzbekistan" class="fc-fourteenth fs-18 lh-21">
                                 Uzbekistan                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/viet-nam" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/viet-nam" class="fc-fourteenth fs-18 lh-21">
                                 Việt nam                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-a/yemen" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-a/yemen" class="fc-fourteenth fs-18 lh-21">
                                 Yemen                        </a>
                         </li>
                     </ul>
@@ -1256,71 +1256,71 @@
                 <div class="col-md-4 p-0 m-0">
                     <ul class="pl-15">
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/albania" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/albania" class="fc-fourteenth fs-18 lh-21">
                                 Albania                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/andorra" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/andorra" class="fc-fourteenth fs-18 lh-21">
                                 Andorra                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/ao" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/ao" class="fc-fourteenth fs-18 lh-21">
                                 Austria (Áo)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/azerbaijan" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/azerbaijan" class="fc-fourteenth fs-18 lh-21">
                                 Azerbaijan (Cộng hoà Azerbaijan)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/belarus" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/belarus" class="fc-fourteenth fs-18 lh-21">
                                 Belarus (Cộng hoà Belarus)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/belgium" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/belgium" class="fc-fourteenth fs-18 lh-21">
                                 Belgium (Bỉ)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/bosnia-and-herzegovina" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/bosnia-and-herzegovina" class="fc-fourteenth fs-18 lh-21">
                                 Bosnia and Herzegovina (Liên bang Bosnia và Herzegovina)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/bulgaria" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/bulgaria" class="fc-fourteenth fs-18 lh-21">
                                 Bulgaria (Bungari)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/croatia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/croatia" class="fc-fourteenth fs-18 lh-21">
                                 Croatia                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/cyprus" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/cyprus" class="fc-fourteenth fs-18 lh-21">
                                 Cyprus (Đảo Síp)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/czech-republic" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/czech-republic" class="fc-fourteenth fs-18 lh-21">
                                 Czech Republic (Cộng hoà Séc)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/Denmark" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/Denmark" class="fc-fourteenth fs-18 lh-21">
                                 Denmark (Đan Mạch)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/estonia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/estonia" class="fc-fourteenth fs-18 lh-21">
                                 Estonia (Cộng hoà Estonia)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/finland" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/finland" class="fc-fourteenth fs-18 lh-21">
                                 Finland (Phần Lan)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/france-phap" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/france-phap" class="fc-fourteenth fs-18 lh-21">
                                 France (Pháp)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/georgia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/georgia" class="fc-fourteenth fs-18 lh-21">
                                 Georgia                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/germany-duc" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/germany-duc" class="fc-fourteenth fs-18 lh-21">
                                 Germany (Đức)                        </a>
                         </li>
                     </ul>
@@ -1328,71 +1328,71 @@
                 <div class="col-md-4 p-0 m-0">
                     <ul class="pl-15">
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/germany-duc" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/germany-duc" class="fc-fourteenth fs-18 lh-21">
                                 Germany (Đức)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/hungary" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/hungary" class="fc-fourteenth fs-18 lh-21">
                                 Hungary (Hungari)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/hy-lap" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/hy-lap" class="fc-fourteenth fs-18 lh-21">
                                 Greece (Hy Lạp)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/iceland" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/iceland" class="fc-fourteenth fs-18 lh-21">
                                 Iceland                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/ireland" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/ireland" class="fc-fourteenth fs-18 lh-21">
                                 Ireland                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/italia-y" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/italia-y" class="fc-fourteenth fs-18 lh-21">
                                 Italia (Ý)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/kosovo" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/kosovo" class="fc-fourteenth fs-18 lh-21">
                                 Kosovo                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/latvia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/latvia" class="fc-fourteenth fs-18 lh-21">
                                 Latvia                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/liechtenstein" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/liechtenstein" class="fc-fourteenth fs-18 lh-21">
                                 Liechtenstein                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/lithuania" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/lithuania" class="fc-fourteenth fs-18 lh-21">
                                 Lithuania                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/luxembourg" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/luxembourg" class="fc-fourteenth fs-18 lh-21">
                                 Luxembourg                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/macedonia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/macedonia" class="fc-fourteenth fs-18 lh-21">
                                 Macedonia (FYROM)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/malta" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/malta" class="fc-fourteenth fs-18 lh-21">
                                 Malta                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/moldova" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/moldova" class="fc-fourteenth fs-18 lh-21">
                                 Moldova                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/monaco" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/monaco" class="fc-fourteenth fs-18 lh-21">
                                 Monaco                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/montenegro" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/montenegro" class="fc-fourteenth fs-18 lh-21">
                                 Montenegro                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/netherlands" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/netherlands" class="fc-fourteenth fs-18 lh-21">
                                 Netherlands (Hà Lan)                        </a>
                         </li>
                     </ul>
@@ -1400,71 +1400,71 @@
                 <div class="col-md-4 p-0 m-0">
                     <ul class="pl-15">
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/netherlands" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/netherlands" class="fc-fourteenth fs-18 lh-21">
                                 Netherlands (Hà Lan)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/norway" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/norway" class="fc-fourteenth fs-18 lh-21">
                                 Norway (Nauy)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/poland" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/poland" class="fc-fourteenth fs-18 lh-21">
                                 Poland (Ba Lan)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/portugal" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/portugal" class="fc-fourteenth fs-18 lh-21">
                                 Portugal (Bồ Đào Nha)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/romania" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/romania" class="fc-fourteenth fs-18 lh-21">
                                 Romania (Romani)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/russia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/russia" class="fc-fourteenth fs-18 lh-21">
                                 Russia (Liên bang Nga)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/san-marino" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/san-marino" class="fc-fourteenth fs-18 lh-21">
                                 San Marino                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/serbia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/serbia" class="fc-fourteenth fs-18 lh-21">
                                 Serbia                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/slovakia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/slovakia" class="fc-fourteenth fs-18 lh-21">
                                 Slovakia                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/slovenia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/slovenia" class="fc-fourteenth fs-18 lh-21">
                                 Slovenia                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/spain-tay-ban-nha" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/spain-tay-ban-nha" class="fc-fourteenth fs-18 lh-21">
                                 Spain (Tây Ban Nha)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/sweden" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/sweden" class="fc-fourteenth fs-18 lh-21">
                                 Sweden                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/switzerland" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/switzerland" class="fc-fourteenth fs-18 lh-21">
                                 Switzerland (Thuỵ Sỹ)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/thuy-si" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/thuy-si" class="fc-fourteenth fs-18 lh-21">
                                 Switzerland (Thụy Sĩ)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/Ukraine" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/Ukraine" class="fc-fourteenth fs-18 lh-21">
                                 Ukraine (Ukraina)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/united-kingdom" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/united-kingdom" class="fc-fourteenth fs-18 lh-21">
                                 United Kingdom (UK) (Anh Quốc)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-au/united-kingdom-vuong-quoc-anh" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-au/united-kingdom-vuong-quoc-anh" class="fc-fourteenth fs-18 lh-21">
                                 United Kingdom (Vương Quốc Anh)                        </a>
                         </li>
                     </ul>
@@ -1486,71 +1486,71 @@
                 <div class="col-md-4 p-0 m-0">
                     <ul class="pl-15">
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/anguilla" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/anguilla" class="fc-fourteenth fs-18 lh-21">
                                 Anguilla                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/antigua-va-barbuda" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/antigua-va-barbuda" class="fc-fourteenth fs-18 lh-21">
                                 Antigua and Barbuda (Antigua và Barbuda)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/argentina" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/argentina" class="fc-fourteenth fs-18 lh-21">
                                 Argentina                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/aruba" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/aruba" class="fc-fourteenth fs-18 lh-21">
                                 Aruba                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/bahamas" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/bahamas" class="fc-fourteenth fs-18 lh-21">
                                 Bahamas                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/barbados" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/barbados" class="fc-fourteenth fs-18 lh-21">
                                 Barbados                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/belize" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/belize" class="fc-fourteenth fs-18 lh-21">
                                 Belize                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/bermuda" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/bermuda" class="fc-fourteenth fs-18 lh-21">
                                 Bermuda                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/bolivia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/bolivia" class="fc-fourteenth fs-18 lh-21">
                                 Bolivia                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/brasil" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/brasil" class="fc-fourteenth fs-18 lh-21">
                                 Brasil                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/canada" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/canada" class="fc-fourteenth fs-18 lh-21">
                                 Canada                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/chile" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/chile" class="fc-fourteenth fs-18 lh-21">
                                 Chile                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/colombia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/colombia" class="fc-fourteenth fs-18 lh-21">
                                 Colombia                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/costa-rica" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/costa-rica" class="fc-fourteenth fs-18 lh-21">
                                 Costa Rica                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/cuba" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/cuba" class="fc-fourteenth fs-18 lh-21">
                                 Cuba                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/cura%C3%A7ao" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/cura%C3%A7ao" class="fc-fourteenth fs-18 lh-21">
                                 Curaçao (Lãnh thổ Curaçao)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/dominicana" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/dominicana" class="fc-fourteenth fs-18 lh-21">
                                 Dominicana (Cộng hoà Dominicana)                        </a>
                         </li>
                     </ul>
@@ -1558,71 +1558,71 @@
                 <div class="col-md-4 p-0 m-0">
                     <ul class="pl-15">
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/dominicana" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/dominicana" class="fc-fourteenth fs-18 lh-21">
                                 Dominicana (Cộng hoà Dominicana)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/ecuador" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/ecuador" class="fc-fourteenth fs-18 lh-21">
                                 Ecuador                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/el-salvador" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/el-salvador" class="fc-fourteenth fs-18 lh-21">
                                 El Salvador                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/grenada" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/grenada" class="fc-fourteenth fs-18 lh-21">
                                 Grenada                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/guadeloupe" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/guadeloupe" class="fc-fourteenth fs-18 lh-21">
                                 Guadeloupe                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/guatemala" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/guatemala" class="fc-fourteenth fs-18 lh-21">
                                 Guatemala                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/guyana" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/guyana" class="fc-fourteenth fs-18 lh-21">
                                 Guyana (Cộng hòa Hợp tác Guyana)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/guyane" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/guyane" class="fc-fourteenth fs-18 lh-21">
                                 Guyane                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/haiti" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/haiti" class="fc-fourteenth fs-18 lh-21">
                                 Haiti                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/honduras" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/honduras" class="fc-fourteenth fs-18 lh-21">
                                 Honduras (Cộng hòa Honduras)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/jamaica" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/jamaica" class="fc-fourteenth fs-18 lh-21">
                                 Jamaica                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/martinique" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/martinique" class="fc-fourteenth fs-18 lh-21">
                                 Martinique                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/mexico" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/mexico" class="fc-fourteenth fs-18 lh-21">
                                 Mexico                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/montserrat" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/montserrat" class="fc-fourteenth fs-18 lh-21">
                                 Montserrat                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/nicaragua" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/nicaragua" class="fc-fourteenth fs-18 lh-21">
                                 Nicaragua                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/panama" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/panama" class="fc-fourteenth fs-18 lh-21">
                                 Panama                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/paraguay" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/paraguay" class="fc-fourteenth fs-18 lh-21">
                                 Paraguay (Cộng hòa Paraguay)                        </a>
                         </li>
                     </ul>
@@ -1630,67 +1630,67 @@
                 <div class="col-md-4 p-0 m-0">
                     <ul class="pl-15">
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/paraguay" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/paraguay" class="fc-fourteenth fs-18 lh-21">
                                 Paraguay (Cộng hòa Paraguay)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/peru" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/peru" class="fc-fourteenth fs-18 lh-21">
                                 Peru                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/puerto-rico" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/puerto-rico" class="fc-fourteenth fs-18 lh-21">
                                 Puerto Rico                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/quan-dao-cayman" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/quan-dao-cayman" class="fc-fourteenth fs-18 lh-21">
                                 Cayman Island (Quần đảo Cayman)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/quan-dao-falkland" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/quan-dao-falkland" class="fc-fourteenth fs-18 lh-21">
                                 Falkland Islands (Quần đảo Falkland)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/quan-dao-turks-va-caicos" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/quan-dao-turks-va-caicos" class="fc-fourteenth fs-18 lh-21">
                                 Turks and Caicos Islands (Quần đảo Turks và Caicos)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/quan-dao-virgin" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/quan-dao-virgin" class="fc-fourteenth fs-18 lh-21">
                                 Virgin Island (Quần đảo Virgin)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/saint-kitts-va-nevis" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/saint-kitts-va-nevis" class="fc-fourteenth fs-18 lh-21">
                                 Saint Kitts and Nevis (Saint Kitts và Nevis)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/saint-lucia" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/saint-lucia" class="fc-fourteenth fs-18 lh-21">
                                 Saint Lucia                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/saint-vincent-va-the-grenadines" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/saint-vincent-va-the-grenadines" class="fc-fourteenth fs-18 lh-21">
                                 Saint Vincent and The Grenadines (Saint Vincent và The Grenadines)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/sint-maarten" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/sint-maarten" class="fc-fourteenth fs-18 lh-21">
                                 Sint Maarten                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/suriname" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/suriname" class="fc-fourteenth fs-18 lh-21">
                                 Suriname (Cộng hòa Suriname)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/trinidad-va-tobago" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/trinidad-va-tobago" class="fc-fourteenth fs-18 lh-21">
                                 Trinidad and Tobago (Cộng hòa Trinidad và Tobago)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/united-states-of-america-my" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/united-states-of-america-my" class="fc-fourteenth fs-18 lh-21">
                                 United States of America (Mỹ)                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/uruguay" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/uruguay" class="fc-fourteenth fs-18 lh-21">
                                 Uruguay                        </a>
                         </li>
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-my/venezuela" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-my/venezuela" class="fc-fourteenth fs-18 lh-21">
                                 Venezuela                        </a>
                         </li>
                     </ul>
@@ -1712,7 +1712,7 @@
                 <div class="col-md-4 p-0 m-0">
                     <ul class="pl-15">
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-dai-duong/uc" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-dai-duong/uc" class="fc-fourteenth fs-18 lh-21">
                                 Australia (úc)                        </a>
                         </li>
                     </ul>
@@ -1742,7 +1742,7 @@
                 <div class="col-md-4 p-0 m-0">
                     <ul class="pl-10">
                         <li class="w-fit mb-20">
-                            <a href="{{url('/')}}/chau-phi/ai-cap" class="fc-fourteenth fs-18 lh-21">
+                            <a href="{{url('diem-den')}}/chau-phi/ai-cap" class="fc-fourteenth fs-18 lh-21">
                                 Ai Cập                            </a>
                         </li>
                     </ul>
@@ -1770,7 +1770,7 @@
             <div class="w-fit d-flex fw-wrap x-jc-space-between" style="--column:5; --gutter: 100px;">
                 <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );margin-bottom: calc( var(--gutter) / var(--column) );margin-right: calc( var(--gutter) / var(--column) );">
                     <div class="ps-relative" style="height: 220px;">
-                        <a href="{{url('/')}}/chau-a/viet-nam/ho-chi-minh/pho-tay">
+                        <a href="{{url('diem-den')}}/chau-a/viet-nam/ho-chi-minh/pho-tay">
                             <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                 <img
                                         data-srcset="https://media.gody.vn//images/ho-chi-minh/pho-tay/10-2016/20161024085927-pho-tay-gody (9).jpg"
@@ -1784,13 +1784,13 @@
                                 />
                             </div>
                         </a>
-                        <a href="{{url('/')}}/chau-a/viet-nam/ho-chi-minh/pho-tay" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                        <a href="{{url('diem-den')}}/chau-a/viet-nam/ho-chi-minh/pho-tay" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                             Phố T&acirc;y B&ugrave;i Viện
                         </a>
                     </div>                </div>
                 <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );margin-bottom: calc( var(--gutter) / var(--column) );margin-right: calc( var(--gutter) / var(--column) );">
                     <div class="ps-relative" style="height: 220px;">
-                        <a href="{{url('/')}}/chau-a/viet-nam/phu-yen/nha-tho-mang-lang">
+                        <a href="{{url('diem-den')}}/chau-a/viet-nam/phu-yen/nha-tho-mang-lang">
                             <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                 <img
                                         data-srcset="https://media.gody.vn//images/phu-yen/nha-tho-mang-lang/2-2018/28727418-20180226043010-phu-yen-nha-tho-mang-lang.jpg"
@@ -1804,13 +1804,13 @@
                                 />
                             </div>
                         </a>
-                        <a href="{{url('/')}}/chau-a/viet-nam/phu-yen/nha-tho-mang-lang" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                        <a href="{{url('diem-den')}}/chau-a/viet-nam/phu-yen/nha-tho-mang-lang" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                             Nh&agrave; thờ Mằng Lăng
                         </a>
                     </div>                </div>
                 <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );margin-bottom: calc( var(--gutter) / var(--column) );margin-right: calc( var(--gutter) / var(--column) );">
                     <div class="ps-relative" style="height: 220px;">
-                        <a href="{{url('/')}}/chau-a/viet-nam/phu-yen/dam-o-loan">
+                        <a href="{{url('diem-den')}}/chau-a/viet-nam/phu-yen/dam-o-loan">
                             <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                 <img
                                         data-srcset="https://media.gody.vn//images/phu-yen/dam-o-loan/2-2018/98645889-20180226034435-phu-yen-dam-o-loan.jpg"
@@ -1824,13 +1824,13 @@
                                 />
                             </div>
                         </a>
-                        <a href="{{url('/')}}/chau-a/viet-nam/phu-yen/dam-o-loan" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                        <a href="{{url('diem-den')}}/chau-a/viet-nam/phu-yen/dam-o-loan" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                             Đầm &Ocirc; Loan
                         </a>
                     </div>                </div>
                 <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );margin-bottom: calc( var(--gutter) / var(--column) );margin-right: calc( var(--gutter) / var(--column) );">
                     <div class="ps-relative" style="height: 220px;">
-                        <a href="{{url('/')}}/chau-a/viet-nam/phu-yen/deo-ca-phu-yen">
+                        <a href="{{url('diem-den')}}/chau-a/viet-nam/phu-yen/deo-ca-phu-yen">
                             <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                 <img
                                         data-srcset="https://media.gody.vn/images/phu-yen/deo-ca-phu-yen/02058662b6f05dde1940cee96e801fafcb899b20.jpg"
@@ -1844,7 +1844,7 @@
                                 />
                             </div>
                         </a>
-                        <a href="{{url('/')}}/chau-a/viet-nam/phu-yen/deo-ca-phu-yen" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                        <a href="{{url('diem-den')}}/chau-a/viet-nam/phu-yen/deo-ca-phu-yen" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                             Đ&egrave;o Cả (Ph&uacute; Y&ecirc;n)
                         </a>
                     </div>                </div>
@@ -1862,7 +1862,7 @@
             <div class="w-fit d-flex fw-wrap x-jc-space-between" style="--column:5; --gutter: 100px;">
                 <div class="fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );margin-bottom: calc( var(--gutter) / var(--column) );margin-right: calc( var(--gutter) / var(--column) );">
                     <div class="ps-relative" style="height: 220px;">
-                        <a href="{{url('/')}}/chau-a/campuchia">
+                        <a href="{{url('diem-den')}}/chau-a/campuchia">
                             <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                 <img
                                         data-srcset="https://media.gody.vn/images/siem-reap/quan-the-den-roluos-roluos-temples/da66cb2126ac971ca8c1bd43d3a59d75c073d899.jpg"
@@ -1876,13 +1876,13 @@
                                 />
                             </div>
                         </a>
-                        <a href="{{url('/')}}/chau-a/campuchia" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                        <a href="{{url('diem-den')}}/chau-a/campuchia" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                             Cambodia ( Campuchia )
                         </a>
                     </div>                </div>
                 <div class="fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );margin-bottom: calc( var(--gutter) / var(--column) );margin-right: calc( var(--gutter) / var(--column) );">
                     <div class="ps-relative" style="height: 220px;">
-                        <a href="{{url('/')}}/chau-a/hong-kong">
+                        <a href="{{url('diem-den')}}/chau-a/hong-kong">
                             <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                 <img
                                         data-srcset="https://media.gody.vn//images/hong-kong/victoria-peak/11-2016/20161117064823-victoria-peak-hong-kong-gody (12).jpg"
@@ -1896,13 +1896,13 @@
                                 />
                             </div>
                         </a>
-                        <a href="{{url('/')}}/chau-a/hong-kong" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                        <a href="{{url('diem-den')}}/chau-a/hong-kong" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                             HongKong ( Hồng K&ocirc;ng )
                         </a>
                     </div>                </div>
                 <div class="fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );margin-bottom: calc( var(--gutter) / var(--column) );margin-right: calc( var(--gutter) / var(--column) );">
                     <div class="ps-relative" style="height: 220px;">
-                        <a href="{{url('/')}}/chau-a/trung-quoc">
+                        <a href="{{url('diem-den')}}/chau-a/trung-quoc">
                             <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                 <img
                                         data-srcset="https://media.gody.vn/images/thanh-do/pho-sifang/8fb21ed3fb6ed3dae4d7f0b99c52320758944eff.jpeg"
@@ -1916,13 +1916,13 @@
                                 />
                             </div>
                         </a>
-                        <a href="{{url('/')}}/chau-a/trung-quoc" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                        <a href="{{url('diem-den')}}/chau-a/trung-quoc" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                             China (Trung Quốc)
                         </a>
                     </div>                </div>
                 <div class="fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );margin-bottom: calc( var(--gutter) / var(--column) );margin-right: calc( var(--gutter) / var(--column) );">
                     <div class="ps-relative" style="height: 220px;">
-                        <a href="{{url('/')}}/chau-au/italia-y">
+                        <a href="{{url('diem-den')}}/chau-au/italia-y">
                             <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                 <img
                                         data-srcset="https://media.gody.vn/images/naples/bao-tang-khao-co-quoc-gia-naples-museo-archeologico-nazionale//eec8f775e7d9ebad6aaab188905c7eec856e29b0.jpg"
@@ -1936,13 +1936,13 @@
                                 />
                             </div>
                         </a>
-                        <a href="{{url('/')}}/chau-au/italia-y" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                        <a href="{{url('diem-den')}}/chau-au/italia-y" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                             Italia (&Yacute;)
                         </a>
                     </div>                </div>
                 <div class="fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );margin-bottom: calc( var(--gutter) / var(--column) );margin-right: calc( var(--gutter) / var(--column) );">
                     <div class="ps-relative" style="height: 220px;">
-                        <a href="{{url('/')}}/chau-au/ao">
+                        <a href="{{url('diem-den')}}/chau-au/ao">
                             <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                 <img
                                         data-srcset="https://media.gody.vn//images/hinh-tong-hop/kdl-ho-may-park-vung-tau-gody/12-2018/74117390-20181227074238-hinh-tong-hop-kdl-ho-may-park-vung-tau-gody.jpg"
@@ -1956,13 +1956,13 @@
                                 />
                             </div>
                         </a>
-                        <a href="{{url('/')}}/chau-au/ao" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                        <a href="{{url('diem-den')}}/chau-au/ao" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                             Austria (&Aacute;o)
                         </a>
                     </div>                </div>
                 <div class="fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );margin-bottom: calc( var(--gutter) / var(--column) );margin-right: calc( var(--gutter) / var(--column) );">
                     <div class="ps-relative" style="height: 220px;">
-                        <a href="{{url('/')}}/chau-au/hy-lap">
+                        <a href="{{url('diem-den')}}/chau-au/hy-lap">
                             <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                 <img
                                         data-srcset="https://media.gody.vn//images/athens/thanh-co-athens/2-2018/thumbs550//27152568-20180224030714-athens-thanh-co-athens.jpg"
@@ -1976,13 +1976,13 @@
                                 />
                             </div>
                         </a>
-                        <a href="{{url('/')}}/chau-au/hy-lap" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                        <a href="{{url('diem-den')}}/chau-au/hy-lap" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                             Greece (Hy Lạp)
                         </a>
                     </div>                </div>
                 <div class="fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );margin-bottom: calc( var(--gutter) / var(--column) );margin-right: calc( var(--gutter) / var(--column) );">
                     <div class="ps-relative" style="height: 220px;">
-                        <a href="{{url('/')}}/chau-a/qatar">
+                        <a href="{{url('diem-den')}}/chau-a/qatar">
                             <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                 <img
                                         data-srcset="https://media.gody.vn//images/hinh-tong-hop/huong-dan-cach-xin-visa-han-quoc-gody/12-2018/83851783-20181225082206-hinh-tong-hop-huong-dan-cach-xin-visa-han-quoc-gody.jpg"
@@ -1996,13 +1996,13 @@
                                 />
                             </div>
                         </a>
-                        <a href="{{url('/')}}/chau-a/qatar" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                        <a href="{{url('diem-den')}}/chau-a/qatar" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                             Qatar (Quốc gia Qatar)
                         </a>
                     </div>                </div>
                 <div class="fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );margin-bottom: calc( var(--gutter) / var(--column) );margin-right: calc( var(--gutter) / var(--column) );">
                     <div class="ps-relative" style="height: 220px;">
-                        <a href="{{url('/')}}/chau-au/belarus">
+                        <a href="{{url('diem-den')}}/chau-au/belarus">
                             <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                 <img
                                         data-srcset="https://media.gody.vn//images/hinh-tong-hop/kdl-ho-may-park-vung-tau-gody/12-2018/81896570-20181227090644-hinh-tong-hop-kdl-ho-may-park-vung-tau-gody.jpg"
@@ -2016,13 +2016,13 @@
                                 />
                             </div>
                         </a>
-                        <a href="{{url('/')}}/chau-au/belarus" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                        <a href="{{url('diem-den')}}/chau-au/belarus" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                             Belarus (Cộng ho&agrave; Belarus)
                         </a>
                     </div>                </div>
                 <div class="fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );margin-bottom: calc( var(--gutter) / var(--column) );margin-right: calc( var(--gutter) / var(--column) );">
                     <div class="ps-relative" style="height: 220px;">
-                        <a href="{{url('/')}}/chau-au/czech-republic">
+                        <a href="{{url('diem-den')}}/chau-au/czech-republic">
                             <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                 <img
                                         data-srcset="https://media.gody.vn//images/hinh-tong-hop/bhutan/12-2018/123534753-20181228040737-hinh-tong-hop-bhutan.jpg"
@@ -2036,13 +2036,13 @@
                                 />
                             </div>
                         </a>
-                        <a href="{{url('/')}}/chau-au/czech-republic" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                        <a href="{{url('diem-den')}}/chau-au/czech-republic" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                             Czech Republic (Cộng ho&agrave; S&eacute;c)
                         </a>
                     </div>                </div>
                 <div class="fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );margin-bottom: calc( var(--gutter) / var(--column) );margin-right: calc( var(--gutter) / var(--column) );">
                     <div class="ps-relative" style="height: 220px;">
-                        <a href="{{url('/')}}/chau-au/Denmark">
+                        <a href="{{url('diem-den')}}/chau-au/Denmark">
                             <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                 <img
                                         data-srcset="https://media.gody.vn//images/hinh-tong-hop/dao-nam-du-tong-hop/4-2019/110445802-20190403072049-hinh-tong-hop-dao-nam-du-tong-hop.jpg"
@@ -2056,13 +2056,13 @@
                                 />
                             </div>
                         </a>
-                        <a href="{{url('/')}}/chau-au/Denmark" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                        <a href="{{url('diem-den')}}/chau-au/Denmark" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                             Denmark (Đan Mạch)
                         </a>
                     </div>                </div>
                 <div class="fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );margin-bottom: calc( var(--gutter) / var(--column) );margin-right: calc( var(--gutter) / var(--column) );">
                     <div class="ps-relative" style="height: 220px;">
-                        <a href="{{url('/')}}/chau-au/greece">
+                        <a href="{{url('diem-den')}}/chau-au/greece">
                             <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                 <img
                                         data-srcset="https://media.gody.vn/images/athens/bao-tang-lich-su-quoc-gia-national-historical-museum/595d42897431be3fdf3b1f965c7623c05f924242.jpg"
@@ -2076,13 +2076,13 @@
                                 />
                             </div>
                         </a>
-                        <a href="{{url('/')}}/chau-au/greece" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                        <a href="{{url('diem-den')}}/chau-au/greece" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                             Greece (Hy Lạp)
                         </a>
                     </div>                </div>
                 <div class="fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );margin-bottom: calc( var(--gutter) / var(--column) );margin-right: calc( var(--gutter) / var(--column) );">
                     <div class="ps-relative" style="height: 220px;">
-                        <a href="{{url('/')}}/chau-au/poland">
+                        <a href="{{url('diem-den')}}/chau-au/poland">
                             <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                 <img
                                         data-srcset="https://media.gody.vn//images/hinh-tong-hop/hinh-banner-gody/12-2018/112696028-20181220104653-hinh-tong-hop-hinh-banner-gody.jpg"
@@ -2096,13 +2096,13 @@
                                 />
                             </div>
                         </a>
-                        <a href="{{url('/')}}/chau-au/poland" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                        <a href="{{url('diem-den')}}/chau-au/poland" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                             Poland (Ba Lan)
                         </a>
                     </div>                </div>
                 <div class="fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );margin-bottom: calc( var(--gutter) / var(--column) );margin-right: calc( var(--gutter) / var(--column) );">
                     <div class="ps-relative" style="height: 220px;">
-                        <a href="{{url('/')}}/chau-au/Ukraine">
+                        <a href="{{url('diem-den')}}/chau-au/Ukraine">
                             <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                 <img
                                         data-srcset="https://media.gody.vn/images/kherson/bao-tang-nghe-thuat-khu-vuc-kherson-kherson-regional-art-museum/c251ff9fd472751457586de074cf23e8724307ae.jpg"
@@ -2116,13 +2116,13 @@
                                 />
                             </div>
                         </a>
-                        <a href="{{url('/')}}/chau-au/Ukraine" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                        <a href="{{url('diem-den')}}/chau-au/Ukraine" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                             Ukraine (Ukraina)
                         </a>
                     </div>                </div>
                 <div class="fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );margin-bottom: calc( var(--gutter) / var(--column) );margin-right: calc( var(--gutter) / var(--column) );">
                     <div class="ps-relative" style="height: 220px;">
-                        <a href="{{url('/')}}/chau-au/vatican">
+                        <a href="{{url('diem-den')}}/chau-au/vatican">
                             <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
                                 <img
                                         data-srcset="https://media.gody.vn/images/vatican-city/quang-truong-belvedere-cortile-del-belvedere/720c468144509b7de98019ac95aa7e1dd1078cbc.jpg"
@@ -2136,7 +2136,7 @@
                                 />
                             </div>
                         </a>
-                        <a href="{{url('/')}}/chau-au/vatican" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                        <a href="{{url('diem-den')}}/chau-au/vatican" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
                             Vatican City (Holy See)
                         </a>
                     </div>                </div>
@@ -2268,8 +2268,8 @@
                 </p>
                 <span class="d-inline-block w-30 bb bc-primary baw2"></span>
                 <div class="mt-12">
-                    <a href="{{url('/')}}/gioi-thieu" class="show fc-sixth h:fc-primary">Giới thiệu</a>
-                    <a href="{{url('/')}}/lien-he" class="show fc-sixth h:fc-primary mt-5">Liên hệ</a>
+                    <a href="{{url('diem-den')}}/gioi-thieu" class="show fc-sixth h:fc-primary">Giới thiệu</a>
+                    <a href="{{url('diem-den')}}/lien-he" class="show fc-sixth h:fc-primary mt-5">Liên hệ</a>
                     <a href="/bao-mat-thong-tin" class="show fc-sixth h:fc-primary mt-5">Chính sách bảo mật</a>
                     <a href="/quy-dinh-su-dung" class="show fc-sixth h:fc-primary mt-5">Chính sách quyền riêng tư</a>
                     <a href="#" class="show fc-sixth h:fc-primary mt-5">Chính sách sử dụng</a>
@@ -2281,9 +2281,9 @@
                 </p>
                 <span class="d-inline-block w-30 bb bc-primary baw2"></span>
                 <div class="mt-12">
-                    <a href="{{url('/')}}/du-lich" class="show fc-sixth h:fc-primary">Tin tức</a>
+                    <a href="{{url('diem-den')}}/du-lich" class="show fc-sixth h:fc-primary">Tin tức</a>
                     <a href="#" class="show fc-sixth h:fc-primary mt-5">Khuyến mãi</a>
-                    <a href="{{url('/')}}/diem-den" class="show fc-sixth h:fc-primary mt-5">Điểm đến</a>
+                    <a href="{{url('diem-den')}}/diem-den" class="show fc-sixth h:fc-primary mt-5">Điểm đến</a>
                     <a href="#" class="show fc-sixth h:fc-primary mt-5" rel="nofollow">Ẩm thực</a>
                     <a href="#" class="show fc-sixth h:fc-primary mt-5" rel="nofollow">Travel mag</a>
                 </div>
@@ -2294,11 +2294,11 @@
                 </p>
                 <span class="d-inline-block w-30 bb bc-primary baw2"></span>
                 <div class="mt-12">
-                    <a href="{{url('/')}}/lich-trinh-du-lich" class="show fc-sixth h:fc-primary">Lên lịch trình du lịch</a>
-                    <a href="{{url('/')}}/ban-do-du-lich/viet-nam" class="show fc-sixth h:fc-primary mt-5">Tạo bảo đồ du lịch - My Travel Map</a>
-                    <a href="{{url('/')}}/hoi-dap" class="show fc-sixth h:fc-primary mt-5">Hỏi đáp du lịch</a>
-                    <a href="{{url('/')}}/blog/viet-bai/note" class="show fc-sixth h:fc-primary mt-5">Viết blog du lịch</a>
-                    <a href="{{url('/')}}/diem-den" class="show fc-sixth h:fc-primary mt-5">Điểm đến</a>
+                    <a href="{{url('diem-den')}}/lich-trinh-du-lich" class="show fc-sixth h:fc-primary">Lên lịch trình du lịch</a>
+                    <a href="{{url('diem-den')}}/ban-do-du-lich/viet-nam" class="show fc-sixth h:fc-primary mt-5">Tạo bảo đồ du lịch - My Travel Map</a>
+                    <a href="{{url('diem-den')}}/hoi-dap" class="show fc-sixth h:fc-primary mt-5">Hỏi đáp du lịch</a>
+                    <a href="{{url('diem-den')}}/blog/viet-bai/note" class="show fc-sixth h:fc-primary mt-5">Viết blog du lịch</a>
+                    <a href="{{url('diem-den')}}/diem-den" class="show fc-sixth h:fc-primary mt-5">Điểm đến</a>
                 </div>
             </div>
             <div class="col-md-2 pt-20">
@@ -2840,7 +2840,7 @@
                             <img src="/public/v6/js/ionicons/5.5.2/svg/fitness.svg" class="w-20 filter-sixth mb-5" loading="lazy" alt="Bảo hiểm">
                             <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0">Bảo hiểm</p>
                         </a>
-                        <a href="{{url('/')}}/partner" target="_blank" class="
+                        <a href="{{url('diem-den')}}/partner" target="_blank" class="
                 d-flex
                 fd-column
                 ai-center
@@ -2925,7 +2925,7 @@
                                 <img loading="lazy" src="/public/v6/images/more/trip-com-04.png" class="w-45 h-20 mb-2" alt="Trip.com">
                                 <p class="mb-0 fs-12 ws-nowrap fc-sixth mt-0 truncate-line lineclamp1">Trip.com</p>
                             </a>
-                            <a href="{{url('/')}}/homestay-hostel" target="_blank" rel="noreferrer,nofollow" class="
+                            <a href="{{url('diem-den')}}/homestay-hostel" target="_blank" rel="noreferrer,nofollow" class="
                   d-flex
                   fd-column
                   ai-center
@@ -4419,10 +4419,10 @@
                             }
 
                             if(total > 0) {
-                                $this.find('.label').html('<a href="#modal-coin-sender" data-toggle="modal" class="fc-fourth" title="Danh sách tặng Go-coin">Bài viết này đã nhận được '+total+' Go-coin.</a> <a href="{{url('/')}}/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
+                                $this.find('.label').html('<a href="#modal-coin-sender" data-toggle="modal" class="fc-fourth" title="Danh sách tặng Go-coin">Bài viết này đã nhận được '+total+' Go-coin.</a> <a href="{{url('diem-den')}}/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
                                 $('.coin-number-summary').parent().attr('href', '#modal-coin-sender');
                             } else {
-                                $this.find('.label').html('Hãy là người đầu tiên tặng Go-coin cho bài viết này. <a href="{{url('/')}}/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
+                                $this.find('.label').html('Hãy là người đầu tiên tặng Go-coin cho bài viết này. <a href="{{url('diem-den')}}/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
                                 $('.coin-number-summary').parent().attr('href', 'javascript:void(0)');
                             }
                         }, error: function(response) {
