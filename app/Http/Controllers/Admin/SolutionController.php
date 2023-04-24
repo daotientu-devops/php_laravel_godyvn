@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Core\Business\UploadFileBusiness;
 use App\Core\Models\Solution;
@@ -28,7 +28,7 @@ class SolutionController extends Controller
     {
         $action = 'create';
         $solutions = DB::table('solutions')->select('id', 'name')->paginate($this->limit);
-        return view('solution.index', compact('action', 'solutions'));
+        return view('admin.solution.index', compact('action', 'solutions'));
     }
 
     /**
@@ -84,7 +84,7 @@ class SolutionController extends Controller
                 }
                 TableMysql::resetAutoIncrement('solutions'); // id bảng solutions không liên quan tới bảng khác
                 $solution->save();
-                return redirect('solution/edit/' . $solution->id)->with('message', "Tạo mới giải pháp '" . $name . "' thành công");
+                return redirect('cms/solution/edit/' . $solution->id)->with('message', "Tạo mới giải pháp '" . $name . "' thành công");
             }
         } catch (\Exception $exception) {
             return back()->with('error', 'Lỗi tạo mới giải pháp: ' . $exception->getMessage());
@@ -102,7 +102,7 @@ class SolutionController extends Controller
         $action = 'edit';
         $solution = DB::table('solutions')->select('id', 'name', 'icon', 'banner', 'share_url', 'excerpt', 'content')->where('id', $id)->first();
         $solutions = DB::table('solutions')->select('id', 'name')->paginate($this->limit);
-        return view('solution.form', compact('action', 'solution', 'solutions'));
+        return view('admin.solution.form', compact('action', 'solution', 'solutions'));
     }
 
     /**
@@ -168,7 +168,7 @@ class SolutionController extends Controller
         try {
             $solution = Solution::find($id);
             $solution->delete();
-            return redirect('solution')->with('message', 'Xóa giải pháp ' . $solution->name . ' thành công');
+            return redirect('cms/solution')->with('message', 'Xóa giải pháp ' . $solution->name . ' thành công');
         } catch (Exception $exception) {
             Log::error($exception->getMessage());
             return back()->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());

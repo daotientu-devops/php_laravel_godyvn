@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Core\Business\UploadFileBusiness;
 use App\Core\Models\Author;
@@ -28,7 +28,7 @@ class AuthorController extends Controller
     {
         $action = 'create';
         $authors = DB::table('authors')->select('id', 'name', 'avatar')->paginate($this->limit);
-        return view('author.index', compact('action', 'authors'));
+        return view('admin.author.index', compact('action', 'authors'));
     }
 
     /**

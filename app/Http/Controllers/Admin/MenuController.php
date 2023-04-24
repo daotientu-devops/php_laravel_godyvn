@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Core\Controllers\Controller;
 use App\Core\Models\Category;
@@ -8,6 +8,7 @@ use App\Core\Models\Menu;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
+use App\Helpers\Activity;
 
 class MenuController extends Controller
 {
@@ -23,7 +24,7 @@ class MenuController extends Controller
             ['position', 'menu_header']
         ])->orderBy('order', 'ASC')->get();
         $menu_footers = Menu::whereIn('position', ['menu_footer_1', 'menu_footer_2'])->orderBy('order', 'ASC')->get();
-        return view('menu.index', compact('menus', 'menu_headers', 'menu_footers'));
+        return view('admin.menu.index', compact('menus', 'menu_headers', 'menu_footers'));
     }
 
     /**
@@ -35,7 +36,7 @@ class MenuController extends Controller
     public function store(Request $request)
     {
         try {
-            $request->validate([
+            $this->validate($request, [
                 'item_title' => 'required',
                 'item_url' => 'required',
                 'position' => 'required'
@@ -53,7 +54,7 @@ class MenuController extends Controller
             ]);
             // Not ok thì redirect với thông báo menu đã tồn tại
             if (Menu::where('item_title', '=', $item_title)->exists()) {
-                return redirect('/menu')->with('error', 'Menu ' . $item_title . ' đã tồn tại');
+                return redirect('cms/menu')->with('error', 'Menu ' . $item_title . ' đã tồn tại');
             } else {
                 // Ok thì save mới
                 $menu->save();
@@ -61,10 +62,10 @@ class MenuController extends Controller
                     'order' => $menu->id
                 ]);
                 \Activity::addLog('Tạo mới menu', 'Tài khoản ' . auth()->user()->email . ' tạo mới menu ' . $item_title . ' vào lúc ' . date('H:i A') . ' ngày ' . date('d/m/Y'));
-                return redirect('/menu')->with('message', 'Tạo mới menu ' . $item_title . ' thành công');
+                return redirect('cms/menu')->with('message', 'Tạo mới menu ' . $item_title . ' thành công');
             }
         } catch (\Exception $exception) {
-            return redirect('/menu')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('cms/menu')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 
@@ -97,7 +98,7 @@ class MenuController extends Controller
             ['position', 'menu_header']
         ])->get();
         $menu_footers = Menu::whereIn('position', ['menu_footer_1', 'menu_footer_2'])->get();
-        return view('menu.form', compact('menu', 'menus', 'menu_headers', 'menu_footers'));
+        return view('admin.menu.form', compact('menu', 'menus', 'menu_headers', 'menu_footers'));
     }
 
     /**
@@ -110,7 +111,7 @@ class MenuController extends Controller
     public function update(Request $request, $id)
     {
         try {
-            $request->validate([
+            $this->validate($request, [
                 'item_title' => 'required',
                 'item_url' => 'required',
                 'position' => 'required'
@@ -126,14 +127,14 @@ class MenuController extends Controller
                 $menu->item_title = $item_title;
                 $menu->user_id = $request->get('user_id');
                 $menu->is_actived = $request->get('is_actived');
-                \Activity::addLog('Sửa menu', 'Tài khoản ' . auth()->user()->email . ' sửa menu ' . $item_title . ' vào lúc ' . date('H:i A') . ' ngày ' . date('d/m/Y'));
+                Activity::addLog('Sửa menu', 'Tài khoản ' . auth()->user()->email . ' sửa menu ' . $item_title . ' vào lúc ' . date('H:i A') . ' ngày ' . date('d/m/Y'));
                 $menu->save();
-                return redirect('/menu/edit/' . $id)->with('message', 'Sửa menu ' . $item_title . ' thành công');
+                return redirect('cms/menu/edit/' . $id)->with('message', 'Sửa menu ' . $item_title . ' thành công');
             } else {
                 return redirect()->back()->with('error', 'Menu ' . $item_title . ' không tồn tại');
             }
         } catch (\Exception $exception) {
-            return redirect('/menu/edit/' . $id)->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('cms/menu/edit/' . $id)->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 
@@ -148,9 +149,9 @@ class MenuController extends Controller
         try {
             $menu= Menu::find($id);
             $menu->delete();
-            return redirect('/menu')->with('message', 'Xóa menu ' . $menu->item_title . ' thành công');
+            return redirect('cms/menu')->with('message', 'Xóa menu ' . $menu->item_title . ' thành công');
         } catch (\Exception $exception) {
-            return redirect('/menu')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('cms/menu')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 }

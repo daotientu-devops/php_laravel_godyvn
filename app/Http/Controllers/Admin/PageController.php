@@ -43,7 +43,7 @@ class PageController extends Controller
     public function store(Request $request)
     {
         try {
-            $request->validate([
+            $this->validate($request, [
                 'title' => 'required',
                 'content' => 'required',
                 'status' => 'required'

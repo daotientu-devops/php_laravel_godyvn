@@ -33,7 +33,7 @@ class CommentController extends Controller
     {
         $comments = Comment::select('id', 'content', 'status')->orderBy('id', 'DESC')->paginate($this->limit);
         $categories = Category::select('id', 'name', 'parent_id')->where('parent_id', 0)->get();
-        return view('comment.index', compact('comments', 'categories'));
+        return view('admin.comment.index', compact('comments', 'categories'));
     }
 
     /**
@@ -45,7 +45,7 @@ class CommentController extends Controller
     public function store(Request $request)
     {
         try {
-            $request->validate([
+            $this->validate($request, [
                 'author_name' => 'required',
                 'content' => 'required'
             ]);
@@ -71,7 +71,7 @@ class CommentController extends Controller
             $queryString = $request->getQueryString();
             if ($queryString != '')
                 $queryString = '?' . $queryString;
-            return redirect('/comment/edit/' . $comment->id . $queryString)->with('message', 'Tạo mới bình luận thành công');
+            return redirect('cms/comment/edit/' . $comment->id . $queryString)->with('message', 'Tạo mới bình luận thành công');
         } catch (\Exception $exception) {
             return redirect()->back()->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
@@ -87,7 +87,7 @@ class CommentController extends Controller
     {
         $comment = Comment::select('id', 'author_name', 'user_id', 'author_address', 'author_avatar', 'content', 'status', 'published_at')->where('id', $id)->first();
         $comments = Comment::select('id', 'content', 'status')->orderBy('id', 'DESC')->paginate($this->limit);
-        return view('comment.form', compact('comment', 'comments'));
+        return view('admin.comment.form', compact('comment', 'comments'));
     }
 
     /**
@@ -100,7 +100,7 @@ class CommentController extends Controller
     public function update(Request $request, $id)
     {
         try {
-            $request->validate([
+            $this->validate($request, [
                 'author_name' => 'required',
                 'content' => 'required'
             ]);
@@ -142,9 +142,9 @@ class CommentController extends Controller
             $queryString = $request->getQueryString();
             if ($queryString != '')
                 $queryString = '?' . $queryString;
-            return redirect('/comment' . $queryString)->with('message', 'Xóa bình luận ID = ' . $id . ' thành công');
+            return redirect('cms/comment' . $queryString)->with('message', 'Xóa bình luận ID = ' . $id . ' thành công');
         } catch (\Exception $exception) {
-            return redirect('/comment' . $queryString)->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('cms/comment' . $queryString)->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 }

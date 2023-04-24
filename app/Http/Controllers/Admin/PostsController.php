@@ -86,7 +86,7 @@ class PostsController extends Controller
         $dayDir = date('d');
 
         try {
-            $request->validate([
+            $this->validate($request, [
                 'title' => 'required',
                 'content' => 'required',
                 'status' => 'required'
@@ -247,7 +247,7 @@ class PostsController extends Controller
         $dayDir = date('d');
 
         try {
-            $request->validate([
+            $this->validate($request, [
                 'title' => 'required',
                 'content' => 'required',
                 'status' => 'required'

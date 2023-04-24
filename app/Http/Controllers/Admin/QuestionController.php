@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Core\Business\QuestionBusiness;
 use App\Core\Business\UploadFileBusiness;
@@ -58,7 +58,7 @@ class QuestionController extends Controller
         $diseases = array();
         $cate_diseases = array();
 
-        return view('questions.index', compact('page__title', 'page__route', 'questions', 'categories', 'diseases', 'cate_diseases','arr_val'));
+        return view('admin.questions.index', compact('page__title', 'page__route', 'questions', 'categories', 'diseases', 'cate_diseases','arr_val'));
     }
 
     /**
@@ -72,7 +72,7 @@ class QuestionController extends Controller
         $page__list__title = 'Quay về danh sách câu hỏi';
         $page__route = 'frequently-questions';
         $categories = Category::where([['has_questions', 1], ['is_actived', 1]])->get();
-        return view('questions.create', compact('page__title', 'page__list__title', 'page__route', 'categories'));
+        return view('admin.questions.create', compact('page__title', 'page__list__title', 'page__route', 'categories'));
     }
 
     /**
@@ -85,7 +85,7 @@ class QuestionController extends Controller
     {
         try {
             // set check the data input
-            $request->validate([
+            $this->validate($request, [
                 'question' => 'required',
                 'author_name' => 'required'
             ]);
@@ -128,7 +128,7 @@ class QuestionController extends Controller
                         //
                     }
                     Activity::addLog('Tạo mới câu hỏi', 'Tài khoản ' . get_user_email() . ' tạo mới câu hỏi ' . $request->get('question') . ' vào lúc ' . date('H:i A') . ' ngày ' . date('d/m/Y'));
-                    return redirect('/frequently-questions/edit/' . $question->id)->with('message', 'Tạo mới câu hỏi "' . $request->get('question') . '" thành công');
+                    return redirect('cms/frequently-questions/edit/' . $question->id)->with('message', 'Tạo mới câu hỏi "' . $request->get('question') . '" thành công');
                 }
             }
         } catch (\Exception $exception) {
@@ -186,7 +186,7 @@ class QuestionController extends Controller
         foreach ($questionHasProducts as $qp) {
             array_push($questionProducts, $qp['product_id']);
         }
-        return view('questions.form', compact('action__Q', 'action__A', 'page__title', 'page__list__title', 'page__route', 'question', 'answer', 'answers', 'categoryParent', 'categories', 'diseases', 'cate_diseases', 'tagQuestion', 'products', 'questionProducts'));
+        return view('admin.questions.form', compact('action__Q', 'action__A', 'page__title', 'page__list__title', 'page__route', 'question', 'answer', 'answers', 'categoryParent', 'categories', 'diseases', 'cate_diseases', 'tagQuestion', 'products', 'questionProducts'));
     }
 
     /**
@@ -212,7 +212,7 @@ class QuestionController extends Controller
 
         $categories = Category::where('has_questions', 1)->get();
 
-        return view('questions.form', compact('action__Q', 'action__A', 'page__title', 'page__list__title', 'page__route', 'question', 'answer', 'answers', 'categoryParent', 'categories'));
+        return view('admin.questions.form', compact('action__Q', 'action__A', 'page__title', 'page__list__title', 'page__route', 'question', 'answer', 'answers', 'categoryParent', 'categories'));
     }
 
     /**
@@ -225,7 +225,7 @@ class QuestionController extends Controller
     public function update(Request $request, $id)
     {
         try {
-            $request->validate([
+            $this->validate($request, [
                 'question' => 'required',
                 'author_name' => 'required'
             ]);
@@ -452,7 +452,7 @@ class QuestionController extends Controller
 
 
         $questions = $this->get_data($arr_val);
-        return view('questions.index', compact('page__title', 'page__route', 'questions', 'categories', 'diseases', 'cate_diseases','arr_val'));
+        return view('admin.questions.index', compact('page__title', 'page__route', 'questions', 'categories', 'diseases', 'cate_diseases','arr_val'));
     }
 
     /**
@@ -631,7 +631,7 @@ class QuestionController extends Controller
                 ])->orderBy('order')->get();
         }
         $categories = Category::whereIn('category_type', ['hoi-dap'])->get();
-        return view('questions.highlight', compact('questions', 'highlightQuestions', 'categories'));
+        return view('admin.questions.highlight', compact('questions', 'highlightQuestions', 'categories'));
     }
 
     /**

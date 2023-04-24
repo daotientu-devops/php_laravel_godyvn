@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Core\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -15,7 +15,7 @@ class ContactController extends Controller
     public function index()
     {
         $contact = Contact::all();
-        return view('contacts.index', compact('contacts'));
+        return view('admin.contacts.index', compact('contacts'));
     }
 
     /**
@@ -37,7 +37,7 @@ class ContactController extends Controller
     public function store(Request $request)
     {
         // validate request
-        $request->validate([
+        $this->validate($request, [
             'first_name' => 'required',
             'last_name' => 'required',
             'email' => 'required'
@@ -53,7 +53,7 @@ class ContactController extends Controller
         ]);
         $contact->save();
         // attach message
-        return redirect('/contacts')->with('success', 'Contact saved!');
+        return redirect('cms/contacts')->with('success', 'Contact saved!');
     }
 
     /**
@@ -88,7 +88,7 @@ class ContactController extends Controller
     public function update(Request $request, $id)
     {
         // validate request
-        $request->validate([
+        $this->validate($request, [
             'first_name' => 'required',
             'last_name' => 'required',
             'email' => 'required'
@@ -103,7 +103,7 @@ class ContactController extends Controller
         $contact->country = $request->get('country');
         $contact->save();
         // attach message
-        return redirect('/contacts')->with('success', 'Contact updated!');
+        return redirect('cms/contacts')->with('success', 'Contact updated!');
     }
 
     /**
@@ -116,6 +116,6 @@ class ContactController extends Controller
     {
         $contact = Contact::find($id);
         $contact->delete();
-        return redirect('/contacs')->with('success', 'Contact deleted!');
+        return redirect('cms/contacs')->with('success', 'Contact deleted!');
     }
 }

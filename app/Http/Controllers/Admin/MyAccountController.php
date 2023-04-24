@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Core\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -43,7 +43,7 @@ class MyAccountController extends Controller
         } else {
             $categories = DB::table('categories')->select('id', 'name')->get();
             $myPosts = DB::table('posts')->select('id', 'title', 'category_id', 'published_at')->where('user_id', Auth::user()->id)->orderBy('published_at', 'DESC')->paginate(config()->get('constants.LIMIT_DATA_PAGINATE'));
-            return view('myaccount.profile', compact('categories', 'myPosts'));
+            return view('admin.myaccount.profile', compact('categories', 'myPosts'));
         }
     }
 }

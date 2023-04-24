@@ -36,7 +36,7 @@ class AnswerController extends Controller
     public function store(Request $request)
     {
         try {
-            $request->validate([
+            $this->validate($request, [
                 'answer' => 'required',
                 'author_name' => 'required'
             ]);

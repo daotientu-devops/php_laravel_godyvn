@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Core\Business\UploadFileBusiness;
 use App\Core\Controllers\Controller;
@@ -39,7 +39,7 @@ class HomepageController extends Controller
             ]);
             $slide->save();
         }
-        return view('homepage.bannertop', compact('sliders'));
+        return view('admin.homepage.bannertop', compact('sliders'));
     }
 
     /**
@@ -54,7 +54,7 @@ class HomepageController extends Controller
             'banner_link' => $request->get('banner_link')
         ]);
         $slide->save();
-        return redirect('templates/bannertop')->with('message', 'Tạo banner thành công');
+        return redirect('cms/templates/bannertop')->with('message', 'Tạo banner thành công');
     }
 
     /**
@@ -65,9 +65,9 @@ class HomepageController extends Controller
         try {
             $slider = Slider::find($id);
             $slider->delete();
-            return redirect('templates/bannertop')->with('message', 'Xóa banner ' . $slider->banner_name . ' thành công');
+            return redirect('cms/templates/bannertop')->with('message', 'Xóa banner ' . $slider->banner_name . ' thành công');
         } catch (\Exception $exception) {
-            return redirect('templates/bannertop')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('cms/templates/bannertop')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 
@@ -81,7 +81,7 @@ class HomepageController extends Controller
         }
 
         $dataTemplate = $this->getDataTemplate($request, $template);
-        return view('template.bannertopcategories', compact('template', 'posts', 'dataTemplate'));
+        return view('admin.template.bannertopcategories', compact('template', 'posts', 'dataTemplate'));
     }
 
     public function bannerLeft(Request $request) {
@@ -95,7 +95,7 @@ class HomepageController extends Controller
         }
 
         $dataTemplate = $this->getDataTemplate($request, $template);
-        return view('template.bannerleft', compact('template', 'dataP', 'dataTemplate'));
+        return view('admin.template.bannerleft', compact('template', 'dataP', 'dataTemplate'));
     }
 
     public function banner_left_categories(Request $request) {
@@ -109,7 +109,7 @@ class HomepageController extends Controller
         }
 
         $dataTemplate = $this->getDataTemplate($request, $template);
-        return view('template.bannerleftcategories', compact('template', 'dataP', 'dataTemplate'));
+        return view('admin.template.bannerleftcategories', compact('template', 'dataP', 'dataTemplate'));
     }
 
     public function sectionhd(Request $request) {
@@ -121,7 +121,7 @@ class HomepageController extends Controller
         }
 
         $dataTemplate = $this->getDataTemplate($request, $template);
-        return view('template.sectionhd', compact('template','dataTemplate'));
+        return view('admin.template.sectionhd', compact('template','dataTemplate'));
     }
 
     public function sectionttnb(Request $request) {
@@ -134,7 +134,7 @@ class HomepageController extends Controller
         }
 
         $dataTemplate = $this->getDataTemplate($request, $template);
-        return view('template.sectionttnb', compact('template', 'posts', 'dataTemplate'));
+        return view('admin.template.sectionttnb', compact('template', 'posts', 'dataTemplate'));
     }
 
     public function sectionhdcg(Request $request) {
@@ -147,7 +147,7 @@ class HomepageController extends Controller
         }
 
         $dataTemplate = $this->getDataTemplate($request, $template);
-        return view('template.sectionhdcg', compact('template', 'posts', 'dataTemplate'));
+        return view('admin.template.sectionhdcg', compact('template', 'posts', 'dataTemplate'));
     }
 
     public function sectionstb(Request $request) {
@@ -160,7 +160,7 @@ class HomepageController extends Controller
         }
 
         $dataTemplate = $this->getDataTemplate($request, $template);
-        return view('template.sectionstb', compact('template', 'posts', 'dataTemplate'));
+        return view('admin.template.sectionstb', compact('template', 'posts', 'dataTemplate'));
     }
 
     /**
@@ -177,7 +177,7 @@ class HomepageController extends Controller
         }
 
         $dataTemplate = $this->getDataTemplate($request, $template);
-        return view('homepage.section_bds', compact('template', 'dataTemplate'));
+        return view('admin.homepage.section_bds', compact('template', 'dataTemplate'));
     }
 
     /**
@@ -194,7 +194,7 @@ class HomepageController extends Controller
         }
 
         $dataTemplate = $this->getDataTemplate($request, $template);
-        return view('homepage.section_partner', compact('template', 'dataTemplate'));
+        return view('admin.homepage.section_partner', compact('template', 'dataTemplate'));
     }
 
     public function sectionseo(Request $request) {
@@ -206,7 +206,7 @@ class HomepageController extends Controller
         }
 
         $dataTemplate = $this->getDataTemplate($request, $template);
-        return view('homepage.sectionseo', compact('template','dataTemplate'));
+        return view('admin.homepage.sectionseo', compact('template','dataTemplate'));
     }
 
     /**** Start Post *****/

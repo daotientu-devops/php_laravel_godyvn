@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 use App\Core\Controllers\Controller;
 use App\Core\Models\Tags;
 use Illuminate\Http\Request;
@@ -37,7 +37,7 @@ class TagsController extends Controller
             $html_done = $html_done->render();
 
             if($ajax_nr == '0'){
-                return  view('tags.index', compact('tags', 'html_done'));
+                return view('admin.tags.index', compact('tags', 'html_done'));
             }else{
                 return response()->json([
                     'data' => $html_done
@@ -95,10 +95,10 @@ class TagsController extends Controller
                     return $done_redirect;
                 }
             }else{
-                return  redirect('/tags')->with('error', 'Làm ơn nhập tags');
+                return  redirect('cms/tags')->with('error', 'Làm ơn nhập tags');
             }
         } catch (\Exception $exception) {
-            return redirect('/tags')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('cms/tags')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 
@@ -134,7 +134,7 @@ class TagsController extends Controller
                 ]);
             }
         } catch (\Exception $exception) {
-            return redirect('/tags')->with('error', 'Có lỗi hiển thị tags: ' . $exception->getMessage());
+            return redirect('cms/tags')->with('error', 'Có lỗi hiển thị tags: ' . $exception->getMessage());
         }
     }
 
@@ -164,14 +164,14 @@ class TagsController extends Controller
                 ->render();
 
             if($ajax_nr == '0'){
-                return view('tags.form', compact('action', 'tag', 'tags', 'arr_val', 'html_done', 'number_record'));
+                return view('admin.tags.form', compact('action', 'tag', 'tags', 'arr_val', 'html_done', 'number_record'));
             }else{
                 return response()->json([
                     'data' => $html_done
                 ]);
             }
         } catch (\Exception $exception) {
-            return redirect('/tags')->with('error', 'Có lỗi hiển thị tags: ' . $exception->getMessage());
+            return redirect('cms/tags')->with('error', 'Có lỗi hiển thị tags: ' . $exception->getMessage());
         }
     }
 
@@ -186,7 +186,7 @@ class TagsController extends Controller
     {
         try {
             $action = 'edit';
-            $request->validate([
+            $this->validate($request, [
                 'name' => 'required'
             ]);
             $name = $request->get('name');
@@ -213,9 +213,9 @@ class TagsController extends Controller
                 ->with('i', ($request->get('page', 1) - 1) * $number_record)
                 ->render();
 
-            return view('tags.form', compact('action', 'tag', 'tags', 'arr_val', 'html_done', 'number_record'));
+            return view('admin.tags.form', compact('action', 'tag', 'tags', 'arr_val', 'html_done', 'number_record'));
         } catch (\Exception $exception) {
-            return redirect('/tags/edit/' . $id)->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('cms/tags/edit/' . $id)->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 
@@ -237,12 +237,12 @@ class TagsController extends Controller
             $number_record = $request->get('nr') != ''?$request->get('nr'):$this->limit;
 
             if(isset($p) && $p != ""){
-                return redirect('/tags/search?p='.$p.'&nr='.$number_record)->with('message', 'Tags đã được xóa: '.$tag->name);
+                return redirect('cms/tags/search?p='.$p.'&nr='.$number_record)->with('message', 'Tags đã được xóa: '.$tag->name);
             }else {
-                return redirect('/tags?nr='.$number_record)->with('message', 'Tags đã được xóa: '.$tag->name);
+                return redirect('cms/tags?nr='.$number_record)->with('message', 'Tags đã được xóa: '.$tag->name);
             }
         } catch (\Exception $exception) {
-            return redirect('/tags')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+            return redirect('cms/tags')->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
 
@@ -260,12 +260,12 @@ class TagsController extends Controller
         $number_record = $request->get('nr') != ''?$request->get('nr'):$this->limit;
 
         $tags = $this->get_tags($request, $arr_val, $number_record);
-        $html_done = view('tags.list')->with(['tags' => $tags, 'number_record' => $number_record, 'arr_val' => $arr_val])
+        $html_done = view('admin.tags.list')->with(['tags' => $tags, 'number_record' => $number_record, 'arr_val' => $arr_val])
             ->with('i', ($request->get('page', 1) - 1) * $number_record)
             ->render();
 
         if($ajax_nr == '0') {
-            return view('tags.search', compact('tags', 'arr_val', 'html_done', 'number_record'));
+            return view('admin.tags.search', compact('tags', 'arr_val', 'html_done', 'number_record'));
         }else{
             return response()->json([
                 'data' => $html_done
@@ -287,10 +287,10 @@ class TagsController extends Controller
 
         $number_record = $request->get('nr') != ''?$request->get('nr'):$this->limit;
         $tags = $this->get_tags($request, $arr_val, $number_record);
-        $html_done = view('tags.list')->with(['tags' => $tags, 'number_record' => $number_record, 'arr_val' => $arr_val])
+        $html_done = view('admin.tags.list')->with(['tags' => $tags, 'number_record' => $number_record, 'arr_val' => $arr_val])
             ->with('i', ($request->get('page', 1) - 1) * $number_record)
             ->render();
-        return view('tags.search', compact('tags', 'arr_val', 'html_done', 'number_record'));
+        return view('admin.tags.search', compact('tags', 'arr_val', 'html_done', 'number_record'));
     }
 
     /**
@@ -319,7 +319,7 @@ class TagsController extends Controller
      * @return \Illuminate\Http\JsonResponse
      */
     public function add_tags(Request $request){
-        $tags = \DB::table('tags')->pluck('name');
+        $tags = DB::table('tags')->pluck('name');
         return response()->json([
             'data' => $tags
         ]);

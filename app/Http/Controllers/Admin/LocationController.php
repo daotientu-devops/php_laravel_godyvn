@@ -64,7 +64,7 @@ class LocationController extends Controller
     {
         $name = $request->get('name');
         try {
-            $request->validate([
+            $this->validate($request, [
                 'name' => 'required',
                 'content' => 'required',
             ]);
@@ -75,7 +75,7 @@ class LocationController extends Controller
                 // TH tạo mới mẫu
                 $location = new Location([
                     'name' => $name,
-                    'slug' => sanitize($name),
+                    'slug' => $this->sanitize($name),
                     'continent' => $request->get('continent'),
                     'country' => $request->get('country'),
                     'city' => $request->get('city'),
@@ -118,7 +118,7 @@ class LocationController extends Controller
     {
         $name = $request->get('name');
         try {
-            $request->validate([
+            $this->validate($request, [
                 'name' => 'required',
                 'content' => 'required'
             ]);
@@ -126,7 +126,7 @@ class LocationController extends Controller
             // Not ok thì redirect với thông báo post không tồn tại
             if (Location::where('id', '=', $id)->exists()) {
                 $location->name = $name;
-                $location->slug = sanitize($name);
+                $location->slug = $this->sanitize($name);
                 $location->continent = $request->get('continent');
                 $location->country = $request->get('country');
                 $location->city = $request->get('city');

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
 use App\Core\Business\UploadFileBusiness;
 use App\Core\Controllers\Controller;
@@ -25,7 +25,7 @@ class WidgetController extends Controller
     {
         if ($page == 'activity_detail') $page = 'activity.detail';
         $widget = Widget::select('content')->where('key', 'widget.' . $page . '.' . $position . ($id !== '' ? '.' . $id : ''))->first();
-        return view('widgets.' . $page . '.' . $position . ($id !== '' ? '.' . $id : ''), compact('page', 'position', 'widget'));
+        return view('admin.widgets.' . $page . '.' . $position . ($id !== '' ? '.' . $id : ''), compact('page', 'position', 'widget'));
     }
 
     public function postPosition(Request $request)
@@ -70,7 +70,7 @@ class WidgetController extends Controller
         $widget = Widget::select('content')->where('key', 'landingpage.' . $year . '.' . $landingpage . '.' . $position)->first();
         $setting = Setting::select('value')->where('key', 'landingpage.' . $year . '.' . $landingpage . '.' . $position)->first();
         $allow_get_dynamic_content = WidgetRedis::getKey('landingpage.' . $year . '.' . $landingpage . '.setting');
-        return view('widget.' . 'landingpage.' . $year . '.' . $landingpage . '.' . $position, compact('year', 'landingpage', 'position', 'template', 'widget', 'setting', 'allow_get_dynamic_content'));
+        return view('admin.widgets.' . 'landingpage.' . $year . '.' . $landingpage . '.' . $position, compact('year', 'landingpage', 'position', 'template', 'widget', 'setting', 'allow_get_dynamic_content'));
     }
 
     /**
@@ -236,7 +236,7 @@ class WidgetController extends Controller
         $widget = Widget::select('key', 'content')->where('id', $id)->first();
         // List widgets lấy theo position (giống trong wordpress)
         $widgets = Widget::select('id', 'content')->where([['template_id', $template->id], ['position', $position]])->paginate($this->limit);
-        return view('widget.' . 'landingpage.' . $year . '.' . $landingpage . '.' . $position, compact('year', 'landingpage', 'position', 'action', 'template', 'widget', 'widgets'));
+        return view('admin.widgets.' . 'landingpage.' . $year . '.' . $landingpage . '.' . $position, compact('year', 'landingpage', 'position', 'action', 'template', 'widget', 'widgets'));
     }
 
     /**
