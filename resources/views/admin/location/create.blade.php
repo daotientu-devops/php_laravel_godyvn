@@ -53,9 +53,15 @@
                         </div>
                         <div class="form-group">
                             <label class="control-label col-md-2 col-sm-2 col-xs-12">Nội dung <span
-                                    class="required">*</span></label>
+                                        class="required">*</span></label>
                             <div class="col-md-10 col-sm-10 col-xs-12">
                                 <textarea id="content" class="editor form-control" name="content"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-2 col-sm-2 col-xs-12">Album ảnh</label>
+                            <div class="col-md-10 col-sm-10 col-xs-12">
+                                <textarea id="album" class="editor_basic form-control" name="album"></textarea>
                             </div>
                         </div>
                         <div class="form-group">
@@ -63,6 +69,13 @@
                             <div class="col-md-5 col-sm-5 col-xs-12">
                                 <input type="file" class="form-control" name="thumbnail_url">
                                 <div id="thumbnail_preview" class="mt-4"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-2 col-sm-2 col-xs-12">Ảnh top banner {{(config()->get('constants.LABEL_SIZE_TOP_BACKGROUND'))}}</label>
+                            <div class="col-md-10 col-sm-10 col-xs-12">
+                                <input type="file" class="form-control" name="top_background_url">
+                                <div id="top_background_preview" class="mt-4"></div>
                             </div>
                         </div>
                         <div class="form-group">

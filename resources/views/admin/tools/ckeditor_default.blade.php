@@ -35,7 +35,7 @@
         ],
         uiColor: '#f8f8f8',
         allowedContent: true,
-        height: 500
+        height: 300
     };
     $('.editor_basic').each(function () {
         CKEDITOR.replace($(this).attr('id'), editor_config_basic);

@@ -18,6 +18,12 @@
             display: inline-block;
         }
     </style>
+    <div class="w-fit d-block ps-relative">
+        <div style="width: 100%; height: 210px;">
+            <img class="w-fit h-fit object-center object-cover d-block ps-absolute t0 r0 b0 l0" data-srcset="https://media.gody.vn//images/an-giang/rung-tram-tra-su/4-2018/6686704-20180414035805-an-giang-rung-tram-tra-su.jpg"
+                 src="{{ env('FOLDER_UPLOAD') . $location->top_background_url }}">
+        </div>
+    </div>
     <section class="pt-10 p-0 m-0">
         <div class="container">
             <div class="row">
@@ -588,7 +594,7 @@
                 }
             </style>
             <div class="row mb-20">
-                <div data-class="col-md-3 p-0 m-0" class="col-md-3 ps-relative sidebar sidebar-sticky pl-0 test" style="display:none">
+                <div data-class="col-md-3 p-0 m-0" class="col-md-3 ps-relative sidebar sidebar-sticky pl-0 test" style="">
                     <div class="pt-30 sidebar__inner" style="position: relative;">
                         <div data-class="w-fit d-block pr-15" class="pr-15">
                             <div class="d-block w-fit" style="box-shadow: #ff8c00 1px 1px, #ff8c00 2px 2px, #ff8c00 3px 3px, #ff8c00 4px 4px, #ff8c00 5px 5px, #ff8c00 6px 6px, #ff8c00 7px 7px, #ff8c00 8px 8px, #ff8c00 9px 9px, #ff8c00 10px 10px, #ff8c00 11px 11px, #ff8c00 12px 12px, #ff8c00 13px 13px, #ff8c00 14px 14px">
@@ -597,29 +603,29 @@
                                     <div class="divider-frame" style="display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center;  align-items: center; height: 2px;  width: 100%;">
                                         <div class="main-sub-account-divider" style="-webkit-box-flex: 1; -ms-flex: 1; flex: 0.1; height: 2px; background: #333;"></div>
                                         <div class="main-sub-account-or ml-5 mr-5 truncate-line lineclamp1">
-                                            <h3 class="fc-fourteenth fs-28 fw-700 lh-120% p-0 m-0 tt-capitalize "> Lào Cai </h3>
+                                            <h3 class="fc-fourteenth fs-28 fw-700 lh-120% p-0 m-0 tt-capitalize "> {{ $location->name }} </h3>
                                         </div>
                                         <div class="main-sub-account-divider" style="-webkit-box-flex: 1; -ms-flex: 1; flex: 1; height: 2px; background: #333;"></div>
                                     </div>
                                     <div class="w-fit d-block mb-12">
                                         <div class="p-16 d-flex jc-space-between box-shadow-02 bg-white mt-30">
-                                            <a class=" fc-primary  lh-120% fs-18 fw-400 h:fc-primary" href="https://gody.vn/chau-a/viet-nam/lao-cai">Giới thiệu</a>
+                                            <a class=" fc-primary  lh-120% fs-18 fw-400 h:fc-primary" href="#gioi-thieu">Giới thiệu</a>
                                             <img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-02.png" width="8px" height="14px">
                                         </div>
-                                        <div class="p-16 d-flex jc-space-between box-shadow-02 bg-white">
-                                            <a class=" fc-fourteenth  lh-120% fs-18 fw-400 h:fc-primary" href="https://gody.vn/chau-a/viet-nam/lao-cai/diem-du-lich">Điểm du lịch</a>
-                                            <img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-01.png" width="8px" height="14px">
-                                        </div>
-                                        <div class="p-16 d-flex jc-space-between box-shadow-02 bg-white">
-                                            <a class=" fc-fourteenth  lh-120% fs-18 fw-400 h:fc-primary" href="https://gody.vn/chau-a/viet-nam/lao-cai/kinh-nghiem">Kinh nghiệm du lịch</a>
-                                            <img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-01.png" width="8px" height="14px">
-                                        </div>
-                                        <div class="p-16 d-flex jc-space-between box-shadow-02 bg-white">
-                                            <a class=" fc-fourteenth   lh-120% fs-18 fw-400 h:fc-primary" href="https://gody.vn/chau-a/viet-nam/lao-cai/hoi-dap">Hỏi đáp</a>
-                                            <img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-01.png" width="8px" height="14px">
-                                        </div>
+                                        {{--<div class="p-16 d-flex jc-space-between box-shadow-02 bg-white">--}}
+                                        {{--<a class=" fc-fourteenth  lh-120% fs-18 fw-400 h:fc-primary" href="https://gody.vn/chau-a/viet-nam/lao-cai/diem-du-lich">Điểm du lịch</a>--}}
+                                        {{--<img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-01.png" width="8px" height="14px">--}}
+                                        {{--</div>--}}
+                                        {{--<div class="p-16 d-flex jc-space-between box-shadow-02 bg-white">--}}
+                                        {{--<a class=" fc-fourteenth  lh-120% fs-18 fw-400 h:fc-primary" href="https://gody.vn/chau-a/viet-nam/lao-cai/kinh-nghiem">Kinh nghiệm du lịch</a>--}}
+                                        {{--<img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-01.png" width="8px" height="14px">--}}
+                                        {{--</div>--}}
+                                        {{--<div class="p-16 d-flex jc-space-between box-shadow-02 bg-white">--}}
+                                        {{--<a class=" fc-fourteenth   lh-120% fs-18 fw-400 h:fc-primary" href="https://gody.vn/chau-a/viet-nam/lao-cai/hoi-dap">Hỏi đáp</a>--}}
+                                        {{--<img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-01.png" width="8px" height="14px">--}}
+                                        {{--</div>--}}
                                         <div class="p-16 d-flex jc-space-between bg-white" data-class="p-16 d-flex jc-space-between box-shadow-02 bg-white">
-                                            <a class=" fc-fourteenth  lh-120% fs-18 fw-400 h:fc-primary" href="https://gody.vn/chau-a/viet-nam/lao-cai/hinh-anh">Hình ảnh</a>
+                                            <a class=" fc-fourteenth  lh-120% fs-18 fw-400 h:fc-primary" href="#hinh-anh">Hình ảnh</a>
                                             <img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-01.png" width="8px" height="14px">
                                         </div>
                                     </div>
@@ -632,8 +638,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 primary-content">
+
+                <div class="col-md-9 primary-content" id="gioi-thieu">
                     <?php echo html_entity_decode($location->content) ?>
+                    <div id="hinh-anh">
+                        <div class="w-fit d-flex pt-0 pb-10 jc-space-between ai-center">
+                            <h1 class="w-fit d-block fc-black fw-700 fs-36 lh-38 xs:fs-26 py-10 m-0"> Hình ảnh du lịch {{ $location->city }}, {{ $location->country }}</h1>
+                        </div>
+                        <div class="w-fit d-block mt-20">
+                            <div class="d-flex ai-top fw-wrap" style="--column:4; --gutter: 38px;">
+                                <?php echo html_entity_decode($location->album) ?>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

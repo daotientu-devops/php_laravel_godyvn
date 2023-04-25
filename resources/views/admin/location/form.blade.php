@@ -59,6 +59,12 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <label class="control-label col-md-2 col-sm-2 col-xs-12">Album ảnh</label>
+                            <div class="col-md-10 col-sm-10 col-xs-12">
+                                <textarea id="album" class="editor_basic form-control" name="album">{{ $location->album }}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="control-label col-md-2 col-sm-2 col-xs-12">Ảnh đại diện</label>
                             <div class="col-md-5 col-sm-5 col-xs-12">
                                 <input type="file" class="form-control" name="thumbnail_url">
@@ -70,7 +76,23 @@
                                 <label class="control-label col-md-2 col-sm-2 col-xs-12"></label>
                                 <div class="col-md-5 col-sm-5 col-xs-12">
                                     <p>Ảnh đại diện hiện tại (bên dưới)</p>
-                                    <p><img src="{{ Config::get('constants.STATIC_IMAGES') . $post->thumbnail_url }}" width="100%"/></p>
+                                    <p><img src="{{ Config::get('constants.STATIC_IMAGES') . $location->thumbnail_url }}" width="100%"/></p>
+                                </div>
+                            </div>
+                        @endif
+                        <div class="form-group">
+                            <label class="control-label col-md-2 col-sm-2 col-xs-12">Ảnh top banner {{(config()->get('constants.LABEL_SIZE_TOP_BACKGROUND'))}}</label>
+                            <div class="col-md-10 col-sm-10 col-xs-12">
+                                <input type="file" class="form-control" name="top_background_url">
+                                <div id="top_background_preview" class="mt-4"></div>
+                            </div>
+                        </div>
+                        @if (!empty($location->top_background_url))
+                            <div class="form-group">
+                                <label class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                                <div class="col-md-10 col-sm-10 col-xs-12">
+                                    <p>Ảnh đại diện hiện tại (bên dưới)</p>
+                                    <p><img src="{{ Config::get('constants.STATIC_IMAGES') . $location->top_background_url }}" width="100%"/></p>
                                 </div>
                             </div>
                         @endif
@@ -78,7 +100,7 @@
                             <label class="control-label col-md-2 col-sm-2 col-xs-12">Top tìm kiếm</label>
                             <div class="col-md-5 col-sm-5 col-xs-12">
                                 <div class="radio">
-                                    <input type="checkbox" value="1" name="top_search" class="flat"{{ $post->top_search == 1 ?  ' checked' : '' }}>
+                                    <input type="checkbox" value="1" name="top_search" class="flat"{{ $location->top_search == 1 ?  ' checked' : '' }}>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +108,7 @@
                             <label class="control-label col-md-2 col-sm-2 col-xs-12">Điểm đến hot</label>
                             <div class="col-md-5 col-sm-5 col-xs-12">
                                 <div class="radio">
-                                    <input type="checkbox" value="1" name="hot_location" class="flat"{{ $post->hot_location == 1 ?  ' checked' : '' }}>
+                                    <input type="checkbox" value="1" name="hot_location" class="flat"{{ $location->hot_location == 1 ?  ' checked' : '' }}>
                                 </div>
                             </div>
                         </div>
