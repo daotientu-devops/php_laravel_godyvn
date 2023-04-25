@@ -24,4 +24,6 @@ class Page extends Model
         'meta_keyword',
         'meta_description'
     ];
+
+    const STATUS_PUBLISH = 'publish';
 }

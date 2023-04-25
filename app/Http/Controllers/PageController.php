@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Core\Business\UploadFileBusiness;
 use App\Core\Controllers\Controller;
+use App\Core\Models\Posts;
 use Illuminate\Http\Request;
 use App\Core\Models\Page;
 use App\Core\Models\Category;
@@ -17,9 +18,12 @@ class PageController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function detail($slug)
+    public function detail($slug = 'gioi-thieu')
     {
-        $page = Page::where('slug', '=', $slug)->first();
+        if ($slug === '') {
+            return redirect('/');
+        }
+        $page = Page::where('slug', '=', $slug)->where('status', Page::STATUS_PUBLISH)->first();
         if (empty($page)) {
             return redirect('/');
         }

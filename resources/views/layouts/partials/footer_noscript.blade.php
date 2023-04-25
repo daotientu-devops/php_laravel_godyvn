@@ -32,8 +32,8 @@
                 <div class="mt-12">
                     <a href="{{ url('gioi-thieu') }}" class="show fc-sixth h:fc-primary">Giới thiệu</a>
                     <a href="{{ url('lien-he') }}" class="show fc-sixth h:fc-primary mt-5">Liên hệ</a>
-                    <a href="{{ url('bao-mat-thong-tin') }}" class="show fc-sixth h:fc-primary mt-5">Chính sách bảo mật</a>
-                    <a href="{{ url('quy-dinh-su-dung') }}" class="show fc-sixth h:fc-primary mt-5">Chính sách quyền riêng tư</a>
+                    <a href="{{ url('chinh-sach-bao-mat') }}" class="show fc-sixth h:fc-primary mt-5">Chính sách bảo mật</a>
+                    <a href="{{ url('chinh-sach-quyen-rieng-tu') }}" class="show fc-sixth h:fc-primary mt-5">Chính sách quyền riêng tư</a>
                 </div>
             </div>
             <div class="col-md-2 pt-20">

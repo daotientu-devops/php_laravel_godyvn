@@ -218,20 +218,15 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
 
 // Frontend
 Route::group(['middleware' => 'web'], function () {
-    Route::get('gioi-thieu/{slug}', ['uses' => 'PageController@detail']);
-    Route::get('/gioi-thieu', function () {
-        return view('homepage.about');
-    });
-    Route::get('/lien-he', function () {
-        return view('homepage.contact');
-    });
+    Route::get('/',  ['uses' => 'HomepageController@index']);
+    Route::get('gioi-thieu/{slug?}', ['uses' => 'PageController@detail']);
+    Route::get('/{slug}', ['uses' => 'PageController@detail']);
     Route::get('/bao-mat-thong-tin', function () {
         return view('homepage.security');
     });
     Route::get('/quy-dinh-su-dung', function () {
         return view('homepage.rule');
     });
-    Route::get('/',  ['uses' => 'HomepageController@index']);
     Route::get('/blog/viet-bai/note', function () {
         return view('blog.note');
     });
