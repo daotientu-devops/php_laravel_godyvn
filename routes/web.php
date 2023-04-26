@@ -14,9 +14,9 @@
 Auth::routes();
 
 // Backend
-Route::get('cms/login', ['as' => 'login', 'uses' => 'Auth\LoginController@getLogin']);
-Route::post('cms/login', ['uses' => 'Auth\LoginController@postLogin']);
-Route::get('cms/logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
+Route::get('cms/login', ['as' => 'login', 'uses' => 'Admin\Auth\LoginController@getLogin']);
+Route::post('cms/login', ['uses' => 'Admin\Auth\LoginController@postLogin']);
+Route::get('cms/logout', ['as' => 'logout', 'uses' => 'Admin\Auth\LoginController@logout']);
 // Password Reset Routes...
 Route::post('password/email', [
     'as' => 'password.email',
@@ -44,6 +44,7 @@ Route::post('register', [
 ]);
 Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
     // Trang dashboard
+    Route::get('/', 'Admin\DashboardController@index');
     Route::get('/dashboard', 'Admin\DashboardController@index');
     // Trang quản trị category
     Route::group(['prefix' => 'categories'], function () {
@@ -219,6 +220,10 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
 // Frontend
 Route::group(['middleware' => 'web'], function () {
     Route::get('/',  ['uses' => 'HomepageController@index']);
+    Route::get('/diem-den', function () {
+        return view('destination.index');
+    });
+    Route::get('/diem-den/{continent}/{country}/{city?}', ['uses' => 'LocationController@detail']);
     Route::get('gioi-thieu/{slug?}', ['uses' => 'PageController@detail']);
     Route::get('/{slug}', ['uses' => 'PageController@detail']);
     Route::get('/bao-mat-thong-tin', function () {
@@ -243,10 +248,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/cong-tac-vien/viet-bai/note', function () {
         return view('blog.collaborator');
     });
-    Route::get('/diem-den', function () {
-        return view('destination.index');
-    });
-    Route::get('/diem-den/{continent}/{country}/{city?}', ['uses' => 'LocationController@detail']);
     Route::get('ban-do-du-lich/viet-nam', function () {
         return view('map.index');
     });

@@ -44,7 +44,10 @@ class LocationController extends Controller
         if (empty($location)) {
             return redirect('/');
         }
-        return view('location.detail', compact('location'));
+        $metaData['meta_title'] = $location->meta_title;
+        $metaData['meta_keyword'] = $location->meta_keyword;
+        $metaData['meta_description'] = $location->meta_description;
+        return view('location.detail', compact('location', 'metaData'));
     }
 
     /**

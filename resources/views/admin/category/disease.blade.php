@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
     <div class="row">
         @include('components.alert')
@@ -16,8 +16,8 @@
                 </div>
                 <div class="x_content">
                     <br/>
-                    <form class="form-horizontal form-label-left input_mask" action="{{ url('categories/adddiease/' . $category->id) }}" method="post">
-                        @csrf
+                    <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/categories/adddiease/' . $category->id) }}" method="post">
+                        {{ csrf_field() }}
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Tên danh mục <span
                                         class="required">*</span></label>

@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
 <div class="page-title">
     <div class="title_left">
@@ -24,15 +24,15 @@
                     <div class="profile_img">
                         <div id="crop-avatar">
                             <!-- Current avatar -->
-                            <img class="img-responsive avatar-view" src="{{ asset('assets/images/user.png') }}" alt="Avatar" title="Change the avatar">
+                            <img class="img-responsive avatar-view" src="{{ asset('cms/public/assets/images/user.png') }}" alt="Avatar" title="Change the avatar">
                         </div>
                     </div>
                     <h3>{{ auth()->user()->name }}</h3>
                 </div>
                 <div class="col-md-9 col-sm-9 col-xs-12">
                     @include('components.alert')
-                    <form class="form-horizontal form-label-left input_mask" action="{{ url('account/profile') }}" method="POST">
-                        @csrf
+                    <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/account/profile') }}" method="POST">
+                        {{ csrf_field() }}
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Họ và tên</label>
                             <div class="col-md-9 col-sm-9 col-xs-12">
@@ -82,7 +82,7 @@
                 <h2>Thống kê bài đã viết</h2>
                 <!-- start recent activity -->
                 @if(!empty((array)$myPosts))
-                    <?php $myPosts->setPath('/account/profile'); ?>
+                    <?php $myPosts->setPath('cms/account/profile'); ?>
                     {{ $myPosts->links() }}
                     <ul class="messages">
                         @foreach($myPosts as $post)
@@ -105,7 +105,7 @@
                         </li>
                         @endforeach
                     </ul>
-                    <?php $myPosts->setPath('/account/profile'); ?>
+                    <?php $myPosts->setPath('cms/account/profile'); ?>
                     {{ $myPosts->links() }}
                 @endif
                 <!-- end recent activity -->

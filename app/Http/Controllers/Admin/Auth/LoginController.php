@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers\Admin\Auth;
 
 use App\Core\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
@@ -37,12 +37,14 @@ class LoginController extends Controller
      */
     public function __construct()
     {
+        Auth::logout();
         $this->middleware('guest')->except('logout'); // loại trừ logout để tránh loop login
     }
 
     public function getLogin()
     {
-        return view('auth.login');
+        Auth::logout();
+        return view('admin.auth.login');
     }
 
     public function postLogin(Request $request)
@@ -69,7 +71,7 @@ class LoginController extends Controller
                 return redirect('cms/login')->with('error', 'Tài khoản đăng nhập chưa chính xác');
             }
         } catch (\Exception $exception) {
-            return redirect('login')
+            return redirect('cms/login')
                 ->with('error', 'Mật khẩu nhập vào quá ngắn')// send back all errors to the login form
                 ->withInput($request->except('password')) // send back the input (not the password) so that we can repopulate
                 ;

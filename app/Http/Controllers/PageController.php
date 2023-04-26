@@ -27,7 +27,10 @@ class PageController extends Controller
         if (empty($page)) {
             return redirect('/');
         }
-        return view('page.detail', compact('page'));
+        $metaData['meta_title'] = $page->meta_title;
+        $metaData['meta_keyword'] = $page->meta_keyword;
+        $metaData['meta_description'] = $page->meta_description;
+        return view('page.detail', compact('page', 'metaData'));
     }
 
     /**

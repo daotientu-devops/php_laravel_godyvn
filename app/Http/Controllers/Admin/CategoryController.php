@@ -101,7 +101,7 @@ class CategoryController extends Controller
         $category = Category::find($id);
         $categoryParent = Category::find($category->parent_id);
         $categories = Category::all();
-        return view('category.form', compact('action', 'category', 'categoryParent', 'categories'));
+        return view('admin.category.form', compact('action', 'category', 'categoryParent', 'categories'));
     }
 
     /**
@@ -116,7 +116,7 @@ class CategoryController extends Controller
         $category = Category::find($id);
         $categoryParent = Category::find($category->parent_id);
         $categories = Category::all();
-        return view('category.form', compact('action', 'category', 'categoryParent', 'categories'));
+        return view('admin.category.form', compact('action', 'category', 'categoryParent', 'categories'));
     }
 
     /**
@@ -194,7 +194,7 @@ class CategoryController extends Controller
             ->all();
 
         $diseases = Disease::where('is_actived', 1)->get();
-        return view('category.disease', compact('action', 'category', 'categoryDiseases',  'diseases'))
+        return view('admin.category.disease', compact('action', 'category', 'categoryDiseases',  'diseases'))
             ->with('i', ($request->get('page', 1) - 1) * $this->limit);
     }
 

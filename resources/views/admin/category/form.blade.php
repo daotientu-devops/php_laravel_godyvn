@@ -8,11 +8,11 @@ switch ($action) {
         break;
 }
 ?>
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
     <div class="page-title">
         <div class="title_left">
-            <a href="{{ url('/categories') }}" title="Tạo mới danh mục" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Tạo mới danh mục</a>
+            <a href="{{ url('cms/categories') }}" title="Tạo mới danh mục" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Tạo mới danh mục</a>
         </div>
     </div>
     <div class="clearfix"></div>
@@ -32,8 +32,8 @@ switch ($action) {
                 </div>
                 <div class="x_content">
                     <br/>
-                    <form class="form-horizontal form-label-left input_mask" action="{{ url("categories/update/$category->id") }}" method="post" accept-charset="UTF-8">
-                        @csrf
+                    <form class="form-horizontal form-label-left input_mask" action="{{ url("cms/categories/update/$category->id") }}" method="post" accept-charset="UTF-8">
+                        {{ csrf_field() }}
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Tên danh mục <span
                                         class="required">*</span></label>
@@ -111,6 +111,6 @@ switch ($action) {
                 </div>
             </div>
         </div>
-        @include('category.list')
+        @include('admin.category.list')
     </div>
 @endsection
