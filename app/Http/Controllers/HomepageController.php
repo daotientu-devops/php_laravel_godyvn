@@ -2,23 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Core\Controllers\Controller;
 use App\Core\Models\Location;
 use App\Core\Models\Partner;
 use App\Core\Models\Posts;
-use Illuminate\Http\Request;
 
 class HomepageController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-
-    }
-
     /**
      * Show the application dashboard.
      *
@@ -31,5 +21,21 @@ class HomepageController extends Controller
         $hot_locations = Location::query()->where('hot_location', 1)->take(6)->orderBy('id', 'DESC')->get();
         $partners = Partner::query()->orderBy('id', 'DESC')->get();
         return view('homepage.index', compact('first_post', 'list_posts', 'hot_locations', 'partners'));
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function security()
+    {
+        return view('homepage.security');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function rule()
+    {
+        return view('homepage.rule');
     }
 }

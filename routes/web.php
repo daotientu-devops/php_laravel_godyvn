@@ -220,33 +220,20 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
 // Frontend
 Route::group(['middleware' => 'web'], function () {
     Route::get('/',  ['uses' => 'HomepageController@index']);
-    Route::get('/diem-den', function () {
-        return view('destination.index');
-    });
+    Route::get('/diem-den', ['uses' => 'LocationController@index']);
     Route::get('/diem-den/{continent}/{country}/{city?}', ['uses' => 'LocationController@detail']);
     Route::get('gioi-thieu/{slug?}', ['uses' => 'PageController@detail']);
-    Route::get('/{slug}', ['uses' => 'PageController@detail']);
-    Route::get('/bao-mat-thong-tin', function () {
-        return view('homepage.security');
-    });
-    Route::get('/quy-dinh-su-dung', function () {
-        return view('homepage.rule');
-    });
-    Route::get('/blog/viet-bai/note', function () {
-        return view('blog.note');
-    });
-    Route::post('/blog/viet-bai/note', ['uses' => 'BlogController@note']);
-    Route::get('/photo-blog/dang-bai/note', function () {
-        return view('blog.photo');
-    });
+    Route::get('/bao-mat-thong-tin', ['uses' => 'HomepageController@security']);
+    Route::get('/quy-dinh-su-dung', ['uses' => 'HomepageController@rule']);
+    Route::get('/blog/viet-bai/note', ['uses' => 'BlogController@note']);
+    Route::post('/blog/viet-bai/note', ['uses' => 'BlogController@postNote']);
+    Route::get('/photo-blog/dang-bai/note', ['uses' => 'BlogController@photo']);
+    Route::get('/cong-tac-vien/viet-bai/note', ['uses' => 'BlogController@collaborator']);
     Route::get('/hoi-dap', function () {
         return view('question.index');
     });
     Route::get('/lich-trinh-du-lich', function () {
         return view('schedule.index');
-    });
-    Route::get('/cong-tac-vien/viet-bai/note', function () {
-        return view('blog.collaborator');
     });
     Route::get('ban-do-du-lich/viet-nam', function () {
         return view('map.index');
@@ -254,6 +241,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/du-lich/{slug}', ['uses' => 'BlogController@detail']);
     Route::get('/bai-viet/{slug}', ['uses' => 'BlogController@detail']);
     Route::get('/photo/{slug}', ['uses' => 'BlogController@detail']);
+    Route::get('/{slug}', ['uses' => 'PageController@detail']);
     // Đường dẫn allow upload ảnh từ trong ckeditor
     Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');
 });

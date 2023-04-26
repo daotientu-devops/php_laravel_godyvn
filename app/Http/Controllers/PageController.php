@@ -2,17 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Core\Business\UploadFileBusiness;
 use App\Core\Controllers\Controller;
-use App\Core\Models\Posts;
+use App\Core\Business\UploadFileBusiness;
 use Illuminate\Http\Request;
 use App\Core\Models\Page;
 use App\Core\Models\Category;
-use Config;
-use Illuminate\Support\Facades\DB;
 
 class PageController extends Controller
 {
+    /**
+     * PageController constructor.
+     */
+    public function __construct()
+    {
+        parent::__construct();
+    }
+
     /**
      * Display a listing of the resource.
      *

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Core\Controllers\Controller;
 use App\Core\Business\CategoryBusiness;
 use App\Core\Business\PostsBusiness;
 use App\Core\Business\UploadFileBusiness;
@@ -28,6 +29,7 @@ class BlogController extends Controller
      */
     public function __construct()
     {
+        parent::__construct();
         $this->limit = config()->get('constants.LIMIT_DATA_PAGINATE');
     }
 
@@ -91,12 +93,33 @@ class BlogController extends Controller
     }
 
     /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function collaborator() {
+        return view('blog.collaborator');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function photo() {
+        return view('blog.photo');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function note() {
+        return view('blog.note');
+    }
+
+    /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function note(Request $request)
+    public function postNote(Request $request)
     {
         $title = $request->get('title');
         $slug = $this->sanitize($title);

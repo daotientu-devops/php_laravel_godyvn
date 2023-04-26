@@ -2,22 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Core\Business\CategoryBusiness;
-use App\Core\Business\PostsBusiness;
-use App\Core\Business\UploadFileBusiness;
-use App\Core\Connection\ElasticsearchServer;
 use App\Core\Controllers\Controller;
-use App\Core\Enums\CommonEnum;
 use App\Core\Models\Location;
-use App\Core\Repositories\Redis\CategoryRedis;
-use App\Core\Repositories\Elasticsearch\PostsElasticsearch;
 use Illuminate\Http\Request;
-use App\Core\Models\Posts;
-use App\Core\Models\Category;
-use App\Core\Models\Tags;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Log;
-use App\Core\Enums\ElasticsearchEnum;
 use App\Helpers\Activity;
 
 class LocationController extends Controller
@@ -30,7 +17,16 @@ class LocationController extends Controller
      */
     public function __construct()
     {
+        parent::__construct();
         $this->limit = config()->get('constants.LIMIT_DATA_PAGINATE');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function index()
+    {
+        return view('destination.index');
     }
 
     /**

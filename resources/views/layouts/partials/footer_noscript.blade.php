@@ -3,12 +3,9 @@
         <div class="row pt-0">
             <div class="col-md-4">
                 <a href="/" class="d-block pt-20">
-                    <img src="{{asset('cms/public/assets/images/logo/logo-new.jpg')}}" alt="Gody Logo" class="w-130 d-block lazyload">
+                    <img src="{{url($setting['logo_company']??'')}}" alt="Gody Logo" class="w-130 d-block lazyload">
                 </a>
-                <div class="mt-12">
-                    <p class="fc-sixth mb-5">Mạng xã hội du lịch Việt Nam</p>
-                    <p class="fc-sixth mb-0">Giấy phép: 573/GP-BTTTT cấp ngày 20/11/2017</p>
-                </div>
+                <?php echo html_entity_decode($setting['copyright_left']??'') ?>
                 <div class="mt-20 d-flex">
                     <a href="https://www.facebook.com/GodyTravel/" target="_blank" rel="noreferrer nofollow" class="w-50 h-50 d-flex ai-center jc-center bg-white bar-circle card6 text-center fc-fourth fs-24 lh-50 h:card3 t-duration-slow t-all t-delay-0" id="icon-mang-xa-hoi-facebook-gody-footer-trang-chu">
                         <span class="fc-transparent ps-absolute">FB</span>
@@ -63,6 +60,6 @@
     </div>
 
     <div class="bg-eleventh text-center fc-nineth h-36 lh-36">
-        Copyright &copy; 2017 - 2023
+        Copyright &copy; {{ date('Y') }}
     </div>
 </footer>

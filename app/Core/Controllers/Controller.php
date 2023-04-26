@@ -6,6 +6,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\DB;
 
 class Controller extends BaseController
 {
@@ -14,9 +15,24 @@ class Controller extends BaseController
     /**
      * Controller constructor.
      */
-    function __construct()
+    public function __construct()
     {
-
+        view()->composer('layouts.partials.nav', function ($view) {
+            $setting = DB::table('settings')->where('key', '=', 'footer_info')->first();
+            if (!empty((array)$setting))
+                $setting = json_decode($setting->value, true);
+            else
+                $setting = array('telephone_contact' => '', 'email_contact' => '', 'copyright_left' => '', 'copyright_right' => '');
+            $view->with(array('setting' => $setting));
+        });
+        view()->composer('layouts.partials.footer_noscript', function ($view) {
+            $setting = DB::table('settings')->where('key', '=', 'footer_info')->first();
+            if (!empty((array)$setting))
+                $setting = json_decode($setting->value, true);
+            else
+                $setting = array('telephone_contact' => '', 'email_contact' => '', 'copyright_left' => '', 'copyright_right' => '');
+            $view->with(array('setting' => $setting));
+        });
     }
 
     function sanitize($name)
