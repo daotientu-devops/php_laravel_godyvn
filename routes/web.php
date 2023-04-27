@@ -78,6 +78,16 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
         Route::post('/update/{id}', ['as' => 'update', 'uses' => 'Admin\LocationController@update']);
         Route::get('/delete/{id}', ['as' => 'delete', 'uses' => 'Admin\LocationController@destroy']);
     });
+    // Quản lý điểm du lịch
+    Route::group(['prefix' => 'destinations', 'as' => 'destinations'], function () {
+        Route::get('/', ['as' => 'index', 'uses' => 'Admin\DestinationController@index']);
+        Route::get('/create', ['as' => 'create', 'uses' => 'Admin\DestinationController@create']);
+        Route::post('/store', ['as' => 'store', 'uses' => 'Admin\DestinationController@store']);
+        Route::get('/show/{id}', ['as' => 'show', 'uses' => 'Admin\DestinationController@show']);
+        Route::get('/edit/{id}', ['as' => 'edit', 'uses' => 'Admin\DestinationController@edit']);
+        Route::post('/update/{id}', ['as' => 'update', 'uses' => 'Admin\DestinationController@update']);
+        Route::get('/delete/{id}', ['as' => 'delete', 'uses' => 'Admin\DestinationController@destroy']);
+    });
     // Trang quản trị các page tĩnh
     Route::group(['prefix' => 'pages', 'as' => 'pages', 'middleware' => 'auth'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'Admin\PageController@index']);
@@ -156,35 +166,9 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
         Route::post('/store', ['uses' => 'Admin\SettingController@storeContact']);
     });
     Route::post('/html/update', ['uses' => 'Admin\SettingController@updateHTML']);
-    // QUẢN TRỊ BANNER
-    Route::group(['prefix' => 'banners'], function () {
-        Route::get('/', ['as' => 'index', 'uses' => 'Admin\BannersController@index']);
-        Route::get('/top', ['as' => 'index', 'uses' => 'Admin\BannersController@index']);
-        Route::post('/store', ['uses' => 'Admin\BannersController@store']);
-        Route::get('/show/{id?}', ['uses' => 'Admin\BannersController@show']);
-        Route::get('/edit/{id?}', ['uses' => 'Admin\BannersController@edit']);
-        Route::post('/edit/{id?}', ['uses' => 'Admin\BannersController@update']);
-        Route::get('/delete/{id?}', ['uses' => 'Admin\BannersController@destroy']);
-        Route::get('/search', ['uses' => 'Admin\BannersController@search_form']);
-        Route::post('/search', ['uses' => 'Admin\BannersController@search_submit']);
-    });
-    Route::group(['prefix' => 'category-banner',], function () {
-        Route::get('/', ['as' => 'index', 'uses' => 'Admin\CategoryHasBannerController@index']);
-        Route::get('/show/{id?}', ['uses' => 'Admin\CategoryHasBannerController@show']);
-        Route::get('/edit/{id?}', ['uses' => 'Admin\CategoryHasBannerController@edit']);
-        Route::post('/edit/{id?}', ['uses' => 'Admin\CategoryHasBannerController@update']);
-
-        Route::match(['get', 'post'], '/bannertop', ['uses' => 'Admin\TemplateController@banner_top_categories']);
-        Route::match(['get', 'post'], '/bannerleft', ['uses' => 'Admin\TemplateController@banner_left_categories']);
-    });
     // Tài khoản của tôi
     Route::group(['prefix' => 'account'], function () {
         Route::match(array('GET', 'POST'), '/profile', ['uses' => 'Admin\MyAccountController@profile']);
-    });
-    // Trang quản trị widget
-    Route::group(['prefix' => 'widgets'], function () {
-        Route::get('/{page}/{position}/{id?}', ['uses' => 'Admin\WidgetController@getPosition']);
-        Route::post('/{page}/{position}', ['uses' => 'Admin\WidgetController@postPosition']); // Vì sao nên mua
     });
     // Quản lý đối tác
     Route::group(['prefix' => 'partner'], function () {
@@ -202,14 +186,6 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
         Route::get('/edit/{id?}', ['uses' => 'Admin\CommentController@edit']);
         Route::post('/update/{id?}', ['uses' => 'Admin\CommentController@update']);
         Route::get('/delete/{id?}', ['uses' => 'Admin\CommentController@destroy']);
-    });
-    // Quản lý banner
-    Route::group(['prefix' => 'banners'], function () {
-        Route::get('/', ['as' => 'index', 'uses' => 'Admin\BannerController@index']);
-        Route::post('/store', ['uses' => 'Admin\BannerController@store']);
-        Route::get('/edit/{id?}', ['uses' => 'Admin\BannerController@edit']);
-        Route::post('/update/{id?}', ['uses' => 'Admin\BannerController@update']);
-        Route::get('/delete/{id?}', ['uses' => 'Admin\BannerController@destroy']);
     });
     // Quản lý người dùng đăng ký
     Route::group(['prefix' => 'customers'], function () {

@@ -46,12 +46,6 @@
                 @include('layouts.admin.partials.nav')
                 <!-- /menu footer buttons -->
                 <div class="sidebar-footer hidden-small">
-                    <a data-toggle="tooltip" data-placement="top" title="Settings">
-                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-                    </a>
-                    <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-                        <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-                    </a>
                     <a data-toggle="tooltip" data-placement="top" title="Xem frontend" href="{{ config()->get('constants.FRONTEND_URL') }}" target="_blank">
                         <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
                     </a>
