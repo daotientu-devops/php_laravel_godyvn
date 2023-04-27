@@ -609,13 +609,13 @@
                                     </div>
                                     <div class="w-fit d-block mb-12">
                                         <div class="p-16 d-flex jc-space-between box-shadow-02 bg-white mt-30">
-                                            <a class=" fc-primary  lh-120% fs-18 fw-400 h:fc-primary" href="#gioi-thieu">Giới thiệu</a>
+                                            <a class="{{ $destination === null ? 'fc-primary' : 'fc-fourteenth' }} lh-120% fs-18 fw-400 h:fc-primary" href="{{ url('diem-den' . $location->share_url) }}">Giới thiệu</a>
                                             <img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-02.png" width="8px" height="14px">
                                         </div>
-                                        {{--<div class="p-16 d-flex jc-space-between box-shadow-02 bg-white">--}}
-                                        {{--<a class=" fc-fourteenth  lh-120% fs-18 fw-400 h:fc-primary" href="https://gody.vn/chau-a/viet-nam/lao-cai/diem-du-lich">Điểm du lịch</a>--}}
-                                        {{--<img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-01.png" width="8px" height="14px">--}}
-                                        {{--</div>--}}
+                                        <div class="p-16 d-flex jc-space-between box-shadow-02 bg-white">
+                                            <a class="{{ $destination !== null ? 'fc-primary' : 'fc-fourteenth' }} lh-120% fs-18 fw-400 h:fc-primary" href="{{ url('diem-den' . $location->share_url . '/diem-du-lich') }}">Điểm du lịch</a>
+                                            <img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-01.png" width="8px" height="14px">
+                                        </div>
                                         {{--<div class="p-16 d-flex jc-space-between box-shadow-02 bg-white">--}}
                                         {{--<a class=" fc-fourteenth  lh-120% fs-18 fw-400 h:fc-primary" href="https://gody.vn/chau-a/viet-nam/lao-cai/kinh-nghiem">Kinh nghiệm du lịch</a>--}}
                                         {{--<img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-01.png" width="8px" height="14px">--}}
@@ -625,7 +625,7 @@
                                         {{--<img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-01.png" width="8px" height="14px">--}}
                                         {{--</div>--}}
                                         <div class="p-16 d-flex jc-space-between bg-white" data-class="p-16 d-flex jc-space-between box-shadow-02 bg-white">
-                                            <a class=" fc-fourteenth  lh-120% fs-18 fw-400 h:fc-primary" href="#hinh-anh">Hình ảnh</a>
+                                            <a class=" fc-fourteenth  lh-120% fs-18 fw-400 h:fc-primary" href="{{ url('diem-den' . $location->share_url . '#hinh-anh') }}">Hình ảnh</a>
                                             <img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-01.png" width="8px" height="14px">
                                         </div>
                                     </div>
@@ -640,17 +640,42 @@
                 </div>
 
                 <div class="col-md-9 primary-content" id="gioi-thieu">
-                    <?php echo html_entity_decode($location->content) ?>
-                    <div id="hinh-anh">
-                        <div class="w-fit d-flex pt-0 pb-10 jc-space-between ai-center">
-                            <h1 class="w-fit d-block fc-black fw-700 fs-36 lh-38 xs:fs-26 py-10 m-0"> Hình ảnh du lịch {{ $location->city }}, {{ $location->country }}</h1>
-                        </div>
-                        <div class="w-fit d-block mt-20">
-                            <div class="d-flex ai-top fw-wrap" style="--column:4; --gutter: 38px;">
-                                <?php echo html_entity_decode($location->album) ?>
+                    @if (isset($destination))
+                        @if (!empty($destination->content))
+                            <div id="diem-du-lich">
+                                <div class="w-fit d-block mt-10">
+                                    <h1 class="fc-fourteenth fs-36 fw-700" style="line-height: 124% !important;">{{$destination->name}}</h1>
+                                </div>
+                                <?php echo html_entity_decode($destination->content) ?>
                             </div>
-                        </div>
-                    </div>
+                            @if (!empty($destination->album))
+                                <div class="w-fit d-flex pt-0 pb-10 jc-space-between ai-center">
+                                    <h4 class="w-fit d-block fc-black fw-700 fs-36 lh-38 xs:fs-26 py-10 m-0">Hình ảnh</h4>
+                                </div>
+                                <div class="w-fit d-block mt-20">
+                                    <div class="d-flex ai-top fw-wrap" style="--column:4; --gutter: 38px;">
+                                        <?php echo html_entity_decode($destination->album) ?>
+                                    </div>
+                                </div>
+                            @endif
+                        @endif
+                    @else
+                        @if (!empty($location->content))
+                            <?php echo html_entity_decode($location->content) ?>
+                        @endif
+                        @if (!empty($location->album))
+                            <div id="hinh-anh">
+                                <div class="w-fit d-flex pt-0 pb-10 jc-space-between ai-center">
+                                    <h1 class="w-fit d-block fc-black fw-700 fs-36 lh-38 xs:fs-26 py-10 m-0"> Hình ảnh du lịch {{ $location->city }}, {{ $location->country }}</h1>
+                                </div>
+                                <div class="w-fit d-block mt-20">
+                                    <div class="d-flex ai-top fw-wrap" style="--column:4; --gutter: 38px;">
+                                        <?php echo html_entity_decode($location->album) ?>
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
+                    @endif
                 </div>
             </div>
         </div>

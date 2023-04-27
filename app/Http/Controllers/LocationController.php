@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Core\Controllers\Controller;
+use App\Core\Models\Destination;
 use App\Core\Models\Location;
 use Illuminate\Http\Request;
 use App\Helpers\Activity;
@@ -43,7 +44,27 @@ class LocationController extends Controller
         $metaData['meta_title'] = $location->meta_title;
         $metaData['meta_keyword'] = $location->meta_keyword;
         $metaData['meta_description'] = $location->meta_description;
-        return view('location.detail', compact('location', 'metaData'));
+        $destination = null;
+        return view('location.detail', compact('location', 'destination', 'metaData'));
+    }
+
+    /**
+     * @param $continent
+     * @param $country
+     * @param string $city
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector|\Illuminate\View\View
+     */
+    public function destination($continent, $country, $city = '')
+    {
+        $location = Location::where('share_url', '/' . $continent . '/' . $country . '/' . $city)->orderBy('id', 'DESC')->first();
+        if (empty($location)) {
+            return redirect('/');
+        }
+        $metaData['meta_title'] = $location->meta_title;
+        $metaData['meta_keyword'] = $location->meta_keyword;
+        $metaData['meta_description'] = $location->meta_description;
+        $destination = Destination::where('location_id', $location->id)->orderBy('id', 'DESC')->first();
+        return view('location.detail', compact('location', 'destination', 'metaData'));
     }
 
     /**

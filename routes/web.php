@@ -198,6 +198,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/',  ['uses' => 'HomepageController@index']);
     Route::get('/diem-den', ['uses' => 'LocationController@index']);
     Route::get('/diem-den/{continent}/{country}/{city?}', ['uses' => 'LocationController@detail']);
+    Route::get('/diem-den/{continent}/{country}/{city?}/diem-du-lich', ['uses' => 'LocationController@destination']);
     Route::get('gioi-thieu/{slug?}', ['uses' => 'PageController@detail']);
     Route::get('/bao-mat-thong-tin', ['uses' => 'HomepageController@security']);
     Route::get('/quy-dinh-su-dung', ['uses' => 'HomepageController@rule']);
