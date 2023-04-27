@@ -41,11 +41,12 @@ class LocationController extends Controller
         if (empty($location)) {
             return redirect('/');
         }
+        $lastUri = last(request()->segments());
         $metaData['meta_title'] = $location->meta_title;
         $metaData['meta_keyword'] = $location->meta_keyword;
         $metaData['meta_description'] = $location->meta_description;
-        $destination = null;
-        return view('location.detail', compact('location', 'destination', 'metaData'));
+        $destinations = null;
+        return view('location.detail', compact('location', 'destinations', 'lastUri', 'metaData'));
     }
 
     /**
@@ -54,17 +55,22 @@ class LocationController extends Controller
      * @param string $city
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\Http\RedirectResponse|\Illuminate\Routing\Redirector|\Illuminate\View\View
      */
-    public function destination($continent, $country, $city = '')
+    public function destination($continent, $country, $city = '', $slug = '')
     {
         $location = Location::where('share_url', '/' . $continent . '/' . $country . '/' . $city)->orderBy('id', 'DESC')->first();
         if (empty($location)) {
             return redirect('/');
         }
+        $lastUri = last(request()->segments());
         $metaData['meta_title'] = $location->meta_title;
         $metaData['meta_keyword'] = $location->meta_keyword;
         $metaData['meta_description'] = $location->meta_description;
-        $destination = Destination::where('location_id', $location->id)->orderBy('id', 'DESC')->first();
-        return view('location.detail', compact('location', 'destination', 'metaData'));
+        $destinations = Destination::where('location_id', $location->id)->orderBy('id', 'DESC')->get();
+        if ($slug !== '')
+            $destination = Destination::where('slug', $slug)->orderBy('id', 'DESC')->first();
+        else
+            $destination = null;
+        return view('location.detail', compact('location', 'destination', 'destinations', 'lastUri', 'metaData'));
     }
 
     /**
