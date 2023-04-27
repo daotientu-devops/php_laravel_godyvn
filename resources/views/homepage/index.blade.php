@@ -6,37 +6,33 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <title>Gody.vn - Blog, Review, Hỏi đáp, Tin tức & Kinh nghiệm du lịch</title>
-    <meta name="google-signin-client_id" content="781388682859-1b5bt66h15s182g4r0u3eacro916vice.apps.googleusercontent.com">
-    <meta name="google-site-verification" content="jdgOqwLpyTjqC8ImcawnRHQOGkJtx2OcVD9KPSJ6irc"/>
+    <title>{{ !empty($metaData['meta_title']) ? $metaData['meta_title'] : config()->get('constants.SITE_NAME') }}</title>
+    <meta name="description" content="{{ !empty($metaData['meta_description']) ? $metaData['meta_description'] : 'Chuyên trang chia sẻ về những kinh nghiệm, hỏi đáp thắc mắc khi đi du lịch, du lịch phượt, tour du lịch, vé tham quan' }}"/>
     <meta name="robots" content="index, follow"/>
+    <meta property="fb:app_id" content=""/>
+    <meta name="google-signin-client_id" content="">
+    <meta name="google-site-verification" content=""/>
+    <link rel="canonical" href="<?php echo config()->get('constants.FRONTEND_URL') . $_SERVER['REQUEST_URI'] ?>"/>
+    <meta name="twitter:title" content="{{ !empty($metaData['meta_title']) ? $metaData['meta_title'] : config()->get('constants.SITE_NAME') }}"/>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ !empty($metaData['meta_image']) ? $metaData['meta_image'] : '/images/logo@3x.png' }}">
     <meta property="og:locale" content="vi_VN"/>
-    <meta name="description" content="Gody.vn là cộng đồng du lịch, nơi chia sẻ các bài viết (blog), hình ảnh, review, hỏi đáp, thông tin, tin tức và kinh nghiệm du lịch Việt Nam và Thế Giới.">
-    <meta property="fb:app_id" content="198019300682232"/>
-    <meta property="og:image" content="https://gody.vn/public/images/fb/gody-thumbnail.jpg"/>
+    <meta property="og:title" content="{{ !empty($metaData['meta_title']) ? $metaData['meta_title'] : config()->get('constants.SITE_NAME') }}" itemprop="headline"/>
+    <meta property="og:description" content="{{ !empty($metaData['meta_description']) ? $metaData['meta_description'] : 'Chuyên trang chia sẻ về những kinh nghiệm, hỏi đáp thắc mắc khi đi du lịch, du lịch phượt, tour du lịch, vé tham quan' }}" itemprop="description"/>
+    <meta property="og:image" content="{{ !empty($metaData['meta_image']) ? $metaData['meta_image'] : '/images/logo@3x.png' }}" itemprop="thumbnailUrl"/>
+    <meta property="og:image:alt" content="{{ !empty($metaData['meta_title']) ? $metaData['meta_title'] : config()->get('constants.SITE_NAME') }}">
     <meta property="og:image:width" content="600"/>
     <meta property="og:image:height" content="315"/>
-    <meta name="csrf-token" content="RwVeLdeMZBiM3GobuQZvQ6wIJmq2n1fyZHEgjYl5">
-    <meta property="og:url" content=""/>
+    <meta property="og:url" content="{{ Request::fullUrl() }}" itemprop="url"/>
     <meta property="og:type" content="website"/>
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://gody.vn/public/images/fb/gody-thumbnail.jpg">
-    <meta property="og:title" content="Gody.vn - Blog, Review, Hỏi đáp, Tin tức & Kinh nghiệm du lịch"/>
-    <meta name="twitter:title" content="Gody.vn - Blog, Review, Hỏi đáp, Tin tức & Kinh nghiệm du lịch">
-    <meta property="og:image:alt" content="Gody.vn - Blog, Review, Hỏi đáp, Tin tức & Kinh nghiệm du lịch">
-    <meta property="og:description" content="Gody.vn là cộng đồng du lịch, nơi chia sẻ các bài viết (blog), hình ảnh, review, hỏi đáp, thông tin, tin tức và kinh nghiệm du lịch Việt Nam và Thế Giới."/>
-    <meta property="og:image" content="https://gody.vn/public/images/fb/gody-thumbnail.jpg"/>
     <meta property="og:ttl" content="2419200"/>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script type='application/ld+json'>{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https://gody.vn","name":"GODY.VN","alternateName":"Địa điểm du lịch, tham quan, mua sắm, tour du lịch, khám phá, kinh nghiệm du lịch, phượt","potentialAction":{"@type":"SearchAction","target":"https://gody.vn/v3/search/autocomplete/client/storage?term={search_term_string}","query-input":"required name=search_term_string"}}</script>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" href="https://gody.vn/public/images/icon-1.png?v=1235">
     <link rel="stylesheet" href="https://media2.gody.vn/public/v3/plugins/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://gody.vn/public/v6/css/fancybox-3.1/jquery.fancybox.min.css">
     <link rel="stylesheet" href="https://media2.gody.vn/public/v3/plugins/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:400,500,600&amp;subset=vietnamese" rel="stylesheet">
-
     <link rel="stylesheet" href="{{asset('public/css/temp/Minified.css?v=1235')}}">
-
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/main.css?v=1235">
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/custom.css?v=1235">
     <link rel="stylesheet" href="{{asset('public/css/atomic.css')}}">
@@ -46,8 +42,7 @@
     <link href="https://media2.gody.vn/public/v3/css/jquery.bxslider.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://media2.gody.vn/public/v3/perfect-scrollbar/css/perfect-scrollbar.css"/>
     <link rel="stylesheet" href="{{asset('public/css/customize.css')}}"/>
-    <link rel="manifest" href="https://gody.vn/public/v5/js/manifest.json">
-
+    <link rel="manifest" href="">
     <link rel="stylesheet" href="https://gody.vn/public/v7/css/post-detail.css?v=1237">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <!--- socket io -->

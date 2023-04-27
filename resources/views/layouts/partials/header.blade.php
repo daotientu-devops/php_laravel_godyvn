@@ -8,17 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>{{ !empty($metaData['meta_title']) ? $metaData['meta_title'] : config()->get('constants.SITE_NAME') }}</title>
     <meta name="description" content="{{ !empty($metaData['meta_description']) ? $metaData['meta_description'] : 'Chuyên trang chia sẻ về những kinh nghiệm, hỏi đáp thắc mắc khi đi du lịch, du lịch phượt, tour du lịch, vé tham quan' }}"/>
-
     <meta name="robots" content="index, follow"/>
     <meta property="fb:app_id" content=""/>
     <meta name="google-signin-client_id" content="">
     <meta name="google-site-verification" content=""/>
     <link rel="canonical" href="<?php echo config()->get('constants.FRONTEND_URL') . $_SERVER['REQUEST_URI'] ?>"/>
-
     <meta name="twitter:title" content="{{ !empty($metaData['meta_title']) ? $metaData['meta_title'] : config()->get('constants.SITE_NAME') }}"/>
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="{{ !empty($metaData['meta_image']) ? $metaData['meta_image'] : '/images/logo@3x.png' }}">
-
     <meta property="og:locale" content="vi_VN"/>
     <meta property="og:title" content="{{ !empty($metaData['meta_title']) ? $metaData['meta_title'] : config()->get('constants.SITE_NAME') }}" itemprop="headline"/>
     <meta property="og:description" content="{{ !empty($metaData['meta_description']) ? $metaData['meta_description'] : 'Chuyên trang chia sẻ về những kinh nghiệm, hỏi đáp thắc mắc khi đi du lịch, du lịch phượt, tour du lịch, vé tham quan' }}" itemprop="description"/>
@@ -29,7 +26,6 @@
     <meta property="og:url" content="{{ Request::fullUrl() }}" itemprop="url"/>
     <meta property="og:type" content="website"/>
     <meta property="og:ttl" content="2419200"/>
-
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" href="https://gody.vn/public/images/icon-1.png?v=1235">
     <link rel="stylesheet" href="https://media2.gody.vn/public/v3/plugins/bootstrap/bootstrap.min.css">

@@ -71,7 +71,7 @@ class SettingController extends Controller
         else
             $contact = array('telephone_contact' => '', 'email_contact' => '', 'address_contact' => '', 'timer_support' => '', 'copyright_left' => '', 'copyright_right' => '');
         $allow_update_html_landingpage = Setting::select('value')->where('key', 'allow_update_html_landingpage')->orderBy('id', 'ASC')->first();
-        return view('admin.setting.contact', compact('contact', 'allow_update_html_landingpage'));
+        return view('admin.setting.contact', compact('setting', 'contact', 'allow_update_html_landingpage'));
     }
 
     /**
@@ -118,11 +118,22 @@ class SettingController extends Controller
                 // Upload file to local server
                 $logo_company->move('public/assets/images/logo', $logo_company->getClientOriginalName());
             }
+            /* Start thumbnail url */
+            $meta_image = $request->meta_image;
+            if ($meta_image) {
+                // Upload file to local server
+                $meta_image->move('public/assets/images', $meta_image->getClientOriginalName());
+            }
+            /* End thumbnail url */
             // TH setting có tồn tại ==> Update setting
             if ($setting->exists()) {
                 $setting->update([
                     'key' => $key,
                     'value' => json_encode($value),
+                    'meta_title' => $request->get('meta_title'),
+                    'meta_keyword' => $request->get('meta_keyword'),
+                    'meta_description' => $request->get('meta_description'),
+                    'meta_image' => ($meta_image) ? '/public/assets/images/' . $meta_image->getClientOriginalName() : (isset($setting->first()->meta_image) ? $setting->first()->meta_image : null),
                     'user_id' => $request->get('user_id')
                 ]);
                 return redirect('cms/contact')->with('message', 'Sửa thông tin liên hệ thành công');
@@ -130,6 +141,10 @@ class SettingController extends Controller
                 $setting = new Setting([
                     'key' => $key,
                     'value' => json_encode($value),
+                    'meta_title' => $request->get('meta_title'),
+                    'meta_keyword' => $request->get('meta_keyword'),
+                    'meta_description' => $request->get('meta_description'),
+                    'meta_image' => ($meta_image) ? '/public/assets/images/' . $meta_image->getClientOriginalName() : (isset($setting->first()->meta_image) ? $setting->first()->meta_image : null),
                     'user_id' => $request->get('user_id')
                 ]);
                 $setting->save();

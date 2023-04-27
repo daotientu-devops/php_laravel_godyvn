@@ -35,6 +35,7 @@ class PageController extends Controller
         $metaData['meta_title'] = $page->meta_title;
         $metaData['meta_keyword'] = $page->meta_keyword;
         $metaData['meta_description'] = $page->meta_description;
+        $metaData['meta_image'] = $page->thumbnail_url;
         return view('page.detail', compact('page', 'metaData'));
     }
 

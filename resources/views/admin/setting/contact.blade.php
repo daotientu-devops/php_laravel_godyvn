@@ -8,7 +8,7 @@
     <div class="clearfix"></div>
     <div class="row">
         @include('components.alert')
-        <div class="col-md-5 col-sm-5 col-xs-5">
+        <div class="col-md-7 col-sm-7 col-xs-7">
             <div class="x_panel">
                 <div class="x_title">
                     <h2>Thông tin liên hệ website</h2>
@@ -120,6 +120,39 @@
                                 <textarea class="form-control editor_basic" name="slogan_register" id="slogan_register">{{ $contact['slogan_register'] ?? '' }}</textarea>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Tiêu đề (SEO)</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="text" class="form-control" name="meta_title" required="required" value="{{ $setting['meta_title'] ?? '' }}">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Từ khóa (SEO)</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <textarea class="form-control" name="meta_keyword" rows="3" required="required">{{ $setting['meta_keyword'] ?? '' }}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Mô tả (SEO)</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <textarea class="form-control" name="meta_description" rows="3" required="required">{{ $setting['meta_description'] ?? '' }}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3 col-sm-3 col-xs-12">Ảnh (SEO)</label>
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <input type="file" class="form-control" name="meta_image" value="{{ $setting['meta_image'] ?? '' }}">
+                            </div>
+                        </div>
+                        @if (!empty($setting['meta_image']))
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12"></label>
+                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                    <p>Ảnh (SEO) hiện tại (bên dưới)</p>
+                                    <p><img src="{{ config()->get('constants.FRONTEND_URL') . $setting['meta_image'] }}" width="100%"/></p>
+                                </div>
+                            </div>
+                        @endif
                         <input type="hidden" name="user_id" value="{{(auth()->user()) ? auth()->user()->id : 0}}">
                         <div class="ln_solid"></div>
                         <div class="form-group">
@@ -131,7 +164,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-7 col-sm-7 col-xs-7">
+        <div class="col-md-5 col-sm-5 col-xs-5">
             <div class="x_panel">
                 <div class="x_title">
                     <h2>Hình ảnh minh họa</h2>

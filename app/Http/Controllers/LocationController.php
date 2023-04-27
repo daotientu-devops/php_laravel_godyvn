@@ -45,6 +45,7 @@ class LocationController extends Controller
         $metaData['meta_title'] = $location->meta_title;
         $metaData['meta_keyword'] = $location->meta_keyword;
         $metaData['meta_description'] = $location->meta_description;
+        $metaData['meta_image'] = $location->thumbnail_url;
         $destinations = null;
         return view('location.detail', compact('location', 'destinations', 'lastUri', 'metaData'));
     }
@@ -65,11 +66,17 @@ class LocationController extends Controller
         $metaData['meta_title'] = $location->meta_title;
         $metaData['meta_keyword'] = $location->meta_keyword;
         $metaData['meta_description'] = $location->meta_description;
+        $metaData['meta_image'] = $location->thumbnail_url;
         $destinations = Destination::where('location_id', $location->id)->orderBy('id', 'DESC')->get();
-        if ($slug !== '')
+        if ($slug !== '') {
             $destination = Destination::where('slug', $slug)->orderBy('id', 'DESC')->first();
-        else
+            $metaData['meta_title'] = $destination->meta_title;
+            $metaData['meta_keyword'] = $destination->meta_keyword;
+            $metaData['meta_description'] = $destination->meta_description;
+            $metaData['meta_image'] = $destination->thumbnail_url;
+        } else {
             $destination = null;
+        }
         return view('location.detail', compact('location', 'destination', 'destinations', 'lastUri', 'metaData'));
     }
 

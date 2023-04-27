@@ -6,6 +6,7 @@ use App\Core\Controllers\Controller;
 use App\Core\Models\Location;
 use App\Core\Models\Partner;
 use App\Core\Models\Posts;
+use App\Core\Models\Setting;
 
 class HomepageController extends Controller
 {
@@ -20,7 +21,12 @@ class HomepageController extends Controller
         $list_posts = Posts::query()->where('status', Posts::STATUS_PUBLISH)->take(13)->skip(1)->orderBy('id', 'DESC')->get();
         $hot_locations = Location::query()->where('hot_location', 1)->take(6)->orderBy('id', 'DESC')->get();
         $partners = Partner::query()->orderBy('id', 'DESC')->get();
-        return view('homepage.index', compact('first_post', 'list_posts', 'hot_locations', 'partners'));
+        $setting = Setting::where('key', '=', 'footer_info')->first();
+        $metaData['meta_title'] = $setting->meta_title;
+        $metaData['meta_keyword'] = $setting->meta_keyword;
+        $metaData['meta_description'] = $setting->meta_description;
+        $metaData['meta_image'] = $setting->meta_image;
+        return view('homepage.index', compact('first_post', 'list_posts', 'hot_locations', 'partners', 'metaData'));
     }
 
     /**
