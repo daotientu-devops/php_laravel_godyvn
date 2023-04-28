@@ -164,6 +164,11 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'Admin\SettingController@contact']);
         Route::post('/store', ['uses' => 'Admin\SettingController@storeContact']);
     });
+    // Trang quản trị widget
+    Route::group(['prefix' => 'widgets'], function () {
+        Route::get('/{page}/{position}', ['uses' => 'Admin\WidgetController@getPosition']);
+        Route::post('/{page}/{position}', ['uses' => 'Admin\WidgetController@postPosition']);
+    });
     Route::post('/html/update', ['uses' => 'Admin\SettingController@updateHTML']);
     // Tài khoản của tôi
     Route::group(['prefix' => 'account'], function () {

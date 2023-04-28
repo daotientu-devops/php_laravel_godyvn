@@ -43,7 +43,7 @@ class WidgetController extends Controller
                 'content' => $arrInput[$position],
                 'updated_at' => date('Y-m-d H:i:s')
             );//echo '<pre/>';print_r($arrWidget);die();
-            TableMysql::resetAutoIncrement('widgets'); // id bảng settings không liên quan tới bảng khác
+            //TableMysql::resetAutoIncrement('widgets'); // id bảng settings không liên quan tới bảng khác
             $widget = Widget::where('key', $arrInput['key']);
             if ($widget->exists()) { // TH setting có tồn tại ==> Update setting
                 $widget->update($arrWidget);
@@ -51,7 +51,7 @@ class WidgetController extends Controller
                 $arrWidget['created_at'] = date('Y-m-d H:i:s'); // Bắt buộc phải có nếu không created_at sẽ NULL
                 $widget->insert($arrWidget);
             }
-            return redirect()->back()->with('message', 'Cập nhật widget ' . $arrInput['key'] . ' thành công');
+            return redirect()->back()->with('message', 'Cập nhật widget ' . $arrInput['page'] . ' thành công');
         } catch (Exception $exception) {
             Log::error($exception->getMessage());
             return redirect()->back()->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());

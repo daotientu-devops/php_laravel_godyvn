@@ -1,11 +1,11 @@
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
     <div class="row">
         @include('components.alert')
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Trang chủ&nbsp;&nbsp;>&nbsp;&nbsp;BẠN ĐANG MONG MUỐN CÓ GIẢI PHÁP</h2>
+                    <h2>Trang chủ&nbsp;&nbsp;>&nbsp;&nbsp;Banner đầu trang</h2>
                     <ul class="nav navbar-right panel_toolbox">
                         <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                         </li>
@@ -16,8 +16,8 @@
                 </div>
                 <div class="x_content">
                     <br/>
-                    <form class="form-horizontal form-label-left input_mask" action="{{ url('widgets/' . $page . '/' . $position) }}" method="post" enctype="multipart/form-data">
-                        @csrf
+                    <form class="form-horizontal form-label-left input_mask" action="{{ url('cms/widgets/' . $page . '/' . $position) }}" method="post" enctype="multipart/form-data">
+                        {{ csrf_field() }}
                         <input type="hidden" name="key" value="{{'widget.' . $page . '.' . $position}}">
                         <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
                         <input type="hidden" name="page" value="{{ $page }}">

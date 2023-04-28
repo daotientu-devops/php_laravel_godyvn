@@ -17,19 +17,14 @@
             {{--<li><a href="{{ url('cms/solution') }}"><i class="fa fa-cube"></i>Quản lý giải pháp</a></li>--}}
             {{--<li><a href="{{ url('cms/banners') }}"><i class="fa fa-picture-o"></i>Quản lý banner</a></li>--}}
             <li><a href="{{ url('cms/contact') }}"><i class="fa fa-globe"></i>Quản lý thông tin website</a></li>
+            <li><a><i class="fa fa-laptop"></i>QL nội dung trang chủ<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="{{ url('cms/widgets/homepage/top_banner') }}">Banner đầu trang</a></li>
+                    <li><a href="{{ url('cms/widgets/homepage/middle_banner') }}">Banner giữa trang</a></li>
+                    <li><a href="{{ url('cms/widgets/homepage/trend') }}">Xu hướng</a></li>
+                </ul>
+            </li>
             <li><a href="{{ url('cms/users') }}"><i class="fa fa-user"></i>Quản lý user</a></li>
-            {{--<li><a><i class="fa fa-laptop"></i>QL nội dung trang chủ<span class="fa fa-chevron-down"></span></a>--}}
-                {{--<ul class="nav child_menu">--}}
-                    {{--<li><a href="{{ url('cms/banner') }}">Header banner</a></li>--}}
-                    {{--<li><a href="{{ url('cms/widgets/homepage/slogan_text') }}">Slogan text</a></li>--}}
-                    {{--<li><a href="{{ url('cms/solution') }}">BẠN ĐANG MONG MUỐN CÓ GIẢI PHÁP</a></li>--}}
-                    {{--<li><a href="{{ url('cms/partner') }}">Quản lý đối tác</a></li>--}}
-                    {{--<li><a href="{{ url('cms/comment') }}">Quản lý bình luận</a></li>--}}
-                    {{--<li><a href="{{ url('cms/founder') }}">Quản lý nhà sáng lập</a></li>--}}
-                    {{--<li><a href="{{ url('cms/widgets/homepage/author') }}">TÁC GIẢ MÔ HÌNH</a></li>--}}
-                    {{--<li><a href="{{ url('cms/widgets/homepage/slogan_banner') }}">Slogan banner</a></li>--}}
-                {{--</ul>--}}
-            {{--</li>--}}
             {{--<li><a><i class="fa fa-laptop"></i>QL nội dung về chúng tôi<span class="fa fa-chevron-down"></span></a>--}}
                 {{--<ul class="nav child_menu">--}}
                     {{--<li><a href="{{ url('cms/banner') }}">Header banner</a></li>--}}

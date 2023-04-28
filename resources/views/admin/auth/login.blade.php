@@ -24,7 +24,7 @@
                     </div>
                     <div>
                         <button type="submit" class="btn btn-default submit">
-                            Login
+                            Đăng nhập
                         </button>
                     </div>
 
