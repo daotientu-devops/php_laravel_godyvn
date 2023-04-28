@@ -5,7 +5,7 @@
     height: 100% !important;background-image:url({{url($setting['logo_header_company']??'')}})"></a>
         </div>
 
-        <div class="collapse navbar-collapse px-0 d-flex d-after-none d-before-none jc-space-between ai-center" id="bs-example-navbar-collapse-1" style="display: flex!important;">
+        <div class="collapse navbar-collapse px-0 d-flex d-after-none d-before-none jc-space-between ai-center" id="bs-example-navbar-collapse-1" style="display: flex!important;margin-top: 5px">
             <ul class="nav navbar-nav p-0 m-0">
                 <li class="ps-relative main-menu-search-wrapper ml-0 h-fit d-flex ai-center">
                     <label for="inputSearch" id="search-header" class="c-pointer bar-50 bc-primary ba d-flex ai-center jc-space-between fc-sixth fw-normal h-44 w-300 pl-20 pr-8 mb-0">

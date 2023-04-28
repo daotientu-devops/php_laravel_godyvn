@@ -10,7 +10,7 @@
 <!-- scroll menu service -->
 <script type="text/javascript">
     $(document).ready(function() {
-        GODY.General.isntallFancyGallery();
+        //GODY.General.isntallFancyGallery();
         $('#slick-quick-access').slick({
             slidesToShow: 4,
             prevArrow: '#slick-prev',
@@ -47,6 +47,46 @@
     $(function () {
         $(document.body).on('click', '.facebook_login, .google_login', function(e) {
             $('.modalBlogCreateLoading').removeClass('hide');
+        });
+
+        // Validate register form
+        $('#sign-up-submit').attr('type', 'submit');
+        $('#signup-form').validate({
+            rules: {
+                fullname: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+                password: {
+                    required: true,
+                    minlength: 6
+                },
+                re_password: {
+                    required: true,
+                    minlength: 6,
+                    equalTo: '#password'
+                }
+            },
+            messages: {
+                fullname: 'Vui lòng nhập đầy đủ họ tên',
+                email: {
+                    required: 'Vui lòng nhập email!',
+                    email: 'Vui lòng nhập đúng định dạng email',
+                },
+                password: {
+                    required: 'Vui lòng nhập mật khẩu!',
+                    minlength: 'Mật khẩu tối thiểu là 6 ký tự!',
+                },
+                re_password: {
+                    required: 'Vui lòng nhập lại mật khẩu!',
+                    minlength: 'Mật khẩu tối thiểu là 6 ký tự!',
+                    equalTo: 'Mật khẩu không đúng!'
+                }
+            },
+            submitHandler: function (form) {
+                form.submit();
+            }
         });
 
         $('#login-form').on('shown.bs.modal', function () {
@@ -636,322 +676,322 @@
         topSearch: []
     };
 
-    if( typeof initDestinationSearchVue != 'function' ) {
-        function initDestinationSearchVue() {
-            if (typeof Vue == 'undefined' || typeof httpVueLoader == 'undefined' || typeof _ == 'undefined') {
-                setTimeout(() => {
-                    initDestinationSearchVue();
-                }, 500);
-                return;
-            }
-
-            const destinationSearch = new Vue({
-                el: '#modal-search-v2',
-                delimiters: ['{(', ')}'],
-                data: function () {
-                    return dsData;
-                },
-                components: {
-                    loadStream: httpVueLoader('/public/v6/js/components/master/loadStream.vue'),
-                    defaultDestination: httpVueLoader(
-                        '/public/v6/js/components/master/defaultDestinantion.vue?v=5',
-                    ),
-                },
-                computed: {
-                    dataEmpty: function () {
-                        return _.isEmpty(this.data);
-                    },
-                    detailUrl: function () {
-                        const country = this.data?._source?.country
-                            ? this.data?._source?.country
-                            : this.data?._source;
-                        const province = this.data?._source?.province;
-
-                        const continentId =
-                            this.data?._index === 'places'
-                                ? country.continents.slice(0, 1)
-                                : country?.continent_id;
-                        const continentSlug = this.continent[continentId]?.slug;
-
-                        if (this.data?._index === 'places') {
-                            return `/${continentSlug}/${country?.countries_slug}/${country?.province_slug}/${country?.slug}`;
-                        }
-
-                        if (
-                            this.data?._index === 'province' ||
-                            this.data?._index === 'province_v2'
-                        ) {
-                            return `/${continentSlug}/${country?.slug}/${this.data?._source.slug}`;
-                        }
-
-                        let url = `/${this.continent[continentId]?.slug}/${country?.slug}`;
-
-                        if (province) {
-                            url += `/${province?.slug}`;
-                        }
-
-                        return url;
-                    },
-                    blogUrl: function () {
-                        return `${this.detailUrl}/kinh-nghiem`;
-                    },
-                    photoUrl: function () {
-                        return `${this.detailUrl}/hinh-anh`;
-                    },
-                    communityUrl: function () {
-                        return `${this.detailUrl}/hoi-dap`;
-                    },
-                    planUrl: function () {
-                        return `${this.detailUrl}/lich-trinh`;
-                    },
-                    searchAllUrl: function () {
-                        return `/elastic/search/created_keyword/${encodeURI(this.searchInput)}`;
-                    },
-                },
-                watch: {
-                    data(newVal, oldVal) {
-                        if (!!newVal?._id) {
-                            if (typeof(Storage) !== "undefined") {
-                                let data = localStorage.getItem('USER_SEARCH');
-                                data = (!!!data) ? {} : JSON.parse(data);
-                                const orderNo = Object.keys(data).length;
-                                newVal.orderNo = orderNo;
-                                data[newVal?._id] = newVal;
-                                localStorage.setItem('USER_SEARCH', JSON.stringify(data));
-                            }
-                        }
-                    }
-                },
-                mounted() {
-                    this.observer = new MutationObserver(mutations => {
-                        for (const m of mutations) {
-                            const newValue = m.target.getAttribute(m.attributeName);
-                            this.$nextTick(() => {
-                                this.onClassChange(newValue, m.oldValue);
-                            });
-                        }
-                    });
-
-                    this.observer.observe(this.$refs.modalSearchV2, {
-                        attributes: true,
-                        attributeOldValue : true,
-                        attributeFilter: ['class'],
-                    });
-
-                    this.getPopularData();
-                },
-                beforeDestroy() {
-                    this.observer.disconnect();
-                },
-                methods: {
-                    onClassChange(classAttrValue) {
-                        const classList = classAttrValue.split(' ');
-                        if (classList.includes('in')) {
-                            this.isActive = true;
-                        } else {
-                            this.isActive = false;
-                        }
-                        this.$forceUpdate();
-                    },
-                    clearInput() {
-                        this.searchInput = '';
-                        this.loading = false;
-                        this.$refs.globalSearchInput.focus();
-                    },
-                    actGlobalSearch: _.debounce(function (e) {
-                        this.$refs.globalSearchInput.blur();
-                        this.$refs.globalSearchInput.focus();
-                        const vm = this;
-                        if (e.keyCode === 13 && !!vm.searchInput) {
-                            window.location.href = this.searchAllUrl;
-                            return;
-                        }
-                        vm.searchInput && vm.fetchDataSearch();
-                    }, 500),
-                    async fetchDataSearch() {
-                        const vm = this;
-                        const url = `https://elasticsearch.gody.vn/public/v2/search-destination/get-list?type=all&query=${vm.searchInput}&response=json`;
-                        vm.loading = true;
-                        vm.loaded = false;
-                        vm.data = {};
-
-                        await axios
-                            .get(url, {
-                                // cancelToken: new CancelToken(function executor(c) {
-                                //   cancel = c;
-                                // }),
-                            })
-                            .then(async function (resp) {
-                                const { hits: data } = resp?.data?.hits;
-                                vm.loading = false;
-                                vm.loaded = true;
-                                vm.data = data?.[0];
-                                vm.data.stay22 = await vm.stay22Url();
-                                vm.$forceUpdate();
-                            })
-                            .catch(function (error) {
-                                vm.loading = false;
-                                vm.loaded = true;
-                            });
-                    },
-                    async stay22Url() {
-                        if (this.dataEmpty) {
-                            return '';
-                        }
-
-                        const source = this.data?._source;
-                        if (source?.latitude && source?.longitude) {
-                            return `https://www.stay22.com/embed/gm?lat=${source.latitude}&lng=${source.longitude}&aid=godyvn&venue=Chọn%20điểm%20đến&hidebrandlogo=true&hidefooter=true&maincolor=ffffff&buttoncolor=ffffff&fontcolor=ff8c00&hidemodeswitcher=true`;
-                        }
-
-                        const country = this.data?._source?.country
-                            ? this.data?._source?.country
-                            : this.data?._source;
-                        const province = this.data?._source?.province;
-                        let q = '';
-                        if (this.data?._index === 'places') {
-                            q = `${country.title}, ${country.province_name}, ${country.countries_name}`;
-                        }
-
-                        if (this.data?._index === 'city' || this.data?._index === 'province_v2') {
-                            q = `${source?.title}, ${source?.province?.title}, ${source?.country?.title}`;
-                        }
-
-                        try {
-                            const config = {
-                                method: 'get',
-                                url: `https://www.stay22.com/autocomplete/location?q=${encodeURI(q)}`,
-                                headers: {},
-                            };
-
-                            const resp = await axios(config);
-                            const data = resp.data;
-
-                            if (!!!data.length) {
-                                return '';
-                            }
-
-                            const address = data?.[0]?.description || q;
-
-                            return `https://www.stay22.com/embed/gm?address=${encodeURI(
-                                address,
-                            )}&aid=godyvn&venue=Chọn%20điểm%20đến&hidebrandlogo=true&hidefooter=true&maincolor=ffffff&buttoncolor=ffffff&fontcolor=ff8c00&hidemodeswitcher=true`;
-                        } catch (error) {
-                            return '';
-                        }
-                    },
-                    recentDetailUrl(data) {
-                        const country = data?._source?.country
-                            ? data?._source?.country
-                            : data?._source;
-                        const province = data?._source?.province;
-
-                        const continentId =
-                            data?._index === 'places'
-                                ? country.continents.slice(0, 1)
-                                : country?.continent_id;
-                        const continentSlug = this.continent[continentId]?.slug;
-
-                        if (data?._index === 'places') {
-                            return `/${continentSlug}/${country?.countries_slug}/${country?.province_slug}/${country?.slug}`;
-                        }
-
-                        if (
-                            data?._index === 'province' ||
-                            data?._index === 'province_v2'
-                        ) {
-                            return `/${continentSlug}/${country?.slug}/${data?._source.slug}`;
-                        }
-
-                        let url = `/${this.continent[continentId]?.slug}/${country?.slug}`;
-
-                        if (province) {
-                            url += `/${province?.slug}`;
-                        }
-
-                        return url;
-                    },
-                    recentlyViewed() {
-                        if (typeof(Storage) !== "undefined") {
-                            let data = localStorage.getItem('USER_SEARCH');
-                            if (!!!data) return null;
-
-                            data = JSON.parse(data);
-                            let newData = [];
-
-                            for (const property in data) {
-                                newData.push(data[property]);
-                            }
-
-                            newData.sort((a,b) => {
-                                if ( a?.orderNo < b?.orderNo ) {
-                                    return 1;
-                                }
-                                if ( a?.orderNo > b?.orderNo ) {
-                                    return -1;
-                                }
-                                return 0;
-                            });
-
-                            return newData.splice(0,5);
-                        }
-                        return null;
-                    },
-                    clearRecentlyViewed(item) {
-                        if (item?._id) {
-                            if (typeof(Storage) !== "undefined") {
-                                let data = localStorage.getItem('USER_SEARCH');
-                                data = (!!!data) ? {} : JSON.parse(data);
-
-                                delete data[item?._id];
-                                if (!!Object.keys(data).length) {
-                                    localStorage.setItem('USER_SEARCH', JSON.stringify(data));
-                                } else {
-                                    localStorage.removeItem('USER_SEARCH');
-                                }
-
-                                this.$forceUpdate();
-                            }
-                        }
-                    },
-                    async getPopularData() {
-                        try {
-                            const config = {
-                                url: 'https://gody.vn/api/v6/top-trends',
-                                method: 'GET',
-                                headers: {}
-                            };
-
-                            const resp = await axios(config);
-                            const data = resp.data;
-
-                            const { topDes, topSearch } = data;
-                            this.topDes = topDes;
-                            this.topSearch = topSearch;
-                            this.$forceUpdate();
-                        } catch (error) {
-
-                        }
-                    }
-                }
-            });
-
-            $(document.body).on('click', '#search-form__explore input, #main-menu-icon-search, #search-header, .pull-right.ps-relative.mt-12.h-32.top-search.w100vw-220.wmx-250, .modal-search-v2__anchor', function (e) {
-                e.preventDefault();
-
-                $('div#modal-search-v2').modal('show');
-                $('.search-primary-wrapper .search-primary-bg').css('display', 'none');
-                setTimeout(function() {
-                    $('.loading-getlocation').addClass('hide');
-                    $('#search-header-2').focus();
-                }, 500);
-            });
-
-            return destinationSearch;
-        }
-    }
-
-    initDestinationSearchVue();
+    // if( typeof initDestinationSearchVue != 'function' ) {
+    //     function initDestinationSearchVue() {
+    //         if (typeof Vue == 'undefined' || typeof httpVueLoader == 'undefined' || typeof _ == 'undefined') {
+    //             setTimeout(() => {
+    //                 initDestinationSearchVue();
+    //             }, 500);
+    //             return;
+    //         }
+    //
+    //         const destinationSearch = new Vue({
+    //             el: '#modal-search-v2',
+    //             delimiters: ['{(', ')}'],
+    //             data: function () {
+    //                 return dsData;
+    //             },
+    //             components: {
+    //                 loadStream: httpVueLoader('/public/v6/js/components/master/loadStream.vue'),
+    //                 defaultDestination: httpVueLoader(
+    //                     '/public/v6/js/components/master/defaultDestinantion.vue?v=5',
+    //                 ),
+    //             },
+    //             computed: {
+    //                 dataEmpty: function () {
+    //                     return _.isEmpty(this.data);
+    //                 },
+    //                 detailUrl: function () {
+    //                     const country = this.data?._source?.country
+    //                         ? this.data?._source?.country
+    //                         : this.data?._source;
+    //                     const province = this.data?._source?.province;
+    //
+    //                     const continentId =
+    //                         this.data?._index === 'places'
+    //                             ? country.continents.slice(0, 1)
+    //                             : country?.continent_id;
+    //                     const continentSlug = this.continent[continentId]?.slug;
+    //
+    //                     if (this.data?._index === 'places') {
+    //                         return `/${continentSlug}/${country?.countries_slug}/${country?.province_slug}/${country?.slug}`;
+    //                     }
+    //
+    //                     if (
+    //                         this.data?._index === 'province' ||
+    //                         this.data?._index === 'province_v2'
+    //                     ) {
+    //                         return `/${continentSlug}/${country?.slug}/${this.data?._source.slug}`;
+    //                     }
+    //
+    //                     let url = `/${this.continent[continentId]?.slug}/${country?.slug}`;
+    //
+    //                     if (province) {
+    //                         url += `/${province?.slug}`;
+    //                     }
+    //
+    //                     return url;
+    //                 },
+    //                 blogUrl: function () {
+    //                     return `${this.detailUrl}/kinh-nghiem`;
+    //                 },
+    //                 photoUrl: function () {
+    //                     return `${this.detailUrl}/hinh-anh`;
+    //                 },
+    //                 communityUrl: function () {
+    //                     return `${this.detailUrl}/hoi-dap`;
+    //                 },
+    //                 planUrl: function () {
+    //                     return `${this.detailUrl}/lich-trinh`;
+    //                 },
+    //                 searchAllUrl: function () {
+    //                     return `/elastic/search/created_keyword/${encodeURI(this.searchInput)}`;
+    //                 },
+    //             },
+    //             watch: {
+    //                 data(newVal, oldVal) {
+    //                     if (!!newVal?._id) {
+    //                         if (typeof(Storage) !== "undefined") {
+    //                             let data = localStorage.getItem('USER_SEARCH');
+    //                             data = (!!!data) ? {} : JSON.parse(data);
+    //                             const orderNo = Object.keys(data).length;
+    //                             newVal.orderNo = orderNo;
+    //                             data[newVal?._id] = newVal;
+    //                             localStorage.setItem('USER_SEARCH', JSON.stringify(data));
+    //                         }
+    //                     }
+    //                 }
+    //             },
+    //             mounted() {
+    //                 this.observer = new MutationObserver(mutations => {
+    //                     for (const m of mutations) {
+    //                         const newValue = m.target.getAttribute(m.attributeName);
+    //                         this.$nextTick(() => {
+    //                             this.onClassChange(newValue, m.oldValue);
+    //                         });
+    //                     }
+    //                 });
+    //
+    //                 this.observer.observe(this.$refs.modalSearchV2, {
+    //                     attributes: true,
+    //                     attributeOldValue : true,
+    //                     attributeFilter: ['class'],
+    //                 });
+    //
+    //                 this.getPopularData();
+    //             },
+    //             beforeDestroy() {
+    //                 this.observer.disconnect();
+    //             },
+    //             methods: {
+    //                 onClassChange(classAttrValue) {
+    //                     const classList = classAttrValue.split(' ');
+    //                     if (classList.includes('in')) {
+    //                         this.isActive = true;
+    //                     } else {
+    //                         this.isActive = false;
+    //                     }
+    //                     this.$forceUpdate();
+    //                 },
+    //                 clearInput() {
+    //                     this.searchInput = '';
+    //                     this.loading = false;
+    //                     this.$refs.globalSearchInput.focus();
+    //                 },
+    //                 actGlobalSearch: _.debounce(function (e) {
+    //                     this.$refs.globalSearchInput.blur();
+    //                     this.$refs.globalSearchInput.focus();
+    //                     const vm = this;
+    //                     if (e.keyCode === 13 && !!vm.searchInput) {
+    //                         window.location.href = this.searchAllUrl;
+    //                         return;
+    //                     }
+    //                     vm.searchInput && vm.fetchDataSearch();
+    //                 }, 500),
+    //                 async fetchDataSearch() {
+    //                     const vm = this;
+    //                     const url = `https://elasticsearch.gody.vn/public/v2/search-destination/get-list?type=all&query=${vm.searchInput}&response=json`;
+    //                     vm.loading = true;
+    //                     vm.loaded = false;
+    //                     vm.data = {};
+    //
+    //                     await axios
+    //                         .get(url, {
+    //                             // cancelToken: new CancelToken(function executor(c) {
+    //                             //   cancel = c;
+    //                             // }),
+    //                         })
+    //                         .then(async function (resp) {
+    //                             const { hits: data } = resp?.data?.hits;
+    //                             vm.loading = false;
+    //                             vm.loaded = true;
+    //                             vm.data = data?.[0];
+    //                             vm.data.stay22 = await vm.stay22Url();
+    //                             vm.$forceUpdate();
+    //                         })
+    //                         .catch(function (error) {
+    //                             vm.loading = false;
+    //                             vm.loaded = true;
+    //                         });
+    //                 },
+    //                 async stay22Url() {
+    //                     if (this.dataEmpty) {
+    //                         return '';
+    //                     }
+    //
+    //                     const source = this.data?._source;
+    //                     if (source?.latitude && source?.longitude) {
+    //                         return `https://www.stay22.com/embed/gm?lat=${source.latitude}&lng=${source.longitude}&aid=godyvn&venue=Chọn%20điểm%20đến&hidebrandlogo=true&hidefooter=true&maincolor=ffffff&buttoncolor=ffffff&fontcolor=ff8c00&hidemodeswitcher=true`;
+    //                     }
+    //
+    //                     const country = this.data?._source?.country
+    //                         ? this.data?._source?.country
+    //                         : this.data?._source;
+    //                     const province = this.data?._source?.province;
+    //                     let q = '';
+    //                     if (this.data?._index === 'places') {
+    //                         q = `${country.title}, ${country.province_name}, ${country.countries_name}`;
+    //                     }
+    //
+    //                     if (this.data?._index === 'city' || this.data?._index === 'province_v2') {
+    //                         q = `${source?.title}, ${source?.province?.title}, ${source?.country?.title}`;
+    //                     }
+    //
+    //                     try {
+    //                         const config = {
+    //                             method: 'get',
+    //                             url: `https://www.stay22.com/autocomplete/location?q=${encodeURI(q)}`,
+    //                             headers: {},
+    //                         };
+    //
+    //                         const resp = await axios(config);
+    //                         const data = resp.data;
+    //
+    //                         if (!!!data.length) {
+    //                             return '';
+    //                         }
+    //
+    //                         const address = data?.[0]?.description || q;
+    //
+    //                         return `https://www.stay22.com/embed/gm?address=${encodeURI(
+    //                             address,
+    //                         )}&aid=godyvn&venue=Chọn%20điểm%20đến&hidebrandlogo=true&hidefooter=true&maincolor=ffffff&buttoncolor=ffffff&fontcolor=ff8c00&hidemodeswitcher=true`;
+    //                     } catch (error) {
+    //                         return '';
+    //                     }
+    //                 },
+    //                 recentDetailUrl(data) {
+    //                     const country = data?._source?.country
+    //                         ? data?._source?.country
+    //                         : data?._source;
+    //                     const province = data?._source?.province;
+    //
+    //                     const continentId =
+    //                         data?._index === 'places'
+    //                             ? country.continents.slice(0, 1)
+    //                             : country?.continent_id;
+    //                     const continentSlug = this.continent[continentId]?.slug;
+    //
+    //                     if (data?._index === 'places') {
+    //                         return `/${continentSlug}/${country?.countries_slug}/${country?.province_slug}/${country?.slug}`;
+    //                     }
+    //
+    //                     if (
+    //                         data?._index === 'province' ||
+    //                         data?._index === 'province_v2'
+    //                     ) {
+    //                         return `/${continentSlug}/${country?.slug}/${data?._source.slug}`;
+    //                     }
+    //
+    //                     let url = `/${this.continent[continentId]?.slug}/${country?.slug}`;
+    //
+    //                     if (province) {
+    //                         url += `/${province?.slug}`;
+    //                     }
+    //
+    //                     return url;
+    //                 },
+    //                 recentlyViewed() {
+    //                     if (typeof(Storage) !== "undefined") {
+    //                         let data = localStorage.getItem('USER_SEARCH');
+    //                         if (!!!data) return null;
+    //
+    //                         data = JSON.parse(data);
+    //                         let newData = [];
+    //
+    //                         for (const property in data) {
+    //                             newData.push(data[property]);
+    //                         }
+    //
+    //                         newData.sort((a,b) => {
+    //                             if ( a?.orderNo < b?.orderNo ) {
+    //                                 return 1;
+    //                             }
+    //                             if ( a?.orderNo > b?.orderNo ) {
+    //                                 return -1;
+    //                             }
+    //                             return 0;
+    //                         });
+    //
+    //                         return newData.splice(0,5);
+    //                     }
+    //                     return null;
+    //                 },
+    //                 clearRecentlyViewed(item) {
+    //                     if (item?._id) {
+    //                         if (typeof(Storage) !== "undefined") {
+    //                             let data = localStorage.getItem('USER_SEARCH');
+    //                             data = (!!!data) ? {} : JSON.parse(data);
+    //
+    //                             delete data[item?._id];
+    //                             if (!!Object.keys(data).length) {
+    //                                 localStorage.setItem('USER_SEARCH', JSON.stringify(data));
+    //                             } else {
+    //                                 localStorage.removeItem('USER_SEARCH');
+    //                             }
+    //
+    //                             this.$forceUpdate();
+    //                         }
+    //                     }
+    //                 },
+    //                 async getPopularData() {
+    //                     try {
+    //                         const config = {
+    //                             url: 'https://gody.vn/api/v6/top-trends',
+    //                             method: 'GET',
+    //                             headers: {}
+    //                         };
+    //
+    //                         const resp = await axios(config);
+    //                         const data = resp.data;
+    //
+    //                         const { topDes, topSearch } = data;
+    //                         this.topDes = topDes;
+    //                         this.topSearch = topSearch;
+    //                         this.$forceUpdate();
+    //                     } catch (error) {
+    //
+    //                     }
+    //                 }
+    //             }
+    //         });
+    //
+    //         $(document.body).on('click', '#search-form__explore input, #main-menu-icon-search, #search-header, .pull-right.ps-relative.mt-12.h-32.top-search.w100vw-220.wmx-250, .modal-search-v2__anchor', function (e) {
+    //             e.preventDefault();
+    //
+    //             $('div#modal-search-v2').modal('show');
+    //             $('.search-primary-wrapper .search-primary-bg').css('display', 'none');
+    //             setTimeout(function() {
+    //                 $('.loading-getlocation').addClass('hide');
+    //                 $('#search-header-2').focus();
+    //             }, 500);
+    //         });
+    //
+    //         return destinationSearch;
+    //     }
+    // }
+    //
+    // initDestinationSearchVue();
 </script>
 @include('layouts.components.ckeditor_default')
 <script src="https://gody.vn/public/js/vue-modules/vue2-datepicker/index.min.js"></script>
