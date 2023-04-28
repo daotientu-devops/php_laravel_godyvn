@@ -27,6 +27,20 @@ class ForgotPasswordController extends Controller
      */
     public function __construct()
     {
+        parent::__construct();
         $this->middleware('guest');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function index()
+    {
+        return view('auth.passwords.forgot');
+    }
+
+    protected function create($data = array())
+    {
+        return redirect('/');
     }
 }

@@ -37,7 +37,16 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
+        parent::__construct();
         $this->middleware('guest');
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function index()
+    {
+        return view('auth.register');
     }
 
     /**
@@ -61,8 +70,9 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
+    protected function create($data = array())
     {
+        return redirect('/');
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],

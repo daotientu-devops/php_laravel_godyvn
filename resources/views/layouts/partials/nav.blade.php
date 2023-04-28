@@ -63,25 +63,20 @@
                         .nav-add-box ul li{margin-top:10px;}
                     </style>
                 </li>
-
-                <li class="dropdown create-map-success-alert" style="height: 56px;">
-                    <a data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true" style="padding:0;">
-                    </a>
-                    <ul class="dropdown-menu" style="z-index: 1;">
-                        <button class="close" style="top:8px;right:12px;position:absolute;"><span aria-hidden="true">×</span></button>
-                        <script>
-                            document.querySelector(".create-map-success-alert .close").addEventListener("click", function(){
-                                document.querySelector(".create-map-success-alert .dropdown-menu").style.display = 'none';
-                            });
-                        </script>
-                        <p style="margin-bottom:6px;text-align:center;"><b>Chúc mừng!</b>!</p>
-                        <p style=" text-align:center;color:#ff8c00;font-size:30px;margin:0;"><i class="fa fa-bell-o" aria-hidden="true"></i></p>
-                        <p style="margin:0;line-height:23px; text-align: center;">Bạn đã có 20,000VND trong tài khoản. <a href="{{url('/')}}/qua-tang" class="fc-nineth fw-bold">Bạn muốn sử dụng ngay ?</a></p>
+                <li class="dropdown d-flex ai-center jc-center mr-20 ml-0 h-42 px-12 ">
+                    <button type="button" class="outline-none bn clearfix fc-sixth bg-eleventh bar-50 px-25 py-6 mr-0 d-flex fw-500 ai-center jc-center" href="#" data-toggle="dropdown" id="dang-nhap-header">
+                        <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/menu-outline.svg" width="18" class="w-18 mr-8 mb-1">
+                        <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/person-circle-outline.svg" width="28" class="w-28 mb-1">
+                    </button>
+                    <ul class="dropdown-menu account-dropdown bar-8 w-250 card6 bn mt-7">
+                        <li class="ps-absolute w-10 h-10 baw1 bas-solid bc-tenth r12 tn6 rotate-1/8 bg-white brs-unset bbs-unset zn-1"></li>
+                        <li>
+                            <a href="#modal-login" data-toggle="modal" class="fc-fourteenth py-10 px-15 fw-500">Đăng ký / Đăng nhập</a>
+                        </li>
+                        <li class="d-none">
+                            <a href="{{ url('dang-ky') }}" class="fc-fourteenth py-10 px-15">Đăng ký</a>
+                        </li>
                     </ul>
-                    <style>
-                        .create-map-success-alert .dropdown-menu:before{content:'';display:block;width:10px;height:10px;position:absolute;border:1px solid #ccc;right:12px;top:-5px;transform:rotate(45deg);background:#fff;border-right-color:transparent;border-bottom-color:transparent;z-index:-1}
-                        .create-map-success-alert .dropdown-menu{margin-right:3px;margin-top:-1px !important;border-top-left-radius:4px !important;border-top-right-radius:4px!important; min-width:300px; padding:15px;}
-                    </style>
                 </li>
             </ul>
         </div>
