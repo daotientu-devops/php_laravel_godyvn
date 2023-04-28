@@ -73,15 +73,9 @@
 @include('layouts.partials.nav')
 <section class="p-0 m-0 bg-white">
     <div class="w-fit d-block ps-relative">
-        <img
-                data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/banner/Visa.jpg"
-                data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/banner/Visa.jpg"
-                height="380px"
-                class="lazy-load object-cover object-center w-fit"
-        />
-        <img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png" class="ps-absolute t0 r0 b0 l0 h-fit w-fit">
-
-
+        @if (!empty($widget_top_banner['content']))
+            <?php echo html_entity_decode($widget_top_banner['content']) ?>
+        @endif
         <div class="w-fit d-block ps-absolute b0 h-200">
             <div class="container">
                 <div class="d-flex w-fit" style="justify-content: center!important;">
@@ -95,8 +89,6 @@
                         <div class="ps-absolute t0 r0 b0 l0 c-pointer modal-search-v2__anchor"></div>
                     </div>
                 </div>
-
-
                 <div class="ta-center mt-12">
                     <a
                             href="{{url('diem-den')}}/chau-a/viet-nam/kien-giang"
@@ -133,7 +125,6 @@
         </div>
     </div>
 </section>
-
 <section class="p-0 m-0 bg-white">
     <div class="container">
         <div class="row">
@@ -162,7 +153,6 @@
         </div>
     </div>
 </section>
-
 <section class="p-0 m-0 bg-white">
     <div class="container">
         <div class="row">
@@ -224,7 +214,6 @@
         </div>
     </div>
 </section>
-
 <section class="bg-white pt-80">
     <div class="container">
         <div class="row">
@@ -318,7 +307,6 @@
         </div>
     </div>
 </section>
-
 <section class="p-0 m-0 bg-white">
     <div class="container">
         <div class="row">
@@ -327,7 +315,6 @@
                     <h2 class="fc-fourteenth fs-36 lh-44 fw-700 p-0 m-0" data-style="border-bottom: 3px solid #ff8c00;">Bài viết xem nhiều</h2>
                 </div>
             </div>
-
             <div class="w-fit d-block">
                 <div class="slick-item w-fit d-flex jc-space-between" style="justify-content: space-between!important;">
                     <div class="g-item ps-relative d-flex fd-column">
@@ -623,15 +610,11 @@
         </div>
     </div>
 </section>
-
-
-
 <section class="bg-white p-0 m-0">
     <div class="container p-0">
         <div class="w-fit d-block  pt-20 pb-20 ">
             <h2 class="fc-fourteenth fs-36 lh-44 fw-700">Bài viết mới</h2>
         </div>
-
         <div class="clearfix"></div>
         <div class="col-md-9 p-0 m-0">
             <div class="w-fit d-block">
@@ -1115,81 +1098,13 @@
     </div>
 </section>
 
-<div class="w-fit d-block">
-    <img
-            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/banner/g4jtlwrsmowpydbwv0tg.webp"
-            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/banner/g4jtlwrsmowpydbwv0tg.webp"
-            class="object-cover object-center h-160 w-fit lazy-load "
-    />
-</div>
+@if (!empty($widget_middle_banner['content']))
+    <?php echo html_entity_decode($widget_middle_banner['content']) ?>
+@endif
 
-<section class="p-0 m-0 bg-white">
-    <div class="container">
-        <div class="row">
-            <div class="w-fit d-block  pt-20 pb-20 ">
-                <h2 class="fc-fourteenth fs-36 lh-44 fw-700">Xu hướng</h2>
-            </div>
-            <div
-                    class="w-fit d-flex jc-space-between"
-                    style="justify-content: space-between!important;--column:2; --gutter: 100px;"
-            >
-                <div class="d-block ps-relative fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );">
-                    <div class="w-fit d-block"><span class="w-fit d-block fc-black fw-700 fs-26 lh-24">Top 5 điểm đến được y&ecirc;u th&iacute;ch</span>
-                    </div>
-                    <div class="w-fit d-block">
-                        <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
-                            <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#1</span>
-                            <a href="{{url('diem-den')}}/chau-a/singapore" class="fc-fourteenth fs-18 fw-500 h:o50">Singapore</a>
-                        </div>
-                        <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
-                            <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#2</span>
-                            <a href="{{url('diem-den')}}/chau-a/thailand" class="fc-fourteenth fs-18 fw-500 h:o50">Th&aacute;i Lan</a>
-                        </div>
-                        <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
-                            <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#3</span>
-                            <a href="{{url('diem-den')}}/chau-a/south-korea" class="fc-fourteenth fs-18 fw-500 h:o50">H&agrave;n Quốc</a>
-                        </div>
-                        <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
-                            <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#4</span>
-                            <a href="{{url('diem-den')}}/chau-a/Japan" class="fc-fourteenth fs-18 fw-500 h:o50">Nhật Bản</a>
-                        </div>
-                        <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
-                            <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#5</span>
-                            <a href="{{url('diem-den')}}/chau-my/united-states-of-america-my" class="fc-fourteenth fs-18 fw-500 h:o50">Mỹ</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-block ps-relative fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );">
-                    <div class="w-fit d-block">
-                        <span class="w-fit d-block fc-black fw-700 fs-26 lh-24">5 xu hướng du lịch đang &quot;g&acirc;y b&atilde;o&quot;</span>
-                    </div>
-                    <div class="w-fit d-block">
-                        <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
-                            <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#1</span>
-                            <span class="fc-fourteenth fs-18 fw-500 h:o50">Camping</span>
-                        </div>
-                        <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
-                            <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#2</span>
-                            <span class="fc-fourteenth fs-18 fw-500 h:o50">Luxury</span>
-                        </div>
-                        <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
-                            <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#3</span>
-                            <span class="fc-fourteenth fs-18 fw-500 h:o50">Văn H&oacute;a</span>
-                        </div>
-                        <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
-                            <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#4</span>
-                            <span class="fc-fourteenth fs-18 fw-500 h:o50">Lễ Hội</span>
-                        </div>
-                        <div class="w-fit d-flex ai-center pt-10 pb-10" style="align-items: center!important;box-shadow: 0px 0.5px 0px rgb(0 0 0 / 20%);">
-                            <span class="fs-35 fw-700 lh-42 mr-20" style="color: #BDBDBD;">#5</span>
-                            <span class="fc-fourteenth fs-18 fw-500 h:o50">Ẩm Thực</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+@if (!empty($widget_trend['content']))
+    <?php echo html_entity_decode($widget_trend['content']) ?>
+@endif
 
 <section class="p-0 m-0 w-fit d-block bg-white">
     <div class="container">
@@ -1376,7 +1291,6 @@
         </div>
     </div>
 </section>
-
 <section class="p-0 m-0 w-fit d-block bg-white">
     <div class="container">
         <div class="row">
@@ -1398,7 +1312,6 @@
                                 style="position: absolute;width: 100%;height: 100%;left: 0;overflow: hidden;border-radius: 8px;"
                         >
                     </a>
-
                     <div class="ps-absolute b10 l10">
                         <div class="d-flex ai-center jc-space-between">
                             <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
@@ -1546,9 +1459,6 @@
         </div>
     </div>
 </section>
-
-
-
 <section class="p-0 m-0 w-fit d-block bg-white">
     <div class="container">
         <div class="row">
@@ -1569,8 +1479,6 @@
         </div>
     </div>
 </section>
-
-
 <style>
     .h-bottom-E0E0E0:hover {
         border-bottom: 2px solid #E0E0E0 !important;
@@ -1579,8 +1487,6 @@
         height: 56px;
     }
 </style>
-
-
 <div id="modal-login" class="modal modal-simple fade ff-sans" role="dialog" >
     <div class="modal-dialog w100%-60 wmn-950 wmx-1200 xs:wmn-auto xs:w-fit xs:ps-fixed xs:m-0 xs:t0 xs:r0 xs:b0 xs:l0" :class="{'sm:wmn-auto': (currentTab != 'livedorvisitedform'), 'sm:ps-fixed sm:m-0 sm:t0 sm:r0 sm:b0 sm:l0 sm:wmn-auto sm:w-fit': (currentTab == 'livedorvisitedform')}">
         <div class="modal-content bar-5 bg-white xs:h-fit xs:bar-0" :class="modalContentClass">
@@ -1590,7 +1496,6 @@
         </div>
     </div>
 </div>
-
 <div id="modal-destination" class="modal fade modal-simple" role="dialog">
     <div class="modal-dialog modal-lg" style="max-width: 750px; margin-top:20%; text-align: center;">
         <!-- Modal content-->
@@ -1598,12 +1503,10 @@
     </div>
     <!-- /Evaluate popup -->
 </div><!-- /.modal-destination -->
-
 <div class="modal fade modal-custom-global" id="modal-user-request" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content modal-request-body">
             <div class="modal_user_request_loading hide" style="display:block;width:100%;max-width:450px;position:fixed;top:0;text-align:center;right:0;bottom:0;left:0;overflow:hidden;-webkit-overflow-scrolling:touch;outline:0;padding-top:100px;background:rgba(255,255,255,.7); z-index: 1;"><img src="https://gody.vn/public/images/1x1.png" data-src="https://gody.vn/public/v3/images/loading.gif" data-srcset="/public/v3/images/loading.gif" alt="Loading..."></div>
-
             <form action="https://gody.vn/a/goc-yeu-cau/store" method="post" id="modal-user-request-form" novalidate>
                 <input type="hidden" name="_token" value="GCzzGrcDfUqNbxZ8oBl3sygegup9bN8mw2iL3ZoB">
                 <div class="modal-header">
@@ -1629,19 +1532,15 @@
                         <input type="text" placeholder="Tên địa điểm: ( Ghi rõ địa điểm, tỉnh thành, đất nước )" name="modal_user_request_name" id="modal_user_request_name">
                         <span class="error modal_user_request_name_msg" style="display: none"></span>
                     </div>
-
                     <div class="clearfix"></div>
-
                     <div class="message" data-option="0">Thành viên có thể gửi bài yêu cầu về: <b>info@gody.vn</b></div>
                     <div class="message hide" data-option="1">Thành viên có thể đóng góp thông tin địa điểm ( hình ảnh, nội dung ...) về: <b>info@gody.vn</b></div>
-
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-primary">Gửi ngay</button>
                 </div>
             </form>
         </div>
-
         <div class="modal-content modal-request-body-success hide">
             <div class="modal-header">
                 <button type="button" class="close close-report-success" data-dismiss="modal" aria-label="Close" onclick="user_request_success();"><span aria-hidden="true">×</span></button>
@@ -1657,7 +1556,6 @@
         </div>
     </div>
 </div>
-
 <div class="modal fade v5-layouts-i-md modal__va-middle " id="modal-banner-ads" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content xs:wmx-100%-10">
@@ -1820,35 +1718,15 @@
         </div>
     </div>
 </div>
-
-<!-- includeIf('v6.layouts.template-parts.global_nav_launcher') -->
-
-<!-- include('v5.layouts.includes.modal_notification') -->
-
-
-<!-- includeIf('v6.layouts.template-parts.feedback_modal') -->
-
-<!-- includeIf('v6.layouts.template-parts.flight_search') -->
-<!-- includeIf('v6.layouts.template-parts.experience_search') -->
-
 <div id="fb-root"></div>
-
 <script type="text/javascript" src="https://gody.vn/public/v3/plugins/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="https://gody.vn/public/v3/plugins/bootstrap/bootstrap.min.js"></script>
-
 <script src="https://gody.vn/public/v3/js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="https://gody.vn/public/v3/plugins/slick/slick.min.js"></script>
 <script type="text/javascript" src="https://gody.vn/public/v6/js/fancybox-3.1/jquery.fancybox.min.js"></script>
-
-<!--
-    <script type="text/javascript" src="https://gody.vn/public/v3/js/jquery.mousewheel.js"></script>
-    <script type="text/javascript" src="https://gody.vn/public/v3/plugins/fancybox-3.0/jquery.fancybox.min.js"></script>
-    -->
-
 <script type="text/javascript" src="https://gody.vn/public/v3/js/script.js?v=1235"></script>
 <script type="text/javascript" src="https://media2.gody.vn/public/v3/js/custom.js?v=1235" defer></script>
 <script src="https://gody.vn/public/v3/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-
 <script src="https://gody.vn/public/v3/js/sweetalert.min.js"></script>
 <script src="https://gody.vn/public/home/js/lodash.min.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
@@ -1868,7 +1746,6 @@
                     }
                 });
             });
-
             lazyImages.forEach(function(lazyImage) {
                 lazyImageObserver.observe(lazyImage);
             });
@@ -1889,7 +1766,6 @@
             variableWidth: true
         })
     });
-
     $(document).on('click', 'div#top-destination div', function(e){
         const get_data_type = $(this).attr('data-type');
         $('.item-range').addClass('hide');
@@ -1902,7 +1778,6 @@
         $(this).addClass('fc-primary');
         $(this).addClass('bc-primary');
     });
-
     $(document).on('click', 'div#menu-destination div', function(e){
         const get_data_type = $(this).attr('data-type');
         $('.item-range-data').addClass('hide');
@@ -1915,7 +1790,6 @@
         $(this).addClass('fc-primary');
         $(this).addClass('bc-primary');
     });
-
     $(document).on('click', 'div#mobile-top-destination div', function(e){
         const get_data_type = $(this).attr('data-type');
         //data
@@ -1928,7 +1802,6 @@
         $(this).addClass('fc-primary');
         $(this).addClass('bc-primary');
     });
-
     $(document).on('click', 'div#mobile-menu-destination div', function(e){
         const get_data_type = $(this).attr('data-type');
         //data
@@ -1941,7 +1814,6 @@
         $(this).addClass('fc-primary');
         $(this).addClass('bc-primary');
     });
-
     $(document).on('click', 'div.top-destination-ver02 div', function(e){
         const data_type = $(this).attr('data-type');
         var afirca = $('div#data-afirca').position(),
@@ -1950,25 +1822,20 @@
             euro = $('div#data-euro').position(),
             asian = $('div#data-asian').position(),
             viet_nam = $('div#data-viet-nam').position();
-
         const element = $(`div#${data_type}`).position();
-
         $(`div.top-destination-ver02 div`).removeClass('fc-primary');
         $(`div.top-destination-ver02 div`).addClass('fc-fourteenth');
         $(this).addClass('fc-primary');
         $(this).removeClass('fc-fourteenth');
-
         window.scroll({
             top: element.top - 200,
             behavior: 'smooth',
         });
     });
-
     $(document).on('click', 'div.click-tab-01', function(e){
         const get_key = $(this).attr('data-key');
         $('div.click-tab-01').removeClass('fc-primary');
         $('div.click-tab-01').removeClass('bc-primary');
-
         $(this).addClass('fc-primary');
         $(this).addClass('bc-primary');
         $('div.content-tab-01').removeClass('hide');
@@ -1976,24 +1843,20 @@
         $('div.content-tab-01').addClass('hide');
         $(`div#${get_key}`).removeClass('hide');
     });
-
     function selectServicePassport(e)
     {
         $('#country_titleText .item-option').removeClass('hide');
     }
-
     function closeServicePassport()
     {
         $('#country_titleText .item-option').addClass('hide');
     }
-
     //service passport
     function serviceFocus(e)
     {
         const _parent = $(e).parent().find('p').removeClass('ps-absolute');
 
     }
-
     function replaceByDefault(e) {
         e.src = "https://gody.vn/public/v7/images/v7-avatar-default.jpg";
     }
@@ -2014,7 +1877,6 @@
         $(`${element}`).focus();
     }
 </script>
-
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
 <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
@@ -2030,7 +1892,6 @@
             $("#departure-date").datepicker("option", "maxDate", endDate);
         });
     });
-
     $(function(){
         $('#departure-date').datepicker({
             closeText: "Đóng",
@@ -2088,12 +1949,8 @@
             scrollbar: true
         });
     });
-
 </script>
-
 <script src="https://gody.vn/public/v7/js/post-detail.js?v=1235"></script>
-
-
 <script src="https://gody.vn/public/home/js/jquery.validate.min.js"></script>
 
 <!-- fb -->
