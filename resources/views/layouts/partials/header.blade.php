@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/main.css?v=1235">
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/custom.css?v=1235">
     <link rel="stylesheet" href="https://gody.vn/public/v5/css/atomic.css?v=1235">
-    <link rel="stylesheet" href="{{asset('css/jquery.datetimepicker.css')}}">
+    <link rel="stylesheet" href="{{asset('public/css/jquery.datetimepicker.css')}}">
     <link rel="stylesheet" href="https://media2.gody.vn/public/v3/plugins/slick/slick.css">
     <!-- bxSlider CSS file -->
     <link href="https://media2.gody.vn/public/v3/css/jquery.bxslider.min.css" rel="stylesheet"/>
@@ -172,28 +172,6 @@
 </head>
 
 <body class="dest-details" ng-app="MyApp" itemscope="" itemtype="http://schema.org/WebPage">
-<!-- code track facebook -->
-<script>
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId      : '198019300682232',
-            xfbml      : true,
-            version    : 'v3.2'
-        });
-        FB.AppEvents.logPageView();
-    };
-
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
-<!-- end code track facebook -->
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKXB6NT"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 

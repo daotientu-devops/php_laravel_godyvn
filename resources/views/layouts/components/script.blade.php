@@ -9,7 +9,7 @@
 <script src="https://gody.vn/public/v3/perfect-scrollbar/js/perfect-scrollbar.js"></script>
 <!-- scroll menu service -->
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         //GODY.General.isntallFancyGallery();
         $('#slick-quick-access').slick({
             slidesToShow: 4,
@@ -30,22 +30,10 @@
 <script async="" defer="" src="//platform.instagram.com/en_US/embeds.js"></script>
 <script src="https://gody.vn/public/v5/js/iframe_resizer/iframeResizer1.min.js"></script>
 
-
-<!-- include('v4.travel-blogger.post.includes.script_v3', ['current_page' => 'create', 'trv_post' => $trv_post]) -->
-
 <script src="https://gody.vn/public/home/js/jquery.validate.min.js"></script>
-
-<!-- fb -->
-<script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=198019300682232";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
 <script>
     $(function () {
-        $(document.body).on('click', '.facebook_login, .google_login', function(e) {
+        $(document.body).on('click', '.facebook_login, .google_login', function (e) {
             $('.modalBlogCreateLoading').removeClass('hide');
         });
 
@@ -88,13 +76,9 @@
                 form.submit();
             }
         });
-
-        $('#login-form').on('shown.bs.modal', function () {
-            $('#login_email').focus();
-        });
-
+        $('#login-submit').attr('type', 'submit');
         /* Validate login form */
-        $("#login-form").validate({
+        $("#loginForm").validate({
             rules: {
                 login_email: {
                     required: true,
@@ -115,7 +99,8 @@
                     minlength: 'Mật khẩu tối thiểu là 6 ký tự!'
                 }
             },
-            submitHandler: function(form) {
+            submitHandler: function (form) {
+                return false;
                 $('.login_messages').css('display', 'none');
                 $('.login_email_msg').css('display', 'none');
                 $('.login_password_msg').css('display', 'none');
@@ -127,13 +112,13 @@
                     url: "https://gody.vn/dang-nhap",
                     type: 'POST',
                     data: $(form).serialize(),
-                    success: function(response) {
-                        if(response.hasOwnProperty('login_messages')) {
+                    success: function (response) {
+                        if (response.hasOwnProperty('login_messages')) {
                             $('.login_messages').text(response.login_messages);
                             $('.login_messages').css('display', 'block');
-                        } else if(response.hasOwnProperty('login_success')) {
+                        } else if (response.hasOwnProperty('login_success')) {
                             newWindow.location = "#";
-                            currentWindow.location = "https://gody.vn/map/get_all_country/"+response.username;
+                            currentWindow.location = "https://gody.vn/map/get_all_country/" + response.username;
 
                             // newWindow.location = "https://gody.vn/blog/"+response.username;
 
@@ -142,11 +127,11 @@
                             // }, 500);
 
                         }
-                        if(response.hasOwnProperty('login_password')) {
+                        if (response.hasOwnProperty('login_password')) {
                             $('.login_password_msg').text(response.login_password[0]);
                             $('.login_password_msg').css('display', 'block');
                         }
-                        if(response.hasOwnProperty('login_email')) {
+                        if (response.hasOwnProperty('login_email')) {
                             $('.login_email_msg').text(response.login_email[0]);
                             $('.login_email_msg').css('display', 'block');
                         }
@@ -156,7 +141,11 @@
             }
         });
 
-        $('.go-to-home').click(function() {
+        $('#login-form').on('shown.bs.modal', function () {
+            $('#login_email').focus();
+        });
+
+        $('.go-to-home').click(function () {
             window.open('https://gody.vn', '_self');
         });
 
@@ -167,14 +156,14 @@
     });
 
     // Read more
-    $(".more").click(function() {
+    $(".more").click(function () {
         $(".post").addClass("moreContent");
         $(".post").append("");
         $(this).hide();
     });
 
-    $(document.body).on('click', '.facebook_login, .google_login', function(e){
-        setTimeout(function(){
+    $(document.body).on('click', '.facebook_login, .google_login', function (e) {
+        setTimeout(function () {
 
             window.open("https://gody.vn/ban-do-du-lich/viet-nam", '_self');
 
@@ -186,28 +175,28 @@
 
 <!-- include('v3.layouts.includes.script') -->
 <script>
-    $(function() {
+    $(function () {
 
         //$('#modal-banner-ads').modal('show');
 
-        $(document.body).on('click', '#modal-banner-ads', function(e) {
+        $(document.body).on('click', '#modal-banner-ads', function (e) {
             $.ajax({
                 url: "https://gody.vn/feeds/banner-hoidap-popup/close",
                 type: 'get',
                 data: {},
-                success: function(response) {
+                success: function (response) {
                 }
             });
         });
 
         // Pop up
-        $(document.body).on('click', '#modal-banner-ads a', function(e) {
+        $(document.body).on('click', '#modal-banner-ads a', function (e) {
             $('#modal-banner-ads').modal('hide');
             $.ajax({
                 url: "https://gody.vn/pop-up/change-status",
                 type: 'get',
                 data: {},
-                success: function(response) {
+                success: function (response) {
                     //window.open("https://gody.vn/blog/form/dang-ky", "_blank");
                 }
             });
@@ -215,9 +204,9 @@
 
         var modalLogin = window.location.href;
 
-        if(modalLogin.indexOf('#modal-login') > -1) {
+        if (modalLogin.indexOf('#modal-login') > -1) {
             $('#modal-login').modal('show');
-        } else if(modalLogin.indexOf('#modal-notification-invite-ig') > -1) {
+        } else if (modalLogin.indexOf('#modal-notification-invite-ig') > -1) {
             $('#modal-notification-invite-ig').modal('show');
         } else {
             //popupCheck();
@@ -251,14 +240,14 @@
             */
         }
 
-        $(document.body).on('click', '#modal-banner-ads', function(e) {
+        $(document.body).on('click', '#modal-banner-ads', function (e) {
             $.ajax({
                 url: "https://gody.vn/pop-up/change-status",
                 type: 'get',
                 data: {},
-                success: function(response) {
+                success: function (response) {
 
-                }, error: function(response) {
+                }, error: function (response) {
 
                 }
             });
@@ -267,7 +256,7 @@
         // End Pop up
 
 
-        $(document.body).on('change', '#modal-user-request .modal-body #modal_user_request_option', function(e) {
+        $(document.body).on('change', '#modal-user-request .modal-body #modal_user_request_option', function (e) {
             e.preventDefault();
             var _option = $(this).val();
             changeUserRequestOption(_option);
@@ -338,83 +327,81 @@
     });
 
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         // const usrMoneyEl = document.querySelectorAll('.js-user-money');
         // console.log(usrMoneyEl);
 
-        $('.navbar-primary .search-primary-wrapper input').focus(function() {
+        $('.navbar-primary .search-primary-wrapper input').focus(function () {
             $('.fixed-box-travel').hide();
             $('.search-primary-bg').show();
             var input_val = $(this).val();
-            if(input_val.length > 0) {
+            if (input_val.length > 0) {
                 $('.search-primary-wrapper .search-form .filter-panel').hide();
             }
         });
-        $(document.body).on('click','.search-primary-bg',function () {
+        $(document.body).on('click', '.search-primary-bg', function () {
             $('.search-primary-bg').hide();
             $('.navbar-primary .navbar-collapse ul').first().show();
             $('.navbar-primary .search-primary-wrapper').removeClass('search-focus');
             $('.navbar-primary .search-primary-wrapper input').val('');
             $('.fixed-box-travel').show();
         });
-        $('.search-primary-wrapper .search-form a[data-toggle="filter"]').click(function() {
+        $('.search-primary-wrapper .search-form a[data-toggle="filter"]').click(function () {
             $('.search-primary-bg').trigger('click');
         });
 
         $('.home .navbar-primary .search-primary-wrapper').empty();
 
-        $(document.body).on('focus, click', '.search-panel #input-search' ,function(){
-            $("html, body").animate({ scrollTop: ($(this).offset().top - 57) }, "slow");
+        $(document.body).on('focus, click', '.search-panel #input-search', function () {
+            $("html, body").animate({scrollTop: ($(this).offset().top - 57)}, "slow");
         });
 
-        $(document.body).on('click', '.notification-box .dropdown-menu .notification-menu button' ,function(e){
+        $(document.body).on('click', '.notification-box .dropdown-menu .notification-menu button', function (e) {
             $('.notification-box .notification-menu button').removeClass('active');
             $(this).addClass('active');
 
             var data_id = $(this).attr('data-id');
             $('.notification-box .notification-content>div').addClass('hide');
-            $('.notification-box .notification-content>div[data-id="'+data_id+'"]').removeClass('hide');
+            $('.notification-box .notification-content>div[data-id="' + data_id + '"]').removeClass('hide');
 
             e.stopPropagation();
         });
 
-        $(document.body).on('click', '.notification-box .notification-bell' ,function(e){
+        $(document.body).on('click', '.notification-box .notification-bell', function (e) {
             $('.notification-box .notification-bell .notification-bell-count').addClass('hide');
             console.log('xxx');
         });
 
     }); /* End Document ready */
 
-    function user_request_success(_removeClass = '.modal-content.modal-request-body', _addClass = '.modal-content.modal-request-body-success')
-    {
-        $('#modal-user-request '+_removeClass).removeClass('hide');
-        $('#modal-user-request '+_addClass).addClass('hide');
+    function user_request_success(_removeClass = '.modal-content.modal-request-body', _addClass = '.modal-content.modal-request-body-success') {
+        $('#modal-user-request ' + _removeClass).removeClass('hide');
+        $('#modal-user-request ' + _addClass).addClass('hide');
     }
 
-    function changeUserRequestOption(_option = 0)
-    {
+    function changeUserRequestOption(_option = 0) {
         $('#modal-user-request .modal-body .message').addClass('hide');
-        $('#modal-user-request .modal-body .message[data-option="'+_option+'"]').removeClass('hide');
+        $('#modal-user-request .modal-body .message[data-option="' + _option + '"]').removeClass('hide');
     }
 
     /* ----- Custom Function ----- */
     function openDestination(e, event, id) {
         event.preventDefault();
-        var id = '#'+id;
+        var id = '#' + id;
         $('#modal-destination .filter-category button').removeClass('active');
         $(e).addClass('active');
         $('#modal-destination .tabcontent').css('display', 'none');
         $(id).css('display', 'block');
     }
 
-    if( typeof handleIEError !== 'function' ) {
-        function handleIEError(img){
-            img.src="https://gody.vn/public/v7/images/v7-avatar-default.jpg";
+    if (typeof handleIEError !== 'function') {
+        function handleIEError(img) {
+            img.src = "https://gody.vn/public/v7/images/v7-avatar-default.jpg";
         }
     }
 
     if (!!document.querySelector('.js-global-nav__primary_link')) {
-        document.querySelector('.js-global-nav__primary_link').addEventListener('click', function(e) {
+        document.querySelector('.js-global-nav__primary_link').addEventListener('click', function (e) {
             document.querySelector('body').classList.toggle('global-nav-launcher-is-open');
             e.stopPropagation();
             e.preventDefault();
@@ -422,8 +409,8 @@
     }
 
     if (!!document.querySelectorAll('.js-global-nav__close')?.length) {
-        document.querySelectorAll('.js-global-nav__close').forEach(function(e) {
-            e.addEventListener('click', function() {
+        document.querySelectorAll('.js-global-nav__close').forEach(function (e) {
+            e.addEventListener('click', function () {
                 document.querySelector('body').classList.remove('global-nav-launcher-is-open');
             });
         });
@@ -432,14 +419,14 @@
 </script>
 <!-- Donate Script -->
 <script>
-    if( typeof autoRefreshToken !== 'function' ) {
+    if (typeof autoRefreshToken !== 'function') {
         function autoRefreshToken() {
             var csrfToken = $('[name="csrf_token"]').attr('content');
 
             setInterval(refreshToken, 1800000); // 30 minutes
 
-            function refreshToken(){
-                $.get('refresh-csrf').done(function(data){
+            function refreshToken() {
+                $.get('refresh-csrf').done(function (data) {
                     csrfToken = data; // the new token
                 });
             }
@@ -450,17 +437,17 @@
 
     // autoRefreshToken();
 
-    if( typeof getCoinPoint !== 'function' ) {
+    if (typeof getCoinPoint !== 'function') {
         function getCoinPoint() {
-            if($('.donate-coin-box.status').length) {
-                $('.donate-coin-box.status').each(function(index) {
-                    var $this   = $(this);
-                    var type    = $(this).attr('data-type');
-                    var id      = parseInt($(this).attr('data-unique-id'));
-                    var author  = $(this).attr('data-author');
-                    var url     = "https://gody.vn/point/a/get-point/post/"+id+"/"+type;
+            if ($('.donate-coin-box.status').length) {
+                $('.donate-coin-box.status').each(function (index) {
+                    var $this = $(this);
+                    var type = $(this).attr('data-type');
+                    var id = parseInt($(this).attr('data-unique-id'));
+                    var author = $(this).attr('data-author');
+                    var url = "https://gody.vn/point/a/get-point/post/" + id + "/" + type;
                     if (author?.length) {
-                        url += '?author='+author;
+                        url += '?author=' + author;
                     }
 
                     $.ajax({
@@ -468,7 +455,7 @@
                         type: "GET",
                         dataType: "json",
                         data: {},
-                        success: function(response) {
+                        success: function (response) {
                             var total = (response.hasOwnProperty('total')) ? parseInt(response.total) : 0;
                             var authorCoin = (response.hasOwnProperty('author') && response.author.hasOwnProperty('coin') && response.author.coin > 0) ? response.author.coin : 0;
                             $this.addClass('in').removeClass('hide');
@@ -479,14 +466,14 @@
                                 $('.author-coin').html(authorCoin);
                             }
 
-                            if(total > 0) {
-                                $this.find('.label').html('<a href="#modal-coin-sender" data-toggle="modal" class="fc-fourth" title="Danh sách tặng Go-coin">Bài viết này đã nhận được '+total+' Go-coin.</a> <a href="{{url('/')}}/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
+                            if (total > 0) {
+                                $this.find('.label').html('<a href="#modal-coin-sender" data-toggle="modal" class="fc-fourth" title="Danh sách tặng Go-coin">Bài viết này đã nhận được ' + total + ' Go-coin.</a> <a href="{{url('/')}}/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
                                 $('.coin-number-summary').parent().attr('href', '#modal-coin-sender');
                             } else {
                                 $this.find('.label').html('Hãy là người đầu tiên tặng Go-coin cho bài viết này. <a href="{{url('/')}}/tich-diem" class="fw-bold bar-circle ml-0 inline-block text-center va-middle fs-20" title="Go-coin là gì?" target="_blank"><i class="fa fa-question-circle" aria-hidden="true"></i></a>');
                                 $('.coin-number-summary').parent().attr('href', 'javascript:void(0)');
                             }
-                        }, error: function(response) {
+                        }, error: function (response) {
 
                         }
                     });
@@ -499,28 +486,28 @@
 <!-- include('v5.layouts.includes.script_notification') -->
 
 <script id="script-login">
-    if( typeof loadScript != 'function' ) {
+    if (typeof loadScript != 'function') {
         function loadScript(url) {
-            var anchor  = document.getElementById('script-login');
-            var script  = document.createElement('script');
+            var anchor = document.getElementById('script-login');
+            var script = document.createElement('script');
             script.type = 'text/javascript';
-            script.src  = url;
+            script.src = url;
             anchor.parentNode.insertBefore(script, anchor);
         }
     }
 
-    if( typeof initVue != 'function' ) {
+    if (typeof initVue != 'function') {
         function initVue() {
-            if( typeof Vue == 'undefined' ) {
-                setTimeout(function() {
+            if (typeof Vue == 'undefined') {
+                setTimeout(function () {
                     initVue();
                 }, 500);
                 return;
             }
 
-            if( typeof httpVueLoader == 'undefined' ) {
+            if (typeof httpVueLoader == 'undefined') {
                 loadScript('/public/js/vue-modules/http-vue-loader/httpVueLoader.js');
-                setTimeout(function() {
+                setTimeout(function () {
                     initVue();
                 }, 500);
                 return;
@@ -557,13 +544,13 @@
                     success: httpVueLoader('https://gody.vn/public/js/components/login/success.vue'),
                 },
                 computed: {
-                    currentTabComponent: function() {
+                    currentTabComponent: function () {
                         return this.currentTab.toLowerCase();
                     },
-                    modalContentClass: function() {
+                    modalContentClass: function () {
                         var vm = this;
                         var data = [];
-                        switch(vm.currentTab) {
+                        switch (vm.currentTab) {
                             case 'livedorvisitedform':
                                 data = ['sm:h-fit', 'sm:bar-0'];
                                 break;
@@ -586,22 +573,22 @@
                 },
                 methods: {
                     changeComponent(e) {
-                        this.currentTab                  = e.tab;
-                        this.bindObject                  = e.data;
-                        this.bindObject.dataLived        = this.lived;
-                        this.bindObject.dataVietnams     = this.vietnams;
-                        this.bindObject.dataWorlds       = this.worlds;
-                        this.bindObject.currentUser      = this.currentUser;
+                        this.currentTab = e.tab;
+                        this.bindObject = e.data;
+                        this.bindObject.dataLived = this.lived;
+                        this.bindObject.dataVietnams = this.vietnams;
+                        this.bindObject.dataWorlds = this.worlds;
+                        this.bindObject.currentUser = this.currentUser;
                         this.bindObject.vnTotalProvinces = 63;
-                        this.bindObject.previousUrl      = this.previousUrl;
-                        this.bindObject.newUserStatus    = this.newUserStatus;
+                        this.bindObject.previousUrl = this.previousUrl;
+                        this.bindObject.newUserStatus = this.newUserStatus;
                     },
                     changeLived(e) {
                         this.lived = e.data;
                     },
                     changeVisited(e) {
                         this.vietnams = (e.data.vietnams != undefined) ? e.data.vietnams : [];
-                        this.worlds   = (e.data.worlds != undefined) ? e.data.worlds : [];
+                        this.worlds = (e.data.worlds != undefined) ? e.data.worlds : [];
                     },
                     updateVietnams(e) {
                         this.vietnams = e.data;
@@ -613,16 +600,16 @@
                         var vm = this;
                         var currentUrl = window.location.href;
 
-                        if( vm.currentUser != undefined && vm.currentUser.username != undefined && (currentUrl.indexOf('success=2') > -1 || currentUrl.indexOf('success%3D2') > -1 ) ) {
+                        if (vm.currentUser != undefined && vm.currentUser.username != undefined && (currentUrl.indexOf('success=2') > -1 || currentUrl.indexOf('success%3D2') > -1)) {
                             axios.get(`/api/signup-tracking/signup-share-facebook?success=2`, {
                                 cancelToken: new CancelToken(function executor(c) {
                                     cancel = c;
                                 })
                             })
-                                .then(function(response) {
+                                .then(function (response) {
                                     var data = response.data;
                                 })
-                                .catch(function(error) {
+                                .catch(function (error) {
                                     console.log(error)
                                 });
                         }
@@ -632,7 +619,7 @@
         }
     }
 
-    if( typeof Vue != 'undefined' ) {
+    if (typeof Vue != 'undefined') {
         initVue();
     } else {
         loadScript('https://gody.vn/public/js/vue-modules/vue/vue.js');
@@ -643,7 +630,8 @@
         initVue();
     }
 
-</script>    <script>
+</script>
+<script>
     const dsData = {
         searchInput: '',
         isActive: false,
@@ -1005,7 +993,7 @@
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
 ></script>
-<script src="{{asset('js/jquery.datetimepicker.js')}}"></script>
+<script src="{{asset('public/js/jquery.datetimepicker.js')}}"></script>
 <script>
     $.datetimepicker.setDateFormatter({
         parseDate: function (date, format) {

@@ -71,7 +71,7 @@
                     <ul class="dropdown-menu account-dropdown bar-8 w-250 card6 bn mt-7">
                         <li class="ps-absolute w-10 h-10 baw1 bas-solid bc-tenth r12 tn6 rotate-1/8 bg-white brs-unset bbs-unset zn-1"></li>
                         <li>
-                            <a href="#modal-login" data-toggle="modal" class="fc-fourteenth py-10 px-15 fw-500">Đăng ký / Đăng nhập</a>
+                            <a href="#modalLoginForm" data-toggle="modal" class="fc-fourteenth py-10 px-15 fw-500">Đăng ký / Đăng nhập</a>
                         </li>
                         <li class="d-none">
                             <a href="{{ url('dang-ky') }}" class="fc-fourteenth py-10 px-15">Đăng ký</a>
