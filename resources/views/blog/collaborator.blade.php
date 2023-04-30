@@ -56,8 +56,8 @@
                             <textarea id="excerpt" name="excerpt" type="text" class="form-control travelPostDescription" placeholder="Miêu tả ngắn … (*)" rows="4"></textarea>
                         </div>
                         <div class="form-group">
-                            <div class="travelPostContent travel-post-content" id="travelPostContent" name="travelPostContent" placeholder="Chi tiết địa điểm (thông tin, cách đi, giá vé, thời gian mở cửa …) (*)" rows="6" contenteditable="true" style="min-height: 350px; padding:12px;"></div>
-                            <textarea name="travelPostContentCheck" id="travelPostContentCheck" class="hide"></textarea>
+                            <label for="travelPostContent" class="display-inline-block txt-sub-color-blue cursor-pointer font-weight-normal">Chi tiết địa điểm (thông tin, cách đi, giá vé, thời gian mở cửa …)</label>
+                            <textarea name="travelPostContent" id="travelPostContent" class="form-control editor_basic" placeholder="Chi tiết địa điểm (thông tin, cách đi, giá vé, thời gian mở cửa …)" rows="6"></textarea>
                         </div>
 
                         <div class="form-group">

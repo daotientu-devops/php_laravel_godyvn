@@ -89,7 +89,7 @@
 
                     <div class="col-xs-12 mt-30">
                         <div class="form-group ps-relative">
-
+                            <label for="travelPostContent" class="display-inline-block txt-sub-color-blue cursor-pointer font-weight-normal">Mô tả dài</label>
                             <textarea class="form-control editor_basic" id="travelPostContentCheck" name="travelPostContentCheck" data-parsley-trigger="keyup" data-parsley-validation-threshold="10" placeholder="Mô tả dài ..."></textarea>
 
                             <div class="dropdown ps-absolute quick-insert-container" style="top: -5px; left: -50px;">
