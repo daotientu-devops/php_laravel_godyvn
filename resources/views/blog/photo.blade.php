@@ -1,7 +1,7 @@
 @extends('layouts.default')
 @section('content')
 <div class="travel-blog-create-page">
-    <form action="{{ url('photo-blog/dang-bai/note') }}" method="post" accept-charset="utf-8" enctype="multipart/form-data" id="travelPostForm" name="travelPostForm" novalidate="">
+    <form action="{{ url('photo-blog/dang-bai/note') }}" method="post" accept-charset="utf-8" enctype="multipart/form-data" id="travelPhotoForm" name="travelPhotoForm" novalidate="">
         <input type="hidden" name="_token" value="RwVeLdeMZBiM3GobuQZvQ6wIJmq2n1fyZHEgjYl5">
         <input type="hidden" value="" name="travelPostID" id="travelPostID">
         <input type="hidden" value="" name="travelPostUsername" id="travelPostUsername">
@@ -39,17 +39,17 @@
             <div class="row">
                 <div class="col-md-9 mt-20">
                     <div class="set-title">
-                        <input type="text" class="form-control" placeholder="Tiêu đề albums" name="travelPostTitle" id="travelPostTitle">
+                        <input type="text" class="form-control" placeholder="Tiêu đề album (*)" name="title" id="title">
                     </div>
                 </div>
                 <div class="col-md-9 mt-20">
                     <div class="form-group pos-r">
-                        <textarea id="travelPostDescription" name="travelPostDescription" type="text" class="form-control travelPostDescription hmn-120 hmx-500" placeholder="Nội dung chi tiết giới thiệu về album..." rows="4" onkeyup="auto_grow(this)"></textarea>
+                        <textarea id="excerpt" name="excerpt" class="form-control travelPostDescription hmn-120 hmx-500" placeholder="Nội dung chi tiết giới thiệu về album (*)" rows="4" onkeyup="auto_grow(this)"></textarea>
                     </div>
 
                     <div class="form-group" id="_gallery">
-                        <label for="travelPostGalleryIn" class="label-control  cursor-pointer txt-sub-color-blue" style="color: #337ab7;"><i class="fa fa-plus-circle" aria-hidden="true"></i> Albums ảnh (Tối đa 10 ảnh)</label>
-                        <input type="file" name="travelPostGalleryIn" id="travelPostGalleryIn" multiple="" accept="image/jpeg,image/png,image/gif,.JPEG">
+                        <label for="travelPostGalleryIn" class="label-control  cursor-pointer txt-sub-color-blue" style="color: #337ab7;"><i class="fa fa-plus-circle" aria-hidden="true"></i> Albums ảnh (*) (Tối đa 10 ảnh)</label>
+                        <input type="file" name="album" id="album" multiple="" accept="image/jpeg,image/png,image/gif,.JPEG">
                         <input type="hidden" name="travelPostGalleryRemove" id="travelPostGalleryRemove">
                         <div class="box-input cursor-pointer">
                             <div class="travel-post-gallery gallery-119">
@@ -62,7 +62,7 @@
 
                     <div class="form-group text-right clearfix">
                         <div class="checkbox pull-left hide"> <label> <input type="checkbox">Hình ảnh do bạn thực hiện</label> </div>
-                        <button class="btn btn-primary travel-post-btn-submit box-shadow-hover" id="pc-dang-hinh-thanh-cong-nut-viet-ngay">Đăng bài</button>
+                        <button class="btn btn-primary travel-post-btn-submit box-shadow-hover" id="pc-dang-hinh-thanh-cong-nut-viet-ngay" type="submit">Đăng bài</button>
                     </div>
 
                 </div>
@@ -71,7 +71,7 @@
                         <div class="card1 content-card mt-12 travel-post-box">
                             <h2 class="hndle ui-sortable-handle"><span>Tags </span><span class="fw-normal">(địa điểm thực hiện, cách nhau bởi dấu , )</span></h2>
                             <div class="dropdown inside">
-                                <input type="text" placeholder="Nhập & Tìm kiếm" class="form-control cursor-pointer color_sub_blue pl-0 input-default-format travel-post-tag-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" aria-invalid="false" name="travelPostTagSearch" focus="">
+                                <input type="text" placeholder="An Giang,Bình Phước" class="form-control cursor-pointer color_sub_blue pl-0 input-default-format travel-post-tag-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" aria-invalid="false" name="travelPostTagSearch" focus="">
                                 <ul class="dropdown-menu travel-post-tag-dropdown-list" id="hashtags-list">
                                     Nhập từ khóa...
                                 </ul>

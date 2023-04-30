@@ -36,7 +36,62 @@
         $(document.body).on('click', '.facebook_login, .google_login', function (e) {
             $('.modalBlogCreateLoading').removeClass('hide');
         });
-
+        // Validate Chia sẻ, giới thiệu địa điểm mới                         
+        $('#travelCollaboratorForm').validate({
+            rules: {
+                title: 'required',
+                excerpt: 'required',
+                continent: 'required',
+                country: 'required',
+                province: 'required',
+            },
+            messages: {
+                title: 'Vui lòng nhập tên địa điểm',
+                excerpt: 'Vui lòng nhập miêu tả ngắn',
+                continent: 'Vui lòng chọn châu lục',
+                country: 'Vui lòng chọn quốc gia',
+                province: 'Vui lòng chọn tỉnh thành',
+            },
+            submitHandler: function (form) {
+                form.submit();
+            }
+        });
+        // Validate Chia sẻ hình ảnh                          
+        $('#travelPhotoForm').validate({
+            rules: {
+                title: 'required',
+                excerpt: 'required',
+                album: 'required',
+            },
+            messages: {
+                title: 'Vui lòng nhập tiêu đề album',
+                excerpt: 'Vui lòng nhập nội dung chi tiết giới thiệu về album',
+                album: 'Vui lòng thêm album ảnh',
+            },
+            submitHandler: function (form) {
+                form.submit();
+            }
+        });
+        // Validate Chia sẻ trải nghiệm & review                            
+        $('#travelPostForm').validate({
+            rules: {
+                title: 'required',
+                excerpt: 'required',
+                start_date: 'required',
+                duration: 'required',
+                cost: 'required',
+            },
+            messages: {
+                title: 'Vui lòng nhập tiêu đề bài viết',
+                excerpt: 'Vui lòng nhập giới thiệu ngắn',
+                start_date: 'Vui lòng nhập ngày bắt đầu',
+                duration: 'Vui lòng nhập tổng số ngày',
+                cost: 'Vui lòng nhập chi phí chuyến đi',
+            },
+            submitHandler: function (form) {
+                form.submit();
+            }
+        });
         // Validate register form
         $('#sign-up-submit').attr('type', 'submit');
         $('#signup-form').validate({
@@ -172,13 +227,8 @@
         }, 5000);
     });
 </script>
-
-<!-- include('v3.layouts.includes.script') -->
 <script>
     $(function () {
-
-        //$('#modal-banner-ads').modal('show');
-
         $(document.body).on('click', '#modal-banner-ads', function (e) {
             $.ajax({
                 url: "https://gody.vn/feeds/banner-hoidap-popup/close",
@@ -1004,7 +1054,7 @@
             return moment(date).format(format);
         },
     });
-    $('#tripStartDate').datetimepicker({
+    $('#start_date').datetimepicker({
         changeYear: true,
         changeMonth: true,
         minDate: 0,

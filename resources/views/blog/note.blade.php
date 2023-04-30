@@ -30,7 +30,7 @@
                     </div>
 
                     <div class="set-title bar-10 card6 ww-break-word w-1140 h-62 bg-white ba bc-white ps-absolute b25 z-1 l50% translateXn50% lh-20">
-                        <input type="text" value="" placeholder="Tiêu đề bài viết" name="title" id="travelPostTitle" class="bar-10 w-1140 h-60 fs-18 bn py-0 px-15 fc-sixth float-left d-inline-block ta-start m-0 outline-none">
+                        <input type="text" value="" placeholder="Tiêu đề bài viết (*)" name="title" id="title" class="bar-10 w-1140 h-60 fs-18 bn py-0 px-15 fc-sixth float-left d-inline-block ta-start m-0 outline-none">
                     </div>
 
                     <div class="dropdown set-btn primary-dropdown-more">
@@ -65,25 +65,22 @@
                     <input type="hidden" value="0" name="travelPostStatus" id="travelPostStatus">
 
                     <div class="col-xs-12 mt-20 ps-relative">
-                        <textarea id="travelPostDescription" name="content" type="text" class="form-control travelPostDescription bar-10 bn card6 p-15 resize-none w-fit h-inherit bn fs-18 bar-2" placeholder="Giới thiệu ngắn ..." rows="4"></textarea>
+                        <textarea id="excerpt" name="excerpt" class="form-control travelPostDescription bar-10 bn card6 p-15 resize-none w-fit h-inherit bn fs-18 bar-2" placeholder="Giới thiệu ngắn (*)" rows="4"></textarea>
                     </div>
 
                     <div class="col-xs-12 mt-40 ps-relative">
                         <div class="col-xs-4 pr-10 pl-0 ps-relative datepicker-box">
                             <label for="" class="ps-absolute c-pointer t0 l20 h-50 lh-50 fs-16 w-30 ta-left"><i class="fa fa-calendar" aria-hidden="true"></i></label>
-                            <input type="text" name="tripStartDate" id="tripStartDate" placeholder="Ngày bắt đầu" value="" class="w-fit fs-16 pl-50 pr-14 h-50 lh-50 bn card6 outline-none bar-10 datepicker c-pointer trip-start-datepicker">
+                            <input type="text" name="start_date" id="start_date" placeholder="Ngày bắt đầu (*)" value="" class="w-fit fs-16 pl-50 pr-14 h-50 lh-50 bn card6 outline-none bar-10 datepicker c-pointer trip-start-datepicker">
                             <label for="" class="ps-absolute c-pointer t0 r20 h-50 lh-50 fs-26 w-30 ta-left fc-sixth hide" id="tripStartDateClear">&times;</label>
-
                         </div>
                         <div class="col-xs-4 px-10 ps-relative">
-                            <label for="tripDuration" class="ps-absolute c-pointer t0 l30 h-50 lh-50 fs-16 w-30 ta-left"><i class="fa fa-clock-o" aria-hidden="true"></i></label>
-
-                            <input type="number" placeholder="Tổng số ngày" value="" name="tripDuration" class="w-fit fs-16 pl-50 pr-14 h-50 lh-50 bn card6 outline-none bar-10 appearance-none js-enter-none" min="0" id="tripDuration">
+                            <label for="duration" class="ps-absolute c-pointer t0 l30 h-50 lh-50 fs-16 w-30 ta-left"><i class="fa fa-clock-o" aria-hidden="true"></i></label>
+                            <input type="number" placeholder="Tổng số ngày (*)" value="" name="duration" class="w-fit fs-16 pl-50 pr-14 h-50 lh-50 bn card6 outline-none bar-10 appearance-none js-enter-none" min="0" id="duration">
                         </div>
                         <div class="col-xs-4 px-10 ps-relative">
-                            <label for="tripCost" class="ps-absolute c-pointer t0 l30 h-50 lh-50 fs-16 w-30 ta-left"><i class="fa fa-dollar" aria-hidden="true"></i></label>
-
-                            <input type="text" placeholder="Chi phí chuyến đi" value="" name="tripCost" class="w-fit fs-16 pl-50 pr-14 h-50 lh-50 bn card6 outline-none bar-10 appearance-none" id="tripCost" onChange="formatCurrency(this);">
+                            <label for="cost" class="ps-absolute c-pointer t0 l30 h-50 lh-50 fs-16 w-30 ta-left"><i class="fa fa-dollar" aria-hidden="true"></i></label>
+                            <input type="text" placeholder="Chi phí chuyến đi (*)" value="" name="cost" class="w-fit fs-16 pl-50 pr-14 h-50 lh-50 bn card6 outline-none bar-10 appearance-none" id="cost">
                         </div>
                     </div>
 

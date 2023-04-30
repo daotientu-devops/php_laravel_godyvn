@@ -1,7 +1,7 @@
 @extends('layouts.default')
 @section('content')
     <div class="travel-blog-create-page _create1">
-        <form action="" method="post" accept-charset="utf-8" enctype="multipart/form-data" class="" id="travelPostForm" name="travelPostForm" novalidate="">
+        <form action="" method="post" accept-charset="utf-8" enctype="multipart/form-data" id="travelCollaboratorForm" name="travelCollaboratorForm" novalidate="">
             <input type="hidden" name="_token" value="RwVeLdeMZBiM3GobuQZvQ6wIJmq2n1fyZHEgjYl5">
             <input type="hidden" value="" name="travelPostID" id="travelPostID">
             <input type="hidden" value="" name="travelPostUsername" id="travelPostUsername">
@@ -49,11 +49,11 @@
                 <div class="row">
                     <div class="col-md-12 mt-40">
                         <div class="form-group pos-r">
-                            <input type="text" class="form-control" placeholder="Tên địa điểm (*)" name="travelPostTitle" id="travelPostTitle">
+                            <input type="text" class="form-control" placeholder="Tên địa điểm (*)" name="title" id="title">
                         </div>
                         <div class="form-group">
                             <span class="input-count-top-right"><span class="__count">0</span>/<span>350</span></span>
-                            <textarea id="travelPostDescription" name="travelPostDescription" type="text" class="form-control travelPostDescription" placeholder="Miêu tả ngắn … (*)" rows="4"></textarea>
+                            <textarea id="excerpt" name="excerpt" type="text" class="form-control travelPostDescription" placeholder="Miêu tả ngắn … (*)" rows="4"></textarea>
                         </div>
                         <div class="form-group">
                             <div class="travelPostContent travel-post-content" id="travelPostContent" name="travelPostContent" placeholder="Chi tiết địa điểm (thông tin, cách đi, giá vé, thời gian mở cửa …) (*)" rows="6" contenteditable="true" style="min-height: 350px; padding:12px;"></div>
@@ -67,19 +67,18 @@
 
                         <div class="form-group clearfix d-flex ai-end">
                             <div class="col-sm-4 pl-0">
-                                <select name="continents" id="select-continents" class="form-control select-custom" data-user-id="641efcc0b4c82205498e5855">
-                                    <option value="" hidden>Chọn châu...(*)</option>
+                                <select name="continent" id="continent" class="form-control select-custom" data-user-id="641efcc0b4c82205498e5855">
+                                    <option value="" hidden>Chọn châu lục (*)</option>
                                     <option value="1" >Châu Mỹ</option>
                                     <option value="2" >Châu Phi</option>
                                     <option value="3" >Châu Âu</option>
                                     <option value="4" >Châu Á</option>
                                     <option value="5" >Châu Đại Dương</option>
                                 </select>
-
                                 <input type="hidden" value="" id="selected_continent" name="selected_continent">
                             </div>
                             <div class="col-sm-4 pl-0">
-                                <select name="countries" id="countries" class="form-control select-custom" data-user-id="641efcc0b4c82205498e5855">
+                                <select name="country" id="country" class="form-control select-custom" data-user-id="641efcc0b4c82205498e5855">
                                     <option value="" hidden>Quốc gia (*)</option>
                                     <option value="28" >Ai Cập</option>
                                     <option value="62" >Albania</option>
@@ -236,8 +235,8 @@
 
                             <div class="col-sm-4 px-0">
                                 <div class="ajax-loading pos-a hide" style="width: calc(100% - 15px);"><div class="donut" style="top: 0;"></div></div>
-                                <select name="provinces" id="provinces" class="form-control select-custom">
-                                    <option value="" hidden>Tỉnh/thành</option>
+                                <select name="province" id="province" class="form-control select-custom">
+                                    <option value="" hidden>Tỉnh/thành (*)</option>
                                     <option value="1" data-id="1">Hà Nội</option>
                                     <option value="2" data-id="2">Hà Giang</option>
                                     <option value="4" data-id="4">Cao Bằng</option>
@@ -2569,7 +2568,7 @@
                         </div>
 
                         <div class="form-group text-right">
-                            <button class="btn btn-primary travel-post-btn-submit box-shadow-hover">Đăng bài</button>
+                            <button class="btn btn-primary travel-post-btn-submit box-shadow-hover" type="submit">Đăng bài</button>
                         </div>
                     </div>
                 </div>
