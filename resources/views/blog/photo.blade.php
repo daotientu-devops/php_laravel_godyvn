@@ -21,7 +21,7 @@
                     <h3 class="mt-2">Hình đại diện</h3>
                     <p>( Hình ảnh tối ưu: 1350 <strong>x</strong> 480px. )</p>
                     <div class="dropdown">
-                        <input type="file" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <input type="file" aria-haspopup="true" aria-expanded="false">
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -69,7 +69,7 @@
                 <div class="col-md-3 sidebar mt-30">
                     <div class="sticky mt-10">
                         <div class="card1 content-card mt-12 travel-post-box">
-                            <h2 class="hndle ui-sortable-handle"><span>Tags </span><span class="fw-normal">(địa điểm thực hiện)</span></h2>
+                            <h2 class="hndle ui-sortable-handle"><span>Tags </span><span class="fw-normal">(địa điểm thực hiện, cách nhau bởi dấu , )</span></h2>
                             <div class="dropdown inside">
                                 <input type="text" placeholder="Nhập & Tìm kiếm" class="form-control cursor-pointer color_sub_blue pl-0 input-default-format travel-post-tag-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" aria-invalid="false" name="travelPostTagSearch" focus="">
                                 <ul class="dropdown-menu travel-post-tag-dropdown-list" id="hashtags-list">

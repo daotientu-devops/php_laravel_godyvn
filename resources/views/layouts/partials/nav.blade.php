@@ -2,7 +2,7 @@
     <div class="container-fluid wmn-1260 pr-5 ps-relative">
         <div class="navbar-header h-42 mr-5">
             <a href="{{url('/')}}" class="logo" style="display: block;
-    height: 100% !important;background-image:url({{url($setting['logo_header_company']??'')}})"></a>
+                    height: 100% !important;background-image:url({{url($setting['logo_header_company']??'')}})"></a>
         </div>
 
         <div class="collapse navbar-collapse px-0 d-flex d-after-none d-before-none jc-space-between ai-center" id="bs-example-navbar-collapse-1" style="display: flex!important;margin-top: 5px">
@@ -20,7 +20,7 @@
             <ul class="nav navbar-nav navbar-right mrn-6 d-flex ai-center">
                 <li class="py-0 px-0 h:bg-grayf2 bar-50 h-42 px-12 t-all t-duration-slow mr-0">
                     <a class="h-fit text-center p-0 fc-sixth bg-transparent d-flex fw-500 ai-center jc-center px-6 mt-0 w-auto c-pointer" href="{{url('diem-den')}}">
-                        <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/earth.svg" class="w-20 mtn-3 mr-8" />
+                        <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/earth.svg" class="w-20 mtn-3 mr-8"/>
                         <p class="m-0 p-0 fs-16 fc-nineth">Điểm đến</p>
                     </a>
                 </li>
@@ -32,35 +32,60 @@
 
                     <ul class="dropdown-menu bar-0 mtn-1 " aria-labelledby="nav-button-add">
                         <li class="mt-10">
-                            <a href="{{url('blog/viet-bai/note')}}" class="fc-sixth" id=" " style="color: #ff8c00 !important;">
-                                <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/create-outline.svg" class="filter-primary w-24 mr-8">Chia sẻ trải nghiệm & review
+                            <a href="{{url('blog/viet-bai/note')}}" class="fc-sixth" @if(request()->segment(1) === 'blog') style="color: #ff8c00 !important;" @endif>
+                                <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/create-outline.svg" class="{{ request()->segment(1) === 'blog' ? 'filter-primary' : 'filter-sixth' }} w-24 mr-8">Chia sẻ trải nghiệm & review
                             </a>
                         </li>
 
                         <li class="mt-10">
-                            <a href="{{url('photo-blog/dang-bai/note')}}" class="fc-sixth" id=" ">
-                                <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/image-outline.svg" class="filter-sixth w-24 mr-8">Chia sẻ hình ảnh
+                            <a href="{{url('photo-blog/dang-bai/note')}}" class="fc-sixth" @if(request()->segment(1) === 'photo-blog') style="color: #ff8c00 !important;" @endif>
+                                <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/image-outline.svg" class="{{ request()->segment(1) === 'photo-blog' ? 'filter-primary' : 'filter-sixth' }} w-24 mr-8">Chia sẻ hình ảnh
                             </a>
                         </li>
 
                         {{--<li class="mt-10 mb-10">--}}
-                            {{--<a href="{{url('hoi-dap')}}" class="fc-sixth" id=" ">--}}
-                                {{--<img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/people-outline.svg" class="filter-sixth w-24 mr-8">Hỏi đáp du lịch--}}
-                            {{--</a>--}}
+                        {{--<a href="{{url('hoi-dap')}}" class="fc-sixth" id=" ">--}}
+                        {{--<img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/people-outline.svg" class="filter-sixth w-24 mr-8">Hỏi đáp du lịch--}}
+                        {{--</a>--}}
                         {{--</li>--}}
 
                         <li class="mt-10 mb-10">
-                            <a href="{{url('cong-tac-vien/viet-bai/note')}}" class="fc-sixth">
-                                <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/trail-sign-outline.svg" class="filter-sixth w-24 mr-8">Chia sẻ, giới thiệu địa điểm mới
+                            <a href="{{url('cong-tac-vien/viet-bai/note')}}" class="fc-sixth" @if(request()->segment(1) === 'cong-tac-vien') style="color: #ff8c00 !important;" @endif>
+                                <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/trail-sign-outline.svg" class="{{ request()->segment(1) === 'cong-tac-vien' ? 'filter-primary' : 'filter-sixth' }} w-24 mr-8">Chia sẻ, giới thiệu địa điểm mới
                             </a>
                         </li>
 
                     </ul>
                     <style>
-                        .nav-add-box{height: 42px;padding: 5px;}
-                        .nav-add-box ul.dropdown-menu{margin-top:-1px;border-radius:0;}
-                        .nav-add-box ul.dropdown-menu:before{content:'';display:block;width:10px;height:10px;position:absolute;border:1px solid #ccc;right:12px;top:-5px;transform:rotate(45deg);background:#fff;border-right-color:transparent;border-bottom-color:transparent;z-index:-1}
-                        .nav-add-box ul li{margin-top:10px;}
+                        .nav-add-box {
+                            height: 42px;
+                            padding: 5px;
+                        }
+
+                        .nav-add-box ul.dropdown-menu {
+                            margin-top: -1px;
+                            border-radius: 0;
+                        }
+
+                        .nav-add-box ul.dropdown-menu:before {
+                            content: '';
+                            display: block;
+                            width: 10px;
+                            height: 10px;
+                            position: absolute;
+                            border: 1px solid #ccc;
+                            right: 12px;
+                            top: -5px;
+                            transform: rotate(45deg);
+                            background: #fff;
+                            border-right-color: transparent;
+                            border-bottom-color: transparent;
+                            z-index: -1
+                        }
+
+                        .nav-add-box ul li {
+                            margin-top: 10px;
+                        }
                     </style>
                 </li>
                 <li class="dropdown d-flex ai-center jc-center mr-20 ml-0 h-42 px-12 ">

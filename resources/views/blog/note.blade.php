@@ -18,7 +18,7 @@
                     </div>
 
                     <div class="set-page">
-                        <h3 class="mt-2">Thêm hình/video cover bài viết</h3>
+                        <h3 class="mt-2">Thêm hình cover bài viết</h3>
                         <p style="padding-left:130px;">( Hình ảnh tối ưu: 1350px <strong>x</strong> 480px. )</p>
                         <div class="dropdown">
                             <input type="file" name="thumbnail_url">
