@@ -1,8 +1,14 @@
 @extends('layouts.default')
 @section('content')
+@if (Session::has('message'))
+    <div class="alert alert-success alert-dismissible fade in mb-0" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <strong>{{ Session::get('message') }}</strong>
+    </div>
+@endif
 <div class="travel-blog-create-page">
     <form action="{{ url('photo-blog/dang-bai/note') }}" method="post" accept-charset="utf-8" enctype="multipart/form-data" id="travelPhotoForm" name="travelPhotoForm" novalidate="">
-        <input type="hidden" name="_token" value="RwVeLdeMZBiM3GobuQZvQ6wIJmq2n1fyZHEgjYl5">
+        {{ csrf_field() }}
         <input type="hidden" value="" name="travelPostID" id="travelPostID">
         <input type="hidden" value="" name="travelPostUsername" id="travelPostUsername">
         <input type="hidden" value="" name="travelPostLink" id="travelPostLink">
@@ -21,7 +27,7 @@
                     <h3 class="mt-2">Hình đại diện</h3>
                     <p>( Hình ảnh tối ưu: 1350 <strong>x</strong> 480px. )</p>
                     <div class="dropdown">
-                        <input type="file" aria-haspopup="true" aria-expanded="false">
+                        <input type="file" name="thumbnail_url" id="thumbnail_url">
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -49,7 +55,7 @@
 
                     <div class="form-group" id="_gallery">
                         <label for="travelPostGalleryIn" class="label-control  cursor-pointer txt-sub-color-blue" style="color: #337ab7;"><i class="fa fa-plus-circle" aria-hidden="true"></i> Albums ảnh (*) (Tối đa 10 ảnh)</label>
-                        <input type="file" name="album" id="album" multiple="" accept="image/jpeg,image/png,image/gif,.JPEG">
+                        <input type="file" name="album[]" id="album" multiple="" accept="image/jpeg,image/png,image/gif,.JPEG">
                         <input type="hidden" name="travelPostGalleryRemove" id="travelPostGalleryRemove">
                         <div class="box-input cursor-pointer">
                             <div class="travel-post-gallery gallery-119">
@@ -71,7 +77,7 @@
                         <div class="card1 content-card mt-12 travel-post-box">
                             <h2 class="hndle ui-sortable-handle"><span>Tags </span><span class="fw-normal">(địa điểm thực hiện, cách nhau bởi dấu , )</span></h2>
                             <div class="dropdown inside">
-                                <input type="text" placeholder="An Giang,Bình Phước" class="form-control cursor-pointer color_sub_blue pl-0 input-default-format travel-post-tag-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" aria-invalid="false" name="travelPostTagSearch" focus="">
+                                <input type="text" placeholder="An Giang,Bình Phước" class="form-control cursor-pointer color_sub_blue pl-0 input-default-format travel-post-tag-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" aria-invalid="false" name="tags" focus="">
                                 <ul class="dropdown-menu travel-post-tag-dropdown-list" id="hashtags-list">
                                     Nhập từ khóa...
                                 </ul>

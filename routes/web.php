@@ -202,6 +202,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/',  ['uses' => 'HomepageController@index']);
     Route::get('dang-ky',  ['uses' => 'Auth\RegisterController@index']);
     Route::post('dang-ky',  ['uses' => 'Auth\RegisterController@create']);
+    Route::post('dang-nhap',  ['uses' => 'Auth\LoginController@postLogin']);
     Route::get('quen-mat-khau',  ['uses' => 'Auth\ForgotPasswordController@index']);
     Route::post('quen-mat-khau',  ['uses' => 'Auth\ForgotPasswordController@create']);
     Route::get('diem-den', ['uses' => 'LocationController@index']);
@@ -215,6 +216,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('blog/viet-bai/note', ['uses' => 'BlogController@note']);
     Route::post('blog/viet-bai/note', ['uses' => 'BlogController@postNote']);
     Route::get('photo-blog/dang-bai/note', ['uses' => 'BlogController@photo']);
+    Route::post('photo-blog/dang-bai/note', ['uses' => 'BlogController@postPhoto']);
     Route::get('cong-tac-vien/viet-bai/note', ['uses' => 'BlogController@collaborator']);
     Route::get('hoi-dap', function () {
         return view('question.index');

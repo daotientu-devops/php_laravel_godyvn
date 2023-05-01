@@ -102,43 +102,32 @@ class BlogController extends Controller
     /**
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function photo() {
-        return view('blog.photo');
-    }
-
-    /**
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
     public function note() {
         return view('blog.note');
     }
 
     /**
-     * Store a newly created resource in storage.
-     *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function postNote(Request $request)
     {
-        $title = $request->get('title');
-        $slug = $this->sanitize($title);
-        $content = $request->get('content');
-        $plain_text = strip_tags($content);
-        $type = 'text';
-        /* Start thumbnail url */
-        $thumbnail_url = $request->thumbnail_url;
-        $thumbnail_name = '';
-        if ($thumbnail_url) {
-            $thumbnail_name = $thumbnail_url->getClientOriginalName();
-        }
-        /* End thumbnail url */
-
-        $yearDir = date('Y');
-        $monthDir = date('m');
-        $dayDir = date('d');
-
         try {
+            $title = $request->get('title');
+            $slug = $this->sanitize($title);
+            $content = $request->get('content');
+            $plain_text = strip_tags($content);
+            $type = 'text';
+            /* Start thumbnail url */
+            $thumbnail_url = $request->thumbnail_url;
+            $thumbnail_name = '';
+            if ($thumbnail_url) {
+                $thumbnail_name = $thumbnail_url->getClientOriginalName();
+            }
+            /* End thumbnail url */
+            $yearDir = date('Y');
+            $monthDir = date('m');
+            $dayDir = date('d');
             $this->validate($request, [
                 'title' => 'required',
                 'excerpt' => 'required'
@@ -160,7 +149,7 @@ class BlogController extends Controller
                     'published_at' => $request->get('published_at') == null ? strtotime(date('Y-m-d H:i:s')) : strtotime($request->get('published_at')),
                     'post_type' => $type,
                     'category_type' => 'blog',
-                    'category_id' => CategoryBusiness::CATEGORY_ID_DULICH, // du lịch
+                    'category_id' => CategoryBusiness::CATEGORY_ID_BLOG_DULICH, // blog du lịch
                     'thumbnail_url' => ($thumbnail_url) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $thumbnail_name : null
                 ]);
                 if ($thumbnail_url) {
@@ -171,6 +160,84 @@ class BlogController extends Controller
             }
         } catch (\Exception $exception) {
             //print_r($exception->getMessage());die();
+            return redirect()->back()->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
+        }
+    }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function photo() {
+        return view('blog.photo');
+    }
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function postPhoto(Request $request)
+    {
+        try {
+            $title = $request->get('title');
+            $slug = $this->sanitize($title);
+            $content = $request->get('excerpt');
+            $plain_text = strip_tags($content);
+            $type = 'photo';
+            /* Start thumbnail url */
+            $thumbnail_url = $request->thumbnail_url;
+            $thumbnail_name = '';
+            if ($thumbnail_url) {
+                $thumbnail_name = $thumbnail_url->getClientOriginalName();
+            }
+            /* End thumbnail url */
+            $yearDir = date('Y');
+            $monthDir = date('m');
+            $dayDir = date('d');
+            $this->validate($request, [
+                'title' => 'required',
+                'excerpt' => 'required'
+            ]);
+            // Not ok thì redirect với thông báo post đã tồn tại
+            if (Posts::where('slug', '=', $slug)->exists()) {
+                return redirect()->back()->with('error', 'Bài viết ' . $title . ' đã tồn tại');
+            } else {
+                // TH tạo mới mẫu
+                $album = '';
+                $albums = $request->album;
+                if (!empty($albums)) {
+                    foreach ($albums as $album) {
+                        $album_name = $album->getClientOriginalName();
+                        if ($album) {
+                            UploadFileBusiness::uploadFileToFolder($album);
+                        }
+                        $album .= $album_name . ',';
+                    }
+                }
+                $post = new Posts([
+                    'title' => $title,
+                    'slug' => $slug,
+                    'excerpt' => $request->get('excerpt') != null ? $request->get('excerpt') : '',
+                    'plain_text' => $plain_text,
+                    'content' => $content,
+                    'album' => $album,
+                    'author_name' => $request->get('author_name') != null ? $request->get('author_name') : '',
+                    'user_id' => $request->get('user_id') != null ? $request->get('user_id') : 0,
+                    'status' => 'draft', // Chế độ xem trước là bài nháp
+                    'published_at' => $request->get('published_at') == null ? strtotime(date('Y-m-d H:i:s')) : strtotime($request->get('published_at')),
+                    'post_type' => $type,
+                    'category_type' => 'blog',
+                    'category_id' => CategoryBusiness::CATEGORY_ID_BLOG_DULICH, // blog du lịch
+                    'thumbnail_url' => ($thumbnail_url) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $thumbnail_name : null,
+                    'has_tags' => $request->get('tags')
+                ]);
+                if ($thumbnail_url) {
+                    UploadFileBusiness::uploadFileToFolder($thumbnail_url);
+                }
+                $post->save();
+                return redirect()->back()->with('message', 'Tạo mới bài viết ' . $title . ' thành công');
+            }
+        } catch (\Exception $exception) {
+            print_r($exception->getMessage());die();
             return redirect()->back()->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
