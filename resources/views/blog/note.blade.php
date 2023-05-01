@@ -89,83 +89,15 @@
 
                     <div class="col-xs-12 mt-30">
                         <div class="form-group ps-relative">
-                            <label for="travelPostContent" class="display-inline-block txt-sub-color-blue cursor-pointer font-weight-normal">Mô tả dài</label>
-                            <textarea class="form-control editor_basic" id="travelPostContentCheck" name="travelPostContentCheck" data-parsley-trigger="keyup" data-parsley-validation-threshold="10" placeholder="Mô tả dài ..."></textarea>
-
-                            <div class="dropdown ps-absolute quick-insert-container" style="top: -5px; left: -50px;">
-                                <div class="quick-insert ps-absolute h-40 w-40 lh-40 bar-circle ta-center fs-40 fc-primary ba bc-primary c-pointer bg-white h:bg-eighth card4" data-toggle="dropdown">
-                                    <span class="d-block va-middle rotate-1/8 t-all t-duration-slow h-40 floating-btn">&times;</span>
-                                </div>
-
-                                <div class="quick-insert-helper ps-absolute c-pointer pl-20 bg-white t-all t-duration-slowx2 dropdown-menu l50 bn bs-none ws-nowrap mt-0 py-0">
-                                    <button type="button" class="d-inline-block ps-relative h-40 w-40 fc-sixth ta-center mr-10 h:fc-primary bn bs-none bg-white outline-none p-0 add-btn-picture">
-                                        <span class="d-inline-block h-fit va-middle"></span><i class="fa fa-picture-o fs-26 va-middle" aria-hidden="true"></i>
-
-                                        <span class="fs-12 ps-absolute ws-nowrap bn18 l50% translateXn50% title bg-primary px-8 fc-white z-2 bar-4">Chèn hình ảnh</span>
-                                    </button>
-                                    <button type="button" class="d-inline-block ps-relative h-40 w-40 fc-sixth ta-center mr-10 h:fc-primary bn bs-none bg-white outline-none p-0 add-btn-albums">
-                                        <i class="fa fa-picture-o fs-26 ps-absolute l2 bg-white t3" aria-hidden="true"></i>
-                                        <span class="d-inline-block h-fit va-middle"></span><i class="fa fa-picture-o fs-26 va-middle" aria-hidden="true"></i>
-
-                                        <span class="fs-12 ps-absolute ws-nowrap bn18 l50% translateXn50% title bg-primary px-8 fc-white z-2 bar-4">Chèn Albums, Frame hình</span>
-                                    </button>
-                                    <button type="button" class="d-inline-block ps-relative h-40 w-40 fc-sixth ta-center mr-10 h:fc-primary bn bs-none bg-white outline-none p-0 add-btn-video add-btn-embeds">
-                                        <span class="d-inline-block h-fit va-middle"></span><i class="fa fa-video-camera fs-26 va-middle" aria-hidden="true"></i>
-
-                                        <span class="fs-12 ps-absolute ws-nowrap bn18 l50% translateXn50% title bg-primary px-8 fc-white z-2 bar-4">Chèn Video ( Lấy link từ thanh trình duyệt )
-                                        <img src="https://media2.gody.vn/public/mytravelmap/images/2016/12/6/nguyen_tu_7a/df6484703b472290b2b7653b1efecfff.png" class="ps-absolute l0" style="top: 113%;">
-                                    </span>
-                                    </button>
-                                    <button type="button" class="d-inline-block ps-relative h-40 w-40 fc-sixth ta-center mr-10 h:fc-primary bn bs-none bg-white outline-none p-0 add-btn-embeds">
-                                        <span class="d-inline-block h-fit va-middle"></span><i class="fa fa-facebook-official fs-26 va-middle" aria-hidden="true"></i>
-
-                                        <span class="fs-12 ps-absolute ws-nowrap bn18 l50% translateXn50% title bg-primary px-8 fc-white z-2 bar-4">Hình ảnh từ Facebook ( Lấy link từ thanh trình duyệt )
-                                        <img src="https://media2.gody.vn/public/mytravelmap/images/2016/12/6/nguyen_tu_7a/3fc8f358589f1c1059d180ec185fe936.png" class="ps-absolute l0" style="width: 150%;top: 113%;">
-                                    </span>
-                                    </button>
-                                    <button type="button" class="d-inline-block ps-relative h-40 w-40 fc-sixth ta-center mr-10 h:fc-primary bn bs-none bg-white outline-none p-0 add-btn-embeds">
-                                        <span class="d-inline-block h-fit va-middle"></span><i class="fa fa-instagram fs-26 va-middle" aria-hidden="true"></i>
-
-                                        <span class="fs-12 ps-absolute ws-nowrap bn18 l50% translateXn50% title bg-primary px-8 fc-white z-2 bar-4">Hình ảnh từ Instagram ( Lấy link từ thanh trình duyệt )
-                                        <img src="https://media2.gody.vn/public/mytravelmap/images/2016/12/6/nguyen_tu_7a/31273fb63d9d2bc8555ed3e7779505d7.png" class="ps-absolute l0" style="top: 113%;">
-                                    </span>
-                                    </button>
-                                    <button type="button" class="ps-relative h-40 w-40 fc-sixth ta-center mr-10 h:fc-primary bn bs-none bg-white outline-none p-0 hide">
-                                        <span class="d-inline-block h-fit va-middle"></span><i class="fa fa-sort-amount-desc fs-26 va-middle" aria-hidden="true"></i>
-
-                                        <span class="fs-12 ps-absolute ws-nowrap bn18 l50% translateXn50% title bg-primary px-8 fc-white z-2 bar-4">Mục lục bài viết</span>
-                                    </button>
-                                    <button type="button" class="ps-relative h-40 w-40 fc-sixth ta-center mr-10 h:fc-primary bn bs-none bg-white outline-none p-0 add-btn-link hide">
-                                        <span class="d-inline-block h-fit va-middle"></span><i class="fa fa-link fs-26 va-middle" aria-hidden="true"></i>
-
-                                        <span class="fs-12 ps-absolute ws-nowrap bn18 l50% translateXn50% title bg-primary px-8 fc-white z-2 bar-4">Chèn link</span>
-                                    </button>
-
-                                    <button type="button" class="ps-relative h-40 w-40 fc-sixth ta-center mr-10 h:fc-primary bn bs-none bg-white outline-none p-0 add-btn-embeds">
-                                        <span class="d-inline-block h-fit va-middle"></span><i class="fa fa-link fs-26 va-middle" aria-hidden="true"></i>
-
-                                        <span class="fs-12 ps-absolute ws-nowrap bn18 l50% translateXn50% title bg-primary px-8 fc-white z-2 bar-4">Chèn bài chi tiết blog Gody ( Lấy link từ thanh trình duyệt )
-                                        <img src="https://media2.gody.vn/public/mytravelmap/images/2016/12/6/nguyen_tu_7a/f716ce08bfc93d220d96c575ab8b5da1.png" class="ps-absolute l0" style="top: 113%;">
-                                    </span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="selectit display-inline-block txt-sub-color-blue cursor-pointer font-weight-normal pull-right" style="display: none !important;"><input class="custom-checkbox" type="checkbox" value="1" name="travelPostPin" id="travelPostPin">Ghim bài viết</label>
-
-                            <input type="file" name="travelPostGalleryIn" class="hidden" id="travelPostGalleryIn" multiple="" accept="image/jpeg,image/png,image/gif,.JPEG">
-                            <input type="hidden" name="travelPostGalleryRemove" id="travelPostGalleryRemove">
-                            <div class="travel-post-gallery gallery-119">
-                            </div>
+                            <label for="content" class="display-inline-block txt-sub-color-blue cursor-pointer font-weight-normal">Mô tả dài</label>
+                            <textarea class="form-control editor_basic" id="content" name="content" data-parsley-trigger="keyup" data-parsley-validation-threshold="10" placeholder="Mô tả dài ..."></textarea>
                         </div>
 
                         <div class="form-group text-center ps-fixed b0 w-fit l0 card1 mb-0 p-12 bg-white z-9">
                             <button class="btn btn-primary travel-post-btn-submit bg-primary bc-primary h:bs-lg" id="pc-dang-blog-thanh-cong-nut-viet-ngay" type="submit">Đăng bài</button>
                         </div>
 
-                        <div class="form-group hide" style=" ">
+                        <div class="form-group hide">
                             <span style=" font-weight:bold;text-decoration:underline;color:#D02028;"><i class="fa fa-clock-o" aria-hidden="true"></i> Lưu ý:</span> <br>
                             - Bạn chỉ có thể chỉnh sửa bài viết trong vòng <span style="color:#D02028;">2 tiếng </span>kể từ khi đăng bài. <br>
                             - Hãy sử dụng chức năng <span style="color:#D02028;">"Lưu nháp"</span> cho bài viết chưa hoàn thiện.

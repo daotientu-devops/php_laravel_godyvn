@@ -125,7 +125,7 @@ class BlogController extends Controller
         $slug = $this->sanitize($title);
         $content = $request->get('content');
         $plain_text = strip_tags($content);
-        $type = $request->get('type');
+        $type = 'text';
         /* Start thumbnail url */
         $thumbnail_url = $request->thumbnail_url;
         $thumbnail_name = '';
@@ -141,10 +141,10 @@ class BlogController extends Controller
         try {
             $this->validate($request, [
                 'title' => 'required',
-                'content' => 'required'
+                'excerpt' => 'required'
             ]);
             // Not ok thì redirect với thông báo post đã tồn tại
-            if (Posts::where('slug', '=', $slug)->exists()) {echo 1;die();
+            if (Posts::where('slug', '=', $slug)->exists()) {
                 return redirect()->back()->with('error', 'Bài viết ' . $title . ' đã tồn tại');
             } else {
                 // TH tạo mới mẫu
@@ -160,7 +160,7 @@ class BlogController extends Controller
                     'published_at' => $request->get('published_at') == null ? strtotime(date('Y-m-d H:i:s')) : strtotime($request->get('published_at')),
                     'post_type' => $type,
                     'category_type' => 'blog',
-                    'category_id' => 1000,
+                    'category_id' => CategoryBusiness::CATEGORY_ID_DULICH, // du lịch
                     'thumbnail_url' => ($thumbnail_url) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $thumbnail_name : null
                 ]);
                 if ($thumbnail_url) {
