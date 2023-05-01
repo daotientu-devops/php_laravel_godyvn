@@ -9,6 +9,7 @@ class Posts extends Model
         'excerpt',
         'plain_text',
         'content',
+        'album',
         'author_name',
         'user_id',
         'status',

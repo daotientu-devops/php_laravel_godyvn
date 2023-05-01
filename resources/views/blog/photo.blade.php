@@ -1,11 +1,6 @@
 @extends('layouts.default')
 @section('content')
-@if (Session::has('message'))
-    <div class="alert alert-success alert-dismissible fade in mb-0" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-        <strong>{{ Session::get('message') }}</strong>
-    </div>
-@endif
+@include('components.alert')
 <div class="travel-blog-create-page">
     <form action="{{ url('photo-blog/dang-bai/note') }}" method="post" accept-charset="utf-8" enctype="multipart/form-data" id="travelPhotoForm" name="travelPhotoForm" novalidate="">
         {{ csrf_field() }}
@@ -41,7 +36,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mb-20 min-width-1170 travel-blog-body" style="min-height: 85vh;">
+        <div class="container mb-20 min-width-1170 travel-blog-body">
             <div class="row">
                 <div class="col-md-9 mt-20">
                     <div class="set-title">

@@ -1,5 +1,6 @@
 @extends('layouts.default')
 @section('content')
+@include('components.alert')
     <div class="travel-blog-create-page _create1">
         <form action="" method="post" accept-charset="utf-8" enctype="multipart/form-data" id="travelCollaboratorForm" name="travelCollaboratorForm" novalidate="">
             <input type="hidden" name="_token" value="RwVeLdeMZBiM3GobuQZvQ6wIJmq2n1fyZHEgjYl5">

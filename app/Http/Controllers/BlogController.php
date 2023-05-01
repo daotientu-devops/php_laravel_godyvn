@@ -237,7 +237,7 @@ class BlogController extends Controller
                 return redirect()->back()->with('message', 'Tạo mới bài viết ' . $title . ' thành công');
             }
         } catch (\Exception $exception) {
-            print_r($exception->getMessage());die();
+            //print_r($exception->getMessage());die();
             return redirect()->back()->with('error', 'Có lỗi xảy ra: ' . $exception->getMessage());
         }
     }
