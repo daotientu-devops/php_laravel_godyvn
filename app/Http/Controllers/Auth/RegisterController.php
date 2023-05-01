@@ -3,7 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Core\Controllers\Controller;
-use App\User;
+use App\Core\Models\Customer;
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -52,7 +53,7 @@ class RegisterController extends Controller
     /**
      * Get a validator for an incoming registration request.
      *
-     * @param  array  $data
+     * @param  array $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
     protected function validator(array $data)
@@ -67,16 +68,19 @@ class RegisterController extends Controller
     /**
      * Create a new user instance after a valid registration.
      *
-     * @param  array  $data
+     * @param  array $data
      * @return \App\User
      */
-    protected function create($data = array())
+    protected function create(Request $request)
     {
-        return redirect('/');
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
+        Customer::updateOrCreate(array('email' => $request->get('email')), [
+            'fullname' => $request->get('fullname'),
+            'email' => $request->get('email'),
+            'password' => Hash::make($request->get('password')),
+            'telephone' => '',
+            'organization' => '',
+            'is_blocked' => 0
         ]);
+        return redirect()->back()->with('success', 'Đăng ký tài khoản thành công');
     }
 }

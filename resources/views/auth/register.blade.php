@@ -8,6 +8,7 @@
     .register-wrapper .register-form input[type="checkbox"]{position: relative; box-shadow: none; width: 15px;}
     .error{color: #EF0E0E; display: block}
 </style>
+@include('components.alert')
 <div id="app-root" class="register-wrapper ff-sans">
     <div class="container ps-relative">
         <div class="row">
@@ -15,7 +16,7 @@
             <div class="col-lg-6 col-md-6 col-sm-6" style="padding: 70px 0px;">
                 <div class="register-form"><h1 class="name">Đăng ký</h1> <!---->
                     <form method="post" action="{{ url('dang-ky') }}" id="signup-form" name="signup-form" novalidate="novalidate">
-                            {{ csrf_field() }}
+                        {{ csrf_field() }}
                         <div class="form-group ps-relative"><label for="fullname">Họ tên <span class="text-danger">*</span></label> <span class=""></span> <input type="text" id="fullname" name="fullname" class="form-control"></div>
                         <div class="form-group ps-relative"><label for="email">Email <span class="text-danger">*</span></label> <span class=""></span> <input type="text" id="email" name="email" class="form-control"></div>
                         <div class="form-group"><label for="password">Mật khẩu <span class="text-danger">*</span></label> <span class=""></span> <input type="password" id="password" name="password" class="form-control"></div>
