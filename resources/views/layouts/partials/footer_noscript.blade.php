@@ -25,7 +25,7 @@
                             Tham gia ngay cộng đồng du lịch hàng đầu Việt Nam và tận hưởng những
                             điều tuyệt vời nhất từ Gody
                         </p>
-                        <form action="{{ url('dang-nhap') }}" id="loginForm" name="login-form" novalidate="novalidate">
+                        <form method="post" action="{{ url('dang-nhap') }}" id="loginForm" name="login-form" novalidate="novalidate">
                             {{ csrf_field() }}
                             <div class="mb-20 ps-relative ta-left"><input type="text" id="login_email" name="login_email" placeholder="Email" class="
                 form-control

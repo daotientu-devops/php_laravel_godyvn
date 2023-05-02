@@ -187,44 +187,7 @@
                 }
             },
             submitHandler: function (form) {
-                return false;
-                $('.login_messages').css('display', 'none');
-                $('.login_email_msg').css('display', 'none');
-                $('.login_password_msg').css('display', 'none');
-                var _partner = '';
-                var currentWindow = window.open("", "_self");
-                var newWindow = window.open("", "_blank");
-
-                $.ajax({
-                    url: "https://gody.vn/dang-nhap",
-                    type: 'POST',
-                    data: $(form).serialize(),
-                    success: function (response) {
-                        if (response.hasOwnProperty('login_messages')) {
-                            $('.login_messages').text(response.login_messages);
-                            $('.login_messages').css('display', 'block');
-                        } else if (response.hasOwnProperty('login_success')) {
-                            newWindow.location = "#";
-                            currentWindow.location = "https://gody.vn/map/get_all_country/" + response.username;
-
-                            // newWindow.location = "https://gody.vn/blog/"+response.username;
-
-                            // setTimeout(function() {
-                            //     location.reload();
-                            // }, 500);
-
-                        }
-                        if (response.hasOwnProperty('login_password')) {
-                            $('.login_password_msg').text(response.login_password[0]);
-                            $('.login_password_msg').css('display', 'block');
-                        }
-                        if (response.hasOwnProperty('login_email')) {
-                            $('.login_email_msg').text(response.login_email[0]);
-                            $('.login_email_msg').css('display', 'block');
-                        }
-                    }
-                });
-                return false;
+                form.submit();
             }
         });
 

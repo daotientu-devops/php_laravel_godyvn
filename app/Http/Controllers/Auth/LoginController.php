@@ -54,18 +54,18 @@ class LoginController extends Controller
      */
     public function postLogin(Request $request)
     {
-        // validate info, create rules for the inputs
-        $rules = array(
-            'email' => 'required|email', // make sure the email in an actual email
-            'password' => 'required|min:6' // password can only be alphanumeric and has to be greater than 3 character
-        );
         // run the validation rules on the inputs from the form
         try {
+            // validate info, create rules for the inputs
+            $rules = array(
+                'login_email' => 'required|email', // make sure the email in an actual email
+                'login_password' => 'required|min:6' // password can only be alphanumeric and has to be greater than 3 character
+            );
             $this->validate($request, $rules);
             // create user data for the authentication
             $userdata = array(
-                'email' => $request->get('email'),
-                'password' => $request->get('password')
+                'email' => $request->get('login_email'),
+                'password' => $request->get('login_password')
             );
             // attempt to do the login
             if (Auth::attempt($userdata)) {
@@ -77,7 +77,7 @@ class LoginController extends Controller
         } catch (\Exception $exception) {
             return redirect('/')
                 ->with('error', 'Mật khẩu nhập vào quá ngắn')// send back all errors to the login form
-                ->withInput($request->except('password')) // send back the input (not the password) so that we can repopulate
+                ->withInput($request->except('login_password')) // send back the input (not the password) so that we can repopulate
                 ;
         }
     }
