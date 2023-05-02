@@ -60,7 +60,7 @@ class ResetPasswordController extends Controller
         $passwordReset = PasswordReset::select('email')->where([['token', '=', $request->get('token')]])->first();
         if ($passwordReset) {
             Customer::updateOrCreate(array('email' => $passwordReset->email), [
-                'password' => Hash::make($request->get('new_password'))
+                'password' => md5($request->get('new_password'))
             ]);
             return redirect()->back()->with('success', 'Đặt lại mật khẩu thành công');
         } else {

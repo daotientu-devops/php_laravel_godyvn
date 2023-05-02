@@ -4,11 +4,13 @@ namespace App\Http\Controllers\Auth;
 
 use App\Core\Controllers\Controller;
 use App\Core\Models\Customer;
+use App\Core\Models\PasswordReset;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 
 class RegisterController extends Controller
 {
@@ -78,11 +80,15 @@ class RegisterController extends Controller
         Customer::updateOrCreate(array('email' => $request->get('email')), [
             'fullname' => $request->get('fullname'),
             'email' => $request->get('email'),
-            'password' => Hash::make($request->get('password')),
+            'password' => md5($request->get('password')),
             'telephone' => '',
             'organization' => '',
             'is_blocked' => 0
         ]);
+        // Tạo thêm token cho customer
+        PasswordReset::updateOrCreate([
+            'email' => $request->get('email')
+        ], ['token' => Str::random(60)]);
         return redirect()->back()->with('success', 'Đăng ký tài khoản thành công');
     }
 }

@@ -7,6 +7,8 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Core\Models\PasswordReset;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class LoginController extends Controller
 {
@@ -68,11 +70,15 @@ class LoginController extends Controller
                 'email' => $request->get('login_email'),
                 'password' => $request->get('login_password')
             );
+            $user = DB::table('customers')->where([
+                ['email', '=', $userData['email']],
+                ['password', '=', md5($userData['password'])]
+            ])->first();
             // attempt to do the login
-            if (Auth::attempt($userData)) {
+            if (isset($user)) {
                 $passwordReset = PasswordReset::select('token')->where('email', $userData['email'])->first();
                 $userData = array(
-                    'fullname' => Auth::user()->fullname,
+                    'fullname' => $user->fullname,
                     'token' => $passwordReset->token
                 );
                 // validation successful

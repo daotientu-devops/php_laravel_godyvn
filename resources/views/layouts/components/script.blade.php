@@ -30,10 +30,18 @@
 <script>
     function getCookie(name) {
         const value = `; ${document.cookie}`;
+        console.log(value);
         const parts = value.split(`; ${name}=`);
-        if (parts.length === 2) return parts.pop().split(';').shift();
+        console.log(parts);
+        if (parts.length === 2) {
+            console.log(parts.pop());
+            console.log(parts.pop().split(';'));
+            console.log(parts.pop().split(';').shift());
+            return parts.pop().split(';').shift();
+        }
     }
     $(function () {
+        getCookie('travel_user_info');
         $(document.body).on('click', '.facebook_login, .google_login', function (e) {
             $('.modalBlogCreateLoading').removeClass('hide');
         });
