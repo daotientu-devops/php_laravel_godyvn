@@ -3,11 +3,11 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Core\Controllers\Controller;
-use Illuminate\Foundation\Auth\ResetsPasswords;
 use Illuminate\Http\Request;
 use App\Core\Models\PasswordReset;
 use App\Core\Models\Customer;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 class ResetPasswordController extends Controller
 {
@@ -22,7 +22,7 @@ class ResetPasswordController extends Controller
     |
     */
 
-    use ResetsPasswords;
+    //use ResetsPasswords;
 
     /**
      * Where to redirect users after resetting their password.
@@ -38,6 +38,7 @@ class ResetPasswordController extends Controller
      */
     public function __construct()
     {
+        Auth::logout();
         parent::__construct();
         $this->middleware('guest');
     }

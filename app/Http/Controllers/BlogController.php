@@ -156,7 +156,7 @@ class BlogController extends Controller
                     UploadFileBusiness::uploadFileToFolder($thumbnail_url);
                 }
                 $post->save();
-                return redirect()->back()->with('message', 'Tạo mới bài viết ' . $title . ' thành công');
+                return redirect()->back()->with('message', 'Tạo mới bài viết ' . $title . ' thành công. Bài viết của bạn sẽ được xét duyệt trước khi xuất bản');
             }
         } catch (\Exception $exception) {
             //print_r($exception->getMessage());die();
@@ -234,7 +234,7 @@ class BlogController extends Controller
                     UploadFileBusiness::uploadFileToFolder($thumbnail_url);
                 }
                 $post->save();
-                return redirect()->back()->with('message', 'Tạo mới bài viết ' . $title . ' thành công');
+                return redirect()->back()->with('message', 'Tạo mới bài viết ' . $title . ' thành công. Bài viết của bạn sẽ được xét duyệt trước khi xuất bản');
             }
         } catch (\Exception $exception) {
             //print_r($exception->getMessage());die();

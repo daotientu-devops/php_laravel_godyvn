@@ -90,18 +90,33 @@
                 </li>
                 <li class="dropdown d-flex ai-center jc-center mr-20 ml-0 h-42 px-12 ">
                     <button type="button" class="outline-none bn clearfix fc-sixth bg-eleventh bar-50 px-25 py-6 mr-0 d-flex fw-500 ai-center jc-center" href="#" data-toggle="dropdown" id="dang-nhap-header">
+                        @if(isset($_COOKIE['travel_user_info']))
+                            <?php
+                                $userData = json_decode($_COOKIE['travel_user_info'], true);
+                                echo $userData['fullname'] . '&nbsp;';
+                            ?>
+                        @endif
                         <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/menu-outline.svg" width="18" class="w-18 mr-8 mb-1">
                         <img src="https://gody.vn/public/v6/js/ionicons/5.5.2/svg/person-circle-outline.svg" width="28" class="w-28 mb-1">
                     </button>
-                    <ul class="dropdown-menu account-dropdown bar-8 w-250 card6 bn mt-7">
-                        <li class="ps-absolute w-10 h-10 baw1 bas-solid bc-tenth r12 tn6 rotate-1/8 bg-white brs-unset bbs-unset zn-1"></li>
-                        <li>
-                            <a href="#modalLoginForm" data-toggle="modal" class="fc-fourteenth py-10 px-15 fw-500">Đăng ký / Đăng nhập</a>
-                        </li>
-                        <li class="d-none">
-                            <a href="{{ url('dang-ky') }}" class="fc-fourteenth py-10 px-15">Đăng ký</a>
-                        </li>
-                    </ul>
+                    @if(isset($_COOKIE['travel_user_info']))
+                        <ul class="dropdown-menu account-dropdown bar-8 w-250 card6 bn mt-7">
+                            <li class="ps-absolute w-10 h-10 baw1 bas-solid bc-tenth r12 tn6 rotate-1/8 bg-white brs-unset bbs-unset zn-1"></li>
+                            <li>
+                                <a href="{{ url('thoat') }}" data-toggle="modal" class="fc-fourteenth py-10 px-15 fw-500">Thoát</a>
+                            </li>
+                        </ul>
+                    @else
+                        <ul class="dropdown-menu account-dropdown bar-8 w-250 card6 bn mt-7">
+                            <li class="ps-absolute w-10 h-10 baw1 bas-solid bc-tenth r12 tn6 rotate-1/8 bg-white brs-unset bbs-unset zn-1"></li>
+                            <li>
+                                <a href="#modalLoginForm" data-toggle="modal" class="fc-fourteenth py-10 px-15 fw-500">Đăng ký / Đăng nhập</a>
+                            </li>
+                            <li class="d-none">
+                                <a href="{{ url('dang-ky') }}" class="fc-fourteenth py-10 px-15">Đăng ký</a>
+                            </li>
+                        </ul>
+                    @endif
                 </li>
             </ul>
         </div>

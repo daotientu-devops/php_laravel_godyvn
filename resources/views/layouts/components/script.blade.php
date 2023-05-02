@@ -28,6 +28,11 @@
 
 <script src="https://gody.vn/public/home/js/jquery.validate.min.js"></script>
 <script>
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+    }
     $(function () {
         $(document.body).on('click', '.facebook_login, .google_login', function (e) {
             $('.modalBlogCreateLoading').removeClass('hide');
@@ -105,6 +110,12 @@
             }
         });
         // Validate Chia sẻ trải nghiệm & review
+        $('#pc-dang-blog-thanh-cong-nut-viet-ngay').click(function () {
+          if (typeof getCookie('travel_user_info') === 'undefined') {
+              alert('Vui lòng đăng nhập (hoặc đăng ký nếu chưa có tài khoản) để chia sẻ bài viết');
+              return false;
+          }
+        });
         $('#travelPostForm').validate({
             rules: {
                 title: 'required',

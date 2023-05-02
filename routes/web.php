@@ -205,6 +205,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('dang-nhap',  ['uses' => 'Auth\LoginController@postLogin']);
     Route::get('quen-mat-khau',  ['uses' => 'Auth\ForgotPasswordController@index']);
     Route::post('quen-mat-khau',  ['uses' => 'Auth\ForgotPasswordController@sendResetLinkEmail']);
+    Route::get('thoat',  ['uses' => 'Auth\LoginController@logout']);
     Route::get('diem-den', ['uses' => 'LocationController@index']);
     Route::get('diem-den/{continent}/{country}/{city?}', ['uses' => 'LocationController@detail']);
     Route::get('diem-den/{continent}/{country}/{city?}/hinh-anh', ['uses' => 'LocationController@detail']);

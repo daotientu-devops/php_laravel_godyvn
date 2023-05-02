@@ -2569,7 +2569,7 @@
                         </div>
 
                         <div class="form-group text-right">
-                            <button class="btn btn-primary travel-post-btn-submit box-shadow-hover" type="submit">Đăng bài</button>
+                            <button class="btn btn-primary travel-post-btn-submit box-shadow-hover" id="pc-dang-blog-thanh-cong-nut-viet-ngay" type="submit">Đăng bài</button>
                         </div>
                     </div>
                 </div>

@@ -1571,7 +1571,7 @@
                   lh-20
                   user-select-none
                 ">Ghi nhớ đăng nhập
-                                        <input type="checkbox" class="ps-absolute o0 c-pointer t0 r0"> <span class="
+                                        <input type="checkbox" name="remember_login" class="ps-absolute o0 c-pointer t0 r0" value="1"> <span class="
                     checkmark
                     card7
                     w-20
