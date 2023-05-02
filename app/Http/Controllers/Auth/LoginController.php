@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Core\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -36,6 +36,7 @@ class LoginController extends Controller
      */
     public function __construct()
     {
+        Auth::logout();
         $this->middleware('guest')->except('logout'); // loại trừ logout để tránh loop login
     }
 

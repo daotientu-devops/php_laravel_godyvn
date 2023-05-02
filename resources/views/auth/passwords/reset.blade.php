@@ -16,12 +16,14 @@
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6" style="padding: 70px 0;">
                 <div class="register-form">
-                    <h1 class="name">Quên mật khẩu</h1>
-                    <form method="post" action="{{ url('quen-mat-khau') }}" id="signup-form" name="signup-form" novalidate="novalidate">
+                    <h1 class="name">Đặt lại mật khẩu</h1>
+                    <form method="post" action="{{ url('dat-lai-mat-khau') }}" id="reset-form" name="reset-form" novalidate="novalidate">
                         {{ csrf_field() }}
+                        <input type="hidden" name="token" value="{{ request()->segment(3) }}">
                         <div class="form-group">
-                            <label for="email">Nhập email đăng ký, website sẽ gửi lại form đặt lại mật khẩu cho bạn!</label>
-                            <input type="text" class="form-control" id="email" name="email" value="" autofocus="">
+                            <div class="form-group"><label for="password">Mật khẩu cũ<span class="text-danger">*</span></label> <span class=""></span> <input type="password" id="old_password" name="old_password" class="form-control"></div>
+                            <div class="form-group"><label for="password">Mật khẩu mới<span class="text-danger">*</span></label> <span class=""></span> <input type="password" id="new_password" name="new_password" class="form-control"></div>
+                            <div class="form-group"><label for="re_password" class="">Nhập lại mật khẩu mới<span class="text-danger">*</span></label> <span class=""></span> <input type="password" id="renew_password" name="renew_password" class="form-control"></div>
                         </div>
                         <button type="submit" class="btn btn-default">Tạo lại mật khẩu</button>
                     </form>

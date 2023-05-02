@@ -1,10 +1,7 @@
-{{--<script type="text/javascript" src="https://gody.vn/public/v3/plugins/jquery-1.11.3.min.js"></script>--}}
 <script type="text/javascript" src="https://gody.vn/public/v3/plugins/bootstrap/bootstrap.min.js"></script>
-
 <script src="https://gody.vn/public/v3/js/jquery.bxslider.min.js"></script>
 <script type="text/javascript" src="https://gody.vn/public/v3/plugins/slick/slick.min.js"></script>
 <script type="text/javascript" src="https://gody.vn/public/v6/js/fancybox-3.1/jquery.fancybox.min.js"></script>
-{{--<script type="text/javascript" src="https://gody.vn/public/v3/js/script.js?v=1235"></script>--}}
 <script type="text/javascript" src="https://media2.gody.vn/public/v3/js/custom.js?v=1235" defer></script>
 <script src="https://gody.vn/public/v3/perfect-scrollbar/js/perfect-scrollbar.js"></script>
 <!-- scroll menu service -->
@@ -18,7 +15,6 @@
         });
     });
 </script>
-
 <script src="https://gody.vn/public/v3/js/sweetalert.min.js"></script>
 <script src="https://gody.vn/public/home/js/lodash.min.js"></script>
 <script src="https://gody.vn/public/v3/js/sweetalert.min.js"></script>
@@ -36,7 +32,43 @@
         $(document.body).on('click', '.facebook_login, .google_login', function (e) {
             $('.modalBlogCreateLoading').removeClass('hide');
         });
-        // Validate Chia sẻ, giới thiệu địa điểm mới                         
+        // Validate Đặt lại mật khẩu
+        $('#reset-form').validate({
+            rules: {
+                old_password: {
+                    required: true,
+                    minlength: 6
+                },
+                new_password: {
+                    required: true,
+                    minlength: 6
+                },
+                renew_password: {
+                    required: true,
+                    minlength: 6,
+                    equalTo: '#new_password'
+                },
+            },
+            messages: {
+                old_password: {
+                    required: 'Vui lòng nhập mật khẩu!',
+                    minlength: 'Mật khẩu tối thiểu là 6 ký tự!',
+                },
+                new_password: {
+                    required: 'Vui lòng nhập mật khẩu!',
+                    minlength: 'Mật khẩu tối thiểu là 6 ký tự!',
+                },
+                renew_password: {
+                    required: 'Vui lòng nhập lại mật khẩu!',
+                    minlength: 'Mật khẩu tối thiểu là 6 ký tự!',
+                    equalTo: 'Mật khẩu mới không trùng khớp!'
+                }
+            },
+            submitHandler: function (form) {
+                form.submit();
+            }
+        });
+        // Validate Chia sẻ, giới thiệu địa điểm mới
         $('#travelCollaboratorForm').validate({
             rules: {
                 title: 'required',
@@ -46,17 +78,17 @@
                 province: 'required',
             },
             messages: {
-                title: 'Vui lòng nhập tên địa điểm',
-                excerpt: 'Vui lòng nhập miêu tả ngắn',
-                continent: 'Vui lòng chọn châu lục',
-                country: 'Vui lòng chọn quốc gia',
-                province: 'Vui lòng chọn tỉnh thành',
+                title: 'Vui lòng nhập tên địa điểm!',
+                excerpt: 'Vui lòng nhập miêu tả ngắn!',
+                continent: 'Vui lòng chọn châu lục!',
+                country: 'Vui lòng chọn quốc gia!',
+                province: 'Vui lòng chọn tỉnh thành!',
             },
             submitHandler: function (form) {
                 form.submit();
             }
         });
-        // Validate Chia sẻ hình ảnh                          
+        // Validate Chia sẻ hình ảnh
         $('#travelPhotoForm').validate({
             rules: {
                 title: 'required',
@@ -64,15 +96,15 @@
                 album: 'required',
             },
             messages: {
-                title: 'Vui lòng nhập tiêu đề album',
-                excerpt: 'Vui lòng nhập nội dung chi tiết giới thiệu về album',
-                album: 'Vui lòng thêm album ảnh',
+                title: 'Vui lòng nhập tiêu đề album!',
+                excerpt: 'Vui lòng nhập nội dung chi tiết giới thiệu về album!',
+                album: 'Vui lòng thêm album ảnh!',
             },
             submitHandler: function (form) {
                 form.submit();
             }
         });
-        // Validate Chia sẻ trải nghiệm & review                            
+        // Validate Chia sẻ trải nghiệm & review
         $('#travelPostForm').validate({
             rules: {
                 title: 'required',
@@ -82,11 +114,11 @@
                 cost: 'required',
             },
             messages: {
-                title: 'Vui lòng nhập tiêu đề bài viết',
-                excerpt: 'Vui lòng nhập giới thiệu ngắn',
-                start_date: 'Vui lòng nhập ngày bắt đầu',
-                duration: 'Vui lòng nhập tổng số ngày',
-                cost: 'Vui lòng nhập chi phí chuyến đi',
+                title: 'Vui lòng nhập tiêu đề bài viết!',
+                excerpt: 'Vui lòng nhập giới thiệu ngắn!',
+                start_date: 'Vui lòng nhập ngày bắt đầu!',
+                duration: 'Vui lòng nhập tổng số ngày!',
+                cost: 'Vui lòng nhập chi phí chuyến đi!',
             },
             submitHandler: function (form) {
                 form.submit();
@@ -112,10 +144,10 @@
                 }
             },
             messages: {
-                fullname: 'Vui lòng nhập đầy đủ họ tên',
+                fullname: 'Vui lòng nhập đầy đủ họ tên!',
                 email: {
                     required: 'Vui lòng nhập email!',
-                    email: 'Vui lòng nhập đúng định dạng email',
+                    email: 'Vui lòng nhập đúng định dạng email!',
                 },
                 password: {
                     required: 'Vui lòng nhập mật khẩu!',
@@ -124,7 +156,7 @@
                 re_password: {
                     required: 'Vui lòng nhập lại mật khẩu!',
                     minlength: 'Mật khẩu tối thiểu là 6 ký tự!',
-                    equalTo: 'Mật khẩu không đúng!'
+                    equalTo: 'Mật khẩu nhập lại không trùng khớp!'
                 }
             },
             submitHandler: function (form) {

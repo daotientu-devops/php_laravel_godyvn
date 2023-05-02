@@ -26,7 +26,7 @@ Route::get('password/reset', [
     'as' => 'password.request',
     'uses' => 'Auth\ForgotPasswordController@showLinkRequestForm'
 ]);
-Route::post('password/reset', [
+Route::post('dat-lai-mat-khau', [
     'as' => 'password.update',
     'uses' => 'Auth\ResetPasswordController@reset'
 ]);
@@ -204,7 +204,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::post('dang-ky',  ['uses' => 'Auth\RegisterController@create']);
     Route::post('dang-nhap',  ['uses' => 'Auth\LoginController@postLogin']);
     Route::get('quen-mat-khau',  ['uses' => 'Auth\ForgotPasswordController@index']);
-    Route::post('quen-mat-khau',  ['uses' => 'Auth\ForgotPasswordController@create']);
+    Route::post('quen-mat-khau',  ['uses' => 'Auth\ForgotPasswordController@sendResetLinkEmail']);
     Route::get('diem-den', ['uses' => 'LocationController@index']);
     Route::get('diem-den/{continent}/{country}/{city?}', ['uses' => 'LocationController@detail']);
     Route::get('diem-den/{continent}/{country}/{city?}/hinh-anh', ['uses' => 'LocationController@detail']);

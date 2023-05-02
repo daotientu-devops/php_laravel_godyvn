@@ -3,7 +3,12 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Core\Controllers\Controller;
+use App\Core\Models\Customer;
+use App\Core\Models\PasswordReset;
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\SendsPasswordResetEmails;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 
 class ForgotPasswordController extends Controller
 {
@@ -27,6 +32,7 @@ class ForgotPasswordController extends Controller
      */
     public function __construct()
     {
+        Auth::logout();
         parent::__construct();
         $this->middleware('guest');
     }
@@ -39,8 +45,23 @@ class ForgotPasswordController extends Controller
         return view('auth.passwords.forgot');
     }
 
-    protected function create($data = array())
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    protected function sendResetLinkEmail(Request $request)
     {
-        return redirect('/');
+        $customer = Customer::select('email')->where('email', $request->email)->first();
+        if ($customer) {
+            $passwordReset = PasswordReset::updateOrCreate([
+                'email' => $customer->email
+            ], ['token' => Str::random(60)]);
+            if ($passwordReset) {
+                return redirect('password/reset/' . $passwordReset->token);
+            }
+        } else {
+            return redirect()->back()->with('error',
+                'Email không tồn tại trong hệ thống!');
+        }
     }
 }
