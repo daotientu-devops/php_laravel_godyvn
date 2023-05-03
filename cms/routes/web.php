@@ -46,14 +46,13 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/', 'DashboardController@index');
     // Trang quản trị category
     Route::group(['prefix' => 'categories', 'as' => 'categories'], function () {
-        Route::get('/', ['as' => 'index', 'uses' => 'CategoryController@index']);
+        Route::get('/', ['uses' => 'CategoryController@index']);
         Route::get('/{id?}', ['as' => 'index', 'uses' => 'CategoryController@index']);
-        Route::post('/store', ['uses' => 'CategoryController@store']);
-        Route::get('/show/{id?}', ['uses' => 'CategoryController@show']);
-        Route::get('/edit/{id?}', ['uses' => 'CategoryController@edit']);
-        Route::post('/update/{id?}', ['uses' => 'CategoryController@update']);
-        Route::get('/delete/{id?}', ['uses' => 'CategoryController@destroy']);
-        Route::post('/adddiease/{id?}', ['uses' => 'CategoryController@addDisease']);
+        Route::post('/store', ['as' => 'store', 'uses' => 'CategoryController@store']);
+        Route::get('/show/{id?}', ['as' => 'show', 'uses' => 'CategoryController@show']);
+        Route::get('/edit/{id?}', ['as' => 'edit', 'uses' => 'CategoryController@edit']);
+        Route::post('/update/{id?}', ['as' => 'update', 'uses' => 'CategoryController@update']);
+        Route::get('/delete/{id?}', ['as' => 'delete', 'uses' => 'CategoryController@destroy']);
     });
     // QUẢN TRỊ TAGS
     Route::group(['prefix' => 'tags',], function () {
