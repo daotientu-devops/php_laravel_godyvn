@@ -20,6 +20,7 @@
             <li><a><i class="fa fa-laptop"></i>QL nội dung trang chủ<span class="fa fa-chevron-down"></span></a>
                 <ul class="nav child_menu">
                     <li><a href="{{ url('cms/widgets/homepage/top_banner') }}">Banner đầu trang</a></li>
+                    <li><a href="{{ url('cms/widgets/homepage/right_banner') }}">Banner bên phải trang</a></li>
                     <li><a href="{{ url('cms/widgets/homepage/middle_banner') }}">Banner giữa trang</a></li>
                     <li><a href="{{ url('cms/widgets/homepage/trend') }}">Xu hướng</a></li>
                 </ul>

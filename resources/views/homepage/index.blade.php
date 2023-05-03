@@ -1086,15 +1086,9 @@
             {{--</div>--}}
             {{--</div>    </div>--}}
             {{--</div>--}}
-            <div class="w-fit d-block mb-25">
-                <a>
-                    <img
-                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/image 38.png"
-                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/image 38.png"
-                            class="lazy-load"
-                    />
-                </a>
-            </div>
+            @if (!empty($widget_right_banner['content']))
+                <?php echo html_entity_decode($widget_right_banner['content']) ?>
+            @endif
         </div>
     </div>
 </section>

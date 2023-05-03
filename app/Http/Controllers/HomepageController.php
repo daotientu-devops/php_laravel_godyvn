@@ -25,12 +25,13 @@ class HomepageController extends Controller
         $setting = Setting::where('key', '=', 'footer_info')->first();
         $widget_trend = Widget::select('content')->where('key', 'widget.homepage.trend')->first();
         $widget_top_banner = Widget::select('content')->where('key', 'widget.homepage.top_banner')->first();
+        $widget_right_banner = Widget::select('content')->where('key', 'widget.homepage.right_banner')->first();
         $widget_middle_banner = Widget::select('content')->where('key', 'widget.homepage.middle_banner')->first();
         $metaData['meta_title'] = $setting->meta_title;
         $metaData['meta_keyword'] = $setting->meta_keyword;
         $metaData['meta_description'] = $setting->meta_description;
         $metaData['meta_image'] = $setting->meta_image;
-        return view('homepage.index', compact('first_post', 'list_posts', 'hot_locations', 'partners', 'widget_trend', 'widget_top_banner', 'widget_middle_banner', 'metaData'));
+        return view('homepage.index', compact('first_post', 'list_posts', 'hot_locations', 'partners', 'widget_trend', 'widget_top_banner', 'widget_right_banner', 'widget_middle_banner', 'metaData'));
     }
 
     /**
