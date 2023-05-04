@@ -2,8 +2,8 @@
 @section('content')
 @include('components.alert')
     <div class="travel-blog-create-page _create1">
-        <form action="" method="post" accept-charset="utf-8" enctype="multipart/form-data" id="travelCollaboratorForm" name="travelCollaboratorForm" novalidate="">
-            <input type="hidden" name="_token" value="RwVeLdeMZBiM3GobuQZvQ6wIJmq2n1fyZHEgjYl5">
+        <form action="{{ url('cong-tac-vien/viet-bai/note') }}" method="post" accept-charset="utf-8" enctype="multipart/form-data" id="travelCollaboratorForm" name="travelCollaboratorForm" novalidate="">
+            {{ csrf_field() }}
             <input type="hidden" value="" name="travelPostID" id="travelPostID">
             <input type="hidden" value="" name="travelPostUsername" id="travelPostUsername">
             <input type="hidden" value="" name="travelPostLink" id="travelPostLink">
@@ -18,7 +18,7 @@
                         <h3 class="mt-2">Thêm hình cover bài viết (*)</h3>
                         <p>( Hình ảnh tối ưu: 1350px <strong>x</strong> 480px. )</p>
                         <div class="dropdown">
-                            <input type="file" aria-haspopup="true" aria-expanded="false">
+                            <input type="file" id="thumbnail_url" name="thumbnail_url">
                         </div>
                     </div>
 
@@ -53,16 +53,16 @@
                             <input type="text" class="form-control" placeholder="Tên địa điểm (*)" name="title" id="title">
                         </div>
                         <div class="form-group">
-                            <span class="input-count-top-right"><span class="__count">0</span>/<span>350</span></span>
+                            <span class="input-count-top-right"><span class="__count">0</span>/<span>255</span></span>
                             <textarea id="excerpt" name="excerpt" type="text" class="form-control travelPostDescription" placeholder="Miêu tả ngắn … (*)" rows="4"></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="travelPostContent" class="display-inline-block txt-sub-color-blue cursor-pointer font-weight-normal">Chi tiết địa điểm (thông tin, cách đi, giá vé, thời gian mở cửa …)</label>
-                            <textarea name="travelPostContent" id="travelPostContent" class="form-control editor_basic" placeholder="Chi tiết địa điểm (thông tin, cách đi, giá vé, thời gian mở cửa …)" rows="6"></textarea>
+                            <label for="content" class="display-inline-block txt-sub-color-blue cursor-pointer font-weight-normal">Chi tiết địa điểm (thông tin, cách đi, giá vé, thời gian mở cửa …)</label>
+                            <textarea name="content" id="content" class="form-control editor_basic" placeholder="Chi tiết địa điểm (thông tin, cách đi, giá vé, thời gian mở cửa …)" rows="6"></textarea>
                         </div>
 
                         <div class="form-group">
-                            <textarea name="travelPostTips" id="travelPostTips" placeholder="Lưu ý, mẹo khi đi" class="form-control travelPostTips"></textarea>
+                            <textarea name="tips" id="tips" placeholder="Lưu ý, mẹo khi đi" class="form-control travelPostTips"></textarea>
                         </div>
 
 
@@ -2494,9 +2494,9 @@
                         </div>
 
                         <div class="form-group mt-25">
-                            <label class="display-inline-block txt-sub-color-blue cursor-pointer font-weight-normal" for="travelPostGalleryIn"><i class="fa fa-plus-circle" aria-hidden="true"></i> Album hình ảnh cuối bài</label>
+                            <label class="display-inline-block txt-sub-color-blue cursor-pointer font-weight-normal" for="album"><i class="fa fa-plus-circle" aria-hidden="true"></i> Album hình ảnh cuối bài</label>
                             <label class="selectit display-inline-block txt-sub-color-blue cursor-pointer font-weight-normal pull-right" style="display: none !important;"><input class="custom-checkbox" type="checkbox" value="1" name="travelPostPin" id="travelPostPin">Ghim bài viết</label>
-                            <input type="file" name="travelPostGalleryIn" class="" id="travelPostGalleryIn" multiple="" accept="image/jpeg,image/png,image/gif,.JPEG">
+                            <input type="file" name="album" class="" id="album" multiple="" accept="image/jpeg,image/png,image/gif,.JPEG">
                             <input type="hidden" name="travelPostGalleryRemove" id="travelPostGalleryRemove">
                             <div class="travel-post-gallery gallery-119">
                             </div>
@@ -2507,62 +2507,51 @@
                             <div class="collapse mt-15" id="collapseExtraInfo">
                                 <div class="form-group clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 pl-0-pr-0-odd-even">
-                                        <label for="trvPostPhone">Điện thoại</label>
-                                        <input type="text" class="form-control select-custom" id="trvPostPhone" name="trvPostPhone" placeholder="" value="">
+                                        <label for="telephone">Điện thoại</label>
+                                        <input type="text" class="form-control select-custom" id="telephone" name="telephone" placeholder="" value="">
                                     </div>
                                     <div class="col-md-6 col-sm-6 col-xs-12 pl-0-pr-0-odd-even">
-                                        <label for="trvPostEmail">Email</label>
-                                        <input type="email" class="form-control select-custom" id="trvPostEmail" name="trvPostEmail" placeholder="" value="">
-                                    </div>
-                                </div>
-
-                                <div class="form-group clearfix">
-                                    <div class="col-md-6 col-sm-6 col-xs-12 pl-0-pr-0-odd-even">
-                                        <label for="trvPostLatitude">Vĩ độ</label>
-                                        <input type="text" class="form-control select-custom" id="trvPostLatitude" name="trvPostLatitude" placeholder="" value="">
-                                    </div>
-
-                                    <div class="col-md-6 col-sm-6 col-xs-12 pl-0-pr-0-odd-even">
-                                        <label for="trvPostLongtitude">Kinh độ</label>
-                                        <input type="text" class="form-control select-custom" id="trvPostLongtitude" name="trvPostLongtitude" placeholder="" value="">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control select-custom" id="email" name="email" placeholder="" value="">
                                     </div>
                                 </div>
                                 <div class="form-group clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 pl-0-pr-0-odd-even">
-                                        <label for="trvPostWebsite">Website</label>
-                                        <input type="text" class="form-control select-custom" id="trvPostWebsite" name="trvPostWebsite" placeholder="" value="">
+                                        <label for="latitude">Vĩ độ</label>
+                                        <input type="text" class="form-control select-custom" id="latitude" name="latitude" placeholder="" value="">
+                                    </div>
+                                    <div class="col-md-6 col-sm-6 col-xs-12 pl-0-pr-0-odd-even">
+                                        <label for="longitude">Kinh độ</label>
+                                        <input type="text" class="form-control select-custom" id="longitude" name="longitude" placeholder="" value="">
+                                    </div>
+                                </div>
+                                <div class="form-group clearfix">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 pl-0-pr-0-odd-even">
+                                        <label for="website">Website</label>
+                                        <input type="text" class="form-control select-custom" id="website" name="website" placeholder="" value="">
                                     </div>
 
                                     <div class="col-md-6 col-sm-6 col-xs-12 pl-0-pr-0-odd-even">
-                                        <label for="trvPostAddress">Địa chỉ</label>
-                                        <input type="text" class="form-control select-custom" id="trvPostAddress" name="trvPostAddress" placeholder="" value="">
+                                        <label for="address">Địa chỉ</label>
+                                        <input type="text" class="form-control select-custom" id="address" name="address" placeholder="" value="">
                                     </div>
 
                                 </div>
                                 <div class="form-group clearfix">
                                     <div class="col-md-6 col-sm-6 col-xs-12 pl-0-pr-0-odd-even">
-                                        <label for="trvPostOpenTime">Thời gian mở cửa</label>
-
-                                        <textarea class="form-control select-custom" id="trvPostOpenTime" name="trvPostOpenTime" placeholder="Thứ 2 - thứ 6: 24/24, 24/24, 7h00 - 17h00,..."></textarea>
+                                        <label for="open_time">Thời gian mở cửa</label>
+                                        <textarea class="form-control select-custom" id="open_time" name="open_time" placeholder="Thứ 2 - thứ 6: 24/24, 24/24, 7h00 - 17h00,..."></textarea>
                                     </div>
 
                                     <div class="col-md-6 col-sm-6 col-xs-12 pl-0-pr-0-odd-even">
-                                        <label for="trvPostTicket">Giá vé (thấp nhất)</label>
-
-                                        <textarea class="form-control select-custom" id="trvPostTicket" name="trvPostTicket" placeholder="Miễn phí, 50.000, 100.000"></textarea>
+                                        <label for="ticket_price">Giá vé (thấp nhất)</label>
+                                        <textarea class="form-control select-custom" id="ticket_price" name="ticket_price" placeholder="Miễn phí, 50.000, 100.000"></textarea>
                                     </div>
                                 </div>
-                                <div class="form-group clearfix hide">
-                                    <div class="col-md-12 col-sm-12 col-xs-12 pl-0 pr-0">
-                                        <label for="trvPostMap">Link google map</label>
-                                        <input type="text" class="form-control select-custom" id="trvPostMap" name="trvPostMap" placeholder="" value="">
-                                    </div>
-                                </div>
-
                                 <div class="form-group clearfix">
                                     <div class="col-md-12 col-sm-12 col-xs-12 pl-0 pr-0">
-                                        <label for="trvPostUrlOriginal">Link bài gốc</label>
-                                        <input type="text" class="form-control select-custom" id="trvPostUrlOriginal" name="trvPostUrlOriginal" placeholder="" value="">
+                                        <label for="original_url">Link bài gốc</label>
+                                        <input type="text" class="form-control select-custom" id="original_url" name="original_url" placeholder="" value="">
                                     </div>
                                 </div>
                             </div>

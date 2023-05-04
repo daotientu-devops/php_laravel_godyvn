@@ -219,6 +219,7 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('photo-blog/dang-bai/note', ['uses' => 'BlogController@photo']);
     Route::post('photo-blog/dang-bai/note', ['uses' => 'BlogController@postPhoto']);
     Route::get('cong-tac-vien/viet-bai/note', ['uses' => 'BlogController@collaborator']);
+    Route::post('cong-tac-vien/viet-bai/note', ['uses' => 'BlogController@postCollaborator']);
     Route::get('hoi-dap', function () {
         return view('question.index');
     });
