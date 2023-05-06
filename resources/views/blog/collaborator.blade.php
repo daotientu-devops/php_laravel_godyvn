@@ -2496,7 +2496,7 @@
                         <div class="form-group mt-25">
                             <label class="display-inline-block txt-sub-color-blue cursor-pointer font-weight-normal" for="album"><i class="fa fa-plus-circle" aria-hidden="true"></i> Album hình ảnh cuối bài</label>
                             <label class="selectit display-inline-block txt-sub-color-blue cursor-pointer font-weight-normal pull-right" style="display: none !important;"><input class="custom-checkbox" type="checkbox" value="1" name="travelPostPin" id="travelPostPin">Ghim bài viết</label>
-                            <input type="file" name="album" class="" id="album" multiple="" accept="image/jpeg,image/png,image/gif,.JPEG">
+                            <input type="file" name="album[]" class="" id="album" multiple="" accept="image/jpeg,image/png,image/gif,.JPEG">
                             <input type="hidden" name="travelPostGalleryRemove" id="travelPostGalleryRemove">
                             <div class="travel-post-gallery gallery-119">
                             </div>

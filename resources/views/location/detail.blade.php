@@ -18,12 +18,14 @@
             display: inline-block;
         }
     </style>
-    <div class="w-fit d-block ps-relative">
-        <div style="width: 100%; height: 210px;">
-            <img class="w-fit h-fit object-center object-cover d-block ps-absolute t0 r0 b0 l0" data-srcset="https://media.gody.vn//images/an-giang/rung-tram-tra-su/4-2018/6686704-20180414035805-an-giang-rung-tram-tra-su.jpg"
-                 src="{{ env('FOLDER_UPLOAD') . $location->top_background_url }}">
+    @if ($location->top_background_url)
+        <div class="w-fit d-block ps-relative">
+            <div style="width: 100%; height: 210px;">
+                <img class="w-fit h-fit object-center object-cover d-block ps-absolute t0 r0 b0 l0" data-srcset="https://media.gody.vn//images/an-giang/rung-tram-tra-su/4-2018/6686704-20180414035805-an-giang-rung-tram-tra-su.jpg"
+                     src="{{ env('FOLDER_UPLOAD') . $location->top_background_url }}">
+            </div>
         </div>
-    </div>
+    @endif
     <section class="pt-10 p-0 m-0">
         <div class="container">
             <div class="row">

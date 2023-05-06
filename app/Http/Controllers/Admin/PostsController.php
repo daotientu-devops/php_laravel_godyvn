@@ -263,6 +263,7 @@ class PostsController extends Controller
                 $post->excerpt = $request->get('excerpt');
                 $post->plain_text = $plain_text;
                 $post->content = $content;
+                $post->album = $post->album;
                 $post->author_name = $request->get('author_name');
                 $post->user_id = $request->get('user_id');
                 $post->status = $request->get('mode') == 'unpublish' ? 'unpublish' : $request->get('status');

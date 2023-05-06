@@ -22,10 +22,16 @@
                             <span class="glyphicon-class">Bài viết</span> (text + ảnh + video)
                         </a>
                     </div>
+                    <div class="col-md-4 col-sm-4 col-xs-4 form-group">
+                        <a href="{{ url('cms/posts/create/photo') }}" class="btn btn-app">
+                            <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+                            <span class="glyphicon-class">Bài ảnh</span> (text + ảnh)
+                        </a>
+                    </div>
                     <div class="col-md-4 col-sm-4 col-xs-12 form-group">
-                        <a href="{{ url('cms/posts/create/video') }}" class="btn btn-app">
+                        <a href="{{ url('cms/posts/create/collaborator') }}" class="btn btn-app">
                             <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>
-                            <span class="glyphicon-class">Bài video</span> (video)
+                            <span class="glyphicon-class">Bài cộng tác viên</span>
                         </a>
                     </div>
                 </div>

@@ -109,9 +109,11 @@ class BlogController extends Controller
     public function postNote(Request $request)
     {
         try {
+            $authorName = '';
             $customerId = 0;
             if (isset($_COOKIE['travel_user_info'])) {
                 $userData = json_decode($_COOKIE['travel_user_info'], true);
+                $authorName = $userData['fullname'];
                 $user = PasswordReset::select('email')->where('token', $userData['token'])->first();
                 if ($user) {
                     $customer = Customer::select('id')->where('email', $user->email)->first();
@@ -150,7 +152,7 @@ class BlogController extends Controller
                     'excerpt' => $request->get('excerpt') != null ? $request->get('excerpt') : '',
                     'plain_text' => $plain_text,
                     'content' => $content,
-                    'author_name' => $request->get('author_name') != null ? $request->get('author_name') : '',
+                    'author_name' => $authorName,
                     'user_id' => $request->get('user_id') != null ? $request->get('user_id') : 0,
                     'customer_id' => $customerId,
                     'status' => 'draft', // Chế độ xem trước là bài nháp
@@ -158,7 +160,10 @@ class BlogController extends Controller
                     'post_type' => $type,
                     'category_type' => 'blog',
                     'category_id' => CategoryBusiness::CATEGORY_ID_BLOG_DULICH, // blog du lịch
-                    'thumbnail_url' => ($thumbnail_url) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $thumbnail_name : null
+                    'thumbnail_url' => ($thumbnail_url) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $thumbnail_name : null,
+                    'meta_title' => $title,
+                    'meta_keyword' => $title,
+                    'meta_description' => $title
                 ]);
                 if ($thumbnail_url) {
                     UploadFileBusiness::uploadFileToFolder($thumbnail_url);
@@ -187,9 +192,11 @@ class BlogController extends Controller
     public function postPhoto(Request $request)
     {
         try {
+            $authorName = '';
             $customerId = 0;
             if (isset($_COOKIE['travel_user_info'])) {
                 $userData = json_decode($_COOKIE['travel_user_info'], true);
+                $authorName = $userData['fullname'];
                 $user = PasswordReset::select('email')->where('token', $userData['token'])->first();
                 if ($user) {
                     $customer = Customer::select('id')->where('email', $user->email)->first();
@@ -222,15 +229,15 @@ class BlogController extends Controller
                 return redirect()->back()->with('error', 'Bài viết ' . $title . ' đã tồn tại');
             } else {
                 // TH tạo mới mẫu
-                $album = '';
+                $saveAlbum = '';
                 $albums = $request->album;
                 if (!empty($albums)) {
                     foreach ($albums as $album) {
-                        $album_name = $album->getClientOriginalName();
+                        $albumName = '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $album->getClientOriginalName();
                         if ($album) {
                             UploadFileBusiness::uploadFileToFolder($album);
                         }
-                        $album .= $album_name . ',';
+                        $saveAlbum .= $albumName . ',';
                     }
                 }
                 $post = new Posts([
@@ -239,8 +246,8 @@ class BlogController extends Controller
                     'excerpt' => $request->get('excerpt') != null ? $request->get('excerpt') : '',
                     'plain_text' => $plain_text,
                     'content' => $content,
-                    'album' => $album,
-                    'author_name' => $request->get('author_name') != null ? $request->get('author_name') : '',
+                    'album' => $saveAlbum,
+                    'author_name' => $authorName,
                     'user_id' => $request->get('user_id') != null ? $request->get('user_id') : 0,
                     'customer_id' => $customerId,
                     'status' => 'draft', // Chế độ xem trước là bài nháp
@@ -249,7 +256,10 @@ class BlogController extends Controller
                     'category_type' => 'blog',
                     'category_id' => CategoryBusiness::CATEGORY_ID_BLOG_DULICH, // blog du lịch
                     'thumbnail_url' => ($thumbnail_url) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $thumbnail_name : null,
-                    'has_tags' => $request->get('tags')
+                    'has_tags' => $request->get('tags'),
+                    'meta_title' => $title,
+                    'meta_keyword' => $title,
+                    'meta_description' => $title
                 ]);
                 if ($thumbnail_url) {
                     UploadFileBusiness::uploadFileToFolder($thumbnail_url);
@@ -278,9 +288,11 @@ class BlogController extends Controller
     public function postCollaborator(Request $request)
     {
         try {
+            $authorName = '';
             $customerId = 0;
             if (isset($_COOKIE['travel_user_info'])) {
                 $userData = json_decode($_COOKIE['travel_user_info'], true);
+                $authorName = $userData['fullname'];
                 $user = PasswordReset::select('email')->where('token', $userData['token'])->first();
                 if ($user) {
                     $customer = Customer::select('id')->where('email', $user->email)->first();
@@ -313,15 +325,15 @@ class BlogController extends Controller
                 return redirect()->back()->with('error', 'Bài viết ' . $title . ' đã tồn tại');
             } else {
                 // TH tạo mới mẫu
-                $album = '';
+                $saveAlbum = '';
                 $albums = $request->album;
                 if (!empty($albums)) {
                     foreach ($albums as $album) {
-                        $album_name = $album->getClientOriginalName();
+                        $albumName = '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $album->getClientOriginalName();
                         if ($album) {
                             UploadFileBusiness::uploadFileToFolder($album);
                         }
-                        $album .= $album_name . ',';
+                        $saveAlbum .= $albumName . ',';
                     }
                 }
                 $post = new Posts([
@@ -331,7 +343,7 @@ class BlogController extends Controller
                     'plain_text' => $plain_text,
                     'content' => $content,
                     'tips' => $request->get('tips'),
-                    'album' => $album,
+                    'album' => $saveAlbum,
                     'continent' => $request->get('continent'),
                     'country' => $request->get('country'),
                     'province' => $request->get('province'),
@@ -344,7 +356,7 @@ class BlogController extends Controller
                     'open_time' => $request->get('open_time'),
                     'ticket_price' => $request->get('ticket_price'),
                     'original_url' => $request->get('original_url'),
-                    'author_name' => $request->get('author_name') != null ? $request->get('author_name') : '',
+                    'author_name' => $authorName,
                     'user_id' => $request->get('user_id') != null ? $request->get('user_id') : 0,
                     'customer_id' => $customerId,
                     'status' => 'draft', // Chế độ xem trước là bài nháp
@@ -353,6 +365,9 @@ class BlogController extends Controller
                     'category_type' => 'blog',
                     'category_id' => CategoryBusiness::CATEGORY_ID_BLOG_DULICH, // blog du lịch
                     'thumbnail_url' => ($thumbnail_url) ? '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $thumbnail_name : null,
+                    'meta_title' => $title,
+                    'meta_keyword' => $title,
+                    'meta_description' => $title
                 ]);
                 if ($thumbnail_url) {
                     UploadFileBusiness::uploadFileToFolder($thumbnail_url);
