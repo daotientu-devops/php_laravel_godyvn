@@ -33,15 +33,27 @@
     <link rel="stylesheet" href="https://media2.gody.vn/public/v3/plugins/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lora|Montserrat:400,500,600&amp;subset=vietnamese" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('public/css/temp/Minified.css?v=1235')}}">
-    <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/main.css?v=1235">
-    <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/custom.css?v=1235">
+    @if ($agent->isMobile())
+        <link rel="stylesheet" href="https://gody.vn/public/v3/mobile/css/temp/main.css?v=6458eda3c80c5">
+    @else
+        <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/custom.css?v=1235">
+    @endif
+    @if ($agent->isMobile())
+        <link rel="stylesheet" href="https://gody.vn/public/v4/css/customv2.css?v=9">
+    @else
+        <link rel="stylesheet" href="https://gody.vn/public/v5/css/temp/custom.css?v=1235">
+    @endif
     <link rel="stylesheet" href="{{asset('public/css/atomic.css')}}">
     <link rel="stylesheet" href="https://gody.vn/public/js/vue-modules/vue2-datepicker/css/index.css"/>
     <link rel="stylesheet" href="https://media2.gody.vn/public/v3/plugins/slick/slick.css">
     <!-- bxSlider CSS file -->
     <link href="https://media2.gody.vn/public/v3/css/jquery.bxslider.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://media2.gody.vn/public/v3/perfect-scrollbar/css/perfect-scrollbar.css"/>
-    <link rel="stylesheet" href="{{asset('public/css/customize.css')}}"/>
+    @if ($agent->isMobile())
+        <link rel="stylesheet" href="https://gody.vn/public/v4/css/customv2.css?v=9"/>
+    @else
+        <link rel="stylesheet" href="{{asset('public/css/customize.css')}}"/>
+    @endif
     <link rel="manifest" href="">
     <link rel="stylesheet" href="https://gody.vn/public/v7/css/post-detail.css?v=1237">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
@@ -62,7 +74,7 @@
 
     <!-- /Yandex.Metrika counter -->
 </head>
-<body class="dest-details " ng-app="MyApp" itemscope="" itemtype="http://schema.org/WebPage">
+<body class="dest-details " ng-app="MyApp" itemscope="" itemtype="http://schema.org/WebPage" @if ($agent->isMobile()) style="padding-top: 89px;" @endif>
 <!-- code track facebook -->
 
 <!-- end code track facebook -->
@@ -71,100 +83,117 @@
 <!-- End Google Tag Manager (noscript) -->
 <!-- home -->
 @include('components.alert')
-@include('layouts.partials.nav')
-<section class="p-0 m-0 bg-white">
-    <div class="w-fit d-block ps-relative">
-        @if (!empty($widget_top_banner['content']))
-            <?php echo html_entity_decode($widget_top_banner['content']) ?>
-        @endif
-        <div class="w-fit d-block ps-absolute b0 h-200">
-            <div class="container">
-                <div class="d-flex w-fit" style="justify-content: center!important;">
-                    <div class="d-flex ps-relative" style="width: 436px;">
-                        <input type="text" style="width: 436px; height: 72px; background : white; border-radius: 150px; color: #4F4F4F;border: 1px solid white;" placeholder="Bạn muốn đi đâu?" class="fs-500 fs-24 lh-25 pl-35"/>
-                        <div class="ps-absolute" style="bottom: 15px; right: 15px; ">
+@if ($agent->isMobile())
+    @include('layouts.partials.mobile.nav')
+@else
+    @include('layouts.partials.nav')
+@endif
+@if ($agent->isMobile())
+    @include('homepage.mobile.section_1')
+@else
+    <section class="p-0 m-0 bg-white">
+        <div class="w-fit d-block ps-relative">
+            @if (!empty($widget_top_banner['content']))
+                <?php echo html_entity_decode($widget_top_banner['content']) ?>
+            @endif
+            <div class="w-fit d-block ps-absolute b0 h-200">
+                <div class="container">
+                    <div class="d-flex w-fit" style="justify-content: center!important;">
+                        <div class="d-flex ps-relative" style="width: 436px;">
+                            <input type="text" style="width: 436px; height: 72px; background : white; border-radius: 150px; color: #4F4F4F;border: 1px solid white;" placeholder="Bạn muốn đi đâu?" class="fs-500 fs-24 lh-25 pl-35"/>
+                            <div class="ps-absolute" style="bottom: 15px; right: 15px; ">
                             <span class="bg-primary ai-center d-flex" style="width: 45px; height: 45px; justify-content: center!important; border-radius: 100%; ">
                                 <ion-icon name="search" style="font-size: 26px; "></ion-icon>
                             </span>
+                            </div>
+                            <div class="ps-absolute t0 r0 b0 l0 c-pointer modal-search-v2__anchor"></div>
                         </div>
-                        <div class="ps-absolute t0 r0 b0 l0 c-pointer modal-search-v2__anchor"></div>
+                    </div>
+                    <div class="ta-center mt-12">
+                        <a
+                                href="{{url('diem-den')}}/chau-a/viet-nam/kien-giang"
+                                title="Ph&uacute; Quốc"
+                                class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
+                        >Ph&uacute; Quốc</a>
+                        <a
+                                href="{{url('diem-den')}}/chau-a/viet-nam/lao-cai"
+                                title="Sapa"
+                                class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
+                        >Sapa</a>
+                        <a
+                                href="{{url('diem-den')}}/chau-a/viet-nam/da-nang"
+                                title="Đ&agrave; Nẵng"
+                                class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
+                        >Đ&agrave; Nẵng</a>
+                        <a
+                                href="{{url('diem-den')}}/chau-a/viet-nam/lam-dong"
+                                title="Đ&agrave; Lạt"
+                                class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
+                        >Đ&agrave; Lạt</a>
+                        <a
+                                href="{{url('diem-den')}}/chau-a/Japan"
+                                title="Nhật Bản"
+                                class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
+                        >Nhật Bản</a>
+                        <a
+                                href="{{url('diem-den')}}/chau-a/taiwan"
+                                title="Đ&agrave;i Loan"
+                                class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
+                        >Đ&agrave;i Loan</a>
                     </div>
                 </div>
-                <div class="ta-center mt-12">
-                    <a
-                            href="{{url('diem-den')}}/chau-a/viet-nam/kien-giang"
-                            title="Ph&uacute; Quốc"
-                            class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
-                    >Ph&uacute; Quốc</a>
-                    <a
-                            href="{{url('diem-den')}}/chau-a/viet-nam/lao-cai"
-                            title="Sapa"
-                            class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
-                    >Sapa</a>
-                    <a
-                            href="{{url('diem-den')}}/chau-a/viet-nam/da-nang"
-                            title="Đ&agrave; Nẵng"
-                            class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
-                    >Đ&agrave; Nẵng</a>
-                    <a
-                            href="{{url('diem-den')}}/chau-a/viet-nam/lam-dong"
-                            title="Đ&agrave; Lạt"
-                            class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
-                    >Đ&agrave; Lạt</a>
-                    <a
-                            href="{{url('diem-den')}}/chau-a/Japan"
-                            title="Nhật Bản"
-                            class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
-                    >Nhật Bản</a>
-                    <a
-                            href="{{url('diem-den')}}/chau-a/taiwan"
-                            title="Đ&agrave;i Loan"
-                            class="outline-none fw-500 px-5 py-3 fc-white bar-25 mr-10 fs-16 h:fc-primary"
-                    >Đ&agrave;i Loan</a>
-                </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="p-0 m-0 bg-white">
-    <div class="container">
-        <div class="row">
-            <div class="w-fit d-block  pt-20 pb-20 ">
-                <h2 class="fc-fourteenth fs-36 lh-44 fw-700">Điểm đến hot</h2>
-            </div>
-            <div class="w-fit d-block">
-                <div class="w-fit d-flex jc-space-between" style="--column:6; --gutter: 100px;">
-                    @foreach($hot_locations as $location)
-                        <div class="ps-relative d-flex fd-column h-250 xs:h-184" style="width: calc( (100% - var(--gutter)) / var(--column) );">
-                            <div class="ps-relative" style="height: 220px;">
-                                <a href="{{url('/diem-den' . $location->share_url)}}">
-                                    <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
-                                        <img src="{{ url(env('FOLDER_UPLOAD') . $location->thumbnail_url) }}"
-                                             class="w-fit h-fit bar-8 xs:h-120 xs:w-120 object-cover object-center h:o50"/>
+    </section>
+@endif
+@if(!empty((array)$hot_locations))
+    @if ($agent->isMobile())
+        @include('homepage.mobile.section_2')
+    @else
+        <section class="p-0 m-0 bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="w-fit d-block  pt-20 pb-20 ">
+                        <h2 class="fc-fourteenth fs-36 lh-44 fw-700">Điểm đến hot</h2>
+                    </div>
+                    <div class="w-fit d-block">
+                        <div class="w-fit d-flex jc-space-between" style="--column:6; --gutter: 100px;">
+                            @foreach($hot_locations as $location)
+                                <div class="ps-relative d-flex fd-column h-250 xs:h-184" style="width: calc( (100% - var(--gutter)) / var(--column) );">
+                                    <div class="ps-relative" style="height: 220px;">
+                                        <a href="{{url('/diem-den' . $location->share_url)}}">
+                                            <div class="w-fit d-block ps-relative w-fit h-fit xs:h-120 xs:w-120">
+                                                <img src="{{ url(env('FOLDER_UPLOAD') . $location->thumbnail_url) }}"
+                                                     class="w-fit h-fit bar-8 xs:h-120 xs:w-120 object-cover object-center h:o50"/>
+                                            </div>
+                                        </a>
+                                        <a href="{{url('/diem-den' . $location->share_url)}}" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
+                                            {{ $location->name }}
+                                        </a>
                                     </div>
-                                </a>
-                                <a href="{{url('/diem-den' . $location->share_url)}}" class="fs-24 lh-24 fw-700 fc-white ps-absolute b10 l10 xs:fs-18">
-                                    {{ $location->name }}
-                                </a>
-                            </div>
+                                </div>
+                            @endforeach
                         </div>
-                    @endforeach
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<section class="p-0 m-0 bg-white">
-    <div class="container">
-        <div class="row">
-            <div class="w-fit d-block  pt-20 pb-20 ">
-                <h2 class="fc-fourteenth fs-36 lh-44 fw-700">Top tìm kiếm</h2>
-            </div>
-            <div class="w-fit d-block">
-                <div class="d-flex ai-top fw-wrap" style="--column:4; --gutter: 38px;">
-                    <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
-                        <div class="w-fit d-flex ai-center">
-                            <div class="d-flex " style="width: 45px; height: 45px;">
+        </section>
+    @endif
+@endif
+@if ($agent->isMobile())
+    @include('homepage.mobile.section_3')
+@else
+    <section class="p-0 m-0 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="w-fit d-block  pt-20 pb-20 ">
+                    <h2 class="fc-fourteenth fs-36 lh-44 fw-700">Top tìm kiếm</h2>
+                </div>
+                <div class="w-fit d-block">
+                    <div class="d-flex ai-top fw-wrap" style="--column:4; --gutter: 38px;">
+                        <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
+                            <div class="w-fit d-flex ai-center">
+                                <div class="d-flex " style="width: 45px; height: 45px;">
                                 <span class="ai-center d-flex ps-relative" style="width: 45px; height: 45px; justify-content: center!important;">
                                     <img
                                             style="width: 46px; height: 46px;"
@@ -174,13 +203,13 @@
                                     />
                                     <ion-icon name="search" style="font-size: 26px; color: #333333; position: absolute; bottom: 10px;"></ion-icon>
                                 </span>
+                                </div>
+                                <a href="{{url('gioi-thieu/lam-ho-chieu-nhanh')}}" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">L&agrave;m hộ chiếu nhanh</a>
                             </div>
-                            <a href="{{url('/gioi-thieu/lam-ho-chieu-nhanh')}}" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">L&agrave;m hộ chiếu nhanh</a>
                         </div>
-                    </div>
-                    <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
-                        <div class="w-fit d-flex ai-center">
-                            <div class="d-flex " style="width: 45px; height: 45px;">
+                        <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
+                            <div class="w-fit d-flex ai-center">
+                                <div class="d-flex " style="width: 45px; height: 45px;">
                                 <span class="ai-center d-flex ps-relative" style="width: 45px; height: 45px; justify-content: center!important;">
                                     <img
                                             style="width: 46px; height: 46px;"
@@ -190,13 +219,13 @@
                                     />
                                     <ion-icon name="search" style="font-size: 26px; color: #333333; position: absolute; bottom: 10px;"></ion-icon>
                                 </span>
+                                </div>
+                                <a href="{{url('gioi-thieu/ve-may-bay')}}" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">V&eacute; m&aacute;y bay</a>
                             </div>
-                            <a href="{{url('/gioi-thieu/ve-may-bay')}}" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">V&eacute; m&aacute;y bay </a>
                         </div>
-                    </div>
-                    <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
-                        <div class="w-fit d-flex ai-center">
-                            <div class="d-flex " style="width: 45px; height: 45px;">
+                        <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
+                            <div class="w-fit d-flex ai-center">
+                                <div class="d-flex " style="width: 45px; height: 45px;">
                                 <span class="ai-center d-flex ps-relative" style="width: 45px; height: 45px; justify-content: center!important;">
                                     <img
                                             style="width: 46px; height: 46px;"
@@ -206,400 +235,87 @@
                                     />
                                     <ion-icon name="search" style="font-size: 26px; color: #333333; position: absolute; bottom: 10px;"></ion-icon>
                                 </span>
+                                </div>
+                                <a href="{{url('gioi-thieu/visa-dai-loan-moi-nhat')}}" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">Visa Đ&agrave;i Loan mới nhất</a>
                             </div>
-                            <a href="{{url('/gioi-thieu/visa-dai-loan-moi-nhat')}}" class="w-fit ai-center fc-fourteenth fs-19 fw-600 ml-15 h:fc-primary">Visa Đ&agrave;i Loan mới nhất</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="bg-white pt-80">
-    <div class="container">
-        <div class="row">
-            <div class="w-fit d-block">
-                <div
-                        class="d-block w-fit"
-                        data-style="box-shadow: #ff8c00 1px 1px, #ff8c00 2px 2px, #ff8c00 3px 3px, #ff8c00 4px 4px, #ff8c00 5px 5px, #ff8c00 6px 6px, #ff8c00 7px 7px, #ff8c00 8px 8px, #ff8c00 9px 9px, #ff8c00 10px 10px, #ff8c00 11px 11px, #ff8c00 12px 12px, #ff8c00 13px 13px, #ff8c00 14px 14px"
-                >
-                    <div class="w-fit d-block barr-black-2 ps-relative">
-                        <!--<div class="divider-frame" style="display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center;  align-items: center; height: 2px;  width: 100%;">
-                            <div class="main-sub-account-divider" style="-webkit-box-flex: 1; -ms-flex: 1; flex: 0.03; height: 2px; background: #333;"></div>
-                            <div class="main-sub-account-or ml-5 mr-5 d-flex ">
-                                <img src="https://gody.vn/public/images/icon-1.png?v=1090" style="width: 73px; height: 80px;"/>
-                                <h3 class="fc-primary fs-28 fw-700 lh-120% p-0 m-0 tt-capitalize "> Editor's  <br/> Picks </h3>
-                            </div>
-                            <div class="main-sub-account-divider" style="-webkit-box-flex: 1; -ms-flex: 1; flex: 1; height: 2px; background: #333;"></div>
-                        </div>-->
-                        <div class="w-fit d-block mb-0 pt-20 pb-20 pl-20 pr-20" style="background: #f7b15c !important;">
-                            <div class="w-fit d-block">
-                                <h3 class="fc-fourteenth fs-36 fw-700 lh-120% p-0 m-0 tt-capitalize ">Editor's Picks</p>
-                            </div>
-                            <div class="d-flex ai-top fw-wrap jc-space-between" style="--column:4; --gutter: 47px;">
-                                <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
-                                    <a href="{{url('/')}}/du-lich/vietnam-airlines-chao-he-ve-dong-gia-chi-999000-vndchieu-da-gom-thue-phi-10931">
-                                        <img
-                                                data-src="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/1b87f17aeaec43c78af5b54777212bf93cfeef85.jpg"
-                                                data-srcset="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/1b87f17aeaec43c78af5b54777212bf93cfeef85.jpg"
-                                                style="height: 200px;"
-                                                class="lazy-load w-fit object-cover object-center bar-8 d-h:o50"
-                                        />
-                                    </a>
-                                    <div class="w-fit d-block pt-15 pb-0">
-                                        <a href="{{url('/')}}/du-lich/vietnam-airlines-chao-he-ve-dong-gia-chi-999000-vndchieu-da-gom-thue-phi-10931" class="fc-fourteenth fs-19 fw-600 lh-24 h:fc-sixth">
-                                            Vietnam Airlines &quot;ch&agrave;o h&egrave;&quot;: v&eacute; đồng gi&aacute; chỉ 999.000 VND/chiều (đ&atilde; gồm thuế, ph&iacute;) </a>
-                                    </div>
+    </section>
+@endif
+@if ($agent->isMobile())
+    @include('homepage.mobile.section_4')
+@else
+    <section class="bg-white pt-80">
+        <div class="container">
+            <div class="row">
+                <div class="w-fit d-block">
+                    <div
+                            class="d-block w-fit"
+                            data-style="box-shadow: #ff8c00 1px 1px, #ff8c00 2px 2px, #ff8c00 3px 3px, #ff8c00 4px 4px, #ff8c00 5px 5px, #ff8c00 6px 6px, #ff8c00 7px 7px, #ff8c00 8px 8px, #ff8c00 9px 9px, #ff8c00 10px 10px, #ff8c00 11px 11px, #ff8c00 12px 12px, #ff8c00 13px 13px, #ff8c00 14px 14px"
+                    >
+                        <div class="w-fit d-block barr-black-2 ps-relative">
+                            <div class="w-fit d-block mb-0 pt-20 pb-20 pl-20 pr-20" style="background: #f7b15c !important;">
+                                <div class="w-fit d-block">
+                                    <h3 class="fc-fourteenth fs-36 fw-700 lh-120% p-0 m-0 tt-capitalize ">Editor's Picks</h3>
                                 </div>
-                                <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
-                                    <a href="{{url('/')}}/du-lich/bali-se-cam-khach-du-lich-thue-xe-may-10911">
-                                        <img
-                                                data-src="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/c5ce094c8069069fb2f6d431585a1643a5a4fa97.jpg"
-                                                data-srcset="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/c5ce094c8069069fb2f6d431585a1643a5a4fa97.jpg"
-                                                style="height: 200px;"
-                                                class="lazy-load w-fit object-cover object-center bar-8 d-h:o50"
-                                        />
-                                    </a>
-                                    <div class="w-fit d-block pt-15 pb-0">
-                                        <a href="{{url('/')}}/du-lich/bali-se-cam-khach-du-lich-thue-xe-may-10911" class="fc-fourteenth fs-19 fw-600 lh-24 h:fc-sixth">
-                                            Bali sẽ cấm kh&aacute;ch du lịch thu&ecirc; xe m&aacute;y </a>
-                                    </div>
-                                </div>
-                                <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
-                                    <a href="{{url('/')}}/du-lich/trung-quoc-mo-lai-viec-cap-visa-du-lich-cho-du-khach-nuoc-ngoai-co-viet-nam-10904">
-                                        <img
-                                                data-src="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/7be0469e91530756117521350bd1b58bd9943ffc.jpeg"
-                                                data-srcset="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/7be0469e91530756117521350bd1b58bd9943ffc.jpeg"
-                                                style="height: 200px;"
-                                                class="lazy-load w-fit object-cover object-center bar-8 d-h:o50"
-                                        />
-                                    </a>
-                                    <div class="w-fit d-block pt-15 pb-0">
-                                        <a href="{{url('/')}}/du-lich/trung-quoc-mo-lai-viec-cap-visa-du-lich-cho-du-khach-nuoc-ngoai-co-viet-nam-10904" class="fc-fourteenth fs-19 fw-600 lh-24 h:fc-sixth">
-                                            Trung Quốc mở lại việc cấp visa du lịch cho du kh&aacute;ch nước ngo&agrave;i (c&oacute; Việt Nam) </a>
-                                    </div>
-                                </div>
-                                <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
-                                    <a href="{{url('/')}}/du-lich/nha-tho-duc-ba-paris-mo-cua-tro-lai-sau-tran-hoa-hoan-kinh-hoang-2019-10898">
-                                        <img
-                                                data-src="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/fa9c4d2bd1140698e9b23fbf5251d18c1672bbb2.png"
-                                                data-srcset="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/fa9c4d2bd1140698e9b23fbf5251d18c1672bbb2.png"
-                                                style="height: 200px;"
-                                                class="lazy-load w-fit object-cover object-center bar-8 d-h:o50"
-                                        />
-                                    </a>
-                                    <div class="w-fit d-block pt-15 pb-0">
-                                        <a href="{{url('/')}}/du-lich/nha-tho-duc-ba-paris-mo-cua-tro-lai-sau-tran-hoa-hoan-kinh-hoang-2019-10898" class="fc-fourteenth fs-19 fw-600 lh-24 h:fc-sixth">
-                                            Nh&agrave; thờ Đức B&agrave; Paris mở cửa trở lại sau trận hỏa hoạn kinh ho&agrave;ng 2019 </a>
-                                    </div>
-                                </div>
-                            </div>
-                            {{--<div class="w-fit d-flex" style="justify-content: flex-end!important;">--}}
-                            {{--<a--}}
-                            {{--href="{{url('/')}}/du-lich"--}}
-                            {{--class="fs-20 fw-600 fc-fourteenth td-underline"--}}
-                            {{-->Xem thêm</a>--}}
-                            {{--</div>--}}
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-<section class="p-0 m-0 bg-white">
-    <div class="container">
-        <div class="row">
-            <div class="w-fit d-block pt-0 pb-0">
-                <div class="w-fit d-flex ai-center" data-style="border-bottom: 1px solid #333;">
-                    <h2 class="fc-fourteenth fs-36 lh-44 fw-700 p-0 m-0" data-style="border-bottom: 3px solid #ff8c00;">Bài viết xem nhiều</h2>
-                </div>
-            </div>
-            <div class="w-fit d-block">
-                <div class="slick-item w-fit d-flex jc-space-between" style="justify-content: space-between!important;">
-                    <div class="g-item ps-relative d-flex fd-column">
-                        <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
-                            <a href="{{url('/')}}/bai-viet/thien-duong-tren-ha-gioi-cuu-trai-cau-trung-quoc-97">
-                                <img
-                                        data-src="https://media2.gody.vn/public/mytravelmap/images/2016/12/1/thuy_do_3f/c994b786dae04545af7564c7c04564482d513539.png"
-                                        data-srcset="https://media2.gody.vn/public/mytravelmap/images/2016/12/1/thuy_do_3f/c994b786dae04545af7564c7c04564482d513539.png"
-                                        style="min-height: 150px;"
-                                        class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
-                                >
-                            </a>
-                            <div class="my-10 ps-relative c-pointer">
-                                <div class="_i-content-t">
-                                    <a href="{{url('/')}}/bai-viet/thien-duong-tren-ha-gioi-cuu-trai-cau-trung-quoc-97" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">&quot;thi&ecirc;n đường tr&ecirc;n hạ giới&quot; cửu trại c&acirc;u - trung qu&ocirc;c</a>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="d-flex ai-center jc-space-between py-10">
-                                    <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                        <a href="{{url('/')}}/blog/thuy_do_3f" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                <div class="d-flex ai-top fw-wrap jc-space-between" style="--column:4; --gutter: 47px;">
+                                    <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
+                                        <a href="{{url('/')}}/du-lich/vietnam-airlines-chao-he-ve-dong-gia-chi-999000-vndchieu-da-gom-thue-phi-10931">
                                             <img
-                                                    data-src="https://gody.vn/public/v3/images/user/avatar/thuy_do_3f/22822220-20210803142306."
-                                                    data-srcset="https://gody.vn/public/v3/images/user/avatar/thuy_do_3f/22822220-20210803142306."
-                                                    class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
-                                            >
+                                                    data-src="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/1b87f17aeaec43c78af5b54777212bf93cfeef85.jpg"
+                                                    data-srcset="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/1b87f17aeaec43c78af5b54777212bf93cfeef85.jpg"
+                                                    style="height: 200px;"
+                                                    class="lazy-load w-fit object-cover object-center bar-8 d-h:o50"
+                                            />
                                         </a>
-                                        <div class="fl-1">
-                                            <a href="{{url('/')}}/blog/thuy_do_3f" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Thuy Do</a>
+                                        <div class="w-fit d-block pt-15 pb-0">
+                                            <a href="{{url('/')}}/du-lich/vietnam-airlines-chao-he-ve-dong-gia-chi-999000-vndchieu-da-gom-thue-phi-10931" class="fc-fourteenth fs-19 fw-600 lh-24 h:fc-sixth">
+                                                Vietnam Airlines &quot;ch&agrave;o h&egrave;&quot;: v&eacute; đồng gi&aacute; chỉ 999.000 VND/chiều (đ&atilde; gồm thuế, ph&iacute;) </a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="g-item ps-relative d-flex fd-column">
-                        <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
-                            <a href="{{url('/')}}/bai-viet/hong-kong-dau-chi-co-mua-sam-hay-trai-nghiem-nhung-dieu-thu-vi-co-1-0-2-4429">
-                                <img
-                                        data-src="https://media2.gody.vn/public/mytravelmap/images/2019/6/11/hanguyen54441/d749eeff58d5a9c59ba4b45d35b239df55e41a53.jpg"
-                                        data-srcset="https://media2.gody.vn/public/mytravelmap/images/2019/6/11/hanguyen54441/d749eeff58d5a9c59ba4b45d35b239df55e41a53.jpg"
-                                        style="min-height: 150px;"
-                                        class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
-                                >
-                            </a>
-                            <div class="my-10 ps-relative c-pointer">
-                                <div class="_i-content-t">
-                                    <a href="{{url('/')}}/bai-viet/hong-kong-dau-chi-co-mua-sam-hay-trai-nghiem-nhung-dieu-thu-vi-co-1-0-2-4429" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">Hồng k&ocirc;ng đ&acirc;u chỉ c&oacute; mua sắm! h&atilde;y trải nghiệm những Điều th&uacute; vị c&oacute; 1-0-2!</a>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="d-flex ai-center jc-space-between py-10">
-                                    <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                        <a href="{{url('/')}}/blog/hanguyen54441" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                    <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
+                                        <a href="{{url('/')}}/du-lich/bali-se-cam-khach-du-lich-thue-xe-may-10911">
                                             <img
-                                                    data-src="https://gody.vn/public/v3/images/user/avatar/hanguyen54441/80479924-20190626172823.jpg"
-                                                    data-srcset="https://gody.vn/public/v3/images/user/avatar/hanguyen54441/80479924-20190626172823.jpg"
-                                                    class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
-                                            >
+                                                    data-src="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/c5ce094c8069069fb2f6d431585a1643a5a4fa97.jpg"
+                                                    data-srcset="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/c5ce094c8069069fb2f6d431585a1643a5a4fa97.jpg"
+                                                    style="height: 200px;"
+                                                    class="lazy-load w-fit object-cover object-center bar-8 d-h:o50"
+                                            />
                                         </a>
-                                        <div class="fl-1">
-                                            <a href="{{url('/')}}/blog/hanguyen54441" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Kh&aacute;nh Ng&ocirc;</a>
+                                        <div class="w-fit d-block pt-15 pb-0">
+                                            <a href="{{url('/')}}/du-lich/bali-se-cam-khach-du-lich-thue-xe-may-10911" class="fc-fourteenth fs-19 fw-600 lh-24 h:fc-sixth">
+                                                Bali sẽ cấm kh&aacute;ch du lịch thu&ecirc; xe m&aacute;y </a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="g-item ps-relative d-flex fd-column">
-                        <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
-                            <a href="{{url('/')}}/bai-viet/bai-da-song-hong-cuoc-gap-go-cuoi-tuan-6873">
-                                <img
-                                        data-src="https://media2.gody.vn/public/mytravelmap/images/2019/11/5/7264932078296568984/299b01d747b632660b2c464f908e0a4f8009b62d.jpg"
-                                        data-srcset="https://media2.gody.vn/public/mytravelmap/images/2019/11/5/7264932078296568984/299b01d747b632660b2c464f908e0a4f8009b62d.jpg"
-                                        style="min-height: 150px;"
-                                        class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
-                                >
-                            </a>
-                            <div class="my-10 ps-relative c-pointer">
-                                <div class="_i-content-t">
-                                    <a href="{{url('/')}}/bai-viet/bai-da-song-hong-cuoc-gap-go-cuoi-tuan-6873" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">B&atilde;i đ&aacute; s&ocirc;ng hồng - qu&aacute; quen nhưng th&uacute; vị</a>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="d-flex ai-center jc-space-between py-10">
-                                    <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                        <a href="{{url('/')}}/blog/7264932078296568984" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                    <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
+                                        <a href="{{url('/')}}/du-lich/trung-quoc-mo-lai-viec-cap-visa-du-lich-cho-du-khach-nuoc-ngoai-co-viet-nam-10904">
                                             <img
-                                                    data-src="https://graph.facebook.com/v3.2/726493207829656/picture?type=normal"
-                                                    data-srcset="https://graph.facebook.com/v3.2/726493207829656/picture?type=normal"
-                                                    class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
-                                            >
+                                                    data-src="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/7be0469e91530756117521350bd1b58bd9943ffc.jpeg"
+                                                    data-srcset="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/7be0469e91530756117521350bd1b58bd9943ffc.jpeg"
+                                                    style="height: 200px;"
+                                                    class="lazy-load w-fit object-cover object-center bar-8 d-h:o50"
+                                            />
                                         </a>
-                                        <div class="fl-1">
-                                            <a href="{{url('/')}}/blog/7264932078296568984" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Linh Linh Phạm</a>
+                                        <div class="w-fit d-block pt-15 pb-0">
+                                            <a href="{{url('/')}}/du-lich/trung-quoc-mo-lai-viec-cap-visa-du-lich-cho-du-khach-nuoc-ngoai-co-viet-nam-10904" class="fc-fourteenth fs-19 fw-600 lh-24 h:fc-sixth">
+                                                Trung Quốc mở lại việc cấp visa du lịch cho du kh&aacute;ch nước ngo&agrave;i (c&oacute; Việt Nam) </a>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="g-item ps-relative d-flex fd-column">
-                        <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
-                            <a href="{{url('/')}}/bai-viet/ky-su-thai-lan-7152">
-                                <img
-                                        data-src="https://media2.gody.vn/public/mytravelmap/images/2017/10/1/homero_homero20015120/5b34312acc34decdd8a5e379c22e9ca4cf933c45.jpeg"
-                                        data-srcset="https://media2.gody.vn/public/mytravelmap/images/2017/10/1/homero_homero20015120/5b34312acc34decdd8a5e379c22e9ca4cf933c45.jpeg"
-                                        style="min-height: 150px;"
-                                        class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
-                                >
-                            </a>
-                            <div class="my-10 ps-relative c-pointer">
-                                <div class="_i-content-t">
-                                    <a href="{{url('/')}}/bai-viet/ky-su-thai-lan-7152" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">K&yacute; sự th&aacute;i lan</a>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="d-flex ai-center jc-space-between py-10">
-                                    <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                        <a href="{{url('/')}}/blog/homero_homero20015120" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                    <div class="ps-relative d-flex fd-column mb-10" style="width: calc( (100% - var(--gutter)) / var(--column) );">
+                                        <a href="{{url('/')}}/du-lich/nha-tho-duc-ba-paris-mo-cua-tro-lai-sau-tran-hoa-hoan-kinh-hoang-2019-10898">
                                             <img
-                                                    data-src="https://graph.facebook.com/v2.8/1392642617501161/picture?type=normal"
-                                                    data-srcset="https://graph.facebook.com/v2.8/1392642617501161/picture?type=normal"
-                                                    class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
-                                            >
+                                                    data-src="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/fa9c4d2bd1140698e9b23fbf5251d18c1672bbb2.png"
+                                                    data-srcset="https://media2.gody.vn/public/mytravelmap/images/2022/11/17/nguyenlamdl5569/original/fa9c4d2bd1140698e9b23fbf5251d18c1672bbb2.png"
+                                                    style="height: 200px;"
+                                                    class="lazy-load w-fit object-cover object-center bar-8 d-h:o50"
+                                            />
                                         </a>
-                                        <div class="fl-1">
-                                            <a href="{{url('/')}}/blog/homero_homero20015120" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Nguyễn Trung Ki&ecirc;n</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="g-item ps-relative d-flex fd-column">
-                        <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
-                            <a href="{{url('/')}}/bai-viet/du-xuan-me-man-voi-mua-hoa-dao-chuong-no-ro-ngat-ngay-tren-dinh-ba-na-2700">
-                                <img
-                                        data-src="https://media2.gody.vn/public/mytravelmap/images/2018/5/2/nhu.bach7672/42be622a9c9bc63adc3c1ea4aa2adfa37746636b.jpg"
-                                        data-srcset="https://media2.gody.vn/public/mytravelmap/images/2018/5/2/nhu.bach7672/42be622a9c9bc63adc3c1ea4aa2adfa37746636b.jpg"
-                                        style="min-height: 150px;"
-                                        class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
-                                >
-                            </a>
-                            <div class="my-10 ps-relative c-pointer">
-                                <div class="_i-content-t">
-                                    <a href="{{url('/')}}/bai-viet/du-xuan-me-man-voi-mua-hoa-dao-chuong-no-ro-ngat-ngay-tren-dinh-ba-na-2700" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">Du xu&acirc;n m&ecirc; mẩn với m&ugrave;a hoa đ&agrave;o chu&ocirc;ng nở rộ ngất ng&acirc;y tr&ecirc;n đỉnh b&agrave; n&agrave;</a>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="d-flex ai-center jc-space-between py-10">
-                                    <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                        <a href="{{url('/')}}/blog/nhu.bach7672" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
-                                            <img
-                                                    data-src="https://gody.vn/public/v3/images/user/avatar/2018/5/2/nhu.bach7672/thumbnail-300/1afc3280d826d64da7d0d606a9ce0a36.jpg"
-                                                    data-srcset="https://gody.vn/public/v3/images/user/avatar/2018/5/2/nhu.bach7672/thumbnail-300/1afc3280d826d64da7d0d606a9ce0a36.jpg"
-                                                    class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
-                                            >
-                                        </a>
-                                        <div class="fl-1">
-                                            <a href="{{url('/')}}/blog/nhu.bach7672" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Quỳnh Quỳnh</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="g-item ps-relative d-flex fd-column">
-                        <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
-                            <a href="{{url('/')}}/bai-viet/toa-nha-dai-bac-101-tang-taipei-101-101-101-2839">
-                                <img
-                                        data-src="https://media2.gody.vn/public/mytravelmap/images/2019/1/25/tamtinh212782/4c8d502cedaaaee00ac50b9dfedc56014ff807ae.jpg"
-                                        data-srcset="https://media2.gody.vn/public/mytravelmap/images/2019/1/25/tamtinh212782/4c8d502cedaaaee00ac50b9dfedc56014ff807ae.jpg"
-                                        style="min-height: 150px;"
-                                        class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
-                                >
-                            </a>
-                            <div class="my-10 ps-relative c-pointer">
-                                <div class="_i-content-t">
-                                    <a href="{{url('/')}}/bai-viet/toa-nha-dai-bac-101-tang-taipei-101-101-101-2839" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">To&agrave; nh&agrave; Đ&agrave;i bẮc 101 tẦng - taipei 101 - 臺北101 / 台北101</a>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="d-flex ai-center jc-space-between py-10">
-                                    <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                        <a href="{{url('/')}}/blog/tamtinh212782" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
-                                            <img
-                                                    data-src="https://gody.vn/public/v3/images/user/avatar/tamtinh212782/110511424-20190902190641.JPG"
-                                                    data-srcset="https://gody.vn/public/v3/images/user/avatar/tamtinh212782/110511424-20190902190641.JPG"
-                                                    class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
-                                            >
-                                        </a>
-                                        <div class="fl-1">
-                                            <a href="{{url('/')}}/blog/tamtinh212782" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">ĐẶNG TUẤN T&Uacute;</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="g-item ps-relative d-flex fd-column">
-                        <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
-                            <a href="{{url('/')}}/bai-viet/2n1d-trai-nghiem-xuyen-rung-tai-ho-tien-rung-la-ngau-8472">
-                                <img
-                                        data-src="https://media2.gody.vn/public/mytravelmap/images/2020/7/2/huatrucly20108858/8f09a831c72fab45decbf18d6228f6464d7a5cb2.jpg"
-                                        data-srcset="https://media2.gody.vn/public/mytravelmap/images/2020/7/2/huatrucly20108858/8f09a831c72fab45decbf18d6228f6464d7a5cb2.jpg"
-                                        style="min-height: 150px;"
-                                        class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
-                                >
-                            </a>
-                            <div class="my-10 ps-relative c-pointer">
-                                <div class="_i-content-t">
-                                    <a href="{{url('/')}}/bai-viet/2n1d-trai-nghiem-xuyen-rung-tai-ho-tien-rung-la-ngau-8472" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">2n1d - trẢi nghiỆm xuy&ecirc;n rỪng tẠi hỒ ti&ecirc;n - rỪng la ng&acirc;u</a>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="d-flex ai-center jc-space-between py-10">
-                                    <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                        <a href="{{url('/')}}/blog/huatrucly20108858" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
-                                            <img
-                                                    data-src="https://gody.vn/public/v3/images/user/avatar/huatrucly20108858/148357470-20220324175323."
-                                                    data-srcset="https://gody.vn/public/v3/images/user/avatar/huatrucly20108858/148357470-20220324175323."
-                                                    class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
-                                            >
-                                        </a>
-                                        <div class="fl-1">
-                                            <a href="{{url('/')}}/blog/huatrucly20108858" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Hứa Tr&uacute;c Ly</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="g-item ps-relative d-flex fd-column">
-                        <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
-                            <a href="{{url('/')}}/bai-viet/dao-lantau-dai-nhi-son-hon-dao-quyen-ru-xu-cang-thom-1563">
-                                <img
-                                        data-src="https://media2.gody.vn/public/mytravelmap/images/2018/9/12/thewolf6958/c7d5f1a3b80203b0c6147196fe0d7de0f0dd3e7c.jpg"
-                                        data-srcset="https://media2.gody.vn/public/mytravelmap/images/2018/9/12/thewolf6958/c7d5f1a3b80203b0c6147196fe0d7de0f0dd3e7c.jpg"
-                                        style="min-height: 150px;"
-                                        class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
-                                >
-                            </a>
-                            <div class="my-10 ps-relative c-pointer">
-                                <div class="_i-content-t">
-                                    <a href="{{url('/')}}/bai-viet/dao-lantau-dai-nhi-son-hon-dao-quyen-ru-xu-cang-thom-1563" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">ĐẢo lantau (ĐẠi nhĨ sƠn) - h&ograve;n ĐẢo quyẾn rŨ xỨ cẢng thƠm</a>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="d-flex ai-center jc-space-between py-10">
-                                    <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                        <a href="{{url('/')}}/blog/thewolf6958" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
-                                            <img
-                                                    data-src="https://gody.vn/public/v3/images/user/avatar/thewolf6958/30119107-20180912100449.JPG"
-                                                    data-srcset="https://gody.vn/public/v3/images/user/avatar/thewolf6958/30119107-20180912100449.JPG"
-                                                    class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
-                                            >
-                                        </a>
-                                        <div class="fl-1">
-                                            <a href="{{url('/')}}/blog/thewolf6958" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">The Wolf</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="g-item ps-relative d-flex fd-column">
-                        <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
-                            <a href="{{url('/')}}/bai-viet/thanh-nha-ho-thanh-hoa-4844">
-                                <img
-                                        data-src="https://media2.gody.vn/public/mytravelmap/images/2019/3/27/yumi.uyenthuong06063858/a1728533d0fb8c098ec925dcc680f8d8331c20c1.jpeg"
-                                        data-srcset="https://media2.gody.vn/public/mytravelmap/images/2019/3/27/yumi.uyenthuong06063858/a1728533d0fb8c098ec925dcc680f8d8331c20c1.jpeg"
-                                        style="min-height: 150px;"
-                                        class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
-                                >
-                            </a>
-                            <div class="my-10 ps-relative c-pointer">
-                                <div class="_i-content-t">
-                                    <a href="{{url('/')}}/bai-viet/thanh-nha-ho-thanh-hoa-4844" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">Th&agrave;nh nh&agrave; hồ - thanh ho&aacute;</a>
-                                </div>
-                                <div class="clearfix"></div>
-                                <div class="d-flex ai-center jc-space-between py-10">
-                                    <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                        <a href="{{url('/')}}/blog/yumi.uyenthuong06063858" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
-                                            <img
-                                                    data-src="https://gody.vn/public/v3/images/user/avatar/yumi.uyenthuong06063858/14176626-20190830201214.JPG"
-                                                    data-srcset="https://gody.vn/public/v3/images/user/avatar/yumi.uyenthuong06063858/14176626-20190830201214.JPG"
-                                                    class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
-                                            >
-                                        </a>
-                                        <div class="fl-1">
-                                            <a href="{{url('/')}}/blog/yumi.uyenthuong06063858" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Yu Mi Nhon</a>
+                                        <div class="w-fit d-block pt-15 pb-0">
+                                            <a href="{{url('/')}}/du-lich/nha-tho-duc-ba-paris-mo-cua-tro-lai-sau-tran-hoa-hoan-kinh-hoang-2019-10898" class="fc-fourteenth fs-19 fw-600 lh-24 h:fc-sixth">
+                                                Nh&agrave; thờ Đức B&agrave; Paris mở cửa trở lại sau trận hỏa hoạn kinh ho&agrave;ng 2019 </a>
                                         </div>
                                     </div>
                                 </div>
@@ -609,52 +325,303 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="bg-white p-0 m-0">
-    <div class="container p-0">
-        <div class="w-fit d-block  pt-20 pb-20 ">
-            <h2 class="fc-fourteenth fs-36 lh-44 fw-700">Bài viết mới</h2>
-        </div>
-        <div class="clearfix"></div>
-        <div class="col-md-9 p-0 m-0">
-            <div class="w-fit d-block">
-                <div class="bg-white w-fit d-block bar-8 overflow-hidden">
-                    <!-- -->
-                    <div class="w-fit d-block mb-30">
-                        <div style="background: #F4F4F4;border-radius: 0px 0px 8px 8px;">
-                            <div class="ps-relative p-0 overflow-hidden xs:p-0">
-                                <a href="{{url($first_post->share_url)}}">
-                                    <img src="{{ url(env('FOLDER_UPLOAD') . $first_post->thumbnail_url) }}"
-                                         style="height: 400px;"
-                                         class="w-fit object-cover object-center bar-8 d-h:o50 xs:h-184"
+    </section>
+@endif
+@if ($agent->isMobile())
+    @include('homepage.mobile.section_5')
+@else
+    <section class="p-0 m-0 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="w-fit d-block pt-0 pb-0">
+                    <div class="w-fit d-flex ai-center" data-style="border-bottom: 1px solid #333;">
+                        <h2 class="fc-fourteenth fs-36 lh-44 fw-700 p-0 m-0" data-style="border-bottom: 3px solid #ff8c00;">Bài viết xem nhiều</h2>
+                    </div>
+                </div>
+                <div class="w-fit d-block">
+                    <div class="slick-item w-fit d-flex jc-space-between" style="justify-content: space-between!important;">
+                        <div class="g-item ps-relative d-flex fd-column">
+                            <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
+                                <a href="{{url('/')}}/bai-viet/thien-duong-tren-ha-gioi-cuu-trai-cau-trung-quoc-97">
+                                    <img
+                                            data-src="https://media2.gody.vn/public/mytravelmap/images/2016/12/1/thuy_do_3f/c994b786dae04545af7564c7c04564482d513539.png"
+                                            data-srcset="https://media2.gody.vn/public/mytravelmap/images/2016/12/1/thuy_do_3f/c994b786dae04545af7564c7c04564482d513539.png"
+                                            style="min-height: 150px;"
+                                            class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
                                     >
                                 </a>
-                                <div class=" xs:mt-5 ps-relative c-pointer px-20 mt-15 " data-x="my-20">
+                                <div class="my-10 ps-relative c-pointer">
                                     <div class="_i-content-t">
-                                        <a
-                                                href="{{url($first_post->share_url)}}"
-                                                data-class="mb-5 truncate-line lineclamp2 fs-28 fc-black fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 lh-24 xs:fs-24 xs:my-10"
-                                                class=" tt-capitalize fs-28 fc-fourteenth fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 xs:fs-24 xs:my-0 my-10 d-block w-fit h:fc-sixth"
-                                                style="line-height: 120%;padding-top: 10px !important;margin-top: 0px !important;"
-                                        >
-                                            {{ $first_post->title }}️
-                                        </a>
+                                        <a href="{{url('/')}}/bai-viet/thien-duong-tren-ha-gioi-cuu-trai-cau-trung-quoc-97" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">&quot;thi&ecirc;n đường tr&ecirc;n hạ giới&quot; cửu trại c&acirc;u - trung qu&ocirc;c</a>
                                     </div>
-                                    <span class="c-auto _i-des fc-fourteenth fs-15 truncate-line lineclamp4 mb-0 xs:lineclamp5 xs:lh-md td-none fw-400 lh-24 xs:fs-14 xs:my-0 ta-justify">{{ $first_post->excerpt }}</span>
                                     <div class="clearfix"></div>
-                                    <div class="d-flex ai-center jc-space-between py-10 xs:pb-3 c-auto">
+                                    <div class="d-flex ai-center jc-space-between py-10">
                                         <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                            <a href="{{url('/')}}" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth">
+                                            <a href="{{url('/')}}/blog/thuy_do_3f" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
                                                 <img
-                                                        data-src="https://graph.facebook.com/v2.8/1110153672468755/picture?type=normal"
-                                                        data-srcset="https://graph.facebook.com/v2.8/1110153672468755/picture?type=normal"
-                                                        class="lazy-load w-fit h-fit object-cover object-center bar-circle"
-                                                        style="filter: none;"
+                                                        data-src="https://gody.vn/public/v3/images/user/avatar/thuy_do_3f/22822220-20210803142306."
+                                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/thuy_do_3f/22822220-20210803142306."
+                                                        class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
                                                 >
                                             </a>
                                             <div class="fl-1">
-                                                <a href="{{url('/')}}" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">{{ $first_post->author_name }}️</a>
+                                                <a href="{{url('/')}}/blog/thuy_do_3f" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Thuy Do</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g-item ps-relative d-flex fd-column">
+                            <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
+                                <a href="{{url('/')}}/bai-viet/hong-kong-dau-chi-co-mua-sam-hay-trai-nghiem-nhung-dieu-thu-vi-co-1-0-2-4429">
+                                    <img
+                                            data-src="https://media2.gody.vn/public/mytravelmap/images/2019/6/11/hanguyen54441/d749eeff58d5a9c59ba4b45d35b239df55e41a53.jpg"
+                                            data-srcset="https://media2.gody.vn/public/mytravelmap/images/2019/6/11/hanguyen54441/d749eeff58d5a9c59ba4b45d35b239df55e41a53.jpg"
+                                            style="min-height: 150px;"
+                                            class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
+                                    >
+                                </a>
+                                <div class="my-10 ps-relative c-pointer">
+                                    <div class="_i-content-t">
+                                        <a href="{{url('/')}}/bai-viet/hong-kong-dau-chi-co-mua-sam-hay-trai-nghiem-nhung-dieu-thu-vi-co-1-0-2-4429" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">Hồng k&ocirc;ng đ&acirc;u chỉ c&oacute; mua sắm! h&atilde;y trải nghiệm những Điều th&uacute; vị c&oacute; 1-0-2!</a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="d-flex ai-center jc-space-between py-10">
+                                        <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
+                                            <a href="{{url('/')}}/blog/hanguyen54441" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                                <img
+                                                        data-src="https://gody.vn/public/v3/images/user/avatar/hanguyen54441/80479924-20190626172823.jpg"
+                                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/hanguyen54441/80479924-20190626172823.jpg"
+                                                        class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
+                                                >
+                                            </a>
+                                            <div class="fl-1">
+                                                <a href="{{url('/')}}/blog/hanguyen54441" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Kh&aacute;nh Ng&ocirc;</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g-item ps-relative d-flex fd-column">
+                            <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
+                                <a href="{{url('/')}}/bai-viet/bai-da-song-hong-cuoc-gap-go-cuoi-tuan-6873">
+                                    <img
+                                            data-src="https://media2.gody.vn/public/mytravelmap/images/2019/11/5/7264932078296568984/299b01d747b632660b2c464f908e0a4f8009b62d.jpg"
+                                            data-srcset="https://media2.gody.vn/public/mytravelmap/images/2019/11/5/7264932078296568984/299b01d747b632660b2c464f908e0a4f8009b62d.jpg"
+                                            style="min-height: 150px;"
+                                            class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
+                                    >
+                                </a>
+                                <div class="my-10 ps-relative c-pointer">
+                                    <div class="_i-content-t">
+                                        <a href="{{url('/')}}/bai-viet/bai-da-song-hong-cuoc-gap-go-cuoi-tuan-6873" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">B&atilde;i đ&aacute; s&ocirc;ng hồng - qu&aacute; quen nhưng th&uacute; vị</a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="d-flex ai-center jc-space-between py-10">
+                                        <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
+                                            <a href="{{url('/')}}/blog/7264932078296568984" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                                <img
+                                                        data-src="https://graph.facebook.com/v3.2/726493207829656/picture?type=normal"
+                                                        data-srcset="https://graph.facebook.com/v3.2/726493207829656/picture?type=normal"
+                                                        class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
+                                                >
+                                            </a>
+                                            <div class="fl-1">
+                                                <a href="{{url('/')}}/blog/7264932078296568984" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Linh Linh Phạm</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g-item ps-relative d-flex fd-column">
+                            <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
+                                <a href="{{url('/')}}/bai-viet/ky-su-thai-lan-7152">
+                                    <img
+                                            data-src="https://media2.gody.vn/public/mytravelmap/images/2017/10/1/homero_homero20015120/5b34312acc34decdd8a5e379c22e9ca4cf933c45.jpeg"
+                                            data-srcset="https://media2.gody.vn/public/mytravelmap/images/2017/10/1/homero_homero20015120/5b34312acc34decdd8a5e379c22e9ca4cf933c45.jpeg"
+                                            style="min-height: 150px;"
+                                            class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
+                                    >
+                                </a>
+                                <div class="my-10 ps-relative c-pointer">
+                                    <div class="_i-content-t">
+                                        <a href="{{url('/')}}/bai-viet/ky-su-thai-lan-7152" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">K&yacute; sự th&aacute;i lan</a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="d-flex ai-center jc-space-between py-10">
+                                        <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
+                                            <a href="{{url('/')}}/blog/homero_homero20015120" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                                <img
+                                                        data-src="https://graph.facebook.com/v2.8/1392642617501161/picture?type=normal"
+                                                        data-srcset="https://graph.facebook.com/v2.8/1392642617501161/picture?type=normal"
+                                                        class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
+                                                >
+                                            </a>
+                                            <div class="fl-1">
+                                                <a href="{{url('/')}}/blog/homero_homero20015120" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Nguyễn Trung Ki&ecirc;n</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g-item ps-relative d-flex fd-column">
+                            <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
+                                <a href="{{url('/')}}/bai-viet/du-xuan-me-man-voi-mua-hoa-dao-chuong-no-ro-ngat-ngay-tren-dinh-ba-na-2700">
+                                    <img
+                                            data-src="https://media2.gody.vn/public/mytravelmap/images/2018/5/2/nhu.bach7672/42be622a9c9bc63adc3c1ea4aa2adfa37746636b.jpg"
+                                            data-srcset="https://media2.gody.vn/public/mytravelmap/images/2018/5/2/nhu.bach7672/42be622a9c9bc63adc3c1ea4aa2adfa37746636b.jpg"
+                                            style="min-height: 150px;"
+                                            class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
+                                    >
+                                </a>
+                                <div class="my-10 ps-relative c-pointer">
+                                    <div class="_i-content-t">
+                                        <a href="{{url('/')}}/bai-viet/du-xuan-me-man-voi-mua-hoa-dao-chuong-no-ro-ngat-ngay-tren-dinh-ba-na-2700" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">Du xu&acirc;n m&ecirc; mẩn với m&ugrave;a hoa đ&agrave;o chu&ocirc;ng nở rộ ngất ng&acirc;y tr&ecirc;n đỉnh b&agrave; n&agrave;</a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="d-flex ai-center jc-space-between py-10">
+                                        <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
+                                            <a href="{{url('/')}}/blog/nhu.bach7672" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                                <img
+                                                        data-src="https://gody.vn/public/v3/images/user/avatar/2018/5/2/nhu.bach7672/thumbnail-300/1afc3280d826d64da7d0d606a9ce0a36.jpg"
+                                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/2018/5/2/nhu.bach7672/thumbnail-300/1afc3280d826d64da7d0d606a9ce0a36.jpg"
+                                                        class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
+                                                >
+                                            </a>
+                                            <div class="fl-1">
+                                                <a href="{{url('/')}}/blog/nhu.bach7672" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Quỳnh Quỳnh</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g-item ps-relative d-flex fd-column">
+                            <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
+                                <a href="{{url('/')}}/bai-viet/toa-nha-dai-bac-101-tang-taipei-101-101-101-2839">
+                                    <img
+                                            data-src="https://media2.gody.vn/public/mytravelmap/images/2019/1/25/tamtinh212782/4c8d502cedaaaee00ac50b9dfedc56014ff807ae.jpg"
+                                            data-srcset="https://media2.gody.vn/public/mytravelmap/images/2019/1/25/tamtinh212782/4c8d502cedaaaee00ac50b9dfedc56014ff807ae.jpg"
+                                            style="min-height: 150px;"
+                                            class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
+                                    >
+                                </a>
+                                <div class="my-10 ps-relative c-pointer">
+                                    <div class="_i-content-t">
+                                        <a href="{{url('/')}}/bai-viet/toa-nha-dai-bac-101-tang-taipei-101-101-101-2839" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">To&agrave; nh&agrave; Đ&agrave;i bẮc 101 tẦng - taipei 101 - 臺北101 / 台北101</a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="d-flex ai-center jc-space-between py-10">
+                                        <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
+                                            <a href="{{url('/')}}/blog/tamtinh212782" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                                <img
+                                                        data-src="https://gody.vn/public/v3/images/user/avatar/tamtinh212782/110511424-20190902190641.JPG"
+                                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/tamtinh212782/110511424-20190902190641.JPG"
+                                                        class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
+                                                >
+                                            </a>
+                                            <div class="fl-1">
+                                                <a href="{{url('/')}}/blog/tamtinh212782" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">ĐẶNG TUẤN T&Uacute;</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g-item ps-relative d-flex fd-column">
+                            <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
+                                <a href="{{url('/')}}/bai-viet/2n1d-trai-nghiem-xuyen-rung-tai-ho-tien-rung-la-ngau-8472">
+                                    <img
+                                            data-src="https://media2.gody.vn/public/mytravelmap/images/2020/7/2/huatrucly20108858/8f09a831c72fab45decbf18d6228f6464d7a5cb2.jpg"
+                                            data-srcset="https://media2.gody.vn/public/mytravelmap/images/2020/7/2/huatrucly20108858/8f09a831c72fab45decbf18d6228f6464d7a5cb2.jpg"
+                                            style="min-height: 150px;"
+                                            class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
+                                    >
+                                </a>
+                                <div class="my-10 ps-relative c-pointer">
+                                    <div class="_i-content-t">
+                                        <a href="{{url('/')}}/bai-viet/2n1d-trai-nghiem-xuyen-rung-tai-ho-tien-rung-la-ngau-8472" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">2n1d - trẢi nghiỆm xuy&ecirc;n rỪng tẠi hỒ ti&ecirc;n - rỪng la ng&acirc;u</a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="d-flex ai-center jc-space-between py-10">
+                                        <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
+                                            <a href="{{url('/')}}/blog/huatrucly20108858" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                                <img
+                                                        data-src="https://gody.vn/public/v3/images/user/avatar/huatrucly20108858/148357470-20220324175323."
+                                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/huatrucly20108858/148357470-20220324175323."
+                                                        class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
+                                                >
+                                            </a>
+                                            <div class="fl-1">
+                                                <a href="{{url('/')}}/blog/huatrucly20108858" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Hứa Tr&uacute;c Ly</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g-item ps-relative d-flex fd-column">
+                            <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
+                                <a href="{{url('/')}}/bai-viet/dao-lantau-dai-nhi-son-hon-dao-quyen-ru-xu-cang-thom-1563">
+                                    <img
+                                            data-src="https://media2.gody.vn/public/mytravelmap/images/2018/9/12/thewolf6958/c7d5f1a3b80203b0c6147196fe0d7de0f0dd3e7c.jpg"
+                                            data-srcset="https://media2.gody.vn/public/mytravelmap/images/2018/9/12/thewolf6958/c7d5f1a3b80203b0c6147196fe0d7de0f0dd3e7c.jpg"
+                                            style="min-height: 150px;"
+                                            class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
+                                    >
+                                </a>
+                                <div class="my-10 ps-relative c-pointer">
+                                    <div class="_i-content-t">
+                                        <a href="{{url('/')}}/bai-viet/dao-lantau-dai-nhi-son-hon-dao-quyen-ru-xu-cang-thom-1563" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">ĐẢo lantau (ĐẠi nhĨ sƠn) - h&ograve;n ĐẢo quyẾn rŨ xỨ cẢng thƠm</a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="d-flex ai-center jc-space-between py-10">
+                                        <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
+                                            <a href="{{url('/')}}/blog/thewolf6958" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                                <img
+                                                        data-src="https://gody.vn/public/v3/images/user/avatar/thewolf6958/30119107-20180912100449.JPG"
+                                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/thewolf6958/30119107-20180912100449.JPG"
+                                                        class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
+                                                >
+                                            </a>
+                                            <div class="fl-1">
+                                                <a href="{{url('/')}}/blog/thewolf6958" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">The Wolf</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g-item ps-relative d-flex fd-column">
+                            <div class="ps-relative p-0 mt-12 overflow-hidden xs:p-0 w-fit">
+                                <a href="{{url('/')}}/bai-viet/thanh-nha-ho-thanh-hoa-4844">
+                                    <img
+                                            data-src="https://media2.gody.vn/public/mytravelmap/images/2019/3/27/yumi.uyenthuong06063858/a1728533d0fb8c098ec925dcc680f8d8331c20c1.jpeg"
+                                            data-srcset="https://media2.gody.vn/public/mytravelmap/images/2019/3/27/yumi.uyenthuong06063858/a1728533d0fb8c098ec925dcc680f8d8331c20c1.jpeg"
+                                            style="min-height: 150px;"
+                                            class="lazy-load w-fit object-cover object-center bar-8 dh:o50"
+                                    >
+                                </a>
+                                <div class="my-10 ps-relative c-pointer">
+                                    <div class="_i-content-t">
+                                        <a href="{{url('/')}}/bai-viet/thanh-nha-ho-thanh-hoa-4844" class="mb-5 fs-19 fc-fourteenth fw-600 xs:mb-0 xs:fs-14 h:fc-sixth tt-capitalize outline-none">Th&agrave;nh nh&agrave; hồ - thanh ho&aacute;</a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                    <div class="d-flex ai-center jc-space-between py-10">
+                                        <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
+                                            <a href="{{url('/')}}/blog/yumi.uyenthuong06063858" target="_blank" class="bar-circle bbar-circle ps-relative w-30 h-30 td-none outline-none mr-8 fc-sixth">
+                                                <img
+                                                        data-src="https://gody.vn/public/v3/images/user/avatar/yumi.uyenthuong06063858/14176626-20190830201214.JPG"
+                                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/yumi.uyenthuong06063858/14176626-20190830201214.JPG"
+                                                        class="lazy-load w-fit h-fit object-cover object-center bar-circle" style="filter: none;"
+                                                >
+                                            </a>
+                                            <div class="fl-1">
+                                                <a href="{{url('/')}}/blog/yumi.uyenthuong06063858" target="_blank" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">Yu Mi Nhon</a>
                                             </div>
                                         </div>
                                     </div>
@@ -662,654 +629,355 @@
                             </div>
                         </div>
                     </div>
-                    @foreach ($list_posts as $post)
-                        <div
-                                class="w-fit d-block item-border-top-first"
-                                style="
-                            border-bottom: 1px solid #e5e5e5;
-                            border-left: 1px solid #e5e5e5;
-                            border-right: 1px solid #e5e5e5;
-
-                        "
-                        >
-                            <div class="w-fit p-20 bar-8">
-                                <div class="ps-relative c-pointer d-flex d-ai-center box-border">
-                                    <div class="fl-shrink0 xs:w-120 xs:h-84" style="background: none; width: 216px; height: 186px;">
-                                        <a href="{{url($post->share_url)}}" class="d-block w-fit h-fit ps-relative" target="">
-                                            <img
-                                                    src="{{ url(env('FOLDER_UPLOAD') . $post->thumbnail_url) }}"
-                                                    alt="{{ $post->title }}"
-                                                    class="w-fit h-fit object-cover object-center bar-8 d-h:o50 xs:w-120 xs:h-84"
+                </div>
+            </div>
+        </div>
+    </section>
+@endif
+@if (!empty((array)$first_post))
+    @if ($agent->isMobile())
+        @include('homepage.mobile.section_6')
+    @else
+        <section class="bg-white p-0 m-0">
+            <div class="container p-0">
+                <div class="w-fit d-block  pt-20 pb-20 ">
+                    <h2 class="fc-fourteenth fs-36 lh-44 fw-700">Bài viết mới</h2>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-9 p-0 m-0">
+                    <div class="w-fit d-block">
+                        <div class="bg-white w-fit d-block bar-8 overflow-hidden">
+                            <!-- -->
+                            <div class="w-fit d-block mb-30">
+                                <div style="background: #F4F4F4;border-radius: 0px 0px 8px 8px;">
+                                    <div class="ps-relative p-0 overflow-hidden xs:p-0">
+                                        <a href="{{url($first_post->share_url)}}">
+                                            <img src="{{ url(env('FOLDER_UPLOAD') . $first_post->thumbnail_url) }}"
+                                                 style="height: 400px;"
+                                                 class="w-fit object-cover object-center bar-8 d-h:o50 xs:h-184"
                                             >
                                         </a>
-                                    </div>
-                                    <div class="fl-1 ml-20 xs:ml-10 ps-relative c-pointer">
-                                        <div class="_i-content-t">
-                                            <a
-                                                    href="{{url($post->share_url)}}"
-                                                    class=" mb-5 truncate-line lineclamp2 fs-22 fc-fourteenth fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 xs:fs-16_5 d-xs:fs-15 xs:my-5 h:fc-sixth"
-                                                    target=""
-                                            >
-                                                {{ $post->title }}
-                                            </a>
-                                        </div>
-                                        <span class="c-auto _i-des fc-fourteenth fs-15 fw-400 truncate-line lineclamp2 mb-0 xs:lineclamp3 xs:lh-md td-none xs:d-none ta-justify" style="line-height: 140%;">{{ $post->excerpt }}</span>
-                                        <div class="clearfix"></div>
-
-                                        <div class="d-flex ai-center jc-space-between py-10 c-auto">
-                                            <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                                <a href="{{url($post->share_url)}}" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
-                                                    <img
-                                                            data-src="https://graph.facebook.com/v2.8/1110153672468755/picture?type=normal"
-                                                            data-srcset="https://graph.facebook.com/v2.8/1110153672468755/picture?type=normal"
-                                                            class="lazy-load w-fit h-fit object-cover object-center bar-circle"
-                                                            style="filter: none;"
-                                                            alt="{{ $post->author_name }}"
-                                                    >
+                                        <div class=" xs:mt-5 ps-relative c-pointer px-20 mt-15 " data-x="my-20">
+                                            <div class="_i-content-t">
+                                                <a
+                                                        href="{{url($first_post->share_url)}}"
+                                                        data-class="mb-5 truncate-line lineclamp2 fs-28 fc-black fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 lh-24 xs:fs-24 xs:my-10"
+                                                        class=" tt-capitalize fs-28 fc-fourteenth fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 xs:fs-24 xs:my-0 my-10 d-block w-fit h:fc-sixth"
+                                                        style="line-height: 120%;padding-top: 10px !important;margin-top: 0px !important;"
+                                                >
+                                                    {{ $first_post->title }}️
                                                 </a>
-                                                <div class="fl-1">
-                                                    <a href="{{url('/')}}" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">{{ $post->author_name }}</a>
+                                            </div>
+                                            <span class="c-auto _i-des fc-fourteenth fs-15 truncate-line lineclamp4 mb-0 xs:lineclamp5 xs:lh-md td-none fw-400 lh-24 xs:fs-14 xs:my-0 ta-justify">{{ $first_post->excerpt }}</span>
+                                            <div class="clearfix"></div>
+                                            <div class="d-flex ai-center jc-space-between py-10 xs:pb-3 c-auto">
+                                                <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
+                                                    <a href="{{url('/')}}" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth">
+                                                        <img
+                                                                data-src="https://graph.facebook.com/v2.8/1110153672468755/picture?type=normal"
+                                                                data-srcset="https://graph.facebook.com/v2.8/1110153672468755/picture?type=normal"
+                                                                class="lazy-load w-fit h-fit object-cover object-center bar-circle"
+                                                                style="filter: none;"
+                                                        >
+                                                    </a>
+                                                    <div class="fl-1">
+                                                        <a href="{{url('/')}}" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;">{{ $first_post->author_name }}️</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    @endforeach()
-                </div>
-                {{--<div class="w-fit d-flex mt-30 mb-30" style="justify-content: flex-end!important;">--}}
-                {{--<a--}}
-                {{--href="{{url('/')}}/blog"--}}
-                {{--class="fs-20 fw-600 fc-fourteenth td-underline h:fc-primary h:bb h:bc-primary"--}}
-                {{-->Xem tất cả</a>--}}
-                {{--</div>--}}
-            </div>
-        </div>
-        <div class="col-md-3 pl-30">
-            {{--<div class="d-block w-fit mb-25">--}}
-            {{--<span class="w-fit d-block fc-black fw-700 fs-26 lh-24">Hoạt động mới nhất</span>--}}
-            {{--</div>--}}
-            {{--<div class="w-fit d-block mb-25">--}}
-            {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
-            {{--<div class="d-flex ai-start ps-relative mt-22">--}}
-            {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
-            {{--<a href="{{url('/')}}/blog/sontung9796" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
-            {{--<img--}}
-            {{--data-src="https://gody.vn/public/v3/images/user/avatar/sontung9796/24961357-20190611161027.jpeg"--}}
-            {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/sontung9796/24961357-20190611161027.jpeg"--}}
-            {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
-            {{--alt="Son N Tung"--}}
-            {{-->--}}
-            {{--</a>--}}
-            {{--</div>--}}
-            {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
-            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
-            {{--<a href="{{url('/')}}/blog/sontung9796" class="fc-nineth fw-500">Son N Tung</a>--}}
-            {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
-            {{--<a href="{{url('/')}}/bai-viet/tham-pho-co-hoi-an-10908?action=review" class="fc-nineth fw-500"> THĂM PHỐ CỔ HỘI AN</a>--}}
-            {{--</p>--}}
-            {{--<a href="{{url('/')}}/bai-viet/tham-pho-co-hoi-an-10908?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">Hội An giờ c&oacute; điểm đến n&agrave;o mới kh&ocirc;ng ah, loay hoay c&oacute; v&agrave;i địa điểm đi cũng nhiều rồi ;)</a>--}}
-            {{--</div>--}}
-            {{--</div>    </div>--}}
-            {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
-            {{--<div class="d-flex ai-start ps-relative mt-22">--}}
-            {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
-            {{--<a href="{{url('/')}}/blog/thanhnguyen8829" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
-            {{--<img--}}
-            {{--data-src="https://gody.vn/public/v3/images/user/avatar/thanhnguyen8829/111053704-20190611161234.jpeg"--}}
-            {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/thanhnguyen8829/111053704-20190611161234.jpeg"--}}
-            {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
-            {{--alt="Thanh Nguyen"--}}
-            {{-->--}}
-            {{--</a>--}}
-            {{--</div>--}}
-            {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
-            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
-            {{--<a href="{{url('/')}}/blog/thanhnguyen8829" class="fc-nineth fw-500">Thanh Nguyen</a>--}}
-            {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
-            {{--<a href="{{url('/')}}/bai-viet/ladakh-diem-du-lich-10905?action=review" class="fc-nineth fw-500"> LADAKH is calling !!!</a>--}}
-            {{--</p>--}}
-            {{--<a href="{{url('/')}}/bai-viet/ladakh-diem-du-lich-10905?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">hồ sơ xin visa c&oacute; nhiều giấy tờ kh&ocirc;ng ah, chứng minh t&agrave;i ch&iacute;nh bao nhi&ecirc;u l&agrave; đủ vậy bạn</a>--}}
-            {{--</div>--}}
-            {{--</div>    </div>--}}
-            {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
-            {{--<div class="d-flex ai-start ps-relative mt-22">--}}
-            {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
-            {{--<a href="{{url('/')}}/blog/phuonganh6069" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
-            {{--<img--}}
-            {{--data-src="https://gody.vn/public/v3/images/user/avatar/phuonganh6069/52724304-20190611162425.jpeg"--}}
-            {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/phuonganh6069/52724304-20190611162425.jpeg"--}}
-            {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
-            {{--alt="Phuong Anh"--}}
-            {{-->--}}
-            {{--</a>--}}
-            {{--</div>--}}
-            {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
-            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
-            {{--<a href="{{url('/')}}/blog/phuonganh6069" class="fc-nineth fw-500">Phuong Anh</a>--}}
-            {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
-            {{--<a href="{{url('/')}}/bai-viet/trai-nghiem-phu-quoc-4n3d-10906?action=review" class="fc-nineth fw-500"> Trải nghi&ecirc;̣m Phú Qu&ocirc;́c 4N3Đ</a>--}}
-            {{--</p>--}}
-            {{--<a href="{{url('/')}}/bai-viet/trai-nghiem-phu-quoc-4n3d-10906?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">lễ 30/4 n&agrave;y t&iacute;nh đi ph&uacute; Quốc m&agrave; sợ đ&ocirc;ng qu&aacute; huhu</a>--}}
-            {{--</div>--}}
-            {{--</div>    </div>--}}
-            {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
-            {{--<div class="d-flex ai-start ps-relative mt-22">--}}
-            {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
-            {{--<a href="{{url('/')}}/blog/trantai5403" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
-            {{--<img--}}
-            {{--data-src="https://gody.vn/public/v3/images/user/avatar/trantai5403/16087472-20190611160647.jpeg"--}}
-            {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/trantai5403/16087472-20190611160647.jpeg"--}}
-            {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
-            {{--alt="Tran Tai"--}}
-            {{-->--}}
-            {{--</a>--}}
-            {{--</div>--}}
-            {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
-            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
-            {{--<a href="{{url('/')}}/blog/trantai5403" class="fc-nineth fw-500">Tran Tai</a>--}}
-            {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
-            {{--<a href="{{url('/')}}/photo/ho-dieu-hoa-ho-son-phu-yen-5314?action=review" class="fc-nineth fw-500"> Hồ Điều Ho&agrave; Hồ Sơn- Ph&uacute; Y&ecirc;n</a>--}}
-            {{--</p>--}}
-            {{--<a href="{{url('/')}}/photo/ho-dieu-hoa-ho-son-phu-yen-5314?action=review" class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15">đẹp qu&aacute; bạn ơi, c&aacute;m ơn bạn đ&atilde; chia sẻ</a>--}}
-            {{--</div>--}}
-            {{--</div>    </div>--}}
-            {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
-            {{--<div class="d-flex ai-start ps-relative mt-22">--}}
-            {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
-            {{--<a href="{{url('/')}}/blog/nguyenthingochoai13126281" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
-            {{--<img--}}
-            {{--data-src="https://gody.vn/public/v3/images/user/avatar/nguyenthingochoai13126281/82272501-20180810133430.jpg"--}}
-            {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/nguyenthingochoai13126281/82272501-20180810133430.jpg"--}}
-            {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
-            {{--alt="Ho&agrave;i Nguyễn"--}}
-            {{-->--}}
-            {{--</a>--}}
-            {{--</div>--}}
-            {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
-            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/blog/nguyenthingochoai13126281"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{-->Ho&agrave;i Nguyễn</a>--}}
-            {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/redirect-places/5806f0580b78a4b2223c9869"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{--> Động Phong Nha</a>--}}
-            {{--</p>--}}
-            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
-            {{--</div>--}}
-            {{--</div>    </div>--}}
-            {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
-            {{--<div class="d-flex ai-start ps-relative mt-22">--}}
-            {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
-            {{--<a href="{{url('/')}}/blog/nguyenthingochoai13126281" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
-            {{--<img--}}
-            {{--data-src="https://gody.vn/public/v3/images/user/avatar/nguyenthingochoai13126281/82272501-20180810133430.jpg"--}}
-            {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/nguyenthingochoai13126281/82272501-20180810133430.jpg"--}}
-            {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
-            {{--alt="Ho&agrave;i Nguyễn"--}}
-            {{-->--}}
-            {{--</a>--}}
-            {{--</div>--}}
-            {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
-            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/blog/nguyenthingochoai13126281"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{-->Ho&agrave;i Nguyễn</a>--}}
-            {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/redirect-places/5c092934ffb295e51a3c9869"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{--> Hồ T&agrave; Đ&ugrave;ng</a>--}}
-            {{--</p>--}}
-            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
-            {{--</div>--}}
-            {{--</div>    </div>--}}
-            {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
-            {{--<div class="d-flex ai-start ps-relative mt-22">--}}
-            {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
-            {{--<a href="{{url('/')}}/blog/1116431352159453440" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
-            {{--<img--}}
-            {{--data-src="https://graph.facebook.com/v15.0/111643135215945/picture?type=normal"--}}
-            {{--data-srcset="https://graph.facebook.com/v15.0/111643135215945/picture?type=normal"--}}
-            {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
-            {{--alt="Mart Vin"--}}
-            {{-->--}}
-            {{--</a>--}}
-            {{--</div>--}}
-            {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
-            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/blog/1116431352159453440"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{-->Mart Vin</a>--}}
-            {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/redirect-places/5db57136ffb295570f41cb58"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{--> Nh&agrave; H&agrave;ng Ng&oacute;i N&acirc;u</a>--}}
-            {{--</p>--}}
-            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
-            {{--</div>--}}
-            {{--</div>    </div>--}}
-            {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
-            {{--<div class="d-flex ai-start ps-relative mt-22">--}}
-            {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
-            {{--<a href="{{url('/')}}/blog/haisonnguyen5960" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
-            {{--<img--}}
-            {{--data-src="https://media2.gody.vn//public/images/user-2/2022/12/22/haisonnguyen5960/thumbnail-70/63a3f758b11dc-1671690072.jpeg"--}}
-            {{--data-srcset="https://media2.gody.vn//public/images/user-2/2022/12/22/haisonnguyen5960/thumbnail-70/63a3f758b11dc-1671690072.jpeg"--}}
-            {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
-            {{--alt="Tran Anh Tuyen"--}}
-            {{-->--}}
-            {{--</a>--}}
-            {{--</div>--}}
-            {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
-            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/blog/haisonnguyen5960"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{-->Tran Anh Tuyen</a>--}}
-            {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/redirect-places/5c667601ffb295d84d3c9869"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{--> Tượng Toripolisi</a>--}}
-            {{--</p>--}}
-            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
-            {{--</div>--}}
-            {{--</div>    </div>--}}
-            {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
-            {{--<div class="d-flex ai-start ps-relative mt-22">--}}
-            {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
-            {{--<a href="{{url('/')}}/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
-            {{--<img--}}
-            {{--data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
-            {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
-            {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
-            {{--alt="ihewpgwr"--}}
-            {{-->--}}
-            {{--</a>--}}
-            {{--</div>--}}
-            {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
-            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/blog/sample7287"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{-->ihewpgwr</a>--}}
-            {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/redirect-places/5c667601ffb295d84d3c9869"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{--> Tượng Toripolisi</a>--}}
-            {{--</p>--}}
-            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
-            {{--</div>--}}
-            {{--</div>    </div>--}}
-            {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
-            {{--<div class="d-flex ai-start ps-relative mt-22">--}}
-            {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
-            {{--<a href="{{url('/')}}/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
-            {{--<img--}}
-            {{--data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
-            {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
-            {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
-            {{--alt="ihewpgwr"--}}
-            {{-->--}}
-            {{--</a>--}}
-            {{--</div>--}}
-            {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
-            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/blog/sample7287"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{-->ihewpgwr</a>--}}
-            {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/redirect-places/5c667601ffb295d84d3c9869"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{--> Tượng Toripolisi</a>--}}
-            {{--</p>--}}
-            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
-            {{--</div>--}}
-            {{--</div>    </div>--}}
-            {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
-            {{--<div class="d-flex ai-start ps-relative mt-22">--}}
-            {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
-            {{--<a href="{{url('/')}}/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
-            {{--<img--}}
-            {{--data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
-            {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
-            {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
-            {{--alt="ihewpgwr"--}}
-            {{-->--}}
-            {{--</a>--}}
-            {{--</div>--}}
-            {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
-            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/blog/sample7287"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{-->ihewpgwr</a>--}}
-            {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/redirect-places/5c667601ffb295d84d3c9869"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{--> Tượng Toripolisi</a>--}}
-            {{--</p>--}}
-            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
-            {{--</div>--}}
-            {{--</div>    </div>--}}
-            {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
-            {{--<div class="d-flex ai-start ps-relative mt-22">--}}
-            {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
-            {{--<a href="{{url('/')}}/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
-            {{--<img--}}
-            {{--data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
-            {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
-            {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
-            {{--alt="ihewpgwr"--}}
-            {{-->--}}
-            {{--</a>--}}
-            {{--</div>--}}
-            {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
-            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/blog/sample7287"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{-->ihewpgwr</a>--}}
-            {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/redirect-places/5c667601ffb295d84d3c9869"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{--> Tượng Toripolisi</a>--}}
-            {{--</p>--}}
-            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
-            {{--</div>--}}
-            {{--</div>    </div>--}}
-            {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
-            {{--<div class="d-flex ai-start ps-relative mt-22">--}}
-            {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
-            {{--<a href="{{url('/')}}/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
-            {{--<img--}}
-            {{--data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
-            {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
-            {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
-            {{--alt="ihewpgwr"--}}
-            {{-->--}}
-            {{--</a>--}}
-            {{--</div>--}}
-            {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
-            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/blog/sample7287"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{-->ihewpgwr</a>--}}
-            {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/redirect-places/5c667601ffb295d84d3c9869"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{--> Tượng Toripolisi</a>--}}
-            {{--</p>--}}
-            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
-            {{--</div>--}}
-            {{--</div>    </div>--}}
-            {{--<div class="w-fit d-block item-comment box-shadow-1 mb-10 pb-10">--}}
-            {{--<div class="d-flex ai-start ps-relative mt-22">--}}
-            {{--<div class="overflow-hidden bar-circle mr-12 fl-shrink0">--}}
-            {{--<a href="{{url('/')}}/blog/sample7287" target="_blank" class="d-block bbar-circle ps-relative bar-circle w-32 h-32">--}}
-            {{--<img--}}
-            {{--data-src="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
-            {{--data-srcset="https://gody.vn/public/v3/images/user/avatar/sample7287/143191049-20230322220805.jpg"--}}
-            {{--class="lazy-load w-fit h-fit object-cover object-center"--}}
-            {{--alt="ihewpgwr"--}}
-            {{-->--}}
-            {{--</a>--}}
-            {{--</div>--}}
-            {{--<div class="fl1 ps-relative mtn-2" style="width: calc(100% - 36px);">--}}
-            {{--<p class="m-0 truncate-line lineclamp2 fs-14 mb-5">--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/blog/sample7287"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{-->ihewpgwr</a>--}}
-            {{--<span class="fc-sixth"> b&igrave;nh luận trong </span>--}}
-            {{--<a--}}
-            {{--href="{{url('/')}}/redirect-places/5c667601ffb295d84d3c9869"--}}
-            {{--class="fc-nineth fw-500"--}}
-            {{--> Tượng Toripolisi</a>--}}
-            {{--</p>--}}
-            {{--<span class="fc-fourteenth fs-14 m-0 truncate-line lineclamp2 lh-15"></span>--}}
-            {{--</div>--}}
-            {{--</div>    </div>--}}
-            {{--</div>--}}
-            @if (!empty($widget_right_banner['content']))
-                <?php echo html_entity_decode($widget_right_banner['content']) ?>
-            @endif
-        </div>
-    </div>
-</section>
+                            @if (!empty((array)$list_posts))
+                                @foreach ($list_posts as $post)
+                                    <div
+                                            class="w-fit d-block item-border-top-first"
+                                            style="
+                            border-bottom: 1px solid #e5e5e5;
+                            border-left: 1px solid #e5e5e5;
+                            border-right: 1px solid #e5e5e5;
 
+                        "
+                                    >
+                                        <div class="w-fit p-20 bar-8">
+                                            <div class="ps-relative c-pointer d-flex d-ai-center box-border">
+                                                <div class="fl-shrink0 xs:w-120 xs:h-84" style="background: none; width: 216px; height: 186px;">
+                                                    <a href="{{url($post->share_url)}}" class="d-block w-fit h-fit ps-relative" target="">
+                                                        <img
+                                                                src="{{ url(env('FOLDER_UPLOAD') . $post->thumbnail_url) }}"
+                                                                alt="{{ $post->title }}"
+                                                                class="w-fit h-fit object-cover object-center bar-8 d-h:o50 xs:w-120 xs:h-84"
+                                                        >
+                                                    </a>
+                                                </div>
+                                                <div class="fl-1 ml-20 xs:ml-10 ps-relative c-pointer">
+                                                    <div class="_i-content-t">
+                                                        <a
+                                                                href="{{url($post->share_url)}}"
+                                                                class=" mb-5 truncate-line lineclamp2 fs-22 fc-fourteenth fw-600 xs:truncate-line xs:lineclamp3 xs:mb-0 xs:fs-16_5 d-xs:fs-15 xs:my-5 h:fc-sixth"
+                                                                target=""
+                                                        >
+                                                            {{ $post->title }}
+                                                        </a>
+                                                    </div>
+                                                    <span class="c-auto _i-des fc-fourteenth fs-15 fw-400 truncate-line lineclamp2 mb-0 xs:lineclamp3 xs:lh-md td-none xs:d-none ta-justify" style="line-height: 140%;">{{ $post->excerpt }}</span>
+                                                    <div class="clearfix"></div>
+                                                    <div class="d-flex ai-center jc-space-between py-10 c-auto">
+                                                        <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
+                                                            <a href="{{url($post->share_url)}}" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-8 fc-sixth" target="">
+                                                                <img
+                                                                        data-src="https://graph.facebook.com/v2.8/1110153672468755/picture?type=normal"
+                                                                        data-srcset="https://graph.facebook.com/v2.8/1110153672468755/picture?type=normal"
+                                                                        class="lazy-load w-fit h-fit object-cover object-center bar-circle"
+                                                                        style="filter: none;"
+                                                                        alt="{{ $post->author_name }}"
+                                                                >
+                                                            </a>
+                                                            <div class="fl-1">
+                                                                <a href="{{url('/')}}" class="d-inline-block va-middle truncate td-none outline-none fs-14 fw-600 wmx-135" style="color: #828282;" target="">{{ $post->author_name }}</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endforeach()
+                            @endif
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    @endif
+@endif
 @if (!empty($widget_middle_banner['content']))
-    <?php echo html_entity_decode($widget_middle_banner['content']) ?>
+    @if ($agent->isMobile())
+        @include('homepage.mobile.section_7')
+    @else
+        <?php echo html_entity_decode($widget_middle_banner['content']) ?>
+    @endif
 @endif
-
 @if (!empty($widget_trend['content']))
-    <?php echo html_entity_decode($widget_trend['content']) ?>
+    @if ($agent->isMobile())
+        @include('homepage.mobile.section_8')
+    @else
+        <?php echo html_entity_decode($widget_trend['content']) ?>
+    @endif
 @endif
-
-<section class="p-0 m-0 w-fit d-block bg-white">
-    <div class="container">
-        <div class="row">
-            <div class="w-fit d-block  pt-20 pb-20 ">
-                <h2 class="fc-fourteenth fs-36 lh-44 fw-700">Q/A - Hỏi đáp du lịch</h2>
-            </div>
-            <div class="w-fit d-block">
-                <div class="w-fit d-block mb-15">
-                    <a href="{{url('/')}}/hoi-dap/nha-hang-ngon-an-vat-cafe-dep-o-seminyak-012-5050" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Nh&agrave; h&agrave;ng ngon, ăn vặt, cafe đẹp ở Seminyak</a>
-                    <div class="w-fit d-flex">
-                        <div class="w-32 h-32">
-                            <a href="{{url('/')}}/blog/phuonganh6069" class="w-fit h-fit">
-                                <img
-                                        data-src="https://gody.vn/public/v3/images/user/avatar/phuonganh6069/52724304-20190611162425.jpeg"
-                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/phuonganh6069/52724304-20190611162425.jpeg"
-                                        class="lazy-load object-cover object-center bar-circle w-fit h-fit"
-                                />
-                            </a>
-                        </div>
-                        <div class="w-fit d-block ml-15">
-                            <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
-                                <p>
-                                    <a
-                                            href="{{url('/')}}/blog/phuonganh6069"
-                                            class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10"
-                                    >
-                                        Phuong Anh
-                                    </a>
-                                    <a href="{{url('/')}}/hoi-dap/nha-hang-ngon-an-vat-cafe-dep-o-seminyak-012-5050" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
-                                        Mọi người cho mình xin Nhà hàng ngon, chợ ăn vặt, quán cf đẹp và chỗ chơi ở SEMINYAK với.
-                                        Mình về rồi, cảm ơn mọi người.
-                                        mình rất refer Pitato head Beach Club và Woobar nha. Kế bên nhau ngay bãi biển mà cực đông vui ở seminyak. </a>
-                                </p>
+@if ($agent->isMobile())
+    @include('homepage.mobile.section_9')
+@else
+    <section class="p-0 m-0 w-fit d-block bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="w-fit d-block  pt-20 pb-20 ">
+                    <h2 class="fc-fourteenth fs-36 lh-44 fw-700">Q/A - Hỏi đáp du lịch</h2>
+                </div>
+                <div class="w-fit d-block">
+                    <div class="w-fit d-block mb-15">
+                        <a href="{{url('/')}}/hoi-dap/nha-hang-ngon-an-vat-cafe-dep-o-seminyak-012-5050" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Nh&agrave; h&agrave;ng ngon, ăn vặt, cafe đẹp ở Seminyak</a>
+                        <div class="w-fit d-flex">
+                            <div class="w-32 h-32">
+                                <a href="{{url('/')}}/blog/phuonganh6069" class="w-fit h-fit">
+                                    <img
+                                            data-src="https://gody.vn/public/v3/images/user/avatar/phuonganh6069/52724304-20190611162425.jpeg"
+                                            data-srcset="https://gody.vn/public/v3/images/user/avatar/phuonganh6069/52724304-20190611162425.jpeg"
+                                            class="lazy-load object-cover object-center bar-circle w-fit h-fit"
+                                    />
+                                </a>
+                            </div>
+                            <div class="w-fit d-block ml-15">
+                                <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
+                                    <p>
+                                        <a
+                                                href="{{url('/')}}/blog/phuonganh6069"
+                                                class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10"
+                                        >
+                                            Phuong Anh
+                                        </a>
+                                        <a href="{{url('/')}}/hoi-dap/nha-hang-ngon-an-vat-cafe-dep-o-seminyak-012-5050" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
+                                            Mọi người cho mình xin Nhà hàng ngon, chợ ăn vặt, quán cf đẹp và chỗ chơi ở SEMINYAK với.
+                                            Mình về rồi, cảm ơn mọi người.
+                                            mình rất refer Pitato head Beach Club và Woobar nha. Kế bên nhau ngay bãi biển mà cực đông vui ở seminyak. </a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="w-fit d-block mb-15">
-                    <a href="{{url('/')}}/hoi-dap/mua-khan-cashmere-o-an-do-012-5049" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Mua khăn Cashmere ở Ấn Độ</a>
-                    <div class="w-fit d-flex">
-                        <div class="w-32 h-32">
-                            <a href="{{url('/')}}/blog/thanhnguyen8829" class="w-fit h-fit">
-                                <img
-                                        data-src="https://gody.vn/public/v3/images/user/avatar/thanhnguyen8829/111053704-20190611161234.jpeg"
-                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/thanhnguyen8829/111053704-20190611161234.jpeg"
-                                        class="lazy-load object-cover object-center bar-circle w-fit h-fit"
-                                />
-                            </a>
-                        </div>
-                        <div class="w-fit d-block ml-15">
-                            <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
-                                <p>
-                                    <a
-                                            href="{{url('/')}}/blog/thanhnguyen8829"
-                                            class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10"
-                                    >
-                                        Thanh Nguyen
-                                    </a>
-                                    <a href="{{url('/')}}/hoi-dap/mua-khan-cashmere-o-an-do-012-5049" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
-                                        Cả nhà ơi, ấn độ nổi tiếng vs khăn Cashmere, nhưng mình sợ mua phải hàng fake Tàu giá cao như Khải silk lắm.
-                                        Vậy ai có bít hay kinh nghiệm gì về mua món này ở Ấn độ k ạ? </a>
-                                </p>
+                    <div class="w-fit d-block mb-15">
+                        <a href="{{url('/')}}/hoi-dap/mua-khan-cashmere-o-an-do-012-5049" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Mua khăn Cashmere ở Ấn Độ</a>
+                        <div class="w-fit d-flex">
+                            <div class="w-32 h-32">
+                                <a href="{{url('/')}}/blog/thanhnguyen8829" class="w-fit h-fit">
+                                    <img
+                                            data-src="https://gody.vn/public/v3/images/user/avatar/thanhnguyen8829/111053704-20190611161234.jpeg"
+                                            data-srcset="https://gody.vn/public/v3/images/user/avatar/thanhnguyen8829/111053704-20190611161234.jpeg"
+                                            class="lazy-load object-cover object-center bar-circle w-fit h-fit"
+                                    />
+                                </a>
+                            </div>
+                            <div class="w-fit d-block ml-15">
+                                <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
+                                    <p>
+                                        <a
+                                                href="{{url('/')}}/blog/thanhnguyen8829"
+                                                class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10"
+                                        >
+                                            Thanh Nguyen
+                                        </a>
+                                        <a href="{{url('/')}}/hoi-dap/mua-khan-cashmere-o-an-do-012-5049" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
+                                            Cả nhà ơi, ấn độ nổi tiếng vs khăn Cashmere, nhưng mình sợ mua phải hàng fake Tàu giá cao như Khải silk lắm.
+                                            Vậy ai có bít hay kinh nghiệm gì về mua món này ở Ấn độ k ạ? </a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="w-fit d-block mb-15">
-                    <a href="{{url('/')}}/hoi-dap/thue-scooter-o-paris-012-5048" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Thu&ecirc; Scooter ở Paris</a>
-                    <div class="w-fit d-flex">
-                        <div class="w-32 h-32">
-                            <a href="{{url('/')}}/blog/sontung9796" class="w-fit h-fit">
-                                <img
-                                        data-src="https://gody.vn/public/v3/images/user/avatar/sontung9796/24961357-20190611161027.jpeg"
-                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/sontung9796/24961357-20190611161027.jpeg"
-                                        class="lazy-load object-cover object-center bar-circle w-fit h-fit"
-                                />
-                            </a>
-                        </div>
-                        <div class="w-fit d-block ml-15">
-                            <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
-                                <p>
-                                    <a
-                                            href="{{url('/')}}/blog/sontung9796"
-                                            class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10"
-                                    >
-                                        Son N Tung
-                                    </a>
-                                    <a href="{{url('/')}}/hoi-dap/thue-scooter-o-paris-012-5048" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
-                                        Em muốn thuê Scooter ở Paris, em thấy có Lime, Tier, Dott. Anh chị cho em hỏi cách thuê scooter, hãng nào có nhiều xe và thuận tiện thuê nhất ạ? Có app nào check được xe cả 3 hãng này không?
-                                        Ở Paris hay Rome có thuê xe Vespa đi được không ạ?
-                                        Mọi người hướng dẫn giúp em với nhé.
-                                        Em cảm ơn nhiều. </a>
-                                </p>
+                    <div class="w-fit d-block mb-15">
+                        <a href="{{url('/')}}/hoi-dap/thue-scooter-o-paris-012-5048" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Thu&ecirc; Scooter ở Paris</a>
+                        <div class="w-fit d-flex">
+                            <div class="w-32 h-32">
+                                <a href="{{url('/')}}/blog/sontung9796" class="w-fit h-fit">
+                                    <img
+                                            data-src="https://gody.vn/public/v3/images/user/avatar/sontung9796/24961357-20190611161027.jpeg"
+                                            data-srcset="https://gody.vn/public/v3/images/user/avatar/sontung9796/24961357-20190611161027.jpeg"
+                                            class="lazy-load object-cover object-center bar-circle w-fit h-fit"
+                                    />
+                                </a>
+                            </div>
+                            <div class="w-fit d-block ml-15">
+                                <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
+                                    <p>
+                                        <a
+                                                href="{{url('/')}}/blog/sontung9796"
+                                                class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10"
+                                        >
+                                            Son N Tung
+                                        </a>
+                                        <a href="{{url('/')}}/hoi-dap/thue-scooter-o-paris-012-5048" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
+                                            Em muốn thuê Scooter ở Paris, em thấy có Lime, Tier, Dott. Anh chị cho em hỏi cách thuê scooter, hãng nào có nhiều xe và thuận tiện thuê nhất ạ? Có app nào check được xe cả 3 hãng này không?
+                                            Ở Paris hay Rome có thuê xe Vespa đi được không ạ?
+                                            Mọi người hướng dẫn giúp em với nhé.
+                                            Em cảm ơn nhiều. </a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="w-fit d-block mb-15">
-                    <a href="{{url('/')}}/hoi-dap/du-lich-tokyo-giua-thang-4-012-5047" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Du lịch Tokyo giữa th&aacute;ng 4</a>
-                    <div class="w-fit d-flex">
-                        <div class="w-32 h-32">
-                            <a href="{{url('/')}}/blog/trantai5403" class="w-fit h-fit">
-                                <img
-                                        data-src="https://gody.vn/public/v3/images/user/avatar/trantai5403/16087472-20190611160647.jpeg"
-                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/trantai5403/16087472-20190611160647.jpeg"
-                                        class="lazy-load object-cover object-center bar-circle w-fit h-fit"
-                                />
-                            </a>
-                        </div>
-                        <div class="w-fit d-block ml-15">
-                            <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
-                                <p>
-                                    <a
-                                            href="{{url('/')}}/blog/trantai5403"
-                                            class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10"
-                                    >
-                                        Tran Tai
-                                    </a>
-                                    <a href="{{url('/')}}/hoi-dap/du-lich-tokyo-giua-thang-4-012-5047" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
-                                        Cả nhà cho mình hỏi mình dự định đi sang tokyo giữa tháng 4 lúc đấy còn hoa anh đào ko mn, với cả thời tiết còn lạnh ko ạ, có phải mang áo dày đi ko ạ. Cám ơn mọi người. </a>
-                                </p>
+                    <div class="w-fit d-block mb-15">
+                        <a href="{{url('/')}}/hoi-dap/du-lich-tokyo-giua-thang-4-012-5047" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Du lịch Tokyo giữa th&aacute;ng 4</a>
+                        <div class="w-fit d-flex">
+                            <div class="w-32 h-32">
+                                <a href="{{url('/')}}/blog/trantai5403" class="w-fit h-fit">
+                                    <img
+                                            data-src="https://gody.vn/public/v3/images/user/avatar/trantai5403/16087472-20190611160647.jpeg"
+                                            data-srcset="https://gody.vn/public/v3/images/user/avatar/trantai5403/16087472-20190611160647.jpeg"
+                                            class="lazy-load object-cover object-center bar-circle w-fit h-fit"
+                                    />
+                                </a>
+                            </div>
+                            <div class="w-fit d-block ml-15">
+                                <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
+                                    <p>
+                                        <a
+                                                href="{{url('/')}}/blog/trantai5403"
+                                                class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10"
+                                        >
+                                            Tran Tai
+                                        </a>
+                                        <a href="{{url('/')}}/hoi-dap/du-lich-tokyo-giua-thang-4-012-5047" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
+                                            Cả nhà cho mình hỏi mình dự định đi sang tokyo giữa tháng 4 lúc đấy còn hoa anh đào ko mn, với cả thời tiết còn lạnh ko ạ, có phải mang áo dày đi ko ạ. Cám ơn mọi người. </a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="w-fit d-block mb-15">
-                    <a href="{{url('/')}}/hoi-dap/du-lich-da-nang-5046" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Du lịch Đ&agrave; Nẵng</a>
-                    <div class="w-fit d-flex">
-                        <div class="w-32 h-32">
-                            <a href="{{url('/')}}/blog/zgjl5vnfvznqi5t107xzsuq4hmu2" class="w-fit h-fit">
-                                <img
-                                        data-src="https://graph.facebook.com/2458346227674259/picture"
-                                        data-srcset="https://graph.facebook.com/2458346227674259/picture"
-                                        class="lazy-load object-cover object-center bar-circle w-fit h-fit"
-                                />
-                            </a>
-                        </div>
-                        <div class="w-fit d-block ml-15">
-                            <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
-                                <p>
-                                    <a
-                                            href="{{url('/')}}/blog/zgjl5vnfvznqi5t107xzsuq4hmu2"
-                                            class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10"
-                                    >
-                                        V&acirc;n L&ecirc;
-                                    </a>
-                                    <a href="{{url('/')}}/hoi-dap/du-lich-da-nang-5046" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
-                                        E muốn thuê homestay,biệt thự hoặc vila gần biển,trung tâm cho tầm 10 ng lớn 4 trẻ con ,ai có kinh nghiệm cho e xin địa chỉ với </a>
-                                </p>
+                    <div class="w-fit d-block mb-15">
+                        <a href="{{url('/')}}/hoi-dap/du-lich-da-nang-5046" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">Du lịch Đ&agrave; Nẵng</a>
+                        <div class="w-fit d-flex">
+                            <div class="w-32 h-32">
+                                <a href="{{url('/')}}/blog/zgjl5vnfvznqi5t107xzsuq4hmu2" class="w-fit h-fit">
+                                    <img
+                                            data-src="https://graph.facebook.com/2458346227674259/picture"
+                                            data-srcset="https://graph.facebook.com/2458346227674259/picture"
+                                            class="lazy-load object-cover object-center bar-circle w-fit h-fit"
+                                    />
+                                </a>
+                            </div>
+                            <div class="w-fit d-block ml-15">
+                                <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
+                                    <p>
+                                        <a
+                                                href="{{url('/')}}/blog/zgjl5vnfvznqi5t107xzsuq4hmu2"
+                                                class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10"
+                                        >
+                                            V&acirc;n L&ecirc;
+                                        </a>
+                                        <a href="{{url('/')}}/hoi-dap/du-lich-da-nang-5046" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
+                                            E muốn thuê homestay,biệt thự hoặc vila gần biển,trung tâm cho tầm 10 ng lớn 4 trẻ con ,ai có kinh nghiệm cho e xin địa chỉ với </a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="w-fit d-block mb-15">
-                    <a href="{{url('/')}}/hoi-dap/minh-xin-vai-khach-san-o-kuta-bali-012-5045" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">M&igrave;nh xin v&agrave;i kh&aacute;ch sạn ở Kuta, Bali</a>
-                    <div class="w-fit d-flex">
-                        <div class="w-32 h-32">
-                            <a href="{{url('/')}}/blog/lethuy3225" class="w-fit h-fit">
-                                <img
-                                        data-src="https://gody.vn/public/v3/images/user/avatar/lethuy3225/14550383-20191017093759.jpeg"
-                                        data-srcset="https://gody.vn/public/v3/images/user/avatar/lethuy3225/14550383-20191017093759.jpeg"
-                                        class="lazy-load object-cover object-center bar-circle w-fit h-fit"
-                                />
-                            </a>
-                        </div>
-                        <div class="w-fit d-block ml-15">
-                            <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
-                                <p>
-                                    <a
-                                            href="{{url('/')}}/blog/lethuy3225"
-                                            class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10"
-                                    >
-                                        Le Thuy
-                                    </a>
-                                    <a href="{{url('/')}}/hoi-dap/minh-xin-vai-khach-san-o-kuta-bali-012-5045" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
-                                        Lễ này mình đi Bali khu vực Kuta 1 tuần, bạn nào biết khách sạn ở khu vực này thì giới thiệu mình với ah. Có thông tin liên lạc luôn thì càng tốt. Cám ơn mọi người. </a>
-                                </p>
+                    <div class="w-fit d-block mb-15">
+                        <a href="{{url('/')}}/hoi-dap/minh-xin-vai-khach-san-o-kuta-bali-012-5045" class="h:fc-sixth fc-fourteenth fs-22 fw-600 lh-24 d-block w-fit mb-15" style="word-break: break-word; text-align: justify;">M&igrave;nh xin v&agrave;i kh&aacute;ch sạn ở Kuta, Bali</a>
+                        <div class="w-fit d-flex">
+                            <div class="w-32 h-32">
+                                <a href="{{url('/')}}/blog/lethuy3225" class="w-fit h-fit">
+                                    <img
+                                            data-src="https://gody.vn/public/v3/images/user/avatar/lethuy3225/14550383-20191017093759.jpeg"
+                                            data-srcset="https://gody.vn/public/v3/images/user/avatar/lethuy3225/14550383-20191017093759.jpeg"
+                                            class="lazy-load object-cover object-center bar-circle w-fit h-fit"
+                                    />
+                                </a>
+                            </div>
+                            <div class="w-fit d-block ml-15">
+                                <div class="p-20 bar-8 qu-hover--bg--darken" style="background: #F2F2F2;">
+                                    <p>
+                                        <a
+                                                href="{{url('/')}}/blog/lethuy3225"
+                                                class="fc-fourteenth fs-16 fw-600 d-block w-fit mb-10"
+                                        >
+                                            Le Thuy
+                                        </a>
+                                        <a href="{{url('/')}}/hoi-dap/minh-xin-vai-khach-san-o-kuta-bali-012-5045" class="fc-fourteenth fs-15 fw-400" style="word-break: break-word; text-align: justify;">
+                                            Lễ này mình đi Bali khu vực Kuta 1 tuần, bạn nào biết khách sạn ở khu vực này thì giới thiệu mình với ah. Có thông tin liên lạc luôn thì càng tốt. Cám ơn mọi người. </a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="p-0 m-0 w-fit d-block bg-white">
-    <div class="container">
-        <div class="row">
-            <div class="w-fit d-block  pt-20 pb-20 ">
-                <h2 class="fc-fourteenth fs-36 lh-44 fw-700">#Godygram</h2>
-            </div>
-            <div class="w-fit d-flex jc-space-between ai-center" style="--column:4; --gutter: 38px;">
-                <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
-                    <a href="{{url('/')}}/photo/tour-viet-nam-cambodia-thai-lan-5316?photo_album=album" class="w-fit h-fit">
-                        <img
-                                data-src="https://media2.gody.vn/public/mytravelmap/images/2023/3/26/quan.trangianb4112/original/7084f3b1e4ce0bb83dd3b95e0d723d40079bb608.jpg"
-                                data-srcset="https://media2.gody.vn/public/mytravelmap/images/2023/3/26/quan.trangianb4112/original/7084f3b1e4ce0bb83dd3b95e0d723d40079bb608.jpg"
-                                class="lazy-load w-fit object-cover object-center h-fit bar-8"
-                        />
-                        <img
-                                data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
-                                data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
-                                class="lazy-load h:o50"
-                                style="position: absolute;width: 100%;height: 100%;left: 0;overflow: hidden;border-radius: 8px;"
-                        >
-                    </a>
-                    <div class="ps-absolute b10 l10">
-                        <div class="d-flex ai-center jc-space-between">
-                            <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
+    </section>
+    <section class="p-0 m-0 w-fit d-block bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="w-fit d-block  pt-20 pb-20 ">
+                    <h2 class="fc-fourteenth fs-36 lh-44 fw-700">#Godygram</h2>
+                </div>
+                <div class="w-fit d-flex jc-space-between ai-center" style="--column:4; --gutter: 38px;">
+                    <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
+                        <a href="{{url('/')}}/photo/tour-viet-nam-cambodia-thai-lan-5316?photo_album=album" class="w-fit h-fit">
+                            <img
+                                    data-src="https://media2.gody.vn/public/mytravelmap/images/2023/3/26/quan.trangianb4112/original/7084f3b1e4ce0bb83dd3b95e0d723d40079bb608.jpg"
+                                    data-srcset="https://media2.gody.vn/public/mytravelmap/images/2023/3/26/quan.trangianb4112/original/7084f3b1e4ce0bb83dd3b95e0d723d40079bb608.jpg"
+                                    class="lazy-load w-fit object-cover object-center h-fit bar-8"
+                            />
+                            <img
+                                    data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
+                                    data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
+                                    class="lazy-load h:o50"
+                                    style="position: absolute;width: 100%;height: 100%;left: 0;overflow: hidden;border-radius: 8px;"
+                            >
+                        </a>
+                        <div class="ps-absolute b10 l10">
+                            <div class="d-flex ai-center jc-space-between">
+                                <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
                                 <span target="_blank" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-4 fc-sixth">
                                     <img
                                             data-src="https://lh3.googleusercontent.com/a/AGNmyxbVJrT2CeC91YmpS7frBf6e7cmWMIq8zrYJcinI=s96-c"
@@ -1317,30 +985,30 @@
                                             class="lazy-load w-fit h-fit object-cover object-center bar-circle"
                                     >
                                 </span>
-                                <a href="{{url('/')}}/blog/quan.trangianb4112" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
-                                    quan tran
-                                </a>
+                                    <a href="{{url('/')}}/blog/quan.trangianb4112" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
+                                        quan tran
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </div><!-- ps-absolute -->
-                </div>
-                <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
-                    <a href="{{url('/')}}/photo/sai-gon-vung-tau-can-tho-ha-nam-ly-son-dac-lac-5315?photo_album=album" class="w-fit h-fit">
-                        <img
-                                data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2017/10/6/hiencucvang19855168/453d1f636aca89cf134d54d71bde9908.jpg"
-                                data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2017/10/6/hiencucvang19855168/453d1f636aca89cf134d54d71bde9908.jpg"
-                                class="lazy-load w-fit object-cover object-center h-fit bar-8"
-                        />
-                        <img
-                                data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
-                                data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
-                                class="lazy-load h:o50"
-                                style="position: absolute;width: 100%;height: 100%;left: 0;overflow: hidden;border-radius: 8px;"
-                        >
-                    </a>
-                    <div class="ps-absolute b10 l10">
-                        <div class="d-flex ai-center jc-space-between">
-                            <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
+                        </div><!-- ps-absolute -->
+                    </div>
+                    <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
+                        <a href="{{url('/')}}/photo/sai-gon-vung-tau-can-tho-ha-nam-ly-son-dac-lac-5315?photo_album=album" class="w-fit h-fit">
+                            <img
+                                    data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2017/10/6/hiencucvang19855168/453d1f636aca89cf134d54d71bde9908.jpg"
+                                    data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2017/10/6/hiencucvang19855168/453d1f636aca89cf134d54d71bde9908.jpg"
+                                    class="lazy-load w-fit object-cover object-center h-fit bar-8"
+                            />
+                            <img
+                                    data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
+                                    data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
+                                    class="lazy-load h:o50"
+                                    style="position: absolute;width: 100%;height: 100%;left: 0;overflow: hidden;border-radius: 8px;"
+                            >
+                        </a>
+                        <div class="ps-absolute b10 l10">
+                            <div class="d-flex ai-center jc-space-between">
+                                <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
                                 <span target="_blank" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-4 fc-sixth">
                                     <img
                                             data-src="https://graph.facebook.com/v2.8/1906247742724297/picture?type=normal"
@@ -1348,31 +1016,31 @@
                                             class="lazy-load w-fit h-fit object-cover object-center bar-circle"
                                     >
                                 </span>
-                                <a href="{{url('/')}}/blog/hiencucvang19855168" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
-                                    Linh Le
-                                </a>
+                                    <a href="{{url('/')}}/blog/hiencucvang19855168" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
+                                        Linh Le
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </div><!-- ps-absolute -->
-                </div>
-                <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
-                    <div class="w-fit mb-10 ps-relative" style="height: 150px">
-                        <a href="{{url('/')}}/photo/ho-dieu-hoa-ho-son-phu-yen-5314?photo_album=album" class="w-fit h-fit">
-                            <img
-                                    data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/03/21/imissyou_2668257/d815f0f58e90eb155a817e71d414a745.jpg"
-                                    data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/03/21/imissyou_2668257/d815f0f58e90eb155a817e71d414a745.jpg"
-                                    class="lazy-load w-fit object-cover object-center h-fit bar-8"
-                            />
-                            <img
-                                    data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
-                                    data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
-                                    class="lazy-load h:o50"
-                                    style="position: absolute;width: 100%;height: 100%;left: 0;overflow: hidden;border-radius: 8px;"
-                            >
-                        </a>
-                        <div class="ps-absolute b10 l10">
-                            <div class="d-flex ai-center jc-space-between">
-                                <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
+                        </div><!-- ps-absolute -->
+                    </div>
+                    <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
+                        <div class="w-fit mb-10 ps-relative" style="height: 150px">
+                            <a href="{{url('/')}}/photo/ho-dieu-hoa-ho-son-phu-yen-5314?photo_album=album" class="w-fit h-fit">
+                                <img
+                                        data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/03/21/imissyou_2668257/d815f0f58e90eb155a817e71d414a745.jpg"
+                                        data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/03/21/imissyou_2668257/d815f0f58e90eb155a817e71d414a745.jpg"
+                                        class="lazy-load w-fit object-cover object-center h-fit bar-8"
+                                />
+                                <img
+                                        data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
+                                        data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
+                                        class="lazy-load h:o50"
+                                        style="position: absolute;width: 100%;height: 100%;left: 0;overflow: hidden;border-radius: 8px;"
+                                >
+                            </a>
+                            <div class="ps-absolute b10 l10">
+                                <div class="d-flex ai-center jc-space-between">
+                                    <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
                                     <span target="_blank" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-4 fc-sixth">
                                         <img
                                                 data-src="https://graph.facebook.com/v2.8/1110153672468755/picture?type=normal"
@@ -1380,18 +1048,50 @@
                                                 class="lazy-load w-fit h-fit object-cover object-center bar-circle"
                                         >
                                     </span>
-                                    <a href="{{url('/')}}/blog/imissyou_2668257" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
-                                        L&ecirc; Thị Kiều
-                                    </a>
+                                        <a href="{{url('/')}}/blog/imissyou_2668257" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
+                                            L&ecirc; Thị Kiều
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        </div><!-- ps-absolute -->
+                            </div><!-- ps-absolute -->
+                        </div>
+                        <div class="w-fit ps-relative" style="height: 150px">
+                            <a href="{{url('/')}}/photo/pho-co-hoi-an-5313?photo_album=album" class="w-fit h-fit">
+                                <img
+                                        data-src="https://media2.gody.vn/public/mytravelmap/images/2023/3/17/ngocvudb8160/original/8960b1a675d6b236b4ba3e25ad06754497ea9487.jpg"
+                                        data-srcset="https://media2.gody.vn/public/mytravelmap/images/2023/3/17/ngocvudb8160/original/8960b1a675d6b236b4ba3e25ad06754497ea9487.jpg"
+                                        class="lazy-load w-fit object-cover object-center h-fit bar-8"
+                                />
+                                <img
+                                        data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
+                                        data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
+                                        class="lazy-load h:o50"
+                                        style="position: absolute;width: 100%;height: 100%;left: 0;overflow: hidden;border-radius: 8px;"
+                                >
+                            </a>
+                            <div class="ps-absolute b10 l10">
+                                <div class="d-flex ai-center jc-space-between">
+                                    <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
+                                    <span target="_blank" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-4 fc-sixth">
+                                        <img
+                                                data-src="https://lh3.googleusercontent.com/a/AGNmyxY0-9l3Pb_XbIWzZx3xKVP05mnAaqCHnGC2cjrQUQ=s96-c"
+                                                data-srcset="https://lh3.googleusercontent.com/a/AGNmyxY0-9l3Pb_XbIWzZx3xKVP05mnAaqCHnGC2cjrQUQ=s96-c"
+                                                class="lazy-load w-fit h-fit object-cover object-center bar-circle"
+                                        >
+                                    </span>
+                                        <a href="{{url('/')}}/blog/ngocvudb8160" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
+                                            Đặng Ngọc Vũ
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!-- ps-absolute -->
+                        </div>
                     </div>
-                    <div class="w-fit ps-relative" style="height: 150px">
-                        <a href="{{url('/')}}/photo/pho-co-hoi-an-5313?photo_album=album" class="w-fit h-fit">
+                    <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
+                        <a href="{{url('/')}}/photo/chuyen-di-adventure-thu-2-4-tai-nz-5308?photo_album=album" class="w-fit h-fit">
                             <img
-                                    data-src="https://media2.gody.vn/public/mytravelmap/images/2023/3/17/ngocvudb8160/original/8960b1a675d6b236b4ba3e25ad06754497ea9487.jpg"
-                                    data-srcset="https://media2.gody.vn/public/mytravelmap/images/2023/3/17/ngocvudb8160/original/8960b1a675d6b236b4ba3e25ad06754497ea9487.jpg"
+                                    data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/3/6/anhngotrip2942/1e32b4b67d1f25698c0c16d2a64b6e46.jpg"
+                                    data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/3/6/anhngotrip2942/1e32b4b67d1f25698c0c16d2a64b6e46.jpg"
                                     class="lazy-load w-fit object-cover object-center h-fit bar-8"
                             />
                             <img
@@ -1404,38 +1104,6 @@
                         <div class="ps-absolute b10 l10">
                             <div class="d-flex ai-center jc-space-between">
                                 <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                    <span target="_blank" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-4 fc-sixth">
-                                        <img
-                                                data-src="https://lh3.googleusercontent.com/a/AGNmyxY0-9l3Pb_XbIWzZx3xKVP05mnAaqCHnGC2cjrQUQ=s96-c"
-                                                data-srcset="https://lh3.googleusercontent.com/a/AGNmyxY0-9l3Pb_XbIWzZx3xKVP05mnAaqCHnGC2cjrQUQ=s96-c"
-                                                class="lazy-load w-fit h-fit object-cover object-center bar-circle"
-                                        >
-                                    </span>
-                                    <a href="{{url('/')}}/blog/ngocvudb8160" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
-                                        Đặng Ngọc Vũ
-                                    </a>
-                                </div>
-                            </div>
-                        </div><!-- ps-absolute -->
-                    </div>
-                </div>
-                <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
-                    <a href="{{url('/')}}/photo/chuyen-di-adventure-thu-2-4-tai-nz-5308?photo_album=album" class="w-fit h-fit">
-                        <img
-                                data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/3/6/anhngotrip2942/1e32b4b67d1f25698c0c16d2a64b6e46.jpg"
-                                data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/3/6/anhngotrip2942/1e32b4b67d1f25698c0c16d2a64b6e46.jpg"
-                                class="lazy-load w-fit object-cover object-center h-fit bar-8"
-                        />
-                        <img
-                                data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
-                                data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
-                                class="lazy-load h:o50"
-                                style="position: absolute;width: 100%;height: 100%;left: 0;overflow: hidden;border-radius: 8px;"
-                        >
-                    </a>
-                    <div class="ps-absolute b10 l10">
-                        <div class="d-flex ai-center jc-space-between">
-                            <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
                                 <span target="_blank" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-4 fc-sixth">
                                     <img
                                             data-src="https://media2.gody.vn//public/images/user-2/2023/03/06/anhngotrip2942/thumbnail-70/640587644a0e7-1678083940.jpg"
@@ -1443,37 +1111,44 @@
                                             class="lazy-load w-fit h-fit object-cover object-center bar-circle"
                                     >
                                 </span>
-                                <a href="{{url('/')}}/blog/anhngotrip2942" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
-                                    Ngo Tuan Anh
-                                </a>
+                                    <a href="{{url('/')}}/blog/anhngotrip2942" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
+                                        Ngo Tuan Anh
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </div><!-- ps-absolute -->
+                        </div><!-- ps-absolute -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="p-0 m-0 w-fit d-block bg-white">
-    <div class="container">
-        <div class="row">
-            <div class="w-fit d-block  pt-20 pb-20 ">
-                <h2 class="fc-fourteenth fs-42 lh-44 fw-700">Đối tác</h2>
-            </div>
-            <div class="w-fit d-block">
-                <div class="d-flex ai-top fw-wrap" style="--column:8; --gutter: 6px;">
-                    @foreach($partners as $partner)
-                        <div class="ai-center d-flex mb-10 pr-5" style="width: calc((100% - var(--gutter)) / var(--column));">
-                            <img src="{{ url(env('FOLDER_UPLOAD') . $partner->logo) }}"
-                                 class="object-cover object-center dw-fit img-partner"
-                            />
+    </section>
+@endif
+@if (!empty((array)$partners))
+    @if ($agent->isMobile())
+        @include('homepage.mobile.section_10')
+    @else
+        <section class="p-0 m-0 w-fit d-block bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="w-fit d-block  pt-20 pb-20 ">
+                        <h2 class="fc-fourteenth fs-42 lh-44 fw-700">Đối tác</h2>
+                    </div>
+                    <div class="w-fit d-block">
+                        <div class="d-flex ai-top fw-wrap" style="--column:8; --gutter: 6px;">
+                            @foreach($partners as $partner)
+                                <div class="ai-center d-flex mb-10 pr-5" style="width: calc((100% - var(--gutter)) / var(--column));">
+                                    <img src="{{ url(env('FOLDER_UPLOAD') . $partner->logo) }}"
+                                         class="object-cover object-center dw-fit img-partner"
+                                    />
+                                </div>
+                            @endforeach
                         </div>
-                    @endforeach
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
+    @endif
+@endif
 <style>
     .h-bottom-E0E0E0:hover {
         border-bottom: 2px solid #E0E0E0 !important;
