@@ -133,7 +133,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'cms'], function () {
         Route::get('index/all', ['uses' => 'Admin\AnswerController@indexAllAnswersToElasticsearch']);
     });
     // Đường dẫn allow upload ảnh từ trong ckeditor
-    Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');
+    Route::post('ckeditor/image_upload', 'Admin\CKEditorController@upload')->name('upload');
     // Trang quản trị role
     Route::group(['prefix' => 'roles', 'as' => 'roles', 'middleware' => 'auth'], function () {
         Route::get('/', ['as' => 'index', 'uses' => 'Admin\RoleController@index']);
@@ -233,6 +233,4 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('bai-viet/{slug}', ['uses' => 'BlogController@detail']);
     Route::get('photo/{slug}', ['uses' => 'BlogController@detail']);
     Route::get('{slug}', ['uses' => 'PageController@detail']);
-    // Đường dẫn allow upload ảnh từ trong ckeditor
-    Route::post('ckeditor/image_upload', 'CKEditorController@upload')->name('upload');
 });
