@@ -49,7 +49,7 @@ class LocationController extends Controller
         $metaData['meta_image'] = $location->thumbnail_url;
         $destinations = null;
         $agent = new Agent();
-        return view('location.' . ($agent->isMobile() ? 'mobile' : '') . '.detail', compact('location', 'destinations', 'lastUri', 'metaData'));
+        return view('location.' . ($agent->isMobile() ? 'mobile.' : '') . 'detail', compact('location', 'destinations', 'lastUri', 'metaData'));
     }
 
     /**

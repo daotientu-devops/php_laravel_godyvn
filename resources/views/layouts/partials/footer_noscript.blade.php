@@ -121,7 +121,7 @@
     </div>
 </div>
 <footer class="bt btw4 bc-primary mt-0">
-    <div class="container wmn-1170">
+    <div class="container{{ $agent->isMobile() ? '' : ' wmn-1170' }}">
         <div class="row pt-0">
             <div class="col-md-4">
                 <a href="/" class="d-block pt-20">

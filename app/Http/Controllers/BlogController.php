@@ -4,22 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Core\Controllers\Controller;
 use App\Core\Business\CategoryBusiness;
-use App\Core\Business\PostsBusiness;
 use App\Core\Business\UploadFileBusiness;
-use App\Core\Connection\ElasticsearchServer;
-use App\Core\Enums\CommonEnum;
 use App\Core\Models\Customer;
 use App\Core\Models\PasswordReset;
-use App\Core\Repositories\Redis\CategoryRedis;
-use App\Core\Repositories\Elasticsearch\PostsElasticsearch;
 use Illuminate\Http\Request;
 use App\Core\Models\Posts;
 use App\Core\Models\Category;
-use App\Core\Models\Tags;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Log;
-use App\Core\Enums\ElasticsearchEnum;
-use App\Helpers\Activity;
+use Jenssegers\Agent\Agent;
 
 class BlogController extends Controller
 {
@@ -48,7 +40,8 @@ class BlogController extends Controller
         $metaData['meta_title'] = $blog->meta_title;
         $metaData['meta_keyword'] = $blog->meta_keyword;
         $metaData['meta_description'] = $blog->meta_description;
-        return view('blog.detail', compact('blog', 'metaData'));
+        $agent = new Agent();
+        return view('blog.' . ($agent->isMobile() ? 'mobile.' : '') . 'detail', compact('blog', 'metaData'));
     }
 
     /**
