@@ -7,6 +7,7 @@ use App\Core\Models\Destination;
 use App\Core\Models\Location;
 use Illuminate\Http\Request;
 use App\Helpers\Activity;
+use Jenssegers\Agent\Agent;
 
 class LocationController extends Controller
 {
@@ -47,7 +48,8 @@ class LocationController extends Controller
         $metaData['meta_description'] = $location->meta_description;
         $metaData['meta_image'] = $location->thumbnail_url;
         $destinations = null;
-        return view('location.detail', compact('location', 'destinations', 'lastUri', 'metaData'));
+        $agent = new Agent();
+        return view('location.' . ($agent->isMobile() ? 'mobile' : '') . '.detail', compact('location', 'destinations', 'lastUri', 'metaData'));
     }
 
     /**

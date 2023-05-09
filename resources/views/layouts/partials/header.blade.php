@@ -171,7 +171,7 @@
     <!-- /Yandex.Metrika counter -->
 </head>
 
-<body class="dest-details" ng-app="MyApp" itemscope="" itemtype="http://schema.org/WebPage">
+<body class="dest-details " ng-app="MyApp" itemscope="" itemtype="http://schema.org/WebPage" @if ($agent->isMobile()) style="padding-top: 89px;" @endif>
 <!-- Google Tag Manager (noscript) -->
 <!-- End Google Tag Manager (noscript) -->
 

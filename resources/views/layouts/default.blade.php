@@ -1,4 +1,8 @@
 @include('layouts.partials.header')
-@include('layouts.partials.nav')
+@if ($agent->isMobile())
+    @include('layouts.partials.mobile.nav')
+@else
+    @include('layouts.partials.nav')
+@endif
 @yield('content')
 @include('layouts.partials.footer')

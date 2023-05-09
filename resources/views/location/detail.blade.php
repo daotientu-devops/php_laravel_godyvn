@@ -7,9 +7,11 @@
             position: relative;
             display: inline-block;
         }
+
         .z-8 {
             z-index: 8;
         }
+
         .list-menu .dropbtn {
             color: white;
             padding: 13px;
@@ -575,10 +577,12 @@
                     position: absolute;
                     background: white;
                 }
+
                 .list-menu .dropdown-content ul li {
                     width: 48%;
                     vertical-align: top;
                 }
+
                 .list-menu .dropdown-content a {
                     color: black;
                     padding: 12px 16px;
@@ -586,10 +590,12 @@
                     display: block;
                     font-size: 16px;
                 }
+
                 .dropdown.z-8:hover .dropdown-content {
                     display: block;
                 }
-                @media  screen and (max-width: 768px) {
+
+                @media screen and (max-width: 768px) {
                     .list-menu .dropdown-content {
                         max-width: 98vw;
                     }
@@ -618,29 +624,21 @@
                                             <a class="{{ $destinations !== null ? 'fc-primary' : 'fc-fourteenth' }} lh-120% fs-18 fw-400 h:fc-primary" href="{{ url('diem-den' . $location->share_url . '/diem-du-lich') }}">Điểm du lịch</a>
                                             <img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-01.png" width="8px" height="14px">
                                         </div>
-                                        {{--<div class="p-16 d-flex jc-space-between box-shadow-02 bg-white">--}}
-                                        {{--<a class=" fc-fourteenth  lh-120% fs-18 fw-400 h:fc-primary" href="https://gody.vn/chau-a/viet-nam/lao-cai/kinh-nghiem">Kinh nghiệm du lịch</a>--}}
-                                        {{--<img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-01.png" width="8px" height="14px">--}}
-                                        {{--</div>--}}
-                                        {{--<div class="p-16 d-flex jc-space-between box-shadow-02 bg-white">--}}
-                                        {{--<a class=" fc-fourteenth   lh-120% fs-18 fw-400 h:fc-primary" href="https://gody.vn/chau-a/viet-nam/lao-cai/hoi-dap">Hỏi đáp</a>--}}
-                                        {{--<img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-01.png" width="8px" height="14px">--}}
-                                        {{--</div>--}}
                                         <div class="p-16 d-flex jc-space-between bg-white" data-class="p-16 d-flex jc-space-between box-shadow-02 bg-white">
                                             <a class="{{ $lastUri === 'hinh-anh' ? 'fc-primary' : 'fc-fourteenth' }} lh-120% fs-18 fw-400 h:fc-primary" href="{{ url('diem-den' . $location->share_url . '/hinh-anh') }}">Hình ảnh</a>
                                             <img src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-01.png" width="8px" height="14px">
                                         </div>
                                     </div>
                                 </div>
-                            </div>                    </div>
-
-
+                            </div>
+                        </div>
                         <div class="w-fit mt-30 overflow-hidden">
-                            <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2910673600848421" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2910673600848421" data-ad-slot="9371135160" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                            <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2910673600848421" crossorigin="anonymous"></script>
+                            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2910673600848421" data-ad-slot="9371135160" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-9 primary-content" id="gioi-thieu">
                     @if (isset($destination))
                         @if (!empty($destination->content))
@@ -670,7 +668,8 @@
                                 <div class="w-fit d-flex fw-wrap" style="--column:4; --gutter: 45px;">
                                     <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) );  height: 385px; margin-right: calc( var(--gutter) / var(--column) ); margin-bottom: calc( var(--gutter) / var(--column) );">
                                         <a href="{{ url('diem-den' . $location->share_url . '/diem-du-lich/' . $destination->slug) }}">
-                                            <img src="{{ url(env('FOLDER_UPLOAD') . $destination->thumbnail_url) }}" data-srcset="https://media.gody.vn//images/kien-giang/dao-nam-du/10-2016/20161019080345-nam-du-gody (20).jpg" style="height: 220px;" class="lazy-load w-fit object-cover object-center bar-8 h:o50" src="https://media.gody.vn//images/kien-giang/dao-nam-du/10-2016/20161019080345-nam-du-gody (20).jpg" srcset="https://media.gody.vn//images/kien-giang/dao-nam-du/10-2016/20161019080345-nam-du-gody (20).jpg">
+                                            <img src="{{ url(env('FOLDER_UPLOAD') . $destination->thumbnail_url) }}" data-srcset="https://media.gody.vn//images/kien-giang/dao-nam-du/10-2016/20161019080345-nam-du-gody (20).jpg" style="height: 220px;" class="lazy-load w-fit object-cover object-center bar-8 h:o50" src="https://media.gody.vn//images/kien-giang/dao-nam-du/10-2016/20161019080345-nam-du-gody (20).jpg"
+                                                 srcset="https://media.gody.vn//images/kien-giang/dao-nam-du/10-2016/20161019080345-nam-du-gody (20).jpg">
                                         </a>
                                         <div class="w-fit d-block p-10 mb-0" style="min-height: 77px;">
                                             <a href="{{ url('diem-den' . $location->share_url . '/diem-du-lich/' . $destination->slug) }}" class="fc-fourteenth fs-18 fw-600 truncate-line lineclamp2 h:fc-sixth">
