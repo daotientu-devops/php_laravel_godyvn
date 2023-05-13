@@ -175,6 +175,9 @@
                     <a href="{{url('/')}}/diem-den" class="show fc-sixth h:fc-primary mt-5">Điểm đến</a>
                 </div>
             </div>
+            <div class="col-md-2 pt-20">
+                <?php echo html_entity_decode($setting['slogan_register'] ?? '') ?>
+            </div>
         </div>
         <div class="row pb-30 mt-0">
             <div class="col-md-4"></div>
