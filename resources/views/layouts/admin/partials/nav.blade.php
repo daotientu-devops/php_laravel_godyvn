@@ -4,7 +4,7 @@
         <h3>Quản lý</h3>
         <ul class="nav side-menu">
             <li><a href="{{ url('cms/dashboard') }}"><i class="fa fa-home"></i>Bảng điều khiển</a></li>
-            <li><a href="{{ url('cms/categories') }}"><i class="fa fa fa-list"></i>Danh mục</a></li>
+            <li><a href="{{ url('cms/categories') }}"><i class="fa fa fa-list-alt"></i>Danh mục</a></li>
             <li><a href="{{ url('cms/locations') }}"><i class="fa fa-location-arrow"></i>Quản lý điểm đến</a></li>
             <li><a href="{{ url('cms/destinations') }}"><i class="fa fa-map"></i>Quản lý điểm du lịch</a></li>
             <li><a href="{{ url('cms/posts') }}"><i class="fa fa-file-text"></i>Danh sách bài viết</a></li>

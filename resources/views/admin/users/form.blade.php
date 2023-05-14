@@ -8,17 +8,17 @@ switch ($action) {
         break;
 }
 ?>
-@extends('layouts.default')
+@extends('layouts.admin.default')
 @section('content')
     <div class="page-title">
         <div class="title_left">
-            <a href="{{ url('/users') }}" title="Tạo mới user" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Tạo mới user</a>
+            <a href="{{ url('cms/users') }}" title="Tạo mới user" class="btn btn-primary"><i class="fa fa-pencil-square-o"></i> Tạo mới user</a>
         </div>
     </div>
     <div class="clearfix"></div>
     <div class="row">
         @include('components.alert')
-        <div class="col-md-6 col-sm-6 col-xs-6">
+        <div class="col-md-7 col-sm-7 col-xs-7">
             <div class="x_panel">
                 <div class="x_title">
                     <h2>{{ ucfirst($action) }} user {{ $user->name }}</h2>
@@ -33,7 +33,7 @@ switch ($action) {
                 <div class="x_content">
                     <br/>
                     <form class="form-horizontal form-label-left input_mask" action="{{ url('users/update/' . $user->id) }}" method="post">
-                        @csrf
+                        {{ csrf_field() }}
                         <div class="form-group">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Họ và tên <span
                                         class="required">*</span></label>
@@ -62,16 +62,6 @@ switch ($action) {
                             </div>
                         </div>
                         @endif
-                        {{--<div class="form-group">--}}
-                            {{--<label class="control-label col-md-3 col-sm-3 col-xs-12">Quyền </label>--}}
-                            {{--<div class="col-md-5 col-sm-5 col-xs-12">--}}
-                                {{--<select class="form-control" name="roles[]" {{ $attribute }}>--}}
-                                    {{--@foreach($roles as $role)--}}
-                                        {{--<option value="{{ $role->id }}"<?php echo (isset($userRole[0]) && $role->id == $userRole[0] ? ' selected' : ''); ?>>{{ $role->name }}</option>--}}
-                                    {{--@endforeach--}}
-                                {{--</select>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
                         @if ($action != 'show')
                             <div class="ln_solid"></div>
                             <div class="form-group">
@@ -84,6 +74,6 @@ switch ($action) {
                 </div>
             </div>
         </div>
-        @include('users.list')
+        @include('admin.users.list')
     </div>
 @endsection
