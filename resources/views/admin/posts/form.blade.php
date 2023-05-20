@@ -44,7 +44,6 @@ switch ($action) {
                             <label class="control-label col-md-2 col-sm-2 col-xs-12">Tóm tắt</label>
                             <div class="col-md-10 col-sm-10 col-xs-12">
                                 <textarea id="excerpt" class="form-control" name="excerpt" rows="3" {{ $attribute }}>{{ $post->excerpt }}</textarea>
-                                <label class="label label-info word-left">Tối đa được <strong>{{ config()->get('constants.LIMIT_WORD_COUNT_EXCERPT') }}</strong> từ</label>
                             </div>
                         </div>
                         <div class="form-group">
@@ -61,7 +60,7 @@ switch ($action) {
                             <div class="form-group">
                                 <label class="control-label col-md-2 col-sm-2 col-xs-12">Album ảnh</label>
                                 <div class="col-md-10 col-sm-10 col-xs-12">
-                                    @foreach($listAlbums as $album)
+                                    @foreach ($listAlbums as $album)
                                         @if ($album)
                                             <img src="{{ Config::get('constants.STATIC_IMAGES') . $album }}" width="100px"/>
                                         @endif

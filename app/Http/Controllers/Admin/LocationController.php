@@ -89,6 +89,17 @@ class LocationController extends Controller
                 return redirect()->back()->with('error', 'Điểm đến ' . $name . ' đã tồn tại');
             } else {
                 // TH tạo mới mẫu
+                $saveAlbum = '';
+                $albums = $request->album;
+                if (!empty($albums)) {
+                    foreach ($albums as $album) {
+                        $albumName = '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $album->getClientOriginalName();
+                        if ($album) {
+                            UploadFileBusiness::uploadFileToFolder($album);
+                        }
+                        $saveAlbum .= $albumName . ',';
+                    }
+                }
                 $location = new Location([
                     'name' => $name,
                     'share_url' => '/'. $this->sanitize($request->get('continent')) . '/' . $this->sanitize($request->get('country')) . '/' . $this->sanitize($request->get('city')),
@@ -97,7 +108,7 @@ class LocationController extends Controller
                     'country' => $request->get('country'),
                     'city' => $request->get('city'),
                     'content' => $request->get('content'),
-                    'album' => $request->get('album'),
+                    'album' => $saveAlbum,
                     'top_search' => $request->get('top_search') !== null ? $request->get('top_search') : 0,
                     'hot_location' => $request->get('hot_location') !== null ? $request->get('hot_location') : 0,
                     'popular_location' => $request->get('popular_location') !== null ? $request->get('popular_location') : 0,
@@ -170,6 +181,19 @@ class LocationController extends Controller
             $location = Location::find($id);
             // Not ok thì redirect với thông báo post không tồn tại
             if (Location::where('id', '=', $id)->exists()) {
+                $saveAlbum = '';
+                $albums = $request->album;
+                if (!empty($albums)) {
+                    foreach ($albums as $album) {
+                        $albumName = '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $album->getClientOriginalName();
+                        if ($album) {
+                            UploadFileBusiness::uploadFileToFolder($album);
+                        }
+                        $saveAlbum .= $albumName . ',';
+                    }
+                } else {
+                    $saveAlbum = $location->album;
+                }
                 $location->name = $name;
                 $location->share_url = '/'. $this->sanitize($request->get('continent')) . '/' . $this->sanitize($request->get('country')) . '/' . $this->sanitize($request->get('city'));
                 $location->slug = $this->sanitize($name);
@@ -177,7 +201,7 @@ class LocationController extends Controller
                 $location->country = $request->get('country');
                 $location->city = $request->get('city');
                 $location->content = $request->get('content');
-                $location->album = $request->get('album');
+                $location->album = $saveAlbum;
                 $location->top_search = $request->get('top_search') !== null ? $request->get('top_search') : 0;
                 $location->hot_location = $request->get('hot_location') !== null ? $request->get('hot_location') : 0;
                 $location->popular_location = $request->get('popular_location') !== null ? $request->get('popular_location') : 0;

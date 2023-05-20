@@ -60,10 +60,23 @@
                         </div>
                         <div class="form-group">
                             <label class="control-label col-md-2 col-sm-2 col-xs-12">Album ảnh</label>
-                            <div class="col-md-10 col-sm-10 col-xs-12">
-                                <textarea id="album" class="editor_basic form-control" name="album">{{ $location->album }}</textarea>
+                            <div class="col-md-5 col-sm-5 col-xs-12">
+                                <input type="file" class="form-control" name="album[]" multiple style="background-color:#EDEDED">
                             </div>
                         </div>
+                        @if ($location->album)
+                            <?php $listAlbums = explode(',', $location->album); ?>
+                            <div class="form-group">
+                                <label class="control-label col-md-2 col-sm-2 col-xs-12"></label>
+                                <div class="col-md-10 col-sm-10 col-xs-12">
+                                    @foreach ($listAlbums as $album)
+                                        @if ($album)
+                                            <img src="{{ Config::get('constants.STATIC_IMAGES') . $album }}" width="100px"/>
+                                        @endif
+                                    @endforeach
+                                </div>
+                            </div>
+                        @endif
                         <div class="form-group">
                             <label class="control-label col-md-2 col-sm-2 col-xs-12">Ảnh đại diện</label>
                             <div class="col-md-5 col-sm-5 col-xs-12">

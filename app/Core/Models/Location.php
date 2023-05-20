@@ -12,6 +12,7 @@ class Location extends Model
         'content',
         'thumbnail_url',
         'top_background_url',
+        'continent',
         'country',
         'album',
         'city',
