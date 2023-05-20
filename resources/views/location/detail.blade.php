@@ -652,9 +652,22 @@
                                 <div class="w-fit d-flex pt-0 pb-10 jc-space-between ai-center">
                                     <h4 class="w-fit d-block fc-black fw-700 fs-36 lh-38 xs:fs-26 py-10 m-0">Hình ảnh</h4>
                                 </div>
-                                <div class="w-fit d-block mt-20">
-                                    <div class="d-flex ai-top fw-wrap" style="--column:4; --gutter: 38px;">
-                                        <?php echo html_entity_decode($destination->album) ?>
+                                <div class="d-flex ai-top fw-wrap" style="--column:4; --gutter: 38px;">
+                                    <?php $listAlbums = explode(',', $destination->album); ?>
+                                    <div class="w-fit d-block">
+                                        <div class="d-flex ai-top fw-wrap" style="--column:4; --gutter: 38px;">
+                                            @foreach ($listAlbums as $album)
+                                                @if ($album)
+                                                    <div class="ps-relative d-flex fd-column " style="width: calc( (100% - var(--gutter)) / var(--column) );  height: 140px; margin-right: calc( var(--gutter) / var(--column) ); margin-bottom: calc( var(--gutter) / var(--column) );">
+                                                        <div class="ps-relative w-fit d-block h-fit">
+                                                            <a>
+                                                                <img class="w-fit h-fit object-cover object-center bar-8" src="{{ Config::get('constants.STATIC_IMAGES') . $album }}" alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                @endif
+                                            @endforeach
+                                        </div>
                                     </div>
                                 </div>
                             @endif

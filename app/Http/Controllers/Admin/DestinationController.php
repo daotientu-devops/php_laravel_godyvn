@@ -79,12 +79,23 @@ class DestinationController extends Controller
                 return redirect()->back()->with('error', 'Điểm du lịch ' . $name . ' đã tồn tại');
             } else {
                 // TH tạo mới mẫu
+                $saveAlbum = '';
+                $albums = $request->album;
+                if (!empty($albums)) {
+                    foreach ($albums as $album) {
+                        $albumName = '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $album->getClientOriginalName();
+                        if ($album) {
+                            UploadFileBusiness::uploadFileToFolder($album);
+                        }
+                        $saveAlbum .= $albumName . ',';
+                    }
+                }
                 $destination = new Destination([
                     'name' => $name,
                     'slug' => $this->sanitize($name),
                     'location_id' => $request->get('location_id'),
                     'content' => $request->get('content'),
-                    'album' => $request->get('album'),
+                    'album' => $saveAlbum,
                     'top_search' => $request->get('top_search') !== null ? $request->get('top_search') : 0,
                     'hot_location' => $request->get('hot_location') !== null ? $request->get('hot_location') : 0,
                     'popular_location' => $request->get('popular_location') !== null ? $request->get('popular_location') : 0,
@@ -158,11 +169,24 @@ class DestinationController extends Controller
             $destination = Destination::find($id);
             // Not ok thì redirect với thông báo post không tồn tại
             if (Destination::where('id', '=', $id)->exists()) {
+                $saveAlbum = '';
+                $albums = $request->album;
+                if (!empty($albums)) {
+                    foreach ($albums as $album) {
+                        $albumName = '/' . $yearDir . '/' . $monthDir . '/' . $dayDir . '/' . $album->getClientOriginalName();
+                        if ($album) {
+                            UploadFileBusiness::uploadFileToFolder($album);
+                        }
+                        $saveAlbum .= $albumName . ',';
+                    }
+                } else {
+                    $saveAlbum = $destination->album;
+                }
                 $destination->name = $name;
                 $destination->slug = $this->sanitize($name);
                 $destination->location_id = $request->get('location_id');
                 $destination->content = $request->get('content');
-                $destination->album = $request->get('album');
+                $destination->album = $saveAlbum;
                 $destination->top_search = $request->get('top_search') !== null ? $request->get('top_search') : 0;
                 $destination->hot_location = $request->get('hot_location') !== null ? $request->get('hot_location') : 0;
                 $destination->popular_location = $request->get('popular_location') !== null ? $request->get('popular_location') : 0;

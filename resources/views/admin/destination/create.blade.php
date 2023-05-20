@@ -51,8 +51,8 @@
                         </div>
                         <div class="form-group">
                             <label class="control-label col-md-2 col-sm-2 col-xs-12">Album ảnh</label>
-                            <div class="col-md-10 col-sm-10 col-xs-12">
-                                <textarea id="album" class="editor_basic form-control" name="album"></textarea>
+                            <div class="col-md-5 col-sm-5 col-xs-12">
+                                <input type="file" class="form-control" name="album[]" multiple style="background-color:#EDEDED">
                             </div>
                         </div>
                         <div class="form-group">
