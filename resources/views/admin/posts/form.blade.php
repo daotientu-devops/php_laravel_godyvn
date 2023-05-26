@@ -148,6 +148,14 @@ switch ($action) {
                             </div>
                         </div>
                         <div class="form-group">
+                            <label class="control-label col-md-2 col-sm-2 col-xs-12"># Bookingram</label>
+                            <div class="col-md-5 col-sm-5 col-xs-12">
+                                <div class="radio">
+                                    <input type="checkbox" value="1" name="bookingram" class="flat"{{ $post->bookingram == 1 ?  ' checked' : '' }}>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <label class="control-label col-md-2 col-sm-2 col-xs-12">Tiêu đề (SEO) <span
                                         class="required">*</span></label>
                             <div class="col-md-10 col-sm-10 col-xs-12">

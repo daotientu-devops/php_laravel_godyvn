@@ -954,61 +954,32 @@
             </div>
         </div>
     </section>
+
     <section class="p-0 m-0 w-fit d-block bg-white">
         <div class="container">
             <div class="row">
                 <div class="w-fit d-block  pt-20 pb-20 ">
-                    <h2 class="fc-fourteenth fs-36 lh-44 fw-700">#Godygram</h2>
+                    <h2 class="fc-fourteenth fs-36 lh-44 fw-700">#Bookingram</h2>
                 </div>
                 <div class="w-fit d-flex jc-space-between ai-center" style="--column:4; --gutter: 38px;">
-                    <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
-                        <a href="{{url('/')}}/photo/tour-viet-nam-cambodia-thai-lan-5316?photo_album=album" class="w-fit h-fit">
-                            <img
-                                    data-src="https://media2.gody.vn/public/mytravelmap/images/2023/3/26/quan.trangianb4112/original/7084f3b1e4ce0bb83dd3b95e0d723d40079bb608.jpg"
-                                    data-srcset="https://media2.gody.vn/public/mytravelmap/images/2023/3/26/quan.trangianb4112/original/7084f3b1e4ce0bb83dd3b95e0d723d40079bb608.jpg"
-                                    class="lazy-load w-fit object-cover object-center h-fit bar-8"
-                            />
-                            <img
-                                    data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
-                                    data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
-                                    class="lazy-load h:o50"
-                                    style="position: absolute;width: 100%;height: 100%;left: 0;overflow: hidden;border-radius: 8px;"
-                            >
-                        </a>
-                        <div class="ps-absolute b10 l10">
-                            <div class="d-flex ai-center jc-space-between">
-                                <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                <span target="_blank" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-4 fc-sixth">
+                    @if ($bookingrams->isNotEmpty())
+                        @foreach ($bookingrams as $gram)
+                            <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
+                                <a href="{{ url($gram->share_url) }}" class="w-fit h-fit">
                                     <img
-                                            data-src="https://lh3.googleusercontent.com/a/AGNmyxbVJrT2CeC91YmpS7frBf6e7cmWMIq8zrYJcinI=s96-c"
-                                            data-srcset="https://lh3.googleusercontent.com/a/AGNmyxbVJrT2CeC91YmpS7frBf6e7cmWMIq8zrYJcinI=s96-c"
-                                            class="lazy-load w-fit h-fit object-cover object-center bar-circle"
+                                            src="{{ url(env('FOLDER_UPLOAD') . $gram->thumbnail_url) }}" alt="{{ $gram->title }}"
+                                            class="w-fit object-cover object-center h-fit bar-8"
+                                    />
+                                    <img
+                                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
+                                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
+                                            class="lazy-load h:o50"
+                                            style="position: absolute;width: 100%;height: 100%;left: 0;overflow: hidden;border-radius: 8px;"
                                     >
-                                </span>
-                                    <a href="{{url('/')}}/blog/quan.trangianb4112" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
-                                        quan tran
-                                    </a>
-                                </div>
-                            </div>
-                        </div><!-- ps-absolute -->
-                    </div>
-                    <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
-                        <a href="{{url('/')}}/photo/sai-gon-vung-tau-can-tho-ha-nam-ly-son-dac-lac-5315?photo_album=album" class="w-fit h-fit">
-                            <img
-                                    data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2017/10/6/hiencucvang19855168/453d1f636aca89cf134d54d71bde9908.jpg"
-                                    data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2017/10/6/hiencucvang19855168/453d1f636aca89cf134d54d71bde9908.jpg"
-                                    class="lazy-load w-fit object-cover object-center h-fit bar-8"
-                            />
-                            <img
-                                    data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
-                                    data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
-                                    class="lazy-load h:o50"
-                                    style="position: absolute;width: 100%;height: 100%;left: 0;overflow: hidden;border-radius: 8px;"
-                            >
-                        </a>
-                        <div class="ps-absolute b10 l10">
-                            <div class="d-flex ai-center jc-space-between">
-                                <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
+                                </a>
+                                <div class="ps-absolute b10 l10">
+                                    <div class="d-flex ai-center jc-space-between">
+                                        <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
                                 <span target="_blank" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-4 fc-sixth">
                                     <img
                                             data-src="https://graph.facebook.com/v2.8/1906247742724297/picture?type=normal"
@@ -1016,19 +987,20 @@
                                             class="lazy-load w-fit h-fit object-cover object-center bar-circle"
                                     >
                                 </span>
-                                    <a href="{{url('/')}}/blog/hiencucvang19855168" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
-                                        Linh Le
-                                    </a>
-                                </div>
+                                            <a href="{{url('/')}}" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
+                                                {{ $gram->author_name }}
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div><!-- ps-absolute -->
                             </div>
-                        </div><!-- ps-absolute -->
-                    </div>
-                    <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
-                        <div class="w-fit mb-10 ps-relative" style="height: 150px">
-                            <a href="{{url('/')}}/photo/ho-dieu-hoa-ho-son-phu-yen-5314?photo_album=album" class="w-fit h-fit">
+                        @endforeach
+                    @else
+                        <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
+                            <a href="{{url('/')}}/photo/tour-viet-nam-cambodia-thai-lan-5316?photo_album=album" class="w-fit h-fit">
                                 <img
-                                        data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/03/21/imissyou_2668257/d815f0f58e90eb155a817e71d414a745.jpg"
-                                        data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/03/21/imissyou_2668257/d815f0f58e90eb155a817e71d414a745.jpg"
+                                        data-src="https://media2.gody.vn/public/mytravelmap/images/2023/3/26/quan.trangianb4112/original/7084f3b1e4ce0bb83dd3b95e0d723d40079bb608.jpg"
+                                        data-srcset="https://media2.gody.vn/public/mytravelmap/images/2023/3/26/quan.trangianb4112/original/7084f3b1e4ce0bb83dd3b95e0d723d40079bb608.jpg"
                                         class="lazy-load w-fit object-cover object-center h-fit bar-8"
                                 />
                                 <img
@@ -1041,6 +1013,69 @@
                             <div class="ps-absolute b10 l10">
                                 <div class="d-flex ai-center jc-space-between">
                                     <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
+                                <span target="_blank" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-4 fc-sixth">
+                                    <img
+                                            data-src="https://lh3.googleusercontent.com/a/AGNmyxbVJrT2CeC91YmpS7frBf6e7cmWMIq8zrYJcinI=s96-c"
+                                            data-srcset="https://lh3.googleusercontent.com/a/AGNmyxbVJrT2CeC91YmpS7frBf6e7cmWMIq8zrYJcinI=s96-c"
+                                            class="lazy-load w-fit h-fit object-cover object-center bar-circle"
+                                    >
+                                </span>
+                                        <a href="{{url('/')}}/blog/quan.trangianb4112" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
+                                            quan tran
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!-- ps-absolute -->
+                        </div>
+                        <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
+                            <a href="{{url('/')}}/photo/sai-gon-vung-tau-can-tho-ha-nam-ly-son-dac-lac-5315?photo_album=album" class="w-fit h-fit">
+                                <img
+                                        data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2017/10/6/hiencucvang19855168/453d1f636aca89cf134d54d71bde9908.jpg"
+                                        data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2017/10/6/hiencucvang19855168/453d1f636aca89cf134d54d71bde9908.jpg"
+                                        class="lazy-load w-fit object-cover object-center h-fit bar-8"
+                                />
+                                <img
+                                        data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
+                                        data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
+                                        class="lazy-load h:o50"
+                                        style="position: absolute;width: 100%;height: 100%;left: 0;overflow: hidden;border-radius: 8px;"
+                                >
+                            </a>
+                            <div class="ps-absolute b10 l10">
+                                <div class="d-flex ai-center jc-space-between">
+                                    <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
+                                <span target="_blank" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-4 fc-sixth">
+                                    <img
+                                            data-src="https://graph.facebook.com/v2.8/1906247742724297/picture?type=normal"
+                                            data-srcset="https://graph.facebook.com/v2.8/1906247742724297/picture?type=normal"
+                                            class="lazy-load w-fit h-fit object-cover object-center bar-circle"
+                                    >
+                                </span>
+                                        <a href="{{url('/')}}/blog/hiencucvang19855168" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
+                                            Linh Le
+                                        </a>
+                                    </div>
+                                </div>
+                            </div><!-- ps-absolute -->
+                        </div>
+                        <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
+                            <div class="w-fit mb-10 ps-relative" style="height: 150px">
+                                <a href="{{url('/')}}/photo/ho-dieu-hoa-ho-son-phu-yen-5314?photo_album=album" class="w-fit h-fit">
+                                    <img
+                                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/03/21/imissyou_2668257/d815f0f58e90eb155a817e71d414a745.jpg"
+                                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/03/21/imissyou_2668257/d815f0f58e90eb155a817e71d414a745.jpg"
+                                            class="lazy-load w-fit object-cover object-center h-fit bar-8"
+                                    />
+                                    <img
+                                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
+                                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
+                                            class="lazy-load h:o50"
+                                            style="position: absolute;width: 100%;height: 100%;left: 0;overflow: hidden;border-radius: 8px;"
+                                    >
+                                </a>
+                                <div class="ps-absolute b10 l10">
+                                    <div class="d-flex ai-center jc-space-between">
+                                        <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
                                     <span target="_blank" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-4 fc-sixth">
                                         <img
                                                 data-src="https://graph.facebook.com/v2.8/1110153672468755/picture?type=normal"
@@ -1048,18 +1083,50 @@
                                                 class="lazy-load w-fit h-fit object-cover object-center bar-circle"
                                         >
                                     </span>
-                                        <a href="{{url('/')}}/blog/imissyou_2668257" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
-                                            L&ecirc; Thị Kiều
-                                        </a>
+                                            <a href="{{url('/')}}/blog/imissyou_2668257" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
+                                                L&ecirc; Thị Kiều
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </div><!-- ps-absolute -->
+                                </div><!-- ps-absolute -->
+                            </div>
+                            <div class="w-fit ps-relative" style="height: 150px">
+                                <a href="{{url('/')}}/photo/pho-co-hoi-an-5313?photo_album=album" class="w-fit h-fit">
+                                    <img
+                                            data-src="https://media2.gody.vn/public/mytravelmap/images/2023/3/17/ngocvudb8160/original/8960b1a675d6b236b4ba3e25ad06754497ea9487.jpg"
+                                            data-srcset="https://media2.gody.vn/public/mytravelmap/images/2023/3/17/ngocvudb8160/original/8960b1a675d6b236b4ba3e25ad06754497ea9487.jpg"
+                                            class="lazy-load w-fit object-cover object-center h-fit bar-8"
+                                    />
+                                    <img
+                                            data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
+                                            data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
+                                            class="lazy-load h:o50"
+                                            style="position: absolute;width: 100%;height: 100%;left: 0;overflow: hidden;border-radius: 8px;"
+                                    >
+                                </a>
+                                <div class="ps-absolute b10 l10">
+                                    <div class="d-flex ai-center jc-space-between">
+                                        <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
+                                    <span target="_blank" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-4 fc-sixth">
+                                        <img
+                                                data-src="https://lh3.googleusercontent.com/a/AGNmyxY0-9l3Pb_XbIWzZx3xKVP05mnAaqCHnGC2cjrQUQ=s96-c"
+                                                data-srcset="https://lh3.googleusercontent.com/a/AGNmyxY0-9l3Pb_XbIWzZx3xKVP05mnAaqCHnGC2cjrQUQ=s96-c"
+                                                class="lazy-load w-fit h-fit object-cover object-center bar-circle"
+                                        >
+                                    </span>
+                                            <a href="{{url('/')}}/blog/ngocvudb8160" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
+                                                Đặng Ngọc Vũ
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div><!-- ps-absolute -->
+                            </div>
                         </div>
-                        <div class="w-fit ps-relative" style="height: 150px">
-                            <a href="{{url('/')}}/photo/pho-co-hoi-an-5313?photo_album=album" class="w-fit h-fit">
+                        <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
+                            <a href="{{url('/')}}/photo/chuyen-di-adventure-thu-2-4-tai-nz-5308?photo_album=album" class="w-fit h-fit">
                                 <img
-                                        data-src="https://media2.gody.vn/public/mytravelmap/images/2023/3/17/ngocvudb8160/original/8960b1a675d6b236b4ba3e25ad06754497ea9487.jpg"
-                                        data-srcset="https://media2.gody.vn/public/mytravelmap/images/2023/3/17/ngocvudb8160/original/8960b1a675d6b236b4ba3e25ad06754497ea9487.jpg"
+                                        data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/3/6/anhngotrip2942/1e32b4b67d1f25698c0c16d2a64b6e46.jpg"
+                                        data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/3/6/anhngotrip2942/1e32b4b67d1f25698c0c16d2a64b6e46.jpg"
                                         class="lazy-load w-fit object-cover object-center h-fit bar-8"
                                 />
                                 <img
@@ -1072,38 +1139,6 @@
                             <div class="ps-absolute b10 l10">
                                 <div class="d-flex ai-center jc-space-between">
                                     <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
-                                    <span target="_blank" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-4 fc-sixth">
-                                        <img
-                                                data-src="https://lh3.googleusercontent.com/a/AGNmyxY0-9l3Pb_XbIWzZx3xKVP05mnAaqCHnGC2cjrQUQ=s96-c"
-                                                data-srcset="https://lh3.googleusercontent.com/a/AGNmyxY0-9l3Pb_XbIWzZx3xKVP05mnAaqCHnGC2cjrQUQ=s96-c"
-                                                class="lazy-load w-fit h-fit object-cover object-center bar-circle"
-                                        >
-                                    </span>
-                                        <a href="{{url('/')}}/blog/ngocvudb8160" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
-                                            Đặng Ngọc Vũ
-                                        </a>
-                                    </div>
-                                </div>
-                            </div><!-- ps-absolute -->
-                        </div>
-                    </div>
-                    <div class="ps-relative d-flex fd-column" style="width: calc( (100% - var(--gutter)) / var(--column) ); height: 310px;">
-                        <a href="{{url('/')}}/photo/chuyen-di-adventure-thu-2-4-tai-nz-5308?photo_album=album" class="w-fit h-fit">
-                            <img
-                                    data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/3/6/anhngotrip2942/1e32b4b67d1f25698c0c16d2a64b6e46.jpg"
-                                    data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/mytravelmap/images/2023/3/6/anhngotrip2942/1e32b4b67d1f25698c0c16d2a64b6e46.jpg"
-                                    class="lazy-load w-fit object-cover object-center h-fit bar-8"
-                            />
-                            <img
-                                    data-src="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
-                                    data-srcset="https://h3jd9zjnmsobj.vcdn.cloud/public/v7/post/post-icon-05.png"
-                                    class="lazy-load h:o50"
-                                    style="position: absolute;width: 100%;height: 100%;left: 0;overflow: hidden;border-radius: 8px;"
-                            >
-                        </a>
-                        <div class="ps-absolute b10 l10">
-                            <div class="d-flex ai-center jc-space-between">
-                                <div class="ws-nowrap d-flex ai-center btr-10 fl-1">
                                 <span target="_blank" class="bar-circle bbar-circle ps-relative w-32 h-32 td-none outline-none mr-4 fc-sixth">
                                     <img
                                             data-src="https://media2.gody.vn//public/images/user-2/2023/03/06/anhngotrip2942/thumbnail-70/640587644a0e7-1678083940.jpg"
@@ -1111,13 +1146,14 @@
                                             class="lazy-load w-fit h-fit object-cover object-center bar-circle"
                                     >
                                 </span>
-                                    <a href="{{url('/')}}/blog/anhngotrip2942" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
-                                        Ngo Tuan Anh
-                                    </a>
+                                        <a href="{{url('/')}}/blog/anhngotrip2942" class="fc-white d-inline-block truncate td-none outline-none fs-14 fw-600 wmx-135 ml-5 mr-20">
+                                            Ngo Tuan Anh
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                        </div><!-- ps-absolute -->
-                    </div>
+                            </div><!-- ps-absolute -->
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>
