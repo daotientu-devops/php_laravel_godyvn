@@ -22,6 +22,8 @@ class HomepageController extends Controller
         $list_posts = Posts::query()->where('status', Posts::STATUS_PUBLISH)->take(13)->skip(1)->orderBy('id', 'DESC')->get();
         $bookingrams = Posts::query()->where('bookingram', 1)->take(4)->skip(0)->orderBy('id', 'DESC')->get();
         $hot_locations = Location::query()->where('hot_location', 1)->take(6)->orderBy('id', 'DESC')->get();
+        $editor_picks = Posts::query()->where('is_editor_pick', 1)->take(4)->skip(0)->orderBy('id', 'DESC')->get();
+        $most_views = Posts::query()->where('is_most_viewed', 1)->take(9)->skip(0)->orderBy('id', 'DESC')->get();
         $partners = Partner::query()->orderBy('id', 'DESC')->get();
         $setting = Setting::where('key', '=', 'footer_info')->first();
         $widget_trend = Widget::select('content')->where('key', 'widget.homepage.trend')->first();
@@ -32,7 +34,7 @@ class HomepageController extends Controller
         $metaData['meta_keyword'] = $setting->meta_keyword;
         $metaData['meta_description'] = $setting->meta_description;
         $metaData['meta_image'] = $setting->meta_image;
-        return view('homepage.index', compact('first_post', 'list_posts', 'bookingrams', 'hot_locations', 'partners', 'widget_trend', 'widget_top_banner', 'widget_right_banner', 'widget_middle_banner', 'metaData'));
+        return view('homepage.index', compact('first_post', 'list_posts', 'bookingrams', 'hot_locations', 'editor_picks', 'most_views', 'partners', 'widget_trend', 'widget_top_banner', 'widget_right_banner', 'widget_middle_banner', 'metaData'));
     }
 
     /**
